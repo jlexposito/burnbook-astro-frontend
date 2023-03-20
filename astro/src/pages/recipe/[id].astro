@@ -1,0 +1,51 @@
+---
+import { getRecipe } from "./../../utils/api.js";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import NotFoundLayout from "../../layouts/NotFoundLayout.astro";
+import IngredientsList from "../../components/IngredientsList.astro";
+
+import Markdoc from '@markdoc/markdoc';
+
+/*
+import { setCache } from "../../utils/cache";
+*/
+const { id } = Astro.params;
+
+const recipe = await getRecipe(id);
+let instructionsHTML = "";
+
+if (!recipe) {
+  Astro.response.status = 404;
+} else {
+  let instructions = recipe.instructions;
+  const ast = Markdoc.parse(instructions);
+  const content = Markdoc.transform(ast, /* config */);
+
+  instructionsHTML = Markdoc.renderers.html(content);
+}
+
+/* TODO add cache
+setCache.short(Astro);
+*/
+---
+
+{
+  !recipe ? (
+    <NotFoundLayout title="Recipe not found" message="The recipe you are looking for could not be found" />
+  ) : (
+    <BaseLayout title={recipe.title}>
+      <div class="relative">
+        <img src={recipe.image} class="w-full h-[128px] md:h-[256px] object-cover" alt={recipe.title}/>
+        <h1 class="w-full text-center text-white font-bold text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2">{recipe.title}</h1>
+      </div>
+      <div class="grid md:grid-cols-2 px-3 lg:px-10 pt-12">
+        <div>
+          <Fragment set:html={instructionsHTML} />
+        </div>
+        <div class="mt-5 lg:m-0">
+          <IngredientsList ingredients={recipe.ingredients} />
+        </div>
+      </div>
+    </BaseLayout>
+  )
+}

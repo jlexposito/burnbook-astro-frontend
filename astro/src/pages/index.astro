@@ -1,0 +1,18 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/BaseLayout.astro";
+
+const URL = 'http://burnbookapi.zh0nb.com/recipes/';
+const response = await fetch(URL);
+const data = await response.json();
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 md:gap-4 lg:gap-5 my-6 mx-3 lg:mx-6 2xl:mx-12">
+    {
+        data.map(recipe => (
+            <Card title={recipe.title} ingredients={recipe.ingredients} href={`/recipe/${recipe.id}`} image={recipe.image} time={recipe.cooking_time}/>
+        ))
+    }
+    </div>
+</Layout>

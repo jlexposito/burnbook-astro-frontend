@@ -1,0 +1,43 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Link from "../components/Link.astro";
+
+export interface Props {
+  title?: string;
+  message?: string;
+}
+
+Astro.response.status = 404;
+
+const defaultTitle = "Page not found";
+
+const { title = defaultTitle, message = "" } = Astro.props as Props;
+---
+
+<BaseLayout title={title}>
+    <div class="flex h-screen">
+        <div class="m-auto">
+            <div class="grid grid-cols-1 justify-items-center">
+                <div>
+                    <img class="max-w-xs md:max-w-md" alt="404" src="/404.svg">
+                </div>
+                <div>
+                    <h1 class="text-orange-500 font-bold text-3xl mb-3">Welp, this is awkward!</h1>
+                    <div class="mb-5">
+                        <p>We seem to have missplaced something.</p>
+                        <p>{message}</p>
+                    </div>
+                    
+                    <Link 
+                        href="/" 
+                        text='Homepage'
+                        style="primary"
+                        isFilled={false}
+                        classes= "mt-12 rounded-md bg-orange-400 p-2"
+                        icon={{name: 'ic:baseline-home', side: 'left'}} 
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</BaseLayout>
