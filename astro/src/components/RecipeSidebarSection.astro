@@ -1,0 +1,23 @@
+---
+export interface Props {
+    title?: string;
+    border?: boolean;
+}
+const { title = "", border = true } = Astro.props;
+let borderClass = border && "border-b-2 border-grey-500";
+---
+
+<div class={`recipe-view px-6 text-center py-6 ${borderClass}`}>
+    {
+        title.length ? <p class="title font-medium text-xl sm:text-2xl"><span>{title}</span></p> : "" 
+    }
+    <div class="sidebar-content">
+        <slot />
+    </div>
+</div>
+
+<style>
+    .title {
+        margin-bottom: 10px;
+    }
+</style>

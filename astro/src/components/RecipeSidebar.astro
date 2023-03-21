@@ -1,0 +1,53 @@
+---
+import IngredientsList from "./IngredientsList.astro";
+import RecipeSidebarSection from "./RecipeSidebarSection.astro";
+
+import { Recipe } from '../utils/interfaces';
+
+export interface Props {
+    recipe: Recipe;
+}
+
+const { recipe } = Astro.props;
+
+function getDomainName (url: string) {
+    let domain_string = "";
+    let domain = (new URL(url));
+    domain_string = domain.hostname.replace('www.','').replace('youtu.be', 'youtube');
+    return `${domain_string}`;
+}
+
+---
+
+<div class="mt-5 sm:m-0">
+    <div class="bg-white py-3 mb-12">
+        <RecipeSidebarSection title="Tiempo de preparación:">
+            <span class="text-2xl">{recipe.cooking_time} m</span>
+        </RecipeSidebarSection>
+        <RecipeSidebarSection title="Raciones:">
+            <span class="text-2xl">{recipe.servings}</span>
+        </RecipeSidebarSection>
+        <RecipeSidebarSection title="Referencias">
+            {
+                /* TODO: change to link component */
+                recipe.references.map((reference) => (
+                    <p class="text-xl text-orange-500 hover:text-orange-700"><a target="_blank" href={reference}>{getDomainName(reference)}</a></p>
+                ))
+            }
+        </RecipeSidebarSection>
+        <RecipeSidebarSection title="Ingredientes" >
+            <div class="text-left">
+                <IngredientsList ingredients={recipe.ingredients} />
+            </div>
+        </RecipeSidebarSection>
+        <RecipeSidebarSection title="Tags" border={false}>
+            <div class="mt-2">
+                {
+                    recipe.tags.map((tag) => (
+                        <span class="bg-green-800 text-white rounded px-3 py-2 mx-1 my-3">{tag}</span>
+                    ))
+                }
+            </div>
+        </RecipeSidebarSection>
+    </div>
+</div>

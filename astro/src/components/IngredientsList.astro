@@ -1,13 +1,12 @@
 ---
-export interface Ingredient {
-  name: string
-}
+import { Ingredient } from '../utils/interfaces';
 
 export interface Props {
     ingredients: Array<Ingredient>;
 }
 
 const { ingredients = [] } = Astro.props;
+
 function getUnitTranslated(unit) {
     let translateUnit = '';
     switch(unit) {
@@ -25,26 +24,25 @@ function getUnitTranslated(unit) {
 }
 ---
 
-<div class="bg-white py-3 px-12 mb-12">
-    <div class="ingredient text-lg">
-    {
-        ingredients.map((ingredient, index) =>(
-            <div class="mb-4">
-                <input 
-                    type="checkbox"
-                    class="w-4 h-4 rounded  text-orange-400 focus:ring-orange-600 shadow"  
-                    id={`ingredient-${index}`} 
-                    name={ingredient.name} value={index}
-                >
-                <label 
-                    class="ml-1" 
-                    for={`ingredient-${index}`}
-                >
-                {ingredient.quantity} {getUnitTranslated(ingredient.unit)} {ingredient.prefix} {ingredient.name}
-                </label>
-            </div>
-        ))
 
-    }
-    </div>
+<div class="ingredient text-lg">
+{
+    ingredients.map((ingredient, index) =>(
+        <div class="mb-4">
+            <input 
+                type="checkbox"
+                class="w-4 h-4 rounded  text-orange-400 focus:ring-orange-600 shadow"  
+                id={`ingredient-${index}`} 
+                name={ingredient.name} value={index}
+            >
+            <label 
+                class="ml-1" 
+                for={`ingredient-${index}`}
+            >
+            {ingredient.quantity} {getUnitTranslated(ingredient.unit)} {ingredient.prefix} {ingredient.name}
+            </label>
+        </div>
+    ))
+
+}
 </div>

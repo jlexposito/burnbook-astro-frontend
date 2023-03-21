@@ -1,7 +1,5 @@
 ---
-export interface Ingredient {
-  name: string
-}
+import { Ingredient } from '../utils/interfaces';
 
 export interface Props {
 	title: string;
@@ -10,8 +8,6 @@ export interface Props {
 	href: string;
   image: string;
 }
-
-export interface ingredient {}
 
 const { href, title, ingredients = [], image, time } = Astro.props;
 function getIngredientsString(igredients) {
