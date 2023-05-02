@@ -6,7 +6,7 @@ import { getRecipes } from "./../utils/api.js";
 const data = await getRecipes();
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Burnbook">
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 gap-y-5 md:gap-5 lg:gap-6 my-6 mx-3 lg:mx-6 2xl:mx-12">
     {
         data.map(recipe => (
