@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const axiosClient = axios.create({
-    baseURL: `https://burnbookapi.zh0nb.com/`,
+    baseURL: import.meta.env.API_URL,
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'

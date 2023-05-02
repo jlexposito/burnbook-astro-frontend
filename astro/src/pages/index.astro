@@ -1,10 +1,9 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/BaseLayout.astro";
+import { getRecipes } from "./../utils/api.js";
 
-const URL = 'http://burnbookapi.zh0nb.com/recipes/';
-const response = await fetch(URL);
-const data = await response.json();
+const data = await getRecipes();
 ---
 
 <Layout title="Welcome to Astro.">
