@@ -29,5 +29,6 @@ export const axiosClient = axios.create({
             console.log('Error', error.message);
           }
           console.log(error.config);
+          return null;
     }
   );
