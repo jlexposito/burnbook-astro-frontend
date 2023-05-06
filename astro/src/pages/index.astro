@@ -1,17 +1,22 @@
 ---
-import Card from "../components/Card.astro";
 import Layout from "../layouts/BaseLayout.astro";
-import { getRecipes } from "./../utils/api.js";
 
-const data = await getRecipes();
+import TagFilters from "../components/TagFilter";
+import RecipeGrid from "../components/RecipeGrid.jsx";
+
+import { getRecipes, getTags } from "./../utils/api.js";
+import { setRecipes, setTags } from "../recipeStore.js";
+
+const recipes = await getRecipes();
+setRecipes(recipes);
+
+const tags = await getTags();
+setTags(tags);
+
+
 ---
 
 <Layout title="Burnbook">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 gap-y-5 md:gap-5 lg:gap-6 my-6 mx-3 lg:mx-6 2xl:mx-12">
-    {
-        data.map(recipe => (
-            <Card title={recipe.title} ingredients={recipe.ingredients} href={`/recipe/${recipe.id}`} image={recipe.image} time={recipe.cooking_time}/>
-        ))
-    }
-    </div>
+    <RecipeGrid client:load />
+    <TagFilters client:load />
 </Layout>
