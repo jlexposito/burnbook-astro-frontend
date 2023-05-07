@@ -1,0 +1,9 @@
+.tag {
+    @apply inline-block bg-accent text-sm hover:ring-accent-dark  hover:bg-accent-dark active:bg-accent-dark hover:ring-2 hover:cursor-pointer px-3 py-2 rounded-full text-white
+}
+
+.tag svg {
+    width: 20px !important;
+    height: 20px !important;
+    @apply inline-block text-sm;
+}

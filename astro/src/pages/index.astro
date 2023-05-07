@@ -1,22 +1,16 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
 
-import TagFilters from "../components/TagFilter";
-import RecipeGrid from "../components/RecipeGrid.jsx";
+import TagFilters from "../components/solid/TagFilter";
+import RecipeGrid from "../components/solid/RecipeGrid.jsx";
 
 import { getRecipes, getTags } from "./../utils/api.js";
-import { setRecipes, setTags } from "../recipeStore.js";
 
 const recipes = await getRecipes();
-setRecipes(recipes);
-
 const tags = await getTags();
-setTags(tags);
-
-
 ---
 
 <Layout title="Burnbook">
-    <RecipeGrid client:load />
-    <TagFilters client:load />
+    <RecipeGrid recipesdata={recipes} client:load />
+    <TagFilters tagsdata={tags} client:load />
 </Layout>

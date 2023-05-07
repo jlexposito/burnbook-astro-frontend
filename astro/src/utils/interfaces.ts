@@ -40,3 +40,9 @@ export interface Tag {
     name: string;
     highligthed: boolean;
 }
+
+export type TagType = {
+    id: number;
+    name: string;
+    highligthed: boolean;
+}

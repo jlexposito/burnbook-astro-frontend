@@ -1,4 +1,6 @@
-import { Recipe } from '../utils/interfaces';
+import './RecipeCard.css';
+
+import { Recipe } from '../../utils/interfaces';
 
 export default function RecipeCard(props: {recipe: Recipe}) {
     function getIngredientsString(igredients) {
@@ -33,15 +35,15 @@ export default function RecipeCard(props: {recipe: Recipe}) {
                     <div class="col-span-2 flex flex-col justify-around px-2 py-3 sm:px-5 min-h-[170px] max-h-[220px] sm:min-h-full sm:h-[240px]">
                         <div>
                         <h2 class="line-clamp-2 tracking-tight font-sans text-2xl font-bold">{props.recipe.title}</h2>
-                        <div class="mt-4 text-orange-500 mb-3">
-                            <svg class="w-6 align-text-bottom  inline-block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <div class="mt-4 text-accent mb-3 font-semibold">
+                            <span class="inline-block"><svg class="w-6 align-text-bottom  inline-block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span class="align-text-baseline font-medium text-xl">{props.recipe.cooking_time} m</span>
+                            </svg></span>
+                            <span class="align-text-baseline font-medium text-xl ml-1">{props.recipe.cooking_time} m</span>
                             </div>
                         </div>
                         <div>
-                        <p class="text-orange-500 line-clamp-2 sm:line-clamp-3">{getIngredientsString(props.recipe.ingredients)}</p>
+                        <p class="text-accent line-clamp-2 sm:line-clamp-3">{getIngredientsString(props.recipe.ingredients)}</p>
                         </div>
                     </div>
                 </div>
