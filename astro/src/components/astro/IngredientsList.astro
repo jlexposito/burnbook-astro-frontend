@@ -31,12 +31,12 @@ function getUnitTranslated(unit) {
         <div class="mb-4">
             <input 
                 type="checkbox"
-                class="w-4 h-4 rounded text-primary focus:ring-accent shadow"  
+                class="w-4 h-4 rounded text-primary hover:cursor-pointer focus:ring-accent shadow"  
                 id={`ingredient-${index}`} 
                 name={ingredient.name} value={index}
             >
             <label 
-                class="ml-1" 
+                class="ml-1 hover:cursor-pointer" 
                 for={`ingredient-${index}`}
             >
             {ingredient.quantity} {getUnitTranslated(ingredient.unit)} {ingredient.prefix} {ingredient.name}
