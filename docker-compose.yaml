@@ -9,6 +9,8 @@ services:
     ports:
       - "127.0.0.1:3000:3000"
     restart: unless-stopped
+    environment:
+      - HOST=0.0.0.0
     networks:
       - nginx_network
       - burnbook_network # you can use additional networks for some stuff

@@ -1,5 +1,5 @@
 {
   "name": "burnbook-frontend",
   "script": "/app/dist/server/entry.mjs",
-  "instances": "1"
+  "instances": "4"
 }
