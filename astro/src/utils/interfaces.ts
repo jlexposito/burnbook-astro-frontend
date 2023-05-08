@@ -46,3 +46,9 @@ export type TagType = {
     name: string;
     highligthed: boolean;
 }
+
+export type ImageSources = {
+    src: string,
+    srcSet: string,
+    sizes: string
+}
