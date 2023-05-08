@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      network: host
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+    environment:
+      - HOST=0.0.0.0
+    networks:
+      - nginx_network
+      - burnbook_network # you can use additional networks for some stuff
+
+networks:
+  nginx_network:
+    external: true
+  burnbook_network: ~ # this network won't be accessible from outside

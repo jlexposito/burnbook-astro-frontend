@@ -1,8 +1,9 @@
 ---
+import Link from "./Link.astro";
 import IngredientsList from "./IngredientsList.astro";
 import RecipeSidebarSection from "./RecipeSidebarSection.astro";
 
-import { Recipe } from '../utils/interfaces';
+import { Recipe } from '../../utils/interfaces';
 
 export interface Props {
     recipe: Recipe;
@@ -29,9 +30,9 @@ function getDomainName (url: string) {
         </RecipeSidebarSection>
         <RecipeSidebarSection title="Referencias">
             {
-                /* TODO: change to link component */
+                (recipe.references.length == 0) ? <p>Sin referencias</p> :
                 recipe.references.map((reference) => (
-                    <p class="text-xl text-orange-500 hover:text-orange-700"><a target="_blank" href={reference}>{getDomainName(reference)}</a></p>
+                    <Link target={"_blank"} icon={{name: 'ic:round-insert-link', side: 'left'}} text={getDomainName(reference)} href={reference} style={'primary'} />
                 ))
             }
         </RecipeSidebarSection>
@@ -41,10 +42,10 @@ function getDomainName (url: string) {
             </div>
         </RecipeSidebarSection>
         <RecipeSidebarSection title="Tags" border={false}>
-            <div class="mt-7">
+            <div class="mt-3">
                 {
                     recipe.tags.map((tag) => (
-                        <span class="bg-green-800 font-semibold text-white rounded px-3 py-2 mx-1 my-3">{tag}</span>
+                        <span class="inline-block bg-primary font-semibold text-white rounded px-3 py-2 mx-1 my-1 sm:my-3">{tag}</span>
                     ))
                 }
             </div>

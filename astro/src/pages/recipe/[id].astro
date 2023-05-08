@@ -3,11 +3,8 @@ import { getRecipe } from "./../../utils/api.js";
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import NotFoundLayout from "../../layouts/NotFoundLayout.astro";
-import Recipe from "../../components/Recipe.astro";
+import Recipe from "../../components/astro/Recipe.astro";
 
-/*
-import { setCache } from "../../utils/cache";
-*/
 const { id } = Astro.params;
 
 const recipe = await getRecipe(id);
@@ -15,10 +12,6 @@ const recipe = await getRecipe(id);
 if (!recipe) {
   Astro.response.status = 404;
 }
-
-/* TODO add cache
-setCache.short(Astro);
-*/
 ---
 
 {
