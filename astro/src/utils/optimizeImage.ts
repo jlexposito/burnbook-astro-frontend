@@ -19,7 +19,6 @@ export const srcSet = (widthSizes: Array<number>, url: string) : ImageSources =>
         'srcSet': '',
         'sizes': ''
     }
-    console.log(optimizeImages ? 'true':'false')
     if (optimizeImages != 1) {
         result['src'] = url
         return result
