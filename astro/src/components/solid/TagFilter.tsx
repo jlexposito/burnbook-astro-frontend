@@ -1,5 +1,10 @@
 import { useStore } from '@nanostores/solid';
-import { For, onMount, createSignal } from "solid-js";
+import { 
+    For,
+    onMount,
+    createSignal,
+    Show 
+ } from "solid-js";
 
 import { TagType } from "../../utils/interfaces";
 import { filterTags } from '../../utils/recipeStore';
@@ -10,29 +15,31 @@ export default function TagFilters(props: {tagsdata: Array<TagType>}) {
     const [tags, setTagsData] = createSignal([]);
     const $activeFilter = useStore(filterTags);
 
-
     onMount(() => {
-        const highlightedTags = props.tagsdata.filter((tag) => {return tag.highligthed});
+        const highlightedTags = props.tagsdata == null ? [] : 
+            props.tagsdata.filter((tag) => {return tag.highligthed});
         setTagsData(highlightedTags);
     });
 
 
-    function isActive(tagname: string): boolean {
+    const isActive = (tagname: string): boolean => {
         if ($activeFilter().length)
             return $activeFilter().indexOf(tagname) >= 0;
         return false;
     }
 
     return (
-     <>
-        <div class="fixed bottom-0 w-full last:pb-4">
-            <div class="filter tags justify-center flex gap-2">
-                <For each={tags()}> 
-                    {(tag) => <Tag active={isActive(tag.name)} tagname={tag.name} clearButton={false} />}
-                </For>
-                <Tag active={false} tagname={''} clearButton={true} />
+    <>
+        <Show when={(tags() && tags().length)}>
+            <div class="fixed bottom-0 w-full last:pb-4">
+                <div class="filter tags justify-center flex gap-2">
+                    <For each={tags()}> 
+                        {(tag) => <Tag active={isActive(tag.name)} tagname={tag.name} clearButton={false} />}
+                    </For>
+                    <Tag active={false} tagname={''} clearButton={true} />
+                </div>
             </div>
-        </div>
-     </>   
+        </Show>
+    </>   
     )
 }

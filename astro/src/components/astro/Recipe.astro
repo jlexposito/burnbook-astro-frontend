@@ -1,7 +1,8 @@
 ---
 import Markdoc from '@markdoc/markdoc';
 
-import { Recipe } from '../../utils/interfaces';
+import { ImageSources, Recipe } from '../../utils/interfaces';
+import { srcSet, getFilename } from "../../utils/optimizeImage.js";
 
 import RecipeSidebar from "./RecipeSidebar.astro";
 
@@ -15,20 +16,28 @@ let instructions = recipe.instructions;
 let instructionsHTML = "";
 const ast = Markdoc.parse(instructions);
 const content = Markdoc.transform(ast, /* config */);
-const noImage = import.meta.env.DEFAULT_IMAGE;
+const noImage = import.meta.env.PUBLIC_DEFAULT_IMAGE;
+
+const image = () : string => {
+    return recipe.image ? recipe.image : noImage
+}
+
+const imageSources = () : ImageSources => {
+    return srcSet([480, 720, 1080], image())
+}
 
 instructionsHTML = Markdoc.renderers.html(content);
 ---
 
 <div class="relative">
-    <img src={recipe.image ? recipe.image : noImage } class="w-full h-[128px] md:h-[256px] object-cover" alt={recipe.title}/>
+    <img src={imageSources().src } srcset={imageSources().srcSet} sizes={imageSources().sizes} class="w-full h-[128px] md:h-[256px] object-cover" alt={recipe.title}/>
     <div class="flex w-full h-full text-center text-white font-bold">
         <h1 style="z-index: 1;" class="px-7 text-4xl sm:text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2">{recipe.title}</h1>
         <div  class="overlay bg-black opacity-20 w-full h-full absolute top-0 left-0 right-0 bottom-0"></div>
     </div>
     
 </div>
-<div class="sm:grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-10 lg:gap-x-20 lg:px-20 py-12 px-12 xl:px-32 ">
+<div class="sm:grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-10 md:px-13 lg:gap-x-20 lg:px-15 py-12 px-12 xl:px-32 ">
     <div class="col-span-1 md:col-span-2">
         <Fragment set:html={instructionsHTML} />
     </div>

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const axiosClient = axios.create({
-    baseURL: 'https://burnbookapi.zh0nb.com',
+    baseURL: import.meta.env.PUBLIC_API,
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -16,9 +16,8 @@ export const axiosClient = axios.create({
         if (error.response) {
             // The request was made and the server responded with a status code
             // that falls out of the range of 2xx
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
+            console.log('==> RESPONSE\n', error.response.data);
+            console.log('==> RESPONSE HEADERS\n', error.response.headers);
           } else if (error.request) {
             // The request was made but no response was received
             // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
