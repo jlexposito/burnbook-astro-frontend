@@ -13,7 +13,6 @@ import RecipeCard from './RecipeCard';
 
 export default function Recipes(props: {recipesdata: Array<RecipeType>}) {
     const [recipes, setRecipesData] = createSignal([]);
-
     const $activeFilter = useStore(filterTags); 
 
     onMount(() => {

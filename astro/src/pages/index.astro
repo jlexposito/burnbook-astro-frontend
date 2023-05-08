@@ -4,7 +4,7 @@ import Layout from "../layouts/BaseLayout.astro";
 import TagFilters from "../components/solid/TagFilter";
 import RecipeGrid from "../components/solid/RecipeGrid.jsx";
 
-import { getRecipes, getTags } from "./../utils/api.js";
+import { getRecipes, getTags } from "./../utils/api";
 
 const recipes = await getRecipes();
 const tags = await getTags();
