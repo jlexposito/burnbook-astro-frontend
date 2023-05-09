@@ -21,7 +21,6 @@ export function updateTagFilter(tagname: string) {
     } else {
         filterTags.set([...filterTags.get(), tagname]);
     }
-    console.log(filterTags.get())
 }
 
 export function clearTagFilters() {
