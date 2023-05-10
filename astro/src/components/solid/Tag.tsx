@@ -15,7 +15,7 @@ export default function Tag(props: {active: boolean, tagname: string, clearButto
     }
 
     function activeClassName() {
-        return props.active ?  'active' : '';
+        return props.active ?  'active flex flex-row' : '';
     }
 
     return (
@@ -23,14 +23,14 @@ export default function Tag(props: {active: boolean, tagname: string, clearButto
         { props.clearButton ? 
             <button 
                 onClick={ ev => clearFilters(ev)}
-                class="tag"
+                class="tag bk-accent bk-accent-hover"
                 aria-label="Clear filters"
             >
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/></svg></span>
+                <span class=''><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/></svg></span>
             </button> : 
             <button
                 onClick={ ev => setFilter(props.tagname, ev)}
-                class={`${activeClassName()} tag`}
+                class={`${activeClassName()} tag bk-accent bk-accent-hover`}
             >
                 <Show when={props.active}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19L21 7l-1.41-1.41z"/></svg>

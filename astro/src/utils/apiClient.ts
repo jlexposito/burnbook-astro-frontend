@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 
-export const axiosClient = axios.create({
+export const axiosClient : AxiosInstance = axios.create({
     baseURL: import.meta.env.PUBLIC_API,
     headers: {
       'Accept': 'application/json',
@@ -12,7 +12,7 @@ export const axiosClient = axios.create({
     function (response) {
       return response.data;
     }, 
-    function (error) {
+    function (error) : null {
         if (error.response) {
             // The request was made and the server responded with a status code
             // that falls out of the range of 2xx

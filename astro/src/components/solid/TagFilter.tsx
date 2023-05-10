@@ -31,8 +31,8 @@ export default function TagFilters(props: {tagsdata: Array<TagType>}) {
     return (
     <>
         <Show when={(tags() && tags().length)}>
-            <div class="fixed bottom-0 w-full last:pb-4">
-                <div class="filter tags justify-center flex gap-2">
+            <div class="fixed bottom-0 w-full last:pb-1 last:md:pb-4">
+                <div class="filter tags items-center justify-center flex flex-row flex-wrap gap-2 gap-y-1">
                     <For each={tags()}> 
                         {(tag) => <Tag active={isActive(tag.name)} tagname={tag.name} clearButton={false} />}
                     </For>

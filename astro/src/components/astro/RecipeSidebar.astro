@@ -1,9 +1,9 @@
 ---
-import Link from "./Link.astro";
-import IngredientsList from "./IngredientsList.astro";
-import RecipeSidebarSection from "./RecipeSidebarSection.astro";
+import Link from "@astrocomponents/Link.astro";
+import IngredientsList from "@astrocomponents/IngredientsList.astro";
+import RecipeSidebarSection from "@astrocomponents/RecipeSidebarSection.astro";
 
-import { Recipe } from '../../utils/interfaces';
+import { Recipe } from '@utils/interfaces';
 
 export interface Props {
     recipe: Recipe;
@@ -11,17 +11,16 @@ export interface Props {
 
 const { recipe } = Astro.props;
 
-function getDomainName (url: string) {
+function getDomainName (url: string) : string {
     let domain_string = "";
     let domain = (new URL(url));
-    domain_string = domain.hostname.replace('www.','').replace('youtu.be', 'youtube');
-    return `${domain_string}`;
+    return domain.hostname.replace('www.','').replace('youtu.be', 'youtube');
 }
 
 ---
 
-<div class="mt-5 sm:m-0">
-    <div class="bg-white py-3 mb-12">
+<div class="mt-5 sm:m-0 shadow-md rounded-xl">
+    <div class="bg-white py-3 mb-12 rounded-lg border-2 border-opacity-40 border-secondary-dark">
         <RecipeSidebarSection title="Tiempo de preparación:">
             <span class="text-2xl">{recipe.cooking_time} m</span>
         </RecipeSidebarSection>
@@ -32,7 +31,7 @@ function getDomainName (url: string) {
             {
                 (recipe.references.length == 0) ? <p>Sin referencias</p> :
                 recipe.references.map((reference) => (
-                    <Link target={"_blank"} icon={{name: 'ic:round-insert-link', side: 'left'}} text={getDomainName(reference)} href={reference} style={'primary'} />
+                    <Link target={"_blank"} icon={{name: 'ic:round-insert-link', side: 'left'}} text={getDomainName(reference)} href={reference} style={'primary'} classes={"bk-accent bk-accent-hover"} />
                 ))
             }
         </RecipeSidebarSection>
@@ -45,7 +44,7 @@ function getDomainName (url: string) {
             <div class="mt-3">
                 {
                     recipe.tags.map((tag) => (
-                        <span class="inline-block bg-primary font-semibold text-white rounded px-3 py-2 mx-1 my-1 sm:my-3">{tag}</span>
+                        <span class="inline-block bg-primary text-white rounded px-3 py-2 mx-1 my-1 sm:my-3">{tag}</span>
                     ))
                 }
             </div>

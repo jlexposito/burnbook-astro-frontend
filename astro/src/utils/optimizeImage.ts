@@ -1,6 +1,4 @@
-import { file } from "@babel/types";
 import { ImageSources } from "./interfaces";
-import OptimizedImage from "../components/solid/OptimizedImage";
 
 const baseUrl = import.meta.env.PUBLIC_IMAGE_BASE;
 const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;

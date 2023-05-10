@@ -1,5 +1,5 @@
 ---
-import { Ingredient } from '../../utils/interfaces';
+import { Ingredient } from '@utils/interfaces';
 
 export interface Props {
     ingredients: Array<Ingredient>;
@@ -31,7 +31,6 @@ function getUnitTranslated(unit) {
         <div class="mb-4">
             <input 
                 type="checkbox"
-                class="w-4 h-4 rounded text-primary hover:cursor-pointer focus:ring-accent shadow"  
                 id={`ingredient-${index}`} 
                 name={ingredient.name} value={index}
             >
@@ -46,3 +45,9 @@ function getUnitTranslated(unit) {
 
 }
 </div>
+
+<style>
+.ingredient input[type="checkbox"] {
+    @apply w-4 h-4 rounded text-primary hover:cursor-pointer shadow active:ring-offset-2 focus:ring-secondary-dark-ring focus:ring-offset-2 focus-visible:outline focus-visible:outline-2
+}
+</style>

@@ -1,15 +1,11 @@
-import './RecipeCard.css';
+import '@solidcomponents/RecipeCard.css';
 
-import OptimizedImage from './OptimizedImage';
-import { Recipe } from '../../utils/interfaces';
+import OptimizedImage from '@solidcomponents/OptimizedImage';
+import { Recipe } from '@utils/interfaces';
 
-export default function RecipeCard(props: {recipe: Recipe | null}) {
+export default function RecipeCard(props: {recipe: Recipe | null, lazyLoad: boolean}) {
     const recipe = () : Recipe  => {
         return props.recipe
-    }
-    const imageFilename = () : string => {
-        // Divide string by / and get last part
-        return recipe().image.split("/").slice(-1).shift();
     }
     const getIngredientsString = () : string => {
         let ingredients_string = '';
@@ -36,7 +32,7 @@ export default function RecipeCard(props: {recipe: Recipe | null}) {
                             </div>
                         </div>
                         ) : (
-                        <OptimizedImage width="230" height="140" classes={'h-full min-w-full flex-1 object-cover'} altTitle={recipe().title} filename={recipe().image} widthSizes={[240]}/>
+                        <OptimizedImage lazyLoad={props.lazyLoad} width={230} height={140} classes={'h-full min-w-full flex-1 object-cover'} altTitle={recipe().title} filename={recipe().image} widthSizes={[240]}/>
                         )
                     }
                     </figure>
@@ -44,7 +40,7 @@ export default function RecipeCard(props: {recipe: Recipe | null}) {
                 <div class="col-span-2 flex flex-col justify-around px-2 py-3 sm:px-5 min-h-[170px] max-h-[220px] sm:min-h-full sm:h-[240px]">
                     <div>
                     <h2 class="line-clamp-2 tracking-tight font-sans text-2xl font-bold">{props.recipe.title}</h2>
-                    <div class="mt-4 text-accent mb-3 font-semibold">
+                    <div class="mt-4 text-secondary-contrast mb-3 font-semibold">
                         <span class="inline-block"><svg class="w-6 align-text-bottom  inline-block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg></span>
@@ -52,7 +48,7 @@ export default function RecipeCard(props: {recipe: Recipe | null}) {
                         </div>
                     </div>
                     <div>
-                    <p class="text-accent line-clamp-2 sm:line-clamp-3">{getIngredientsString()}</p>
+                    <p class="text-secondary-contrast line-clamp-2 sm:line-clamp-3">{getIngredientsString()}</p>
                     </div>
                 </div>
             </div>

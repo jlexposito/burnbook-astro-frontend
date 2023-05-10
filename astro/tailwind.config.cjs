@@ -1,17 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue, css}'],
 	theme: {
-		
 		extend: {
 			colors: {
-				'primary': '#0b4141',
-				'secondary': '#f2d349',
-				'accent': '#ff6864',
-				'accent-dark': '#c10015',
-				'positive': '#21ba45',
-				'negative': '#c10015',
-				'dark': '#006a71',
+				'primary': '#541802',
+				'secondary': '#DFB09F',
+				'secondary': '#DFB09F',
+				'secondary-dark': '#E0A189',
+				'secondary-dark-ring': '#E17D50',
+				'secondary-contrast': '#541802',
 			},
 		},
 	},
@@ -20,7 +18,7 @@ module.exports = {
 		require("@tailwindcss/forms"),
 		function ({ addComponents, theme }) {
 			addComponents({
-			  '.btn': {
+			  '.bk-acent': {
 				padding: theme('spacing.4'),
 				margin: 'auto'
 			  }

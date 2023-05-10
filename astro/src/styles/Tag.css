@@ -1,5 +1,5 @@
 .tag {
-    @apply inline-block bg-accent text-sm hover:ring-accent-dark  hover:bg-accent-dark active:bg-accent-dark hover:ring-2 hover:cursor-pointer px-3 py-2 rounded-full text-white
+    @apply inline-block hover:cursor-pointer px-3 py-2 rounded-full 
 }
 
 .tag svg {

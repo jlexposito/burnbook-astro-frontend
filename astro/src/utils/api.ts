@@ -1,5 +1,5 @@
-import { axiosClient } from "./apiClient";
-import { Recipe, Tag } from "./interfaces";
+import { axiosClient } from "@utils/apiClient";
+import { Recipe, Tag } from "@utils/interfaces";
 
 //TODO: use interfaces to ensure types
 export function getRecipes() : Recipe[]|null {

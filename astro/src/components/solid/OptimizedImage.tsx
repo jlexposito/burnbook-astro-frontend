@@ -3,8 +3,8 @@ import {
   mergeProps
 } from "solid-js";
 
-import { srcSet } from '../../utils/optimizeImage';
-import { ImageSources } from "../../utils/interfaces";
+import { srcSet } from '@utils/optimizeImage';
+import { ImageSources } from "@utils/interfaces";
 
 const OptimizedImage: Component<{
     widthSizes: Array<number>,
@@ -12,18 +12,29 @@ const OptimizedImage: Component<{
     altTitle: string,
     width: number,
     height: number,
-    classes: string
+    classes: string,
+    lazyLoad: boolean
 }> = (props) => {
     props = mergeProps({
         classes: '',
+        lazyLoad: false,
     }, props);
 
     const imageSources = (): ImageSources => {
         return srcSet(props.widthSizes, props.filename);
     }
-  
+
     return (
-        <img class={props.classes} width={props.width} height={props.height} src={imageSources().src} srcset={imageSources().srcSet} sizes={imageSources().sizes} alt={props.altTitle}/> 
+        <img 
+            class={props.classes} 
+            width={props.width} 
+            height={props.height} 
+            src={imageSources().src} 
+            srcset={imageSources().srcSet} 
+            sizes={imageSources().sizes} 
+            loading={props.lazyLoad ? 'lazy':'eager'}
+            alt={props.altTitle}
+        /> 
     )
   ;
 };

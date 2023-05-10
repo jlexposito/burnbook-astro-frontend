@@ -1,10 +1,10 @@
 ---
 import Markdoc from '@markdoc/markdoc';
 
-import { ImageSources, Recipe } from '../../utils/interfaces';
-import { srcSet, getFilename } from "../../utils/optimizeImage.js";
+import { ImageSources, Recipe } from '@utils/interfaces';
+import { srcSet } from "@utils/optimizeImage.js";
 
-import RecipeSidebar from "./RecipeSidebar.astro";
+import RecipeSidebar from "@astrocomponents/RecipeSidebar.astro";
 
 export interface Props {
     recipe: Recipe;
@@ -32,7 +32,7 @@ instructionsHTML = Markdoc.renderers.html(content);
 <div class="relative">
     <img src={imageSources().src } srcset={imageSources().srcSet} sizes={imageSources().sizes} class="w-full h-[128px] md:h-[256px] object-cover" alt={recipe.title}/>
     <div class="flex w-full h-full text-center text-white font-bold">
-        <h1 style="z-index: 1;" class="px-7 text-4xl sm:text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2">{recipe.title}</h1>
+        <h1 class="z-10 px-7 text-4xl sm:text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2">{recipe.title}</h1>
         <div  class="overlay bg-black opacity-20 w-full h-full absolute top-0 left-0 right-0 bottom-0"></div>
     </div>
     
