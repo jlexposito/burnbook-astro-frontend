@@ -10,6 +10,8 @@ const OptimizedImage: Component<{
     widthSizes: Array<number>,
     filename: string,
     altTitle: string,
+    width: number,
+    height: number,
     classes: string
 }> = (props) => {
     props = mergeProps({
@@ -21,7 +23,7 @@ const OptimizedImage: Component<{
     }
   
     return (
-        <img class={props.classes} src={imageSources().src} srcset={imageSources().srcSet} sizes={imageSources().sizes} alt={props.altTitle}/> 
+        <img class={props.classes} width={props.width} height={props.height} src={imageSources().src} srcset={imageSources().srcSet} sizes={imageSources().sizes} alt={props.altTitle}/> 
     )
   ;
 };

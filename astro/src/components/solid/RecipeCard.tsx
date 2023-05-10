@@ -36,7 +36,7 @@ export default function RecipeCard(props: {recipe: Recipe | null}) {
                             </div>
                         </div>
                         ) : (
-                        <OptimizedImage classes={'h-full min-w-full flex-1 object-cover'} altTitle={recipe().title} filename={recipe().image} widthSizes={[320]}/>
+                        <OptimizedImage width="230" height="140" classes={'h-full min-w-full flex-1 object-cover'} altTitle={recipe().title} filename={recipe().image} widthSizes={[240]}/>
                         )
                     }
                     </figure>

@@ -24,7 +24,7 @@ export default function Tag(props: {active: boolean, tagname: string, clearButto
             <button 
                 onClick={ ev => clearFilters(ev)}
                 class="tag"
-                aria-aria-label="Clear filters"
+                aria-label="Clear filters"
             >
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/></svg></span>
             </button> : 
