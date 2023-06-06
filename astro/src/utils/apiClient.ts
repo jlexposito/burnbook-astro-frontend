@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
 export const axiosClient : AxiosInstance = axios.create({
-    baseURL: import.meta.env.PUBLIC_API,
+    baseURL: import.meta.env.PUBLIC_API ? import.meta.env.PUBLIC_API : 'https://burnbookapi.zh0nb.com/',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'

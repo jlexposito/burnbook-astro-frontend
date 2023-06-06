@@ -2,14 +2,14 @@ import { axiosClient } from "@utils/apiClient";
 import { Recipe, Tag } from "@utils/interfaces";
 
 //TODO: use interfaces to ensure types
-export function getRecipes() : Recipe[]|null {
+export function getRecipes() : Promise<Recipe[]>|null {
     return axiosClient.get('/recipes/');
 }
 
-export function getRecipe(id) : Recipe|null {
+export function getRecipe(id : number) : Promise<Recipe>|null {
   return axiosClient.get(`/recipes/${id}/`);
 }
 
-export function getTags() : Tag[]|null {
+export function getTags() : Promise<Tag[]>|null {
   return axiosClient.get(`/tags/`);
 }
