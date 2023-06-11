@@ -9,6 +9,7 @@
       "@astrocomponents/*": ["src/components/astro/*"],
       "@layouts/*": ["src/layouts/*"],
       "@utils/*": ["src/utils/*"],
+      "@styles/*": ["src/styles/*"],
     }
   }
 }

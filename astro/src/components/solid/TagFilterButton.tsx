@@ -1,8 +1,8 @@
-import '../../styles/Tag.css'
+import '@styles/Tag.css'
 
 import { Show } from "solid-js";
 
-import { clearTagFilters, updateTagFilter } from '../../utils/recipeStore.js';
+import { clearTagFilters, updateTagFilter } from '@utils/recipeStore.js';
 
 
 export default function Tag(props: {active: boolean, tagname: string, clearButton: boolean}) {

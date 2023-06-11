@@ -12,7 +12,6 @@ export interface Props {
 const { recipe } = Astro.props;
 
 function getDomainName (url: string) : string {
-    let domain_string = "";
     let domain = (new URL(url));
     return domain.hostname.replace('www.','').replace('youtu.be', 'youtube');
 }
@@ -37,7 +36,7 @@ function getDomainName (url: string) : string {
         </RecipeSidebarSection>
         <RecipeSidebarSection title="Ingredientes" >
             <div class="text-left">
-                <IngredientsList ingredients={recipe.ingredients} />
+                <IngredientsList RecipeIngredients={recipe.ingredients} />
             </div>
         </RecipeSidebarSection>
         <RecipeSidebarSection title="Tags" border={false}>

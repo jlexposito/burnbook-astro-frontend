@@ -6,12 +6,12 @@ import {
     Show 
  } from "solid-js";
 
-import { TagType } from "../../utils/interfaces";
-import { filterTags } from '../../utils/recipeStore';
-import Tag from './Tag';
+import { Tag } from "@utils/interfaces";
+import { filterTags } from '@utils/recipeStore';
+import TagFilterButton from '@solidcomponents/TagFilterButton';
 
 
-export default function TagFilters(props: {tagsdata: Array<TagType>}) {
+export default function TagFilters(props: {tagsdata: Array<Tag>}) {
     const [tags, setTagsData] = createSignal([]);
     const $activeFilter = useStore(filterTags);
 
@@ -34,9 +34,9 @@ export default function TagFilters(props: {tagsdata: Array<TagType>}) {
             <div class="fixed bottom-0 w-full last:pb-1 last:md:pb-4">
                 <div class="filter tags items-center justify-center flex flex-row flex-wrap gap-2 gap-y-1">
                     <For each={tags()}> 
-                        {(tag) => <Tag active={isActive(tag.name)} tagname={tag.name} clearButton={false} />}
+                        {(tag) => <TagFilterButton active={isActive(tag.name)} tagname={tag.name} clearButton={false} />}
                     </For>
-                    <Tag active={false} tagname={''} clearButton={true} />
+                    <TagFilterButton active={false} tagname={''} clearButton={true} />
                 </div>
             </div>
         </Show>

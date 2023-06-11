@@ -1,16 +1,16 @@
 import '@solidcomponents/RecipeCard.css';
 
 import OptimizedImage from '@solidcomponents/OptimizedImage';
-import { Recipe } from '@utils/interfaces';
+import { RecipeInterface } from '@utils/interfaces';
 
-export default function RecipeCard(props: {recipe: Recipe | null, lazyLoad: boolean}) {
-    const recipe = () : Recipe  => {
+export default function RecipeCard(props: {recipe: RecipeInterface | null, lazyLoad: boolean}) {
+    const recipe = () : RecipeInterface  => {
         return props.recipe
     }
     const getIngredientsString = () : string => {
         let ingredients_string = '';
         recipe().ingredients.forEach((element, index: number) => {
-            let name = element.name.toLowerCase()
+            let name = element.ingredient.name.toLowerCase()
             if (index == 0)
                 ingredients_string = name;
             else

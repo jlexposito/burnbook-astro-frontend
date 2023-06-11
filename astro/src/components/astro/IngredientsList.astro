@@ -1,44 +1,50 @@
 ---
-import { Ingredient } from '@utils/interfaces';
+import { RecipeIngredient } from '@utils/interfaces';
 
 export interface Props {
-    ingredients: Array<Ingredient>;
+    RecipeIngredients: Array<RecipeIngredient>;
 }
 
-const { ingredients = [] } = Astro.props;
+const { RecipeIngredients = [] } = Astro.props;
 
 function getUnitTranslated(unit) {
     let translateUnit = '';
-    switch(unit) {
-    case "tablespoon":
-        translateUnit = "tbsp";
-        break;
-    case "unit":
-        translateUnit = "";
-        break;
-    default:
-        translateUnit = unit;
-        break
+        switch(unit) {
+        case "tablespoon":
+            translateUnit = "tbsp";
+            break;
+        case "unit":
+            translateUnit = "";
+            break;
+        default:
+            translateUnit = unit;
+            break
     }
     return translateUnit;
+}
+function prefix(recipeIngredient: RecipeIngredient) {
+    return recipeIngredient.ingredient.prefix
+}
+function name(recipeIngredient: RecipeIngredient) {
+    return recipeIngredient.ingredient.name
 }
 ---
 
 
 <div class="ingredient text-lg">
 {
-    ingredients.map((ingredient, index) =>(
+    RecipeIngredients.map((RecipeIngredient, index) =>(
         <div class="mb-4">
             <input 
                 type="checkbox"
                 id={`ingredient-${index}`} 
-                name={ingredient.name} value={index}
+                name={RecipeIngredient.ingredient.name} value={index}
             >
             <label 
                 class="ml-1 hover:cursor-pointer" 
                 for={`ingredient-${index}`}
             >
-            {ingredient.quantity} {getUnitTranslated(ingredient.unit)} {ingredient.prefix} {ingredient.name}
+            {RecipeIngredient.quantity} {getUnitTranslated(RecipeIngredient.unit)} {prefix(RecipeIngredient)} {name(RecipeIngredient)}
             </label>
         </div>
     ))

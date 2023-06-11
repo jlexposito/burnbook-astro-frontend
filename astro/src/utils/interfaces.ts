@@ -1,14 +1,7 @@
-export interface Ingredient {
-    name: string;
-    quantity: number;
-    unit: string;
-    prefix: string;
-}
-
-export interface Recipe {
+export interface RecipeInterface {
     id: number;
     title: string;
-    ingredients: Array<Ingredient>;
+    ingredients: Array<RecipeIngredient>;
     servings: number;
     image: string;
     cooking_time: number;
@@ -17,17 +10,21 @@ export interface Recipe {
     tags: Array<string>;
 }
 
-export type IngredientType = {
+export type Ingredient = {
     name: string;
-    quantity: number;
-    unit: string;
     prefix: string;
 }
 
-export type RecipeType = {
+export type RecipeIngredient = {
+    quantity: number;
+    unit: string;
+    ingredient: Ingredient;
+}
+
+export type Recipe = {
     id: number;
     title: string;
-    ingredients: Array<IngredientType>;
+    ingredients: Array<RecipeIngredient>;
     servings: number;
     image: string;
     cooking_time: number;
@@ -35,13 +32,13 @@ export type RecipeType = {
     references: Array<string>;
     tags: Array<string>;
 }
-export interface Tag {
+export interface TagInterface {
     id: number;
     name: string;
     highligthed: boolean;
 }
 
-export type TagType = {
+export type Tag = {
     id: number;
     name: string;
     highligthed: boolean;
