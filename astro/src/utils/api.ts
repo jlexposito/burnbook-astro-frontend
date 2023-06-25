@@ -6,7 +6,7 @@ export function getRecipes() : Promise<Recipe[]>|null {
     return axiosClient.get('/recipes/');
 }
 
-export function getRecipe(id : number) : Promise<Recipe>|null {
+export function getRecipe(id : String) : Promise<Recipe>|null {
   return axiosClient.get(`/recipes/${id}/`);
 }
 

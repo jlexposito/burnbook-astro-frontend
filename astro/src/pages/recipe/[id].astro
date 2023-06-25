@@ -1,17 +1,20 @@
 ---
-import { getRecipe } from "./../../utils/api.js";
+import { getRecipe } from "@utils/api.js";
+import { setCache } from "@utils/cache.js";
 
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import NotFoundLayout from "../../layouts/NotFoundLayout.astro";
-import Recipe from "../../components/astro/Recipe.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import NotFoundLayout from "@layouts/NotFoundLayout.astro";
+import Recipe from "@astrocomponents/Recipe.astro";
 
 const { id } = Astro.params;
-
 const recipe = await getRecipe(id);
 
 if (!recipe) {
   Astro.response.status = 404;
+} else {
+  setCache.long(Astro);
 }
+
 ---
 
 {

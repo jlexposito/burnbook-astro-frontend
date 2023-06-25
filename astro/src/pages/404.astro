@@ -1,6 +1,10 @@
 ---
-import NotFoundLayout from "../layouts/NotFoundLayout.astro";
+import NotFoundLayout from "@layouts/NotFoundLayout.astro";
 Astro.response.status = 404;
+
+import { setCache } from "@utils/cache.js";
+// 604800 = 7 days
+setCache.custom(Astro, 604800, 120);
 
 ---
 

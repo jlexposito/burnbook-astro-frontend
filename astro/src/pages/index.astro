@@ -4,10 +4,13 @@ import Layout from "@layouts/BaseLayout.astro";
 import TagFilters from "@solidcomponents/TagFilter";
 import RecipeGrid from "@solidcomponents/RecipeGrid";
 
+import { setCache } from "@utils/cache.js";
 import { getRecipes, getTags } from "./../utils/api";
 
 const recipes = await getRecipes();
 const tags = await getTags();
+
+setCache.short(Astro);
 
 ---
 
