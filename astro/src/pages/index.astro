@@ -10,7 +10,9 @@ import { getRecipes, getTags } from "./../utils/api";
 const recipes = await getRecipes();
 const tags = await getTags();
 
-setCache.short(Astro);
+if (recipes) {
+    setCache.short(Astro);
+}
 
 ---
 
