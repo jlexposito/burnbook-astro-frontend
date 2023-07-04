@@ -23,7 +23,7 @@ const image = () : string => {
 }
 
 const imageSources = () : ImageSources => {
-    return srcSet([480, 720, 1080], image())
+    return srcSet([480, 720, 1080], image(), 'webp')
 }
 
 instructionsHTML = Markdoc.renderers.html(content);

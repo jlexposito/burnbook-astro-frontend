@@ -21,7 +21,7 @@ const OptimizedImage: Component<{
     }, props);
 
     const imageSources = (): ImageSources => {
-        return srcSet(props.widthSizes, props.filename);
+        return srcSet(props.widthSizes, props.filename, 'webp');
     }
 
     return (

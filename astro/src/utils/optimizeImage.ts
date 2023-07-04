@@ -2,16 +2,22 @@ import { ImageSources } from "./interfaces";
 
 const baseUrl = import.meta.env.PUBLIC_IMAGE_BASE;
 const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
+const baseCDNUrl = baseUrl + (baseUrl.endsWith("/") ? "" : "/")
 
 export const getFilename = (url: string): string => {
     return url.split("/").slice(-1).shift();
 }
-export const imgSrc = (filename:string, width:number) : string => {
-    let url = baseUrl + (baseUrl.endsWith("/") ? "" : "/")
-    return `${url}pipeline?file=${filename}&operations=[{"operation":"convert","params":{"type":"jpeg"}},{"operation":"resize","params":{"width":${width},"type":"webp"}}]`
+export const imgSrc = (filename: string, width: number, format: string) : string => {
+    // Resize operation
+    let url = `${baseCDNUrl}resize?file=${filename}&width=${width}`
+    // convert image to the desired format
+    if (!filename.endsWith(format)) {
+        url += `&type=${format}`
+    }
+    return url
 }
 
-export const srcSet = (widthSizes: Array<number>, url: string) : ImageSources => {
+export const srcSet = (widthSizes: Array<number>, url: string, format: string) : ImageSources => {
     let result = {
         'src': '',
         'srcSet': '',
@@ -39,7 +45,7 @@ export const srcSet = (widthSizes: Array<number>, url: string) : ImageSources =>
         biggestRes = sortedWidthSizes.slice(-1).shift()
         sortedWidthSizes.forEach((size, index) => {
             // See format in https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-            let srcSet = `${imgSrc(filename, size)} ${size}w` 
+            let srcSet = `${imgSrc(filename, size, format)} ${size}w` 
             srcSets.push(srcSet)
             let querySize = ''
             if (index == sortedWidthSizes.length - 1) {
@@ -50,7 +56,7 @@ export const srcSet = (widthSizes: Array<number>, url: string) : ImageSources =>
             sizes.push(querySize)
         })
     }
-    result['src'] = imgSrc(filename, biggestRes)
+    result['src'] = imgSrc(filename, biggestRes, format)
     result['srcSet'] = srcSets.join(', ')
     result['sizes'] = sizes.join(', ')
     
