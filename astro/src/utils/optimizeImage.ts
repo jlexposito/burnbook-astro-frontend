@@ -8,7 +8,7 @@ export const getFilename = (url: string): string => {
 }
 export const imgSrc = (filename:string, width:number) : string => {
     let url = baseUrl + (baseUrl.endsWith("/") ? "" : "/")
-    return `${url}pipeline?file=${filename}&operations=[{"operation":"convert","params":{"type":"jpeg"}},{"operation":"resize","params":{"width":${width},"type":"jpeg"}}]`
+    return `${url}pipeline?file=${filename}&operations=[{"operation":"convert","params":{"type":"jpeg"}},{"operation":"resize","params":{"width":${width},"type":"webp"}}]`
 }
 
 export const srcSet = (widthSizes: Array<number>, url: string) : ImageSources => {
