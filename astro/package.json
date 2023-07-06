@@ -1,7 +1,7 @@
 {
   "name": "burnbook-frontend",
   "type": "module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -17,8 +17,8 @@
     "@markdoc/markdoc": "^0.3.0",
     "@nanostores/solid": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
-    "astro": "^2.7.3",
-    "astro-compress": "^1.1.48",
+    "astro": "^2.8.0",
+    "astro-compress": "^1.1.49",
     "astro-icon": "^0.8.1",
     "axios": "^1.4.0",
     "nanostores": "^0.9.3",
