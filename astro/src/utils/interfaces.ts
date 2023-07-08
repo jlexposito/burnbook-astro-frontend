@@ -49,3 +49,13 @@ export type ImageSources = {
     srcSet: string,
     sizes: string
 }
+export enum NotificationType {
+    success = 'success',
+    error = 'error',
+    warning = 'warning',
+}
+
+export type Notification = {
+    type: NotificationType,
+    message: string
+}

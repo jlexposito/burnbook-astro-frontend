@@ -9,10 +9,10 @@ import {
     Show 
 } from "solid-js";
 
-import { RecipeType } from '@utils/interfaces';
+import { RecipeInterface } from '@utils/interfaces';
 import RecipeCard from '@solidcomponents/RecipeCard';
 
-export default function Recipes(props: {recipesdata: Array<RecipeType> | null}) {
+export default function Recipes(props: {recipesdata: Array<RecipeInterface> | null}) {
     const [recipes, setRecipesData] = createSignal([]);
     const $activeFilter = useStore(filterTags); 
 
@@ -20,7 +20,7 @@ export default function Recipes(props: {recipesdata: Array<RecipeType> | null}) 
         setRecipesData(props.recipesdata);
     })
 
-    function isVisible(recipe: RecipeType) {
+    function isVisible(recipe: RecipeInterface) {
         if (!$activeFilter().length)
             return true
         return $activeFilter().some(r=> recipe.tags.includes(r))
