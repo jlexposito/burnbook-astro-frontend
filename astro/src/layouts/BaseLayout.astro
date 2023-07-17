@@ -1,6 +1,4 @@
 ---
-import Notifications from '@solidcomponents/Notifications';
-
 export interface Props {
 	title: string;
 }
@@ -29,7 +27,6 @@ const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 	<body class="">
 		<div class="antialiased relative">
 			<slot />
-			<Notifications client:load />
 		</div>
 	</body>
 </html>
