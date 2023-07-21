@@ -3,7 +3,7 @@ export interface RecipeInterface {
     title: string;
     ingredients: Array<RecipeIngredient>;
     servings: number;
-    image: string;
+    image?: string;
     cooking_time: number;
     instructions: string;
     references: Array<string>;

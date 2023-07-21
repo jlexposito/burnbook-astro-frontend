@@ -6,7 +6,9 @@
     "baseUrl": ".",
     "paths": {
       "@solidcomponents/*": ["src/components/solid/*"],
+      "@solidstyles/*": ["src/components/solid/styles/*"],
       "@astrocomponents/*": ["src/components/astro/*"],
+      "@stores/*": ["src/stores/*"],
       "@layouts/*": ["src/layouts/*"],
       "@utils/*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],

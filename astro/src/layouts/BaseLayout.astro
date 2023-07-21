@@ -1,15 +1,19 @@
 ---
 export interface Props {
 	title: string;
+	pagename: string;
 }
 
-const { title } = Astro.props;
+const { 
+	title,
+	pagename
+} = Astro.props;
 const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 
 ---
 
 <!DOCTYPE html>
-<html lang="es" class="bg-theme-background">
+<html lang="es" class={"bg-theme-background " + pagename}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -35,6 +39,9 @@ const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 		font-family: system-ui, sans-serif;
 		background-color: #faf0dc;
 		@apply pb-20 md:pb-10
+	}
+	html.newrecipe {
+		padding-bottom: 0;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,

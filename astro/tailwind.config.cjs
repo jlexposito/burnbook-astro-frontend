@@ -14,13 +14,14 @@ module.exports = {
 		},
 	},
 	plugins: [
+		require("tailwindcss/nesting"),
 		require("@tailwindcss/forms"),
 		function ({ addComponents, theme }) {
 			addComponents({
-			  '.bk-acent': {
+			  '.btn': {
 				padding: theme('spacing.4'),
-				margin: 'auto'
-			  }
+				margin: 'auto',
+			  },
 			})
 		  }
 	],

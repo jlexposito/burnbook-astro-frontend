@@ -1,0 +1,24 @@
+.autofill-select.solid-select-container {
+    width: 100%;
+    @apply mb-3;
+}
+.autofill-select .solid-select-control {
+    border: none;
+    padding: 0;
+    @apply appearance-none  bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight  focus:bg-white focus:border-gray-500 mb-0
+}
+.autofill-select input {
+    @apply block w-full focus:outline-none focus:ring-0
+}
+.autofill-select .solid-select-list {
+    background-color: #fff;
+    margin-top: 0;
+}
+
+.autofill-select .solid-select-option:hover {
+    @apply hover:bg-secondary-dark hover:ring-2 hover:ring-secondary-contrast;
+
+}
+.autofill-select .solid-select-option[data-focused=true] {
+    @apply bg-secondary-dark hover:ring-2 hover:ring-secondary-contrast;
+}

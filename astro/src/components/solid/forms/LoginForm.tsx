@@ -1,7 +1,11 @@
-import { apiTokens, setApiTokens } from '@utils/apiStore'
 import { createSignal } from "solid-js";
+
+//Components
 import { toaster } from "@kobalte/core";
-import ToastNotification from './ToastNotification';
+import ToastNotification from '@solidcomponents/ToastNotification';
+
+//Stores
+import { $tokens, updateTokens } from '@stores/apiStore'
 
 
 export default function LoginForm() {
@@ -15,13 +19,15 @@ export default function LoginForm() {
     xhr.setRequestHeader("Content-Type", "application/json");
     let jsonData = JSON.stringify({ username: username, password: password });
 
+    alert($tokens);
+
     //send the form data
     xhr.send(jsonData);
     xhr.onreadystatechange = function () {
       if (xhr.readyState == XMLHttpRequest.DONE) {
         if (xhr.status == 200) {
           let tokens = JSON.parse(xhr.response);
-          setApiTokens(tokens);
+          updateTokens(tokens);
           window.location.replace("/recipe/newrecipe");
         } else if (xhr.status == 401) {
           id = toaster.show((props) => (

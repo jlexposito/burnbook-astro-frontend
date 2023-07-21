@@ -7,7 +7,7 @@ import {
  } from "solid-js";
 
 import { Tag } from "@utils/interfaces";
-import { filterTags } from '@utils/recipeStore';
+import { filterTags } from '@stores/recipeStore';
 import TagFilterButton from '@solidcomponents/TagFilterButton';
 
 

@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/solid';
-import { filterTags } from '@utils/recipeStore';
+import { filterTags } from '@stores/recipeStore';
 import { isMobileDevice } from '@utils/mobileHelper';
 
 import { 

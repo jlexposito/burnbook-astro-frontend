@@ -10,5 +10,5 @@ export default defineConfig({
   integrations: [solidJs(), tailwind(), compress()],
   adapter: node({
     mode: "standalone"
-  })
+  }),
 });
