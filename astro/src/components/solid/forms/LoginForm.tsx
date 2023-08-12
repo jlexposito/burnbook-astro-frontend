@@ -19,8 +19,6 @@ export default function LoginForm() {
     xhr.setRequestHeader("Content-Type", "application/json");
     let jsonData = JSON.stringify({ username: username, password: password });
 
-    alert($tokens);
-
     //send the form data
     xhr.send(jsonData);
     xhr.onreadystatechange = function () {
@@ -57,7 +55,7 @@ export default function LoginForm() {
         <div>
           <label
             for="username"
-            class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="cursor-pointer block mb-2 text-sm font-medium text-gray-900"
           >
             Username
           </label>
@@ -65,7 +63,7 @@ export default function LoginForm() {
             type="text"
             name="username"
             id="email"
-            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
             placeholder="username"
             onChange={(e) => {
               setUsername(e.target.value);
@@ -76,7 +74,7 @@ export default function LoginForm() {
         <div>
           <label
             for="password"
-            class="cursor-pointer block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="cursor-pointer block mb-2 text-sm font-medium text-gray-900"
           >
             Password
           </label>
@@ -85,7 +83,7 @@ export default function LoginForm() {
             name="password"
             id="password"
             placeholder="••••••••"
-            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
@@ -95,7 +93,7 @@ export default function LoginForm() {
 
         <button
           type="submit"
-          class="w-full bk-accent bk-accent-hover text-white border border-bk-accent-dark focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700"
+          class="w-full bk-accent bk-accent-hover text-white border border-bk-accent-dark focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         >
           Sign in
         </button>

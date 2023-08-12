@@ -13,6 +13,7 @@
 .autofill-select .solid-select-list {
     background-color: #fff;
     margin-top: 0;
+    z-index: 10;
 }
 
 .autofill-select .solid-select-option:hover {

@@ -5,6 +5,7 @@ const LabelComponent: Component<{
     label: string;
     id: string;
     classes?: string;
+    required?: boolean;
 }> = (props) => {
   const merged = mergeProps(
     {
@@ -13,13 +14,18 @@ const LabelComponent: Component<{
     },
     props
   );
+  const required = props.required || false
+  let label = props.label
+  if (required)
+    label = `${label} *`
+  
   return (
     <>
       <label
         class={merged.classes}
         for={props.id}
       >
-        {props.label}
+        {label}
       </label>
     </>
   );

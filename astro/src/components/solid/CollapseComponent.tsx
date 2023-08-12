@@ -1,6 +1,6 @@
-import { JSX, Component } from "solid-js";
+import '@styles/CollapseComponent.css'
 
-import { createSignal } from "solid-js";
+import { JSX, Component, createSignal } from "solid-js";
 import { Collapse } from "solid-collapse";
 
 const CollapseComponent: Component<{
@@ -16,6 +16,10 @@ const CollapseComponent: Component<{
     event.preventDefault();
     setIsExpanded(!isExpanded());
   };
+  let classes = 'CollapseTransition'
+  if (props.classes) {
+    classes = `${classes} ${props.classes}`
+  }
 
   return (
     <div
@@ -27,26 +31,31 @@ const CollapseComponent: Component<{
       <div class="title" onClick={toggleExpanded}>
         <button
           class={props.titleClasses ? props.titleClasses : "toggleButton"}
-          onClick={(event) => {event.preventDefault();}}
+          onClick={(event) => {
+            event.preventDefault();
+          }}
         >
           {props.title}
         </button>
-        <svg
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
-        >
-          <path
+        <span class="ChevronButton hover:cursor-pointer">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 1 4 4 4-4"
-          />
-        </svg>
+            style="transition:transform 200ms ease-out;"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
       </div>
-      <Collapse value={isExpanded()} class="my-transition">
+      <Collapse value={isExpanded()} class={ classes }>
         {props.children}
       </Collapse>
     </div>

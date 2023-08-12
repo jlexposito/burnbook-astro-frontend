@@ -49,3 +49,12 @@ export type ImageSources = {
     srcSet: string,
     sizes: string
 }
+
+export type Unit = {
+    name: string;
+}
+
+export type Option = {
+    name: string;
+    label?: string;
+};

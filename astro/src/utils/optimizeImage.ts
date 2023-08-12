@@ -1,6 +1,6 @@
 import { ImageSources } from "./interfaces";
 
-const baseUrl = import.meta.env.PUBLIC_IMAGE_BASE;
+const baseUrl = import.meta.env.PUBLIC_IMAGE_BASE || '';
 const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 const baseCDNUrl = baseUrl + (baseUrl.endsWith("/") ? "" : "/")
 
