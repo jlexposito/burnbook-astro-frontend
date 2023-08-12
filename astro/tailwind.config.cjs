@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'primary': '#541802',
-				'secondary': '#DFB09F',
+				'primary-accent': '#722103',
 				'secondary': '#DFB09F',
 				'secondary-dark': '#E0A189',
 				'secondary-dark-ring': '#E17D50',
@@ -14,7 +14,6 @@ module.exports = {
 		},
 	},
 	plugins: [
-		require("tailwindcss/nesting"),
 		require("@tailwindcss/forms"),
 		function ({ addComponents, theme }) {
 			addComponents({
