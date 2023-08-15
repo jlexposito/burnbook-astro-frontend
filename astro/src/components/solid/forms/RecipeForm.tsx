@@ -5,6 +5,7 @@ import {
   JSX,
   For,
   Component,
+  createEffect
 } from "solid-js";
 import { isServer } from "solid-js/web";
 
@@ -29,12 +30,25 @@ export default function RecipeForm() {
   const nameValue = useStore(name);
   */
 
-  const [ingredientOptions] = createResource(getIngredients);
+  const [existingIngredients] = createResource(getIngredients);
   const [unitOptions] = createResource(getUnits);
+
+  const [ingredientOptions, setIngredientOptios] = createSignal([])
+
+  createEffect((prevA) => {
+    // do something with `a` and `prevA`
+    let options = []
+    existingIngredients()?.forEach((opt, _)=> options.push(opt.name))
+    if (options !== prevA) {
+      console.log('Changed')
+      console.log(options)
+      setIngredientOptios(options)
+    }
+  }, []);
 
   const ingredientFormElement = () => (
     <RecipeIngredientForm
-      options={ingredientOptions()}
+      options={ingredientOptions}
       unitOptions={unitOptions()}
     />
   );
@@ -86,8 +100,11 @@ export default function RecipeForm() {
 
   const handleSubmit = (event: Event): void => {
     let recipeData: RecipeInterface;
+    console.log(ingredients());
+    console.log(ingredients()[0]);
+
     // TODO: migrate to solidJS way
-    // event.preventDefault();
+    event.preventDefault();
   };
   return (
     <>
@@ -96,7 +113,7 @@ export default function RecipeForm() {
         class="space-y-4 md:space-y-6"
         method="post"
         onsubmit={handleSubmit}
-        action="http://localhost:8100/recipes/"
+        action="http://localhost:8200/recipes/"
       >
         <div class="p-3 py-5 md:space-y-3 sm:p-8">
           <div class="flex flex-wrap -mx-3">
@@ -140,7 +157,7 @@ export default function RecipeForm() {
             >
               <div class="[& .ingredient-form]:border-2 border-solid">
                 <Show
-                  when={!ingredientOptions.loading && !unitOptions.loading}
+                  when={!existingIngredients.loading && !unitOptions.loading}
                   fallback={
                     <>
                       <p class="py-12 text-center">Loading options...</p>

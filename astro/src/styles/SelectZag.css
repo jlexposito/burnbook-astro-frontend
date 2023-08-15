@@ -1,0 +1,27 @@
+[data-part="root"], [data-part="content"] {
+    @apply py-2 px-2
+}
+[data-part="control"] {
+    input {
+        @apply w-full 
+    }
+    [data-part="trigger"] {
+        @apply absolute right-2 top-1/2 transform -translate-y-1/2
+    }
+    @apply relative 
+}
+[data-part="content"] {
+    &[data-state="open"] {
+        /* styles for control open or state */
+        ul {
+            @apply bg-white w-full
+        }
+    }
+    & [data-part="option"] {
+        @apply p-2
+    }
+    & [data-highlighted] {
+        @apply bg-primary text-white
+    }
+    @apply w-full
+}

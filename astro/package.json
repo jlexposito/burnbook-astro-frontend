@@ -20,16 +20,17 @@
     "@nanostores/solid": "^0.4.2",
     "@tailwindcss/forms": "^0.5.4",
     "@thisbeyond/solid-select": "^0.14.0",
+    "@zag-js/combobox": "^0.16.0",
+    "@zag-js/solid": "^0.16.0",
     "astro": "^2.9.0",
-    "astro-compress": "^1.1.49",
+    "astro-compress": "^2.0.5",
     "astro-icon": "^0.8.1",
     "axios": "^1.4.0",
     "nanostores": "^0.9.3",
     "postcss-preset-env": "^9.1.1",
     "solid-collapse": "^1.1.0",
     "solid-js": "^1.7.8",
-    "tailwindcss": "^3.3.3",
-    "uuid": "^9.0.0"
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "postcss-nesting": "^12.0.0",
