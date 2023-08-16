@@ -1,17 +1,13 @@
-import { Component, createUniqueId } from "solid-js";
+import { Component } from "solid-js";
 
+import { ComboboxOption } from "@utils/interfaces";
 import FormInput from "@solidcomponents/formComponents/FormInput";
-import LabelComponent from "@solidcomponents/formComponents/LabelComponent";
-import SelectInput from "@solidcomponents/formComponents/SelectInput";
-import { Option } from "@utils/interfaces";
-
+import { SelectInput } from "@solidcomponents/formComponents/ZagSelectInput";
 
 const RecipeIngredientForm: Component<{
-  options: Option[];
-  unitOptions: Option[];
+  options: ComboboxOption[];
+  unitOptions: ComboboxOption[];
 }> = (props) => {
-  const ingredientSelectId = createUniqueId();
-  const unitSelectId = createUniqueId();
 
   return (
     <>
@@ -25,13 +21,11 @@ const RecipeIngredientForm: Component<{
             />
           </div>
           <div class="w-full sm:w-1/2 md:w-2/6 px-3 md:mb-0">
-            <LabelComponent label="Ingredient name" id={ingredientSelectId} required={true}/>
             <SelectInput
+              label={"Ingredient"}
+              name={"ingredients[]"}
               options={props.options}
-              name="ingredient_name[]"
-              placeholder="search..."
-              id={ingredientSelectId}
-              createable={true}
+              allowCreate={true}
             />
           </div>
           <div class="w-1/2 md:w-1/6 px-3 md:mb-0">
@@ -45,13 +39,10 @@ const RecipeIngredientForm: Component<{
             />
           </div>
           <div class="w-1/2 md:w-1/6 px-3 md:mb-0">
-            <LabelComponent label="Unit" id={unitSelectId} required={true} />
             <SelectInput
+              label={"Unit"}
+              name={"unit[]"}
               options={props.unitOptions}
-              name="unit[]"
-              placeholder=""
-              id={unitSelectId}
-              createable={false}
             />
           </div>
         </div>

@@ -5,7 +5,11 @@ import {
   JSX,
   For,
   Component,
-  createEffect
+  createEffect,
+  ResourceReturn,
+  Resource,
+  createMemo,
+  Accessor,
 } from "solid-js";
 import { isServer } from "solid-js/web";
 
@@ -14,8 +18,9 @@ import FormInput from "@solidcomponents/formComponents/FormInput";
 import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
 
 import { getIngredients, getUnits } from "@utils/api";
-import { RecipeInterface } from "@utils/interfaces";
+import { ComboboxOption, RecipeInterface } from "@utils/interfaces";
 import CollapseComponent from "@solidcomponents/CollapseComponent";
+import { Ingredient, Unit } from "@utils/interfaces";
 
 //import { useStore } from "@nanostores/solid";
 import { name } from "@stores/formStore";
@@ -30,26 +35,36 @@ export default function RecipeForm() {
   const nameValue = useStore(name);
   */
 
-  const [existingIngredients] = createResource(getIngredients);
-  const [unitOptions] = createResource(getUnits);
+  const createSelectOptions = (
+    elements: Resource<Unit[] | Ingredient[]>
+  ): ComboboxOption[] => {
+    let options: ComboboxOption[] = [];
+    elements()?.forEach((opt, _) => {
+      options.push({
+        label: opt.name,
+        code: opt.name,
+        disabled: false,
+      });
+    });
+    return options;
+  };
 
-  const [ingredientOptions, setIngredientOptios] = createSignal([])
+  const [existingIngredients]: ResourceReturn<Ingredient[]> =
+    createResource(getIngredients);
+  const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
+    createSelectOptions(existingIngredients)
+  );
 
-  createEffect((prevA) => {
-    // do something with `a` and `prevA`
-    let options = []
-    existingIngredients()?.forEach((opt, _)=> options.push(opt.name))
-    if (options !== prevA) {
-      console.log('Changed')
-      console.log(options)
-      setIngredientOptios(options)
-    }
-  }, []);
+  const [unitOptions]: ResourceReturn<Unit[]> = createResource(getUnits);
+
+  const selectOptionsUnits: Accessor<ComboboxOption[]> = createMemo(() =>
+    createSelectOptions(unitOptions)
+  );
 
   const ingredientFormElement = () => (
     <RecipeIngredientForm
-      options={ingredientOptions}
-      unitOptions={unitOptions()}
+      options={selectOptionsIngredients()}
+      unitOptions={selectOptionsUnits()}
     />
   );
   const referenceForm = () => (

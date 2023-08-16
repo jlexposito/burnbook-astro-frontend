@@ -58,3 +58,10 @@ export type Option = {
     name: string;
     label?: string;
 };
+
+export type ComboboxOption = {
+    label: string;
+    code: string;
+    disabled: boolean;
+    new?: boolean;
+};

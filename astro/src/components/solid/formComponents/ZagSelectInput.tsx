@@ -1,4 +1,4 @@
-import "@styles/SelectZag.css";
+import "@styles/ZagSelectInput.css";
 
 import * as combobox from "@zag-js/combobox";
 import { normalizeProps, useMachine } from "@zag-js/solid";
@@ -21,7 +21,7 @@ const comboboxData = [
 
 const allowCreate = true;
 
-export function Combobox(props: {
+export function SelectInput(props: {
   options: ComboboxOption[];
   name: string;
   label: string;
