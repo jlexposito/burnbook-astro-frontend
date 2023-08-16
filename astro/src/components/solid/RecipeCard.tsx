@@ -1,5 +1,3 @@
-import "@solidcomponents/RecipeCard.css";
-
 import OptimizedImage from "@solidcomponents/OptimizedImage";
 import { RecipeInterface } from "@utils/interfaces";
 
