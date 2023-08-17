@@ -19,7 +19,6 @@
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",
     "@tailwindcss/forms": "^0.5.4",
-    "@thisbeyond/solid-select": "^0.14.0",
     "@zag-js/combobox": "^0.16.0",
     "@zag-js/solid": "^0.16.0",
     "astro": "^2.9.0",

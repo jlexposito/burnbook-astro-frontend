@@ -32,9 +32,6 @@ importers:
       '@tailwindcss/forms':
         specifier: ^0.5.4
         version: 0.5.4(tailwindcss@3.3.3)
-      '@thisbeyond/solid-select':
-        specifier: ^0.14.0
-        version: 0.14.0(solid-js@1.7.8)
       '@zag-js/combobox':
         specifier: ^0.16.0
         version: 0.16.0
@@ -1515,14 +1512,6 @@ packages:
     dependencies:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.3.3
-    dev: false
-
-  /@thisbeyond/solid-select@0.14.0(solid-js@1.7.8):
-    resolution: {integrity: sha512-ecq4U3Vnc/nJbU84ARuPg2scNuYt994ljF5AmBlzuZW87x43mWiGJ5hEWufIJJMpDT6CcnCIx/xbrdDkaDEHQw==}
-    peerDependencies:
-      solid-js: ^1.5
-    dependencies:
-      solid-js: 1.7.8
     dev: false
 
   /@trysound/sax@0.2.0:
