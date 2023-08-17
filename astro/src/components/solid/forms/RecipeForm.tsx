@@ -5,7 +5,6 @@ import {
   JSX,
   For,
   Component,
-  createEffect,
   ResourceReturn,
   Resource,
   createMemo,
@@ -13,28 +12,19 @@ import {
 } from "solid-js";
 import { isServer } from "solid-js/web";
 
+// Utils
+import { getIngredients, getUnits } from "@utils/api";
+import { Ingredient, Unit, ComboboxOption, RecipeInterface } from "@utils/interfaces";
+
 // Components
+import CollapseComponent from "@solidcomponents/CollapseComponent";
 import FormInput from "@solidcomponents/formComponents/FormInput";
 import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
 
-import { getIngredients, getUnits } from "@utils/api";
-import { ComboboxOption, RecipeInterface } from "@utils/interfaces";
-import CollapseComponent from "@solidcomponents/CollapseComponent";
-import { Ingredient, Unit } from "@utils/interfaces";
-
-//import { useStore } from "@nanostores/solid";
+// Stores
 import { name } from "@stores/formStore";
 
 export default function RecipeForm() {
-  /*
-  //const [name, setName] = createSignal("");
-  const [cooking_time, setCookingTime] = createSignal(0);
-  const [servings, setServings] = createSignal(2);
-  const [instructions, setInstructions] = createSignal("");
-  //const [options, setOptions] = createSignal([]);
-  const nameValue = useStore(name);
-  */
-
   const createSelectOptions = (
     elements: Resource<Unit[] | Ingredient[]>
   ): ComboboxOption[] => {
@@ -56,7 +46,6 @@ export default function RecipeForm() {
   );
 
   const [unitOptions]: ResourceReturn<Unit[]> = createResource(getUnits);
-
   const selectOptionsUnits: Accessor<ComboboxOption[]> = createMemo(() =>
     createSelectOptions(unitOptions)
   );
@@ -116,7 +105,6 @@ export default function RecipeForm() {
 
   const handleSubmit = (event: Event): void => {
     let recipeData: RecipeInterface;
-
     // TODO: migrate to solidJS way
     //event.preventDefault();
   };
@@ -142,27 +130,27 @@ export default function RecipeForm() {
               />
             </div>
             <div class="flex w-full gap-x-4">
-            <div class="w-full md:w-1/2">
-              <FormInput
-                type="number"
-                name="cooking_time"
-                label="Cooking time (minutes)"
-                min="0"
-                required={true}
-              />
-            </div>
-            <div class="w-full md:w-1/2">
-              <FormInput
-                type="number"
-                name="servings"
-                label="Servings"
-                value="2"
-                required={true}
-              />
+              <div class="w-full md:w-1/2">
+                <FormInput
+                  type="number"
+                  name="cooking_time"
+                  label="Cooking time (minutes)"
+                  min="0"
+                  required={true}
+                />
+              </div>
+              <div class="w-full md:w-1/2">
+                <FormInput
+                  type="number"
+                  name="servings"
+                  label="Servings"
+                  value="2"
+                  required={true}
+                />
+              </div>
             </div>
           </div>
-          </div>
-          
+
           <div class="pb-6">
             <CollapseComponent
               expanded={true}
@@ -229,10 +217,7 @@ export default function RecipeForm() {
               />
             </div>
           </div>
-          <button
-            type="submit"
-            class="w-full btn btn-primary"
-          >
+          <button type="submit" class="w-full btn btn-primary">
             Save
           </button>
         </div>

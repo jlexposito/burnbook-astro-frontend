@@ -13,14 +13,6 @@ import {
 import LabelComponent from "./LabelComponent";
 import { ComboboxOption } from "@utils/interfaces";
 
-const comboboxData = [
-  { label: "Zambia", code: "ZA", disabled: false },
-  { label: "Benin", code: "BN", disabled: false },
-  //...
-];
-
-const allowCreate = true;
-
 export function SelectInput(props: {
   options: ComboboxOption[];
   name: string;
@@ -31,7 +23,6 @@ export function SelectInput(props: {
   const [selectedNewOption, setNewSelectedOption] = createSignal("");
   const inputId = createUniqueId();
   const allowCreation = props.allowCreate || false;
-  console.log(allowCreation);
 
   const createNewOption = (label: string, code: string, disabled: boolean) => {
     return {
@@ -112,7 +103,7 @@ export function SelectInput(props: {
             </button>
           </div>
           <div {...api().contentProps}>
-            <Show when={options().length > 0 || allowCreate}>
+            <Show when={options().length > 0 || allowCreation}>
               <ul>
                 <For each={options()}>
                   {(item, index) => (
