@@ -11,16 +11,16 @@ const RecipeIngredientForm: Component<{
 
   return (
     <>
-      <div class="ingredient-form mt-2 border-gray-300 border-b-2 border-dashed mb-6 pb-2 md:border-0 md:mb-0 md:pb-0 last:border-0 last:mb-0">
-        <div class="flex flex-wrap -mx-3">
-          <div class="w-full sm:w-1/2 md:w-2/6 px-3 md:mb-0">
+      <div class="ingredient-form mt-2 border-gray-300 border-b-2 border-dashed mb-6 pb-4 md:border-0 md:mb-0 md:pb-0 last:border-0 last:mb-0 last:pb-2">
+        <div class="flex flex-wrap">
+          <div class="w-full sm:w-1/2 md:w-1/5 px-1 lg:px-3 md:mb-0">
             <FormInput
               name="prefix[]"
               autocomplete="off"
               label="Ingredient prefix"
             />
           </div>
-          <div class="w-full sm:w-1/2 md:w-2/6 px-3 md:mb-0">
+          <div class="w-full sm:w-1/2 md:w-2/5 px-1 lg:px-3 md:mb-0">
             <SelectInput
               label={"Ingredient"}
               name={"ingredients[]"}
@@ -28,7 +28,7 @@ const RecipeIngredientForm: Component<{
               allowCreate={true}
             />
           </div>
-          <div class="w-1/2 md:w-1/6 px-3 md:mb-0">
+          <div class="w-1/2 md:w-1/5 px-1 lg:px-3 md:mb-0">
             <FormInput
               name="quantity[]"
               label="quantity"
@@ -38,7 +38,7 @@ const RecipeIngredientForm: Component<{
               required={true}
             />
           </div>
-          <div class="w-1/2 md:w-1/6 px-3 md:mb-0">
+          <div class="w-1/2 md:w-1/5 px-1 lg:px-3 md:mb-0">
             <SelectInput
               label={"Unit"}
               name={"unit[]"}

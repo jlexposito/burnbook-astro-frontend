@@ -7,7 +7,16 @@ import compress from "astro-compress";
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  integrations: [solidJs(), tailwind(), compress()],
+  integrations: [
+    solidJs(), 
+    tailwind({
+      config: {
+        path: './tailwind.config.cjs',
+        applyBaseStyles: false, /** disables the built-in stylesheet */
+      },
+    }),
+    compress()
+  ],
   adapter: node({
     mode: "standalone"
   }),

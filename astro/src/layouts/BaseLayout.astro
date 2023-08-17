@@ -1,4 +1,6 @@
 ---
+import "@styles/global.css";
+
 export interface Props {
 	title: string;
 	pagename: string;
@@ -34,23 +36,4 @@ const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 		</div>
 	</body>
 </html>
-<style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #faf0dc;
-		@apply pb-20 md:pb-10
-	}
-	html.newrecipe {
-		padding-bottom: 0;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-	.bk-accent {
-    	@apply bg-secondary text-secondary-contrast active:bg-secondary-dark-ring active:ring-2 focus-visible:ring-secondary-dark-ring focus-visible:ring-2 focus-visible:outline focus-visible:outline-1
-	}
-	.bk-accent-hover {
-		@apply hover:bg-secondary-dark hover:ring-2 hover:ring-secondary-contrast  
-	}
-</style>
+

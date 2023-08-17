@@ -108,18 +108,17 @@ export default function RecipeForm() {
     // Execute a function when the user presses a key on the keyboard
     input.addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
-        event.preventDefault();
+        event.stopPropagation();
+        //event.preventDefault();
       }
     });
   }
 
   const handleSubmit = (event: Event): void => {
     let recipeData: RecipeInterface;
-    console.log(ingredients());
-    console.log(ingredients()[0]);
 
     // TODO: migrate to solidJS way
-    event.preventDefault();
+    //event.preventDefault();
   };
   return (
     <>
@@ -130,9 +129,9 @@ export default function RecipeForm() {
         onsubmit={handleSubmit}
         action="http://localhost:8200/recipes/"
       >
-        <div class="p-3 py-5 md:space-y-3 sm:p-8">
-          <div class="flex flex-wrap -mx-3">
-            <div class="w-full px-3">
+        <div class="p-3 py-5 md:space-y-3 sm:p-5">
+          <div class="flex flex-wrap gap-y-2 pb-4">
+            <div class="w-full">
               <FormInput
                 type="text"
                 name="name"
@@ -142,9 +141,8 @@ export default function RecipeForm() {
                 required={true}
               />
             </div>
-          </div>
-          <div class="flex flex-wrap -mx-3">
-            <div class="w-full md:w-1/2 px-3 mb-3">
+            <div class="flex w-full gap-x-4">
+            <div class="w-full md:w-1/2">
               <FormInput
                 type="number"
                 name="cooking_time"
@@ -153,7 +151,7 @@ export default function RecipeForm() {
                 required={true}
               />
             </div>
-            <div class="w-full md:w-1/2 px-3">
+            <div class="w-full md:w-1/2">
               <FormInput
                 type="number"
                 name="servings"
@@ -163,6 +161,8 @@ export default function RecipeForm() {
               />
             </div>
           </div>
+          </div>
+          
           <div class="pb-6">
             <CollapseComponent
               expanded={true}
@@ -185,7 +185,7 @@ export default function RecipeForm() {
                     </For>
                   </div>
                   <button
-                    class="bk-accent bk-accent-hover text-white border border-bk-accent-dark focus:ring-2 focus:ring-offset-2 focus:ring-primary-accent focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    class="btn btn-accent"
                     onClick={increaseNumberOfIngredients}
                   >
                     Add new ingredient +
@@ -207,7 +207,7 @@ export default function RecipeForm() {
                   {(reference, index) => <>{reference}</>}
                 </For>
                 <button
-                  class="bk-accent bk-accent-hover text-white border border-bk-accent-dark focus:ring-2 focus:ring-offset-2 focus:ring-primary-accent focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                  class="btn btn-accent"
                   //onClick={increaseNumberOfIngredients}
                 >
                   Add new reference +
@@ -216,7 +216,7 @@ export default function RecipeForm() {
             </CollapseComponent>
           </div>
 
-          <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="flex flex-wrap mb-6">
             <div class="w-full px-3">
               <FormInput
                 type="textarea"
@@ -231,7 +231,7 @@ export default function RecipeForm() {
           </div>
           <button
             type="submit"
-            class="w-full  bg-primary hover:bg-primary-accent text-white border border-bk-accent-dark focus:ring-offset-2 focus:ring-2 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            class="w-full btn btn-primary"
           >
             Save
           </button>

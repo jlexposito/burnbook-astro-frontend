@@ -1,6 +1,6 @@
-[data-part="root"], [data-part="content"] {
+/* [data-part="root"], [data-part="content"] {
     @apply py-2 px-2 
-}
+} */
 [data-part="control"] {
     input {
         @apply w-full
@@ -9,7 +9,10 @@
         &[data-state="closed"] {
             @apply rotate-180
         }
-        @apply absolute right-2 top-1/2 transform -translate-y-1/2
+        &:hover {
+            @apply bg-secondary
+        }
+        @apply absolute  right-0 top-1/2 transform -translate-y-1/2 p-3
     }
     @apply relative
 }
@@ -22,10 +25,10 @@
         @apply w-full visible opacity-100 translate-y-1
     }
     & [data-part="option"] {
-        @apply p-2
+        @apply p-2 break-all
     }
     & [data-highlighted] {
         @apply bg-primary text-white
     }
-    @apply border border-2 bg-white invisible border-gray-800 rounded w-60 absolute left-0 top-full transition-all opacity-0 z-40 max-h-[85vh] delay-150
+    @apply border-2 border-gray-800 bg-white invisible rounded w-60 absolute left-0 top-full transition-all opacity-0 z-40 max-h-[85vh] delay-150 text-center 
 }
