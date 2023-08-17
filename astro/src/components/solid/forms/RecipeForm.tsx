@@ -14,7 +14,12 @@ import { isServer } from "solid-js/web";
 
 // Utils
 import { getIngredients, getUnits } from "@utils/api";
-import { Ingredient, Unit, ComboboxOption, RecipeInterface } from "@utils/interfaces";
+import {
+  Ingredient,
+  Unit,
+  ComboboxOption,
+  RecipeInterface,
+} from "@utils/interfaces";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
@@ -57,13 +62,15 @@ export default function RecipeForm() {
     />
   );
   const referenceForm = () => (
-    <FormInput
-      type="text"
-      name="references[]"
-      label="Reference"
-      autocomplete="off"
-      required={false}
-    />
+    <div class="mb-2">
+      <FormInput
+        type="text"
+        name="references[]"
+        label="Reference"
+        autocomplete="off"
+        required={false}
+      />
+    </div>
   );
 
   const createInitial = (numberOfElements, fillingElement, setSignal) =>
@@ -89,6 +96,13 @@ export default function RecipeForm() {
   > = (e): void => {
     e.preventDefault();
     setIngredients([...ingredients(), ingredientFormElement]);
+  };
+  const increaseNumberOfReferences: JSX.EventHandler<
+    HTMLButtonElement,
+    MouseEvent
+  > = (e): void => {
+    e.preventDefault();
+    setReferences([...references(), referenceForm]);
   };
   if (!isServer) {
     // Catchall to avoid collapsing when pressing the "backspace"
@@ -169,7 +183,7 @@ export default function RecipeForm() {
                 >
                   <div>
                     <For each={ingredients()}>
-                      {(ingredient, index) => <>{ingredient}</>}
+                      {(ingredient) => <>{ingredient}</>}
                     </For>
                   </div>
                   <button
@@ -196,7 +210,7 @@ export default function RecipeForm() {
                 </For>
                 <button
                   class="btn btn-accent"
-                  //onClick={increaseNumberOfIngredients}
+                  onClick={increaseNumberOfReferences}
                 >
                   Add new reference +
                 </button>
