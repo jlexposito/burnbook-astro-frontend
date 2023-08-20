@@ -1,37 +1,44 @@
 import {
-  createSignal,
-  createResource,
-  Show,
-  JSX,
-  For,
-  Component,
-  ResourceReturn,
-  Resource,
-  createMemo,
   Accessor,
+  Component,
+  createMemo,
+  createResource,
+  createSignal,
+  createUniqueId,
+  For,
+  Index,
+  JSX,
+  Resource,
+  ResourceReturn,
+  Setter,
+  Show,
 } from "solid-js";
 import { isServer } from "solid-js/web";
 
 // Utils
-import { getIngredients, getUnits } from "@utils/api";
+import { getIngredients, getUnits, getTags } from "@utils/api";
 import {
   Ingredient,
   Unit,
   ComboboxOption,
   RecipeInterface,
+  Tag,
+  referenceFormValue,
+  recipeIngredientFormValue,
 } from "@utils/interfaces";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
 import FormInput from "@solidcomponents/formComponents/FormInput";
 import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
+import { SelectInput } from "@solidcomponents/formComponents/ZagSelectInput";
 
 // Stores
 import { name } from "@stores/formStore";
 
 export default function RecipeForm() {
   const createSelectOptions = (
-    elements: Resource<Unit[] | Ingredient[]>
+    elements: Resource<Unit[] | Ingredient[] | Tag[]>
   ): ComboboxOption[] => {
     let options: ComboboxOption[] = [];
     elements()?.forEach((opt, _) => {
@@ -44,6 +51,11 @@ export default function RecipeForm() {
     return options;
   };
 
+  const [existingTags]: ResourceReturn<Tag[]> = createResource(getTags);
+  const tagSelectOptions: Accessor<ComboboxOption[]> = createMemo(() =>
+    createSelectOptions(existingTags)
+  );
+
   const [existingIngredients]: ResourceReturn<Ingredient[]> =
     createResource(getIngredients);
   const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
@@ -55,67 +67,106 @@ export default function RecipeForm() {
     createSelectOptions(unitOptions)
   );
 
-  const ingredientFormElement = () => (
-    <RecipeIngredientForm
-      options={selectOptionsIngredients()}
-      unitOptions={selectOptionsUnits()}
-    />
-  );
-  const referenceForm = () => (
-    <div class="mb-2">
-      <FormInput
-        type="text"
-        name="references[]"
-        label="Reference"
-        autocomplete="off"
-        required={false}
-      />
-    </div>
-  );
+  const createNewReference = (initialValue: string) => {
+    const [value, setValue] = createSignal(initialValue);
+    return {
+      id: createUniqueId(),
+      value: value,
+      setValue: setValue,
+    };
+  };
 
-  const createInitial = (numberOfElements, fillingElement, setSignal) =>
-    setSignal(new Array(numberOfElements).fill(fillingElement));
+  const ingredientFormElement = (
+    initialQuantity: number = 0,
+    iniitalUnit: string = ""
+  ) => ({
+    id: createUniqueId(),
+  });
 
   // References
-  const numberOfInitialReferences = 1;
-  const [references, setReferences] = createSignal<Component[]>([]);
-  createInitial(numberOfInitialReferences, referenceForm, setReferences);
+  const numberOfInitialReferences = 2;
+  const initialReferences = [];
+  for (let i = 0; i < numberOfInitialReferences; i++) {
+    initialReferences.push(createNewReference(""));
+  }
+  const [references, setReferences] =
+    createSignal<referenceFormValue[]>(initialReferences);
 
   // Ingredients
   const numberOfInitialIngredients = 2;
-  const [ingredients, setIngredients] = createSignal<Component[] | []>([]);
-  createInitial(
-    numberOfInitialIngredients,
-    ingredientFormElement,
-    setIngredients
-  );
-
-  const increaseNumberOfIngredients: JSX.EventHandler<
-    HTMLButtonElement,
-    MouseEvent
-  > = (e): void => {
-    e.preventDefault();
-    setIngredients([...ingredients(), ingredientFormElement]);
-  };
-  const increaseNumberOfReferences: JSX.EventHandler<
-    HTMLButtonElement,
-    MouseEvent
-  > = (e): void => {
-    e.preventDefault();
-    setReferences([...references(), referenceForm]);
-  };
-  if (!isServer) {
-    // Catchall to avoid collapsing when pressing the "backspace"
-    let input = document.getElementById("new-recipe");
-
-    // Execute a function when the user presses a key on the keyboard
-    input.addEventListener("keypress", function (event) {
-      if (event.key === "Enter") {
-        event.stopPropagation();
-        //event.preventDefault();
-      }
-    });
+  const initialIngredients = [];
+  for (let i = 0; i < numberOfInitialIngredients; i++) {
+    initialIngredients.push(ingredientFormElement());
   }
+  const [ingredients, setIngredients] = createSignal<
+    recipeIngredientFormValue[] | []
+  >(initialIngredients);
+
+  const addNewRecipeIngredient: JSX.EventHandler<
+    HTMLButtonElement,
+    MouseEvent
+  > = (e): void => {
+    e.preventDefault();
+    let newIngredient = ingredientFormElement();
+    setIngredients([...ingredients(), newIngredient]);
+  };
+
+  const addNewReference: JSX.EventHandler<HTMLButtonElement, MouseEvent> = (
+    e
+  ): void => {
+    e.preventDefault();
+    let newReference = createNewReference("");
+    setReferences([...references(), newReference]);
+  };
+
+  const removeElement = (
+    id: string,
+    elements: Accessor<recipeIngredientFormValue[] | referenceFormValue[]>,
+    setElements: Setter<recipeIngredientFormValue[] | referenceFormValue[]>
+  ): void => {
+    const elementPos = elements()
+      .map(function (x) {
+        return x.id;
+      })
+      .indexOf(id);
+    if (elementPos > -1) {
+      let newElements = [...elements()];
+      newElements.splice(elementPos, 1);
+      setElements(newElements);
+    }
+  };
+
+  const removeReference = (id: string): void => {
+    const elementPos = references()
+      .map(function (x) {
+        return x.id;
+      })
+      .indexOf(id);
+    if (elementPos > -1) {
+      let newReferences = [...references()];
+      newReferences.splice(elementPos, 1);
+      setReferences(newReferences);
+    }
+  };
+  // if (!isServer) {
+  //   // Catchall to avoid collapsing when pressing the "backspace"
+  //   let input = document.getElementById("new-recipe");
+
+  //   // Execute a function when the user presses a key on the keyboard
+  //   input.addEventListener("keypress", function (event) {
+  //     if (event.key === "Enter") {
+  //       event.stopPropagation();
+  //       //event.preventDefault();
+  //     }
+  //   });
+  // }
+
+  const changeReference = (id: string, value: string) => {
+    const reference = references().find((t) => t.id === id);
+    if (reference) {
+      reference.setValue(value);
+    }
+  };
 
   const handleSubmit = (event: Event): void => {
     let recipeData: RecipeInterface;
@@ -136,7 +187,7 @@ export default function RecipeForm() {
             <div class="w-full">
               <FormInput
                 type="text"
-                name="name"
+                name="title"
                 label="Name"
                 autocomplete="off"
                 dynamicValue={name}
@@ -183,12 +234,42 @@ export default function RecipeForm() {
                 >
                   <div>
                     <For each={ingredients()}>
-                      {(ingredient) => <>{ingredient}</>}
+                      {(ingredient) => (
+                        <>
+                          <>
+                            <div class="flex">
+                              <div class="grow">
+                                <RecipeIngredientForm
+                                  id={ingredient.id}
+                                  options={selectOptionsIngredients()}
+                                  unitOptions={selectOptionsUnits()}
+                                />
+                              </div>
+                              <div class="grow-0 flex items-end ml-2">
+                                <button
+                                  class="btn btn-accent !py-1 !px-2 !my-3"
+                                  disabled={ingredients().length < 2}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    removeElement(
+                                      ingredient.id,
+                                      ingredients,
+                                      setIngredients
+                                    );
+                                  }}
+                                >
+                                  ❌
+                                </button>
+                              </div>
+                            </div>
+                          </>
+                        </>
+                      )}
                     </For>
                   </div>
                   <button
                     class="btn btn-accent"
-                    onClick={increaseNumberOfIngredients}
+                    onClick={addNewRecipeIngredient}
                   >
                     Add new ingredient +
                   </button>
@@ -205,17 +286,65 @@ export default function RecipeForm() {
               title="🔗 References 🔗"
             >
               <div class="[& .references-form]:border-2 border-solid">
-                <For each={references()}>
-                  {(reference, index) => <>{reference}</>}
-                </For>
-                <button
-                  class="btn btn-accent"
-                  onClick={increaseNumberOfReferences}
-                >
+                <Index each={references()}>
+                  {(reference, index) => (
+                    <>
+                      <div class="mb-2 flex">
+                        <div class="grow">
+                          <FormInput
+                            type="text"
+                            name="references[]"
+                            label={`Reference ${index + 1}`}
+                            autocomplete="off"
+                            required={false}
+                            value={reference().value()}
+                            id={reference().id}
+                            onChange={changeReference}
+                          />
+                        </div>
+
+                        <div class="grow-0 flex items-end ml-2">
+                          <button
+                            class="btn btn-accent !py-1 !px-2 !my-1"
+                            disabled={references().length < 2}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              removeElement(
+                                reference().id,
+                                references,
+                                setReferences
+                              );
+                            }}
+                          >
+                            ❌
+                          </button>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </Index>
+                <button class="btn btn-accent" onClick={addNewReference}>
                   Add new reference +
                 </button>
               </div>
             </CollapseComponent>
+          </div>
+          <div>
+            <Show
+              when={!existingTags.loading}
+              fallback={
+                <>
+                  <p class="py-12 text-center">Loading tags...</p>
+                </>
+              }
+            >
+              <SelectInput
+                label={"Tags"}
+                name={"tags"}
+                options={tagSelectOptions()}
+                allowCreate={true}
+              />
+            </Show>
           </div>
 
           <div class="flex flex-wrap mb-6">

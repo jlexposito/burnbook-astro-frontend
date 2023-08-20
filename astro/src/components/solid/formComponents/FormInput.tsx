@@ -3,6 +3,7 @@ import {
   Component,
   createUniqueId,
   mergeProps,
+  onMount,
   splitProps,
   SplitProps as _SplitProps,
 } from "solid-js";
@@ -15,19 +16,23 @@ type SplitProps<T, K extends (readonly (keyof T)[])[]> = T extends unknown
 type InputTypes = "text" | "input" | "textarea" | "number";
 
 type Test<T extends InputTypes = InputTypes> = {
+  id?: string;
   name?: string;
   label?: string;
   dynamicValue?: any | null;
   required?: boolean;
+  onChange?: any;
 } & (T extends "textarea"
   ? JSX.TextareaHTMLAttributes<HTMLTextAreaElement> & { type: T }
   : JSX.InputHTMLAttributes<HTMLInputElement> & { type?: T });
 
 const FormInput: Component<Test> = (props) => {
+  const id = props.id || createUniqueId();
   const handleKeyPress = (event: Event): void => {
     event.preventDefault();
     event.stopPropagation();
   };
+
   const merged = mergeProps(
     {
       type: "text" as const,
@@ -37,9 +42,13 @@ const FormInput: Component<Test> = (props) => {
     },
     props
   );
-  const id = createUniqueId();
   let label = props.label || props.name;
-  const [_, htmlattributes] = splitProps(props, ["label"]) as SplitProps<
+  const [_, htmlattributes] = splitProps(
+    props, [
+      "label",
+      "onChange"
+    ]
+  ) as SplitProps<
     typeof props,
     ["label"[]]
   >;
@@ -54,6 +63,12 @@ const FormInput: Component<Test> = (props) => {
           id={id}
           class={merged.classes}
           {...htmlattributes}
+          onChange={(e) => {
+            if (typeof props.onChange === "function") {
+              props.onChange(id, e.target.value)
+
+            }
+          }}
         />
       )}
     </>
