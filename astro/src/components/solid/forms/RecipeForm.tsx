@@ -51,17 +51,20 @@ export default function RecipeForm() {
     return options;
   };
 
+  // tags
   const [existingTags]: ResourceReturn<Tag[]> = createResource(getTags);
   const tagSelectOptions: Accessor<ComboboxOption[]> = createMemo(() =>
     createSelectOptions(existingTags)
   );
 
+  // ingredients
   const [existingIngredients]: ResourceReturn<Ingredient[]> =
     createResource(getIngredients);
   const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
     createSelectOptions(existingIngredients)
   );
 
+  // units
   const [unitOptions]: ResourceReturn<Unit[]> = createResource(getUnits);
   const selectOptionsUnits: Accessor<ComboboxOption[]> = createMemo(() =>
     createSelectOptions(unitOptions)
@@ -168,10 +171,53 @@ export default function RecipeForm() {
     }
   };
 
+  const [formErrors, setFormErrors] = createSignal({});
+
   const handleSubmit = (event: Event): void => {
+    // TODO: migrate to solidJS way
+    event.preventDefault();
+    // let recipeData: RecipeInterface;
+    const form: form = event.target;
+    const url = form.action;
+
     let recipeData: RecipeInterface;
     // TODO: migrate to solidJS way
-    //event.preventDefault();
+    const XHR = new XMLHttpRequest();
+
+    // Bind the FormData object and the form element
+    const FD = new FormData(form);
+
+    // Define what happens on successful data submission
+    XHR.addEventListener("load", (event) => {
+      if (event.target.status !== 200) {
+        console.log("Something went wrong");
+        let response = event.target.responseText;
+        let errors;
+        try {
+          errors = JSON.parse(response).errors;
+        } catch (error) {
+          errors = {
+            text: response,
+          };
+        }
+        setFormErrors(errors);
+        console.log(formErrors());
+        console.log(Object.keys(formErrors()));
+      } else {
+        alert("Created successfully !");
+      }
+    });
+
+    // Define what happens in case of error
+    XHR.addEventListener("error", (event) => {
+      alert("Something went wrong, please try again.");
+    });
+
+    // Set up our request
+    XHR.open("POST", url);
+
+    // The data sent is what the user provided in the form
+    XHR.send(FD);
   };
   return (
     <>
@@ -182,6 +228,21 @@ export default function RecipeForm() {
         onsubmit={handleSubmit}
         action="http://localhost:8200/recipes/"
       >
+        <Show when={Object.keys(formErrors()).length > 0}>
+          <div class="errors">
+            <For each={Object.keys(formErrors())}>
+              {(field) => (
+                <>
+                  <ul class="erro-list">
+                    <For each={Object.keys(formErrors()[field])}>
+                      {(fieldError) => <li>{fieldError}</li>}
+                    </For>
+                  </ul>
+                </>
+              )}
+            </For>
+          </div>
+        </Show>
         <div class="p-3 py-5 md:space-y-3 sm:p-5">
           <div class="flex flex-wrap gap-y-2 pb-4">
             <div class="w-full">
