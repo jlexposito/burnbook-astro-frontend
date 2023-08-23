@@ -177,7 +177,7 @@ export default function RecipeForm() {
     // TODO: migrate to solidJS way
     event.preventDefault();
     // let recipeData: RecipeInterface;
-    const form: form = event.target;
+    const form: HTMLFormElement = event.target;
     const url = form.action;
 
     let recipeData: RecipeInterface;
@@ -188,8 +188,8 @@ export default function RecipeForm() {
     const FD = new FormData(form);
 
     // Define what happens on successful data submission
-    XHR.addEventListener("load", (event) => {
-      if (event.target.status !== 200) {
+    XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {
+      if (event.target.status !== 201) {
         console.log("Something went wrong");
         let response = event.target.responseText;
         let errors;
