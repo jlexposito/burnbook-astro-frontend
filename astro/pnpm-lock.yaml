@@ -38,6 +38,9 @@ importers:
       '@zag-js/solid':
         specifier: ^0.16.0
         version: 0.16.0(solid-js@1.7.8)
+      '@zag-js/tags-input':
+        specifier: ^0.16.0
+        version: 0.16.0
       astro:
         specifier: ^2.9.0
         version: 2.9.0
@@ -72,6 +75,12 @@ importers:
       postcss-nesting:
         specifier: ^12.0.0
         version: 12.0.0(postcss@8.4.26)
+      prettier:
+        specifier: ^3.0.2
+        version: 3.0.2
+      prettier-plugin-tailwindcss:
+        specifier: ^0.5.3
+        version: 0.5.3(prettier@3.0.2)
       svgo:
         specifier: 2.8.0
         version: 2.8.0
@@ -1658,6 +1667,12 @@ packages:
       '@zag-js/dom-query': 0.16.0
     dev: false
 
+  /@zag-js/auto-resize@0.16.0:
+    resolution: {integrity: sha512-AmOQEz8V/Y6LH+/yBpFCC03s1CCIslrrFjSJOWe41hSsc3uhoUzZAlUjTYGwk0p7Zp7pYrRgGeJvFCyZTI32KA==}
+    dependencies:
+      '@zag-js/dom-query': 0.16.0
+    dev: false
+
   /@zag-js/combobox@0.16.0:
     resolution: {integrity: sha512-I/Ab5KDgvXUA20Yn0KVhfrojXBf2aPrNu+HJTKIRXOxwiB5aGnv9l74aO4Yt/0h8Sg81lxidwv0DgJr6cBmBqw==}
     dependencies:
@@ -1694,6 +1709,12 @@ packages:
 
   /@zag-js/element-rect@0.16.0:
     resolution: {integrity: sha512-j2lVSiPZABB4b2UgsE0t12UB3w6V9c6sxXhieJOoFvxEF+jUdkVyNcu1pFHDYWbRL4AhembcLJnMuaCWjKV2Ag==}
+    dev: false
+
+  /@zag-js/form-utils@0.16.0:
+    resolution: {integrity: sha512-15rNdyDiZBcHMJWXQHYyOjfFY2IRS7/8vFFZ+lSHk2yyn4oCtzhnSzSZktrUlEHFJoUtlv3ghDFUPn/2OowTbg==}
+    dependencies:
+      '@zag-js/mutation-observer': 0.16.0
     dev: false
 
   /@zag-js/interact-outside@0.16.0:
@@ -1746,6 +1767,21 @@ packages:
     resolution: {integrity: sha512-47afLCtTNeJVmiqbwxKkCr4rWT6IyW3tVXLmUoGmGRLPMH5lBN/ZA6yUoRZGDR/JaQoS4dq3N2muaKqaIetw7A==}
     dependencies:
       '@zag-js/dom-query': 0.16.0
+    dev: false
+
+  /@zag-js/tags-input@0.16.0:
+    resolution: {integrity: sha512-1a/A2rTOgZvEQPnNomM6d6n5mCAou2V428lOL3631Vm9MoRv2tUHt0PGU/dmyimOEZUiE7cYRX3+NvXkhs4Npg==}
+    dependencies:
+      '@zag-js/anatomy': 0.16.0
+      '@zag-js/auto-resize': 0.16.0
+      '@zag-js/core': 0.16.0
+      '@zag-js/dom-event': 0.16.0
+      '@zag-js/dom-query': 0.16.0
+      '@zag-js/form-utils': 0.16.0
+      '@zag-js/interact-outside': 0.16.0
+      '@zag-js/live-region': 0.16.0
+      '@zag-js/types': 0.16.0
+      '@zag-js/utils': 0.16.0
     dev: false
 
   /@zag-js/text-selection@0.16.0:
@@ -4698,11 +4734,72 @@ packages:
       synckit: 0.8.5
     dev: false
 
+  /prettier-plugin-tailwindcss@0.5.3(prettier@3.0.2):
+    resolution: {integrity: sha512-M5K80V21yM+CTm/FEFYRv9/9LyInYbCSXpIoPAKMm8zy89IOwdiA2e4JVbcO7tvRtAQWz32zdj7/WKcsmFyAVg==}
+    engines: {node: '>=14.21.3'}
+    peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-pug': '*'
+      '@shopify/prettier-plugin-liquid': '*'
+      '@shufo/prettier-plugin-blade': '*'
+      '@trivago/prettier-plugin-sort-imports': '*'
+      prettier: ^3.0
+      prettier-plugin-astro: '*'
+      prettier-plugin-css-order: '*'
+      prettier-plugin-import-sort: '*'
+      prettier-plugin-jsdoc: '*'
+      prettier-plugin-marko: '*'
+      prettier-plugin-organize-attributes: '*'
+      prettier-plugin-organize-imports: '*'
+      prettier-plugin-style-order: '*'
+      prettier-plugin-svelte: '*'
+      prettier-plugin-twig-melody: '*'
+    peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
+      '@prettier/plugin-pug':
+        optional: true
+      '@shopify/prettier-plugin-liquid':
+        optional: true
+      '@shufo/prettier-plugin-blade':
+        optional: true
+      '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-marko:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+      prettier-plugin-twig-melody:
+        optional: true
+    dependencies:
+      prettier: 3.0.2
+    dev: true
+
   /prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: false
+
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /prismjs@1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}

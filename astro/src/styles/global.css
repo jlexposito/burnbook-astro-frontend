@@ -3,38 +3,43 @@
 @tailwind utilities;
 
 html {
-    font-family: system-ui, sans-serif;
-    background-color: #faf0dc;
-    @apply pb-20 md:pb-10
+  font-family: system-ui, sans-serif;
+  background-color: #faf0dc;
+  @apply pb-20 md:pb-10;
 }
 html.newrecipe {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-        Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace;
 }
 
 @layer utilities {
-    .bk-accent {
-        @apply bg-secondary text-secondary-contrast active:bg-secondary-dark-ring active:ring-2 focus-visible:ring-secondary-dark-ring focus-visible:ring-2 focus-visible:outline focus-visible:outline-1 disabled:opacity-50 disabled:cursor-not-allowed
-    }
-    .bk-accent-hover {
-        @apply hover:bg-secondary-dark hover:ring-2 hover:ring-secondary-contrast  
-    }
-    .btn  {
-        @apply my-3 border focus:ring-2 focus:ring-offset-2 focus:ring-primary-accent focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center
-    }
-    .btn-accent {
-        @reuse .bk-accent;
-        @reuse .bk-accent-hover;
-    }
-    .bk-accent-dark {
-        @apply bk-accent-dark
-    }
-    .btn-primary {
-        @apply bg-primary hover:bg-primary-accent text-white border focus:ring-offset-2 focus:ring-2 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center
-    }
+  .bk-accent {
+    @apply bg-secondary text-secondary-contrast active:bg-secondary-dark-ring focus-visible:ring-secondary-dark-ring focus-visible:outline focus-visible:outline-1 focus-visible:ring-2 active:ring-2 disabled:cursor-not-allowed disabled:opacity-50;
   }
-
-
+  .bk-accent-hover {
+    @apply hover:bg-secondary-dark hover:ring-secondary-contrast hover:ring-2;
+  }
+  .btn {
+    @apply focus:ring-primary-accent my-3 rounded-lg border px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-accent {
+    @reuse .bk-accent;
+    @reuse .bk-accent-hover;
+  }
+  .bk-accent-dark {
+    @apply bk-accent-dark;
+  }
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-accent rounded-lg border px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+}

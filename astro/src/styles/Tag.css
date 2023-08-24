@@ -1,9 +1,9 @@
 .tag {
-    @apply inline-block hover:cursor-pointer px-3 py-2 rounded-full 
+  @apply inline-block hover:cursor-pointer px-3 py-2 rounded-full;
 }
 
 .tag svg {
-    width: 20px !important;
-    height: 20px !important;
-    @apply inline-block text-sm;
+  width: 20px !important;
+  height: 20px !important;
+  @apply inline-block text-sm;
 }

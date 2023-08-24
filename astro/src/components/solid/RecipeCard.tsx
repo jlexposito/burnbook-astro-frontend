@@ -21,11 +21,11 @@ export default function RecipeCard(props: {
   return (
     <>
       <a href={"/recipe/" + recipe().id}>
-        <div class="grid grid-cols-3 rounded-xl overflow-hidden bg-base-100 shadow-md bg-white sm:min-h-[200px]">
-          <div class="col-span-1 min-h-full max-h-[220px] sm:h-[240px]">
+        <div class="bg-base-100 grid grid-cols-3 overflow-hidden rounded-xl bg-white shadow-md sm:min-h-[200px]">
+          <div class="col-span-1 max-h-[220px] min-h-full sm:h-[240px]">
             <figure class="h-full">
               {!recipe().image ? (
-                <div class="bg-slate-100 w-full h-full flex">
+                <div class="flex h-full w-full bg-slate-100">
                   <div class="m-auto">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -53,15 +53,15 @@ export default function RecipeCard(props: {
               )}
             </figure>
           </div>
-          <div class="col-span-2 flex flex-col justify-around px-2 py-3 sm:px-5 min-h-[170px] max-h-[220px] sm:min-h-full sm:h-[240px]">
+          <div class="col-span-2 flex max-h-[220px] min-h-[170px] flex-col justify-around px-2 py-3 sm:h-[240px] sm:min-h-full sm:px-5">
             <div>
-              <h2 class="line-clamp-2 tracking-tight font-sans text-2xl font-bold">
+              <h2 class="line-clamp-2 font-sans text-2xl font-bold tracking-tight">
                 {props.recipe.title}
               </h2>
-              <div class="mt-4 text-secondary-contrast mb-3 font-semibold">
+              <div class="text-secondary-contrast mb-3 mt-4 font-semibold">
                 <span class="inline-block">
                   <svg
-                    class="w-6 align-text-bottom  inline-block"
+                    class="inline-block w-6  align-text-bottom"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
@@ -76,7 +76,7 @@ export default function RecipeCard(props: {
                     ></path>
                   </svg>
                 </span>
-                <span class="align-text-baseline font-medium text-xl ml-1">
+                <span class="align-text-baseline ml-1 text-xl font-medium">
                   {props.recipe.cooking_time} m
                 </span>
               </div>

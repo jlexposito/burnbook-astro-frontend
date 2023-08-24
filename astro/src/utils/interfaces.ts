@@ -68,7 +68,7 @@ export type ComboboxOption = {
   new?: boolean;
 };
 
-export type referenfeFormValue = {
+export type referenceFormValue = {
   id: string;
   value: Accessor<string>;
   setValue: Setter<string>;
