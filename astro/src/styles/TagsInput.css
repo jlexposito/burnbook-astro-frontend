@@ -78,19 +78,41 @@
   [data-part="control"] {
     @apply w-full;
   }
+
   [data-part="control"] {
+    [data-part="input"] {
+      @apply border-0 !shadow-none !outline-0 ring-0;
+    }
+
     [data-part="trigger"] {
       &[data-state="closed"] {
         @apply rotate-180;
       }
+
       &:hover {
         @apply bg-secondary;
       }
     }
-    @apply w-full max-w-full px-3;
+
+    &[data-disabled] {
+      background: #f9f9f9;
+    }
+
+    &[data-focus] {
+      [data-part="input"] {
+        @apply !border-0 !outline-0 !ring-0;
+      }
+    }
+
+    @apply w-full max-w-full rounded px-2 py-1;
   }
 
-  [data-scope="tags-input"][data-part="tag"] {
-    @apply bg-secondary border- inline-block border-2 p-1;
+  [data-scope="tags-input"] {
+    &[data-part="tag"] {
+      @apply bg-secondary hover:bg-secondary-dark hover:border-secondary-contrast inline-block rounded-full border-2 px-3 py-2 hover:cursor-pointer;
+    }
+    &[data-part="tag-delete-trigger"] {
+      @apply hover:text-red-700;
+    }
   }
 }

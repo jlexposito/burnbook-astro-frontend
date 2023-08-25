@@ -1,4 +1,7 @@
 {
     "[javascript]": { "editor.formatOnSave": true },
-    "[css]": { "editor.formatOnSave": true }
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "prettier.enable": true
 }

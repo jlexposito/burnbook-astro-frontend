@@ -10,7 +10,7 @@
       &:hover {
         @apply bg-secondary;
       }
-      @apply absolute  right-0 top-1/2 -translate-y-1/2 transform p-3;
+      @apply absolute right-0 top-1/2 -translate-y-1/2 transform p-3;
     }
     @apply relative;
   }

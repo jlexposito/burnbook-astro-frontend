@@ -26,20 +26,39 @@ code {
   .bk-accent {
     @apply bg-secondary text-secondary-contrast active:bg-secondary-dark-ring focus-visible:ring-secondary-dark-ring focus-visible:outline focus-visible:outline-1 focus-visible:ring-2 active:ring-2 disabled:cursor-not-allowed disabled:opacity-50;
   }
+
   .bk-accent-hover {
     @apply hover:bg-secondary-dark hover:ring-secondary-contrast hover:ring-2;
   }
+
   .btn {
-    @apply focus:ring-primary-accent my-3 rounded-lg border px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply focus:ring-primary-accent my-3 rounded-lg px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
+
   .btn-accent {
     @reuse .bk-accent;
     @reuse .bk-accent-hover;
   }
+
   .bk-accent-dark {
     @apply bk-accent-dark;
   }
+
   .btn-primary {
     @apply bg-primary hover:bg-primary-accent rounded-lg border px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  input:focus,
+  .input.focused {
+    @apply !border-secondary !ring-secondary-dark-ring !outline-0 !ring-1;
+  }
+
+  .input {
+    @reuse input;
+  }
+  form {
+    .errors {
+      @apply relative rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700;
+    }
   }
 }

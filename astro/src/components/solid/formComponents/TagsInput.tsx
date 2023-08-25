@@ -1,11 +1,10 @@
 import "@styles/TagsInput.css";
-import * as tagsInput from "@zag-js/tags-input";
+import * as zagTagsInput from "@zag-js/tags-input";
 
 import LabelComponent from "./LabelComponent";
-import { ComboboxOption } from "@utils/interfaces";
 
 import { normalizeProps, useMachine } from "@zag-js/solid";
-import { createMemo, createUniqueId, For } from "solid-js";
+import { createMemo, createUniqueId, For, mergeProps } from "solid-js";
 
 export function TagsInput(props: {
   name: string;
@@ -14,26 +13,37 @@ export function TagsInput(props: {
   disabled?: boolean;
   initialValue?: string[];
 }) {
+  const merged = mergeProps(
+    { disabled: false, initialValue: [], name: "" },
+    props,
+  );
+
   const disabled = false || props.disabled;
-  let config = {
+  let config: zagTagsInput.Context = {
     id: createUniqueId(),
     max: 10,
-    name: props.name,
     blurBehavior: "add",
+    name: merged.name,
+    value: merged.initialValue,
+    validate(details) {
+      // no repeated
+      return !details.values.includes(details.inputValue);
+    },
   };
-  console.log(props.name);
 
-  if (props.initialValue) {
-    config["value"] = props.initialValue;
-  }
-
-  const [state, send] = useMachine(tagsInput.machine(config));
-  const api = createMemo(() => tagsInput.connect(state, send, normalizeProps));
+  const [state, send] = useMachine(zagTagsInput.machine(config));
+  const api = createMemo(() =>
+    zagTagsInput.connect(state, send, normalizeProps),
+  );
 
   return (
     <div {...api().rootProps} class="tagsInput">
       <LabelComponent id={api().labelProps.for} label={props.label} />
-      <div {...api().controlProps}>
+      <div
+        classList={{ focused: state.hasTag("focused") }}
+        class="input"
+        {...api().controlProps}
+      >
         <For each={api().value}>
           {(value, index) => (
             <span>
@@ -53,6 +63,7 @@ export function TagsInput(props: {
           placeholder={props.placeholder ? props.placeholder : ""}
           {...api().inputProps}
         />
+        <input type="hidden" name={merged.name} value={api().value.join(",")} />
       </div>
     </div>
   );
