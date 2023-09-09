@@ -1,58 +1,29 @@
 import { createSignal } from "solid-js";
 
-//Components
-import { toaster } from "@kobalte/core";
-import ToastNotification from "@solidcomponents/ToastNotification";
-
 //Stores
 import { $tokens, updateTokens } from "@stores/apiStore";
+import { LoginResult } from "@utils/interfaces";
+
+import { doLogin } from "@utils/api";
 
 export default function LoginForm() {
   const [username, setUsername] = createSignal("");
   const [password, setPassword] = createSignal("");
 
-  const login = (username: string, password: string): void => {
-    let id: number;
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8100/token/");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    let jsonData = JSON.stringify({
-      username: username,
-      password: password,
-    });
-
-    //send the form data
-    xhr.send(jsonData);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState == XMLHttpRequest.DONE) {
-        if (xhr.status == 200) {
-          let tokens = JSON.parse(xhr.response);
-          updateTokens(tokens);
-          window.location.replace("/recipe/newrecipe");
-        } else if (xhr.status == 401) {
-          id = toaster.show((props) => (
-            <ToastNotification
-              message="Invalid credentials"
-              title="Error"
-              toastId={props.toastId}
-            />
-          ));
-        } else {
-          id = toaster.show((props) => (
-            <ToastNotification
-              message="Something went wrong"
-              title="Error"
-              toastId={props.toastId}
-            />
-          ));
-        }
-      }
-    };
-  };
-
   const handleSubmit = (event: Event): void => {
     event.preventDefault();
-    login(username(), password());
+    const res = doLogin(username(), password());
+    res
+      .then((res) => {
+        console.log(res);
+        updateTokens(res.data);
+        window.location.replace("/recipe/newrecipe");
+        // res.data.args; // { hello: 'world' }
+      })
+      .catch((reason) => {
+        console.log(reason);
+        alert("Invalid credentials");
+      });
   };
   return (
     <>
@@ -60,6 +31,7 @@ export default function LoginForm() {
         id="login"
         class="space-y-4 md:space-y-6"
         action="#"
+        method="post"
         onsubmit={handleSubmit}
       >
         <div>
@@ -76,6 +48,7 @@ export default function LoginForm() {
             class="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 sm:text-sm "
             placeholder="username"
             onChange={(e) => {
+              console.log(`updating username: ${e.target.value}`);
               setUsername(e.target.value);
             }}
             required
@@ -95,6 +68,7 @@ export default function LoginForm() {
             placeholder="••••••••"
             class="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 sm:text-sm"
             onChange={(e) => {
+              console.log(`updating password: ${e.target.value}`);
               setPassword(e.target.value);
             }}
             required

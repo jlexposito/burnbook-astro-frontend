@@ -239,12 +239,12 @@ export default function RecipeForm() {
           </div>
         </Show>
         <div class="p-3 py-5 sm:p-5 md:space-y-3">
-          <div class="flex flex-wrap gap-y-2 pb-4">
+          <div class="flex flex-wrap gap-y-4 pb-4 md:gap-y-6 md:pb-6">
             <div class="w-full">
               <FormInput
                 type="text"
                 name="title"
-                label="Title"
+                label="Nombre"
                 autocomplete="off"
                 // dynamicValue={name}
                 required={true}
@@ -255,7 +255,7 @@ export default function RecipeForm() {
                 <FormInput
                   type="number"
                   name="cooking_time"
-                  label="Cooking time (minutes)"
+                  label="Tiempo de preparacion (minutos)"
                   min="0"
                   required={true}
                 />
@@ -264,7 +264,7 @@ export default function RecipeForm() {
                 <FormInput
                   type="number"
                   name="servings"
-                  label="Servings"
+                  label="Raciones"
                   value="2"
                   required={true}
                 />
@@ -272,12 +272,26 @@ export default function RecipeForm() {
             </div>
           </div>
 
-          <div class="pb-6">
+          <div class="mb-6 flex flex-wrap">
+            <div class="w-full">
+              <FormInput
+                type="textarea"
+                name="instructions"
+                label="Instrucciones"
+                rows="10"
+                autocomplete="off"
+                style={"min-height: 200px;"}
+                required={true}
+              />
+            </div>
+          </div>
+
+          <div class="pb-4 md:pb-6">
             <CollapseComponent
               expanded={true}
               titleClasses="w-full py-3 rounded-lg"
               classes="py-3"
-              title="🍏 Ingredients 🍏"
+              title="🍏 Ingredientes 🍏"
             >
               <div class="[& .ingredient-form]:border-2 border-solid">
                 <Show
@@ -290,11 +304,12 @@ export default function RecipeForm() {
                 >
                   <div>
                     <For each={ingredients()}>
-                      {(ingredient) => (
+                      {(ingredient, index) => (
                         <>
                           <>
-                            <div class="flex">
+                            <div class="flex border-b-2 pb-3">
                               <div class="grow">
+                                <p>Ingrediente {index() + 1}</p>
                                 <RecipeIngredientForm
                                   id={ingredient.id}
                                   options={selectOptionsIngredients()}
@@ -303,7 +318,7 @@ export default function RecipeForm() {
                               </div>
                               <div class="ml-2 flex grow-0 items-end">
                                 <button
-                                  class="btn btn-accent !my-3 !px-2 !py-1"
+                                  class="btn !my-3 !px-2 !py-1"
                                   disabled={ingredients().length < 2}
                                   onClick={(e) => {
                                     e.preventDefault();
@@ -334,12 +349,12 @@ export default function RecipeForm() {
             </CollapseComponent>
           </div>
 
-          <div class="pb-6">
+          <div class="pb-4 md:pb-6">
             <CollapseComponent
               expanded={true}
               titleClasses="w-full py-3"
               classes="py-3"
-              title="🔗 References 🔗"
+              title="🔗 Referencias 🔗"
             >
               <div class="[& .references-form]:border-2 border-solid">
                 <Index each={references()}>
@@ -350,7 +365,7 @@ export default function RecipeForm() {
                           <FormInput
                             type="text"
                             name="references[]"
-                            label={`Reference ${index + 1}`}
+                            label={`Referencia ${index + 1}`}
                             autocomplete="off"
                             required={false}
                             value={reference().value()}
@@ -361,7 +376,7 @@ export default function RecipeForm() {
 
                         <div class="ml-2 flex grow-0 items-end">
                           <button
-                            class="btn btn-accent !my-1 !px-2 !py-1"
+                            class="btn !my-1 !px-2 !py-1"
                             disabled={references().length < 2}
                             onClick={(e) => {
                               e.preventDefault();
@@ -380,34 +395,21 @@ export default function RecipeForm() {
                   )}
                 </Index>
                 <button class="btn btn-accent" onClick={addNewReference}>
-                  Add new reference +
+                  Nueva referencia +
                 </button>
               </div>
             </CollapseComponent>
           </div>
-          <div>
+          <div class="pb-4 md:pb-6">
             <TagsInput
               name={"tags"}
-              placeholder={"Add tags (comma separated)"}
+              placeholder={"tags (separados por coma)"}
               label={"tags"}
             />
           </div>
 
-          <div class="mb-6 flex flex-wrap">
-            <div class="w-full px-3">
-              <FormInput
-                type="textarea"
-                name="instructions"
-                label="Instructions"
-                rows="10"
-                autocomplete="off"
-                style={"min-height: 200px;"}
-                required={true}
-              />
-            </div>
-          </div>
           <button type="submit" class="btn btn-primary w-full">
-            Save
+            Guardar
           </button>
         </div>
       </form>

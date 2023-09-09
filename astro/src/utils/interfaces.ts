@@ -77,3 +77,8 @@ export type referenceFormValue = {
 export type recipeIngredientFormValue = {
   id: string;
 };
+
+export type LoginResult = {
+  success: boolean;
+  message: string;
+};
