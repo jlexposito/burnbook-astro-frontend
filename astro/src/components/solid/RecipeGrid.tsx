@@ -4,7 +4,7 @@ import { isMobileDevice } from "@utils/mobileHelper";
 
 import { For, onMount, createSignal, Show } from "solid-js";
 
-import { RecipeInterface } from "@utils/interfaces";
+import { type RecipeInterface } from "@utils/interfaces";
 import RecipeCard from "@solidcomponents/RecipeCard";
 
 export default function Recipes(props: {
@@ -32,7 +32,7 @@ export default function Recipes(props: {
   return (
     <>
       <Show when={recipes() && recipes().length > 0}>
-        <div class="pb-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 gap-y-5 md:gap-5 lg:gap-6 my-6 mx-3 lg:mx-6 2xl:mx-12">
+        <div class="mx-3 my-6 grid grid-cols-1 gap-4 gap-y-5 pb-4 md:grid-cols-2 md:gap-5 lg:mx-6 lg:gap-6 xl:grid-cols-3 2xl:mx-12 2xl:grid-cols-4">
           <For each={recipes()}>
             {(recipe, index) => (
               <>
@@ -48,7 +48,7 @@ export default function Recipes(props: {
         </div>
       </Show>
       <Show when={recipes() == null}>
-        <div class="text-lg w-full flex h-screen">
+        <div class="flex h-screen w-full text-lg">
           <p class="m-auto">Something went wrong, please refresh the page</p>
         </div>
       </Show>

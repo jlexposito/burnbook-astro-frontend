@@ -1,6 +1,6 @@
-import { Component } from "solid-js";
+import { type Component } from "solid-js";
 
-import { ComboboxOption } from "@utils/interfaces";
+import { type ComboboxOption } from "@utils/interfaces";
 import FormInput from "@solidcomponents/formComponents/FormInput";
 import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
 

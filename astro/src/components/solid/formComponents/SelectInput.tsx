@@ -11,7 +11,7 @@ import {
   mergeProps,
 } from "solid-js";
 import LabelComponent from "./LabelComponent";
-import { ComboboxOption } from "@utils/interfaces";
+import { type ComboboxOption } from "@utils/interfaces";
 
 export function SelectInput(props: {
   options: ComboboxOption[];

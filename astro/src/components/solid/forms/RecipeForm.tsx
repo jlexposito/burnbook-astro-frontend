@@ -6,10 +6,10 @@ import {
   createUniqueId,
   For,
   Index,
-  JSX,
-  Resource,
-  ResourceReturn,
-  Setter,
+  type JSX,
+  type Resource,
+  type ResourceReturn,
+  type Setter,
   Show,
 } from "solid-js";
 import { isServer } from "solid-js/web";
@@ -17,12 +17,12 @@ import { isServer } from "solid-js/web";
 // Utils
 import { getIngredients, getUnits, getTags } from "@utils/api";
 import {
-  Ingredient,
-  Unit,
-  ComboboxOption,
-  Tag,
-  referenceFormValue,
-  recipeIngredientFormValue,
+  type Ingredient,
+  type Unit,
+  type ComboboxOption,
+  type Tag,
+  type referenceFormValue,
+  type recipeIngredientFormValue,
 } from "@utils/interfaces";
 
 // Components
@@ -216,7 +216,7 @@ export default function RecipeForm() {
         class="space-y-4 md:space-y-6"
         method="post"
         onsubmit={handleSubmit}
-        action="http://localhost:8200/recipes/"
+        // action="http://localhost:8200/recipes/"
       >
         <Show when={Object.keys(formErrors()).length > 0}>
           <div class="errors">

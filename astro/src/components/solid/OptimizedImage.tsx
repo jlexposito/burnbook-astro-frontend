@@ -1,7 +1,7 @@
-import { Component, mergeProps } from "solid-js";
+import { type Component, mergeProps } from "solid-js";
 
 import { srcSet } from "@utils/optimizeImage";
-import { ImageSources } from "@utils/interfaces";
+import { type ImageSourcesType } from "@utils/interfaces";
 
 const OptimizedImage: Component<{
   widthSizes: Array<number>;
@@ -20,7 +20,7 @@ const OptimizedImage: Component<{
     props,
   );
 
-  const imageSources = (): ImageSources => {
+  const imageSources = (): ImageSourcesType => {
     return srcSet(props.widthSizes, props.filename, "webp");
   };
 

@@ -1,5 +1,11 @@
 // types
-import { Recipe, Tag, Ingredient, Unit, LoginResult } from "@utils/interfaces";
+import {
+  type Recipe,
+  type Tag,
+  type Ingredient,
+  type Unit,
+  type LoginResult,
+} from "@utils/interfaces";
 
 import { axiosClient, axiosClientNoIntercept } from "@utils/apiClient";
 import { updateTokens } from "@stores/apiStore";

@@ -1,4 +1,4 @@
-import { WritableAtom, atom } from "nanostores";
+import { type WritableAtom, atom } from "nanostores";
 import { createLocalStore } from "@stores/stores";
 import { persistentAtom } from "@nanostores/persistent";
 

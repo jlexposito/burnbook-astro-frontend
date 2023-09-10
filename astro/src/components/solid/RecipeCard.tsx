@@ -1,5 +1,5 @@
 import OptimizedImage from "@solidcomponents/OptimizedImage";
-import { RecipeInterface } from "@utils/interfaces";
+import { type RecipeInterface } from "@utils/interfaces";
 
 export default function RecipeCard(props: {
   recipe: RecipeInterface | null;
