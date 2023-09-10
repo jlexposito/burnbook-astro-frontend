@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/BaseLayout.astro";
+import LoginForm from "@solidcomponents/forms/LoginForm";
+---
+
+<Layout pagename="login" title="Login">
+    <section class="">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <h1 class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
+                Burnbook
+            </h1>
+            <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl mb-6 font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                        Sign in
+                    </h1>
+                    <LoginForm client:load />
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

@@ -5,7 +5,7 @@ import TagFilters from "@solidcomponents/TagFilter";
 import RecipeGrid from "@solidcomponents/RecipeGrid";
 
 import { setCache } from "@utils/cache.js";
-import { getRecipes, getTags } from "./../utils/api";
+import { getRecipes, getTags } from "@utils/api";
 
 const recipes = await getRecipes();
 const tags = await getTags();
@@ -16,7 +16,7 @@ if (recipes) {
 
 ---
 
-<Layout title="Burnbook">
+<Layout pagename="home" title="Burnbook">
     <RecipeGrid recipesdata={recipes} client:load />
     <TagFilters tagsdata={tags} client:load />
 </Layout>

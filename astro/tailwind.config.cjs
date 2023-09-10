@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'primary': '#541802',
-				'secondary': '#DFB09F',
+				'primary-accent': '#722103',
 				'secondary': '#DFB09F',
 				'secondary-dark': '#E0A189',
 				'secondary-dark-ring': '#E17D50',
@@ -17,10 +17,10 @@ module.exports = {
 		require("@tailwindcss/forms"),
 		function ({ addComponents, theme }) {
 			addComponents({
-			  '.bk-acent': {
+			  '.btn': {
 				padding: theme('spacing.4'),
-				margin: 'auto'
-			  }
+				margin: 'auto',
+			  },
 			})
 		  }
 	],
