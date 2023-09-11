@@ -43,12 +43,13 @@ export default function RecipeCard(props: {
               ) : (
                 <OptimizedImage
                   lazyLoad={props.lazyLoad}
-                  width={230}
-                  height={140}
+                  width={200}
+                  height={220}
                   classes={"h-full min-w-full flex-1 object-cover"}
                   altTitle={recipe().title}
                   filename={recipe().image}
-                  widthSizes={[240]}
+                  widthSizes={[160, 170, 200, 240]}
+                  sizes="(max-width:544px) 170px, (max-width: 767px) 240px, (max-width: 1535px) 160px, (max-width: 2200px) 170px, 200px"
                 />
               )}
             </figure>

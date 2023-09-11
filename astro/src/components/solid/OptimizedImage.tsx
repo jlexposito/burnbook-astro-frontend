@@ -11,18 +11,21 @@ const OptimizedImage: Component<{
   height: number;
   classes: string;
   lazyLoad: boolean;
+  sizes?: string;
 }> = (props) => {
-  props = mergeProps(
-    {
-      classes: "",
-      lazyLoad: false,
-    },
-    props,
-  );
 
   const imageSources = (): ImageSources => {
     return srcSet(props.widthSizes, props.filename, "webp");
   };
+
+  props = mergeProps(
+    {
+      classes: "",
+      lazyLoad: false,
+      sizes: imageSources().sizes
+    },
+    props,
+  );
 
   return (
     <img
@@ -31,7 +34,7 @@ const OptimizedImage: Component<{
       height={props.height}
       src={imageSources().src}
       srcset={imageSources().srcSet}
-      sizes={imageSources().sizes}
+      sizes={props.sizes}
       loading={props.lazyLoad ? "lazy" : "eager"}
       alt={props.altTitle}
     />

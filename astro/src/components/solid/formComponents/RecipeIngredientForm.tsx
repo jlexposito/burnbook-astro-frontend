@@ -22,8 +22,8 @@ const RecipeIngredientForm: Component<{
           </div>
           <div class="w-full px-1 sm:w-1/2 md:mb-0 md:w-2/5 lg:px-1.5">
             <SelectInput
-              label={"Ingrediente"}
-              name={"ingredient_name[]"}
+              label="Ingrediente"
+              name="ingredient_name[]"
               options={props.options}
               allowCreate={true}
               required={true}
@@ -35,15 +35,14 @@ const RecipeIngredientForm: Component<{
               label="Cantidad"
               type="number"
               min="0"
-              value={12}
               required={true}
               classes={"text-center"}
             />
           </div>
           <div class="w-1/2 px-1 md:mb-0 md:w-1/5 lg:px-1.5">
             <SelectInput
-              label={"Unidad"}
-              name={"ingredient_unit[]"}
+              label="Unidad"
+              name="ingredient_unit[]"
               options={props.unitOptions}
               classes={"text-center"}
               required={true}
