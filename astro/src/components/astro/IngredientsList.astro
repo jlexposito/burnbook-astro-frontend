@@ -23,7 +23,10 @@ function getUnitTranslated(unit) {
   return translateUnit;
 }
 function prefix(recipeIngredient: RecipeIngredient) {
-  return recipeIngredient.ingredient.prefix;
+  let recipePrefix = recipeIngredient.ingredient.prefix;
+  if (recipePrefix.endsWith(" "))
+    return recipePrefix
+  return `${recipePrefix} `;
 }
 function name(recipeIngredient: RecipeIngredient) {
   return recipeIngredient.ingredient.name;
