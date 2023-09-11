@@ -1,4 +1,4 @@
-import { Component } from "solid-js";
+import { type Component } from "solid-js";
 import { Toast, toaster } from "@kobalte/core";
 
 import "@solidcomponents/ToastNotifications.css";

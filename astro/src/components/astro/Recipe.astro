@@ -1,13 +1,13 @@
 ---
-import Markdoc from '@markdoc/markdoc';
+import Markdoc from "@markdoc/markdoc";
 
-import { type ImageSources, type Recipe } from '@utils/interfaces';
+import { type ImageSources, type Recipe } from "@utils/interfaces";
 import { srcSet } from "@utils/optimizeImage.js";
 
 import RecipeSidebar from "@astrocomponents/RecipeSidebar.astro";
 
 export interface Props {
-    recipe: Recipe;
+  recipe: Recipe;
 }
 
 const { recipe } = Astro.props;
@@ -15,63 +15,80 @@ const { recipe } = Astro.props;
 let instructions = recipe.instructions;
 let instructionsHTML = "";
 const ast = Markdoc.parse(instructions);
-const content = Markdoc.transform(ast, /* config */);
+const content = Markdoc.transform(ast /* config */);
 const noImage = import.meta.env.PUBLIC_DEFAULT_IMAGE;
 
-const image = () : string => {
-    return recipe.image ? recipe.image : noImage
-}
+const image = (): string => {
+  return recipe.image ? recipe.image : noImage;
+};
 
-const imageSources = () : ImageSources => {
-    return srcSet([480, 720, 1080], image(), 'webp')
-}
+const imageSources = (): ImageSources => {
+  return srcSet([480, 720, 1080], image(), "webp");
+};
 
 instructionsHTML = Markdoc.renderers.html(content);
 ---
 
 <div class="relative">
-    <img src={imageSources().src } srcset={imageSources().srcSet} sizes={imageSources().sizes} class="w-full h-[128px] md:h-[256px] object-cover" alt={recipe.title}/>
-    <div class="flex w-full h-full text-center text-white font-bold">
-        <h1 class="z-10 px-7 text-4xl sm:text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2">{recipe.title}</h1>
-        <div  class="overlay bg-black opacity-20 w-full h-full absolute top-0 left-0 right-0 bottom-0"></div>
+  <img
+    src={imageSources().src}
+    srcset={imageSources().srcSet}
+    sizes={imageSources().sizes}
+    class="w-full h-[128px] md:h-[256px] object-cover"
+    alt={recipe.title}
+  />
+  <div class="flex w-full h-full text-center text-white font-bold">
+    <h1
+      class="z-10 px-7 text-4xl sm:text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2"
+    >
+      {recipe.title}
+    </h1>
+    <div
+      class="overlay bg-black opacity-20 w-full h-full absolute top-0 left-0 right-0 bottom-0"
+    >
     </div>
-    
+  </div>
 </div>
-<div class="sm:grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-10 md:px-13 lg:gap-x-20 lg:px-15 py-12 px-12 xl:px-32 ">
-    <div class="col-span-1 md:col-span-2">
-        <Fragment set:html={instructionsHTML} />
-    </div>
-    <div class="col-span-1 g:m-0">
-        <RecipeSidebar 
-            recipe={recipe}
-        />
-    </div>
+<div
+  class="sm:grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-10 md:px-13 lg:gap-x-20 lg:px-15 py-12 px-12 xl:px-32"
+>
+  <div class="col-span-1 md:col-span-2">
+    <Fragment set:html={instructionsHTML} />
+  </div>
+  <div class="col-span-1 g:m-0">
+    <RecipeSidebar recipe={recipe} />
+  </div>
 </div>
 
 <style is:global>
-    article > h1, article > h2, article > h3, article > h4, article > h5 { 
-        margin-bottom: 1.25rem;
-        margin-top: 1rem;
-    }
-    article > h1 { 
-        font-size: 3rem;
-    }
-    article > h2 { 
-        font-size: 2.25rem;
-    }
-    article > h3 { 
-        font-size: 1.8rem;
-    }
-    article > p {
-        font-size: 1.25rem;
-        line-height: 2.5rem;
-    }
-    article > ol li, article > ul li {
-        font-size: 1.25rem;
-        margin-left: 1.25rem;
-        line-height: 2.5rem;
-    }
-    article > ol {
-        list-style: decimal;
-    }
+  article > h1,
+  article > h2,
+  article > h3,
+  article > h4,
+  article > h5 {
+    margin-bottom: 1.25rem;
+    margin-top: 1rem;
+  }
+  article > h1 {
+    font-size: 3rem;
+  }
+  article > h2 {
+    font-size: 2.25rem;
+  }
+  article > h3 {
+    font-size: 1.8rem;
+  }
+  article > p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+  article > ol li,
+  article > ul li {
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+    line-height: 2.5rem;
+  }
+  article > ol {
+    list-style: decimal;
+  }
 </style>

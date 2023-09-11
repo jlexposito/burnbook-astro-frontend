@@ -1,5 +1,5 @@
 import {
-  Accessor,
+  type Accessor,
   createMemo,
   createResource,
   createSignal,
@@ -34,9 +34,9 @@ import { TagsInput } from "@solidcomponents/formComponents/TagsInput";
 // Stores
 import { $tokens } from "@stores/apiStore";
 
-export default function RecipeForm() {
+export default function RecipeForm(props: { action: string }) {
   const createSelectOptions = (
-    elements: Resource<Unit[] | Ingredient[] | Tag[]>,
+    elements: Resource<Unit[] | Ingredient[] | Tag[]>
   ): ComboboxOption[] => {
     let options: ComboboxOption[] = [];
     elements()?.forEach((opt, _) => {
@@ -52,20 +52,20 @@ export default function RecipeForm() {
   // tags
   const [existingTags]: ResourceReturn<Tag[]> = createResource(getTags);
   const tagSelectOptions: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingTags),
+    createSelectOptions(existingTags)
   );
 
   // ingredients
   const [existingIngredients]: ResourceReturn<Ingredient[]> =
     createResource(getIngredients);
   const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingIngredients),
+    createSelectOptions(existingIngredients)
   );
 
   // units
   const [unitOptions]: ResourceReturn<Unit[]> = createResource(getUnits);
   const selectOptionsUnits: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(unitOptions),
+    createSelectOptions(unitOptions)
   );
 
   const createNewReference = (initialValue: string) => {
@@ -79,7 +79,7 @@ export default function RecipeForm() {
 
   const ingredientFormElement = (
     initialQuantity: number = 0,
-    iniitalUnit: string = "",
+    iniitalUnit: string = ""
   ) => ({
     id: createUniqueId(),
   });
@@ -113,7 +113,7 @@ export default function RecipeForm() {
   };
 
   const addNewReference: JSX.EventHandler<HTMLButtonElement, MouseEvent> = (
-    e,
+    e
   ): void => {
     e.preventDefault();
     let newReference = createNewReference("");
@@ -123,7 +123,7 @@ export default function RecipeForm() {
   const removeElement = (
     id: string,
     elements: Accessor<recipeIngredientFormValue[] | referenceFormValue[]>,
-    setElements: Setter<recipeIngredientFormValue[] | referenceFormValue[]>,
+    setElements: Setter<recipeIngredientFormValue[] | referenceFormValue[]>
   ): void => {
     const elementPos = elements()
       .map(function (x) {
@@ -173,13 +173,13 @@ export default function RecipeForm() {
 
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {
+      let response = event.target.responseText;
       if (event.target.status == 401) {
         alert("Please login again");
         window.open("/login", "_blank");
       }
       if (event.target.status !== 201) {
         console.log("Something went wrong");
-        let response = event.target.responseText;
         let errors;
         try {
           errors = JSON.parse(response).errors;
@@ -190,7 +190,9 @@ export default function RecipeForm() {
         }
         setFormErrors(errors);
       } else {
+        let json_res = JSON.parse(response);
         alert("Created successfully !");
+        window.location.replace(`/recipe/${json_res.recipe}`)
       }
     });
 
@@ -216,7 +218,7 @@ export default function RecipeForm() {
         class="space-y-4 md:space-y-6"
         method="post"
         onsubmit={handleSubmit}
-        // action="http://localhost:8200/recipes/"
+        action={props.action}
       >
         <Show when={Object.keys(formErrors()).length > 0}>
           <div class="errors">
@@ -269,6 +271,9 @@ export default function RecipeForm() {
                   required={true}
                 />
               </div>
+            </div>
+            <div class="w-full">
+              <FormInput type="file" name="image" alt="Recipe image"/>
             </div>
           </div>
 
@@ -325,7 +330,7 @@ export default function RecipeForm() {
                                     removeElement(
                                       ingredient.id,
                                       ingredients,
-                                      setIngredients,
+                                      setIngredients
                                     );
                                   }}
                                 >
@@ -383,7 +388,7 @@ export default function RecipeForm() {
                               removeElement(
                                 reference().id,
                                 references,
-                                setReferences,
+                                setReferences
                               );
                             }}
                           >

@@ -1,59 +1,59 @@
 ---
-import { type RecipeIngredient } from '@utils/interfaces';
+import { type RecipeIngredient } from "@utils/interfaces";
 
 export interface Props {
-    RecipeIngredients: Array<RecipeIngredient>;
+  RecipeIngredients: Array<RecipeIngredient>;
 }
 
 const { RecipeIngredients = [] } = Astro.props;
 
 function getUnitTranslated(unit) {
-    let translateUnit = '';
-        switch(unit) {
-        case "tablespoon":
-            translateUnit = "tbsp";
-            break;
-        case "unit":
-            translateUnit = "";
-            break;
-        default:
-            translateUnit = unit;
-            break
-    }
-    return translateUnit;
+  let translateUnit = "";
+  switch (unit) {
+    case "tablespoon":
+      translateUnit = "tbsp";
+      break;
+    case "unit":
+      translateUnit = "";
+      break;
+    default:
+      translateUnit = unit;
+      break;
+  }
+  return translateUnit;
 }
 function prefix(recipeIngredient: RecipeIngredient) {
-    return recipeIngredient.ingredient.prefix
+  return recipeIngredient.ingredient.prefix;
 }
 function name(recipeIngredient: RecipeIngredient) {
-    return recipeIngredient.ingredient.name
+  return recipeIngredient.ingredient.name;
 }
 ---
 
-
 <div class="ingredient text-lg">
-{
-    RecipeIngredients.map((RecipeIngredient, index) =>(
-        <div class="mb-4">
-            <input 
-                type="checkbox"
-                id={`ingredient-${index}`} 
-                name={RecipeIngredient.ingredient.name} value={index}
-            >
-            <label 
-                class="ml-1 hover:cursor-pointer" 
-                for={`ingredient-${index}`}
-            >
-            {RecipeIngredient.quantity} {getUnitTranslated(RecipeIngredient.unit)} {prefix(RecipeIngredient)} {name(RecipeIngredient)}
-            </label>
-        </div>
+  {
+    RecipeIngredients.map((RecipeIngredient, index) => (
+      <div class="mb-4">
+        <input
+          type="checkbox"
+          id={`ingredient-${index}`}
+          name={RecipeIngredient.ingredient.name}
+          value={index}
+        />
+        <label class="ml-1 hover:cursor-pointer" for={`ingredient-${index}`}>
+          <span>
+            {RecipeIngredient.quantity}{" "}
+            {getUnitTranslated(RecipeIngredient.unit)}{" "}
+            {prefix(RecipeIngredient)} {name(RecipeIngredient)}
+          </span>
+        </label>
+      </div>
     ))
-
-}
+  }
 </div>
 
 <style>
-.ingredient input[type="checkbox"] {
-    @apply w-4 h-4 rounded text-primary hover:cursor-pointer shadow active:ring-2 focus:ring-secondary-dark-ring focus:ring-2 focus-visible:outline focus-visible:outline-2
-}
+  .ingredient input[type="checkbox"] {
+    @apply w-4 h-4 rounded text-primary hover:cursor-pointer shadow active:ring-2 focus:ring-secondary-dark-ring focus:ring-2 focus-visible:outline focus-visible:outline-2;
+  }
 </style>

@@ -1,4 +1,4 @@
-import { Component, mergeProps } from "solid-js";
+import { type Component, mergeProps } from "solid-js";
 
 const LabelComponent: Component<{
   label: string;

@@ -1,6 +1,9 @@
 ---
 import Layout from "@layouts/BaseLayout.astro";
 import RecipeForm from "@solidcomponents/forms/RecipeForm";
+import { baseURL } from "@utils/apiClient";
+
+const actionUrl = `${baseURL}recipes/`
 ---
 
 <Layout pagename="newrecipe" title="New recipe">
@@ -14,7 +17,7 @@ import RecipeForm from "@solidcomponents/forms/RecipeForm";
       <div
         class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-4xl md:max-w-7xl xl:p-0"
       >
-        <RecipeForm client:load />
+        <RecipeForm action={actionUrl} client:load />
       </div>
     </div>
   </section>

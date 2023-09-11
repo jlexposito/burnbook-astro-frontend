@@ -3,50 +3,73 @@ import Link from "@astrocomponents/Link.astro";
 import IngredientsList from "@astrocomponents/IngredientsList.astro";
 import RecipeSidebarSection from "@astrocomponents/RecipeSidebarSection.astro";
 
-import { type Recipe } from '@utils/interfaces';
+import { type Recipe } from "@utils/interfaces";
 
 export interface Props {
-    recipe: Recipe;
+  recipe: Recipe;
 }
 
 const { recipe } = Astro.props;
 
-function getDomainName (url: string) : string {
-    let domain = (new URL(url));
-    return domain.hostname.replace('www.','').replace('youtu.be', 'youtube');
+function getDomainName(url: string): string {
+  let domain = new URL(url);
+  return domain.hostname.replace("www.", "").replace("youtu.be", "youtube");
 }
 
+function NoneEmpty(arr: Array<string>) {
+  return arr.indexOf("") === -1;
+}
 ---
 
 <div class="mt-5 sm:m-0 shadow-md rounded-xl">
-    <div class="bg-white py-3 mb-12 rounded-lg border-2 border-opacity-40 border-secondary-dark">
-        <RecipeSidebarSection title="Tiempo de preparación:">
-            <span class="text-2xl">{recipe.cooking_time} m</span>
-        </RecipeSidebarSection>
-        <RecipeSidebarSection title="Raciones:">
-            <span class="text-2xl">{recipe.servings}</span>
-        </RecipeSidebarSection>
-        <RecipeSidebarSection title="Referencias">
-            {
-                (recipe.references.length == 0) ? <p>Sin referencias</p> :
-                recipe.references.map((reference) => (
-                    <Link target={"_blank"} icon={{name: 'ic:round-insert-link', side: 'left'}} text={getDomainName(reference)} href={reference} style={'primary'} classes={"bk-accent bk-accent-hover"} />
-                ))
-            }
-        </RecipeSidebarSection>
-        <RecipeSidebarSection title="Ingredientes" >
-            <div class="text-left">
-                <IngredientsList RecipeIngredients={recipe.ingredients} />
-            </div>
-        </RecipeSidebarSection>
+  <div
+    class="bg-white py-3 mb-12 rounded-lg border-2 border-opacity-40 border-secondary-dark"
+  >
+    <RecipeSidebarSection title="Tiempo de preparación:">
+      <span class="text-2xl">{recipe.cooking_time} m</span>
+    </RecipeSidebarSection>
+    <RecipeSidebarSection title="Raciones:">
+      <span class="text-2xl">{recipe.servings}</span>
+    </RecipeSidebarSection>
+    <RecipeSidebarSection title="Referencias">
+      {
+        recipe.references.length == 0 ? (
+          <p>Sin referencias</p>
+        ) : (
+          recipe.references.map((reference) => (
+            <Link
+              target={"_blank"}
+              icon={{ name: "ic:round-insert-link", side: "left" }}
+              text={getDomainName(reference)}
+              href={reference}
+              style={"primary"}
+              classes={"bk-accent bk-accent-hover"}
+            />
+          ))
+        )
+      }
+    </RecipeSidebarSection>
+    <RecipeSidebarSection title="Ingredientes">
+      <div class="text-left">
+        <IngredientsList RecipeIngredients={recipe.ingredients} />
+      </div>
+    </RecipeSidebarSection>
+    {
+      (
         <RecipeSidebarSection title="Tags" border={false}>
+          {NoneEmpty(recipe.tags) ? (
             <div class="mt-3">
-                {
-                    recipe.tags.map((tag) => (
-                        <span class="inline-block bg-primary text-white rounded px-3 py-2 mx-1 my-1 sm:my-3">{tag}</span>
-                    ))
-                }
+              {recipe.tags.map((tag) => (
+                <span class="inline-block bg-primary text-white rounded px-3 py-2 mx-1 my-1 sm:my-3">
+                  {tag}
+                </span>
+              ))}
             </div>
+          ) : (
+            "Sin tags"
+          )}
         </RecipeSidebarSection>
-    </div>
+      )
+    }
+  </div>
 </div>

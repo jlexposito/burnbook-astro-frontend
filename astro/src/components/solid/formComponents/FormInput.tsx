@@ -1,10 +1,10 @@
 import {
-  JSX,
-  Component,
+  type JSX,
+  type Component,
   createUniqueId,
   mergeProps,
   splitProps,
-  SplitProps as _SplitProps,
+  type SplitProps as _SplitProps,
 } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
@@ -14,7 +14,7 @@ type SplitProps<T, K extends (readonly (keyof T)[])[]> = T extends unknown
   ? _SplitProps<T, K>
   : never;
 
-type InputTypes = "text" | "input" | "textarea" | "number";
+type InputTypes = "text" | "input" | "textarea" | "number" | "file";
 
 type Test<T extends InputTypes = InputTypes> = {
   id?: string;

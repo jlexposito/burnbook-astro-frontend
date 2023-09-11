@@ -1,6 +1,6 @@
 import "@styles/CollapseComponent.css";
 
-import { JSX, Component, createSignal } from "solid-js";
+import { type JSX, type Component, createSignal } from "solid-js";
 import { Collapse } from "solid-collapse";
 
 const CollapseComponent: Component<{

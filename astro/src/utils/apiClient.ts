@@ -1,6 +1,6 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { type AxiosInstance } from "axios";
 
-let baseURL = import.meta.env.PUBLIC_API
+export const baseURL = import.meta.env.PUBLIC_API
   ? import.meta.env.PUBLIC_API
   : "https://burnbookapi.zh0nb.com/";
 
