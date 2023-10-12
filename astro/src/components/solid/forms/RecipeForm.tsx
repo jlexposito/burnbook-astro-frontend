@@ -23,6 +23,7 @@ import {
   type Tag,
   type referenceFormValue,
   type recipeIngredientFormValue,
+  type RecipeInterface
 } from "@utils/interfaces";
 
 // Components
@@ -34,7 +35,9 @@ import { TagsInput } from "@solidcomponents/formComponents/TagsInput";
 // Stores
 import { $tokens } from "@stores/apiStore";
 
-export default function RecipeForm(props: { action: string }) {
+export default function RecipeForm(props: { action: string, recipe?: RecipeInterface }) {
+  const recipe = props.recipe;
+
   const createSelectOptions = (
     elements: Resource<Unit[] | Ingredient[] | Tag[]>
   ): ComboboxOption[] => {
@@ -170,6 +173,7 @@ export default function RecipeForm(props: { action: string }) {
     const form: HTMLFormElement = event.target;
     const FD = new FormData(form);
     const XHR = new XMLHttpRequest();
+    const formMethod = recipe? 'PATCH':'POST';
 
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {
@@ -203,7 +207,7 @@ export default function RecipeForm(props: { action: string }) {
 
     // Set up our request
     const url = form.action;
-    XHR.open("POST", url);
+    XHR.open(formMethod, url);
 
     const accessToken = $tokens.get().access;
     XHR.setRequestHeader("Authorization", "Bearer " + accessToken);
@@ -249,6 +253,7 @@ export default function RecipeForm(props: { action: string }) {
                 label="Nombre"
                 autocomplete="off"
                 // dynamicValue={name}
+                value={recipe?.title}
                 required={true}
               />
             </div>
@@ -259,6 +264,7 @@ export default function RecipeForm(props: { action: string }) {
                   name="cooking_time"
                   label="Tiempo de preparacion (minutos)"
                   min="0"
+                  value={recipe?.cooking_time}
                   required={true}
                 />
               </div>
@@ -267,13 +273,23 @@ export default function RecipeForm(props: { action: string }) {
                   type="number"
                   name="servings"
                   label="Raciones"
-                  value="2"
                   required={true}
+                  value={recipe? recipe.servings : '2'}
                 />
               </div>
             </div>
-            <div class="w-full">
-              <FormInput type="file" name="image" alt="Recipe image"/>
+            <div class="flex justify-between w-full">
+              <div>
+                <FormInput label="Imagen" type="file" name="image" alt="Recipe image"/>
+              </div>
+              <Show when={recipe}>
+                <div>
+                  <p>Imagen existente</p>
+                  <a href={recipe.image} target="_blank">
+                    <img width="300" height="300" src={recipe.image} />
+                  </a>
+                </div>
+              </Show>
             </div>
           </div>
 
@@ -286,6 +302,7 @@ export default function RecipeForm(props: { action: string }) {
                 rows="10"
                 autocomplete="off"
                 style={"min-height: 200px;"}
+                value={recipe? recipe.instructions : ''}
                 required={true}
               />
             </div>
@@ -410,6 +427,7 @@ export default function RecipeForm(props: { action: string }) {
               name={"tags"}
               placeholder={"tags (separados por coma)"}
               label={"tags"}
+              initialValue={recipe?.tags}
             />
           </div>
 
