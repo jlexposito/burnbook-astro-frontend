@@ -37,7 +37,6 @@ import { $tokens } from "@stores/apiStore";
 
 export default function RecipeForm(props: { action: string, recipe?: RecipeInterface }) {
   const recipe = props.recipe;
-
   const createSelectOptions = (
     elements: Resource<Unit[] | Ingredient[] | Tag[]>
   ): ComboboxOption[] => {
@@ -173,7 +172,7 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
     const form: HTMLFormElement = event.target;
     const FD = new FormData(form);
     const XHR = new XMLHttpRequest();
-    const formMethod = recipe? 'PATCH':'POST';
+    const formMethod = recipe? 'PUT':'POST';
 
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {

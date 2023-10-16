@@ -15,16 +15,22 @@ export function TagsInput(props: {
 }) {
   const merged = mergeProps(
     { disabled: false, initialValue: [], name: "" },
-    props,
+    props
   );
 
+  function isNotEmptyString(element: string) {
+    return element.trim().length;
+  }
+  let nonEmptyIntialValue = merged.initialValue.some(isNotEmptyString);
   const disabled = false || props.disabled;
+  const initialValue = nonEmptyIntialValue ? merged.initialValue : [];
+
   let config: zagTagsInput.Context = {
     id: createUniqueId(),
     max: 10,
     blurBehavior: "add",
     name: merged.name,
-    value: merged.initialValue,
+    value: initialValue,
     validate(details) {
       // no repeated
       return !details.values.includes(details.inputValue);
@@ -33,7 +39,7 @@ export function TagsInput(props: {
 
   const [state, send] = useMachine(zagTagsInput.machine(config));
   const api = createMemo(() =>
-    zagTagsInput.connect(state, send, normalizeProps),
+    zagTagsInput.connect(state, send, normalizeProps)
   );
 
   return (

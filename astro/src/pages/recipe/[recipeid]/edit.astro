@@ -9,10 +9,9 @@ import NotFoundLayout from "@layouts/NotFoundLayout.astro";
 
 import { baseURL } from "@utils/apiClient";
 
-const actionUrl = `${baseURL}recipes/`;
-
 const { recipeid } = Astro.params;
 const recipe: RecipeInterface = await getRecipe(recipeid);
+const actionUrl = `${baseURL}recipes/${recipeid}/`;
 
 if (!recipe) {
   Astro.response.status = 404;
