@@ -33,7 +33,7 @@ export function TagsInput(props: {
     value: initialValue,
     validate(details) {
       // no repeated
-      return !details.values.includes(details.inputValue);
+      return !details?.values.includes(details.inputValue);
     },
   };
 
@@ -53,15 +53,15 @@ export function TagsInput(props: {
         <For each={api().value}>
           {(value, index) => (
             <span>
-              <div {...api().getTagProps({ index: index(), value })}>
+              <div {...api().getItemProps({ index: index(), value })}>
                 <span>{value} </span>
                 <button
-                  {...api().getTagDeleteTriggerProps({ index: index(), value })}
+                  {...api().getItemDeleteTriggerProps({ index: index(), value })}
                 >
                   &#x2715;
                 </button>
               </div>
-              <input {...api().getTagInputProps({ index: index(), value })} />
+              <input {...api().getItemInputProps({ index: index(), value })} />
             </span>
           )}
         </For>

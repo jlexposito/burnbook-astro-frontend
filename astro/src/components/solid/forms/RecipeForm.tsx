@@ -23,7 +23,8 @@ import {
   type Tag,
   type referenceFormValue,
   type recipeIngredientFormValue,
-  type RecipeInterface
+  type RecipeInterface,
+  type RecipeIngredient
 } from "@utils/interfaces";
 
 // Components
@@ -44,7 +45,7 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
     elements()?.forEach((opt, _) => {
       options.push({
         label: opt.name,
-        code: opt.name,
+        value: opt.name,
         disabled: false,
       });
     });
@@ -80,15 +81,23 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
   };
 
   const ingredientFormElement = (
-    initialQuantity: number = 0,
-    iniitalUnit: string = ""
+    ingredientData?: RecipeIngredient
   ) => ({
     id: createUniqueId(),
+    ingredientData: ingredientData
   });
 
   // References
-  const numberOfInitialReferences = 2;
-  const initialReferences = [];
+  const recipeReferences = recipe?.references
+  let numberOfInitialReferences = 2;
+  let initialReferences = [];
+
+  if (recipeReferences) {
+    numberOfInitialReferences = 1;
+    for (let i = 0; i < recipeReferences.length; i++) {
+      initialReferences.push(createNewReference(recipeReferences[i]))
+    }
+  }
   for (let i = 0; i < numberOfInitialReferences; i++) {
     initialReferences.push(createNewReference(""));
   }
@@ -96,8 +105,21 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
     createSignal<referenceFormValue[]>(initialReferences);
 
   // Ingredients
-  const numberOfInitialIngredients = 2;
-  const initialIngredients = [];
+  const recipeIngredients = recipe?.ingredients;
+  let numberOfInitialIngredients = 2;
+  let initialIngredients = [];
+  if (recipeIngredients) {
+    numberOfInitialIngredients = 0
+    for (let i = 0; i < recipeIngredients.length; i++) {
+      // const name = recipeIngredients[i].ingredient.name
+      // const prefix = recipeIngredients[i].ingredient.prefix
+      // const unit = recipeIngredients[i].unit
+      // const quantity = recipeIngredients[i].quantity
+      initialIngredients.push(ingredientFormElement(
+        recipeIngredients[i]
+      ))
+    }
+  }
   for (let i = 0; i < numberOfInitialIngredients; i++) {
     initialIngredients.push(ingredientFormElement());
   }
@@ -177,11 +199,12 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {
       let response = event.target.responseText;
-      if (event.target.status == 401) {
+      let responseStatus = event.target.status
+      if (responseStatus == 401) {
         alert("Please login again");
         window.open("/login", "_blank");
       }
-      if (event.target.status !== 201) {
+      if (responseStatus !== 201 && responseStatus !== 202) {
         console.log("Something went wrong");
         let errors;
         try {
@@ -335,6 +358,7 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
                                   id={ingredient.id}
                                   options={selectOptionsIngredients()}
                                   unitOptions={selectOptionsUnits()}
+                                  ingredientData={ingredient.ingredientData}
                                 />
                               </div>
                               <div class="ml-2 flex grow-0 items-end">

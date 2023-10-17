@@ -20,11 +20,11 @@ export function SelectInput(props: {
   required?: boolean;
   allowCreate?: boolean;
   classes?: string;
+  value?: string[];
 }) {
   const [options, setOptions] = createSignal<ComboboxOption[]>(props.options);
   const [selectedNewOption, setNewSelectedOption] = createSignal("");
   const inputId = createUniqueId();
-
   const merged = mergeProps(
     {
       required: false,
@@ -35,22 +35,31 @@ export function SelectInput(props: {
     props,
   );
 
-  const createNewOption = (label: string, code: string, disabled: boolean) => {
+  const createNewOption = (label: string, value: string, disabled: boolean) => {
     return {
       label: label,
-      code: code,
+      value: value,
       disabled: disabled,
       new: true,
     };
   };
 
+  const collection = combobox.collection({
+    items: merged.options,
+    itemToValue: (item) => item.value,
+    itemToString: (item) => item.label,
+  })
+
   const [state, send] = useMachine(
     combobox.machine({
       id: inputId,
+      collection,
       name: merged.name,
       allowCustomValue: merged.allowCreate,
       inputBehavior: merged.inputBehavior,
       openOnClick: merged.openOnClick,
+      value: merged?.value,
+      // value: ["Miel"],
       onOpen() {
         if (api().inputValue.trim().length && !api().isInputValueEmpty) {
           let newOption = createNewOption(
@@ -71,7 +80,7 @@ export function SelectInput(props: {
         if (merged.allowCreate) {
           let newValue = {
             label: value,
-            code: value,
+            value: value,
             disabled: false,
             new: true,
           };
@@ -83,6 +92,9 @@ export function SelectInput(props: {
         }
       },
     }),
+    {
+      context: { collection },
+    },
   );
 
   const api = createMemo(() => combobox.connect(state, send, normalizeProps));
@@ -123,11 +135,9 @@ export function SelectInput(props: {
                 <For each={options()}>
                   {(item, index) => (
                     <li
-                      {...api().getOptionProps({
-                        label: item.label,
-                        value: item.code,
-                        index: index(),
-                        disabled: item.disabled,
+                      key={item.value}
+                      {...api().getItemProps({
+                        item
                       })}
                     >
                       {item.new ? (

@@ -76,6 +76,7 @@ export type referenceFormValue = {
 
 export type recipeIngredientFormValue = {
   id: string;
+  ingredient: RecipeIngredient;
 };
 
 export type LoginResult = {
