@@ -33,7 +33,7 @@
   }
 
   [data-scope="tags-input"] {
-    &[data-part="tag"] {
+    &[data-part="item"] {
       @apply bg-secondary hover:bg-secondary-dark hover:border-secondary-contrast inline-block rounded-full border-2 px-3 py-2 hover:cursor-pointer;
     }
     &[data-part="tag-delete-trigger"] {

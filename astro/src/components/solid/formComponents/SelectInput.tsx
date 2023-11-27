@@ -3,6 +3,7 @@ import "@styles/SelectInput.css";
 import * as combobox from "@zag-js/combobox";
 import { normalizeProps, useMachine } from "@zag-js/solid";
 import {
+  type Component,
   createMemo,
   createSignal,
   createUniqueId,
@@ -11,85 +12,81 @@ import {
   mergeProps,
 } from "solid-js";
 import LabelComponent from "./LabelComponent";
-import { type ComboboxOption } from "@utils/interfaces";
+import type {
+  ComboboxOption,
+  Unit,
+  ValueChangeCallback,
+} from "@utils/interfaces";
 
-export function SelectInput(props: {
+type SelectInputType = {
   options: ComboboxOption[];
-  name: string;
   label: string;
-  required?: boolean;
   allowCreate?: boolean;
+  callback?: ValueChangeCallback;
   classes?: string;
+  inputBehavior?: "autocomplete" | "none" | "autohighlight";
+  name?: string;
+  required?: boolean;
   value?: string[];
-}) {
+  selectionBehavior?: "replace" | "clear" | "preserve";
+};
+
+export const SelectInput: Component<SelectInputType> = (props) => {
   const [options, setOptions] = createSignal<ComboboxOption[]>(props.options);
-  const [selectedNewOption, setNewSelectedOption] = createSignal("");
   const inputId = createUniqueId();
   const merged = mergeProps(
     {
       required: false,
-      allowCreate: false,
-      inputBehavior: "autohighlight",
+      inputBehavior: "autocomplete",
       openOnClick: true,
+      selectionBehavior: "replace",
     },
     props,
   );
-
-  const createNewOption = (label: string, value: string, disabled: boolean) => {
-    return {
-      label: label,
-      value: value,
-      disabled: disabled,
-      new: true,
-    };
-  };
 
   const collection = combobox.collection({
     items: merged.options,
     itemToValue: (item) => item.value,
     itemToString: (item) => item.label,
-  })
+  });
+
+  const clearValue = merged.selectionBehavior === "clear";
 
   const [state, send] = useMachine(
     combobox.machine({
       id: inputId,
       collection,
       name: merged.name,
-      allowCustomValue: merged.allowCreate,
       inputBehavior: merged.inputBehavior,
       openOnClick: merged.openOnClick,
       value: merged?.value,
-      // value: ["Miel"],
-      onOpen() {
-        if (api().inputValue.trim().length && !api().isInputValueEmpty) {
-          let newOption = createNewOption(
-            selectedNewOption(),
-            selectedNewOption(),
-            false,
-          );
-          setOptions([...props.options, newOption]);
-        } else {
-          setOptions(props.options);
-        }
+      selectionBehavior: merged.selectionBehavior,
+      onOpenChange(details) {
+        if (!details.open) return;
+        setOptions(options());
       },
-      onInputChange({ value }) {
-        setNewSelectedOption(value);
+      onValueChange(details) {
+        console.log("onValueChange");
+        console.log(details);
+        if (typeof merged.callback !== "undefined") {
+          merged.callback(details);
+        }
+        if (clearValue) api().clearValue();
+      },
+      onInputValueChange({ value }) {
+        console.log("onInputValueChange");
+        console.log(value);
         const filtered = props.options.filter((item) =>
           item.label.toLowerCase().includes(value.toLowerCase()),
         );
-        if (merged.allowCreate) {
-          let newValue = {
-            label: value,
-            value: value,
-            disabled: false,
-            new: true,
-          };
-          filtered.push(newValue);
-          setOptions(filtered);
-          api().setValue(value);
-        } else {
-          setOptions(filtered.length > 0 ? filtered : props.options);
+        if (filtered.length > 0) {
+          let firstOption = filtered.at(0);
+          if (firstOption?.value) {
+            console.log(firstOption.value);
+            api().highlightValue(firstOption.value);
+          }
         }
+        setOptions(filtered.length > 0 ? filtered : options());
       },
     }),
     {
@@ -135,9 +132,8 @@ export function SelectInput(props: {
                 <For each={options()}>
                   {(item, index) => (
                     <li
-                      key={item.value}
                       {...api().getItemProps({
-                        item
+                        item,
                       })}
                     >
                       {item.new ? (
@@ -157,4 +153,4 @@ export function SelectInput(props: {
       </div>
     </div>
   );
-}
+};

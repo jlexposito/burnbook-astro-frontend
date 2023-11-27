@@ -33,7 +33,7 @@ export function TagsInput(props: {
     value: initialValue,
     validate(details) {
       // no repeated
-      return !details?.values.includes(details.inputValue);
+      return !details?.values?.includes(details.inputValue);
     },
   };
 
@@ -54,7 +54,7 @@ export function TagsInput(props: {
           {(value, index) => (
             <span>
               <div {...api().getItemProps({ index: index(), value })}>
-                <span>{value} </span>
+                <span>{value}</span>
                 <button
                   {...api().getItemDeleteTriggerProps({ index: index(), value })}
                 >
