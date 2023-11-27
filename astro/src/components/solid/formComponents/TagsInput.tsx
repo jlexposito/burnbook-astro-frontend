@@ -15,25 +15,31 @@ export function TagsInput(props: {
 }) {
   const merged = mergeProps(
     { disabled: false, initialValue: [], name: "" },
-    props,
+    props
   );
 
+  function isNotEmptyString(element: string) {
+    return element.trim().length;
+  }
+  let nonEmptyIntialValue = merged.initialValue.some(isNotEmptyString);
   const disabled = false || props.disabled;
+  const initialValue = nonEmptyIntialValue ? merged.initialValue : [];
+
   let config: zagTagsInput.Context = {
     id: createUniqueId(),
     max: 10,
     blurBehavior: "add",
     name: merged.name,
-    value: merged.initialValue,
+    value: initialValue,
     validate(details) {
       // no repeated
-      return !details.values.includes(details.inputValue);
+      return !details?.values?.includes(details.inputValue);
     },
   };
 
   const [state, send] = useMachine(zagTagsInput.machine(config));
   const api = createMemo(() =>
-    zagTagsInput.connect(state, send, normalizeProps),
+    zagTagsInput.connect(state, send, normalizeProps)
   );
 
   return (
@@ -47,15 +53,15 @@ export function TagsInput(props: {
         <For each={api().value}>
           {(value, index) => (
             <span>
-              <div {...api().getTagProps({ index: index(), value })}>
-                <span>{value} </span>
+              <div {...api().getItemProps({ index: index(), value })}>
+                <span>{value}</span>
                 <button
-                  {...api().getTagDeleteTriggerProps({ index: index(), value })}
+                  {...api().getItemDeleteTriggerProps({ index: index(), value })}
                 >
                   &#x2715;
                 </button>
               </div>
-              <input {...api().getTagInputProps({ index: index(), value })} />
+              <input {...api().getItemInputProps({ index: index(), value })} />
             </span>
           )}
         </For>

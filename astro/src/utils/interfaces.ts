@@ -1,4 +1,5 @@
 import { type Accessor, type Setter } from "solid-js";
+import { type ValueChangeDetails } from "@zag-js/combobox";
 
 export interface RecipeInterface {
   id: number;
@@ -18,7 +19,7 @@ export type Ingredient = {
 };
 
 export type RecipeIngredient = {
-  quantity: number;
+  quantity?: number;
   unit: string;
   ingredient: Ingredient;
 };
@@ -63,9 +64,10 @@ export type Option = {
 
 export type ComboboxOption = {
   label: string;
-  code: string;
+  value: string;
   disabled: boolean;
   new?: boolean;
+  element?: Ingredient | Unit;
 };
 
 export type referenceFormValue = {
@@ -76,9 +78,14 @@ export type referenceFormValue = {
 
 export type recipeIngredientFormValue = {
   id: string;
+  ingredient: RecipeIngredient;
 };
 
 export type LoginResult = {
   success: boolean;
   message: string;
+};
+
+export interface ValueChangeCallback {
+  (details: ValueChangeDetails<unknown>): void;
 };

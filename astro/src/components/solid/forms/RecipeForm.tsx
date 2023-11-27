@@ -7,9 +7,7 @@ import {
   For,
   Index,
   type JSX,
-  type Resource,
   type ResourceReturn,
-  type Setter,
   Show,
 } from "solid-js";
 import { isServer } from "solid-js/web";
@@ -22,44 +20,27 @@ import {
   type ComboboxOption,
   type Tag,
   type referenceFormValue,
-  type recipeIngredientFormValue,
+  type RecipeInterface,
 } from "@utils/interfaces";
+import { createSelectOptions, removeElement } from "@solidcomponents/formComponents/utils";
+
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
 import FormInput from "@solidcomponents/formComponents/FormInput";
-import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
 import { TagsInput } from "@solidcomponents/formComponents/TagsInput";
 
 // Stores
 import { $tokens } from "@stores/apiStore";
+import IngredientsForm from "./IngredientsForm";
 
-export default function RecipeForm(props: { action: string }) {
-  const createSelectOptions = (
-    elements: Resource<Unit[] | Ingredient[] | Tag[]>
-  ): ComboboxOption[] => {
-    let options: ComboboxOption[] = [];
-    elements()?.forEach((opt, _) => {
-      options.push({
-        label: opt.name,
-        code: opt.name,
-        disabled: false,
-      });
-    });
-    return options;
-  };
+export default function RecipeForm(props: { action: string, recipe?: RecipeInterface }) {
+  const recipe = props.recipe;
 
   // tags
   const [existingTags]: ResourceReturn<Tag[]> = createResource(getTags);
   const tagSelectOptions: Accessor<ComboboxOption[]> = createMemo(() =>
     createSelectOptions(existingTags)
-  );
-
-  // ingredients
-  const [existingIngredients]: ResourceReturn<Ingredient[]> =
-    createResource(getIngredients);
-  const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingIngredients)
   );
 
   // units
@@ -77,41 +58,25 @@ export default function RecipeForm(props: { action: string }) {
     };
   };
 
-  const ingredientFormElement = (
-    initialQuantity: number = 0,
-    iniitalUnit: string = ""
-  ) => ({
-    id: createUniqueId(),
-  });
 
   // References
-  const numberOfInitialReferences = 2;
-  const initialReferences = [];
+  const recipeReferences = recipe?.references
+  let numberOfInitialReferences = 2;
+  let initialReferences = [];
+
+  if (recipeReferences) {
+    numberOfInitialReferences = 1;
+    for (let i = 0; i < recipeReferences.length; i++) {
+      initialReferences.push(createNewReference(recipeReferences[i]))
+    }
+  }
   for (let i = 0; i < numberOfInitialReferences; i++) {
     initialReferences.push(createNewReference(""));
   }
   const [references, setReferences] =
     createSignal<referenceFormValue[]>(initialReferences);
 
-  // Ingredients
-  const numberOfInitialIngredients = 2;
-  const initialIngredients = [];
-  for (let i = 0; i < numberOfInitialIngredients; i++) {
-    initialIngredients.push(ingredientFormElement());
-  }
-  const [ingredients, setIngredients] = createSignal<
-    recipeIngredientFormValue[] | []
-  >(initialIngredients);
-
-  const addNewRecipeIngredient: JSX.EventHandler<
-    HTMLButtonElement,
-    MouseEvent
-  > = (e): void => {
-    e.preventDefault();
-    let newIngredient = ingredientFormElement();
-    setIngredients([...ingredients(), newIngredient]);
-  };
-
+  
   const addNewReference: JSX.EventHandler<HTMLButtonElement, MouseEvent> = (
     e
   ): void => {
@@ -120,22 +85,7 @@ export default function RecipeForm(props: { action: string }) {
     setReferences([...references(), newReference]);
   };
 
-  const removeElement = (
-    id: string,
-    elements: Accessor<recipeIngredientFormValue[] | referenceFormValue[]>,
-    setElements: Setter<recipeIngredientFormValue[] | referenceFormValue[]>
-  ): void => {
-    const elementPos = elements()
-      .map(function (x) {
-        return x.id;
-      })
-      .indexOf(id);
-    if (elementPos > -1) {
-      let newElements = [...elements()];
-      newElements.splice(elementPos, 1);
-      setElements(newElements);
-    }
-  };
+  
 
   if (!isServer) {
     // Catchall to avoid collapsing when pressing the "backspace"
@@ -143,10 +93,13 @@ export default function RecipeForm(props: { action: string }) {
 
     // Execute a function when the user presses a key on the keyboard
     input.addEventListener("keypress", function (event) {
-      const targetType = event.target?.type;
-      if (targetType === "textarea" || targetType == "submit") {
+      if ("type" in event.target) {
+        const targetType = event.target?.type;
+        if (targetType === "textarea" || targetType == "submit") {
         return true;
+        }
       }
+      
       if (event.key === "Enter") {
         event.preventDefault();
       }
@@ -170,15 +123,17 @@ export default function RecipeForm(props: { action: string }) {
     const form: HTMLFormElement = event.target;
     const FD = new FormData(form);
     const XHR = new XMLHttpRequest();
+    const formMethod = recipe? 'PUT':'POST';
 
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {
       let response = event.target.responseText;
-      if (event.target.status == 401) {
+      let responseStatus = event.target.status
+      if (responseStatus == 401) {
         alert("Please login again");
         window.open("/login", "_blank");
       }
-      if (event.target.status !== 201) {
+      if (responseStatus !== 201 && responseStatus !== 202) {
         console.log("Something went wrong");
         let errors;
         try {
@@ -188,6 +143,7 @@ export default function RecipeForm(props: { action: string }) {
             text: response,
           };
         }
+        console.log(errors)
         setFormErrors(errors);
       } else {
         let json_res = JSON.parse(response);
@@ -203,7 +159,7 @@ export default function RecipeForm(props: { action: string }) {
 
     // Set up our request
     const url = form.action;
-    XHR.open("POST", url);
+    XHR.open(formMethod, url);
 
     const accessToken = $tokens.get().access;
     XHR.setRequestHeader("Authorization", "Bearer " + accessToken);
@@ -249,6 +205,7 @@ export default function RecipeForm(props: { action: string }) {
                 label="Nombre"
                 autocomplete="off"
                 // dynamicValue={name}
+                value={recipe?.title}
                 required={true}
               />
             </div>
@@ -259,6 +216,7 @@ export default function RecipeForm(props: { action: string }) {
                   name="cooking_time"
                   label="Tiempo de preparacion (minutos)"
                   min="0"
+                  value={recipe?.cooking_time}
                   required={true}
                 />
               </div>
@@ -267,13 +225,23 @@ export default function RecipeForm(props: { action: string }) {
                   type="number"
                   name="servings"
                   label="Raciones"
-                  value="2"
                   required={true}
+                  value={recipe? recipe.servings : '2'}
                 />
               </div>
             </div>
-            <div class="w-full">
-              <FormInput type="file" name="image" alt="Recipe image"/>
+            <div class="flex justify-between w-full">
+              <div>
+                <FormInput label="Imagen" type="file" name="image" alt="Recipe image"/>
+              </div>
+              <Show when={recipe}>
+                <div>
+                  <p>Imagen existente</p>
+                  <a href={recipe.image} target="_blank">
+                    <img width="300" height="300" src={recipe.image} />
+                  </a>
+                </div>
+              </Show>
             </div>
           </div>
 
@@ -286,6 +254,7 @@ export default function RecipeForm(props: { action: string }) {
                 rows="10"
                 autocomplete="off"
                 style={"min-height: 200px;"}
+                value={recipe? recipe.instructions : ''}
                 required={true}
               />
             </div>
@@ -298,59 +267,7 @@ export default function RecipeForm(props: { action: string }) {
               classes="py-3"
               title="🍏 Ingredientes 🍏"
             >
-              <div class="[& .ingredient-form]:border-2 border-solid">
-                <Show
-                  when={!existingIngredients.loading && !unitOptions.loading}
-                  fallback={
-                    <>
-                      <p class="py-12 text-center">Loading options...</p>
-                    </>
-                  }
-                >
-                  <div>
-                    <For each={ingredients()}>
-                      {(ingredient, index) => (
-                        <>
-                          <>
-                            <div class="flex border-b-2 pb-3">
-                              <div class="grow">
-                                <p>Ingrediente {index() + 1}</p>
-                                <RecipeIngredientForm
-                                  id={ingredient.id}
-                                  options={selectOptionsIngredients()}
-                                  unitOptions={selectOptionsUnits()}
-                                />
-                              </div>
-                              <div class="ml-2 flex grow-0 items-end">
-                                <button
-                                  class="btn !my-3 !px-2 !py-1"
-                                  disabled={ingredients().length < 2}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    removeElement(
-                                      ingredient.id,
-                                      ingredients,
-                                      setIngredients
-                                    );
-                                  }}
-                                >
-                                  ❌
-                                </button>
-                              </div>
-                            </div>
-                          </>
-                        </>
-                      )}
-                    </For>
-                  </div>
-                  <button
-                    class="btn btn-accent"
-                    onClick={addNewRecipeIngredient}
-                  >
-                    Add new ingredient +
-                  </button>
-                </Show>
-              </div>
+              <IngredientsForm recipe={recipe} />
             </CollapseComponent>
           </div>
 
@@ -365,7 +282,7 @@ export default function RecipeForm(props: { action: string }) {
                 <Index each={references()}>
                   {(reference, index) => (
                     <>
-                      <div class="mb-2 flex">
+                      <div class="mb-2 items-end flex">
                         <div class="grow">
                           <FormInput
                             type="text"
@@ -379,9 +296,9 @@ export default function RecipeForm(props: { action: string }) {
                           />
                         </div>
 
-                        <div class="ml-2 flex grow-0 items-end">
+                        <div class="ml-2 flex grow-0 items-center">
                           <button
-                            class="btn !my-1 !px-2 !py-1"
+                            class="btn !px-2 !my-0 !py-3"
                             disabled={references().length < 2}
                             onClick={(e) => {
                               e.preventDefault();
@@ -410,6 +327,7 @@ export default function RecipeForm(props: { action: string }) {
               name={"tags"}
               placeholder={"tags (separados por coma)"}
               label={"tags"}
+              initialValue={recipe?.tags}
             />
           </div>
 
