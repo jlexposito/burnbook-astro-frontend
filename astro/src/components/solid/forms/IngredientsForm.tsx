@@ -64,7 +64,6 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
     numberOfInitialIngredients = 0;
     // add ingredient form
     for (let i = 0; i < recipeIngredients.length; i++) {
-      console.log(recipeIngredients[i]);
       initialIngredients.push(ingredientFormElement(recipeIngredients[i]));
     }
   }
@@ -106,8 +105,6 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
       return;
     }
     let firstItem = selectedItems[0];
-    console.log(selectedItems);
-    console.log(firstItem);
     if (typeof firstItem === "object" && "element" in firstItem) {
       let ingredient: Ingredient = firstItem?.element;
       newRecipeForm(ingredient);

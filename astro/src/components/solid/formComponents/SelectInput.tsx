@@ -66,23 +66,18 @@ export const SelectInput: Component<SelectInputType> = (props) => {
         setOptions(options());
       },
       onValueChange(details) {
-        console.log("onValueChange");
-        console.log(details);
         if (typeof merged.callback !== "undefined") {
           merged.callback(details);
         }
         if (clearValue) api().clearValue();
       },
       onInputValueChange({ value }) {
-        console.log("onInputValueChange");
-        console.log(value);
         const filtered = props.options.filter((item) =>
           item.label.toLowerCase().includes(value.toLowerCase()),
         );
         if (filtered.length > 0) {
           let firstOption = filtered.at(0);
           if (firstOption?.value) {
-            console.log(firstOption.value);
             api().highlightValue(firstOption.value);
           }
         }
