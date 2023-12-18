@@ -1,43 +1,33 @@
-.zagSelect {
-  [data-part="control"] {
-    input {
-      @apply w-full;
-    }
-
-    [data-part="trigger"] {
-      &[data-state="closed"] {
-        @apply rotate-180;
-      }
-
-      &:hover {
-        @apply bg-secondary;
-      }
-
-      @apply absolute right-0 top-1/2 -translate-y-1/2 transform p-3;
-    }
-
-    @apply relative;
+.custom {
+  &.solid-select-container {
+    @apply w-full;
   }
-
-  [data-part="content"] {
-    &[data-state="open"] {
-
-      /* styles for control open or state */
-      ul {
-        @apply bg-white;
-      }
-
-      @apply visible w-full translate-y-1 opacity-100;
+  .solid-select-control {
+    /* outline-color: #fca560;
+    border-color: #fca560; */
+    @apply m-0 p-0;
+  }
+  .solid-select-placeholder {
+    /* color: #fca560; */
+  }
+  .solid-select-single-value,
+  .solid-select-multiple-value {
+    @apply z-20 flex items-center;
+  }
+  .solid-select-single-value,
+  .solid-select-multiple-value,
+  input {
+    @apply p-2;
+  }
+  .solid-select-list {
+    @apply z-10 bg-white p-0;
+  }
+  .solid-select-option {
+    &:hover {
+      background-color: #fa7f25;
     }
-
-    & [data-part="item"] {
-      @apply break-all p-2;
+    &[data-focused="true"] {
+      background-color: #fca560;
     }
-
-    & [data-highlighted] {
-      @apply bg-primary text-white;
-    }
-
-    @apply invisible absolute left-0 top-full z-40 max-h-[85dvh] w-60 rounded border-2 border-gray-800 bg-white text-center opacity-0 transition-all delay-150;
   }
 }

@@ -131,6 +131,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
                       <RecipeIngredientForm
                         id={ingredient.id}
                         unitOptions={selectOptionsUnits()}
+                        ingredientOptions={existingIngredients()}
                         ingredientData={ingredient.ingredient}
                       />
                     </div>
@@ -165,15 +166,6 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
             >
               Add new ingredient +
             </button>
-          </div>
-          <div class="grow">
-            <SelectInput
-              callback={addExistingIngredient}
-              label="Buscador de ingredientes"
-              options={selectOptionsIngredients()}
-              required={false}
-              selectionBehavior="clear"
-            />
           </div>
         </div>
       </Show>
