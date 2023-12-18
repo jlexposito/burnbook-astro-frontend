@@ -50,3 +50,34 @@ export const removeElement = (
     setElements(newElements);
   }
 };
+
+export const createOptionsArray = (elements: (Ingredient | Unit)) => {
+  let options: any[] = [];
+  for (let i = 0; i < elements?.length; i++) {
+    let opt = elements[i];
+    if (typeof opt !== "object") {
+      continue;
+    }
+    let value = opt?.name;
+    let label = value;
+    if ("prefix" in opt && opt.prefix.length) {
+      label = `${opt.prefix} ${value}`;
+    }
+    options.push({
+      label: label,
+      value: value,
+      disabled: false,
+      ...opt,
+    });
+  }
+  return options;
+};
+
+export const formatOptions = (item: any, type: "option" | "value") => {
+  const label = item?.label ? item.label : "error";
+  if (type === "option") {
+    return label;
+  }
+  const value = item?.value;
+  return value ? value : label;
+};

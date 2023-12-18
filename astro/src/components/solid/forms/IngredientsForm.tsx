@@ -1,13 +1,16 @@
 import {
-  type Accessor,
   createMemo,
   createResource,
   createSignal,
   createUniqueId,
   For,
-  type JSX,
-  type ResourceReturn,
   Show,
+} from "solid-js";
+
+import type {
+  Accessor,
+  JSX,
+  ResourceReturn,
 } from "solid-js";
 
 // Utils
@@ -22,13 +25,11 @@ import type {
   Ingredient,
   Unit,
   ComboboxOption,
-  ValueChangeCallback,
 } from "@utils/interfaces";
 import { getIngredients, getUnits } from "@utils/api";
 
 // Components
 import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
-import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
 
 export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
   const recipe = props.recipe;
@@ -97,18 +98,6 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
   > = (e, ingredient?: Ingredient | RecipeIngredient): void => {
     e.preventDefault();
     newRecipeForm();
-  };
-
-  const addExistingIngredient: ValueChangeCallback = (details) => {
-    let selectedItems = details?.items;
-    if (typeof selectedItems === "undefined" || selectedItems.length < 1) {
-      return;
-    }
-    let firstItem = selectedItems[0];
-    if (typeof firstItem === "object" && "element" in firstItem) {
-      let ingredient: Ingredient = firstItem?.element;
-      newRecipeForm(ingredient);
-    }
   };
 
   return (

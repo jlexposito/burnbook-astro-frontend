@@ -86,10 +86,6 @@ export type LoginResult = {
   message: string;
 };
 
-export interface ValueChangeCallback {
-  (details: ValueChangeDetails<unknown>): void;
-};
-
 export interface SelectValueChangeCallback<T> {
   (item: T)
 }

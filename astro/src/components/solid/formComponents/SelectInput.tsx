@@ -1,151 +1,66 @@
+// solid Select
+import { Select, createOptions } from "@thisbeyond/solid-select";
+
+// custom css
 import "@styles/SelectInput.css";
 
-import * as combobox from "@zag-js/combobox";
-import { normalizeProps, useMachine } from "@zag-js/solid";
-import {
-  type Component,
-  createMemo,
-  createSignal,
-  createUniqueId,
-  For,
-  Show,
-  mergeProps,
-} from "solid-js";
-import LabelComponent from "./LabelComponent";
-import type {
-  ComboboxOption,
-  Unit,
-  ValueChangeCallback,
-} from "@utils/interfaces";
+// types
+import type { Component } from "solid-js";
+import { createUniqueId, createSignal, splitProps } from "solid-js";
 
-type SelectInputType = {
-  options: ComboboxOption[];
+import LabelComponent from "@solidcomponents/formComponents/LabelComponent";
+import { twMerge } from "tailwind-merge";
+
+const SelectInput: Component<{
+  config: any;
   label: string;
-  allowCreate?: boolean;
-  callback?: ValueChangeCallback;
+  name: string;
+  initialValue: string;
   classes?: string;
-  inputBehavior?: "autocomplete" | "none" | "autohighlight";
-  name?: string;
   required?: boolean;
-  value?: string[];
-  selectionBehavior?: "replace" | "clear" | "preserve";
-};
-
-export const SelectInput: Component<SelectInputType> = (props) => {
-  const [options, setOptions] = createSignal<ComboboxOption[]>(props.options);
+  format?: any;
+}> = (props) => {
   const inputId = createUniqueId();
-  const merged = mergeProps(
-    {
-      required: false,
-      inputBehavior: "autocomplete",
-      openOnClick: true,
-      selectionBehavior: "replace",
-    },
-    props,
+  const [local, otherProps] = splitProps(props, [
+    "classes",
+    "required",
+    "label",
+    "initialValue",
+    "format",
+    // "onChangeCallback",
+  ]);
+  const classes = twMerge("custom", local.classes);
+  const required = local?.required === true;
+  console.log(otherProps)
+
+
+  const onChange = (item: any) => {
+    const onChangeCallback = props.config?.onChangeCallback;
+    if (typeof onChangeCallback !== "undefined") {
+      onChangeCallback(item);
+    }
+    if (item) {
+      setValue(item.value);
+    }
+  };
+
+  const [value, setValue] = createSignal(
+    props?.initialValue ? props.initialValue : "",
   );
-
-  const collection = combobox.collection({
-    items: merged.options,
-    itemToValue: (item) => item.value,
-    itemToString: (item) => item.label,
-  });
-
-  const clearValue = merged.selectionBehavior === "clear";
-
-  const [state, send] = useMachine(
-    combobox.machine({
-      id: inputId,
-      collection,
-      name: merged.name,
-      inputBehavior: merged.inputBehavior,
-      openOnClick: merged.openOnClick,
-      value: merged?.value,
-      selectionBehavior: merged.selectionBehavior,
-      onOpenChange(details) {
-        if (!details.open) return;
-        setOptions(options());
-      },
-      onValueChange(details) {
-        if (typeof merged.callback !== "undefined") {
-          merged.callback(details);
-        }
-        if (clearValue) api().clearValue();
-      },
-      onInputValueChange({ value }) {
-        const filtered = props.options.filter((item) =>
-          item.label.toLowerCase().includes(value.toLowerCase()),
-        );
-        if (filtered.length > 0) {
-          let firstOption = filtered.at(0);
-          if (firstOption?.value) {
-            api().highlightValue(firstOption.value);
-          }
-        }
-        setOptions(filtered.length > 0 ? filtered : options());
-      },
-    }),
-    {
-      context: { collection },
-    },
-  );
-
-  const api = createMemo(() => combobox.connect(state, send, normalizeProps));
 
   return (
-    <div class="zagSelect">
-      <div {...api().rootProps}>
-        <LabelComponent
-          {...api().labelProps}
-          id={api().labelProps.for}
-          label={props.label}
-          required={merged.required}
-        />
-        <div class="relative">
-          <div {...api().controlProps}>
-            <input
-              class={merged.classes}
-              required={merged.required}
-              {...api().inputProps}
-            />
-            <button {...api().triggerProps}>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 1024 1024"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path>
-              </svg>
-            </button>
-          </div>
-          <div {...api().contentProps}>
-            <Show when={options().length > 0 || merged.allowCreate}>
-              <ul>
-                <For each={options()}>
-                  {(item, index) => (
-                    <li
-                      {...api().getItemProps({
-                        item,
-                      })}
-                    >
-                      {item.new ? (
-                        <span>
-                          Create <span class="newOption">{item.label}</span>
-                        </span>
-                      ) : (
-                        item.label
-                      )}
-                    </li>
-                  )}
-                </For>
-              </ul>
-            </Show>
-          </div>
-        </div>
-      </div>
+    <div class="recipe-ingredient">
+      <LabelComponent required={required} label={props.label} id={inputId} />
+      <Select
+        id={inputId}
+        class={classes}
+        {...otherProps.config}
+        onChange={onChange}
+        format={local?.format}
+      />
+      <input type="hidden" name={props.name} value={value()} />
     </div>
   );
 };
+
+export { SelectInput };

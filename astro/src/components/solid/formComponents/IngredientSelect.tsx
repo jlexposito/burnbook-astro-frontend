@@ -1,5 +1,4 @@
 // solid Select
-import "@thisbeyond/solid-select/style.css";
 import { Select, createOptions } from "@thisbeyond/solid-select";
 
 // custom css
@@ -13,9 +12,10 @@ import { createMemo, createUniqueId, createSignal } from "solid-js";
 import LabelComponent from "@solidcomponents/formComponents/LabelComponent";
 
 const IngredientForm: Component<{
+  label: string;
+  initialValue?: Ingredient;
   options: Ingredient[];
   name: string;
-  initialValue?: Ingredient;
   onChange?: SelectValueChangeCallback<Ingredient>;
 }> = (props) => {
   const inputId = createUniqueId();
@@ -23,15 +23,20 @@ const IngredientForm: Component<{
   const initialPrefix = props?.initialValue?.prefix;
 
   const createOptionsArray = (elements: Ingredient[]) => {
-    let options: IngredientOption[] = [];
+    let options: item[] = [];
     for (let i = 0; i < elements?.length; i++) {
       let opt = elements[i];
-      let value = opt.name;
+      if (typeof opt !== "object") {
+        continue;
+      }
+      let value = opt?.name;
+      let label = value;
       if ("prefix" in opt && opt.prefix.length) {
-        value = `${opt.prefix} ${value}`;
+        label = `${opt.prefix} ${value}`;
       }
       options.push({
-        label: value,
+        label: label,
+        value: value,
         disabled: false,
         ...opt,
       });
@@ -39,21 +44,19 @@ const IngredientForm: Component<{
     return options;
   };
 
-  type item = {
-    value: Ingredient | string;
+  type item = Ingredient & {
+    value: string;
     label: string;
-    prefix?: string;
-    name?: string;
+    disabled?: boolean;
   };
 
-  const format = (item: Ingredient | item, type: "option" | "value") => {
-    // This is a little hack since we receive a different object from the fuzzySearch
-    if ("name" in item) {
-      let label = `${item.prefix}  ${item.name}`;
-      return type === "option" ? label : item.name;
+  const format = (item: item, type: "option" | "value") => {
+    const label = item?.label ? item.label : "error";
+    if (type === "option") {
+      return label;
     }
-    let value = item?.value ? item.value.name : item.label;
-    return type === "option" ? item.label : value;
+    const value = item?.value;
+    return value ? value : label;
   };
 
   const optionsArray = createMemo(() => {
@@ -61,32 +64,26 @@ const IngredientForm: Component<{
   });
 
   const selectedValue = createMemo(() => {
-    return optionsArray().find(function (ingredient: IngredientOption) {
-      return (
-        ingredient.name == initialName && ingredient.prefix == initialPrefix
-      );
-    });
+    return optionsArray().find(
+      (ingredient: item) =>
+        ingredient?.name === initialName &&
+        ingredient?.prefix === initialPrefix,
+    );
   });
 
   const ingredientOptions = createMemo(() => {
     return createOptions(optionsArray(), {
       createable: true,
-      filterable: true,
       key: "label",
     });
   });
 
-  type IngredientOption = Ingredient & {
-    label: string;
-    disabled: boolean;
-  };
-
-  const onChange = (item: IngredientOption) => {
+  const onChange = (item: item) => {
     if (typeof props.onChange !== "undefined") {
       props.onChange(item);
     }
     if (item) {
-      setValue(item.name);
+      setValue(item.value);
     }
   };
 
@@ -95,8 +92,8 @@ const IngredientForm: Component<{
   );
 
   return (
-    <>
-      <LabelComponent label="Ingrediente" id={inputId} />
+    <div class="recipe-ingredient">
+      <LabelComponent label={props.label} id={inputId} />
       <Select
         id={inputId}
         class="custom"
@@ -104,9 +101,10 @@ const IngredientForm: Component<{
         initialValue={selectedValue()}
         format={format}
         onChange={onChange}
+        placeholder=""
       />
-      <input type="hidden" value={value()} />
-    </>
+      <input type="hidden" name={props.name} value={value()} />
+    </div>
   );
 };
 
