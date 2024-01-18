@@ -1,5 +1,4 @@
 import { type Accessor, type Setter } from "solid-js";
-import { type ValueChangeDetails } from "@zag-js/combobox";
 
 export interface RecipeInterface {
   id: number;
