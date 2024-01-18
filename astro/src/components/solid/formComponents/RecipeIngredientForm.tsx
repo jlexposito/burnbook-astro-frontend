@@ -2,7 +2,7 @@ import { createMemo, createSignal } from "solid-js";
 
 import type { Component } from "solid-js";
 import type {
-  ComboboxOption,
+  Unit,
   Ingredient,
   RecipeIngredient,
 } from "@utils/interfaces";
@@ -12,21 +12,22 @@ import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
 
 import IngredientSelect from "@solidcomponents/formComponents/IngredientSelect";
 
-import { createOptionsArray, formatOptions } from "@solidcomponents/formComponents/utils"
+import {
+  createOptionsArray,
+  formatOptions,
+} from "@solidcomponents/formComponents/utils";
 
 import { createOptions } from "@thisbeyond/solid-select";
 
-
 const RecipeIngredientForm: Component<{
   id: string;
-  unitOptions: ComboboxOption[];
-  ingredientData?: RecipeIngredient;
+  unitOptions: Unit[];
+  ingredientData?: RecipeIngredient | null;
   ingredientOptions: Ingredient[];
 }> = (props) => {
   const ingredient = props?.ingredientData?.ingredient;
   const quantity = props?.ingredientData?.quantity;
   const unit = props?.ingredientData?.unit;
-
 
   const unitOptionsArray = createMemo(() => {
     return createOptionsArray(props.unitOptions);
@@ -36,26 +37,21 @@ const RecipeIngredientForm: Component<{
     let optionsConfig = createOptions(unitOptionsArray(), {
       key: "label",
     });
-    optionsConfig["placeholder"] = ""
-    return optionsConfig
+    optionsConfig["placeholder"] = "";
+    return optionsConfig;
   });
 
   type item = {
     label: string;
     value: string;
-  }
+  };
 
   const selectedUnitValue = createMemo(() => {
-    return unitOptionsArray().find(
-      (option: item) =>
-      option?.value === unit
-    );
+    return unitOptionsArray().find((option: item) => option?.value === unit);
   });
 
-  const initialPrefix =  props?.ingredientData?.ingredient?.prefix
-  const [prefix, setPrefix] = createSignal(
-    initialPrefix ? initialPrefix : ""
-  );
+  const initialPrefix = props?.ingredientData?.ingredient?.prefix;
+  const [prefix, setPrefix] = createSignal(initialPrefix ? initialPrefix : "");
 
   const onNameChange = (item: Ingredient) => {
     if (typeof item !== "object") return;

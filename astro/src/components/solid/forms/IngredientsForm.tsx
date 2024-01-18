@@ -25,6 +25,7 @@ import type {
   Ingredient,
   Unit,
   ComboboxOption,
+  formValues
 } from "@utils/interfaces";
 import { getIngredients, getUnits } from "@utils/api";
 
@@ -57,7 +58,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
     createSelectOptions(existingIngredients),
   );
   let numberOfInitialIngredients: number = 1;
-  let initialIngredients: recipeIngredientFormValue[] = [];
+  let initialIngredients: formValues[] = [];
 
   // Add recipe ingredients
   const recipeIngredients: RecipeIngredient[] = recipe?.ingredients;
@@ -75,7 +76,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
   }
 
   const [ingredients, setIngredients] =
-    createSignal<recipeIngredientFormValue[]>(initialIngredients);
+    createSignal<formValues[]>(initialIngredients);
 
   const newRecipeForm = (ingredient?: Ingredient): void => {
     let newIngredient: recipeIngredientFormValue = ingredientFormElement();
@@ -121,7 +122,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
                         id={ingredient.id}
                         unitOptions={selectOptionsUnits()}
                         ingredientOptions={existingIngredients()}
-                        ingredientData={ingredient.ingredient}
+                        ingredientData={('ingredient' in ingredient) ? ingredient?.ingredient: null}
                       />
                     </div>
                     <div class="ml-2 flex grow-0">

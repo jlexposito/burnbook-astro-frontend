@@ -2,14 +2,10 @@ import { type Accessor, type Resource, type Setter } from "solid-js";
 import type {
   Ingredient,
   Unit,
-  ComboboxOption,
-  Tag,
-  recipeIngredientFormValue,
-  referenceFormValue,
+  formValues,
+  selectElementType,
+  selectOptionType,
 } from "@utils/interfaces";
-
-type selectElementType = Unit | Ingredient | Tag
-type selectOptionType = ComboboxOption[]
 
 export const createSelectOptions = (
   elements: Resource<selectElementType[]>,
@@ -26,13 +22,10 @@ export const createSelectOptions = (
       label: value,
       value: value,
       disabled: false,
-      element: opt
     });
   }
   return options;
 };
-
-type formValues = recipeIngredientFormValue | referenceFormValue
 
 export const removeElement = (
   id: string,
@@ -45,13 +38,13 @@ export const removeElement = (
     })
     .indexOf(id);
   if (elementPos > -1) {
-    let newElements : formValues[] = [...elements()];
+    let newElements: formValues[] = [...elements()];
     newElements.splice(elementPos, 1);
     setElements(newElements);
   }
 };
 
-export const createOptionsArray = (elements: (Ingredient | Unit)) => {
+export const createOptionsArray = (elements: Ingredient[] | Unit[]) => {
   let options: any[] = [];
   for (let i = 0; i < elements?.length; i++) {
     let opt = elements[i];

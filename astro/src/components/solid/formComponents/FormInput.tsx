@@ -54,7 +54,9 @@ const FormInput: Component<Test> = (props) => {
     <>
       <LabelComponent id={id} label={label} required={props.required} />
       {htmlattributes.type === "textarea" ? (
-        <textarea id={id} class={merged.classes} {...htmlattributes} />
+        <textarea id={id} class={merged.classes} {...htmlattributes}>
+          {props?.value ? props.value : ""}
+        </textarea>
       ) : (
         <input
           id={id}

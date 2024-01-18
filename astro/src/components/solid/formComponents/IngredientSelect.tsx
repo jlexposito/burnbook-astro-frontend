@@ -7,20 +7,23 @@ import "@styles/SelectInput.css";
 // types
 import type { Ingredient, SelectValueChangeCallback } from "@utils/interfaces";
 import type { Component } from "solid-js";
+
 import { createMemo, createUniqueId, createSignal } from "solid-js";
 
 import LabelComponent from "@solidcomponents/formComponents/LabelComponent";
 
-const IngredientForm: Component<{
+const IngredientSelect: Component<{
   label: string;
-  initialValue?: Ingredient;
-  options: Ingredient[];
   name: string;
+  options: Ingredient[];
+  initialValue?: Ingredient;
+  required?: boolean;
   onChange?: SelectValueChangeCallback<Ingredient>;
 }> = (props) => {
   const inputId = createUniqueId();
   const initialName = props?.initialValue?.name;
   const initialPrefix = props?.initialValue?.prefix;
+  const required = props?.required ? props.required : true;
 
   const createOptionsArray = (elements: Ingredient[]) => {
     let options: item[] = [];
@@ -93,7 +96,7 @@ const IngredientForm: Component<{
 
   return (
     <div class="recipe-ingredient">
-      <LabelComponent label={props.label} id={inputId} />
+      <LabelComponent label={props.label} id={inputId} required={required} />
       <Select
         id={inputId}
         class="custom"
@@ -108,4 +111,4 @@ const IngredientForm: Component<{
   );
 };
 
-export default IngredientForm;
+export default IngredientSelect;
