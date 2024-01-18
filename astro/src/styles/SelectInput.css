@@ -185,4 +185,13 @@
       background-color: #fca560;
     }
   }
+  &.text-center {
+    .solid-select-single-value,
+    .solid-select-multiple-value {
+      @apply justify-center;
+    }
+    input {
+      text-align: center;
+    }
+  }
 }

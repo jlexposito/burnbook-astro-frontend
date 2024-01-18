@@ -1,7 +1,7 @@
 {
   "name": "burnbook-frontend",
   "type": "module",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,35 +11,36 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "@astrojs/node": "^6.1.0",
-    "@astrojs/solid-js": "^3.0.2",
-    "@astrojs/tailwind": "^5.0.2",
-    "@kobalte/core": "^0.11.2",
+    "@astrojs/node": "^8.0.0",
+    "@astrojs/solid-js": "^4.0.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/ic": "^1.1.17",
+    "@kobalte/core": "^0.12.0",
     "@markdoc/markdoc": "^0.4.0",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
     "@thisbeyond/solid-select": "^0.14.0",
-    "@zag-js/solid": "^0.31.1",
-    "@zag-js/tags-input": "^0.31.1",
-    "astro": "^3.6.4",
-    "astro-compress": "^2.2.3",
-    "axios": "^1.6.2",
+    "@zag-js/solid": "^0.32.1",
+    "@zag-js/tags-input": "^0.32.1",
+    "astro": "^4.2.1",
+    "astro-compress": "^2.2.8",
+    "axios": "^1.6.5",
     "install": "^0.13.0",
     "nanostores": "^0.9.5",
     "postcss-preset-env": "^9.3.0",
     "postcss-reuse": "^2.2.0",
     "solid-collapse": "^1.1.0",
-    "solid-js": "^1.8.7",
-    "tailwind-merge": "^2.1.0",
-    "tailwindcss": "^3.3.5"
+    "solid-js": "^1.8.11",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "astro-icon": "^0.8.1",
-    "postcss-nesting": "^12.0.1",
-    "prettier": "^3.1.0",
-    "prettier-plugin-tailwindcss": "^0.5.7",
-    "svgo": "2.8.0",
-    "typescript": "^5.3.2"
+    "astro-icon": "^1.0.2",
+    "postcss-nesting": "^12.0.2",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "svgo": "3.2.0",
+    "typescript": "^5.3.3"
   }
 }

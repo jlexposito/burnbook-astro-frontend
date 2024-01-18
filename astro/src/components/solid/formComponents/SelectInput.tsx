@@ -45,7 +45,7 @@ const SelectInput: Component<{
 
   const config = mergeProps(
     {
-      placeholder: "",
+      placeholder: ""
     },
     otherProps.config,
   );

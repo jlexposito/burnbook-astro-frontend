@@ -98,6 +98,7 @@ const RecipeIngredientForm: Component<{
               label="Unidad"
               name="ingredient_unit[]"
               initialValue={selectedUnitValue()}
+              classes={"text-center justify-center"}
               required={true}
               config={unitConfig()}
             />
