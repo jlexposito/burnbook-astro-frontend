@@ -1,13 +1,16 @@
 import {
-  type Accessor,
   createMemo,
   createResource,
   createSignal,
   createUniqueId,
   For,
-  type JSX,
-  type ResourceReturn,
   Show,
+} from "solid-js";
+
+import type {
+  Accessor,
+  JSX,
+  ResourceReturn,
 } from "solid-js";
 
 // Utils
@@ -22,13 +25,12 @@ import type {
   Ingredient,
   Unit,
   ComboboxOption,
-  ValueChangeCallback,
+  formValues
 } from "@utils/interfaces";
 import { getIngredients, getUnits } from "@utils/api";
 
 // Components
 import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
-import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
 
 export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
   const recipe = props.recipe;
@@ -56,7 +58,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
     createSelectOptions(existingIngredients),
   );
   let numberOfInitialIngredients: number = 1;
-  let initialIngredients: recipeIngredientFormValue[] = [];
+  let initialIngredients: formValues[] = [];
 
   // Add recipe ingredients
   const recipeIngredients: RecipeIngredient[] = recipe?.ingredients;
@@ -74,7 +76,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
   }
 
   const [ingredients, setIngredients] =
-    createSignal<recipeIngredientFormValue[]>(initialIngredients);
+    createSignal<formValues[]>(initialIngredients);
 
   const newRecipeForm = (ingredient?: Ingredient): void => {
     let newIngredient: recipeIngredientFormValue = ingredientFormElement();
@@ -99,18 +101,6 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
     newRecipeForm();
   };
 
-  const addExistingIngredient: ValueChangeCallback = (details) => {
-    let selectedItems = details?.items;
-    if (typeof selectedItems === "undefined" || selectedItems.length < 1) {
-      return;
-    }
-    let firstItem = selectedItems[0];
-    if (typeof firstItem === "object" && "element" in firstItem) {
-      let ingredient: Ingredient = firstItem?.element;
-      newRecipeForm(ingredient);
-    }
-  };
-
   return (
     <div>
       <Show
@@ -131,7 +121,8 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
                       <RecipeIngredientForm
                         id={ingredient.id}
                         unitOptions={selectOptionsUnits()}
-                        ingredientData={ingredient.ingredient}
+                        ingredientOptions={existingIngredients()}
+                        ingredientData={('ingredient' in ingredient) ? ingredient?.ingredient: null}
                       />
                     </div>
                     <div class="ml-2 flex grow-0">
@@ -165,15 +156,6 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
             >
               Add new ingredient +
             </button>
-          </div>
-          <div class="grow">
-            <SelectInput
-              callback={addExistingIngredient}
-              label="Buscador de ingredientes"
-              options={selectOptionsIngredients()}
-              required={false}
-              selectionBehavior="clear"
-            />
           </div>
         </div>
       </Show>

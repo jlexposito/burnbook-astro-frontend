@@ -1,6 +1,6 @@
 ---
 // library imports
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 interface Props {
   text: string;
@@ -41,14 +41,14 @@ const {
 >
   {
     icon && icon.side === "left" && (
-      <Icon name={icon.name} class="inline-block" height="24" width="24" />
+      <Icon name={icon.name} class="inline-block" height={24} width={24} />
     )
   }
   <span>{text}</span>
 
   {
     icon && icon.side === "right" && (
-      <Icon name={icon.name} class="inline-block" height="24" width="24" />
+      <Icon name={icon.name} class="inline-block" height={24} width={24} />
     )
   }
 </a>

@@ -86,6 +86,10 @@ export type LoginResult = {
   message: string;
 };
 
-export interface ValueChangeCallback {
-  (details: ValueChangeDetails<unknown>): void;
-};
+export interface SelectValueChangeCallback<T> {
+  (item: T);
+}
+
+export type selectElementType = Unit | Ingredient | Tag;
+export type selectOptionType = ComboboxOption[];
+export type formValues = recipeIngredientFormValue | referenceFormValue;

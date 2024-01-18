@@ -13,17 +13,17 @@ import {
 import { isServer } from "solid-js/web";
 
 // Utils
-import { getIngredients, getUnits, getTags } from "@utils/api";
+import { getTags } from "@utils/api";
 import {
-  type Ingredient,
-  type Unit,
   type ComboboxOption,
   type Tag,
   type referenceFormValue,
   type RecipeInterface,
 } from "@utils/interfaces";
-import { createSelectOptions, removeElement } from "@solidcomponents/formComponents/utils";
-
+import {
+  createSelectOptions,
+  removeElement,
+} from "@solidcomponents/formComponents/utils";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
@@ -32,21 +32,18 @@ import { TagsInput } from "@solidcomponents/formComponents/TagsInput";
 
 // Stores
 import { $tokens } from "@stores/apiStore";
-import IngredientsForm from "./IngredientsForm";
+import IngredientsForm from "@solidcomponents/forms/IngredientsForm";
 
-export default function RecipeForm(props: { action: string, recipe?: RecipeInterface }) {
+export default function RecipeForm(props: {
+  action: string;
+  recipe?: RecipeInterface;
+}) {
   const recipe = props.recipe;
 
   // tags
   const [existingTags]: ResourceReturn<Tag[]> = createResource(getTags);
   const tagSelectOptions: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingTags)
-  );
-
-  // units
-  const [unitOptions]: ResourceReturn<Unit[]> = createResource(getUnits);
-  const selectOptionsUnits: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(unitOptions)
+    createSelectOptions(existingTags),
   );
 
   const createNewReference = (initialValue: string) => {
@@ -58,16 +55,15 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
     };
   };
 
-
   // References
-  const recipeReferences = recipe?.references
+  const recipeReferences = recipe?.references;
   let numberOfInitialReferences = 2;
   let initialReferences = [];
 
   if (recipeReferences) {
     numberOfInitialReferences = 1;
     for (let i = 0; i < recipeReferences.length; i++) {
-      initialReferences.push(createNewReference(recipeReferences[i]))
+      initialReferences.push(createNewReference(recipeReferences[i]));
     }
   }
   for (let i = 0; i < numberOfInitialReferences; i++) {
@@ -76,16 +72,13 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
   const [references, setReferences] =
     createSignal<referenceFormValue[]>(initialReferences);
 
-  
   const addNewReference: JSX.EventHandler<HTMLButtonElement, MouseEvent> = (
-    e
+    e,
   ): void => {
     e.preventDefault();
     let newReference = createNewReference("");
     setReferences([...references(), newReference]);
   };
-
-  
 
   if (!isServer) {
     // Catchall to avoid collapsing when pressing the "backspace"
@@ -96,10 +89,10 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
       if ("type" in event.target) {
         const targetType = event.target?.type;
         if (targetType === "textarea" || targetType == "submit") {
-        return true;
+          return true;
         }
       }
-      
+
       if (event.key === "Enter") {
         event.preventDefault();
       }
@@ -123,17 +116,19 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
     const form: HTMLFormElement = event.target;
     const FD = new FormData(form);
     const XHR = new XMLHttpRequest();
-    const formMethod = recipe? 'PUT':'POST';
+    const formMethod = recipe ? "PUT" : "POST";
 
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event: ProgressEvent<XMLHttpRequest>) => {
       let response = event.target.responseText;
-      let responseStatus = event.target.status
+      let responseStatus = event.target.status;
       if (responseStatus == 401) {
         alert("Please login again");
         window.open("/login", "_blank");
       }
-      if (responseStatus !== 201 && responseStatus !== 202) {
+
+      // All 2xx are okay
+      if (Math.floor(responseStatus / 100) != 2) {
         console.log("Something went wrong");
         let errors;
         try {
@@ -143,12 +138,19 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
             text: response,
           };
         }
-        console.log(errors)
+        console.log(errors);
         setFormErrors(errors);
       } else {
-        let json_res = JSON.parse(response);
+        let id = "";
+        if (recipe?.id) {
+          id = recipe.id.toString();
+        } else {
+          let json_res = JSON.parse(response);
+          id = json_res.recipe;
+        }
+
         alert("Created successfully !");
-        window.location.replace(`/recipe/${json_res.recipe}`)
+        window.location.replace(`/recipe/${id}`);
       }
     });
 
@@ -226,13 +228,18 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
                   name="servings"
                   label="Raciones"
                   required={true}
-                  value={recipe? recipe.servings : '2'}
+                  value={recipe ? recipe.servings : "2"}
                 />
               </div>
             </div>
-            <div class="flex justify-between w-full">
+            <div class="flex w-full justify-between">
               <div>
-                <FormInput label="Imagen" type="file" name="image" alt="Recipe image"/>
+                <FormInput
+                  label="Imagen"
+                  type="file"
+                  name="image"
+                  alt="Recipe image"
+                />
               </div>
               <Show when={recipe}>
                 <div>
@@ -254,7 +261,7 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
                 rows="10"
                 autocomplete="off"
                 style={"min-height: 200px;"}
-                value={recipe? recipe.instructions : ''}
+                value={recipe ? recipe.instructions : ""}
                 required={true}
               />
             </div>
@@ -282,7 +289,7 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
                 <Index each={references()}>
                   {(reference, index) => (
                     <>
-                      <div class="mb-2 items-end flex">
+                      <div class="mb-2 flex items-end">
                         <div class="grow">
                           <FormInput
                             type="text"
@@ -298,14 +305,14 @@ export default function RecipeForm(props: { action: string, recipe?: RecipeInter
 
                         <div class="ml-2 flex grow-0 items-center">
                           <button
-                            class="btn !px-2 !my-0 !py-3"
+                            class="btn !my-0 !px-2 !py-3"
                             disabled={references().length < 2}
                             onClick={(e) => {
                               e.preventDefault();
                               removeElement(
                                 reference().id,
                                 references,
-                                setReferences
+                                setReferences,
                               );
                             }}
                           >

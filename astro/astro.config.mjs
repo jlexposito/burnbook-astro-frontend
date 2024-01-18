@@ -2,12 +2,14 @@ import { defineConfig } from 'astro/config';
 import solidJs from "@astrojs/solid-js";
 import tailwind from "@astrojs/tailwind";
 import node from "@astrojs/node";
-import compress from "astro-compress";
+import Compress from "astro-compress";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
   output: "server",
   integrations: [
+    icon(),
     solidJs(), 
     tailwind({
       config: {
@@ -15,7 +17,7 @@ export default defineConfig({
         applyBaseStyles: false, /** disables the built-in stylesheet */
       },
     }),
-    compress()
+    Compress()
   ],
   adapter: node({
     mode: "standalone"

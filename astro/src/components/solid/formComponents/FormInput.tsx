@@ -42,7 +42,9 @@ const FormInput: Component<Test> = (props) => {
     },
     props,
   );
-  merged.classes = twMerge("max-w-full w-full px-3", props.classes);
+  const classes = twMerge("max-w-full w-full px-3", props?.classes);
+  // merged.classes = twMerge("max-w-full w-full px-3", props?.classes);
+  
 
   let label = props.label || props.name;
   const [_, htmlattributes] = splitProps(props, [
@@ -54,11 +56,13 @@ const FormInput: Component<Test> = (props) => {
     <>
       <LabelComponent id={id} label={label} required={props.required} />
       {htmlattributes.type === "textarea" ? (
-        <textarea id={id} class={merged.classes} {...htmlattributes} />
+        <textarea id={id} class={classes} {...htmlattributes}>
+          {props?.value ? props.value : ""}
+        </textarea>
       ) : (
         <input
           id={id}
-          class={merged.classes}
+          class={classes}
           {...htmlattributes}
           onChange={(e) => {
             if (typeof props.onChange === "function") {
