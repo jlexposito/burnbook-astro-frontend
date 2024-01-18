@@ -15,7 +15,7 @@
     "@astrojs/solid-js": "^4.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/ic": "^1.1.17",
-    "@kobalte/core": "^0.12.0",
+    "@kobalte/core": "^0.12.1",
     "@markdoc/markdoc": "^0.4.0",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",

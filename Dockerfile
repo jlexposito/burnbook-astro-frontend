@@ -13,9 +13,7 @@ WORKDIR /app
 COPY ./astro .
 COPY --from=dependencies /app/node_modules ./node_modules
 RUN pnpm build
-# We cant use prod now since we have a dev dependecy to build
-#RUN pnpm prune --prod
-RUN pnpm prune
+RUN pnpm prune --prod
 
 FROM base AS deploy
 
