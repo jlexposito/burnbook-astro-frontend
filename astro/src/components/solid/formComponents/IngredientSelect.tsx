@@ -85,8 +85,12 @@ const IngredientSelect: Component<{
     if (typeof props.onChange !== "undefined") {
       props.onChange(item);
     }
+
     if (item) {
-      setValue(item.value);
+      let value = "value" in item ? item.value : item?.label;
+      setValue(value);
+    } else {
+      setValue("");
     }
   };
 

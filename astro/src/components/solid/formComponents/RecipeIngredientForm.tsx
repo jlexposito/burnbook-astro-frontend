@@ -1,11 +1,7 @@
 import { createMemo, createSignal } from "solid-js";
 
 import type { Component } from "solid-js";
-import type {
-  Unit,
-  Ingredient,
-  RecipeIngredient,
-} from "@utils/interfaces";
+import type { Unit, Ingredient, RecipeIngredient } from "@utils/interfaces";
 
 import FormInput from "@solidcomponents/formComponents/FormInput";
 import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
@@ -54,7 +50,7 @@ const RecipeIngredientForm: Component<{
   const [prefix, setPrefix] = createSignal(initialPrefix ? initialPrefix : "");
 
   const onNameChange = (item: Ingredient) => {
-    if (typeof item !== "object") return;
+    if (typeof item !== "object" || item === null) return;
 
     if ("prefix" in item) {
       setPrefix(item.prefix);
