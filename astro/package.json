@@ -11,6 +11,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.4.0",
     "@astrojs/node": "^8.3.2",
     "@astrojs/solid-js": "^4.4.0",
     "@astrojs/tailwind": "^5.1.0",
