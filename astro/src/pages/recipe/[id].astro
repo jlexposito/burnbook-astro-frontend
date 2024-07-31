@@ -1,13 +1,24 @@
 ---
-import { getRecipe } from "@utils/api.js";
+import { getRecipes } from "@utils/api.js";
 import { setCache } from "@utils/cache.js";
 
 import BaseLayout from "@layouts/BaseLayout.astro";
 import NotFoundLayout from "@layouts/NotFoundLayout.astro";
 import Recipe from "@astrocomponents/Recipe.astro";
 
+
+export async function getStaticPaths() {
+  const recipes = await getRecipes();
+  return recipes.map((recipe) => {
+    return {
+      params: { id: recipe.id },
+      props: { recipe: recipe }
+    }
+  });
+} 
+
 const { id } = Astro.params;
-const recipe = await getRecipe(id);
+const { recipe } = Astro.props;
 
 if (!recipe) {
   Astro.response.status = 404;
