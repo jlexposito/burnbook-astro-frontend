@@ -1,0 +1,5 @@
+# Top-level configuration
+name = "my-worker"
+main = "src/index.js"
+compatibility_date = "2024-07-31"
+compatibility_flags = [ "transformstream_enable_standard_constructor", "streams_enable_constructors" ]

@@ -1,4 +1,4 @@
-import axios, { type AxiosInstance } from "axios";
+import axios, { type AxiosInstance } from "xior";
 
 export const baseURL = import.meta.env.PUBLIC_API
   ? import.meta.env.PUBLIC_API
