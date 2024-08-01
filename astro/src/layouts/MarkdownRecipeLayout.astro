@@ -1,0 +1,12 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import RecipeMarkdown from "@astrocomponents/RecipeMarkdown.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title} pagename="recipe-view">
+  <RecipeMarkdown recipe={frontmatter}>
+    <slot />
+  </RecipeMarkdown>
+</BaseLayout>

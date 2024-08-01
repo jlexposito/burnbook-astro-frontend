@@ -7,7 +7,6 @@ export interface RecipeInterface {
   servings: number;
   image?: string;
   cooking_time: number;
-  instructions: string;
   references: Array<string>;
   tags: Array<string>;
 }
@@ -30,7 +29,6 @@ export type Recipe = {
   servings: number;
   image: string;
   cooking_time: number;
-  instructions: string;
   references: Array<string>;
   tags: Array<string>;
 };

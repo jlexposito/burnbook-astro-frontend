@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^8.0.0",
+    "@astrojs/rss": "^4.0.7",
     "@astrojs/solid-js": "^4.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/ic": "^1.1.17",
