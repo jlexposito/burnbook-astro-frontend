@@ -7,13 +7,13 @@ export async function GET(context) {
     return rss({
         title: 'Burnbook Recipes',
         description: 'Curated list of recipes that we love',
-        site: context.site,
+        site: import.meta.env.SITE,
         items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
-        items: recipes.map((recipes) => ({
+        items: recipes.map((recipe) => ({
             title: recipe.data.title,
-            pubDate: recipe.data.pubDate,
+            pubDate: recipe.data.updated,
             description: recipe.data.description,
-            link: `/posts/${recipe.slug}/`,
+            link: `/recipes/${recipe.slug}/`,
         })),
         customData: `<language>es-es</language>`,
     })

@@ -10,7 +10,6 @@ import IngredientSelect from "@solidcomponents/formComponents/IngredientSelect";
 
 import {
   createOptionsArray,
-  formatOptions,
 } from "@solidcomponents/formComponents/utils";
 
 import { createOptions } from "@thisbeyond/solid-select";

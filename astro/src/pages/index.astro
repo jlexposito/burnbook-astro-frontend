@@ -1,22 +1,19 @@
 ---
+import { getCollection } from 'astro:content';
+
 import Layout from "@layouts/BaseLayout.astro";
 
 import TagFilters from "@solidcomponents/TagFilter";
 import RecipeGrid from "@solidcomponents/RecipeGrid";
 
-import { setCache } from "@utils/cache.js";
-import { getRecipes, getTags } from "@utils/api";
+import { getTags } from "@utils/api";
 
-const recipes = await getRecipes();
+const recipes = await getCollection('recipes');
 const tags = await getTags();
-
-if (recipes) {
-    setCache.short(Astro);
-}
 
 ---
 
 <Layout pagename="home" title="Burnbook">
-    <RecipeGrid recipesdata={recipes} client:load />
-    <TagFilters tagsdata={tags} client:load />
+    <RecipeGrid recipesdata={recipes} client:only="solid-js" />
+    <TagFilters tagsdata={tags} client:only="solid-js" />
 </Layout>

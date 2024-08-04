@@ -1,14 +1,15 @@
+import type { CollectionEntry } from 'astro:content'
+
 import { useStore } from "@nanostores/solid";
 import { filterTags } from "@stores/recipeStore";
 import { isMobileDevice } from "@utils/mobileHelper";
 
 import { For, onMount, createSignal, Show } from "solid-js";
 
-import { type RecipeInterface } from "@utils/interfaces";
 import RecipeCard from "@solidcomponents/RecipeCard";
 
 export default function Recipes(props: {
-  recipesdata: Array<RecipeInterface> | null;
+  recipesdata: CollectionEntry<'recipes'>[]| null;
 }) {
   const [recipes, setRecipesData] = createSignal([]);
   const $activeFilter = useStore(filterTags);
@@ -17,9 +18,9 @@ export default function Recipes(props: {
     setRecipesData(props.recipesdata);
   });
 
-  function isVisible(recipe: RecipeInterface) {
+  function isVisible(recipe: CollectionEntry<'recipes'>) {
     if (!$activeFilter().length) return true;
-    return $activeFilter().some((r) => recipe.tags.includes(r));
+    return $activeFilter().some((r) => recipe.data.tags.includes(r));
   }
 
   const lazyLoadStartIndex = (): number => {
