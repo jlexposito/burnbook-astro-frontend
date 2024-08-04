@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+
+import RecipeForm from "@solidcomponents/forms/RecipeForm";
+
+import BaseLayout from "@layouts/BaseLayout.astro";
+import NotFoundLayout from "@layouts/NotFoundLayout.astro";
+
+import { baseURL } from "@utils/apiClient";
+
+export async function getStaticPaths() {
+  const recipeEntries = await getCollection('recipes');
+  return recipeEntries.map(recipe => ({
+    params: { slug: recipe.slug }, props: { recipe },
+  }));
+}
+
+const { slug } = Astro.params;
+const { recipe } = Astro.props;
+
+const actionUrl = `${baseURL}recipes/${recipe.id}/`;
+
+if (!recipe) {
+  Astro.response.status = 404;
+}
+---
+
+{
+  !recipe ? (
+    <NotFoundLayout
+      title="Recipe not found"
+      message="The recipe you are looking for could not be found"
+    />
+  ) : (
+    <BaseLayout title={`Edit "${recipe.data.title}"`} pagename="recipe-view">
+      <section class="recipe-form">
+        <div
+          class="flex flex-col items-center justify-center px-6 py-6 mx-auto md:min-h-screen"
+        >
+          <h1 class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
+            Editando receta {recipe.id}
+          </h1>
+          <div
+            class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-4xl md:max-w-7xl xl:p-0"
+          >
+            <RecipeForm action={actionUrl} recipe={recipe} client:only="solid-js" />
+          </div>
+        </div>
+      </section>
+    </BaseLayout>
+  )
+}
