@@ -31,8 +31,9 @@ import { getIngredients, getUnits } from "@utils/api";
 
 // Components
 import RecipeIngredientForm from "@solidcomponents/formComponents/RecipeIngredientForm";
+import type { CollectionEntry } from "astro:content";
 
-export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
+export default function IngredientsForm(props: { recipe?: CollectionEntry<'recipes'> }) {
   const recipe = props.recipe;
 
   // units
@@ -61,7 +62,7 @@ export default function IngredientsForm(props: { recipe?: RecipeInterface }) {
   let initialIngredients: formValues[] = [];
 
   // Add recipe ingredients
-  const recipeIngredients: RecipeIngredient[] = recipe?.ingredients;
+  const recipeIngredients: RecipeIngredient[] = recipe?.data?.ingredients;
   if (recipeIngredients) {
     numberOfInitialIngredients = 0;
     // add ingredient form

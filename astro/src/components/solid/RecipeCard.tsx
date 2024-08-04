@@ -1,16 +1,17 @@
+import type { CollectionEntry } from 'astro:content'
+
 import OptimizedImage from "@solidcomponents/OptimizedImage";
-import { type RecipeInterface } from "@utils/interfaces";
 
 export default function RecipeCard(props: {
-  recipe: RecipeInterface | null;
+  recipe: CollectionEntry<'recipes'> | null;
   lazyLoad: boolean;
 }) {
-  const recipe = (): RecipeInterface => {
+  const recipe = (): CollectionEntry<'recipes'> => {
     return props.recipe;
   };
   const getIngredientsString = (): string => {
     let ingredients_string = "";
-    recipe().ingredients.forEach((element, index: number) => {
+    recipe().data.ingredients.forEach((element, index: number) => {
       let name = element.ingredient.name.toLowerCase();
       if (index == 0) ingredients_string = name;
       else ingredients_string = ingredients_string + ", " + name;
@@ -20,11 +21,11 @@ export default function RecipeCard(props: {
 
   return (
     <>
-      <a href={"/recipe/" + recipe().id}>
+      <a href={"/recipes/" + recipe().slug}>
         <div class="bg-base-100 grid grid-cols-3 overflow-hidden rounded-xl bg-white shadow-md sm:min-h-[200px]">
           <div class="col-span-1 max-h-[220px] min-h-full sm:h-[240px]">
             <figure class="h-full">
-              {!recipe().image ? (
+              {!recipe().data.image ? (
                 <div class="flex h-full w-full bg-slate-100">
                   <div class="m-auto">
                     <svg
@@ -46,8 +47,8 @@ export default function RecipeCard(props: {
                   width={200}
                   height={220}
                   classes={"h-full min-w-full flex-1 object-cover"}
-                  altTitle={recipe().title}
-                  filename={recipe().image}
+                  altTitle={recipe().data.title}
+                  filename={recipe().data.image}
                   widthSizes={[160, 170, 200, 240]}
                   sizes="(max-width:544px) 170px, (max-width: 767px) 240px, (max-width: 1535px) 160px, (max-width: 2200px) 170px, 200px"
                 />
@@ -57,7 +58,7 @@ export default function RecipeCard(props: {
           <div class="col-span-2 flex max-h-[220px] min-h-[170px] flex-col justify-around px-2 py-3 sm:h-[240px] sm:min-h-full sm:px-5">
             <div>
               <h2 class="line-clamp-2 font-sans text-2xl font-bold tracking-tight">
-                {props.recipe.title}
+                {props.recipe.data.title}
               </h2>
               <div class="text-secondary-contrast mb-3 mt-4 font-semibold">
                 <span class="inline-block">
@@ -78,7 +79,7 @@ export default function RecipeCard(props: {
                   </svg>
                 </span>
                 <span class="align-text-baseline ml-1 text-xl font-medium">
-                  {props.recipe.cooking_time} m
+                  {props.recipe.data.cooking_time} m
                 </span>
               </div>
             </div>

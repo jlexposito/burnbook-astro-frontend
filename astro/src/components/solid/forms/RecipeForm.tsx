@@ -1,3 +1,5 @@
+import type { CollectionEntry } from "astro:content";
+
 import {
   type Accessor,
   createMemo,
@@ -14,11 +16,11 @@ import { isServer } from "solid-js/web";
 
 // Utils
 import { getTags } from "@utils/api";
-import {
-  type ComboboxOption,
-  type Tag,
-  type referenceFormValue,
-  type RecipeInterface,
+import type {
+  ComboboxOption,
+  Tag,
+  referenceFormValue,
+  RecipeInterface,
 } from "@utils/interfaces";
 import {
   createSelectOptions,
@@ -36,15 +38,9 @@ import IngredientsForm from "@solidcomponents/forms/IngredientsForm";
 
 export default function RecipeForm(props: {
   action: string;
-  recipe?: RecipeInterface;
+  recipe?: CollectionEntry<'recipes'>;
 }) {
   const recipe = props.recipe;
-
-  // tags
-  const [existingTags]: ResourceReturn<Tag[]> = createResource(getTags);
-  const tagSelectOptions: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingTags),
-  );
 
   const createNewReference = (initialValue: string) => {
     const [value, setValue] = createSignal(initialValue);
@@ -56,7 +52,7 @@ export default function RecipeForm(props: {
   };
 
   // References
-  const recipeReferences = recipe?.references;
+  const recipeReferences = recipe?.data?.references;
   let numberOfInitialReferences = 2;
   let initialReferences = [];
 
@@ -84,19 +80,21 @@ export default function RecipeForm(props: {
     // Catchall to avoid collapsing when pressing the "backspace"
     let input = document.getElementById("new-recipe");
 
-    // Execute a function when the user presses a key on the keyboard
-    input.addEventListener("keypress", function (event) {
-      if ("type" in event.target) {
-        const targetType = event.target?.type;
-        if (targetType === "textarea" || targetType == "submit") {
-          return true;
+    if(input) {
+      // Execute a function when the user presses a key on the keyboard
+      input.addEventListener("keypress", function (event) {
+        if ("type" in event.target) {
+          const targetType = event.target?.type;
+          if (targetType === "textarea" || targetType == "submit") {
+            return true;
+          }
         }
-      }
-
-      if (event.key === "Enter") {
-        event.preventDefault();
-      }
-    });
+  
+        if (event.key === "Enter") {
+          event.preventDefault();
+        }
+      });
+    }
   }
 
   const changeReference = (id: string, value: string) => {
@@ -142,8 +140,8 @@ export default function RecipeForm(props: {
         setFormErrors(errors);
       } else {
         let id = "";
-        if (recipe?.id) {
-          id = recipe.id.toString();
+        if (recipe?.data?.id) {
+          id = recipe.data.id.toString();
         } else {
           let json_res = JSON.parse(response);
           id = json_res.recipe;
@@ -207,7 +205,7 @@ export default function RecipeForm(props: {
                 label="Nombre"
                 autocomplete="off"
                 // dynamicValue={name}
-                value={recipe?.title}
+                value={recipe?.data?.title}
                 required={true}
               />
             </div>
@@ -218,7 +216,7 @@ export default function RecipeForm(props: {
                   name="cooking_time"
                   label="Tiempo de preparacion (minutos)"
                   min="0"
-                  value={recipe?.cooking_time}
+                  value={recipe?.data?.cooking_time}
                   required={true}
                 />
               </div>
@@ -228,7 +226,7 @@ export default function RecipeForm(props: {
                   name="servings"
                   label="Raciones"
                   required={true}
-                  value={recipe ? recipe.servings : "2"}
+                  value={recipe ? recipe.data?.servings : "2"}
                 />
               </div>
             </div>
@@ -244,8 +242,8 @@ export default function RecipeForm(props: {
               <Show when={recipe}>
                 <div>
                   <p>Imagen existente</p>
-                  <a href={recipe.image} target="_blank">
-                    <img width="300" height="300" src={recipe.image} />
+                  <a href={recipe.data?.image} target="_blank">
+                    <img width="300" height="300" src={recipe.data?.image} />
                   </a>
                 </div>
               </Show>
@@ -261,7 +259,7 @@ export default function RecipeForm(props: {
                 rows="10"
                 autocomplete="off"
                 style={"min-height: 200px;"}
-                value={recipe ? recipe.instructions : ""}
+                value={recipe ? recipe.body : ""}
                 required={true}
               />
             </div>
@@ -334,7 +332,7 @@ export default function RecipeForm(props: {
               name={"tags"}
               placeholder={"tags (separados por coma)"}
               label={"tags"}
-              initialValue={recipe?.tags}
+              initialValue={recipe?.data?.tags}
             />
           </div>
 

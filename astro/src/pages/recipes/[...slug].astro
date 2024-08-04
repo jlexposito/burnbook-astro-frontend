@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import MarkdownRecipeLayout from "@layouts/MarkdownRecipeLayout.astro";
+
+export async function getStaticPaths() {
+  const recipeEntries = await getCollection('recipes');
+  return recipeEntries.map(recipe => ({
+    params: { slug: recipe.slug }, props: { recipe },
+  }));
+}
+
+const { recipe } = Astro.props;
+const { Content } = await recipe.render();
+---
+
+<MarkdownRecipeLayout frontmatter={recipe.data}>
+    <Content />
+</MarkdownRecipeLayout>

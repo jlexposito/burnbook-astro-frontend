@@ -1,8 +1,5 @@
 ---
-export const prerender = false
-
-import { getRecipe } from "@utils/api.js";
-import { type RecipeInterface } from "@utils/interfaces";
+import { getCollection } from 'astro:content';
 
 import RecipeForm from "@solidcomponents/forms/RecipeForm";
 
@@ -11,9 +8,17 @@ import NotFoundLayout from "@layouts/NotFoundLayout.astro";
 
 import { baseURL } from "@utils/apiClient";
 
-const { recipeid } = Astro.params;
-const recipe: RecipeInterface = await getRecipe(recipeid);
-const actionUrl = `${baseURL}recipes/${recipeid}/`;
+export async function getStaticPaths() {
+  const recipeEntries = await getCollection('recipes');
+  return recipeEntries.map(recipe => ({
+    params: { slug: recipe.slug }, props: { recipe },
+  }));
+}
+
+const { slug } = Astro.params;
+const { recipe } = Astro.props;
+
+const actionUrl = `${baseURL}recipes/${recipe.id}/`;
 
 if (!recipe) {
   Astro.response.status = 404;
@@ -27,7 +32,7 @@ if (!recipe) {
       message="The recipe you are looking for could not be found"
     />
   ) : (
-    <BaseLayout title={`Edit "${recipe.title}"`} pagename="recipe-view">
+    <BaseLayout title={`Edit "${recipe.data.title}"`} pagename="recipe-view">
       <section class="recipe-form">
         <div
           class="flex flex-col items-center justify-center px-6 py-6 mx-auto md:min-h-screen"
@@ -38,7 +43,7 @@ if (!recipe) {
           <div
             class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-4xl md:max-w-7xl xl:p-0"
           >
-            <RecipeForm action={actionUrl} recipe={recipe} client:load />
+            <RecipeForm action={actionUrl} recipe={recipe} client:only="solid-js" />
           </div>
         </div>
       </section>
