@@ -12,7 +12,7 @@ export default function LoginForm() {
 
   const handleSubmit = (event: Event): void => {
     event.preventDefault();
-    const res = doLogin(username(), password());
+    const res : Promise<LoginResult> = doLogin(username(), password());
     res
       .then((res) => {
         updateTokens(res.data);

@@ -1,9 +1,5 @@
+import type { Tokens } from "@utils/interfaces";
 import { persistentAtom } from "@nanostores/persistent";
-
-type Tokens = {
-  refresh: string;
-  access: string;
-};
 
 export const $tokens = persistentAtom<Tokens>(
   "tokens",
