@@ -28,7 +28,7 @@
     "astro-compress": "^2.3.1",
     "axios": "^1.7.3",
     "install": "^0.13.0",
-    "nanostores": "^0.11.0",
+    "nanostores": "^0.11.2",
     "postcss-preset-env": "^10.0.0",
     "postcss-reuse": "^2.2.0",
     "solid-collapse": "^1.1.0",
