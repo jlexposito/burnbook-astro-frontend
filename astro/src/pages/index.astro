@@ -9,7 +9,10 @@ import RecipeGrid from "@solidcomponents/RecipeGrid";
 
 import { getTags } from "@utils/api";
 
-const recipes : CollectionEntry<'recipes'>[] = await getCollection('recipes');
+let recipes : CollectionEntry<'recipes'>[] = await getCollection('recipes');
+recipes.sort((a, b) => a.data.cooking_time - b.data.cooking_time);
+
+
 const tags = await getTags();
 
 ---
