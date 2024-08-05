@@ -79,6 +79,7 @@ export type recipeIngredientFormValue = {
 };
 
 export type LoginResult = {
+  data?: Tokens | null;
   success: boolean;
   message: string;
 };
@@ -90,3 +91,7 @@ export interface SelectValueChangeCallback<T> {
 export type selectElementType = Unit | Ingredient | Tag;
 export type selectOptionType = ComboboxOption[];
 export type formValues = recipeIngredientFormValue | referenceFormValue;
+export type Tokens = {
+  refresh: string;
+  access: string;
+};
