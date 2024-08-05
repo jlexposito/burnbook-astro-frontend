@@ -1,10 +1,13 @@
 name: Update content
+run-name: ${{ github.actor }} updating recipes 🚀
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches:
+      - master
   pull_request:
-    branches: [ $default-branch ]
+    branches:
+      - master
 
 jobs:
   build:
