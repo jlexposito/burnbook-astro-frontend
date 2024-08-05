@@ -13,6 +13,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+  permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -30,3 +35,10 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
+      
+      - name: Commit updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # Optional. Commit message for the created commit.
+          # Defaults to "Apply automatic changes"
+          commit_message: Automated Change
