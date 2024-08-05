@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { recipe } = Astro.props;
 
-const actionUrl = `${baseURL}recipes/${recipe.id}/`;
+const actionUrl = `${baseURL}recipes/${recipe?.data.id}/`;
 
 if (!recipe) {
   Astro.response.status = 404;

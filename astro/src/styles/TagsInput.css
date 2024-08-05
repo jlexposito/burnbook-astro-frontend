@@ -40,4 +40,10 @@
       @apply hover:text-red-700;
     }
   }
+  input { 
+    border: none;
+    &:focus {
+      @apply ring-transparent !important
+    }
+  }
 }
