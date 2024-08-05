@@ -8,6 +8,8 @@ on:
   pull_request:
     branches:
       - master
+  repository_dispatch:
+    types: [update_content]
 
 jobs:
   build:
