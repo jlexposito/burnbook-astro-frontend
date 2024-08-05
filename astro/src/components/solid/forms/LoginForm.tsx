@@ -15,10 +15,8 @@ export default function LoginForm() {
     const res = doLogin(username(), password());
     res
       .then((res) => {
-        console.log(res);
         updateTokens(res.data);
-        window.location.replace("/recipe/newrecipe");
-        // res.data.args; // { hello: 'world' }
+        window.location.replace("/recipes/new");
       })
       .catch((reason) => {
         console.log(reason);

@@ -21,8 +21,8 @@ export function TagsInput(props: {
   function isNotEmptyString(element: string) {
     return element.trim().length;
   }
-  let nonEmptyIntialValue = merged.initialValue.some(isNotEmptyString);
   const disabled = false || props.disabled;
+  const nonEmptyIntialValue = merged.initialValue.some(isNotEmptyString);
   const initialValue = nonEmptyIntialValue ? merged.initialValue : [];
 
   let config: zagTagsInput.Context = {
@@ -31,9 +31,10 @@ export function TagsInput(props: {
     blurBehavior: "add",
     name: merged.name,
     value: initialValue,
+    disabled: disabled,
     validate(details) {
       // no repeated
-      return !details?.values?.includes(details.inputValue);
+      return !details?.value?.includes(details.inputValue);
     },
   };
 
@@ -43,12 +44,12 @@ export function TagsInput(props: {
   );
 
   return (
-    <div {...api().rootProps} class="tagsInput">
-      <LabelComponent id={api().labelProps.for} label={props.label} />
+    <div {...api().getRootProps()} class="tagsInput">
+      <LabelComponent id={api().getLabelProps().for} label={props.label} />
       <div
         classList={{ focused: state.hasTag("focused") }}
         class="input"
-        {...api().controlProps}
+        {...api().getControlProps()}
       >
         <For each={api().value}>
           {(value, index) => (
@@ -65,10 +66,7 @@ export function TagsInput(props: {
             </span>
           )}
         </For>
-        <input
-          placeholder={props.placeholder ? props.placeholder : ""}
-          {...api().inputProps}
-        />
+        <input placeholder="Add tag..." {...api().getInputProps()} />
         <input type="hidden" name={merged.name} value={api().value.join(",")} />
       </div>
     </div>

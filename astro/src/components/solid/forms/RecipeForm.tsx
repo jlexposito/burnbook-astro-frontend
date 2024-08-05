@@ -148,7 +148,7 @@ export default function RecipeForm(props: {
         }
 
         alert("Created successfully !");
-        window.location.replace(`/recipe/${id}`);
+        window.location.replace(`/recipes/`);
       }
     });
 
