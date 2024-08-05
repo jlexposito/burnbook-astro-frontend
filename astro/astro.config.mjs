@@ -4,8 +4,6 @@ import tailwind from "@astrojs/tailwind";
 import Compress from "astro-compress";
 import icon from "astro-icon";
 
-import playformInline from "@playform/inline";
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [icon(), solidJs(), tailwind({
@@ -13,5 +11,5 @@ export default defineConfig({
       path: './tailwind.config.cjs',
       applyBaseStyles: false /** disables the built-in stylesheet */
     }
-  }), Compress(), playformInline()]
+  }), Compress()]
 });
