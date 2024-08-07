@@ -139,7 +139,10 @@ export default function RecipeForm(props: {
         }
 
         alert("Created successfully !");
-        window.location.replace(`/recipes/`);
+        let url = window.location.href
+        // Removes /edit/
+        url = url.split('/').slice(0, -2).join('/')
+        window.location.replace(url);
       }
     });
 
