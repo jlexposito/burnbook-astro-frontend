@@ -4,19 +4,61 @@ created: '2023-09-10T14:54:36.337889Z'
 id: 18
 image: /media/Cauliflower-Fried-Rice-Recipe.jpg
 ingredients:
-- id: 424
+- id: 428
   ingredient:
-    name: brocoli
+    name: coliflor
     prefix: ''
   optional: false
-  quantity: '400'
+  quantity: '300'
   recipe: 18
   unit: gr
+- id: 429
+  ingredient:
+    name: aceite de oliva
+    prefix: ''
+  optional: false
+  quantity: '2'
+  recipe: 18
+  unit: tablespoon
+- id: 430
+  ingredient:
+    name: huevos
+    prefix: ''
+  optional: false
+  quantity: '2'
+  recipe: 18
+  unit: unit
+- id: 431
+  ingredient:
+    name: cebolla
+    prefix: ''
+  optional: false
+  quantity: '1'
+  recipe: 18
+  unit: unit
+- id: 432
+  ingredient:
+    name: pimientos
+    prefix: ''
+  optional: false
+  quantity: '1'
+  recipe: 18
+  unit: unit
+- id: 433
+  ingredient:
+    name: limon
+    prefix: zumo de
+  optional: false
+  quantity: '1'
+  recipe: 18
+  unit: teaspoon
 references:
 - https://www.youtube.com/watch?v=Osb1MpN5y-4
 servings: 2
 status: Tried
 tags:
+- cena
+- comida
 - salado
 title: Arroz frito de coliflor
 updated: '2024-08-07T09:31:23.131355Z'
