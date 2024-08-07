@@ -44,8 +44,9 @@ tags:
 - cena
 - comida
 title: "Bagels con champi\xF1ones"
-updated: '2023-09-10T15:43:01.858006Z'
+updated: '2024-08-07T22:46:23.758296Z'
 ---
+
 
 1. Precalentar el horno a unos 180ºC
 2. Cortar los champiñones y el ajo en trocitos
@@ -57,3 +58,4 @@ updated: '2023-09-10T15:43:01.858006Z'
 
 
 **Opcional:**  añadir tomates cherries
+
