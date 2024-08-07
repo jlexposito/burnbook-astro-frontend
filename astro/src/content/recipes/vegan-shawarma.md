@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.532479Z'
 id: 24
 image: /media/shawarma.png
 ingredients:
-- id: 116
+- id: 605
   ingredient:
     name: celeriac
     prefix: ''
@@ -16,7 +16,9 @@ references:
 - https://www.youtube.com/watch?v=BVwLpFQCbt0
 servings: 2
 status: New
-tags: []
+tags:
+- cena
+- comida
 title: Vegan shawarma
 updated: '2024-02-19T19:49:36.370253Z'
 ---
