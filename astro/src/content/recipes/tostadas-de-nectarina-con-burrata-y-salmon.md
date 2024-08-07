@@ -68,7 +68,6 @@ status: Tried
 tags:
 - cena
 - comida
-- salado
 title: "Tostadas de nectarina con burrata y salm\xF3n"
 updated: '2024-08-07T09:23:35.188503Z'
 ---
