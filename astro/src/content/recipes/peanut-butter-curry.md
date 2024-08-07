@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:35.929773Z'
 id: 7
 image: /media/peanut_butter_curry.jpg
 ingredients:
-- id: 31
+- id: 450
   ingredient:
     name: limon
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 7
   unit: unit
-- id: 32
+- id: 451
   ingredient:
     name: leche de coco
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 7
   unit: unit
-- id: 33
+- id: 452
   ingredient:
     name: garbanzos
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 7
   unit: unit
-- id: 34
+- id: 453
   ingredient:
     name: salsa de tomate
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 7
   unit: tablespoon
-- id: 35
+- id: 454
   ingredient:
     name: peanut butter
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '4'
   recipe: 7
   unit: tablespoon
-- id: 36
+- id: 455
   ingredient:
     name: ajo
     prefix: diente de
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 7
   unit: unit
-- id: 37
+- id: 456
   ingredient:
     name: paprika
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 7
   unit: tablespoon
-- id: 38
+- id: 457
   ingredient:
     name: cilantro en polvo
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 7
   unit: tablespoon
-- id: 39
+- id: 458
   ingredient:
     name: cayena
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 7
   unit: tablespoon
-- id: 40
+- id: 459
   ingredient:
     name: chiles
     prefix: ''
@@ -90,12 +90,16 @@ servings: 2
 status: Tried
 tags:
 - one pot
+- cena
+- comida
 title: Peanut butter curry
-updated: '2023-09-10T15:20:42.642202Z'
+updated: '2024-08-07T22:44:25.435365Z'
 ---
+
 
 1. Calentar en una olla grande a fuego medio con aceite, ajo machacado + especias y cocinar por un par de minutos⁣
 2.  Agregar los garbanzos escurridos + peanut butterí + caldo de verduras en polvo + puré de tomate + jugo de lima + leche de coco y cocinar a fuego alto durante aproximadamente 7 minutos hasta que espese (asegurándose de revolver) ⁣
 3. Finalmente retirar del fuego y agregar las espinacas.
 
 **Almacenamiento**: mantener en un recipiente sellado en el refrigerador por un par de días o congelar.
+

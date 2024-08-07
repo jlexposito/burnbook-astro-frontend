@@ -140,8 +140,9 @@ tags:
 - cena
 - comida
 title: Croquetas caseras de pollo o setas
-updated: '2024-02-19T19:46:41.032634Z'
+updated: '2024-08-07T20:02:04.729240Z'
 ---
+
 
 Receta para unas 160 raciones (80 raciones de cada variedad)
 
@@ -214,3 +215,4 @@ Cuando estén todas las croquetas hechas, freírlas o poner a congelar.
 # Cocinar
 
 Freír a fuego alto para evitar que se deshagan.
+
