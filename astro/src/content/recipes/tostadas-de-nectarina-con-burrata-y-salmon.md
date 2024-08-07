@@ -4,7 +4,7 @@ created: '2024-02-19T18:29:15.429411Z'
 id: 51
 image: /media/TOSTAS-NECTARINAS_2.jpg
 ingredients:
-- id: 289
+- id: 416
   ingredient:
     name: pan
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 51
   unit: unit
-- id: 290
+- id: 417
   ingredient:
     name: nectarinas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '5'
   recipe: 51
   unit: unit
-- id: 291
+- id: 418
   ingredient:
     name: salmon ahumado
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '100'
   recipe: 51
   unit: gr
-- id: 292
+- id: 419
   ingredient:
     name: albahaca
     prefix: hojas de
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 51
   unit: unit
-- id: 293
+- id: 420
   ingredient:
     name: sesame seeds
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 51
   unit: teaspoon
-- id: 294
+- id: 421
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 51
   unit: teaspoon
-- id: 295
+- id: 422
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -65,11 +65,16 @@ references:
 - https://www.instagram.com/reel/CeEAxlDMqG-/
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- salado
 title: "Tostadas de nectarina con burrata y salm\xF3n"
-updated: '2024-02-19T18:29:15.432868Z'
+updated: '2024-08-07T09:23:35.188503Z'
 ---
+
 
 1. Pela 4 nectarinas y corta en gajos.
 2. Saltea con 2 cucharadas de aceite de oliva a fuego medio 6-7 min. Reserva.
 3. Tuesta el pan, añade por encima la nectarina salteada, unos trozos de burrata, pimienta, el salmón ahumado, la otra necatrina picada y en crudo, albahaca, el sésamo y termina con un chorrito de aceite de oliva.
+

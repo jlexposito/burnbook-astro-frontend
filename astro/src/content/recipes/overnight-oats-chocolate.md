@@ -74,7 +74,7 @@ servings: 1
 status: Tried
 tags: []
 title: Overnight Oats - Chocolate
-updated: '2024-02-14T16:35:20.554293Z'
+updated: '2024-08-06T22:15:47.938831Z'
 ---
 
 1. Añadir todos los ingredientes, excepto el yogur, a un bol y remover.

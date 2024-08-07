@@ -83,8 +83,6 @@ servings: 2
 status: Tried
 tags:
 - one pot
-- comida
-- cena
 title: Curry de garbanzos y verduras con yogur
 updated: '2024-02-19T19:50:01.291195Z'
 ---

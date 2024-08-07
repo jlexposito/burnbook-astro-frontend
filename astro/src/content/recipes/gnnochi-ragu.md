@@ -112,9 +112,7 @@ references:
 - https://www.instagram.com/reel/C0KP4RqLICf/
 servings: 2
 status: Tried
-tags:
-- comida
-- cena
+tags: []
 title: Gnnochi ragu
 updated: '2024-02-19T19:43:02.409607Z'
 ---

@@ -32,9 +32,7 @@ references:
 - https://www.instagram.com/reel/CPD2laJgYef
 servings: 2
 status: Tried
-tags:
-- comida
-- cena
+tags: []
 title: "Alb\xF3ndigas vegetarianas"
 updated: '2024-08-05T11:20:10.837121Z'
 ---

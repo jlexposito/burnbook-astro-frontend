@@ -138,10 +138,7 @@ references:
 - https://www.youtube.com/watch?v=EGeNKGosXA8&ab_channel=Munchies
 servings: 4
 status: Tried
-tags:
-- salado
-- comida
-- cena
+tags: []
 title: Sushi variado
 updated: '2024-02-19T19:47:00.023305Z'
 ---

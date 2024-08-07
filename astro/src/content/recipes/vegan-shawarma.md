@@ -16,9 +16,7 @@ references:
 - https://www.youtube.com/watch?v=BVwLpFQCbt0
 servings: 2
 status: New
-tags:
-- comida
-- cena
+tags: []
 title: Vegan shawarma
 updated: '2024-02-19T19:49:36.370253Z'
 ---

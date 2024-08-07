@@ -57,10 +57,8 @@ references:
 servings: 2
 status: Tried
 tags:
-- desayuno
 - merienda
 - dulce
-- salado
 title: "Pancakes ricos en prote\xEDna"
 updated: '2024-02-19T19:21:44.382092Z'
 ---

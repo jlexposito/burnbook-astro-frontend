@@ -50,8 +50,6 @@ servings: 2
 status: Tried
 tags:
 - entrante
-- comida
-- cena
 title: Ensalada de garbanzos
 updated: '2024-02-19T19:46:23.637860Z'
 ---

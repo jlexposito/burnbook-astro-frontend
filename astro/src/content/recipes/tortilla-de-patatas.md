@@ -32,10 +32,7 @@ references:
 - https://www.recetasderechupete.com/tortilla-de-patatas-espanola-receta-paso-a-paso/5182/
 servings: 2
 status: Tried
-tags:
-- salado
-- comida
-- cena
+tags: []
 title: Tortilla de patatas
 updated: '2024-02-19T19:51:31.206054Z'
 ---

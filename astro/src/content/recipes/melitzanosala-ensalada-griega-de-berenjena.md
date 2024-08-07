@@ -52,8 +52,6 @@ status: Tried
 tags:
 - entrante
 - tentempie
-- comida
-- cena
 title: Melitzanosala. Ensalada griega de berenjena
 updated: '2024-02-19T19:50:54.482468Z'
 ---
