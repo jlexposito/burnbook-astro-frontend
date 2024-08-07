@@ -36,6 +36,11 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
+
+      - name: Update repository before 
+        uses: actions/checkout@v4
+        with:
+          clean: false
       
       - name: Commit updates
         uses: stefanzweifel/git-auto-commit-action@v5
