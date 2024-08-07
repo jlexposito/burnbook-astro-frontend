@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.840823Z'
 id: 30
 image: /media/croquetas.jpg
 ingredients:
-- id: 166
+- id: 434
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 30
   unit: tablespoon
-- id: 167
+- id: 435
   ingredient:
     name: Sal
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 30
   unit: unit
-- id: 168
+- id: 436
   ingredient:
     name: Leche semi
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1600'
   recipe: 30
   unit: gr
-- id: 169
+- id: 437
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '200'
   recipe: 30
   unit: gr
-- id: 170
+- id: 438
   ingredient:
     name: harina
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '340'
   recipe: 30
   unit: gr
-- id: 171
+- id: 439
   ingredient:
     name: Cebollas
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '4'
   recipe: 30
   unit: unit
-- id: 172
+- id: 440
   ingredient:
     name: Pechuga de pollo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '4'
   recipe: 30
   unit: unit
-- id: 173
+- id: 441
   ingredient:
     name: Setas
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '800'
   recipe: 30
   unit: gr
-- id: 174
+- id: 442
   ingredient:
     name: Setas deshidratadas
     prefix: Paquete de
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 30
   unit: unit
-- id: 175
+- id: 443
   ingredient:
     name: pimienta
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '4'
   recipe: 30
   unit: tablespoon
-- id: 176
+- id: 444
   ingredient:
     name: Nuez moscada
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '4'
   recipe: 30
   unit: tablespoon
-- id: 177
+- id: 445
   ingredient:
     name: perejil
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '4'
   recipe: 30
   unit: tablespoon
-- id: 178
+- id: 446
   ingredient:
     name: Pan rallado
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '800'
   recipe: 30
   unit: gr
-- id: 179
+- id: 447
   ingredient:
     name: huevo
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '12'
   recipe: 30
   unit: unit
-- id: 180
+- id: 448
   ingredient:
     name: Caldo de pollo
     prefix: pastilla de
@@ -124,7 +124,7 @@ ingredients:
   quantity: '2'
   recipe: 30
   unit: unit
-- id: 181
+- id: 449
   ingredient:
     name: Caldo de setas
     prefix: pastilla de
@@ -135,7 +135,10 @@ ingredients:
 references: []
 servings: 16
 status: Tried
-tags: []
+tags:
+- salado
+- cena
+- comida
 title: Croquetas caseras de pollo o setas
 updated: '2024-02-19T19:46:41.032634Z'
 ---
