@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:35.893686Z'
 id: 6
 image: /media/bagel_burger.jpg
 ingredients:
-- id: 27
+- id: 460
   ingredient:
     name: Pan de bagel
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 6
   unit: unit
-- id: 28
+- id: 461
   ingredient:
     name: queso camembert
     prefix: rodajas de
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 6
   unit: unit
-- id: 29
+- id: 462
   ingredient:
     name: hamburgesa
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 6
   unit: unit
-- id: 30
+- id: 463
   ingredient:
     name: ajo
     prefix: cabeza de
@@ -39,10 +39,14 @@ ingredients:
 references: []
 servings: 2
 status: Tried
-tags: []
+tags:
+- salado
+- cena
+- comida
 title: "Bagels con champi\xF1ones"
-updated: '2023-09-10T15:43:01.858006Z'
+updated: '2024-08-07T22:46:23.758296Z'
 ---
+
 
 1. Precalentar el horno a unos 180ºC
 2. Cortar los champiñones y el ajo en trocitos
@@ -54,3 +58,4 @@ updated: '2023-09-10T15:43:01.858006Z'
 
 
 **Opcional:**  añadir tomates cherries
+
