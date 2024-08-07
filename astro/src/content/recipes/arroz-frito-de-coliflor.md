@@ -58,8 +58,9 @@ servings: 2
 status: Tried
 tags: []
 title: Arroz frito de coliflor
-updated: '2024-08-07T09:31:23.131355Z'
+updated: '2024-08-07T10:19:39.049857Z'
 ---
+
 
 Instrucciones
 1. Añade el aceite a un wok grande. Añade la cebolla y cocina, revolviendo regularmente a fuego medio durante 5 minutos hasta que la cebolla comience a ablandarse y volverse translúcida.
@@ -72,3 +73,4 @@ Instrucciones
 8. Vierte la salsa de soja restante y espolvorea la sal. Mezcla todo.
 9. Agrega el jugo de limón, revuelve y prueba. Agrega un poco más de jugo de limón si es necesario.
 10. Divide en 2 tazones. Cubre con cebolletas.
+
