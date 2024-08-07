@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.643082Z'
 id: 27
 image: /media/caldo-de-verduras.jpg
 ingredients:
-- id: 134
+- id: 600
   ingredient:
     name: Puerro
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 27
   unit: unit
-- id: 135
+- id: 601
   ingredient:
     name: Zanahorias
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 27
   unit: unit
-- id: 136
+- id: 602
   ingredient:
     name: patatas
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 27
   unit: unit
-- id: 137
+- id: 603
   ingredient:
     name: Cebollas
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 27
   unit: unit
-- id: 138
+- id: 604
   ingredient:
     name: apio
     prefix: Hoja de
@@ -47,11 +47,15 @@ ingredients:
 references: []
 servings: 4
 status: New
-tags: []
+tags:
+- cena
+- comida
 title: Caldo de Verduras
-updated: '2023-09-10T14:54:36.644254Z'
+updated: '2024-08-07T23:16:22.058883Z'
 ---
+
 
 **Versión de la madre de Carla**:
 
 Se pone en una olla, se le añade agua hasta que sobrepase 3 dedos los ingredientes y a hervir.
+
