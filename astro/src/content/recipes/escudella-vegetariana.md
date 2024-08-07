@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.515244Z'
 id: 23
 image: /media/escudella.jpg
 ingredients:
-- id: 115
+- id: 606
   ingredient:
     name: patatas
     prefix: ''
@@ -16,7 +16,9 @@ references:
 - https://molsa.bio/es/blog/escudella-vegetariana-sopa-de-galets-veggie/
 servings: 2
 status: New
-tags: []
+tags:
+- cena
+- comida
 title: Escudella vegetariana
 updated: '2023-09-10T15:34:31.451281Z'
 ---
