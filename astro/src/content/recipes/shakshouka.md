@@ -76,9 +76,8 @@ tags:
 - cena
 - comida
 title: Shakshouka
-updated: '2024-08-07T23:15:44.053473Z'
+updated: '2023-09-10T14:54:36.157432Z'
 ---
-
 
 1. Cortar la cebolla en tiras
 2. Freír la cebolla en una cazuela a fuego lento
@@ -90,4 +89,3 @@ updated: '2024-08-07T23:15:44.053473Z'
 **Opcional**: 
 
 *  En otra sartén preparar la shoarma. Añadir con el sofrito al final, antes de añadir el huevo.
-
