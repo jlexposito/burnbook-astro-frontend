@@ -54,7 +54,6 @@ tpl = """\
 ---
 ${frontmatter}\
 ---
-
 ${content}
 """
 
