@@ -77,9 +77,8 @@ tags:
 - cena
 - desayuno
 title: Overnight Oats - Chocolate
-updated: '2024-08-09T13:35:22.330651Z'
+updated: '2024-08-06T22:15:47.938831Z'
 ---
 1. Añadir todos los ingredientes, excepto el yogur, a un bol y remover.
 2. Poner por capas primero la avena, luego el yogur, otra vez la avena, y luego el yogur.
 3. Se puede añadir más polvo de cacao en la parte de arriba.
-

@@ -20,10 +20,9 @@ tags:
 - cena
 - comida
 title: Dhal negro
-updated: '2024-08-09T13:37:32.133424Z'
+updated: '2023-09-10T15:24:50.417113Z'
 ---
 **Referencia:**
 https://www.instagram.com/reel/CQbdITJCGSn/?utm_medium=share_sheet
 
 TO BE COMPLETED
-

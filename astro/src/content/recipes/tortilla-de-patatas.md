@@ -36,7 +36,7 @@ tags:
 - cena
 - comida
 title: Tortilla de patatas
-updated: '2024-08-09T13:36:01.758323Z'
+updated: '2024-02-19T19:51:31.206054Z'
 ---
 1.  Pelamos las patatas, las lavamos para quitar restos de suciedad y muy importante, las secamos.
 2. Cortamos en láminas semifinas, a mí no me gusta que se deshagan sino que al freírlas se tuesten un poco. Las colocamos en un bol grande, donde luego vamos a mezclar con el huevo y añadimos sal al gusto. Removemos bien y reservamos.
@@ -44,4 +44,3 @@ updated: '2024-08-09T13:36:01.758323Z'
 4. Introducimos las patatas cortadas y ya saladas y dejamos que se cocinen durante aproximadamente veinte minutos a fuego bajo. El tema del grosor de las patatas también va a gustos. Hay quien prefiere cortarlas a trozos muy pequeños, en láminas muy finas que casi se rompan al freír y o más bien grandes.
 5. Mientras se están friendo las patatas, en el bol donde luego vamos a echar las patatas batimos los huevos, reservamos. Pelamos la cebolla y cortamos lo más fino posible.
 6. En otra sartén calentamos aceite de oliva y añadimos los trozos de cebolla. Pochamos hasta que tenga un color dorado, que tenga un punto de caramelización pero sin llegar a quemarse. La cebolla se hará antes que las patatas, así que escurrimos y añadimos al bol con el huevo batido.
-

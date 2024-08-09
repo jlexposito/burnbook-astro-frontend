@@ -4,7 +4,7 @@ created: '2024-02-19T12:59:35.436531Z'
 id: 50
 image: /media/curry-yogur.jpg
 ingredients:
-- id: 280
+- id: 719
   ingredient:
     name: garbanzos
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '400'
   recipe: 50
   unit: gr
-- id: 281
+- id: 720
   ingredient:
     name: Cebollas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 50
   unit: unit
-- id: 282
+- id: 721
   ingredient:
     name: calabacin
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 50
   unit: unit
-- id: 283
+- id: 722
   ingredient:
     name: curry
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 50
   unit: tablespoon
-- id: 284
+- id: 723
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 50
   unit: teaspoon
-- id: 285
+- id: 724
   ingredient:
     name: lima
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 50
   unit: unit
-- id: 286
+- id: 725
   ingredient:
     name: salsa de tomate
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '350'
   recipe: 50
   unit: gr
-- id: 287
+- id: 726
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 50
   unit: tablespoon
-- id: 288
+- id: 727
   ingredient:
     name: yogur
     prefix: ''
@@ -83,6 +83,7 @@ servings: 2
 status: Tried
 tags:
 - one pot
+- cena
 title: Curry de garbanzos y verduras con yogur
 updated: '2024-02-19T19:50:01.291195Z'
 ---
