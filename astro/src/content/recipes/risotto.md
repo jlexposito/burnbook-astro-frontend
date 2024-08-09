@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.483648Z'
 id: 22
 image: /media/risotto.jpg
 ingredients:
-- id: 111
+- id: 685
   ingredient:
     name: cebolla
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 22
   unit: unit
-- id: 112
+- id: 686
   ingredient:
     name: arroz arborio
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '200'
   recipe: 22
   unit: gr
-- id: 113
+- id: 687
   ingredient:
     name: vino blanco
     prefix: vaso de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 22
   unit: unit
-- id: 114
+- id: 688
   ingredient:
     name: caldo de verduras
     prefix: pastilla de
@@ -40,7 +40,10 @@ references:
 - https://www.recetasdeescandalo.com/como-hacer-un-risotto-de-champinones-receta-deliciosa-y-sencilla/
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- pasta
 title: Risotto
 updated: '2024-02-19T19:49:18.103668Z'
 ---
