@@ -55,7 +55,6 @@ tags:
 title: Melitzanosala. Ensalada griega de berenjena
 updated: '2024-02-19T19:50:54.482468Z'
 ---
-
 1. Asa y pela una berenjena (si es a la leña, mucho mejor, si no al microondas u horno también sirve).
 2. Pica la pulpa de la berenjena a cuchillo.
 3. Añade en un bol con el ajo picado, perejil picado, el zumo de limón, sal y pimienta, y mezcla.

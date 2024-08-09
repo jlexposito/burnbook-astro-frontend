@@ -88,7 +88,6 @@ title: Camarones en Leche de Coco
 updated: '2024-08-07T23:04:46.372427Z'
 ---
 
-
 1. Cortar en cubos pequeños un ajo, dos tomates y la cebolla mientras tenemos una olla con agua al fuego para que empiece a hervir.
 2. Añadir la pasta en la olla cuando empieza a hervir y freír vuelta y vuelta durante unos cuatro minutos los camarones en una sartén con ajo en polvo, paprika, y sal y pimienta al gusto. **Nota**: cocer la pasta uno o dos minutos menos de lo recomendado por el fabricante.
 3. Sacar los camarones y en la misma sartén añadir mantequilla, la cebolla, el concentrado de tomate y los cubos de tomate con sal al gusto. Pasados unos 5 minutos añadir en la misma sartén la leche de coco y las gambas cocinándolo a fuego medio para mientras removemos poco a poco.

@@ -54,7 +54,6 @@ tags:
 title: Tarta de zanahoria (carrot cake)
 updated: '2023-11-30T10:03:34.264731Z'
 ---
-
 Esta tarta se hace por pisos, de modo que tenéis dos posibilidades: o hacéis un bizcocho entero y lo cortáis o lo hacéis por parte. Yo en este caso he optado por la segunda.
 
 1. Precalentamos el horno a **170ºC**.

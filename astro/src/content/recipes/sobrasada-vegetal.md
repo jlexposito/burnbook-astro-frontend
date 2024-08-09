@@ -45,7 +45,6 @@ tags:
 title: Sobrasada vegetal
 updated: '2024-02-19T19:48:56.610778Z'
 ---
-
 1. Remojar durante una hora tomates secos (unos 120g)
 2. Colar los tomates y añadirlos en un vaso de batidora con un chorrito de aceite de oliva, piñones o frutos secos (unos 60g), 1 diente de ajo y una cucharada de pimentón.
 3. Batir y listo para comer

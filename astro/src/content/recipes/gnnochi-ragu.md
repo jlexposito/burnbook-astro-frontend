@@ -120,7 +120,6 @@ title: Gnnochi ragu
 updated: '2024-08-07T23:16:01.639176Z'
 ---
 
-
 1. Corta en cuadrados pequeños la cebolla, el apio y las zanahorias. Una vez cortadas, añádelas a una sartén con aceite y dos hojas de laurel y cocina a fuego medio.
 2. Mientras se cocina corta en trozos finos 2 dientes de ajo, perejil y albahaca y añádelas a la sartén. Seguidamente, añade una cucharada de concentrado de tomate en la sartén, añadiendo una pizca de sal y una cantidad generosa de pimienta negra junto con un chorro de vino rojo. Deja que el vino se evapore.
 3. Añade la lata de tomates cortados y añade 400 ml de caldo de verduras. Cocina durante 20 minutos hasta que el caldo se reduzca a la mitad.

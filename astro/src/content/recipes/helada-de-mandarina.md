@@ -45,7 +45,6 @@ tags:
 title: Helada de mandarina
 updated: '2024-02-19T19:14:32.713936Z'
 ---
-
 1. Vierte el jugo de mandarina (o clementinas) en una cacerola junto con el agua y el azúcar.
 2. Mezclar bien para disolver los polvos y espesar a fuego lento.
 3. Verter en las cocottes previamente humedecidas y dejar enfriar 2 horas en la nevera.

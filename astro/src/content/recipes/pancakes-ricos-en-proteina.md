@@ -62,7 +62,6 @@ tags:
 title: "Pancakes ricos en prote\xEDna"
 updated: '2024-02-19T19:21:44.382092Z'
 ---
-
 1. En una licuadora, combina todos los ingredientes (usa un colador para la harina). Licúa los ingredientes hasta lograr una consistencia suave. La consistencia es sedosa y burbujeante, similar a la de una masa para panqueques normal.
 2. Transfiere la masa a un bol y déjela reposar durante 10 minutos. Este paso realza la textura y el sabor de los pancakes. Mientras tanto, precalienta una sartén antiadherente a fuego medio-bajo. Asegúrese de que la sartén esté lo suficientemente caliente pero no demasiado para evitar que los panqueques se quemen.
 3. Vierte porciones de 1/4 de taza de la masa sobre la superficie caliente, equivalente a aproximadamente 3/4 de un cucharón. Cocina hasta que se formen burbujas en la superficie y los bordes parezcan firmes. Voltea con cuidado los panqueques y cocine el otro lado hasta que adquieran un color dorado.

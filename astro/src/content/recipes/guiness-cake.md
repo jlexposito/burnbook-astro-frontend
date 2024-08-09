@@ -118,7 +118,6 @@ tags:
 title: Guiness Cake
 updated: '2024-02-19T19:47:40.809200Z'
 ---
-
 ### Paso 1
 Para el pastel: calentar el horno a 170C. Unte con mantequilla un molde desmontable de 9 pulgadas y cúbralo con papel pergamino. En una cacerola o sarten grande, combine la **Guinness** y los 142 gramos de **mantequilla**. Coloque a fuego medio-bajo hasta que la mantequilla se derrita, luego retire del fuego. Agregue el **cacao** y el **azúcar extrafina**, y bata para mezclar.
 

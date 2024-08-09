@@ -72,7 +72,6 @@ title: "Tostadas de nectarina con burrata y salm\xF3n"
 updated: '2024-08-07T09:23:35.188503Z'
 ---
 
-
 1. Pela 4 nectarinas y corta en gajos.
 2. Saltea con 2 cucharadas de aceite de oliva a fuego medio 6-7 min. Reserva.
 3. Tuesta el pan, añade por encima la nectarina salteada, unos trozos de burrata, pimienta, el salmón ahumado, la otra necatrina picada y en crudo, albahaca, el sésamo y termina con un chorrito de aceite de oliva.

@@ -36,7 +36,6 @@ tags: []
 title: Vegan kebab
 updated: '2024-02-19T17:27:09.637979Z'
 ---
-
 # Pasos 
 
 1. Preparar las salsas que queramos utilizar, en nuestro caso una salsa de chile y una de ajo (pasos más abajo).

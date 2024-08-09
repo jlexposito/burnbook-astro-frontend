@@ -55,7 +55,6 @@ tags:
 title: "Tentempi\xE9 picante de garbanzos"
 updated: '2024-02-19T18:43:55.100981Z'
 ---
-
 1. Limpiar los garbanzos
 2. Añadir el tahini, el pimentón, las semillas de sesamo y la sal en un bol. Remover. Añadir los garbanzos.
 3. Esparcir los garbanzos en una plata de horno. 

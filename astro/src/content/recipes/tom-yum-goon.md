@@ -25,7 +25,6 @@ tags:
 title: Tom Yum Goon
 updated: '2024-08-08T20:21:30.524342Z'
 ---
-
 Enjuaga bien los camarones, luego pélalos y quítales las venas (¡mira el video para ver un truco genial para quitarles las venas!) y coloca todas las cabezas y las cáscaras en una olla grande. Pon la olla a fuego medio alto y saltea las cáscaras de los camarones hasta que todo lo que se pegue a la olla comience a dorarse levemente. ¡Debería oler como camarones a la parrilla!
 
 Agrega agua, raspa los pedacitos dorados que estén pegados a la olla y cocina a fuego lento durante 15 a 20 minutos. Luego, usa una espumadera con ranuras para quitar las cáscaras, asegurándote de escurrir la mayor cantidad de líquido posible.

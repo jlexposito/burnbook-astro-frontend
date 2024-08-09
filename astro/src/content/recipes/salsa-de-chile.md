@@ -61,7 +61,6 @@ tags:
 title: Salsa de chile
 updated: '2023-09-10T14:54:35.856190Z'
 ---
-
 1. Pelar y cortar una cebolla (no es necesario si tenemos un buen procesador de comida).
 2. Añadir la cebolla cortada en un vaso de batidora, un par de chiles (dependiendo de lo picante que queramos), tres cuchadas de vinagre de manzana, una lata de tomates triturados/trozeados, un par de cucharadas de sirope y un vaso de zumo de manzana.
 3. Añadir un poco de sal y pimienta, *opcionalmente* un poco de chile en polvo y batir

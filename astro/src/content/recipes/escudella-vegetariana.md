@@ -22,5 +22,4 @@ tags:
 title: Escudella vegetariana
 updated: '2024-08-07T23:28:15.074899Z'
 ---
-
 https://molsa.bio/es/blog/escudella-vegetariana-sopa-de-galets-veggie/

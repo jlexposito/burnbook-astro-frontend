@@ -96,7 +96,6 @@ title: Peanut butter curry
 updated: '2024-08-07T22:44:25.435365Z'
 ---
 
-
 1. Calentar en una olla grande a fuego medio con aceite, ajo machacado + especias y cocinar por un par de minutos⁣
 2.  Agregar los garbanzos escurridos + peanut butterí + caldo de verduras en polvo + puré de tomate + jugo de lima + leche de coco y cocinar a fuego alto durante aproximadamente 7 minutos hasta que espese (asegurándose de revolver) ⁣
 3. Finalmente retirar del fuego y agregar las espinacas.

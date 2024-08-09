@@ -54,7 +54,6 @@ title: Caldo de Verduras
 updated: '2024-08-07T23:16:22.058883Z'
 ---
 
-
 **Versión de la madre de Carla**:
 
 Se pone en una olla, se le añade agua hasta que sobrepase 3 dedos los ingredientes y a hervir.

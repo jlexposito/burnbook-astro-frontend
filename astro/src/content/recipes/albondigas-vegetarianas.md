@@ -37,7 +37,6 @@ title: "Alb\xF3ndigas vegetarianas"
 updated: '2024-08-05T11:20:10.837121Z'
 ---
 
-
 For the vegan meatballs:
 🌿 2 x 400g tin of black beans, drained + rinsed
 🌿 2 garlic clove, peeled

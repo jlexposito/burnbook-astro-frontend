@@ -85,7 +85,6 @@ tags:
 title: Tofu Saag Paneer
 updated: '2023-09-10T15:26:04.229050Z'
 ---
-
 1. Combine el jugo de 1/2 limón con los ingredientes de la marinada y una pizca de sal y pimienta. Mezcle el tofu
 
 2. Caliente 1 cucharada de mantequilla vegana o margarina en una sartén a fuego medio. Una vez caliente, freír durante 15 minutos o hasta que se doren. Luego sacar de la sartén

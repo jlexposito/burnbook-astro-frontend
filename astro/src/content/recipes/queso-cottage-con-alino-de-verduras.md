@@ -78,6 +78,5 @@ tags:
 title: "Queso cottage con ali\xF1o de verduras"
 updated: '2024-02-19T18:41:58.321785Z'
 ---
-
 1. Mezcla en un bol el tomate picado, la ciruela picada, las aceitunas sin hueso y troceadas, añade el zumo y ralladura de lima, el pimentón, el sésamo, el aceite de oliva y mezcla. 
 2. Coloca el queso en un plato, reparte en la base y dale forma bonita. Coloca el aliño de verduras en el centro con todo el jugo y termina con un poco más de aceite si quieres.

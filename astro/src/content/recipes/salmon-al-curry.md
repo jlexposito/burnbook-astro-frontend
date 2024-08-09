@@ -102,7 +102,6 @@ tags:
 title: Salmon al curry
 updated: '2023-11-03T08:48:47.745767Z'
 ---
-
 1.Sazona los filetes de salmón con sal, pimienta y ajo en polvo.
 2. Calentar una sartén grande a fuego medio y añadir 1 cucharada de aceite de oliva.
 3. Cocine los filetes de salmón unos 5 minutos por un lado, luego déles la vuelta y cocínelos otros 2 minutos. Pasar los filetes a un plato y escurrir el exceso de aceite de la sartén utilizando una toalla de papel para absorber el aceite.

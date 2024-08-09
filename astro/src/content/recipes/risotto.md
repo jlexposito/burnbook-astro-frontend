@@ -44,7 +44,6 @@ tags: []
 title: Risotto
 updated: '2024-02-19T19:49:18.103668Z'
 ---
-
 1. Cortar cebolla en trozos y pochar la cebolla a fuego lento con aceite de oliva. Mientras tanto, calentar caldo de verduras en un lado y cortar las setas.
 2. Cuando la cebolla este pochada añadir arroz y vino blanco hasta cubrir todo el arroz. Remover constantemente el arroz. 
 3. Cuando se haya absorbido el vino blanco añadir caldo de verduras varias veces hasta que el arroz este hecho a fuego medio.

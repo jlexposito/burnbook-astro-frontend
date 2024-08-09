@@ -68,7 +68,6 @@ tags: []
 title: Patatas al horno
 updated: '2023-09-10T15:27:53.235796Z'
 ---
-
 1. Precalentar el horno a 180ºC arriba y abajo
 2. Pelar y trocear las patatas en trozos medianos
 3. Sal-pimentar al gusto

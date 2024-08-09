@@ -28,7 +28,6 @@ tags: []
 title: Pizza shoarma
 updated: '2023-09-10T14:54:36.094871Z'
 ---
-
 1. Precalentar el horno a 180 grados
 2 Repartir tomate liquido (mejor no poner mucho) a la masa de pizza
 3. Cortar cebolla en rodajas y distribuir junto con la shoarma en la pizza. Por último añadir el queso para gratinar por encima.

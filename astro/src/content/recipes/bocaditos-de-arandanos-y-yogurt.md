@@ -37,7 +37,6 @@ tags:
 title: "Bocaditos de Ar\xE1ndanos y Yogurt"
 updated: '2023-09-11T20:08:55.373163Z'
 ---
-
 Preparación:
 
 1. Mezclamos los arándanos con las semillas de chía y llevamos al sartén con un chorrito de agua hasta lograr una mermelada espesa. Si quieres puedes añadir miel en este paso para obtener unos bocaditos mucho más dulces.

@@ -37,7 +37,6 @@ tags:
 title: Pico de gallo
 updated: '2023-09-10T15:21:18.296353Z'
 ---
-
 Pico de gallo, una receta mexicana absolutamente deliciosa. Es muy sana y se prepara en un momento, con tan solo 6 ingredientes y 10 minutos.🌿
 
 INSTRUCCIONES:

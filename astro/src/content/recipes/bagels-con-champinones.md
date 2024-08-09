@@ -47,7 +47,6 @@ title: "Bagels con champi\xF1ones"
 updated: '2024-08-07T22:46:23.758296Z'
 ---
 
-
 1. Precalentar el horno a unos 180ºC
 2. Cortar los champiñones y el ajo en trocitos
 3. Añadir el pan de bagel al horno

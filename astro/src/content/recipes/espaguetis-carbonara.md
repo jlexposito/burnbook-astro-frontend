@@ -44,7 +44,6 @@ tags: []
 title: Espaguetis carbonara
 updated: '2023-09-10T14:54:36.027060Z'
 ---
-
 1. Hervir agua en una olla mientras cortamos una cebolla.
 2. En un bol romper tres huevos y añadir queso parmesano y sal. Batir hasta que todo este combinado y dejarlo reposando en un lado.
 3. Cortar una cebolla en cuadraditos pequeños (brunoise) y varios champiñones en trozos algo más grandes.

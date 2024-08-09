@@ -61,7 +61,6 @@ title: Arroz frito de coliflor
 updated: '2024-08-07T10:19:39.049857Z'
 ---
 
-
 Instrucciones
 1. Añade el aceite a un wok grande. Añade la cebolla y cocina, revolviendo regularmente a fuego medio durante 5 minutos hasta que la cebolla comience a ablandarse y volverse translúcida.
 2. Añade el pimiento rojo picado, el ajo y los guisantes. Cocina durante 2 minutos más, revolviendo regularmente.

@@ -36,7 +36,6 @@ tags: []
 title: Tortilla de patatas
 updated: '2024-02-19T19:51:31.206054Z'
 ---
-
 1.  Pelamos las patatas, las lavamos para quitar restos de suciedad y muy importante, las secamos.
 2. Cortamos en láminas semifinas, a mí no me gusta que se deshagan sino que al freírlas se tuesten un poco. Las colocamos en un bol grande, donde luego vamos a mezclar con el huevo y añadimos sal al gusto. Removemos bien y reservamos.
 3. Elegimos nuestra sartén más grande y antiadherente. La ponemos al fuego y añadimos un buen aceite de oliva virgen extra. No tengáis miedo en gastaros un poco de dinero en aceite, le va a dar ese punto de sabor que distingue vuestra tortilla de las demás, podéis emplear muchas variedades: arbequina, picual, cornicabra, hojiblanca, royal… el que más os guste, pero de calidad.

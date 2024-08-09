@@ -103,7 +103,6 @@ tags:
 title: "Tarta helada de lim\xF3n"
 updated: '2024-02-19T19:47:17.276695Z'
 ---
-
 Nota: 
 
 * La leche evaporada (que se puede sustituir por Nata) y el bol donde la monten tienen que estar muy fríos. Poner en el congelador/nevera antes.

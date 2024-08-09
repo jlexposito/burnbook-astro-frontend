@@ -73,7 +73,6 @@ title: "Stroganoff de champi\xF1ones"
 updated: '2024-08-07T23:13:31.034970Z'
 ---
 
-
 1. Cortar champiñones en laminas y trocear cebolla y ajo en cuadraditos
 2. Freír los champiñones, la cebolla y el ajo en una olla con aceite hasta que queden blandos.
 3. Añadir paprika, mostaza Dijon, jugo de limon, sal y leche de coco

@@ -123,7 +123,6 @@ tags: []
 title: Oyster mushroom en salsa
 updated: '2023-09-10T15:29:25.316944Z'
 ---
-
 Cortar los champiñones ostra en tiras de 1 cm. Derrita 2 cucharadas de margarina vegana en una cacerola poco profunda a fuego medio-alto, luego agregue los champiñones, agregue el pollo condimentado y fríalo durante 15-20 minutos, o hasta que los champiñones estén crujientes. Retirar del fuego, colocar los champiñones en un plato y reservar.
 
 Mientras tanto, pelar y picar las chalotas y el ajo. Derrita la cucharada restante de margarina vegana en la sartén, reduzca el fuego a medio, luego agregue las chalotas y el ajo. Freír durante 4 minutos, revolviendo de vez en cuando. Incorporar la harina y freír durante 2 minutos, luego verter muy lentamente el vino saliendo rápidamente para evitar que la harina se apelmace utilizando el vino para desglasar la sartén, recogiendo todo el sabor posible. Cocine a fuego lento durante 1-2 minutos, luego agregue el caldo, la mostaza y las hierbas de Provenza. Recorta las puntas de las judías verdes y agrégalas a la sartén. Cocine a fuego lento durante 10 minutos, hasta que los frijoles estén cocidos pero aún les quede un buen bocado.

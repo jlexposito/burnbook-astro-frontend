@@ -79,7 +79,6 @@ title: Shakshouka
 updated: '2024-08-07T23:15:44.053473Z'
 ---
 
-
 1. Cortar la cebolla en tiras
 2. Freír la cebolla en una cazuela a fuego lento
 3. Cortar el ajo fino y añadirlo a la cazuela
