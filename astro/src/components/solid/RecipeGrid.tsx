@@ -25,7 +25,7 @@ export default function Recipes(props: {
 
   const lazyLoadStartIndex = (): number => {
     if (isMobileDevice) {
-      return 5;
+      return 6;
     }
     return 20;
   };
@@ -39,7 +39,7 @@ export default function Recipes(props: {
               <>
                 <Show when={isVisible(recipe)}>
                   <RecipeCard
-                    lazyLoad={index() > lazyLoadStartIndex()}
+                    lazyLoad={index() + 1 > lazyLoadStartIndex()}
                     recipe={recipe}
                   />
                 </Show>
