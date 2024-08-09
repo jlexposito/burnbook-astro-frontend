@@ -61,7 +61,7 @@ tags:
 - comida
 - vegetariano
 title: Arroz frito de coliflor
-updated: '2024-08-09T13:37:06.263115Z'
+updated: '2024-08-07T10:19:39.049857Z'
 ---
 
 Instrucciones
@@ -75,5 +75,4 @@ Instrucciones
 8. Vierte la salsa de soja restante y espolvorea la sal. Mezcla todo.
 9. Agrega el jugo de limón, revuelve y prueba. Agrega un poco más de jugo de limón si es necesario.
 10. Divide en 2 tazones. Cubre con cebolletas.
-
 

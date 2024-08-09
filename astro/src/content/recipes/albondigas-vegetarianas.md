@@ -37,7 +37,7 @@ tags:
 - comida
 - vegetariano
 title: Albóndigas vegetarianas
-updated: '2024-08-09T13:36:39.224974Z'
+updated: '2024-08-05T11:20:10.837121Z'
 ---
 
 For the vegan meatballs:
@@ -63,5 +63,4 @@ For the sauce:
 
 
 TBC
-
 

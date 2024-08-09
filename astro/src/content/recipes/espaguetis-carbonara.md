@@ -46,7 +46,7 @@ tags:
 - comida
 - pasta
 title: Espaguetis carbonara
-updated: '2024-08-09T13:35:44.575528Z'
+updated: '2023-09-10T14:54:36.027060Z'
 ---
 1. Hervir agua en una olla mientras cortamos una cebolla.
 2. En un bol romper tres huevos y añadir queso parmesano y sal. Batir hasta que todo este combinado y dejarlo reposando en un lado.
@@ -56,4 +56,3 @@ updated: '2024-08-09T13:35:44.575528Z'
 6. Servir en un plato añadiendo un poco de perejil cortado.
 
 **Nota**: si la mezcla es muy espesa podemos añadir un poco del agua donde hemos cocido los espaguetis.
-
