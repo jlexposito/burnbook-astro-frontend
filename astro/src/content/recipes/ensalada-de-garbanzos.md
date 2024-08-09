@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:35.786299Z'
 id: 3
 image: /media/Lemon-Mint-Garbanzo-Bean-Salad.jpg
 ingredients:
-- id: 11
+- id: 728
   ingredient:
     name: cebolla
     prefix: media
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 3
   unit: unit
-- id: 12
+- id: 729
   ingredient:
     name: menta
     prefix: hojas de
@@ -20,15 +20,15 @@ ingredients:
   quantity: '1'
   recipe: 3
   unit: unit
-- id: 13
+- id: 730
   ingredient:
     name: tomates cherry
     prefix: ''
   optional: false
-  quantity: '20'
+  quantity: '200'
   recipe: 3
-  unit: unit
-- id: 14
+  unit: gr
+- id: 731
   ingredient:
     name: garbanzos
     prefix: lata de
@@ -36,14 +36,46 @@ ingredients:
   quantity: '1'
   recipe: 3
   unit: unit
-- id: 15
+- id: 732
   ingredient:
-    name: frijoles negros
+    name: judias negras
     prefix: lata de
   optional: false
   quantity: '1'
   recipe: 3
   unit: unit
+- id: 733
+  ingredient:
+    name: limon
+    prefix: zumo de
+  optional: false
+  quantity: '60'
+  recipe: 3
+  unit: ml
+- id: 734
+  ingredient:
+    name: vinagre
+    prefix: ''
+  optional: false
+  quantity: '2'
+  recipe: 3
+  unit: teaspoon
+- id: 735
+  ingredient:
+    name: aceite de oliva
+    prefix: ''
+  optional: false
+  quantity: '4'
+  recipe: 3
+  unit: tablespoon
+- id: 736
+  ingredient:
+    name: queso feta
+    prefix: ''
+  optional: false
+  quantity: '200'
+  recipe: 3
+  unit: gr
 references:
 - https://www.instagram.com/p/BifhS79HYP0/
 servings: 2
