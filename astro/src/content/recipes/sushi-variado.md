@@ -143,7 +143,7 @@ tags:
 - cena
 - comida
 title: Sushi variado
-updated: '2024-02-19T19:47:00.023305Z'
+updated: '2024-08-09T13:40:16.885838Z'
 ---
 Instructions for 4 sushi rolls.
 
@@ -240,3 +240,4 @@ Uramaki:
 3. Ebi nigiri
 4. Salmon & Tuna nigiri
 5. Ebi tempura
+

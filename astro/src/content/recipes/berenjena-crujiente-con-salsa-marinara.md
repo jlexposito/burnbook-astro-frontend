@@ -110,7 +110,7 @@ tags:
 - comida
 - vegetariano
 title: Berenjena Crujiente Con Salsa Marinara
-updated: '2024-02-19T18:57:59.823879Z'
+updated: '2024-08-09T13:39:46.770702Z'
 ---
 1. Hornear berenjenas: Precalienta el horno a 200°C (400°F). Pincha las berenjenas con un tenedor y hornea hasta que estén blandas, unos 20-30 minutos. Retirar del horno, dejar enfriar un poco, quitar la piel y aplanar suavemente.
 2. Prepare la masa húmeda: en un tazón, mezcle la leche o agua de origen vegetal, una pizca de sal, pimienta negra, pimentón, orégano seco, hojuelas de chile (si se usa) y harina para crear una masa suave.
@@ -118,3 +118,4 @@ updated: '2024-02-19T18:57:59.823879Z'
 4. Freír Berenjenas: Calentar aceite de oliva en una sartén y freír las berenjenas empanizadas hasta que estén doradas por ambos lados. Escurrir sobre toallas de papel.
 5. Prepare salsa marinara: en una cacerola, caliente el aceite de oliva a fuego medio. Agregue las chalotas y el ajo y cocine hasta que se ablanden. Agregue los tomates triturados, el azúcar, la sal y la pimienta. Cocine a fuego lento durante 15-20 minutos. Justo antes de servir, agregue la albahaca fresca.
 6. Servir: Coloque la berenjena crujiente en un plato y sírvala con la salsa marinara tibia.
+

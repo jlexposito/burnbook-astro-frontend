@@ -124,7 +124,7 @@ tags:
 - comida
 - vegetariano
 title: Oyster mushroom en salsa
-updated: '2023-09-10T15:29:25.316944Z'
+updated: '2024-08-09T13:37:59.696730Z'
 ---
 Cortar los champiñones ostra en tiras de 1 cm. Derrita 2 cucharadas de margarina vegana en una cacerola poco profunda a fuego medio-alto, luego agregue los champiñones, agregue el pollo condimentado y fríalo durante 15-20 minutos, o hasta que los champiñones estén crujientes. Retirar del fuego, colocar los champiñones en un plato y reservar.
 
@@ -133,3 +133,4 @@ Mientras tanto, pelar y picar las chalotas y el ajo. Derrita la cucharada restan
 Mientras tanto, pique las cebolletas y retire las hojas de perejil de sus tallos, luego pique las hojas en trozos grandes. Agregue los champiñones cocidos, la mayoría de las hojas de perejil y la crema vegana a la sartén y cocine durante 1-2 minutos. Sazone al gusto con sal y pimienta.
 
 Cubra con cebollino picado, las hojas de perejil restantes y pimienta negra recién molida, y sirva junto con la baguette en rodajas.
+

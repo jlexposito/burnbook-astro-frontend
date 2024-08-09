@@ -83,6 +83,10 @@ status: Tried
 tags:
 - entrante
 title: Ensalada de garbanzos
-updated: '2024-02-19T19:46:23.637860Z'
+updated: '2024-08-09T13:53:16.208097Z'
 ---
-TKTK
+Corta la menta, los tomates cherry y añádelos en un bol grande. Añade en el bol también las judías y los garbanzos  y la media cebolla cortada en cuadrados pequeños.
+
+Prepara una vinagreta añadiendo en otro el aceite de oliva, una cucharada sopera de vinagre, el zumo de medio limón, pimienta negra y mézclalo bien. Una vez esté mezclado, añádelo al bol con el resto de ingredientes y mézclalo con una cuchara grande. Para emplatar sírvelo con queso feta.
+
+¡Que aproveche!
