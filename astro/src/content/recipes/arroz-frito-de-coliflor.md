@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.337889Z'
 id: 18
 image: /media/Cauliflower-Fried-Rice-Recipe.jpg
 ingredients:
-- id: 428
+- id: 650
   ingredient:
     name: coliflor
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 18
   unit: gr
-- id: 429
+- id: 651
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 18
   unit: tablespoon
-- id: 430
+- id: 652
   ingredient:
     name: huevos
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 18
   unit: unit
-- id: 431
+- id: 653
   ingredient:
     name: cebolla
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 18
   unit: unit
-- id: 432
+- id: 654
   ingredient:
     name: pimientos
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 18
   unit: unit
-- id: 433
+- id: 655
   ingredient:
     name: limon
     prefix: zumo de
@@ -56,9 +56,12 @@ references:
 - https://www.youtube.com/watch?v=Osb1MpN5y-4
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Arroz frito de coliflor
-updated: '2024-08-07T10:19:39.049857Z'
+updated: '2024-08-09T13:37:06.263115Z'
 ---
 
 Instrucciones
@@ -72,4 +75,5 @@ Instrucciones
 8. Vierte la salsa de soja restante y espolvorea la sal. Mezcla todo.
 9. Agrega el jugo de limón, revuelve y prueba. Agrega un poco más de jugo de limón si es necesario.
 10. Divide en 2 tazones. Cubre con cebolletas.
+
 

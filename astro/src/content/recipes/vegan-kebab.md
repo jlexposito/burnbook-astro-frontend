@@ -36,7 +36,7 @@ tags:
 - cena
 - comida
 title: Vegan kebab
-updated: '2024-02-19T17:27:09.637979Z'
+updated: '2024-08-09T13:36:17.148963Z'
 ---
 # Pasos 
 
@@ -60,3 +60,4 @@ updated: '2024-02-19T17:27:09.637979Z'
 2. Añadir la cebolla cortada en un vaso de batidora, un par de chiles (dependiendo de lo picante que queramos), tres cuchadas de vinagre de manzana, una lata de tomates triturados/trozeados, un par de cucharadas de sirope y un vaso de zumo de manzana.
 3. Añadir un poco de sal y pimienta, *opcionalmente* un poco de chile en polvo y batir
 4. Añadirlo en una olla y reducirlo durante 10 minutos para que espese y se evapore el agua que pueda tener.
+
