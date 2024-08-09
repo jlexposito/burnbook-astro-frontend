@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.093691Z'
 id: 11
 image: /media/Pizza-shoarma-met-knoflooksaus.jpg
 ingredients:
-- id: 53
+- id: 717
   ingredient:
     name: cebolla
     prefix: media
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 11
   unit: unit
-- id: 54
+- id: 718
   ingredient:
     name: salsa de ajo
     prefix: ''
@@ -24,7 +24,10 @@ references:
 - https://ohmydish.nl/recept/pizza-shoarma-met-knoflooksaus
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Pizza shoarma
 updated: '2023-09-10T14:54:36.094871Z'
 ---
