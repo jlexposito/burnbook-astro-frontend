@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.199787Z'
 id: 14
 image: /media/tortilla-de-patatas.jpg
 ingredients:
-- id: 70
+- id: 641
   ingredient:
     name: patatas
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 14
   unit: unit
-- id: 71
+- id: 642
   ingredient:
     name: cebolla
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 14
   unit: unit
-- id: 72
+- id: 643
   ingredient:
     name: huevos
     prefix: ''
@@ -32,7 +32,9 @@ references:
 - https://www.recetasderechupete.com/tortilla-de-patatas-espanola-receta-paso-a-paso/5182/
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
 title: Tortilla de patatas
 updated: '2024-02-19T19:51:31.206054Z'
 ---

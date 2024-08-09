@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.221221Z'
 id: 15
 image: /media/vegan_kebab_compressed.jpg
 ingredients:
-- id: 73
+- id: 644
   ingredient:
     name: jackfruit
     prefix: lata de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 15
   unit: unit
-- id: 74
+- id: 645
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 15
   unit: tablespoon
-- id: 75
+- id: 646
   ingredient:
     name: tortillas
     prefix: ''
@@ -32,7 +32,9 @@ references:
 - https://www.youtube.com/watch?v=xVke3F-_GAM
 servings: 2
 status: New
-tags: []
+tags:
+- cena
+- comida
 title: Vegan kebab
 updated: '2024-02-19T17:27:09.637979Z'
 ---
