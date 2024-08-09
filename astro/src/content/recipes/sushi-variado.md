@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.747906Z'
 id: 29
 image: /media/photo1678469213.jpeg
 ingredients:
-- id: 150
+- id: 701
   ingredient:
     name: arroz jasmine
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '295'
   recipe: 29
   unit: gr
-- id: 151
+- id: 702
   ingredient:
     name: agua
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '400'
   recipe: 29
   unit: ml
-- id: 152
+- id: 703
   ingredient:
     name: vinagre para arroz
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '53'
   recipe: 29
   unit: ml
-- id: 153
+- id: 704
   ingredient:
     name: azúcar
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '11'
   recipe: 29
   unit: gr
-- id: 154
+- id: 705
   ingredient:
     name: Sal
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '4'
   recipe: 29
   unit: gr
-- id: 155
+- id: 706
   ingredient:
     name: gambas
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '6'
   recipe: 29
   unit: unit
-- id: 156
+- id: 707
   ingredient:
     name: nori sheet
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '4'
   recipe: 29
   unit: unit
-- id: 157
+- id: 708
   ingredient:
     name: masago
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '25'
   recipe: 29
   unit: gr
-- id: 158
+- id: 709
   ingredient:
     name: sesame seeds
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '10'
   recipe: 29
   unit: gr
-- id: 159
+- id: 710
   ingredient:
     name: surimi sticks
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '3'
   recipe: 29
   unit: unit
-- id: 160
+- id: 711
   ingredient:
     name: avocado
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '150'
   recipe: 29
   unit: gr
-- id: 161
+- id: 712
   ingredient:
     name: cucumber
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '150'
   recipe: 29
   unit: gr
-- id: 162
+- id: 713
   ingredient:
     name: salmon
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '200'
   recipe: 29
   unit: gr
-- id: 163
+- id: 714
   ingredient:
     name: atún
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '200'
   recipe: 29
   unit: gr
-- id: 164
+- id: 715
   ingredient:
     name: Mango
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '1'
   recipe: 29
   unit: unit
-- id: 165
+- id: 716
   ingredient:
     name: queso en crema (Philadelphia)
     prefix: ''
@@ -138,7 +138,10 @@ references:
 - https://www.youtube.com/watch?v=EGeNKGosXA8&ab_channel=Munchies
 servings: 4
 status: Tried
-tags: []
+tags:
+- pescado
+- cena
+- comida
 title: Sushi variado
 updated: '2024-02-19T19:47:00.023305Z'
 ---
