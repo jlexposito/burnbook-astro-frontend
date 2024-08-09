@@ -44,8 +44,8 @@ jobs:
           # Defaults to "Apply automatic changes"
           commit_message: Automated Change
 
-      - name: Wait 65 seconds for cloudflare to complete build
-        run: sleep 65s
+      - name: Wait 30s seconds for cloudflare to complete build
+        run: sleep 30s
         shell: bash
 
       - name: Purge cache
