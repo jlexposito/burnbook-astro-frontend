@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:35.751985Z'
 id: 2
 image: /media/crema_limon.jpg
 ingredients:
-- id: 6
+- id: 624
   ingredient:
     name: huevos
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 2
   unit: unit
-- id: 7
+- id: 625
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '75'
   recipe: 2
   unit: gr
-- id: 8
+- id: 626
   ingredient:
     name: "zumo de lim\xF3n colado"
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '100'
   recipe: 2
   unit: ml
-- id: 9
+- id: 627
   ingredient:
     name: "ralladura de un lim\xF3n"
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 2
   unit: unit
-- id: 10
+- id: 628
   ingredient:
     name: "az\xFAcar"
     prefix: ''
@@ -49,7 +49,8 @@ references:
 - https://www.youtube.com/watch?v=pKDVDJW0Ej8&ab_channel=Cuuking
 servings: 2
 status: Tried
-tags: []
+tags:
+- crema
 title: "Crema de lim\xF3n al microondas"
 updated: '2023-09-10T15:19:46.853272Z'
 ---
