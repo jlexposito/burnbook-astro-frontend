@@ -49,9 +49,9 @@ references:
 servings: 2
 status: Tried
 tags:
-- picante
 - entrante
 - tentempie
+- picante
 title: Tentempié picante de garbanzos
 updated: '2024-02-19T18:43:55.100981Z'
 ---

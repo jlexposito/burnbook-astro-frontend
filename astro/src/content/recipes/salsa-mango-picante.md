@@ -49,8 +49,8 @@ references:
 servings: 6
 status: Tried
 tags:
-- picante
 - salsa
+- picante
 title: Salsa mango picante
 updated: '2023-09-10T14:54:35.704861Z'
 ---

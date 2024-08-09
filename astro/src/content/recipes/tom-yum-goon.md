@@ -18,10 +18,10 @@ references:
 servings: 2
 status: Tried
 tags:
-- picante
 - cena
 - comida
 - thai
+- picante
 title: Tom Yum Goon
 updated: '2024-08-08T20:21:30.524342Z'
 ---
