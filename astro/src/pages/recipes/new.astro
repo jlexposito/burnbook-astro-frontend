@@ -16,7 +16,7 @@ const actionUrl = `${baseURL}recipes/`
       <div
         class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-4xl md:max-w-7xl xl:p-0"
       >
-        <RecipeForm action={actionUrl} client:load />
+        <RecipeForm action={actionUrl} client:only="solid-js" />
       </div>
     </div>
   </section>

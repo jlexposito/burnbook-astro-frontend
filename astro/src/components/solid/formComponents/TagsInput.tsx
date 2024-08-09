@@ -53,8 +53,8 @@ export function TagsInput(props: {
       >
         <For each={api().value}>
           {(value, index) => (
-            <span>
-              <div {...api().getItemProps({ index: index(), value })}>
+            <span {...api().getItemProps({ index: index(), value })}>
+              <div {...api().getItemPreviewProps({ index: index(), value })}>
                 <span>{value}</span>
                 <button
                   {...api().getItemDeleteTriggerProps({ index: index(), value })}
