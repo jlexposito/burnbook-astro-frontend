@@ -12,11 +12,13 @@ import { isServer } from "solid-js/web";
 
 // Utils
 import type {
+  ImageSources,
   referenceFormValue,
 } from "@utils/interfaces";
 import {
   removeElement,
 } from "@solidcomponents/formComponents/utils";
+import { srcSet } from "@utils/optimizeImage.js";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
@@ -32,6 +34,16 @@ export default function RecipeForm(props: {
   recipe?: CollectionEntry<'recipes'>;
 }) {
   const recipe = props.recipe;
+
+  const noImage = import.meta.env.PUBLIC_DEFAULT_IMAGE;
+
+  const image = (): string => {
+    return recipe.data?.image ? recipe.data?.image : noImage;
+  };
+
+  const imageSources = (): ImageSources => {
+    return srcSet([480, 720], image(), "webp");
+  };
 
   const createNewReference = (initialValue: string) => {
     const [value, setValue] = createSignal(initialValue);
@@ -234,10 +246,22 @@ export default function RecipeForm(props: {
                 />
               </div>
               <Show when={recipe}>
-                <div>
-                  <p>Imagen existente</p>
+                <div class="min-w-[160px]">
+                  <p class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 hover:cursor-pointer">Imagen actual</p>
                   <a href={recipe.data?.image} target="_blank">
-                    <img width="300" height="300" src={recipe.data?.image} />
+                  { !recipe.data?.image ? (
+                    <div>
+                      <span>(Sin imagen)</span>
+                    </div>
+                  ) : (
+                  <img
+                    src={imageSources().src}
+                    srcset={imageSources().srcSet}
+                    sizes={imageSources().sizes}
+                    class="w-full h-[128px] md:h-[256px] object-cover"
+                    alt={recipe.data?.title}
+                  />
+                  )}
                   </a>
                 </div>
               </Show>
