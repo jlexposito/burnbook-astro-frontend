@@ -52,8 +52,9 @@ status: Tried
 tags:
 - crema
 title: "Crema de lim\xF3n al microondas"
-updated: '2023-09-10T15:19:46.853272Z'
+updated: '2024-08-09T12:13:48.933050Z'
 ---
+
 
 Nota: el zumo de limón debe estar colado, sin pulpa ni pepitas.
 
@@ -66,3 +67,4 @@ Nota: el zumo de limón debe estar colado, sin pulpa ni pepitas.
 4. Ahora cocinaremos en golpes de cocción de 20-30 segundos a máxima potencia removiendo bien entre cada cocción.
 
 5. Sabremos que tenemos la crema lista cuando esté espesa y tenga una consistencia homogénea. En nuestro caso con nuestro microondas tardamos en total unos 2 minutos 30 segundos. Solo nos queda dejarla enfriar en la nevera para que termine de tomar cuerpo ¡Y una vez fría esta lista para usar!
+
