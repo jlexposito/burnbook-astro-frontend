@@ -44,7 +44,7 @@ jobs:
           # Defaults to "Apply automatic changes"
           commit_message: Automated Change
 
-      - name: Sleep for 60 seconds
+      - name: Wait 60 seconds for cloudflare to complete build
         run: sleep 60s
         shell: bash
 
