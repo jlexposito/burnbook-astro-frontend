@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.443227Z'
 id: 21
 image: /media/patatas-al-horno.jpg
 ingredients:
-- id: 104
+- id: 678
   ingredient:
     name: patatas
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 21
   unit: unit
-- id: 105
+- id: 679
   ingredient:
     name: vino blanco
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '200'
   recipe: 21
   unit: ml
-- id: 106
+- id: 680
   ingredient:
     name: ajo
     prefix: cabeza de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '3'
   recipe: 21
   unit: unit
-- id: 107
+- id: 681
   ingredient:
     name: Sal
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 21
   unit: unit
-- id: 108
+- id: 682
   ingredient:
     name: pimienta
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 21
   unit: unit
-- id: 109
+- id: 683
   ingredient:
     name: hierbas provenzales
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 21
   unit: unit
-- id: 110
+- id: 684
   ingredient:
     name: oregano
     prefix: ''
@@ -64,7 +64,9 @@ references:
 - https://www.youtube.com/watch?v=BVFfZksX3c0
 servings: 2
 status: Tried
-tags: []
+tags:
+- salado
+- guarnición
 title: Patatas al horno
 updated: '2023-09-10T15:27:53.235796Z'
 ---
