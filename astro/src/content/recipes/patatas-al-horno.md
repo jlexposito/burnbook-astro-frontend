@@ -68,7 +68,7 @@ tags:
 - salado
 - guarnición
 title: Patatas al horno
-updated: '2023-09-10T15:27:53.235796Z'
+updated: '2024-08-09T13:38:33.626571Z'
 ---
 1. Precalentar el horno a 180ºC arriba y abajo
 2. Pelar y trocear las patatas en trozos medianos
@@ -79,3 +79,4 @@ updated: '2023-09-10T15:27:53.235796Z'
 7. Volver a sal-pimentar y remover
 8. Añadir 200ml (un vaso) de vino blanco
 9. Esperar durante unos 30 minutos hasta que las patatas estén blandas
+
