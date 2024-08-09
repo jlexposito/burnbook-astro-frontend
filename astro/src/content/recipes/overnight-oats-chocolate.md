@@ -4,7 +4,7 @@ created: '2024-02-05T09:00:55.887239Z'
 id: 49
 image: null
 ingredients:
-- id: 258
+- id: 629
   ingredient:
     name: avena
     prefix: copos de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '40'
   recipe: 49
   unit: gr
-- id: 259
+- id: 630
   ingredient:
     name: polvo de cacao sin azucarar
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: tablespoon
-- id: 260
+- id: 631
   ingredient:
     name: semillas de chia
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: teaspoon
-- id: 261
+- id: 632
   ingredient:
     name: canela
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: teaspoon
-- id: 262
+- id: 633
   ingredient:
     name: extracto de vainilla
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: unit
-- id: 263
+- id: 634
   ingredient:
     name: Miel
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: teaspoon
-- id: 264
+- id: 635
   ingredient:
     name: leche de almendra
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '100'
   recipe: 49
   unit: ml
-- id: 265
+- id: 636
   ingredient:
     name: yogur
     prefix: ''
@@ -72,7 +72,10 @@ references:
 - https://www.instagram.com/reel/C14Z313I39u/?igsh=MTE4NDNoejZvYm16dg%3D%3D
 servings: 1
 status: Tried
-tags: []
+tags:
+- dulce
+- cena
+- desayuno
 title: Overnight Oats - Chocolate
 updated: '2024-08-06T22:15:47.938831Z'
 ---

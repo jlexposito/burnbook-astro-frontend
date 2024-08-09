@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.025925Z'
 id: 9
 image: /media/carbonara__compressed.jpg
 ingredients:
-- id: 44
+- id: 637
   ingredient:
     name: Sal
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 9
   unit: unit
-- id: 45
+- id: 638
   ingredient:
     name: huevos
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 9
   unit: unit
-- id: 46
+- id: 639
   ingredient:
     name: perejil
     prefix: hojas de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 9
   unit: unit
-- id: 47
+- id: 640
   ingredient:
     name: Espaguetis
     prefix: ''
@@ -40,7 +40,11 @@ references:
 - https://www.youtube.com/watch?v=H2LJuSG2K3Y
 servings: 2
 status: Tried
-tags: []
+tags:
+- salado
+- cena
+- comida
+- pasta
 title: Espaguetis carbonara
 updated: '2023-09-10T14:54:36.027060Z'
 ---
