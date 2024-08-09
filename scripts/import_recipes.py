@@ -110,8 +110,7 @@ def run():
 		content = recipe.get('instructions')
 		del recipe['instructions']
 
-		frontmatter = (yaml.dump(recipe, default_flow_style=False))
-
+		frontmatter = (yaml.dump(recipe, default_flow_style=False, allow_unicode=True))
 
 		markdown = template.substitute(
 			frontmatter=frontmatter,
