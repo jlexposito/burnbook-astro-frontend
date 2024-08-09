@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.367400Z'
 id: 20
 image: /media/Creamy-Mushroom-Chicken-13.jpg
 ingredients:
-- id: 90
+- id: 657
   ingredient:
     name: vino blanco
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 20
   unit: ml
-- id: 91
+- id: 658
   ingredient:
     name: Dijon
     prefix: mostaza
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 20
   unit: tablespoon
-- id: 92
+- id: 659
   ingredient:
     name: setas de ostra
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '500'
   recipe: 20
   unit: gr
-- id: 93
+- id: 660
   ingredient:
     name: margarina
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 20
   unit: tablespoon
-- id: 94
+- id: 661
   ingredient:
     name: sazonador de pollo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 20
   unit: tablespoon
-- id: 95
+- id: 662
   ingredient:
     name: chalotas
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '6'
   recipe: 20
   unit: unit
-- id: 96
+- id: 663
   ingredient:
     name: harina
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '3'
   recipe: 20
   unit: tablespoon
-- id: 97
+- id: 664
   ingredient:
     name: ajo
     prefix: dientes de
@@ -68,7 +68,7 @@ ingredients:
   quantity: '3'
   recipe: 20
   unit: unit
-- id: 98
+- id: 665
   ingredient:
     name: caldo vegetal
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '500'
   recipe: 20
   unit: ml
-- id: 99
+- id: 666
   ingredient:
     name: hierbas provenzales
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 20
   unit: tablespoon
-- id: 100
+- id: 667
   ingredient:
     name: monchetas verdes
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '200'
   recipe: 20
   unit: gr
-- id: 101
+- id: 668
   ingredient:
     name: alcaparras
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '10'
   recipe: 20
   unit: gr
-- id: 102
+- id: 669
   ingredient:
     name: perejil
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '20'
   recipe: 20
   unit: gr
-- id: 103
+- id: 670
   ingredient:
     name: nata
     prefix: ''
@@ -119,7 +119,10 @@ ingredients:
 references: []
 servings: 4
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Oyster mushroom en salsa
 updated: '2023-09-10T15:29:25.316944Z'
 ---
