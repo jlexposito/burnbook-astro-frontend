@@ -4,7 +4,7 @@ created: '2024-02-19T18:57:07.733736Z'
 id: 54
 image: /media/berenjenas-marinara.jpg
 ingredients:
-- id: 326
+- id: 689
   ingredient:
     name: berenjena
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 54
   unit: unit
-- id: 327
+- id: 690
   ingredient:
     name: leche de soja
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '230'
   recipe: 54
   unit: ml
-- id: 328
+- id: 691
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 54
   unit: teaspoon
-- id: 329
+- id: 692
   ingredient:
     name: paprika
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 54
   unit: tablespoon
-- id: 330
+- id: 693
   ingredient:
     name: harina
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '440'
   recipe: 54
   unit: gr
-- id: 331
+- id: 694
   ingredient:
     name: copos de chili
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 54
   unit: teaspoon
-- id: 332
+- id: 695
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '2'
   recipe: 54
   unit: tablespoon
-- id: 333
+- id: 696
   ingredient:
     name: oregano
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 54
   unit: teaspoon
-- id: 334
+- id: 697
   ingredient:
     name: chalotas
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '2'
   recipe: 54
   unit: unit
-- id: 335
+- id: 698
   ingredient:
     name: tomates cortados
     prefix: lata de
@@ -84,7 +84,7 @@ ingredients:
   quantity: '400'
   recipe: 54
   unit: gr
-- id: 336
+- id: 699
   ingredient:
     name: azucar
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 54
   unit: teaspoon
-- id: 337
+- id: 700
   ingredient:
     name: albahaca
     prefix: hojas de
@@ -105,7 +105,10 @@ references:
 - https://www.instagram.com/reel/C1AToC8qtDk/
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Berenjena Crujiente Con Salsa Marinara
 updated: '2024-02-19T18:57:59.823879Z'
 ---
