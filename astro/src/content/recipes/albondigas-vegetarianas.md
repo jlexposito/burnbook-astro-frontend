@@ -33,7 +33,7 @@ references:
 servings: 2
 status: Tried
 tags: []
-title: "Alb\xF3ndigas vegetarianas"
+title: Albóndigas vegetarianas
 updated: '2024-08-05T11:20:10.837121Z'
 ---
 

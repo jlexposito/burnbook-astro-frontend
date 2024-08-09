@@ -46,7 +46,7 @@ ingredients:
   unit: tablespoon
 - id: 234
   ingredient:
-    name: "zumo de lim\xF3n"
+    name: zumo de limón
     prefix: ''
   optional: false
   quantity: '2'

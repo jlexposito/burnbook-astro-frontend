@@ -22,7 +22,7 @@ ingredients:
   unit: gr
 - id: 141
   ingredient:
-    name: "zumo de lim\xF3n colado"
+    name: zumo de limón colado
     prefix: ''
   optional: false
   quantity: '100'
@@ -30,7 +30,7 @@ ingredients:
   unit: ml
 - id: 142
   ingredient:
-    name: "ralladura de un lim\xF3n"
+    name: ralladura de un limón
     prefix: ''
   optional: false
   quantity: '1'
@@ -38,7 +38,7 @@ ingredients:
   unit: unit
 - id: 143
   ingredient:
-    name: "az\xFAcar"
+    name: azúcar
     prefix: ''
   optional: false
   quantity: '100'
@@ -78,7 +78,7 @@ ingredients:
   unit: gr
 - id: 148
   ingredient:
-    name: "zumo de lim\xF3n colado"
+    name: zumo de limón colado
     prefix: ''
   optional: false
   quantity: '120'
@@ -100,7 +100,7 @@ status: Tried
 tags:
 - postre
 - dulce
-title: "Tarta helada de lim\xF3n"
+title: Tarta helada de limón
 updated: '2024-02-19T19:47:17.276695Z'
 ---
 Nota: 

@@ -69,7 +69,7 @@ tags:
 - cena
 - comida
 - pasta
-title: "Stroganoff de champi\xF1ones"
+title: Stroganoff de champiñones
 updated: '2024-08-07T23:13:31.034970Z'
 ---
 

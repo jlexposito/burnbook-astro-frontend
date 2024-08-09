@@ -30,7 +30,7 @@ ingredients:
   unit: ml
 - id: 153
   ingredient:
-    name: "az\xFAcar"
+    name: azúcar
     prefix: ''
   optional: false
   quantity: '11'
@@ -110,7 +110,7 @@ ingredients:
   unit: gr
 - id: 163
   ingredient:
-    name: "at\xFAn"
+    name: atún
     prefix: ''
   optional: false
   quantity: '200'

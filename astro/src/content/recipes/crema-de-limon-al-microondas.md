@@ -22,7 +22,7 @@ ingredients:
   unit: gr
 - id: 626
   ingredient:
-    name: "zumo de lim\xF3n colado"
+    name: zumo de limón colado
     prefix: ''
   optional: false
   quantity: '100'
@@ -30,7 +30,7 @@ ingredients:
   unit: ml
 - id: 627
   ingredient:
-    name: "ralladura de un lim\xF3n"
+    name: ralladura de un limón
     prefix: ''
   optional: false
   quantity: '1'
@@ -38,7 +38,7 @@ ingredients:
   unit: unit
 - id: 628
   ingredient:
-    name: "az\xFAcar"
+    name: azúcar
     prefix: ''
   optional: false
   quantity: '100'
@@ -51,7 +51,7 @@ servings: 2
 status: Tried
 tags:
 - crema
-title: "Crema de lim\xF3n al microondas"
+title: Crema de limón al microondas
 updated: '2023-09-10T15:19:46.853272Z'
 ---
 Nota: el zumo de limón debe estar colado, sin pulpa ni pepitas.

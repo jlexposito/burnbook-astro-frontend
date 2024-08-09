@@ -43,7 +43,7 @@ tags:
 - salado
 - cena
 - comida
-title: "Bagels con champi\xF1ones"
+title: Bagels con champiñones
 updated: '2024-08-07T22:46:23.758296Z'
 ---
 

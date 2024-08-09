@@ -59,7 +59,7 @@ status: Tried
 tags:
 - merienda
 - dulce
-title: "Pancakes ricos en prote\xEDna"
+title: Pancakes ricos en proteína
 updated: '2024-02-19T19:21:44.382092Z'
 ---
 1. En una licuadora, combina todos los ingredientes (usa un colador para la harina). Licúa los ingredientes hasta lograr una consistencia suave. La consistencia es sedosa y burbujeante, similar a la de una masa para panqueques normal.

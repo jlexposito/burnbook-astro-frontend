@@ -14,7 +14,7 @@ ingredients:
   unit: gr
 - id: 241
   ingredient:
-    name: "az\xFAcar"
+    name: azúcar
     prefix: ''
   optional: false
   quantity: '250'
@@ -38,7 +38,7 @@ ingredients:
   unit: unit
 - id: 244
   ingredient:
-    name: "bicarbonato s\xF3dico"
+    name: bicarbonato sódico
     prefix: ''
   optional: false
   quantity: '2'

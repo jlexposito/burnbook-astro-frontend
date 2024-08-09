@@ -46,7 +46,7 @@ ingredients:
   unit: gr
 - id: 126
   ingredient:
-    name: "az\xFAcar extra fino"
+    name: azúcar extra fino
     prefix: ''
   optional: false
   quantity: '450'
@@ -86,7 +86,7 @@ ingredients:
   unit: gr
 - id: 131
   ingredient:
-    name: "az\xFAcar glas"
+    name: azúcar glas
     prefix: ''
   optional: false
   quantity: '162'

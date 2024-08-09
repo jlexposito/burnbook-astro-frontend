@@ -75,7 +75,7 @@ servings: 2
 status: Tried
 tags:
 - entrante
-title: "Queso cottage con ali\xF1o de verduras"
+title: Queso cottage con aliño de verduras
 updated: '2024-02-19T18:41:58.321785Z'
 ---
 1. Mezcla en un bol el tomate picado, la ciruela picada, las aceitunas sin hueso y troceadas, añade el zumo y ralladura de lima, el pimentón, el sésamo, el aceite de oliva y mezcla. 

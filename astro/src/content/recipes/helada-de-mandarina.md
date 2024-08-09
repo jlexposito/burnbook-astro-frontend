@@ -14,7 +14,7 @@ ingredients:
   unit: kg
 - id: 345
   ingredient:
-    name: "az\xFAcar"
+    name: azúcar
     prefix: ''
   optional: false
   quantity: '100'

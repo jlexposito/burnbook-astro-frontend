@@ -6,7 +6,7 @@ image: /media/bovaditos_de_arandanos.png
 ingredients:
 - id: 217
   ingredient:
-    name: "Ar\xE1ndanos"
+    name: Arándanos
     prefix: ''
   optional: false
   quantity: '150'
@@ -34,7 +34,7 @@ servings: 2
 status: Tried
 tags:
 - postre
-title: "Bocaditos de Ar\xE1ndanos y Yogurt"
+title: Bocaditos de Arándanos y Yogurt
 updated: '2023-09-11T20:08:55.373163Z'
 ---
 Preparación:

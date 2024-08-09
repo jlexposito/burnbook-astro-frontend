@@ -52,7 +52,7 @@ tags:
 - picante
 - entrante
 - tentempie
-title: "Tentempi\xE9 picante de garbanzos"
+title: Tentempié picante de garbanzos
 updated: '2024-02-19T18:43:55.100981Z'
 ---
 1. Limpiar los garbanzos
