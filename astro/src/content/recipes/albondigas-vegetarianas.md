@@ -4,7 +4,7 @@ created: '2023-09-10T14:54:36.246788Z'
 id: 16
 image: /media/albondigas_vegetarianas_compressed.jpg
 ingredients:
-- id: 399
+- id: 647
   ingredient:
     name: lentejas negras
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '400'
   recipe: 16
   unit: gr
-- id: 400
+- id: 648
   ingredient:
     name: nueces
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '80'
   recipe: 16
   unit: gr
-- id: 401
+- id: 649
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -32,7 +32,10 @@ references:
 - https://www.instagram.com/reel/CPD2laJgYef
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Albóndigas vegetarianas
 updated: '2024-08-05T11:20:10.837121Z'
 ---
