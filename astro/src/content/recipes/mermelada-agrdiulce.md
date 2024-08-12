@@ -2,9 +2,9 @@
 cooking_time: 15
 created: '2024-08-12T08:44:11.455911Z'
 id: 59
-image: null
+image: /media/mermleada-agridulce.jpg
 ingredients:
-- id: 737
+- id: 741
   ingredient:
     name: pimientos rojos
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 59
   unit: unit
-- id: 738
+- id: 742
   ingredient:
     name: agua
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 59
   unit: cup
-- id: 739
+- id: 743
   ingredient:
     name: vinagre
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 59
   unit: cup
-- id: 740
+- id: 744
   ingredient:
     name: queso en crema (Philadelphia)
     prefix: ''
@@ -45,8 +45,9 @@ tags:
 - cena
 - comida
 title: Mermelada agrdiulce
-updated: '2024-08-12T08:44:11.459850Z'
+updated: '2024-08-12T09:24:15.966436Z'
 ---
 Corta los pimientos rojos en cubos pequeños mientras añade en una olla a fuego medio media taza de agua, vinagre y azúcar hasta que rompa a hervir. En ese momento añade el pimiento rojo y deja cocinar hasta que quede una textura consistente parecida a la mermelada. Sirve la mermelada en un recipiente y déjala enfriar.
 
 Sirve la mermelada con queso en un plato y a disfrutar :)
+
