@@ -142,19 +142,15 @@ export default function RecipeForm(props: {
         console.log(errors);
         setFormErrors(errors);
       } else {
-        let id = "";
-        if (recipe?.data?.id) {
-          id = recipe.data.id.toString();
-        } else {
-          let json_res = JSON.parse(response);
-          id = json_res.recipe;
-        }
-
         alert("Created successfully !");
-        let url = window.location.href
-        // Removes /edit/
-        url = url.split('/').slice(0, -2).join('/')
-        window.location.replace(url);
+        if (recipe?.data?.id) {
+          // Removes /edit/
+          let url = window.location.href
+          url = url.split('/').slice(0, -2).join('/');
+          window.location.replace(url);
+        }
+        // Redirect to base url if its a new recipe
+        window.location.replace('/');
       }
     });
 
