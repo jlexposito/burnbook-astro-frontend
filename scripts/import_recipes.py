@@ -38,13 +38,13 @@ class Logger:
 			print(msg)
 		elif level != 'info':
 			print(msg)
-	
+
 	def info(self, msg):
 		self.log(msg, level='info')
-	
+
 	def success(self, msg):
 		self.log(msg, level='success')
-	
+
 	def error(self, msg):
 		self.log(msg, level='error')
 
@@ -80,12 +80,12 @@ def run():
 		help="Path to the output directory",
 	)
 	parser.add_argument(
-		'--dirty', 
-		action='store_false',
+		'--dirty',
+		action='store_true',
 		help='Keep old files in output directory before writing to it'
 	)
 	parser.add_argument(
-		'--verbose', 
+		'--verbose',
 		action='store_true',
 		help='Verbose output'
 	)
@@ -124,6 +124,7 @@ def run():
 
 		with open(file_path, 'w') as f:
 			f.write(markdown)
+	logger.success('Recipes successfully imported')
 
 
 if __name__ == '__main__':
