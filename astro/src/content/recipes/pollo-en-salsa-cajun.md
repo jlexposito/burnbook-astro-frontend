@@ -113,12 +113,12 @@ references:
 servings: 2
 status: Tried
 tags:
-- salsa
 - salado
+- cena
+- comida
 title: Pollo en salsa cajún
-updated: '2024-08-13T11:04:27.802859Z'
+updated: '2024-08-13T11:09:02.680214Z'
 ---
 Marina los muslos de pollo con aceite de oliva, una cucharada pequeña de cajún, pimentón rojo, cebolla y ajo molido y llévalos a la sarten a fuego medio para dorarlos por ambos lados. Aparta los muslos de pollo y en la misma sarten añade el pimiento cortado en cubos pequeños, una cucharada pequeña de cajún, pimentón, caldo de pollo, los tomates cherry, 200ml de nata liquida y un par de rodajas de lima. Cubre la sarten y dejalo freir durante unos 20 minutos.
 
 Una vez listo se recomienda servirlo con una porción de arroz por persona. Que aproveche!
-
