@@ -37,6 +37,9 @@ jobs:
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
 
+      - name: Pull Remote Changes
+        run: git pull
+
       - name: Commit updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
