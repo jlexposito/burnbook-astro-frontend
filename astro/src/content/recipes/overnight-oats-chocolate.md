@@ -2,9 +2,9 @@
 cooking_time: 15
 created: '2024-02-05T09:00:55.887239Z'
 id: 49
-image: null
+image: /media/overnight-oats.webp
 ingredients:
-- id: 629
+- id: 776
   ingredient:
     name: avena
     prefix: copos de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '40'
   recipe: 49
   unit: gr
-- id: 630
+- id: 777
   ingredient:
     name: polvo de cacao sin azucarar
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: tablespoon
-- id: 631
+- id: 778
   ingredient:
     name: semillas de chia
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: teaspoon
-- id: 632
+- id: 779
   ingredient:
     name: canela
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: teaspoon
-- id: 633
+- id: 780
   ingredient:
     name: extracto de vainilla
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: unit
-- id: 634
+- id: 781
   ingredient:
     name: Miel
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 49
   unit: teaspoon
-- id: 635
+- id: 782
   ingredient:
     name: leche de almendra
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '100'
   recipe: 49
   unit: ml
-- id: 636
+- id: 783
   ingredient:
     name: yogur
     prefix: ''
@@ -77,9 +77,10 @@ tags:
 - cena
 - desayuno
 title: Overnight Oats - Chocolate
-updated: '2024-08-09T13:35:22.330651Z'
+updated: '2024-08-13T11:48:12.800108Z'
 ---
 1. Añadir todos los ingredientes, excepto el yogur, a un bol y remover.
 2. Poner por capas primero la avena, luego el yogur, otra vez la avena, y luego el yogur.
 3. Se puede añadir más polvo de cacao en la parte de arriba.
+
 
