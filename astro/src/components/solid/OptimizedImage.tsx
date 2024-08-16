@@ -18,30 +18,64 @@ const OptimizedImage: Component<{
     type: props.sizeType,
     sizes: props.sizes
   }
-  const imageSources = (): ImageSources => {
-    return srcSet(imageSizes, props.filename, "webp");
+
+  const FILETYPES = ['avif', 'webp', 'jpeg']
+  const imageSources = (): ImageSources[] => {
+    return FILETYPES.map((filetype) => srcSet(imageSizes, props.filename, filetype));
   };
 
   props = mergeProps(
     {
       classes: "",
       lazyLoad: false,
-      sizes: imageSources().sizes
+      sizes: imageSources().slice().shift().sizes
     },
     props,
   );
 
+  const sources = imageSources()
+
+  const generatePictureSource = (source: ImageSources) => { 
+    return (
+      <source
+        srcset={source.srcSet}
+        sizes={props.sizestring}
+        src={source.src}
+      />
+    )
+  }
+
+  const generateImageSource = (source: ImageSources) => { 
+    return (
+      <img
+        srcset={source.srcSet}
+        sizes={props.sizestring}
+        src={source.src}
+        width={props.width}
+        height={props.height}
+        alt={props.altTitle}
+        class={props.classes}
+        loading={props.lazyLoad ? "lazy" : "eager"}
+      />
+    )
+  }
+
+
   return (
-    <img
-      class={props.classes}
-      srcset={imageSources().srcSet}
-      sizes={props.sizestring}
-      width={props.width}
-      height={props.height}
-      src={imageSources().src}
-      loading={props.lazyLoad ? "lazy" : "eager"}
-      alt={props.altTitle}
-    />
+    <picture class={props.classes}>
+        {
+          sources.map((source, index) => (
+            (index === sources.length - 1) ?
+            ( 
+              generatePictureSource(source)
+            ): (
+              generateImageSource(source)
+              
+            )
+          ))
+        }
+      </picture> 
+    
   );
 };
 
