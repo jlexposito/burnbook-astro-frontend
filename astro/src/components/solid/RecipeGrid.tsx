@@ -24,7 +24,7 @@ export default function Recipes(props: {
   }
 
   const lazyLoadStartIndex = (): number => {
-    if (isMobileDevice) {
+    if (isMobileDevice()) {
       return 6;
     }
     return 20;

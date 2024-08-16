@@ -1,6 +1,7 @@
 import type { CollectionEntry } from 'astro:content'
 
 import OptimizedImage from "@solidcomponents/OptimizedImage";
+import { ImgSizeTypes } from '@utils/interfaces';
 
 export default function RecipeCard(props: {
   recipe: CollectionEntry<'recipes'> | null;
@@ -22,8 +23,8 @@ export default function RecipeCard(props: {
   return (
     <>
       <a href={"/recipes/" + recipe().slug}>
-        <div class="bg-base-100 grid grid-cols-3 overflow-hidden rounded-xl bg-white shadow-md sm:min-h-[200px]">
-          <div class="col-span-1 max-h-[220px] min-h-full sm:h-[240px]">
+        <div class="bg-base-100 grid grid-cols-3 overflow-hidden rounded-xl bg-white shadow-md h-[240px] sm:h-[220px]">
+          <div class="col-span-1 min-h-full">
             <figure class="h-full">
               {!recipe().data.image ? (
                 <div class="flex h-full w-full bg-slate-100">
@@ -49,13 +50,14 @@ export default function RecipeCard(props: {
                   classes={"h-full min-w-full flex-1 object-cover"}
                   altTitle={recipe().data.title}
                   filename={recipe().data.image}
-                  widthSizes={[160, 170, 200, 240]}
-                  sizes="(max-width:544px) 170px, (max-width: 767px) 240px, (max-width: 1535px) 160px, (max-width: 2200px) 170px, 200px"
+                  sizes={[180, 220]}
+                  sizeType={ImgSizeTypes.height}
+                  sizestring="(max-width: 550px) 180px, 220px"
                 />
               )}
             </figure>
           </div>
-          <div class="col-span-2 flex max-h-[220px] min-h-[170px] flex-col justify-around px-2 py-3 sm:h-[240px] sm:min-h-full sm:px-5">
+          <div class="col-span-2 flex h-full flex-col justify-around px-2 py-3">
             <div>
               <h2 class="line-clamp-2 font-sans text-2xl font-bold tracking-tight">
                 {props.recipe.data.title}

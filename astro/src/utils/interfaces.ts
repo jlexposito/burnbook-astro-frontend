@@ -5,7 +5,7 @@ export interface RecipeInterface {
   title: string;
   ingredients: Array<RecipeIngredient>;
   servings: number;
-  image?: string;
+  image: string;
   cooking_time: number;
   references: Array<string>;
   tags: Array<string>;
@@ -95,3 +95,13 @@ export type Tokens = {
   refresh: string;
   access: string;
 };
+
+export enum ImgSizeTypes {
+  height = "height",
+  width = "width"
+}
+
+export type ImgSizes = {
+  type: ImgSizeTypes;
+  sizes: Array<number>;
+}

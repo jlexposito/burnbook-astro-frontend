@@ -1,7 +1,10 @@
 ---
-import { type ImageSources, type Recipe } from "@utils/interfaces";
+import type { 
+  ImageSources,
+  RecipeInterface
+} from "@utils/interfaces";
+import { ImgSizeTypes  } from "@utils/interfaces";
 import { srcSet } from "@utils/optimizeImage.js";
-import { type RecipeInterface } from "@utils/interfaces";
 
 import RecipeSidebar from "@astrocomponents/RecipeSidebar.astro";
 
@@ -20,7 +23,11 @@ const image = (): string => {
 };
 
 const imageSources = (): ImageSources => {
-  return srcSet([480, 720, 1080], image(), "webp");
+  const sizeObj = {
+    sizes: [480, 720, 1080],
+    type: ImgSizeTypes.width
+  }
+  return srcSet(sizeObj, image(), "webp");
 };
 ---
 
