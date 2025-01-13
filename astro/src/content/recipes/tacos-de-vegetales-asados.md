@@ -80,8 +80,7 @@ references:
 - https://www.instagram.com/reel/CncIIraghjI/?igshid=MDJmNzVkMjY%3D
 servings: 4
 status: Tried
-tags:
-- ''
+tags: []
 title: 'Tacos de vegetales asados '
 updated: '2025-01-13T11:18:14.133934Z'
 ---
