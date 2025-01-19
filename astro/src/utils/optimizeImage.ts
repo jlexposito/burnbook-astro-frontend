@@ -23,7 +23,7 @@ export const imgSrc = (
     `/size:${width}:${height}` +
     `/resizing_type:fill` +
     (imgQuality ? `/quality:${imgQuality}` : "") +
-    `/sharpen:0.5` +
+    // `/sharpen:0.5` +
     `/plain/local:///${filename}` +
     `@${ImageFormat}`
   const url = `${baseCDNUrl}insecure${path}`
