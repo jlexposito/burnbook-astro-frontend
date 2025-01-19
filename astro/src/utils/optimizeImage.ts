@@ -52,7 +52,7 @@ export const srcSet = (
 
   if (!sizeObj.sizes || sizeObj.sizes.length == 0) return result;
 
-  // Make a copy with .slice()
+  // Make a copy with .slice() and set the biggest to the first one
   var biggestRes: number = sizeObj.sizes.slice().shift().size;
   var srcSets: Array<string> = [];
   var sizes: Array<string> = [];
@@ -74,7 +74,13 @@ export const srcSet = (
       }
       sizes.push(querySize);
     });
+  } else if (sizeObj.sizes.length == 1) {
+    let size = sizeObj.sizes.slice().shift().size
+    sizes.push(`${size}px`);
+    let srcSet = `${imgSrc(filename, size, imageFormat, sizeType, quality)} ${size}w`;
+    srcSets.push(srcSet)
   }
+  
   result["src"] = imgSrc(filename, biggestRes, imageFormat, sizeType);
   result["srcSet"] = srcSets.join(", ");
   result["sizes"] = sizes.join(", ");

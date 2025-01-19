@@ -1,7 +1,7 @@
 import type { CollectionEntry } from 'astro:content'
 
 import OptimizedImage from "@solidcomponents/OptimizedImage";
-import { ImgSizeTypes } from '@utils/interfaces';
+import { ImgSizeTypes, type ImgSizes } from '@utils/interfaces';
 
 export default function RecipeCard(props: {
   recipe: CollectionEntry<'recipes'> | null;
