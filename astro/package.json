@@ -1,7 +1,7 @@
 {
   "name": "burnbook-frontend",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -16,10 +16,10 @@
     }
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.7",
-    "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/solid-js": "^4.4.0",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/solid-js": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.4",
     "@iconify-json/ic": "^1.1.18",
     "@kobalte/core": "^0.13.4",
     "@markdoc/markdoc": "^0.4.0",
@@ -27,9 +27,9 @@
     "@nanostores/solid": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
     "@thisbeyond/solid-select": "^0.15.0",
-    "@zag-js/solid": "^0.65.0",
-    "@zag-js/tags-input": "^0.65.0",
-    "astro": "^4.13.2",
+    "@zag-js/solid": "^0.82.0",
+    "@zag-js/tags-input": "^0.82.0",
+    "astro": "^5.1.7",
     "astro-compress": "^2.3.1",
     "axios": "^1.7.3",
     "install": "^0.13.0",
