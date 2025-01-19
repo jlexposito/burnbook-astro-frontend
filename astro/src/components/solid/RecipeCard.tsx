@@ -1,7 +1,7 @@
 import type { CollectionEntry } from 'astro:content'
 
 import OptimizedImage from "@solidcomponents/OptimizedImage";
-import { ImgSizeTypes } from '@utils/interfaces';
+import { ImgSizeTypes, type ImgSizes } from '@utils/interfaces';
 
 export default function RecipeCard(props: {
   recipe: CollectionEntry<'recipes'> | null;
@@ -18,6 +18,20 @@ export default function RecipeCard(props: {
       else ingredients_string = ingredients_string + ", " + name;
     });
     return ingredients_string;
+  };
+  const imageSizes = (): ImgSizes  => {
+    return {
+        sizes: [
+          {
+            size: 180,
+            media: "(max-width: 550px) 180px",
+          },
+          {
+            size: 220,
+            media: ", 220px",
+          },
+        ]
+      }
   };
 
   return (
@@ -50,9 +64,8 @@ export default function RecipeCard(props: {
                   classes={"h-full min-w-full flex-1 object-cover"}
                   altTitle={recipe().data.title}
                   filename={recipe().data.image}
-                  sizes={[180, 220]}
+                  sizes={imageSizes()}
                   sizeType={ImgSizeTypes.height}
-                  sizestring="(max-width: 550px) 180px, 220px"
                 />
               )}
             </figure>

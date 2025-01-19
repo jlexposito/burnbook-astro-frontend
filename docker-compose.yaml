@@ -1,21 +1,51 @@
-version: "3.8"
-
 services:
-  frontend:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-      network: host
-    ports:
-      - "127.0.0.1:3000:3000"
+  imgproxy:
     restart: unless-stopped
+    image: ghcr.io/imgproxy/imgproxy:${IMGPROXY_TAG:-latest}
+    container_name: imgproxy_app
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - ./astro/public:/media
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: ["CMD", "imgproxy", "health"]
     environment:
-      - HOST=0.0.0.0
-    networks:
-      - nginx_network
-      - burnbook_network # you can use additional networks for some stuff
+      IMGPROXY_LOG_LEVEL: "debug"
+      IMGPROXY_ENABLE_DEBUG_HEADERS: "false"
+      IMGPROXY_DEVELOPMENT_ERRORS_MODE: "false"
+      IMGPROXY_REPORT_DOWNLOADING_ERRORS: "false"
 
-networks:
-  nginx_network:
-    external: true
-  burnbook_network: ~ # this network won't be accessible from outside
+      ### timeouts
+      IMGPROXY_READ_REQUEST_TIMEOUT: 10
+      IMGPROXY_TIMEOUT: 10
+      IMGPROXY_DOWNLOAD_TIMEOUT: 10
+      IMGPROXY_KEEP_ALIVE_TIMEOUT: 300
+      IMGPROXY_MAX_SRC_FILE_SIZE: 33554432 # 32MB
+      IMGPROXY_MAX_SRC_RESOLUTION: 48
+
+      ### image source
+      IMGPROXY_TTL: 2592000 # client-side cache time is 30 days
+      IMGPROXY_USE_ETAG: "false"
+      IMGPROXY_SO_REUSEPORT: "true"
+      IMGPROXY_IGNORE_SSL_VERIFICATION: "true"
+      IMGPROXY_LOCAL_FILESYSTEM_ROOT: /media
+      IMGPROXY_SKIP_PROCESSING_FORMATS: "svg,webp,avif"
+
+      ### presets
+      IMGPROXY_AUTO_ROTATE: "true"
+      #IMGPROXY_WATERMARK_PATH: /home/noimage_thumb.jpg
+      #IMGPROXY_PRESETS: default=resizing_type:fit/gravity:sm,logo=watermark:0.5:soea:10:10:0.15,center_logo=watermark:0.3:ce:0:0:0.3
+
+      ### compression
+      IMGPROXY_STRIP_METADATA: "true"
+      IMGPROXY_STRIP_COLOR_PROFILE: "true"
+      IMGPROXY_FORMAT_QUALITY: jpeg=80,webp=70,avif=100
+      IMGPROXY_JPEG_PROGRESSIVE: "false"
+      IMGPROXY_PNG_INTERLACED: "false"
+      IMGPROXY_PNG_QUANTIZATION_COLORS: 128
+      IMGPROXY_PNG_QUANTIZE: "false"
+      IMGPROXY_MAX_ANIMATION_FRAMES: 64
+      IMGPROXY_GZIP_COMPRESSION: 1
+      IMGPROXY_AVIF_SPEED: 7

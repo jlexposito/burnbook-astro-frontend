@@ -11,14 +11,14 @@ import {
 import { isServer } from "solid-js/web";
 
 // Utils
-import type {
-  ImageSources,
-  referenceFormValue,
+import {
+  ImgSizeTypes,
+  type ImgSizes,
+  type referenceFormValue,
 } from "@utils/interfaces";
 import {
   removeElement,
 } from "@solidcomponents/formComponents/utils";
-import { srcSet } from "@utils/optimizeImage.js";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
@@ -28,6 +28,16 @@ import { TagsInput } from "@solidcomponents/formComponents/TagsInput";
 // Stores
 import { $tokens } from "@stores/apiStore";
 import IngredientsForm from "@solidcomponents/forms/IngredientsForm";
+import OptimizedImage from "@solidcomponents/OptimizedImage";
+
+let imgSizes : ImgSizes = {
+  sizes: [
+    {
+    size: 220,
+    media: "220px"
+    }
+  ]
+}
 
 export default function RecipeForm(props: {
   action: string;
@@ -39,10 +49,6 @@ export default function RecipeForm(props: {
 
   const image = (): string => {
     return recipe.data?.image ? recipe.data?.image : noImage;
-  };
-
-  const imageSources = (): ImageSources => {
-    return srcSet([480, 720], image(), "webp");
   };
 
   const createNewReference = (initialValue: string) => {
@@ -250,13 +256,16 @@ export default function RecipeForm(props: {
                       <span>(Sin imagen)</span>
                     </div>
                   ) : (
-                  <img
-                    src={imageSources().src}
-                    srcset={imageSources().srcSet}
-                    sizes={imageSources().sizes}
-                    class="w-full h-[128px] md:h-[256px] object-cover"
-                    alt={recipe.data?.title}
-                  />
+                    <OptimizedImage
+                      lazyLoad={false}
+                      width={160}
+                      height={90}
+                      classes="w-full h-[128px] md:h-[256px] object-cover"
+                      altTitle={recipe.data?.title}
+                      filename={recipe.data?.image}
+                      sizes={imgSizes}
+                      sizeType={ImgSizeTypes.width}
+                    />
                   )}
                   </a>
                 </div>

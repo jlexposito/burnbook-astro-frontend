@@ -48,6 +48,7 @@ export type ImageSources = {
   src: string;
   srcSet: string;
   sizes: string;
+  type: string;
 };
 
 export type Unit = {
@@ -101,7 +102,13 @@ export enum ImgSizeTypes {
   width = "width"
 }
 
-export type ImgSizes = {
-  type: ImgSizeTypes;
-  sizes: Array<number>;
+export type ImgSource = {
+  size: number;
+  media: string;
 }
+
+export type ImgSizes = {
+  sizes: Array<ImgSource>;
+}
+
+export type ImageFileFormat = "avif" | "webp" | "jpeg";

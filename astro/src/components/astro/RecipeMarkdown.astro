@@ -1,6 +1,8 @@
 ---
+import OptimizedImage from "@solidcomponents/OptimizedImage";
+
 import type { 
-  ImageSources,
+  ImgSizes,
   RecipeInterface
 } from "@utils/interfaces";
 import { ImgSizeTypes  } from "@utils/interfaces";
@@ -22,22 +24,36 @@ const image = (): string => {
   return recipe.image ? recipe.image : noImage;
 };
 
-const imageSources = (): ImageSources => {
-  const sizeObj = {
-    sizes: [480, 720, 1080],
-    type: ImgSizeTypes.width
-  }
-  return srcSet(sizeObj, image(), "webp");
+const imageSizes = (): ImgSizes  => {
+  return {
+      sizes: [
+        {
+          size: 480,
+          media: "(max-width: 480px) 480px",
+        },
+        {
+          size: 720,
+          media: "(max-width: 720px) 720px",
+        },
+        {
+          size: 1080,
+          media: "(min-width: 721px) 1080",
+        }
+      ]
+    }
 };
 ---
 
 <div class="relative">
-  <img
-    src={imageSources().src}
-    srcset={imageSources().srcSet}
-    sizes={imageSources().sizes}
-    class="w-full h-[128px] md:h-[256px] object-cover"
-    alt={recipe.title}
+  <OptimizedImage
+      lazyLoad={false}
+      width={1080}
+      height={220}
+      classes={"w-full h-[128px] md:h-[256px] object-cover"}
+      altTitle={recipe.title}
+      filename={image()}
+      sizes={imageSizes()}
+      sizeType={ImgSizeTypes.width}
   />
   <div class="flex w-full h-full text-center text-white font-bold">
     <h1
