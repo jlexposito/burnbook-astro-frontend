@@ -16,9 +16,7 @@ references:
 - https://molsa.bio/es/blog/escudella-vegetariana-sopa-de-galets-veggie/
 servings: 2
 status: New
-tags:
-- cena
-- comida
+tags: []
 title: Escudella vegetariana
 updated: '2024-08-07T23:28:15.074899Z'
 ---

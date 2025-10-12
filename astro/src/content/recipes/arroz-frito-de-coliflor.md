@@ -56,10 +56,7 @@ references:
 - https://www.youtube.com/watch?v=Osb1MpN5y-4
 servings: 2
 status: Tried
-tags:
-- cena
-- comida
-- vegetariano
+tags: []
 title: Arroz frito de coliflor
 updated: '2024-08-09T13:37:06.263115Z'
 ---

@@ -48,10 +48,7 @@ references:
 - https://www.instagram.com/reel/C1pRImtqRfw/?igsh=dTN5dGl0NGMzYmV0
 servings: 2
 status: Tried
-tags:
-- entrante
-- tentempie
-- picante
+tags: []
 title: Tentempié picante de garbanzos
 updated: '2024-02-19T18:43:55.100981Z'
 ---

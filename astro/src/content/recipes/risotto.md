@@ -40,10 +40,7 @@ references:
 - https://www.recetasdeescandalo.com/como-hacer-un-risotto-de-champinones-receta-deliciosa-y-sencilla/
 servings: 2
 status: Tried
-tags:
-- cena
-- comida
-- pasta
+tags: []
 title: Risotto
 updated: '2024-08-09T13:39:07.300017Z'
 ---

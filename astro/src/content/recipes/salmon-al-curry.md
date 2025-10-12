@@ -97,8 +97,7 @@ references:
 - https://www.instagram.com/reel/CtHEUz3xh2k/
 servings: 2
 status: Tried
-tags:
-- pescado
+tags: []
 title: Salmon al curry
 updated: '2023-11-03T08:48:47.745767Z'
 ---

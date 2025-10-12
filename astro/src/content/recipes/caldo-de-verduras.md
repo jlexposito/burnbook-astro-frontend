@@ -47,9 +47,7 @@ ingredients:
 references: []
 servings: 4
 status: New
-tags:
-- cena
-- comida
+tags: []
 title: Caldo de Verduras
 updated: '2024-08-07T23:16:22.058883Z'
 ---

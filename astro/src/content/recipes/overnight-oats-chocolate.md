@@ -72,10 +72,7 @@ references:
 - https://www.instagram.com/reel/C14Z313I39u/?igsh=MTE4NDNoejZvYm16dg%3D%3D
 servings: 1
 status: Tried
-tags:
-- dulce
-- cena
-- desayuno
+tags: []
 title: Overnight Oats - Chocolate
 updated: '2024-08-13T11:48:12.800108Z'
 ---

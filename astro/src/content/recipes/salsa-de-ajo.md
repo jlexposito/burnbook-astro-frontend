@@ -48,8 +48,7 @@ references:
 - https://youtu.be/xVke3F-_GAM?t=201
 servings: 2
 status: Tried
-tags:
-- salsa
+tags: []
 title: Salsa de ajo
 updated: '2023-09-10T15:17:18.033611Z'
 ---

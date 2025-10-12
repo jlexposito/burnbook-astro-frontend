@@ -81,9 +81,7 @@ references:
 - https://www.instagram.com/reel/Czo5mu0MML8/
 servings: 2
 status: Tried
-tags:
-- one pot
-- cena
+tags: []
 title: Curry de garbanzos y verduras con yogur
 updated: '2024-08-09T13:42:30.178196Z'
 ---

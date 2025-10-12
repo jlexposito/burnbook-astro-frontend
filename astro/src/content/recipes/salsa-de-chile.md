@@ -56,8 +56,7 @@ references:
 - https://youtu.be/xVke3F-_GAM?t=54
 servings: 2
 status: Tried
-tags:
-- salsa
+tags: []
 title: Salsa de chile
 updated: '2023-09-10T14:54:35.856190Z'
 ---

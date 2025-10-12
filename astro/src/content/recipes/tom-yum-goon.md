@@ -17,11 +17,7 @@ references:
 - https://hot-thai-kitchen.com/creamy-tom-yum/
 servings: 2
 status: Tried
-tags:
-- cena
-- comida
-- thai
-- picante
+tags: []
 title: Tom Yum Goon
 updated: '2024-08-08T20:21:30.524342Z'
 ---

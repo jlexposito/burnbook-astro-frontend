@@ -71,10 +71,7 @@ ingredients:
 references: []
 servings: 2
 status: Tried
-tags:
-- salado
-- cena
-- comida
+tags: []
 title: Shakshouka
 updated: '2024-08-07T23:15:44.053473Z'
 ---

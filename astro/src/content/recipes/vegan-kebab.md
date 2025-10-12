@@ -32,9 +32,7 @@ references:
 - https://www.youtube.com/watch?v=xVke3F-_GAM
 servings: 2
 status: New
-tags:
-- cena
-- comida
+tags: []
 title: Vegan kebab
 updated: '2024-08-09T13:36:17.148963Z'
 ---

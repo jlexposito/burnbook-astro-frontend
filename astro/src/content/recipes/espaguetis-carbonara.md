@@ -40,11 +40,7 @@ references:
 - https://www.youtube.com/watch?v=H2LJuSG2K3Y
 servings: 2
 status: Tried
-tags:
-- salado
-- cena
-- comida
-- pasta
+tags: []
 title: Espaguetis carbonara
 updated: '2024-08-09T13:35:44.575528Z'
 ---

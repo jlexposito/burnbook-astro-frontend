@@ -112,10 +112,7 @@ references:
 - https://www.instagram.com/reel/C7mfi5xoXx1/
 servings: 2
 status: Tried
-tags:
-- salado
-- cena
-- comida
+tags: []
 title: Pollo en salsa cajún
 updated: '2024-08-13T11:09:02.680214Z'
 ---

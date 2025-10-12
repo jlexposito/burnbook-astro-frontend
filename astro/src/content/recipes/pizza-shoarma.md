@@ -24,10 +24,7 @@ references:
 - https://ohmydish.nl/recept/pizza-shoarma-met-knoflooksaus
 servings: 2
 status: Tried
-tags:
-- cena
-- comida
-- vegetariano
+tags: []
 title: Pizza shoarma
 updated: '2024-08-09T13:41:59.997118Z'
 ---

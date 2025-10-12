@@ -39,9 +39,7 @@ ingredients:
 references: []
 servings: 2
 status: Tried
-tags:
-- entrante
-- tentempie
+tags: []
 title: Sobrasada vegetal
 updated: '2024-02-19T19:48:56.610778Z'
 ---

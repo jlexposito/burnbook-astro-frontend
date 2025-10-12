@@ -65,9 +65,7 @@ references:
 - https://www.instagram.com/reel/CeEAxlDMqG-/
 servings: 2
 status: Tried
-tags:
-- cena
-- comida
+tags: []
 title: Tostadas de nectarina con burrata y salmón
 updated: '2024-08-07T09:23:35.188503Z'
 ---

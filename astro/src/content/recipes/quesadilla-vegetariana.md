@@ -48,8 +48,7 @@ references:
 - https://www.allrecipes.com/recipe/104850/black-bean-and-corn-quesadillas/
 servings: 2
 status: Tried
-tags:
-- entrante
+tags: []
 title: Quesadilla vegetariana
 updated: '2023-09-10T14:54:36.059785Z'
 ---

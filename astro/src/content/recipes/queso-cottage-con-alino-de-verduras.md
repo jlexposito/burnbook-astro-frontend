@@ -73,8 +73,7 @@ references:
 - https://www.instagram.com/reel/CzZcu8PM7Na/
 servings: 2
 status: Tried
-tags:
-- entrante
+tags: []
 title: Queso cottage con aliño de verduras
 updated: '2024-02-19T18:41:58.321785Z'
 ---

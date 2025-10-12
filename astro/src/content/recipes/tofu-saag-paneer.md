@@ -80,8 +80,7 @@ references:
 - https://www.instagram.com/reel/CRY_zghC5ce/
 servings: 2
 status: Tried
-tags:
-- picante
+tags: []
 title: Tofu Saag Paneer
 updated: '2023-09-10T15:26:04.229050Z'
 ---

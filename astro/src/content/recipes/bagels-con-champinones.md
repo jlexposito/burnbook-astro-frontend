@@ -39,10 +39,7 @@ ingredients:
 references: []
 servings: 2
 status: Tried
-tags:
-- salado
-- cena
-- comida
+tags: []
 title: Bagels con champiñones
 updated: '2024-08-07T22:46:23.758296Z'
 ---

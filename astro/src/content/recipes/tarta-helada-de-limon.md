@@ -97,9 +97,7 @@ references:
 - https://burnbook.zh0nb.com/#/recipe/26/
 servings: 12
 status: Tried
-tags:
-- dulce
-- postre
+tags: []
 title: Tarta helada de limón
 updated: '2024-02-19T19:47:17.276695Z'
 ---

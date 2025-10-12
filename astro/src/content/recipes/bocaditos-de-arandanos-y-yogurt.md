@@ -32,8 +32,7 @@ references:
 - https://www.instagram.com/reel/CwgDS7GAcuS/
 servings: 2
 status: Tried
-tags:
-- postre
+tags: []
 title: Bocaditos de Arándanos y Yogurt
 updated: '2023-09-11T20:08:55.373163Z'
 ---
