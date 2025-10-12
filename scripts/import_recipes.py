@@ -57,7 +57,7 @@ ${frontmatter}\
 ${content}
 """
 
-API = 'https://burnbookapi.zh0nb.com/'
+API = 'https://burnbookapi.fauno.nl/'
 
 def get_recipes():
 	url = f'{API}/recipes/'
