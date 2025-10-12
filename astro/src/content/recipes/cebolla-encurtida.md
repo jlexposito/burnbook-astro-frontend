@@ -48,7 +48,9 @@ references:
 - https://www.instagram.com/alexrioscooks/reel/C9p-qQfPu16/?igsh=MTNuZXJpMmxocWp5YQ==
 servings: 2
 status: Tried
-tags: []
+tags:
+- encurtido
+- guarnición.
 title: Cebolla encurtida
 updated: '2024-08-13T10:46:32.090958Z'
 ---

@@ -49,7 +49,9 @@ references:
 - https://www.instagram.com/reel/Cx8pXiNsS17/
 servings: 2
 status: Tried
-tags: []
+tags:
+- entrante
+- tentempie
 title: Melitzanosala. Ensalada griega de berenjena
 updated: '2024-02-19T19:50:54.482468Z'
 ---

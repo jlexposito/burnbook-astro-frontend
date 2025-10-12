@@ -105,7 +105,10 @@ references:
 - https://www.instagram.com/reel/C1AToC8qtDk/
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Berenjena Crujiente Con Salsa Marinara
 updated: '2024-08-09T13:39:46.770702Z'
 ---

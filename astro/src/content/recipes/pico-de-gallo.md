@@ -32,7 +32,8 @@ references:
 - https://www.instagram.com/p/CQ_QEq0IZCl
 servings: 2
 status: Tried
-tags: []
+tags:
+- entrante
 title: Pico de gallo
 updated: '2023-09-10T15:21:18.296353Z'
 ---

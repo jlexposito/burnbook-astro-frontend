@@ -80,7 +80,8 @@ references:
 - https://www.instagram.com/p/BifhS79HYP0/
 servings: 2
 status: Tried
-tags: []
+tags:
+- entrante
 title: Ensalada de garbanzos
 updated: '2024-08-09T13:53:16.208097Z'
 ---

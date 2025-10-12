@@ -64,7 +64,9 @@ references:
 - https://www.youtube.com/watch?v=BVFfZksX3c0
 servings: 2
 status: Tried
-tags: []
+tags:
+- salado
+- guarnición
 title: Patatas al horno
 updated: '2024-08-09T13:38:33.626571Z'
 ---

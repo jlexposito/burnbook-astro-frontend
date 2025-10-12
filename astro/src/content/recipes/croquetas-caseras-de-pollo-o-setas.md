@@ -135,7 +135,10 @@ ingredients:
 references: []
 servings: 16
 status: Tried
-tags: []
+tags:
+- salado
+- cena
+- comida
 title: Croquetas caseras de pollo o setas
 updated: '2024-08-07T20:02:04.729240Z'
 ---

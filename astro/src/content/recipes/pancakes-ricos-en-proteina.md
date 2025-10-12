@@ -56,7 +56,9 @@ references:
 - https://www.instagram.com/reel/C3cfbO-IFua/
 servings: 2
 status: Tried
-tags: []
+tags:
+- merienda
+- dulce
 title: Pancakes ricos en proteína
 updated: '2024-02-19T19:21:44.382092Z'
 ---

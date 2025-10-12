@@ -48,7 +48,9 @@ references:
 - https://www.cocinavital.mx/recetas/pescados-y-mariscos/sushi-empanizado-de-camaron/2019/03/
 servings: 6
 status: Tried
-tags: []
+tags:
+- salsa
+- picante
 title: Salsa mango picante
 updated: '2025-01-13T22:05:19.011753Z'
 ---

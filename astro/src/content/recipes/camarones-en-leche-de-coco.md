@@ -80,7 +80,10 @@ references:
 - https://www.instagram.com/reel/Cuh6mvwOOLw/
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- pasta
 title: Camarones en Leche de Coco
 updated: '2024-08-07T23:04:46.372427Z'
 ---

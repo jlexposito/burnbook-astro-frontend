@@ -40,7 +40,8 @@ references:
 - https://www.instagram.com/reel/C2KrDXcIYPm/
 servings: 3
 status: Tried
-tags: []
+tags:
+- postre
 title: Helada de mandarina
 updated: '2024-02-19T19:14:32.713936Z'
 ---

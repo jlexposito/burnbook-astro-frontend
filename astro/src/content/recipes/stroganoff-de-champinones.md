@@ -64,7 +64,11 @@ references:
 - https://icantbelieveitsvegan.com/vegan-recipes/easy-vegan-mushroom-stroganoff-with-coconut-milk/
 servings: 2
 status: Tried
-tags: []
+tags:
+- salado
+- cena
+- comida
+- pasta
 title: Stroganoff de champiñones
 updated: '2024-08-07T23:13:31.034970Z'
 ---

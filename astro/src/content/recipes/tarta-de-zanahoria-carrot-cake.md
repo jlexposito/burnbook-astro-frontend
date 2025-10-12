@@ -49,7 +49,8 @@ references:
 - https://web.archive.org/web/20210228033346/https://mamayasecocinar.com/tarta-de-zanahoria/
 servings: 8
 status: Tried
-tags: []
+tags:
+- postre
 title: Tarta de zanahoria (carrot cake)
 updated: '2023-11-30T10:03:34.264731Z'
 ---

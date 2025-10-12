@@ -32,7 +32,10 @@ references:
 - https://www.instagram.com/reel/CPD2laJgYef
 servings: 2
 status: Tried
-tags: []
+tags:
+- cena
+- comida
+- vegetariano
 title: Albóndigas vegetarianas
 updated: '2024-08-09T13:36:39.224974Z'
 ---

@@ -88,7 +88,10 @@ references:
 - https://www.instagram.com/reel/CLmbjeyJb1y/
 servings: 2
 status: Tried
-tags: []
+tags:
+- one pot
+- cena
+- comida
 title: Peanut butter curry
 updated: '2024-08-07T22:44:25.435365Z'
 ---
