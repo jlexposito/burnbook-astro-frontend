@@ -63,13 +63,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DQbpLd-CFns/
 servings: 1
-status: Tried
+status: Draft
 tags:
 - risotto
 - calabaza
 - gorgonzola
 - italiano
 title: Risotto de calabaza y gorgonzola
-updated: '2025-12-11T12:43:31.940318Z'
+updated: '2025-12-11T21:23:12.912279Z'
 ---
 Cocinar el arroz con la calabaza, el vino y el caldo, añadiendo el queso al final.
