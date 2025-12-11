@@ -3,6 +3,8 @@ import type { CollectionEntry } from 'astro:content'
 import OptimizedImage from "@solidcomponents/OptimizedImage";
 import { ImgSizeTypes, type ImgSizes } from '@utils/interfaces';
 
+import { Show } from "solid-js"
+
 export default function RecipeCard(props: {
   recipe: CollectionEntry<'recipes'> | null;
   lazyLoad: boolean;
@@ -39,6 +41,11 @@ export default function RecipeCard(props: {
       <a href={"/recipes/" + recipe().slug}>
         <div class="bg-base-100 grid grid-cols-3 overflow-hidden rounded-xl bg-white shadow-md h-[240px] sm:h-[220px]">
           <div class="col-span-1 min-h-full">
+            <Show when={recipe.status === "DRAFT"}>
+              <span class="absolute top-2 left-[-40px] rotate-[-45deg] shadow-md bg-red-500 text-white font-bold text-xs px-3 py-1">
+                DRAFT
+              </span>
+            </Show>
             <figure class="h-full">
               {!recipe().data.image ? (
                 <div class="flex h-full w-full bg-slate-100">
