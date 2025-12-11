@@ -114,8 +114,8 @@ servings: 4
 status: Draft
 tags:
 - crema
-- verduras
 - vegetariano
+- verduras
 - otoño
 - saludable
 title: Crema de coliflor y manzana asada

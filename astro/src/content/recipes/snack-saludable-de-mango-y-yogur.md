@@ -33,8 +33,8 @@ references:
 servings: 1
 status: Draft
 tags:
-- saludable
 - postre
+- saludable
 - snack
 - yogur
 - mango
