@@ -70,6 +70,6 @@ tags:
 - gorgonzola
 - italiano
 title: Risotto de calabaza y gorgonzola
-updated: '2025-12-11T21:23:12.912279Z'
+updated: '2025-12-11T23:09:03.905736Z'
 ---
 Cocinar el arroz con la calabaza, el vino y el caldo, añadiendo el queso al final.
