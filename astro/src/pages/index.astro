@@ -1,23 +1,17 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
-
 import Layout from "@layouts/BaseLayout.astro";
-
-import TagFilters from "@solidcomponents/TagFilter";
-import RecipeGrid from "@solidcomponents/RecipeGrid";
-
+import RecipePage from "@solidcomponents/RecipePage";
 import { getTags } from "@utils/api";
+import { adaptRecipes } from "@utils/recipesAdapter";
 
-let recipes : CollectionEntry<'recipes'>[] = await getCollection('recipes');
+let recipes = await getCollection('recipes');
 recipes.sort((a, b) => a.data.cooking_time - b.data.cooking_time);
-
+const recipesTyped = adaptRecipes(recipes);
 
 const tags = await getTags();
-
 ---
 
 <Layout pagename="home" title="Burnbook">
-    <RecipeGrid recipesdata={recipes} client:only="solid-js" />
-    <TagFilters tagsdata={tags} client:only="solid-js" />
+  <RecipePage recipes={recipesTyped} client:only="solid-js" />
 </Layout>
