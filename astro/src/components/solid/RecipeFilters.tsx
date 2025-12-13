@@ -1,3 +1,4 @@
+import type { Tag } from "@utils/interfaces";
 import { createMemo, For, Show } from "solid-js";
 
 interface RecipeFiltersProps {
@@ -11,15 +12,24 @@ interface RecipeFiltersProps {
   toggleTag: (tag: string) => void;
   maxTime: number | null;
   setMaxTime: (v: number | null) => void;
-  tags: string[];
+  tags: Tag[];
 }
 
 export default function RecipeFilters(props: RecipeFiltersProps) {
-  const filteredTags = createMemo(() =>
-    (props.tags ?? []).filter((t) =>
-      t.toLowerCase().includes(props.tagSearch.toLowerCase())
-    )
-  );
+  const visibleTags = createMemo(() => {
+    const query = props.tagSearch.toLowerCase().trim();
+
+    return [...props.tags]
+      .sort((a, b) => {
+        if (a.highligthed !== b.highligthed) {
+          return a.highligthed ? -1 : 1;
+        }
+        return a.name.localeCompare(b.name);
+      })
+      .filter(tag =>
+        tag.name.toLowerCase().includes(query)
+      );
+  });
 
   const clearSearch = () => props.setSearch("");
   const clearTagSearch = () => props.setTagSearch("");
@@ -113,19 +123,19 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             </div>
 
             <div class="tags px-2 py-4 flex flex-wrap gap-2 max-h-40 overflow-y-auto">
-              <For each={filteredTags()}>
+              <For each={visibleTags()}>
                 {(tag) => (
                   <button
                     classList={{
                       "px-3 py-1 border rounded transition-transform duration-150": true,
                       "btn-accent hover:ring-secondary-dark-ring":
-                        props.activeTags().includes(tag), // <-- use signal function
+                        props.activeTags().includes(tag.name), // <-- use signal function
                       "bg-gray-200 text-black hover:bg-gray-300":
-                        !props.activeTags().includes(tag),
+                        !props.activeTags().includes(tag.name),
                     }}
-                    onClick={() => props.toggleTag(tag)}
+                    onClick={() => props.toggleTag(tag.name)}
                   >
-                    {tag}
+                    {tag.name}
                   </button>
                 )}
               </For>

@@ -1,5 +1,5 @@
 import { createSignal, createMemo, For, onMount } from "solid-js";
-import type { RecipeInterface } from "@utils/interfaces";
+import type { RecipeInterface, Tag } from "@utils/interfaces";
 import RecipeCard from "./RecipeCard";
 import RecipeFilters from "./RecipeFilters";
 import { getTags } from "@utils/api";
@@ -28,10 +28,10 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   const [columns, setColumns] = createSignal(getColumns());
 
   // ---- Tags ----
-  const [tags, setTags] = createSignal<string[]>([]);
+  const [tags, setTags] = createSignal<Tag[]>([]);
   onMount(async () => {
     const apiTags = await getTags();
-    setTags(apiTags.map((t) => t.name));
+    setTags(apiTags);
   });
 
   onMount(() => {
