@@ -74,7 +74,6 @@ servings: 4
 status: Draft
 tags:
 - francesa
-- plato principal
 title: Sopa de Cebolla Francesa
 updated: '2025-12-11T23:12:34.614413Z'
 ---

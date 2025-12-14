@@ -42,7 +42,6 @@ servings: 11
 status: Draft
 tags:
 - dulce
-- arándanos
 title: Muffins de arándanos
 updated: '2025-12-11T23:09:03.929030Z'
 ---
