@@ -4,7 +4,7 @@ created: '2024-08-13T10:46:32.088503Z'
 id: 60
 image: /media/Pickled-Red-Onions-1200-3094.jpg
 ingredients:
-- id: 745
+- id: 928
   ingredient:
     name: cebolla morada
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 60
   unit: unit
-- id: 746
+- id: 929
   ingredient:
     name: vinagre
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 60
   unit: cup
-- id: 747
+- id: 930
   ingredient:
     name: ajo
     prefix: diente de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 60
   unit: unit
-- id: 748
+- id: 931
   ingredient:
     name: pimienta negra en grano
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 60
   unit: teaspoon
-- id: 749
+- id: 932
   ingredient:
     name: laurel
     prefix: hojas de
@@ -47,12 +47,12 @@ ingredients:
 references:
 - https://www.instagram.com/alexrioscooks/reel/C9p-qQfPu16/?igsh=MTNuZXJpMmxocWp5YQ==
 servings: 2
-status: Tried
+status: New
 tags:
+- guarnición
 - encurtido
-- guarnición.
 title: Cebolla encurtida
-updated: '2024-08-13T10:46:32.090958Z'
+updated: '2025-12-14T20:17:57.634092Z'
 ---
 Corta la parte superior e inferior de la cebolla y córtala desde la raíz hasta el final. Sepárala en dos frascos de vidrio de 16 oz junto con los granos de pimienta y los dientes de ajo.
 
