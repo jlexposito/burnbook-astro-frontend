@@ -73,8 +73,6 @@ references:
 servings: 4
 status: Draft
 tags:
-- sopa
-- cebolla
 - francesa
 - plato principal
 title: Sopa de Cebolla Francesa

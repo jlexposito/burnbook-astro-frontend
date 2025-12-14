@@ -108,10 +108,6 @@ tags:
 - cena
 - comida
 - picante
-- fideos
-- cacahuete
-- rápido
-- asiático
 - vegetariano
 title: Fideos de Cacahuete y Chile en 5 Minutos
 updated: '2025-12-13T00:05:24.230794Z'

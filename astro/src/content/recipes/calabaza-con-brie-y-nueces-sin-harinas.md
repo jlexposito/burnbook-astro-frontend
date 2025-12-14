@@ -69,7 +69,6 @@ tags:
 - vegetariano
 - otoño
 - saludable
-- sin harinas
 - rápida
 - fácil
 title: Calabaza con brie y nueces sin harinas

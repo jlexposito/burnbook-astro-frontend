@@ -9,7 +9,6 @@ references:
 servings: 2
 status: Draft
 tags:
-- panipuri
 - vegano
 - cocina india
 - aperitivo
