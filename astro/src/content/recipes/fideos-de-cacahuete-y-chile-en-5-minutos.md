@@ -110,7 +110,7 @@ tags:
 - picante
 - vegetariano
 title: Fideos de Cacahuete y Chile en 5 Minutos
-updated: '2025-12-13T00:05:24.230794Z'
+updated: '2025-12-14T21:33:26.187038Z'
 ---
 1. Pon una olla de agua con sal a hervir y cocina los fideos según las instrucciones del paquete. Cocínalos unos 30 segundos menos porque terminarán de cocinarse en la salsa. Guarda un poco del agua de la pasta (¡!), luego escurre y enjuaga los fideos con agua fría para que no se peguen.
 2. En una sartén fría (aún sin calor), añade: la mantequilla de cacahuete, los copos de chile (si los usas), la cebolleta, las semillas de sésamo, los dientes de ajo picados, el azúcar (si lo usas), 1 cucharada de chili crisp, el vinagre de arroz y la salsa de soja oscura.
@@ -119,5 +119,3 @@ updated: '2025-12-13T00:05:24.230794Z'
 5. Apaga el fuego, decora con más cebolleta en rodajas, chili crisp extra y gajos de lima si te apetece un toque elegante.
 
 Recomendación: Para el chili crisp, se recomienda la marca "Lao Gan Ma Spicy Chili Crisp".
-
-Información nutricional: No disponible.
