@@ -81,8 +81,7 @@ const RecipeIngredientForm: Component<{
             <FormInput
               name="ingredient_quantity[]"
               label="Cantidad"
-              type="number"
-              min="1"
+              type="text"
               required={true}
               classes={"text-center"}
               value={quantity}
