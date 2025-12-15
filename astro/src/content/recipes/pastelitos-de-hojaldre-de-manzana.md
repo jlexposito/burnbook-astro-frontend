@@ -4,7 +4,7 @@ created: '2025-12-15T22:13:24.969300Z'
 id: 80
 image: null
 ingredients:
-- id: 982
+- id: 998
   ingredient:
     name: manzanas
     prefix: caramelizadas en rodajas
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 80
   unit: unit
-- id: 983
+- id: 999
   ingredient:
     name: hojaldre
     prefix: base de
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 80
   unit: unit
-- id: 984
+- id: 1000
   ingredient:
     name: mermelada de frutas
     prefix: ''
@@ -29,16 +29,16 @@ ingredients:
   recipe: 80
   unit: tablespoon
 references:
-- https://www.instagram.com/reel/DRvUjFDCKeh/
+- https://www.instagram.com/reel/DRvUjWFCKeh/
 servings: 2
-status: Draft
+status: New
 tags:
 - postre
 - fácil
 - festivo
 - rápido
 title: Pastelitos de hojaldre de manzana
-updated: '2025-12-15T22:13:24.969450Z'
+updated: '2025-12-15T22:30:22.834245Z'
 ---
 1. Precalienta el horno a 180°C (350°F).
 2. Corta las manzanas en rodajas finas y, si lo deseas, caramelízalas ligeramente en una sartén con un poco de mantequilla y azúcar.
