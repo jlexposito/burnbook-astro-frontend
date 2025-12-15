@@ -107,8 +107,8 @@ status: Draft
 tags:
 - cena
 - comida
-- picante
 - vegetariano
+- picante
 title: Fideos de Cacahuete y Chile en 5 Minutos
 updated: '2025-12-14T21:33:26.187038Z'
 ---

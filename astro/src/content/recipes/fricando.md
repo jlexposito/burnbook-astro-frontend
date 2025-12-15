@@ -137,6 +137,8 @@ references:
 servings: 2
 status: Draft
 tags:
+- cena
+- comida
 - fricandó
 - cocina catalana
 - receta
@@ -145,8 +147,6 @@ tags:
 - estofado
 - plato principal
 - tradicional
-- comida
-- cena
 title: Fricandó
 updated: '2025-12-15T21:57:56.421162Z'
 ---
