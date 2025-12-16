@@ -1,10 +1,10 @@
 ---
-cooking_time: 30
+cooking_time: 15
 created: '2025-12-16T18:15:11.671268Z'
 id: 90
 image: null
 ingredients:
-- id: 1104
+- id: 1109
   ingredient:
     name: pan
     prefix: Una rebanada de
@@ -12,23 +12,23 @@ ingredients:
   quantity: '1'
   recipe: 90
   unit: unit
-- id: 1105
+- id: 1110
   ingredient:
-    name: plátano macho
-    prefix: Medio
+    name: Plátanos
+    prefix: ''
   optional: false
-  quantity: '0.5'
+  quantity: '1'
   recipe: 90
   unit: unit
-- id: 1106
+- id: 1111
   ingredient:
-    name: mantequilla de cacahuete
+    name: Mantequilla de cacahuete
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 90
   unit: tablespoon
-- id: 1107
+- id: 1112
   ingredient:
     name: salsa de caramelo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 90
   unit: teaspoon
-- id: 1108
+- id: 1113
   ingredient:
     name: yogur
     prefix: ''
@@ -47,13 +47,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DSSozC_iI7I/
 servings: 2
-status: Draft
+status: New
 tags:
 - desayuno
 - vegetariano
 - tostada
-title: Tostada de Plátano Macho, Mantequilla de Cacahuete, Caramelo y Yogur
-updated: '2025-12-16T18:15:11.671426Z'
+title: Tostada de Plátano, Mantequilla de Cacahuete, Caramelo y Yogur
+updated: '2025-12-16T19:54:27.241163Z'
 ---
 1. Tuesta una rebanada de pan a tu gusto.
 2. Corta medio plátano macho en rodajas y, si lo deseas, cocínalas ligeramente en una sartén o freidora de aire hasta que estén tiernas.
