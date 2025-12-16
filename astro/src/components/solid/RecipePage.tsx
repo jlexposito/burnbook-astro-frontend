@@ -1,8 +1,11 @@
 import { createSignal, createMemo, For, onMount } from "solid-js";
-import type { RecipeInterface, Tag } from "@utils/interfaces";
-import RecipeCard from "./RecipeCard";
-import RecipeFilters from "./RecipeFilters";
+
 import { getTags } from "@utils/api";
+import type { RecipeInterface, Tag } from "@utils/interfaces";
+import { isMobileDevice } from "@utils/mobileHelper";
+
+import RecipeCard from "@solidcomponents/RecipeCard";
+import RecipeFilters from "@solidcomponents/RecipeFilters";
 
 export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   // ---- Filters state ----
@@ -33,6 +36,13 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
     const apiTags = await getTags();
     setTags(apiTags);
   });
+
+  const lazyLoadStartIndex = (): number => {
+    if (isMobileDevice()) {
+      return 5;
+    }
+    return 20;
+  };
 
   onMount(() => {
     const resizeHandler = () => setColumns(getColumns());
@@ -80,7 +90,7 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
 
   return (
     <>
-      <div class="mx-3 my-6 pb-4 2xl:mx-12">
+      <div role="main" class="mx-3 my-6 pb-4 2xl:mx-12">
         <RecipeFilters
           open={open()}
           setOpen={setOpen}
@@ -96,9 +106,13 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
         />
 
         {/* Recipes grid */}
-        <div class="recipes grid gap-4 mt-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 auto-rows-fr">
+        <div role="main" class="recipes grid gap-4 mt-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 auto-rows-fr">
           <For each={recipesToRender()}>
-            {(recipe) => <RecipeCard recipe={recipe} lazyLoad />}
+            {(recipe, index) => (
+              <>
+                <RecipeCard recipe={recipe} lazyLoad={index() + 1 > lazyLoadStartIndex()} />
+              </>
+            )}
           </For>
         </div>
       </div>
