@@ -7,6 +7,7 @@ import { ImgSizeTypes, type ImgSizes } from "@utils/interfaces";
 export default function RecipeCard(props: {
   recipe: RecipeInterface;
   lazyLoad?: boolean;
+  highFetchPriority?: boolean;
 }) {
   const recipe = props.recipe;
 
@@ -63,6 +64,7 @@ export default function RecipeCard(props: {
                 filename={recipe.image}
                 sizes={imageSizes()}
                 sizeType={ImgSizeTypes.height}
+                highPriority={props.highFetchPriority}
               />
             </Show>
           </figure>

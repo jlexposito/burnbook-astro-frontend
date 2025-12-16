@@ -13,6 +13,7 @@ const OptimizedImage: Component<{
   classes: string;
   lazyLoad: boolean;
   quality?: number;
+  highPriority?: boolean;
 }> = (props) => {
   const quality = 100
   const FILETYPES = ['avif', 'webp', 'jpeg']
@@ -57,6 +58,7 @@ const OptimizedImage: Component<{
         class={props.classes}
         loading={props.lazyLoad ? "lazy" : "eager"}
         type={`image/${source.type}`}
+        {...(props.highPriority ? { fetchPriority: "high" } : {})}
       />
     )
   }

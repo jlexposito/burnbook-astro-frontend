@@ -44,6 +44,14 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
     return 20;
   };
 
+  // Max index for fetch priority high
+  const highFetchPriorityIndex = (): number => {
+    if (isMobileDevice()) {
+      return 3;
+    }
+    return 8;
+  };
+
   onMount(() => {
     const resizeHandler = () => setColumns(getColumns());
     window.addEventListener("resize", resizeHandler);
@@ -110,7 +118,11 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
           <For each={recipesToRender()}>
             {(recipe, index) => (
               <>
-                <RecipeCard recipe={recipe} lazyLoad={index() + 1 > lazyLoadStartIndex()} />
+                <RecipeCard
+                  recipe={recipe} 
+                  lazyLoad={index() + 1 > lazyLoadStartIndex()} 
+                  highFetchPriority={index() + 1 <= highFetchPriorityIndex()}
+                />
               </>
             )}
           </For>
