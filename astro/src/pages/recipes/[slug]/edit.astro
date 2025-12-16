@@ -41,7 +41,7 @@ if (!recipe) {
             Editando receta #{recipe.data?.id}: {recipe.data?.title}
           </h1>
           <div
-            class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-4xl md:max-w-7xl xl:p-0"
+            class="w-full bg-white rounded-lg shadow-sm md:mt-0 sm:max-w-4xl md:max-w-7xl xl:p-0"
           >
             <RecipeForm action={actionUrl} recipe={recipe} client:only="solid-js" />
           </div>
