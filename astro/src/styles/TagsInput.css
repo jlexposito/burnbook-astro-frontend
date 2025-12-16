@@ -1,3 +1,5 @@
+@reference "./global.css";
+
 .tagsInput {
   [data-part="root"],
   [data-part="control"] {
@@ -6,7 +8,7 @@
 
   [data-part="control"] {
     [data-part="input"] {
-      @apply border-0 !shadow-none !outline-0 ring-0;
+      @apply border-0 shadow-none! outline-0! ring-0;
     }
 
     [data-part="trigger"] {
@@ -25,7 +27,7 @@
 
     &[data-focus] {
       [data-part="input"] {
-        @apply !border-0 !outline-0 !ring-0;
+        @apply border-0! outline-0! ring-0!;
       }
     }
 
@@ -43,7 +45,7 @@
   input { 
     border: none;
     &:focus {
-      @apply ring-transparent !important
+      @apply ring-transparent!
     }
   }
 }

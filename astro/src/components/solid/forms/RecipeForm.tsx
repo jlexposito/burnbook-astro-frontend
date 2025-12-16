@@ -326,7 +326,7 @@ export default function RecipeForm(props: {
 
                         <div class="ml-2 flex grow-0 items-center">
                           <button
-                            class="btn !my-0 !px-2 !py-3"
+                            class="btn my-0! px-2! py-3!"
                             disabled={references().length < 2}
                             onClick={(e) => {
                               e.preventDefault();

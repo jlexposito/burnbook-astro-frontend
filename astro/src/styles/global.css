@@ -7,15 +7,16 @@
 @reference tailwindcss;
 
 @theme {
-  --color-primary: '#541802';
-  --color-primary-accent: '#722103';
-  --color-secondary: '#DFB09F';
-  --color-secondary-dark: '#E0A189';
-  --color-secondary-dark-ring: '#541802';
-  --color-secondary-contrast: '#541802';
-  --color-bk-accent: '#ff6b00';
-  --color-bk-accent-hover: '#ff8500';
+  --color-primary: #541802;
+  --color-primary-accent: #722103;
+  --color-secondary: #DFB09F;
+  --color-secondary-dark: #E0A189;
+  --color-secondary-dark-ring: #541802;
+  --color-secondary-contrast: #541802;
+  --color-bk-accent: #ff6b00;
+  --color-bk-accent-hover: #ff8500;
 }
+
 
 /* --------------------
    Base layer
@@ -26,6 +27,23 @@
     background-color: #faf0dc;
     @apply pb-20 md:pb-10;
   }
+  /* *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(#6b7280, currentColor);
+  } */
+/* 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
 
   html.newrecipe {
     padding-bottom: 0;
@@ -93,6 +111,7 @@
   @apply
     bg-primary
     hover:bg-primary-accent
+    hover:cursor-pointer
     rounded-lg
     border
     px-5
@@ -109,10 +128,10 @@
 input:focus,
 .input.focused {
   @apply
-    !border-secondary
-    !ring-secondary-dark-ring
-    !outline-0
-    !ring-1;
+    border-secondary!
+    ring-secondary-dark-ring!
+    outline-0!
+    ring-1!;
 }
 
 .input {
@@ -133,4 +152,8 @@ input:focus,
     px-4
     py-3
     text-red-700;
+}
+
+a.filled {
+  @apply inline-block rounded-sm px-3 py-2 mx-1 my-1 sm:my-2;
 }

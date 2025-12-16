@@ -1,4 +1,5 @@
 /* import "@styles/SelectInput.css"; */
+@reference "./global.css";
 
 .solid-select-container[data-disabled="true"] {
   pointer-events: none;

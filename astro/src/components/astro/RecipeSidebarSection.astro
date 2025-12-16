@@ -5,7 +5,7 @@ export interface Props {
   classes?: string;
 }
 const { title = "", border = true, classes = "" } = Astro.props;
-let borderClass = border && "border-b-2 border-accent border-opacity-20";
+let borderClass = border && "border-b-1 border-secondary-dark/50";
 ---
 
 <div class={`recipe-view px-6 text-center py-6 ${borderClass} ${classes}`}>

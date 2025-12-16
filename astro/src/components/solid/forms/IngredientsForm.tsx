@@ -128,7 +128,7 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
                     </div>
                     <div class="ml-2 flex grow-0">
                       <button
-                        class="btn !mb-0 md:!mb-2 !px-2 !py-3"
+                        class="btn mb-0! md:mb-2! px-2! py-3!"
                         disabled={ingredients().length < 2}
                         onClick={(e) => {
                           e.preventDefault();

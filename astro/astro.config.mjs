@@ -3,6 +3,7 @@ import Compress from 'astro-compress'
 import icon from 'astro-icon'
 import solidJs from '@astrojs/solid-js'
 import tailwindcss from '@tailwindcss/vite'
+import path from 'path';
 
 export default defineConfig({
   devToolbar: {
@@ -21,5 +22,10 @@ export default defineConfig({
         config: './tailwind.config.cjs',
       }),
     ],
+    resolve: {
+      alias: {
+        '@styles': path.resolve('./src/styles'), // adjust path to your styles folder
+      },
+    },
   },
 })

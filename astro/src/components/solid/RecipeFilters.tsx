@@ -45,7 +45,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             name="searchRecipes"
             type="text"
             placeholder="Buscar recetas..."
-            class="w-full px-3 py-2 border rounded-sm"
+            class="w-full bg-white border-1 bg-secondary px-3 py-2 border-sm rounded-sm"
             value={props.search}
             onInput={(e) => props.setSearch(e.currentTarget.value)}
           />
@@ -60,7 +60,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           </Show>
         </div>
         <button
-          class="px-3 py-2 bg-blue-500 text-white rounded-sm btn-primary"
+          class="btn-primary text-white rounded-md"
           onClick={() => props.setOpen(!props.open)}
         >
           Filtros
@@ -127,7 +127,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 {(tag) => (
                   <button
                     classList={{
-                      "px-3 py-1 border rounded-sm transition-transform duration-150": true,
+                      "px-3 py-1 rounded-sm border-1 border-primary/20 hover:cursor-pointer": true,
                       "btn-accent hover:ring-secondary-dark-ring":
                         props.activeTags().includes(tag.name), // <-- use signal function
                       "bg-gray-200 text-black hover:bg-gray-300":

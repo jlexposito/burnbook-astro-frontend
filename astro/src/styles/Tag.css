@@ -1,3 +1,5 @@
+@reference "../../styles/global.css";
+
 .tag {
   @apply inline-block hover:cursor-pointer px-3 py-2 rounded-full;
 }
