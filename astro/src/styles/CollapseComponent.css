@@ -1,15 +1,26 @@
 @reference "./global.css";
 
+.CollapseTransition {
+  transition: height var(--sc-auto-duration) cubic-bezier(0.65, 0, 0.35, 1);
+  @apply py-3! px-3!;
+}
 
 .collapsable {
+  button {
+    @apply border-0
+  }
   &.expanded {
     & .title {
-      @apply border-b-2 hover:cursor-pointer rounded-b-none;
+      @apply border-b-2 border-secondary-contrast/40 hover:cursor-pointer rounded-b-none;
     }
     & svg {
       @apply rotate-180;
     }
+    button {
+      @apply rounded-b-none
+    }
   }
+  
   & .title {
     position: relative;
     @apply hover:bg-secondary rounded-lg;
@@ -20,10 +31,7 @@
     }
   }
 
-  @apply border-2 rounded-lg;
+  @apply border-2 border-secondary-contrast/40 rounded-lg;
 }
 
-.CollapseTransition {
-  transition: height var(--sc-auto-duration) cubic-bezier(0.65, 0, 0.35, 1);
-  @apply py-3! px-3!;
-}
+

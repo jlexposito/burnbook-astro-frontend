@@ -117,7 +117,7 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
             {(ingredient, index) => (
               <>
                 <>
-                  <div class="flex md:items-end items-center border-b-2 py-3">
+                  <div class="flex md:items-end items-center border-b-2 border-secondary-dark/50 border-dashed py-3">
                     <div class="grow">
                       <RecipeIngredientForm
                         id={ingredient.id}

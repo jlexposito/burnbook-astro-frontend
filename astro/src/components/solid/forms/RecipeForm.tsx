@@ -291,7 +291,7 @@ export default function RecipeForm(props: {
           <div class="pb-4 md:pb-6">
             <CollapseComponent
               expanded={true}
-              titleClasses="w-full py-3 rounded-lg"
+              titleClasses="w-full py-3 rounded-lg border-2 border-secondary-dark/40"
               classes="py-3"
               title="🍏 Ingredientes 🍏"
             >

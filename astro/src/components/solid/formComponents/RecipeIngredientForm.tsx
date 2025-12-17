@@ -58,7 +58,7 @@ const RecipeIngredientForm: Component<{
 
   return (
     <>
-      <div class="ingredient-form mb-6 mt-2 border-b-2 border-dashed border-gray-300 pb-4 last:mb-0 last:border-0 last:pb-2 md:mb-0 md:border-0 md:pb-0">
+      <div class="ingredient-form mb-6 mt-2 border-b-2 border-secondary-dark/40 border-dashed pb-4 last:mb-0 last:border-0 last:pb-2 md:mb-0 md:border-0 md:pb-0">
         <div class="flex flex-wrap items-end gap-y-2">
           <div class="w-full px-1 sm:w-1/2 md:mb-0 md:w-1/5 lg:px-1.5">
             <FormInput
