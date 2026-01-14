@@ -74,8 +74,8 @@ servings: 12
 status: Draft
 tags:
 - vegetariano
-- aperitivo
 - fácil
+- aperitivo
 title: Bocaditos crujientes de feta, pistacho y miel
 updated: '2025-12-16T08:19:46.883672Z'
 ---

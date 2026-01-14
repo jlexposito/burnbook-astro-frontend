@@ -35,7 +35,7 @@ status: Draft
 tags:
 - postre
 - saludable
-- snack
+- aperitivo
 title: Snack Saludable de Mango y Yogur
 updated: '2025-12-11T23:09:03.895024Z'
 ---
