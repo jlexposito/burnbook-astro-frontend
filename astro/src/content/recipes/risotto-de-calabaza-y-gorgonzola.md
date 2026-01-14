@@ -65,7 +65,7 @@ references:
 servings: 1
 status: Draft
 tags:
-- italiano
+- cocina italiana
 title: Risotto de calabaza y gorgonzola
 updated: '2025-12-11T23:09:03.905736Z'
 ---
