@@ -50,7 +50,6 @@ servings: 2
 status: New
 tags:
 - guarnición
-- encurtido
 title: Cebolla encurtida
 updated: '2025-12-14T20:17:57.634092Z'
 ---

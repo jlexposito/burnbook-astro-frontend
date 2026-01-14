@@ -57,7 +57,6 @@ references:
 servings: 2
 status: Tried
 tags:
-- merienda
 - dulce
 title: Pancakes ricos en proteína
 updated: '2024-02-19T19:21:44.382092Z'

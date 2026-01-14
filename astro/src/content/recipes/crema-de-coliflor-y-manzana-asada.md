@@ -115,7 +115,6 @@ status: Draft
 tags:
 - crema
 - vegetariano
-- verduras
 - otoño
 - saludable
 title: Crema de coliflor y manzana asada
