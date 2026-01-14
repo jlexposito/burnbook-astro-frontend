@@ -10,7 +10,6 @@ servings: 2
 status: Draft
 tags:
 - aperitivo
-- canapès
 - navidad
 title: Ideas de canapés de Navidad
 updated: '2025-12-16T08:29:30.453832Z'

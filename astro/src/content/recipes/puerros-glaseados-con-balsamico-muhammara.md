@@ -40,7 +40,6 @@ tags:
 - saludable
 - vegano
 - fácil
-- de temporada
 title: Puerros Glaseados con Balsámico + Muhammara
 updated: '2025-12-15T22:00:43.283463Z'
 ---

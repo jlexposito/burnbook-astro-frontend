@@ -116,9 +116,6 @@ tags:
 - cena
 - comida
 - vegetariano
-- recetas veganas
-- recetas fáciles
-- champiñones
 title: Tortitas Crujientes de Champiñones Estilo Pato
 updated: '2025-12-15T22:14:19.207065Z'
 ---

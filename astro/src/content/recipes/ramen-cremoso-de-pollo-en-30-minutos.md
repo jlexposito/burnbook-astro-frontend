@@ -91,8 +91,6 @@ status: Draft
 tags:
 - cena
 - ramen
-- pollo
-- japonesa
 title: Ramen cremoso de pollo en 30 minutos
 updated: '2026-01-13T21:50:10.652039Z'
 ---

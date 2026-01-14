@@ -139,14 +139,8 @@ status: Draft
 tags:
 - cena
 - comida
-- fricandó
 - cocina catalana
 - receta
-- setas
-- carne
-- estofado
-- plato principal
-- tradicional
 title: Fricandó
 updated: '2025-12-15T21:57:56.421162Z'
 ---

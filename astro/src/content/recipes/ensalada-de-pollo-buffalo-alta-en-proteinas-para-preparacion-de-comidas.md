@@ -140,7 +140,6 @@ tags:
 - cena
 - comida
 - picante
-- proteína
 title: Ensalada de Pollo Buffalo Alta en Proteínas para Preparación de Comidas
 updated: '2026-01-13T21:47:21.105425Z'
 ---

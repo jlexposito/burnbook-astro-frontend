@@ -108,7 +108,6 @@ tags:
 - salsa
 - comida
 - vegetariano
-- brunch
 - tostada
 title: Tostadas con Sobrasada de Boniato
 updated: '2025-12-15T22:48:42.491187Z'

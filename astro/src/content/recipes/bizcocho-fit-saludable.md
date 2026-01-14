@@ -114,8 +114,6 @@ servings: 2
 status: Draft
 tags:
 - postre
-- fit
-- bizcocho
 title: Bizcocho Fit Saludable
 updated: '2025-12-23T13:49:51.706604Z'
 ---

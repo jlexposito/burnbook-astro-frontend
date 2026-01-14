@@ -51,8 +51,6 @@ status: Draft
 tags:
 - postre
 - saludable
-- fitness
-- dieta
 - bajo en calorías
 - alto en proteína
 - tarta de queso

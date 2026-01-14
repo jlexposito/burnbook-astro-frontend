@@ -117,8 +117,6 @@ tags:
 - comida
 - vegetariano
 - ramen
-- coliflor
-- cremoso
 - asiático
 title: Ramen Cremoso de Coliflor
 updated: '2025-12-15T21:43:45.436433Z'

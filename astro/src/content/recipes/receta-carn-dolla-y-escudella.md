@@ -11,8 +11,6 @@ status: Draft
 tags:
 - cocina catalana
 - navidad
-- carn d'olla
-- escudella
 title: Receta Carn d'Olla y Escudella
 updated: '2025-12-16T09:39:31.155926Z'
 ---

@@ -170,8 +170,6 @@ servings: 2
 status: Draft
 tags:
 - cena
-- sopa
-- marisco
 title: Sopa Crema de Calabaza y Camarones
 updated: '2025-12-30T12:31:32.006088Z'
 ---

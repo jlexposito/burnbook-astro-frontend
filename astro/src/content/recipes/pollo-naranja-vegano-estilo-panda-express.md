@@ -211,7 +211,6 @@ status: Draft
 tags:
 - comida
 - vegetariano
-- principal
 title: Pollo Naranja Vegano Estilo Panda Express
 updated: '2025-12-15T22:54:21.932392Z'
 ---

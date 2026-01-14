@@ -83,7 +83,6 @@ status: Draft
 tags:
 - cena
 - vegetariano
-- recetasfaciles
 title: Puerros caramelizados con base de burrata
 updated: '2025-12-16T08:14:33.026138Z'
 ---

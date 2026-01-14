@@ -138,8 +138,6 @@ servings: 4
 status: Draft
 tags:
 - cocina catalana
-- mar y montaña
-- calamares rellenos
 title: Calamares rellenos
 updated: '2025-12-16T10:10:02.938162Z'
 ---

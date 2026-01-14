@@ -123,7 +123,6 @@ status: Draft
 tags:
 - cena
 - vegetariano
-- alto en proteínas
 title: Bol reconfortante dorado de calabaza y batata
 updated: '2026-01-07T13:07:49.039223Z'
 ---

@@ -98,8 +98,6 @@ servings: 23
 status: Draft
 tags:
 - cocina catalana
-- canelones
-- aprovechamiento
 title: Canelones de San Esteban
 updated: '2025-12-18T14:13:01.144333Z'
 ---

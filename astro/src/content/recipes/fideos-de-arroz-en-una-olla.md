@@ -11,8 +11,6 @@ status: New
 tags:
 - cena
 - rápido
-- fideos de arroz
-- plato único
 title: Fideos de Arroz en una Olla
 updated: '2026-01-13T23:54:29.062124Z'
 ---

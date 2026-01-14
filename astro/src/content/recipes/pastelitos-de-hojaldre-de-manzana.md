@@ -35,7 +35,6 @@ status: New
 tags:
 - postre
 - fácil
-- festivo
 - rápido
 title: Pastelitos de hojaldre de manzana
 updated: '2025-12-15T22:30:22.834245Z'
