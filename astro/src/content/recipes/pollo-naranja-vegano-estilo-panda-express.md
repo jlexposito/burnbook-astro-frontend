@@ -4,7 +4,7 @@ created: '2025-12-15T22:54:21.932187Z'
 id: 83
 image: null
 ingredients:
-- id: 1033
+- id: 1831
   ingredient:
     name: gluten de trigo vital
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: cup
-- id: 1034
+- id: 1832
   ingredient:
     name: levadura nutricional
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: tablespoon
-- id: 1035
+- id: 1833
   ingredient:
     name: harina de garbanzo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: tablespoon
-- id: 1036
+- id: 1834
   ingredient:
     name: caldo de pollo vegano o de verduras
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: 3/4 - 1
   recipe: 83
   unit: cup
-- id: 1037
+- id: 1835
   ingredient:
     name: harina de trigo
     prefix: ''
@@ -44,15 +44,15 @@ ingredients:
   quantity: 1/2
   recipe: 83
   unit: cup
-- id: 1038
+- id: 1836
   ingredient:
-    name: pan rallado
+    name: Pan rallado
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 83
   unit: cup
-- id: 1039
+- id: 1837
   ingredient:
     name: pimentón
     prefix: ''
@@ -60,23 +60,23 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: tablespoon
-- id: 1040
+- id: 1838
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
-  optional: true
-  quantity: ''
+  optional: false
+  quantity: '1'
   recipe: 83
-  unit: ''
-- id: 1041
+  unit: teaspoon
+- id: 1839
   ingredient:
     name: pimienta
     prefix: ''
-  optional: true
-  quantity: ''
+  optional: false
+  quantity: '1'
   recipe: 83
-  unit: ''
-- id: 1042
+  unit: teaspoon
+- id: 1840
   ingredient:
     name: caldo
     prefix: para cocinar a fuego lento
@@ -84,15 +84,7 @@ ingredients:
   quantity: 2-1/2
   recipe: 83
   unit: cup
-- id: 1043
-  ingredient:
-    name: aceite
-    prefix: para freír
-  optional: true
-  quantity: ''
-  recipe: 83
-  unit: ''
-- id: 1044
+- id: 1841
   ingredient:
     name: zumo de naranja
     prefix: ''
@@ -100,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: cup
-- id: 1045
+- id: 1842
   ingredient:
     name: naranja
     prefix: rodajas de
@@ -108,7 +100,7 @@ ingredients:
   quantity: '3'
   recipe: 83
   unit: unit
-- id: 1046
+- id: 1843
   ingredient:
     name: vinagre blanco
     prefix: ''
@@ -116,15 +108,15 @@ ingredients:
   quantity: 1 1/2
   recipe: 83
   unit: tablespoon
-- id: 1047
+- id: 1844
   ingredient:
     name: sriracha
     prefix: ''
-  optional: true
+  optional: false
   quantity: 1/2
   recipe: 83
   unit: tablespoon
-- id: 1048
+- id: 1845
   ingredient:
     name: azúcar moreno
     prefix: ''
@@ -132,7 +124,7 @@ ingredients:
   quantity: '3'
   recipe: 83
   unit: tablespoon
-- id: 1049
+- id: 1846
   ingredient:
     name: maicena
     prefix: ''
@@ -140,7 +132,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: tablespoon
-- id: 1050
+- id: 1847
   ingredient:
     name: agua
     prefix: ''
@@ -148,7 +140,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: tablespoon
-- id: 1051
+- id: 1848
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -156,7 +148,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: tablespoon
-- id: 1052
+- id: 1849
   ingredient:
     name: copos de chile
     prefix: ''
@@ -164,7 +156,7 @@ ingredients:
   quantity: '2'
   recipe: 83
   unit: teaspoon
-- id: 1053
+- id: 1850
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -172,7 +164,7 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: teaspoon
-- id: 1054
+- id: 1851
   ingredient:
     name: jengibre
     prefix: picado
@@ -180,7 +172,7 @@ ingredients:
   quantity: '2'
   recipe: 83
   unit: teaspoon
-- id: 1055
+- id: 1852
   ingredient:
     name: aceite
     prefix: ''
@@ -188,7 +180,7 @@ ingredients:
   quantity: '2'
   recipe: 83
   unit: tablespoon
-- id: 1056
+- id: 1853
   ingredient:
     name: semillas de sésamo
     prefix: blancas o negras
@@ -196,23 +188,23 @@ ingredients:
   quantity: '1'
   recipe: 83
   unit: teaspoon
-- id: 1057
+- id: 1854
   ingredient:
     name: cebolleta
     prefix: picada
   optional: false
   quantity: '1'
   recipe: 83
-  unit: tablespoon
+  unit: unit
 references:
 - https://www.instagram.com/reel/C1M8LFyr2ka/
 servings: 2
-status: Draft
+status: New
 tags:
 - comida
 - vegetariano
 title: Pollo Naranja Vegano Estilo Panda Express
-updated: '2025-12-15T22:54:21.932392Z'
+updated: '2026-01-16T11:46:17.093020Z'
 ---
 1. Prepara el seitan de pollo: Mezcla los ingredientes secos del seitan (gluten de trigo vital, levadura nutricional, harina de garbanzo) hasta que se combinen. Añade el caldo (3/4 - 1 taza) y remueve hasta que forme una bola de masa.
 2. Amasa unas cuantas veces con las manos hasta que la masa no tenga puntos secos.
