@@ -4,7 +4,7 @@ created: '2026-02-03T23:09:21.347575Z'
 id: 142
 image: null
 ingredients:
-- id: 1879
+- id: 1890
   ingredient:
     name: naranja
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 142
   unit: unit
-- id: 1880
+- id: 1891
   ingredient:
     name: limón
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 142
   unit: unit
-- id: 1881
+- id: 1892
   ingredient:
     name: jengibre
     prefix: un trozo grande de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '90'
   recipe: 142
   unit: gr
-- id: 1882
+- id: 1893
   ingredient:
     name: cúrcuma
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 142
   unit: teaspoon
-- id: 1883
+- id: 1894
   ingredient:
     name: canela
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 142
   unit: teaspoon
-- id: 1884
+- id: 1895
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -52,9 +52,9 @@ ingredients:
   quantity: '0.5'
   recipe: 142
   unit: teaspoon
-- id: 1885
+- id: 1896
   ingredient:
-    name: miel
+    name: Miel
     prefix: ''
   optional: false
   quantity: '2'
@@ -63,13 +63,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DTikCAkgtQA/
 servings: 20
-status: Draft
+status: New
 tags:
 - bebida caliente
 - invierno
 - saludable
-title: Cubos de té impulsores de invierno
-updated: '2026-02-03T23:09:21.347797Z'
+title: Cubos de té impulsores para el invierno
+updated: '2026-02-03T23:11:58.194994Z'
 ---
 1. Pela las naranjas y los limones, y retira las partes blancas para evitar que amarguen.
 2. Pela el jengibre.
