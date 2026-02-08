@@ -54,19 +54,8 @@ jobs:
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
 
-      # Check if the script actually produced any changes
-      - name: Detect changes
-        id: changes
-        run: |
-          if git diff --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
       # Commit only if there are actual changes
       - name: Commit updates
-        if: steps.changes.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           # Optional. Commit message for the created commit.
@@ -74,12 +63,10 @@ jobs:
           commit_message: Automated Change
 
       - name: Wait 45s seconds for cloudflare to complete build
-        if: steps.changes.outputs.changed == 'true'
         run: sleep 45s
         shell: bash
 
       - name: Purge cache
-        if: steps.changes.outputs.changed == 'true'
         uses: jakejarvis/cloudflare-purge-action@master
         env:
           # Zone is required by both authentication methods
