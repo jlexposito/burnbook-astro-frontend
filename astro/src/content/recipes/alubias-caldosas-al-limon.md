@@ -156,7 +156,6 @@ tags:
 - cena
 - comida
 - vegetariano
-- legumbres
 title: Alubias Caldosas al Limón
 updated: '2026-02-08T15:15:56.254569Z'
 ---

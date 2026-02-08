@@ -58,9 +58,6 @@ servings: 2
 status: Draft
 tags:
 - postre
-- tiramisu
-- cafe
-- proteina
 title: Tiramisú proteico de café
 updated: '2026-02-08T14:57:45.595538Z'
 ---

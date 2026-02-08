@@ -89,7 +89,6 @@ references:
 servings: 2
 status: Draft
 tags:
-- sardinas
 - fácil
 - rápido
 - aperitivo

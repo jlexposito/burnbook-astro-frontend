@@ -11,7 +11,6 @@ status: Draft
 tags:
 - salsa
 - picante
-- habanero
 title: Salsa Cremosa de Habanero
 updated: '2026-02-06T19:37:45.824903Z'
 ---

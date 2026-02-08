@@ -34,9 +34,6 @@ servings: 2
 status: Draft
 tags:
 - postre
-- recetas
-- palmeritas
-- hojaldre
 title: Palmeritas Caseras
 updated: '2026-01-15T18:29:20.086710Z'
 ---

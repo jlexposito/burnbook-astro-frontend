@@ -53,7 +53,6 @@ tags:
 - saludable
 - bajo en calorías
 - alto en proteína
-- tarta de queso
 title: Tarta de Queso Fitness
 updated: '2025-12-15T22:13:07.683795Z'
 ---

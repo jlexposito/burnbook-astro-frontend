@@ -19,7 +19,6 @@ status: Draft
 tags:
 - comida
 - invierno
-- alubias
 - fácil
 title: Alubias Invernales Gipsy
 updated: '2026-02-08T15:27:46.288371Z'
