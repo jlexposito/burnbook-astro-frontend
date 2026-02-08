@@ -1,4 +1,4 @@
-import { createSignal, createMemo, For, onMount } from "solid-js";
+import { createSignal, createMemo, createEffect, For, onMount } from "solid-js";
 
 import { getTags } from "@utils/api";
 import type { RecipeInterface, Tag } from "@utils/interfaces";
@@ -65,15 +65,27 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   };
 
   // ---- Mount logic ----
+  const [savedScrollY, setSavedScrollY] = createSignal(0);
+
   onMount(() => {
-    setVisibleRows(calculateInitialRows());
+    // Initial pagination (only once)
+    setVisibleRows((v) => Math.max(v, calculateInitialRows()));
 
     const resizeHandler = () => {
-      setColumns(getColumns());
-      setVisibleRows(calculateInitialRows());
+      const newColumns = getColumns();
+
+      // Only react if columns actually change
+      if (newColumns !== columns()) {
+        setColumns(newColumns);
+
+        // NEVER shrink visibleRows on resize
+        setVisibleRows((v) => Math.max(v, calculateInitialRows()));
+      }
     };
 
     const scrollHandler = () => {
+      setSavedScrollY(window.scrollY);
+
       const scrollPos = window.scrollY + window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
 
@@ -87,6 +99,11 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
 
     window.addEventListener("resize", resizeHandler);
     window.addEventListener("scroll", scrollHandler);
+
+    // Restore scroll after remount (mobile browsers)
+    queueMicrotask(() => {
+      window.scrollTo(0, savedScrollY());
+    });
 
     return () => {
       window.removeEventListener("resize", resizeHandler);
@@ -114,10 +131,13 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
 
   const toggleTag = (tag: string) =>
     setActiveTags((prev) =>
-      prev.includes(tag)
-        ? prev.filter((t) => t !== tag)
-        : [...prev, tag]
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
     );
+
+  // ---- Optional: scroll-to-top on filter (comment/uncomment as desired) ----
+  // createEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // });
 
   return (
     <>
