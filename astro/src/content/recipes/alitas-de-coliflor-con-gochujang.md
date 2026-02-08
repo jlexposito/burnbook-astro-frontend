@@ -44,7 +44,6 @@ tags:
 - vegetariano
 - picante
 - snack
-- alitas
 title: Alitas de Coliflor con Gochujang
 updated: '2026-02-08T14:45:46.343214Z'
 ---

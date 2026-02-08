@@ -75,7 +75,6 @@ status: Draft
 tags:
 - salsa
 - vegetariano
-- acompañamiento
 - guarnición
 title: Cebollas Encurtidas Rápidas
 updated: '2026-02-08T14:48:53.354170Z'
