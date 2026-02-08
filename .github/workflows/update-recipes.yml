@@ -11,6 +11,11 @@ on:
   repository_dispatch:
     types: [update_content]
 
+# Prevent multiple runs from racing against each other on master
+concurrency:
+  group: update-content-master
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,12 +25,15 @@ jobs:
       contents: write
 
     steps:
+      # Checkout full history so we can safely rebase on latest master
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: setup python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.11 #install the python needed
+          python-version: 3.11 # install the python needed
           cache: 'pip' # caching pip dependencies
 
       - name: Install dependencies
@@ -33,13 +41,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest
           if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
-      - name: execute py script # run the run.py to get the latest data
+
+      # Ensure we are always generating content on top of the latest master
+      # This avoids generating files based on stale code
+      - name: Sync with latest master
+        run: |
+          git fetch origin master
+          git rebase origin/master
+
+      # Run the script to get the latest data
+      - name: execute py script
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
 
-      - name: Pull Remote Changes
-        run: git pull
-
+      # Commit only if there are actual changes
       - name: Commit updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
