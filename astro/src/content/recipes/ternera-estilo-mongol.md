@@ -7,14 +7,13 @@ ingredients: []
 references:
 - https://www.instagram.com/reel/DUWReBwkiCx/
 servings: 2
-status: Draft
+status: New
 tags:
 - cena
 - ternera
-- fácil
 - asiático
 title: Ternera estilo Mongol
-updated: '2026-02-08T15:28:00.188389Z'
+updated: '2026-02-08T16:41:03.076329Z'
 ---
 Instrucciones no disponibles en la fuente.
 
