@@ -33,9 +33,9 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
   const clearTagSearch = () => props.setTagSearch("");
 
   return (
-    <div class="flex flex-col">
+    <div class="sticky top-0 z-10 flex flex-col">
       {/* Sticky search + filter toggle */}
-      <div class="sticky top-0 z-10 bg-white p-4 shadow flex gap-2 items-center">
+      <div class="p-4 flex gap-2 items-center">
         <div class="relative flex-1">
           <label for="searchRecipes" class="sr-only">
             Search recipes
