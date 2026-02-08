@@ -10,7 +10,6 @@ servings: 2
 status: New
 tags:
 - cena
-- ternera
 - asiático
 title: Ternera estilo Mongol
 updated: '2026-02-08T16:41:03.076329Z'
