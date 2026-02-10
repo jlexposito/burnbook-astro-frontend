@@ -178,10 +178,9 @@ servings: 2
 status: Draft
 tags:
 - cena
-- sopa
-- tailandés
 - vegano
 - cocina thai
+- sopa
 title: Tom Kha
 updated: '2026-02-06T19:38:37.097154Z'
 ---
