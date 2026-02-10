@@ -181,6 +181,7 @@ tags:
 - sopa
 - tailandés
 - vegano
+- cocina thai
 title: Tom Kha
 updated: '2026-02-06T19:38:37.097154Z'
 ---
