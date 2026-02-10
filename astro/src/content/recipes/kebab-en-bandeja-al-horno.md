@@ -163,8 +163,6 @@ status: Draft
 tags:
 - cena
 - vegetariano
-- kebab
-- bandeja_horno
 title: Kebab en Bandeja al Horno
 updated: '2026-02-08T14:43:11.520169Z'
 ---

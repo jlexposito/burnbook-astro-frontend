@@ -76,7 +76,7 @@ tags:
 - cena
 - pasta
 - vegetariano
-- italiana
+- cocina italiana
 title: Puttanesca
 updated: '2026-02-10T17:50:57.484342Z'
 ---
