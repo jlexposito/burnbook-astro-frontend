@@ -33,44 +33,52 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
-          cache: pip
 
-      # 3️⃣ Install Python dependencies
+      # 3️⃣ Cache pip dependencies
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scripts/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4️⃣ Install Python dependencies
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
-          if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
+          pip install --upgrade-strategy only-if-needed flake8 pytest
+          if [ -f scripts/requirements.txt ]; then pip install --upgrade-strategy only-if-needed -r scripts/requirements.txt; fi
 
-      # 4️⃣ Sync with latest master
+      # 5️⃣ Sync with latest master
       - name: Sync with latest master
         run: |
           git fetch origin master
           git rebase origin/master
 
-      # 5️⃣ Generate content
+      # 6️⃣ Generate content
       - name: Execute Python script
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
 
-      # 6️⃣ Commit updates if any
+      # 7️⃣ Commit updates if any
       - name: Commit updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Automated Change
 
-      # 7️⃣ Setup Node for Astro
+      # 8️⃣ Setup Node 22 for Astro
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      # 8️⃣ Install pnpm
+      # 9️⃣ Install pnpm
       - name: Install pnpm
         run: npm install -g pnpm
 
-      # 9️⃣ Cache pnpm dependencies (optional but recommended)
-      - name: Cache pnpm dependencies
+      # 🔟 Cache pnpm dependencies
+      - name: Cache pnpm
         uses: actions/cache@v3
         with:
           path: ~/.pnpm-store
@@ -78,12 +86,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-
 
-      # 🔟 Install Node dependencies with pnpm
+      # 1️⃣1️⃣ Install Node dependencies
       - name: Install Node dependencies
         run: pnpm install
         working-directory: ./astro
 
-      # 1️⃣1️⃣ Build Astro site
+      # 1️⃣2️⃣ Build Astro site
       - name: Build Astro site
         run: pnpm run build
         working-directory: ./astro
@@ -92,7 +100,7 @@ jobs:
       - name: Check build output
         run: ls -la ./astro/dist
 
-      # 1️⃣2️⃣ Deploy to Cloudflare Pages
+      # 1️⃣3️⃣ Deploy to Cloudflare Pages
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -102,9 +110,6 @@ jobs:
             pages deploy ./astro/dist
             --project-name=burnbook-astro-frontend
 
-      # 1️⃣3️⃣ Purge cache
+      # 1️⃣4️⃣ Purge cache
       - name: Purge Cloudflare cache
-        uses: jakejarvis/cloudflare-purge-action@master
-        env:
-          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
-          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+        uses: jake
