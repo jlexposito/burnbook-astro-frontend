@@ -122,7 +122,7 @@ jobs:
             -H "Content-Type: application/json" \
             --data '{
               "prefixes": [
-                "https://burnbook.zh0nb.com/recipes/",
-                "https://burnbook.zh0nb.com/"
+                "burnbook.zh0nb.com/recipes/",
+                "burnbook.zh0nb.com/"
               ]
             }'
