@@ -65,21 +65,34 @@ jobs:
         with:
           node-version: 20
 
-      # 8️⃣ Install Node dependencies
+      # 8️⃣ Install pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # 9️⃣ Cache pnpm dependencies (optional but recommended)
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      # 🔟 Install Node dependencies with pnpm
       - name: Install Node dependencies
-        run: npm ci
+        run: pnpm install
         working-directory: ./astro
 
-      # 9️⃣ Build Astro site
+      # 1️⃣1️⃣ Build Astro site
       - name: Build Astro site
-        run: npm run build
+        run: pnpm run build
         working-directory: ./astro
 
       # Optional: check that dist exists
       - name: Check build output
         run: ls -la ./astro/dist
 
-      # 🔟 Deploy to Cloudflare Pages
+      # 1️⃣2️⃣ Deploy to Cloudflare Pages
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -89,7 +102,7 @@ jobs:
             pages deploy ./astro/dist
             --project-name=burnbook-astro-frontend
 
-      # 1️⃣1️⃣ Purge cache
+      # 1️⃣3️⃣ Purge cache
       - name: Purge Cloudflare cache
         uses: jakejarvis/cloudflare-purge-action@master
         env:
