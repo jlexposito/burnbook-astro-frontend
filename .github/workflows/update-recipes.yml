@@ -62,9 +62,14 @@ jobs:
           # Defaults to "Apply automatic changes"
           commit_message: Automated Change
 
-      - name: Wait 45s seconds for cloudflare to complete build
-        run: sleep 45s
-        shell: bash
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: >
+            pages deploy dist
+            --project-name=burnbook-astro-frontend
 
       - name: Purge cache
         uses: jakejarvis/cloudflare-purge-action@master
