@@ -110,6 +110,11 @@ jobs:
             pages deploy ./astro/dist
             --project-name=burnbook-astro-frontend
 
-      # 1️⃣4️⃣ Purge cache
+      # 1️⃣4️⃣ Purge Cloudflare cache (curl-based, fixes workflow validation)
       - name: Purge Cloudflare cache
-        uses: jake
+        run: |
+          curl -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
