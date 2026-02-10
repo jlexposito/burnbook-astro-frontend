@@ -122,8 +122,8 @@ servings: 2
 status: Draft
 tags:
 - cena
-- alto en proteínas
 - vegano
+- alto en proteína
 - rápido
 title: Udon Cremoso con Cacahuete y Chili Crujiente (Olla Única)
 updated: '2026-01-14T18:22:42.513655Z'

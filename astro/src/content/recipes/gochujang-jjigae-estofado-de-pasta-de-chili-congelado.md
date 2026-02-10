@@ -90,8 +90,8 @@ servings: 2
 status: Draft
 tags:
 - cena
-- alto en proteínas
 - preparación de comidas
+- alto en proteína
 - bajo en calorías
 title: Gochujang Jjigae (Estofado de Pasta de Chili) Congelado
 updated: '2026-02-03T23:13:29.504245Z'

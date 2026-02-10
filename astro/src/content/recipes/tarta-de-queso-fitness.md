@@ -51,8 +51,8 @@ status: Draft
 tags:
 - postre
 - saludable
-- bajo en calorías
 - alto en proteína
+- bajo en calorías
 title: Tarta de Queso Fitness
 updated: '2025-12-15T22:13:07.683795Z'
 ---
