@@ -77,11 +77,15 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
-      # 🔟 Cache pnpm dependencies
-      - name: Cache pnpm
+      # 🔟 Cache pnpm store dynamically
+      - name: Get pnpm store path
+        id: pnpm-path
+        run: echo "store=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm store
         uses: actions/cache@v3
         with:
-          path: ~/.pnpm-store
+          path: ${{ steps.pnpm-path.outputs.store }}
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-
@@ -110,11 +114,15 @@ jobs:
             pages deploy ./astro/dist
             --project-name=burnbook-astro-frontend
 
-      # 1️⃣4️⃣ Purge Cloudflare cache (curl-based, fixes workflow validation)
-      - name: Purge Cloudflare cache
+      # 1️⃣4️⃣ Purge Cloudflare cache by prefix
+      - name: Purge Cloudflare cache by prefix
         run: |
-          curl -X POST \
-            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
             -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" \
             -H "Content-Type: application/json" \
-            --data '{"purge_everything":true}'
+            --data '{
+              "prefixes": [
+                "https://burnbook.zh0nb.com/recipes/",
+                "https://burnbook.zh0nb.com/"
+              ]
+            }'
