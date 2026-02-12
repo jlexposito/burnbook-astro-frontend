@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-10T21:39:03.354025Z'
+created: '2026-02-10T22:39:03.354025+01:00'
 id: 166
 image: null
 ingredients:
@@ -165,7 +165,7 @@ tags:
 - comida
 - cocina india
 title: Butter chicken casero
-updated: '2026-02-10T21:41:26.925329Z'
+updated: '2026-02-10T22:41:26.925329+01:00'
 ---
 1.  **Marinar el Pollo:** Corta la pechuga de pollo en cubos. En un bol grande, mezcla el pollo con el yogur griego sin grasa (para el marinado), el ajo picado (de la sección de pollo), el jengibre picado (de la sección de pollo), el aceite de oliva, el garam masala (de la sección de pollo), la cúrcuma (de la sección de pollo), el pimentón (de la sección de pollo), el chile en polvo (de la sección de pollo), la sal (de la sección de pollo) y la pimienta (de la sección de pollo). Deja marinar mientras preparas la salsa.
 2.  **Preparar la Salsa de Pollo a la Mantequilla:** En una olla grande o sartén profunda, derrite la mantequilla a fuego medio. Añade la cebolla picada y cocina hasta que esté tierna y translúcida, unos 5-7 minutos.

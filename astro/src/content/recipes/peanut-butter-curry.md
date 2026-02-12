@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2023-09-10T14:54:35.929773Z'
+created: '2023-09-10T16:54:35.929773+02:00'
 id: 7
 image: /media/peanut_butter_curry.jpg
 ingredients:
@@ -93,7 +93,7 @@ tags:
 - cena
 - comida
 title: Peanut butter curry
-updated: '2024-08-07T22:44:25.435365Z'
+updated: '2024-08-08T00:44:25.435365+02:00'
 ---
 
 1. Calentar en una olla grande a fuego medio con aceite, ajo machacado + especias y cocinar por un par de minutos⁣

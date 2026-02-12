@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2026-01-14T18:22:42.513567Z'
+created: '2026-01-14T19:22:42.513567+01:00'
 id: 139
 image: null
 ingredients:
@@ -126,7 +126,7 @@ tags:
 - alto en proteína
 - rápido
 title: Udon Cremoso con Cacahuete y Chili Crujiente (Olla Única)
-updated: '2026-01-14T18:22:42.513655Z'
+updated: '2026-01-14T19:22:42.513655+01:00'
 ---
 1.  Mezcla todos los ingredientes para la salsa de cacahuete y reserva.
 2.  Ahora, añade el resto de ingredientes poco a poco a una sartén y cocina a fuego lento con tapa durante unos 5-7 minutos, hasta que el brócoli esté tierno (remueve varias veces entretanto).

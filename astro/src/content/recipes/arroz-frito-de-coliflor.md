@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2023-09-10T14:54:36.337889Z'
+created: '2023-09-10T16:54:36.337889+02:00'
 id: 18
 image: /media/Cauliflower-Fried-Rice-Recipe.jpg
 ingredients:
@@ -61,7 +61,7 @@ tags:
 - comida
 - vegetariano
 title: Arroz frito de coliflor
-updated: '2024-08-09T13:37:06.263115Z'
+updated: '2024-08-09T15:37:06.263115+02:00'
 ---
 
 Instrucciones

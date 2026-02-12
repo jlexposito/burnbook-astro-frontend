@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2025-12-17T10:41:11.691207Z'
+created: '2025-12-17T11:41:11.691207+01:00'
 id: 91
 image: null
 ingredients:
@@ -69,7 +69,7 @@ tags:
 - comida
 - rápido
 title: Quiche Saludable Rápida
-updated: '2025-12-17T10:41:11.699571Z'
+updated: '2025-12-17T11:41:11.699571+01:00'
 ---
 1. Precalienta el horno a 180°C.
 2. Forra un molde pequeño apto para horno con la tortilla integral para crear la base.

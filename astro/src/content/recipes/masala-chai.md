@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-11T23:15:28.006988Z'
+created: '2026-02-12T00:15:28.006988+01:00'
 id: 167
 image: null
 ingredients:
@@ -62,7 +62,7 @@ tags:
 - bebida
 - especiado
 title: Masala Chai
-updated: '2026-02-11T23:15:28.007107Z'
+updated: '2026-02-12T00:15:28.007107+01:00'
 ---
 1. En una cacerola, calienta la leche a fuego medio.
 2. Añade el té negro, la rama de canela, las vainas de cardamomo y el trozo de jengibre fresco.

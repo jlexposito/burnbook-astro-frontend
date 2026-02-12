@@ -1,6 +1,6 @@
 ---
 cooking_time: 300
-created: '2023-09-10T14:54:36.840823Z'
+created: '2023-09-10T16:54:36.840823+02:00'
 id: 30
 image: /media/croquetas.jpg
 ingredients:
@@ -140,7 +140,7 @@ tags:
 - cena
 - comida
 title: Croquetas caseras de pollo o setas
-updated: '2024-08-07T20:02:04.729240Z'
+updated: '2024-08-07T22:02:04.729240+02:00'
 ---
 
 Receta para unas 160 raciones (80 raciones de cada variedad)

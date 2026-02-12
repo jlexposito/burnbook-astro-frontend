@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2025-12-18T14:13:01.140633Z'
+created: '2025-12-18T15:13:01.140633+01:00'
 id: 92
 image: null
 ingredients:
@@ -99,7 +99,7 @@ status: Draft
 tags:
 - cocina catalana
 title: Canelones de San Esteban
-updated: '2025-12-18T14:13:01.144333Z'
+updated: '2025-12-18T15:13:01.144333+01:00'
 ---
 1. Hierve las placas de canelones en agua con sal siguiendo las indicaciones del paquete. Importante: hazlo una a una para que no se peguen. Una vez cocidas, resérvalas en agua fría.
 2. Corta la cebolla y cocínala lentamente hasta que quede bien caramelizada.

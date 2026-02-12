@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T22:07:03.773789Z'
+created: '2025-12-15T23:07:03.773789+01:00'
 id: 78
 image: null
 ingredients:
@@ -110,7 +110,7 @@ tags:
 - vegetariano
 - tostada
 title: Tostadas con Sobrasada de Boniato
-updated: '2025-12-15T22:48:42.491187Z'
+updated: '2025-12-15T23:48:42.491187+01:00'
 ---
 1. Pon el boniato en la fuente del airfryer o del horno y cocina: 30 minutos a 180°C en el airfryer o 40 minutos a 180°C en el horno (hasta que esté asado).
 2. Abre el boniato por la mitad y quita la carne con una cuchara. Ponla en un vaso junto con el tomate seco, los anacardos, el queso parmesano, el pimentón, el aceite de oliva, sal, pimienta y el zumo de lima. Tritura bien.

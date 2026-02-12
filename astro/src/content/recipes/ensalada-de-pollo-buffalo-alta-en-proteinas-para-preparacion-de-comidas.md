@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-01-13T21:47:21.105380Z'
+created: '2026-01-13T22:47:21.105380+01:00'
 id: 134
 image: null
 ingredients:
@@ -141,7 +141,7 @@ tags:
 - comida
 - picante
 title: Ensalada de Pollo Buffalo Alta en Proteínas para Preparación de Comidas
-updated: '2026-01-13T21:47:21.105425Z'
+updated: '2026-01-13T22:47:21.105425+01:00'
 ---
 1. Precalienta una sartén a fuego medio-alto, sazonando generosamente el pollo con sal mientras esperas.
 2. Añade el aceite neutro y sella el pollo durante 2-3 minutos por cada lado o hasta que esté dorado y cocido. Retira de la sartén y deja enfriar a temperatura ambiente antes de cortarlo en dados.

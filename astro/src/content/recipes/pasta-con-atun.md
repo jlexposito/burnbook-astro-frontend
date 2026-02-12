@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-03T23:13:56.854530Z'
+created: '2026-02-04T00:13:56.854530+01:00'
 id: 148
 image: null
 ingredients:
@@ -118,7 +118,7 @@ tags:
 - cena
 - pasta
 title: Pasta con atún
-updated: '2026-02-03T23:13:56.854576Z'
+updated: '2026-02-04T00:13:56.854576+01:00'
 ---
 1. En 3 cucharadas de aceite de oliva, fríe media cebolla roja finamente picada a fuego lento hasta que esté blanda.
 2. Añade 2 dientes de ajo finamente picados, 3 anchoas, 1 cucharada de alcaparras, 2 cucharadas de aceitunas y una pizca de guindilla, y fríe durante otros 2 minutos.

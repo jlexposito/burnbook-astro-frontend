@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2023-09-10T14:54:35.855155Z'
+created: '2023-09-10T16:54:35.855155+02:00'
 id: 5
 image: /media/sweet-thai-chili-sauce1-1024x819.jpg
 ingredients:
@@ -59,7 +59,7 @@ status: Tried
 tags:
 - salsa
 title: Salsa de chile
-updated: '2023-09-10T14:54:35.856190Z'
+updated: '2023-09-10T16:54:35.856190+02:00'
 ---
 1. Pelar y cortar una cebolla (no es necesario si tenemos un buen procesador de comida).
 2. Añadir la cebolla cortada en un vaso de batidora, un par de chiles (dependiendo de lo picante que queramos), tres cuchadas de vinagre de manzana, una lata de tomates triturados/trozeados, un par de cucharadas de sirope y un vaso de zumo de manzana.

@@ -1,6 +1,6 @@
 ---
 cooking_time: 5
-created: '2026-02-08T15:12:55.254839Z'
+created: '2026-02-08T16:12:55.254839+01:00'
 id: 158
 image: null
 ingredients:
@@ -93,7 +93,7 @@ tags:
 - rápido
 - aperitivo
 title: Paté de sardinas
-updated: '2026-02-08T15:12:55.255024Z'
+updated: '2026-02-08T16:12:55.255024+01:00'
 ---
 1. Escurre las sardinas y añádelas a un bol con la mantequilla. Machácalas con un tenedor hasta conseguir una crema.
 2. Añade el resto de ingredientes y mezcla bien hasta integrar.

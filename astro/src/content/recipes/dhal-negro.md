@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2023-09-10T14:54:36.353650Z'
+created: '2023-09-10T16:54:36.353650+02:00'
 id: 19
 image: /media/vegan-black-lentil-curry-dal-makhani.jpg
 ingredients:
@@ -20,7 +20,7 @@ tags:
 - cena
 - comida
 title: Dhal negro
-updated: '2024-08-09T13:37:32.133424Z'
+updated: '2024-08-09T15:37:32.133424+02:00'
 ---
 **Referencia:**
 https://www.instagram.com/reel/CQbdITJCGSn/?utm_medium=share_sheet

@@ -1,6 +1,6 @@
 ---
 cooking_time: 60
-created: '2023-09-10T14:54:36.532479Z'
+created: '2023-09-10T16:54:36.532479+02:00'
 id: 24
 image: /media/shawarma.png
 ingredients:
@@ -20,7 +20,7 @@ tags:
 - cena
 - comida
 title: Vegan shawarma
-updated: '2024-08-07T23:16:44.372157Z'
+updated: '2024-08-08T01:16:44.372157+02:00'
 ---
 
 TKTK

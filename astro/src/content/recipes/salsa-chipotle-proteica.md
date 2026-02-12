@@ -1,6 +1,6 @@
 ---
 cooking_time: 5
-created: '2026-02-10T17:50:36.649070Z'
+created: '2026-02-10T18:50:36.649070+01:00'
 id: 164
 image: null
 ingredients:
@@ -94,6 +94,6 @@ tags:
 - picante
 - alto en proteína
 title: Salsa chipotle proteica
-updated: '2026-02-10T17:50:36.649248Z'
+updated: '2026-02-10T18:50:36.649248+01:00'
 ---
 1. Licúa todos los ingredientes (excepto la leche o el agua) hasta obtener una salsa homogénea. Si deseas una consistencia más fina, añade leche o agua al gusto y vuelve a licuar.

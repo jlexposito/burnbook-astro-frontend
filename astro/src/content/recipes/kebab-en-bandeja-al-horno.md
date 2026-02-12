@@ -1,6 +1,6 @@
 ---
 cooking_time: 20
-created: '2026-02-08T14:43:11.517552Z'
+created: '2026-02-08T15:43:11.517552+01:00'
 id: 153
 image: null
 ingredients:
@@ -164,7 +164,7 @@ tags:
 - cena
 - vegetariano
 title: Kebab en Bandeja al Horno
-updated: '2026-02-08T14:43:11.520169Z'
+updated: '2026-02-08T15:43:11.520169+01:00'
 ---
 1. En un bol, desmenuza el tofu ahumado o firme. Añade la pasta de tomate, la salsa de soja, la sal (estimada en 3 cucharaditas para todo el plato), el pimentón, el comino, el ajo en polvo, el cilantro molido y la harina de garbanzo. Amasa bien la mezcla (puedes hacerlo en un bol o directamente en la bandeja de horno).
 2. Con la masa, forma un tronco y córtalo en 8 o 9 piezas para obtener las koftas.

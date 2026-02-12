@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2025-12-23T13:49:51.696590Z'
+created: '2025-12-23T14:49:51.696590+01:00'
 id: 93
 image: null
 ingredients:
@@ -115,7 +115,7 @@ status: Draft
 tags:
 - postre
 title: Bizcocho Fit Saludable
-updated: '2025-12-23T13:49:51.706604Z'
+updated: '2025-12-23T14:49:51.706604+01:00'
 ---
 1. Precalienta el horno a 180°C con calor arriba y abajo.
 2. En un bol grande, machaca los plátanos (los de la masa) con un tenedor hasta obtener un puré.

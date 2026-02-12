@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2026-02-03T23:09:21.347575Z'
+created: '2026-02-04T00:09:21.347575+01:00'
 id: 142
 image: null
 ingredients:
@@ -69,7 +69,7 @@ tags:
 - invierno
 - saludable
 title: Cubos de té impulsores para el invierno
-updated: '2026-02-03T23:11:58.194994Z'
+updated: '2026-02-04T00:11:58.194994+01:00'
 ---
 1. Pela las naranjas y los limones, y retira las partes blancas para evitar que amarguen.
 2. Pela el jengibre.

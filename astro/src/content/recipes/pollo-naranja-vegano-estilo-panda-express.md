@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T22:54:21.932187Z'
+created: '2025-12-15T23:54:21.932187+01:00'
 id: 83
 image: /media/VegNews.VeganOrangeChicken.PandaExpress.avif
 ingredients:
@@ -206,7 +206,7 @@ tags:
 - vegetariano
 - vegano
 title: Pollo Naranja Vegano Estilo Panda Express
-updated: '2026-01-16T11:50:59.337377Z'
+updated: '2026-01-16T12:50:59.337377+01:00'
 ---
 1. Prepara el seitan de pollo: Mezcla los ingredientes secos del seitan (gluten de trigo vital, levadura nutricional, harina de garbanzo) hasta que se combinen. Añade el caldo (3/4 - 1 taza) y remueve hasta que forme una bola de masa.
 2. Amasa unas cuantas veces con las manos hasta que la masa no tenga puntos secos.

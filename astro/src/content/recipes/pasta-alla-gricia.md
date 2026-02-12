@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-08T15:33:54.773061Z'
+created: '2026-02-08T16:33:54.773061+01:00'
 id: 163
 image: null
 ingredients:
@@ -46,7 +46,7 @@ tags:
 - pasta
 - cocina italiana
 title: Pasta Alla Gricia
-updated: '2026-02-08T15:33:54.773226Z'
+updated: '2026-02-08T16:33:54.773226+01:00'
 ---
 1. Comienza cortando el guanciale en tiras finas (retira la corteza).
 2. En una sartén a fuego medio, cocina el guanciale hasta que esté crujiente y dorado, dejando que la grasa se derrita (no es necesario añadir aceite).

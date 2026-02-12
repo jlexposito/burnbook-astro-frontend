@@ -1,6 +1,6 @@
 ---
 cooking_time: 6
-created: '2025-12-16T08:19:46.883503Z'
+created: '2025-12-16T09:19:46.883503+01:00'
 id: 85
 image: null
 ingredients:
@@ -77,7 +77,7 @@ tags:
 - fácil
 - aperitivo
 title: Bocaditos crujientes de feta, pistacho y miel
-updated: '2025-12-16T08:19:46.883672Z'
+updated: '2025-12-16T09:19:46.883672+01:00'
 ---
 1. **Para el relleno:** Mezcla el queso feta desmenuzado con los pistachos picados, la miel, la ralladura de limón y la pimienta negra. Asegúrate de obtener una textura firme con trocitos.
 2. **Para el barnizado de huevo:** Bate el huevo con 1 cucharadita de AOVE (Aceite de Oliva Virgen Extra). Esta mezcla servirá para hidratar, sellar y dorar los bocaditos.

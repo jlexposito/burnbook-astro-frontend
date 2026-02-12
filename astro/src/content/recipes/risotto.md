@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2023-09-10T14:54:36.483648Z'
+created: '2023-09-10T16:54:36.483648+02:00'
 id: 22
 image: /media/risotto.jpg
 ingredients:
@@ -45,7 +45,7 @@ tags:
 - comida
 - pasta
 title: Risotto
-updated: '2024-08-09T13:39:07.300017Z'
+updated: '2024-08-09T15:39:07.300017+02:00'
 ---
 1. Cortar cebolla en trozos y pochar la cebolla a fuego lento con aceite de oliva. Mientras tanto, calentar caldo de verduras en un lado y cortar las setas.
 2. Cuando la cebolla este pochada añadir arroz y vino blanco hasta cubrir todo el arroz. Remover constantemente el arroz. 

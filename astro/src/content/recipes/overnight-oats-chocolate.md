@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2024-02-05T09:00:55.887239Z'
+created: '2024-02-05T10:00:55.887239+01:00'
 id: 49
 image: /media/overnight-oats.webp
 ingredients:
@@ -77,7 +77,7 @@ tags:
 - cena
 - desayuno
 title: Overnight Oats - Chocolate
-updated: '2024-08-13T11:48:12.800108Z'
+updated: '2024-08-13T13:48:12.800108+02:00'
 ---
 1. Añadir todos los ingredientes, excepto el yogur, a un bol y remover.
 2. Poner por capas primero la avena, luego el yogur, otra vez la avena, y luego el yogur.

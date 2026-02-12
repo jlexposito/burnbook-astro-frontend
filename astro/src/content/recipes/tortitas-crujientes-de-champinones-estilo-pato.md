@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T22:14:19.205862Z'
+created: '2025-12-15T23:14:19.205862+01:00'
 id: 81
 image: null
 ingredients:
@@ -117,7 +117,7 @@ tags:
 - comida
 - vegetariano
 title: Tortitas Crujientes de Champiñones Estilo Pato
-updated: '2025-12-15T22:14:19.207065Z'
+updated: '2025-12-15T23:14:19.207065+01:00'
 ---
 1. Con las manos, **desgarra** las setas en tiras pequeñas y finas. **Colócalas** en un bol grande.
 2. **Añade** la maicena, las cinco especias chinas, el ajo en polvo y la cebolla en polvo. Luego, **sazona** con sal y pimienta. **Mezcla** bien para asegurarte de que todo esté bien cubierto.

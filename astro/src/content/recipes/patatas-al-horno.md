@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2023-09-10T14:54:36.443227Z'
+created: '2023-09-10T16:54:36.443227+02:00'
 id: 21
 image: /media/patatas-al-horno.jpg
 ingredients:
@@ -68,7 +68,7 @@ tags:
 - salado
 - guarnición
 title: Patatas al horno
-updated: '2024-08-09T13:38:33.626571Z'
+updated: '2024-08-09T15:38:33.626571+02:00'
 ---
 1. Precalentar el horno a 180ºC arriba y abajo
 2. Pelar y trocear las patatas en trozos medianos

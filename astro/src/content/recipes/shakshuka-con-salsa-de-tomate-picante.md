@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-08T15:18:57.305508Z'
+created: '2026-02-08T16:18:57.305508+01:00'
 id: 160
 image: null
 ingredients:
@@ -125,7 +125,7 @@ tags:
 - desayuno
 - vegetariano
 title: Shakshuka con salsa de tomate picante
-updated: '2026-02-08T15:18:57.305720Z'
+updated: '2026-02-08T16:18:57.305720+01:00'
 ---
 1. Calienta el aceite de oliva en una sartén pequeña a fuego medio.
 2. Añade la pasta de chile, el ajo en rodajas y la cebolla finamente picada. Sofríe hasta que estén blandos y fragantes.

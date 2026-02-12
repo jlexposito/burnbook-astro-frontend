@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-01-13T21:50:10.651992Z'
+created: '2026-01-13T22:50:10.651992+01:00'
 id: 135
 image: null
 ingredients:
@@ -92,7 +92,7 @@ tags:
 - cena
 - ramen
 title: Ramen cremoso de pollo en 30 minutos
-updated: '2026-01-13T21:50:10.652039Z'
+updated: '2026-01-13T22:50:10.652039+01:00'
 ---
 1. En una olla con agua hirviendo, cocina los fideos y 1 huevo durante 7 minutos y reserva.
 2. En tu bol, añade un huevo crudo, mayonesa, chili crisp, pasta de frijoles negros, aceite de sésamo y bate hasta combinar.

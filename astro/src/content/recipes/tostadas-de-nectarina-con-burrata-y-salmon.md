@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2024-02-19T18:29:15.429411Z'
+created: '2024-02-19T19:29:15.429411+01:00'
 id: 51
 image: /media/TOSTAS-NECTARINAS_2.jpg
 ingredients:
@@ -69,7 +69,7 @@ tags:
 - cena
 - comida
 title: Tostadas de nectarina con burrata y salmón
-updated: '2024-08-07T09:23:35.188503Z'
+updated: '2024-08-07T11:23:35.188503+02:00'
 ---
 
 1. Pela 4 nectarinas y corta en gajos.

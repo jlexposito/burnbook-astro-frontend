@@ -1,6 +1,6 @@
 ---
 cooking_time: 12
-created: '2024-02-19T18:41:58.319676Z'
+created: '2024-02-19T19:41:58.319676+01:00'
 id: 53
 image: /media/queso-cottage-verduras.png
 ingredients:
@@ -76,7 +76,7 @@ status: Tried
 tags:
 - entrante
 title: Queso cottage con aliño de verduras
-updated: '2024-02-19T18:41:58.321785Z'
+updated: '2024-02-19T19:41:58.321785+01:00'
 ---
 1. Mezcla en un bol el tomate picado, la ciruela picada, las aceitunas sin hueso y troceadas, añade el zumo y ralladura de lima, el pimentón, el sésamo, el aceite de oliva y mezcla. 
 2. Coloca el queso en un plato, reparte en la base y dale forma bonita. Coloca el aliño de verduras en el centro con todo el jugo y termina con un poco más de aceite si quieres.

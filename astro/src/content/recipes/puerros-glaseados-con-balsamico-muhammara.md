@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T22:00:43.283275Z'
+created: '2025-12-15T23:00:43.283275+01:00'
 id: 77
 image: null
 ingredients:
@@ -41,7 +41,7 @@ tags:
 - vegano
 - fácil
 title: Puerros Glaseados con Balsámico + Muhammara
-updated: '2025-12-15T22:00:43.283463Z'
+updated: '2025-12-15T23:00:43.283463+01:00'
 ---
 1. Dorar los puerros.
 2. Glasear los puerros con vinagre balsámico.

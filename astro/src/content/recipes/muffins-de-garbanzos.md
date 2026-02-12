@@ -1,6 +1,6 @@
 ---
 cooking_time: 25
-created: '2025-12-15T22:38:34.409282Z'
+created: '2025-12-15T23:38:34.409282+01:00'
 id: 82
 image: null
 ingredients:
@@ -93,7 +93,7 @@ tags:
 - vegetariano
 - postre
 title: Muffins de Garbanzos
-updated: '2025-12-15T22:49:30.486501Z'
+updated: '2025-12-15T23:49:30.486501+01:00'
 ---
 1. Precalienta el horno a 180°C y utiliza moldes para magdalenas o engrásalos adecuadamente para que no se peguen.
 2. En un procesador de alimentos (o una batidora potente), añade todos los ingredientes excepto los complementos y mezcla bien. Si sabes que tu procesador no es muy potente, procesa los ingredientes gradualmente, añadiendo los garbanzos con un huevo y mezclando, seguido del otro huevo, mezcla, etc.

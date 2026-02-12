@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-06T19:37:45.822581Z'
+created: '2026-02-06T20:37:45.822581+01:00'
 id: 150
 image: null
 ingredients: []
@@ -12,7 +12,7 @@ tags:
 - salsa
 - picante
 title: Salsa Cremosa de Habanero
-updated: '2026-02-06T19:37:45.824903Z'
+updated: '2026-02-06T20:37:45.824903+01:00'
 ---
 1. Consulta el vídeo original para las instrucciones detalladas de esta Salsa Cremosa de Habanero.
 2. De forma general, para una salsa cremosa de habanero, se suelen asar los chiles y otros ingredientes como tomate o cebolla.

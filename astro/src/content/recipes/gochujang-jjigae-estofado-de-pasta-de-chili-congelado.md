@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-03T23:13:29.504179Z'
+created: '2026-02-04T00:13:29.504179+01:00'
 id: 147
 image: null
 ingredients:
@@ -94,7 +94,7 @@ tags:
 - alto en proteína
 - bajo en calorías
 title: Gochujang Jjigae (Estofado de Pasta de Chili) Congelado
-updated: '2026-02-03T23:13:29.504245Z'
+updated: '2026-02-04T00:13:29.504245+01:00'
 ---
 1. Pica el calabacín, la cebolla y el tofu en cubos pequeños.
 2. En un tazón pequeño, mezcla el gochujang, el gochugaru, el doenjang, el ajo picado y la salsa de soja para hacer la salsa del caldo.

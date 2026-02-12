@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-08T15:27:46.288211Z'
+created: '2026-02-08T16:27:46.288211+01:00'
 id: 161
 image: null
 ingredients:
@@ -21,7 +21,7 @@ tags:
 - invierno
 - fácil
 title: Alubias Invernales Gipsy
-updated: '2026-02-08T15:27:46.288371Z'
+updated: '2026-02-08T16:27:46.288371+01:00'
 ---
 1. Siéntete libre de inventar y adaptar los ingredientes según tu intuición, abrazando la esencia de la cocina "gipsy".
 2. Cocina las alubias con cariño, buscando un método que sea fácil y rápido.

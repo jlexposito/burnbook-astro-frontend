@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-01-14T18:23:08.447329Z'
+created: '2026-01-14T19:23:08.447329+01:00'
 id: 140
 image: null
 ingredients:
@@ -125,7 +125,7 @@ tags:
 - vegetariano
 - picante
 title: Salteado Sichuanés de Naranja
-updated: '2026-01-14T18:23:08.447379Z'
+updated: '2026-01-14T19:23:08.447379+01:00'
 ---
 1. **Tostar los granos de pimienta Sichuan:** Tostar los granos de pimienta Sichuan en una sartén grande, caliente y seca hasta que estén fragantes. Retirarlos y molerlos hasta obtener un polvo fino con un mortero o una batidora. Reservar la sartén.
 2. **Preparar el Tofú:** Cortar el tofú toscamente con unas tijeras (esto crea bordes ligeramente abrasivos que se crujen y retienen mejor la salsa). Mezclar con la mitad de la maicena, sal y pimienta. Añadir el aceite a la sartén reservada a fuego medio-alto. Incorporar el tofú y saltear hasta que esté dorado. Añadir la cebolla y el pimiento y cocinar durante 2-3 minutos más hasta que estén blandos pero aún crujientes.

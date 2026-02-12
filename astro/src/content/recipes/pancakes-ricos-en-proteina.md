@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2024-02-19T19:06:13.359925Z'
+created: '2024-02-19T20:06:13.359925+01:00'
 id: 55
 image: /media/pancakes.png
 ingredients:
@@ -59,7 +59,7 @@ status: Tried
 tags:
 - dulce
 title: Pancakes ricos en proteína
-updated: '2024-02-19T19:21:44.382092Z'
+updated: '2024-02-19T20:21:44.382092+01:00'
 ---
 1. En una licuadora, combina todos los ingredientes (usa un colador para la harina). Licúa los ingredientes hasta lograr una consistencia suave. La consistencia es sedosa y burbujeante, similar a la de una masa para panqueques normal.
 2. Transfiere la masa a un bol y déjela reposar durante 10 minutos. Este paso realza la textura y el sabor de los pancakes. Mientras tanto, precalienta una sartén antiadherente a fuego medio-bajo. Asegúrese de que la sartén esté lo suficientemente caliente pero no demasiado para evitar que los panqueques se quemen.

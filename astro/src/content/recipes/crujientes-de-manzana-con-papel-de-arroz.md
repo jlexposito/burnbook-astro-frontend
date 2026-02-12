@@ -1,6 +1,6 @@
 ---
 cooking_time: 12
-created: '2026-02-03T23:49:28.681097Z'
+created: '2026-02-04T00:49:28.681097+01:00'
 id: 149
 image: null
 ingredients:
@@ -62,7 +62,7 @@ tags:
 - snack
 - freidora de aire
 title: Crujientes de manzana con papel de arroz
-updated: '2026-02-03T23:49:28.681319Z'
+updated: '2026-02-04T00:49:28.681319+01:00'
 ---
 1. Pela y corta las manzanas en cuadrados.
 2. Calienta una sartén y añade la mantequilla, las manzanas y la canela. Cocina a fuego medio durante 6-7 minutos o hasta que estén blanditas.

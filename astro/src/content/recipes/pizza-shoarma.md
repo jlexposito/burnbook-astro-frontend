@@ -1,6 +1,6 @@
 ---
 cooking_time: 24
-created: '2023-09-10T14:54:36.093691Z'
+created: '2023-09-10T16:54:36.093691+02:00'
 id: 11
 image: /media/Pizza-shoarma-met-knoflooksaus.jpg
 ingredients:
@@ -29,7 +29,7 @@ tags:
 - comida
 - vegetariano
 title: Pizza shoarma
-updated: '2024-08-09T13:41:59.997118Z'
+updated: '2024-08-09T15:41:59.997118+02:00'
 ---
 1. Precalentar el horno a 180 grados
 2 Repartir tomate liquido (mejor no poner mucho) a la masa de pizza

@@ -1,6 +1,6 @@
 ---
 cooking_time: 19
-created: '2023-09-10T14:54:36.025925Z'
+created: '2023-09-10T16:54:36.025925+02:00'
 id: 9
 image: /media/carbonara__compressed.jpg
 ingredients:
@@ -46,7 +46,7 @@ tags:
 - comida
 - pasta
 title: Espaguetis carbonara
-updated: '2024-08-09T13:35:44.575528Z'
+updated: '2024-08-09T15:35:44.575528+02:00'
 ---
 1. Hervir agua en una olla mientras cortamos una cebolla.
 2. En un bol romper tres huevos y añadir queso parmesano y sal. Batir hasta que todo este combinado y dejarlo reposando en un lado.

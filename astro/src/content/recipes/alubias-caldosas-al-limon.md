@@ -1,6 +1,6 @@
 ---
 cooking_time: 85
-created: '2026-02-08T15:15:56.254524Z'
+created: '2026-02-08T16:15:56.254524+01:00'
 id: 159
 image: null
 ingredients:
@@ -157,7 +157,7 @@ tags:
 - comida
 - vegetariano
 title: Alubias Caldosas al Limón
-updated: '2026-02-08T15:15:56.254569Z'
+updated: '2026-02-08T16:15:56.254569+01:00'
 ---
 1. Remoja las alubias secas durante la noche en agua filtrada con un toque de bicarbonato de sodio. Enjuágalas bien al día siguiente.
 2. En una olla de hierro fundido (Dutch oven), sofríe la cebolla, el ajo, la salvia y el tomillo frescos, y los tomates secos en aceite de oliva durante unos minutos hasta que estén fragantes.

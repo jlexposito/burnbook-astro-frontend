@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-08T14:46:07.444603Z'
+created: '2026-02-08T15:46:07.444603+01:00'
 id: 155
 image: null
 ingredients:
@@ -101,7 +101,7 @@ tags:
 - cena
 - vegetariano
 title: Tatín de puerros
-updated: '2026-02-08T14:46:07.444714Z'
+updated: '2026-02-08T15:46:07.444714+01:00'
 ---
 1. Limpia los puerros y córtalos en rodajas gruesas.
 2. En un papel de horno, dibuja un círculo y píntalo con miel, aceite de oliva, mantequilla, vinagre de Módena, tomillo, sal y pimienta.

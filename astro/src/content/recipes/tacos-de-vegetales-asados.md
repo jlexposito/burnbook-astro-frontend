@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-01-13T11:18:14.129265Z'
+created: '2025-01-13T12:18:14.129265+01:00'
 id: 62
 image: null
 ingredients:
@@ -82,7 +82,7 @@ servings: 4
 status: Tried
 tags: []
 title: 'Tacos de vegetales asados '
-updated: '2025-01-13T11:18:14.133934Z'
+updated: '2025-01-13T12:18:14.133934+01:00'
 ---
 1 small head cauliflower, cut into florets⁠
 1 large sweet potato, diced ½-inch cubes⁠

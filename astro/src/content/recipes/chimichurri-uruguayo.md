@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-06T19:38:00.994408Z'
+created: '2026-02-06T20:38:00.994408+01:00'
 id: 151
 image: null
 ingredients:
@@ -69,7 +69,7 @@ tags:
 - vegetariano
 - picante
 title: Chimichurri Uruguayo
-updated: '2026-02-06T19:38:00.994467Z'
+updated: '2026-02-06T20:38:00.994467+01:00'
 ---
 1. Pica finamente los ajos y el perejil.
 2. En un bol, combina el orégano, el pimiento calabrés, el ajo picado, el perejil, la sal, el aceite y el vinagre de vino tinto.

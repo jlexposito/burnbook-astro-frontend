@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2026-02-08T14:48:53.354030Z'
+created: '2026-02-08T15:48:53.354030+01:00'
 id: 156
 image: null
 ingredients:
@@ -77,7 +77,7 @@ tags:
 - vegetariano
 - guarnición
 title: Cebollas Encurtidas Rápidas
-updated: '2026-02-08T14:48:53.354170Z'
+updated: '2026-02-08T15:48:53.354170+01:00'
 ---
 1. Añade las cebollas laminadas a un tarro o recipiente con tapa hermética.
 2. Incorpora la sal, la pimienta, la miel, las hierbas secas, el zumo de limón, el vinagre y el aceite de oliva. Cierra y agita vigorosamente durante 10-15 segundos hasta que todo esté bien mezclado.

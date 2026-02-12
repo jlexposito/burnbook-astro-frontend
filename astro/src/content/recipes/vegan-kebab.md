@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2023-09-10T14:54:36.221221Z'
+created: '2023-09-10T16:54:36.221221+02:00'
 id: 15
 image: /media/vegan_kebab_compressed.jpg
 ingredients:
@@ -36,7 +36,7 @@ tags:
 - cena
 - comida
 title: Vegan kebab
-updated: '2024-08-09T13:36:17.148963Z'
+updated: '2024-08-09T15:36:17.148963+02:00'
 ---
 # Pasos 
 

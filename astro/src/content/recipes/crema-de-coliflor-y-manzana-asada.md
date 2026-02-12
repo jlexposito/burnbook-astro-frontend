@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-11T12:08:07.687908Z'
+created: '2025-12-11T13:08:07.687908+01:00'
 id: 63
 image: null
 ingredients:
@@ -118,6 +118,6 @@ tags:
 - otoño
 - saludable
 title: Crema de coliflor y manzana asada
-updated: '2025-12-11T23:09:03.858438Z'
+updated: '2025-12-12T00:09:03.858438+01:00'
 ---
 En una olla, pochar la cebolla y el puerro finamente picados en aceite de oliva virgen extra a fuego medio-bajo hasta que estén tiernos y translúcidos. Añadir la coliflor y las manzanas troceadas y rehogar tapado durante unos minutos. Incorporar la nuez moscada y tostar brevemente. Cubrir con el caldo y llevar a ebullición. Cocinar hasta que la coliflor y las manzanas estén muy tiernas. Retirar del fuego y triturar la mezcla con una batidora de mano o de vaso hasta obtener una crema fina y homogénea. Corregir de sal y pimienta al gusto. Servir la crema caliente, espolvoreada con levadura nutricional, un chorrito de crema balsámica y unas hojas de tomillo fresco al gusto.

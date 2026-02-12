@@ -1,6 +1,6 @@
 ---
 cooking_time: 120
-created: '2023-09-10T14:54:36.643082Z'
+created: '2023-09-10T16:54:36.643082+02:00'
 id: 27
 image: /media/caldo-de-verduras.jpg
 ingredients:
@@ -51,7 +51,7 @@ tags:
 - cena
 - comida
 title: Caldo de Verduras
-updated: '2024-08-07T23:16:22.058883Z'
+updated: '2024-08-08T01:16:22.058883+02:00'
 ---
 
 **Versión de la madre de Carla**:

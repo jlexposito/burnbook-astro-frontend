@@ -1,6 +1,6 @@
 ---
 cooking_time: 5
-created: '2026-02-08T14:57:45.595377Z'
+created: '2026-02-08T15:57:45.595377+01:00'
 id: 157
 image: null
 ingredients:
@@ -59,7 +59,7 @@ status: Draft
 tags:
 - postre
 title: Tiramisú proteico de café
-updated: '2026-02-08T14:57:45.595538Z'
+updated: '2026-02-08T15:57:45.595538+01:00'
 ---
 1. En un recipiente, mezcla bien el yogur proteico o griego, el café frío, las semillas de chía y la miel hasta obtener una crema homogénea.
 2. Sirve la mezcla en copas individuales o un recipiente grande para montarlo.

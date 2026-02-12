@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T22:13:07.683713Z'
+created: '2025-12-15T23:13:07.683713+01:00'
 id: 79
 image: null
 ingredients:
@@ -54,7 +54,7 @@ tags:
 - alto en proteína
 - bajo en calorías
 title: Tarta de Queso Fitness
-updated: '2025-12-15T22:13:07.683795Z'
+updated: '2025-12-15T23:13:07.683795+01:00'
 ---
 1. En un bol grande, combina los huevos, el queso cottage, el queso crema light y el endulzante.
 2. Bate la mezcla con una batidora de mano o robot de cocina hasta obtener una crema suave y homogénea, sin grumos.

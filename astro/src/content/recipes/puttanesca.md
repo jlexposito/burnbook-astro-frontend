@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2026-02-10T17:50:57.484284Z'
+created: '2026-02-10T18:50:57.484284+01:00'
 id: 165
 image: null
 ingredients:
@@ -78,7 +78,7 @@ tags:
 - vegetariano
 - cocina italiana
 title: Puttanesca
-updated: '2026-02-10T17:50:57.484342Z'
+updated: '2026-02-10T18:50:57.484342+01:00'
 ---
 1. Cocina la pasta (tonnarelli o espagueti) según las instrucciones del paquete hasta que esté al dente. Guarda un poco del agua de cocción.
 2. Mientras la pasta se cuece, prepara la salsa. Pela y pica finamente el diente de ajo y el chile rojo fresco. Desala las alcaparras si es necesario y pícalas ligeramente. Pica las anchoas (si las usas) y las aceitunas de Gaeta. Pica el perejil fresco.

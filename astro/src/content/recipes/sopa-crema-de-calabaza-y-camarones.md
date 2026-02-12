@@ -1,6 +1,6 @@
 ---
 cooking_time: 50
-created: '2025-12-30T12:31:31.994317Z'
+created: '2025-12-30T13:31:31.994317+01:00'
 id: 94
 image: null
 ingredients:
@@ -172,7 +172,7 @@ tags:
 - cena
 - sopa
 title: Sopa Crema de Calabaza y Camarones
-updated: '2025-12-30T12:31:32.006088Z'
+updated: '2025-12-30T13:31:32.006088+01:00'
 ---
 1. Añade la calabaza a una bandeja de horno, rocía con aceite de oliva y sazona con sal y pimienta. Hornea a 180°C durante 25-30 minutos, o hasta que esté tierna. Reserva.
 2. Para hacer la sopa crema de camarones, sofríe las cebollas, el ajo y el jengibre hasta que estén tiernos y fragantes. Añade los puerros, el apio y las zanahorias y cocina durante otro minuto.

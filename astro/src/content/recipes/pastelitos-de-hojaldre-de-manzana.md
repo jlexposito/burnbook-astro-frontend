@@ -1,6 +1,6 @@
 ---
 cooking_time: 20
-created: '2025-12-15T22:13:24.969300Z'
+created: '2025-12-15T23:13:24.969300+01:00'
 id: 80
 image: null
 ingredients:
@@ -37,7 +37,7 @@ tags:
 - fácil
 - rápido
 title: Pastelitos de hojaldre de manzana
-updated: '2025-12-15T22:30:22.834245Z'
+updated: '2025-12-15T23:30:22.834245+01:00'
 ---
 1. Precalienta el horno a 180°C (350°F).
 2. Corta las manzanas en rodajas finas y, si lo deseas, caramelízalas ligeramente en una sartén con un poco de mantequilla y azúcar.

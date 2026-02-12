@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2026-02-06T19:38:37.097031Z'
+created: '2026-02-06T20:38:37.097031+01:00'
 id: 152
 image: null
 ingredients:
@@ -182,7 +182,7 @@ tags:
 - cocina thai
 - sopa
 title: Tom Kha
-updated: '2026-02-06T19:38:37.097154Z'
+updated: '2026-02-06T20:38:37.097154+01:00'
 ---
 1. Pica la cebolla, el ajo, el jengibre y la guindilla.
 2. En una olla, calienta el AOVE a fuego medio y añade la cebolla, el ajo, el jengibre, la guindilla y la ralladura de lima. Sofríe durante 3-5 minutos hasta que los sabores se integren bien.

@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2024-08-13T10:46:32.088503Z'
+created: '2024-08-13T12:46:32.088503+02:00'
 id: 60
 image: /media/Pickled-Red-Onions-1200-3094.jpg
 ingredients:
@@ -51,7 +51,7 @@ status: New
 tags:
 - guarnición
 title: Cebolla encurtida
-updated: '2025-12-14T20:17:57.634092Z'
+updated: '2025-12-14T21:17:57.634092+01:00'
 ---
 Corta la parte superior e inferior de la cebolla y córtala desde la raíz hasta el final. Sepárala en dos frascos de vidrio de 16 oz junto con los granos de pimienta y los dientes de ajo.
 

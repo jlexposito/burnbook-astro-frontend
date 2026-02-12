@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2025-12-11T23:37:55.621505Z'
+created: '2025-12-12T00:37:55.621505+01:00'
 id: 72
 image: null
 ingredients:
@@ -71,7 +71,7 @@ tags:
 - saludable
 - fácil
 title: Calabaza con brie y nueces sin harinas
-updated: '2025-12-11T23:55:04.249381Z'
+updated: '2025-12-12T00:55:04.249381+01:00'
 ---
 1. Coloca las rodajas de calabaza en una bandeja de horno y añade aceite, sal y pimienta.
 2. Hornea a 180 °C durante 15 minutos.

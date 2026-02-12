@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2025-12-16T18:15:11.671268Z'
+created: '2025-12-16T19:15:11.671268+01:00'
 id: 90
 image: null
 ingredients:
@@ -53,7 +53,7 @@ tags:
 - vegetariano
 - tostada
 title: Tostada de Plátano, Mantequilla de Cacahuete, Caramelo y Yogur
-updated: '2025-12-16T19:54:27.241163Z'
+updated: '2025-12-16T20:54:27.241163+01:00'
 ---
 1. Tuesta una rebanada de pan a tu gusto.
 2. Corta medio plátano macho en rodajas y, si lo deseas, cocínalas ligeramente en una sartén o freidora de aire hasta que estén tiernas.

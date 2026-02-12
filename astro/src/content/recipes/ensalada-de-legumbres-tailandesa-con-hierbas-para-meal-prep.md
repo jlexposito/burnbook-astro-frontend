@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-01-13T21:39:11.206872Z'
+created: '2026-01-13T22:39:11.206872+01:00'
 id: 133
 image: null
 ingredients:
@@ -126,7 +126,7 @@ tags:
 - vegetariano
 - saludable
 title: Ensalada de Legumbres Tailandesa con Hierbas para 'Meal Prep'
-updated: '2026-01-13T21:39:11.207055Z'
+updated: '2026-01-13T22:39:11.207055+01:00'
 ---
 1. **Preparar los ingredientes de la ensalada:** Escurre y enjuaga los garbanzos y las alubias blancas. Pica los pepinos, los pimientos rojos, el repollo verde (en juliana fina y luego picado) y la cebolla roja. Si lo deseas, puedes añadir cualquier otra verdura que tengas a mano.
 2. **Combinar la ensalada:** En un bol grande, mezcla los garbanzos, las alubias blancas, los pepinos, los pimientos, el repollo y la cebolla roja.

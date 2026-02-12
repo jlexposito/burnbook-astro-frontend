@@ -1,6 +1,6 @@
 ---
 cooking_time: 16
-created: '2025-12-16T10:10:29.047831Z'
+created: '2025-12-16T11:10:29.047831+01:00'
 id: 89
 image: null
 ingredients:
@@ -117,7 +117,7 @@ tags:
 - cena
 - picante
 title: Pollo Crujiente con Salsa de Miel Picante y Aros de Cebolla
-updated: '2025-12-16T10:10:29.047875Z'
+updated: '2025-12-16T11:10:29.047875+01:00'
 ---
 1.  **Prepara la mezcla de especias:** En un recipiente, mezcla sal, pimienta, ajo en polvo y pimentón.
 2.  **Marinar el pollo:** Cubre 4 contramuslos de pollo con 1 taza de suero de leche, 2 cucharadas de salsa picante y una parte de la mezcla de especias. Deja marinar durante 1 hora.

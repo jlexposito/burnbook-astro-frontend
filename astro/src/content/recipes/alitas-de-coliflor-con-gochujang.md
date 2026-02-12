@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-02-08T14:45:46.343067Z'
+created: '2026-02-08T15:45:46.343067+01:00'
 id: 154
 image: null
 ingredients:
@@ -45,7 +45,7 @@ tags:
 - picante
 - snack
 title: Alitas de Coliflor con Gochujang
-updated: '2026-02-08T14:45:46.343214Z'
+updated: '2026-02-08T15:45:46.343214+01:00'
 ---
 1. Corta la coliflor en floretes de tamaño de bocado.
 2. Mezcla el gochujang con un poco de agua o aceite para crear una salsa.

@@ -1,6 +1,6 @@
 ---
 cooking_time: 60
-created: '2023-11-30T10:03:34.254418Z'
+created: '2023-11-30T11:03:34.254418+01:00'
 id: 47
 image: /media/tarta-zanahoria.png
 ingredients:
@@ -52,7 +52,7 @@ status: Tried
 tags:
 - postre
 title: Tarta de zanahoria (carrot cake)
-updated: '2023-11-30T10:03:34.264731Z'
+updated: '2023-11-30T11:03:34.264731+01:00'
 ---
 Esta tarta se hace por pisos, de modo que tenéis dos posibilidades: o hacéis un bizcocho entero y lo cortáis o lo hacéis por parte. Yo en este caso he optado por la segunda.
 

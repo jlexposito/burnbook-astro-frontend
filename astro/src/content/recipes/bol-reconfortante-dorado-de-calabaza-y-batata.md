@@ -1,6 +1,6 @@
 ---
 cooking_time: 28
-created: '2026-01-07T13:07:49.031942Z'
+created: '2026-01-07T14:07:49.031942+01:00'
 id: 95
 image: null
 ingredients:
@@ -124,7 +124,7 @@ tags:
 - cena
 - vegetariano
 title: Bol reconfortante dorado de calabaza y batata
-updated: '2026-01-07T13:07:49.039223Z'
+updated: '2026-01-07T14:07:49.039223+01:00'
 ---
 1. Corta la calabaza y la batata en dados, colócalos en una fuente para horno y pon el ajo en el centro.
 2. Vierte una cantidad suficiente de aceite sobre el ajo, sazona con sal y hornea durante unos 25-30 minutos a 180 grados con calor arriba y abajo.

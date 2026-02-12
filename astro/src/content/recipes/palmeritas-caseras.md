@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2026-01-15T18:29:20.086661Z'
+created: '2026-01-15T19:29:20.086661+01:00'
 id: 141
 image: null
 ingredients:
@@ -35,7 +35,7 @@ status: Draft
 tags:
 - postre
 title: Palmeritas Caseras
-updated: '2026-01-15T18:29:20.086710Z'
+updated: '2026-01-15T19:29:20.086710+01:00'
 ---
 1. Extiende la lámina de pasta de hojaldre sobre una superficie ligeramente enharinada o con papel de horno.
 2. Espolvorea generosamente azúcar por toda la superficie del hojaldre.
