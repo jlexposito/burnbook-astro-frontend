@@ -75,7 +75,6 @@ status: Draft
 tags:
 - comida
 - vegetariano
-- guiso
 title: Guiso de Berza y Garbanzos
 updated: '2026-02-14T18:54:29.107490+01:00'
 ---

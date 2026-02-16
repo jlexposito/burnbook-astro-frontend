@@ -51,7 +51,6 @@ status: New
 tags:
 - desayuno
 - vegetariano
-- tostada
 title: Tostada de Plátano, Mantequilla de Cacahuete, Caramelo y Yogur
 updated: '2025-12-16T20:54:27.241163+01:00'
 ---
