@@ -4,7 +4,7 @@ created: '2026-02-16T20:48:42.818338+01:00'
 id: 179
 image: null
 ingredients:
-- id: 2274
+- id: 2286
   ingredient:
     name: Tofu
     prefix: Súper Firme
@@ -12,7 +12,7 @@ ingredients:
   quantity: '450'
   recipe: 179
   unit: gr
-- id: 2275
+- id: 2287
   ingredient:
     name: Caldo de Res
     prefix: Vegano
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 179
   unit: teaspoon
-- id: 2276
+- id: 2288
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 179
   unit: tablespoon
-- id: 2277
+- id: 2289
   ingredient:
     name: levadura nutricional
     prefix: ''
@@ -36,15 +36,15 @@ ingredients:
   quantity: '2'
   recipe: 179
   unit: tablespoon
-- id: 2278
+- id: 2290
   ingredient:
-    name: Condimento
-    prefix: para Tacos
+    name: Condimento para tacos
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 179
   unit: tablespoon
-- id: 2279
+- id: 2291
   ingredient:
     name: Chiles Chipotles en Adobo
     prefix: Troceados
@@ -52,15 +52,15 @@ ingredients:
   quantity: '1'
   recipe: 179
   unit: tablespoon
-- id: 2280
+- id: 2292
   ingredient:
     name: aceite
-    prefix: neutro
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 179
   unit: tablespoon
-- id: 2281
+- id: 2293
   ingredient:
     name: agua
     prefix: ''
@@ -68,23 +68,23 @@ ingredients:
   quantity: '0.5'
   recipe: 179
   unit: cup
-- id: 2282
+- id: 2294
   ingredient:
-    name: Concentrado de Tomate
-    prefix: para más UMAMI
+    name: concentrado de tomate
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 179
   unit: tablespoon
-- id: 2283
+- id: 2295
   ingredient:
     name: Gravy Master
-    prefix: para color
+    prefix: ''
   optional: false
   quantity: 1-3
   recipe: 179
   unit: teaspoon
-- id: 2284
+- id: 2296
   ingredient:
     name: Sal
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: al gusto
   recipe: 179
   unit: unit
-- id: 2285
+- id: 2297
   ingredient:
     name: pimienta
     prefix: ''
@@ -108,8 +108,8 @@ tags:
 - cena
 - vegetariano
 - cocina mexicana
-title: Tacos de tofu
-updated: '2026-02-16T20:58:35.683296+01:00'
+title: Carne de Tofu para Tacos
+updated: '2026-02-16T21:01:27.352895+01:00'
 ---
 1. Saca el tofu de su envase y sécalo con papel de cocina. Desmenúzalo con las manos. ¡No te preocupes por obtener migajas uniformes, ya lo arreglaremos después!
 2. Una vez desmenuzado el tofu, prepara la marinada simplemente batiendo todos los ingredientes en un bol.
