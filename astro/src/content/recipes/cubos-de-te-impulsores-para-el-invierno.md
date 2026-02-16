@@ -65,7 +65,6 @@ references:
 servings: 20
 status: New
 tags:
-- bebida caliente
 - invierno
 - saludable
 title: Cubos de té impulsores para el invierno

@@ -131,8 +131,6 @@ status: Draft
 tags:
 - cena
 - japonés
-- sándwich
-- frito
 title: Sándwich de Chuleta Tonkatsu (Katsu Sando)
 updated: '2026-02-12T20:45:55.286025+01:00'
 ---

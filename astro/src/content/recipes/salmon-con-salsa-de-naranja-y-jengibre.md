@@ -59,7 +59,6 @@ status: Draft
 tags:
 - salsa
 - cena
-- salmón
 title: Salmón con salsa de naranja y jengibre
 updated: '2026-02-12T20:46:50.386406+01:00'
 ---
