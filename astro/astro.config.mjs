@@ -1,18 +1,31 @@
-import { defineConfig } from 'astro/config';
-import solidJs from "@astrojs/solid-js";
-import tailwind from "@astrojs/tailwind";
-import Compress from "astro-compress";
-import icon from "astro-icon";
+import { defineConfig } from 'astro/config'
+import Compress from 'astro-compress'
+import icon from 'astro-icon'
+import solidJs from '@astrojs/solid-js'
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path';
 
-// https://astro.build/config
 export default defineConfig({
   devToolbar: {
-    enabled: false
+    enabled: false,
   },
-  integrations: [icon(), solidJs(), tailwind({
-    config: {
-      path: './tailwind.config.cjs',
-      applyBaseStyles: false /** disables the built-in stylesheet */
-    }
-  }), Compress()]
-});
+
+  integrations: [
+    icon(),
+    solidJs(),
+    Compress(),
+  ],
+
+  vite: {
+    plugins: [
+      tailwindcss({
+        config: './tailwind.config.cjs',
+      }),
+    ],
+    resolve: {
+      alias: {
+        '@styles': path.resolve('./src/styles'), // adjust path to your styles folder
+      },
+    },
+  },
+})

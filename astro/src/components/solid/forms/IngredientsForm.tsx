@@ -55,9 +55,6 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
   // Ingredients
   const [existingIngredients]: ResourceReturn<Ingredient[]> =
     createResource(getIngredients);
-  const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingIngredients),
-  );
   let numberOfInitialIngredients: number = 1;
   let initialIngredients: formValues[] = [];
 
@@ -117,7 +114,7 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
             {(ingredient, index) => (
               <>
                 <>
-                  <div class="flex md:items-end items-center border-b-2 py-3">
+                  <div class="flex md:items-end items-center border-b-2 border-secondary-dark/50 border-dashed py-3">
                     <div class="grow">
                       <RecipeIngredientForm
                         id={ingredient.id}
@@ -128,7 +125,7 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
                     </div>
                     <div class="ml-2 flex grow-0">
                       <button
-                        class="btn !mb-0 md:!mb-2 !px-2 !py-3"
+                        class="btn mb-0! md:mb-2! px-2! py-3!"
                         disabled={ingredients().length < 2}
                         onClick={(e) => {
                           e.preventDefault();

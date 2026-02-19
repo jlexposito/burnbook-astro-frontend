@@ -75,7 +75,7 @@ export default function LoginForm() {
 
         <button
           type="submit"
-          class="bk-accent bk-accent-hover border-bk-accent-dark w-full rounded-lg border px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4"
+          class="bk-accent bk-accent-hover border-bk-accent-dark w-full rounded-lg border px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-4"
         >
           Sign in
         </button>

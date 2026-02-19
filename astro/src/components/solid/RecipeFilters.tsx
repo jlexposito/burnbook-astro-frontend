@@ -45,7 +45,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             name="searchRecipes"
             type="text"
             placeholder="Buscar recetas..."
-            class="w-full px-3 py-2 border rounded"
+            class="w-full bg-white border-1 bg-secondary px-3 py-2 border-sm rounded-sm"
             value={props.search}
             onInput={e => props.setSearch(e.currentTarget.value)}
           />
@@ -61,7 +61,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         </div>
 
         <button
-          class="px-3 py-2 bg-blue-500 text-white rounded btn-primary"
+          class="btn-primary text-white rounded-md"
           onClick={() => props.setOpen(!props.open)}
         >
           Filtros
@@ -70,7 +70,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
 
       {/* Animated filter panel */}
       <div
-        class={`overflow-hidden border rounded bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
+        class={`overflow-hidden border rounded-sm bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
           props.open
             ? "max-h-[500px] opacity-100 translate-y-0 pointer-events-auto"
             : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
@@ -87,7 +87,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
               name="timeFilter"
               type="number"
               placeholder="e.g., 30"
-              class="w-full px-3 py-2 border rounded"
+              class="w-full px-3 py-2 border rounded-sm"
               value={props.maxTime ?? ""}
               onInput={e =>
                 props.setMaxTime(
@@ -108,7 +108,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 name="tagSearch"
                 type="text"
                 placeholder="Search tags..."
-                class="w-full px-3 py-2 border rounded mb-2"
+                class="w-full px-3 py-2 border rounded-sm mb-2"
                 value={props.tagSearch}
                 onInput={e => props.setTagSearch(e.currentTarget.value)}
               />
@@ -128,7 +128,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 {tag => (
                   <button
                     classList={{
-                      "px-3 py-1 border rounded transition-transform duration-150": true,
+                      "px-3 py-1 rounded-sm border-1 border-primary/20 hover:cursor-pointer": true,
                       "btn-accent hover:ring-secondary-dark-ring":
                         props.activeTags().includes(tag.name),
                       "bg-gray-200 text-black hover:bg-gray-300":

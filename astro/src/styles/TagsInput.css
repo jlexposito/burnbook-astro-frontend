@@ -1,3 +1,5 @@
+@reference "./global.css";
+
 .tagsInput {
   [data-part="root"],
   [data-part="control"] {
@@ -6,7 +8,7 @@
 
   [data-part="control"] {
     [data-part="input"] {
-      @apply border-0 !shadow-none !outline-0 ring-0;
+      @apply border-0 shadow-none! outline-0! ring-0;
     }
 
     [data-part="trigger"] {
@@ -25,7 +27,7 @@
 
     &[data-focus] {
       [data-part="input"] {
-        @apply !border-0 !outline-0 !ring-0;
+        @apply border-0! outline-0! ring-0!;
       }
     }
 
@@ -34,16 +36,16 @@
 
   [data-scope="tags-input"] {
     &[data-part="item"] {
-      @apply bg-secondary hover:bg-secondary-dark hover:border-secondary-contrast inline-block rounded-full border-2 px-3 py-2 hover:cursor-pointer;
+      @apply bg-secondary hover:bg-secondary-dark hover:border-secondary-contrast inline-block rounded-full border-2 px-3 py-1 hover:cursor-pointer;
     }
-    &[data-part="tag-delete-trigger"] {
-      @apply hover:text-red-700;
+    &[data-part="item-delete-trigger"] {
+      @apply hover:text-red-700 hover:cursor-pointer hover:scale-175 hover:rounded-full border-none;
     }
   }
   input { 
     border: none;
     &:focus {
-      @apply ring-transparent !important
+      @apply ring-transparent!
     }
   }
 }
