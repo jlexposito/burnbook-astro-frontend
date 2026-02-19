@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 
 import {
+  createMemo,
   createSignal,
   createUniqueId,
   For,
@@ -18,19 +19,22 @@ import {
 } from "@utils/interfaces";
 import {
   removeElement,
+  createOptionsArray
 } from "@solidcomponents/formComponents/utils";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
 import FormInput from "@solidcomponents/formComponents/FormInput";
 import { TagsInput } from "@solidcomponents/formComponents/TagsInput";
+import { createOptions } from "@thisbeyond/solid-select";
+import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
 
 // Stores
 import { $tokens } from "@stores/apiStore";
 import IngredientsForm from "@solidcomponents/forms/IngredientsForm";
 import OptimizedImage from "@solidcomponents/OptimizedImage";
 
-let imgSizes : ImgSizes = {
+const imgSizes : ImgSizes = {
   sizes: [
     {
     size: 220,
@@ -38,6 +42,18 @@ let imgSizes : ImgSizes = {
     }
   ]
 }
+
+const statusOptions = [
+  {
+    "name": "Tried"
+  },
+  {
+    "name": "Draft"
+  },
+  {
+    "name": "New"
+  },
+]
 
 export default function RecipeForm(props: {
   action: string;
@@ -50,6 +66,24 @@ export default function RecipeForm(props: {
   const image = (): string => {
     return recipe.data?.image ? recipe.data?.image : noImage;
   };
+
+  const status = recipe?.data?.status;
+  const statusOptionsArray = createMemo(() => {
+    return createOptionsArray(statusOptions);
+  });
+
+  const selectedStatusValue = createMemo(() => {
+    return statusOptionsArray().find((option: item) => option?.value === status);
+  });
+
+
+  const StatusesConfig = createMemo(() => {
+    let optionsConfig = createOptions(statusOptionsArray(), {
+      key: "label",
+    });
+    optionsConfig["placeholder"] = "";
+    return optionsConfig;
+  });
 
   const createNewReference = (initialValue: string) => {
     const [value, setValue] = createSignal(initialValue);
@@ -218,7 +252,7 @@ export default function RecipeForm(props: {
               />
             </div>
             <div class="flex w-full gap-x-4">
-              <div class="w-full md:w-1/2">
+              <div class="w-full md:w-1/3">
                 <FormInput
                   type="number"
                   name="cooking_time"
@@ -228,13 +262,23 @@ export default function RecipeForm(props: {
                   required={true}
                 />
               </div>
-              <div class="w-full md:w-1/2">
+              <div class="w-full md:w-1/3">
                 <FormInput
                   type="number"
                   name="servings"
                   label="Raciones"
                   required={true}
                   value={recipe ? recipe.data?.servings : "2"}
+                />
+              </div>
+              <div class="w-full md:w-1/3">
+                <SelectInput
+                  label="Estado"
+                  name="state"
+                  initialValue={selectedStatusValue()}
+                  classes={"text-center justify-center"}
+                  required={true}
+                  config={StatusesConfig()}
                 />
               </div>
             </div>
@@ -250,8 +294,8 @@ export default function RecipeForm(props: {
               <Show when={recipe}>
                 <div class="min-w-[160px]">
                   <p class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 hover:cursor-pointer">Imagen actual</p>
-                  <a href={recipe.data?.image} target="_blank">
-                  { !recipe.data?.image ? (
+                  <a href={image()} target="_blank">
+                  { !image() ? (
                     <div>
                       <span>(Sin imagen)</span>
                     </div>
@@ -262,7 +306,7 @@ export default function RecipeForm(props: {
                       height={90}
                       classes="w-full h-[128px] md:h-[256px] object-cover"
                       altTitle={recipe.data?.title}
-                      filename={recipe.data?.image}
+                      filename={image()}
                       sizes={imgSizes}
                       sizeType={ImgSizeTypes.width}
                     />

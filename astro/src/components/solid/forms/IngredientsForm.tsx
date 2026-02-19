@@ -55,9 +55,6 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
   // Ingredients
   const [existingIngredients]: ResourceReturn<Ingredient[]> =
     createResource(getIngredients);
-  const selectOptionsIngredients: Accessor<ComboboxOption[]> = createMemo(() =>
-    createSelectOptions(existingIngredients),
-  );
   let numberOfInitialIngredients: number = 1;
   let initialIngredients: formValues[] = [];
 
