@@ -1,6 +1,6 @@
 ---
 cooking_time: 15
-created: '2023-09-10T14:54:35.893686Z'
+created: '2023-09-10T16:54:35.893686+02:00'
 id: 6
 image: /media/bagel_burger.jpg
 ingredients:
@@ -44,7 +44,7 @@ tags:
 - cena
 - comida
 title: Bagels con champiñones
-updated: '2024-08-07T22:46:23.758296Z'
+updated: '2024-08-08T00:46:23.758296+02:00'
 ---
 
 1. Precalentar el horno a unos 180ºC

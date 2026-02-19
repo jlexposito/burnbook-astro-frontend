@@ -1,6 +1,6 @@
 ---
 cooking_time: 120
-created: '2023-09-10T14:54:36.683485Z'
+created: '2023-09-10T16:54:36.683485+02:00'
 id: 28
 image: /media/tarta_de_limon.png
 ingredients:
@@ -101,7 +101,7 @@ tags:
 - dulce
 - postre
 title: Tarta helada de limón
-updated: '2024-02-19T19:47:17.276695Z'
+updated: '2024-02-19T20:47:17.276695+01:00'
 ---
 Nota: 
 

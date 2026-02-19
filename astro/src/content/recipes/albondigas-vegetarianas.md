@@ -1,6 +1,6 @@
 ---
 cooking_time: 35
-created: '2023-09-10T14:54:36.246788Z'
+created: '2023-09-10T16:54:36.246788+02:00'
 id: 16
 image: /media/albondigas_vegetarianas_compressed.jpg
 ingredients:
@@ -37,7 +37,7 @@ tags:
 - comida
 - vegetariano
 title: Albóndigas vegetarianas
-updated: '2024-08-09T13:36:39.224974Z'
+updated: '2024-08-09T15:36:39.224974+02:00'
 ---
 
 For the vegan meatballs:

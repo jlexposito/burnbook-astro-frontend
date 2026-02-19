@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2024-08-13T11:02:19.363558Z'
+created: '2024-08-13T13:02:19.363558+02:00'
 id: 61
 image: /media/creamy-cajun-chicken-1.jpg
 ingredients:
@@ -117,7 +117,7 @@ tags:
 - cena
 - comida
 title: Pollo en salsa cajún
-updated: '2024-08-13T11:09:02.680214Z'
+updated: '2024-08-13T13:09:02.680214+02:00'
 ---
 Marina los muslos de pollo con aceite de oliva, una cucharada pequeña de cajún, pimentón rojo, cebolla y ajo molido y llévalos a la sarten a fuego medio para dorarlos por ambos lados. Aparta los muslos de pollo y en la misma sarten añade el pimiento cortado en cubos pequeños, una cucharada pequeña de cajún, pimentón, caldo de pollo, los tomates cherry, 200ml de nata liquida y un par de rodajas de lima. Cubre la sarten y dejalo freir durante unos 20 minutos.
 

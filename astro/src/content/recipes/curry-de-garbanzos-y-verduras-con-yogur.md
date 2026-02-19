@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2024-02-19T12:59:35.436531Z'
+created: '2024-02-19T13:59:35.436531+01:00'
 id: 50
 image: /media/curry-yogur.jpg
 ingredients:
@@ -85,7 +85,7 @@ tags:
 - one pot
 - cena
 title: Curry de garbanzos y verduras con yogur
-updated: '2024-08-09T13:42:30.178196Z'
+updated: '2024-08-09T15:42:30.178196+02:00'
 ---
 1. En una sartén añade 3 cucharadas de aceite de oliva, la cebolla y el calabacín picado, sal y pimienta al gusto. Cocina a fuego medio 10 minutos.
 2. Añade el curry y remueve, añade el tomate y los garbanzos, remueve y cocina otros 10 min. Si ves que queda muy espeso, añade un chorrito de agua para aligerar.

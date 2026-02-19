@@ -1,6 +1,6 @@
 ---
 cooking_time: 45
-created: '2024-02-19T18:34:29.339673Z'
+created: '2024-02-19T19:34:29.339673+01:00'
 id: 52
 image: /media/melitzanosala.png
 ingredients:
@@ -53,7 +53,7 @@ tags:
 - entrante
 - tentempie
 title: Melitzanosala. Ensalada griega de berenjena
-updated: '2024-02-19T19:50:54.482468Z'
+updated: '2024-02-19T20:50:54.482468+01:00'
 ---
 1. Asa y pela una berenjena (si es a la leña, mucho mejor, si no al microondas u horno también sirve).
 2. Pica la pulpa de la berenjena a cuchillo.

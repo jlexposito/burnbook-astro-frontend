@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2023-09-10T14:54:36.367400Z'
+created: '2023-09-10T16:54:36.367400+02:00'
 id: 20
 image: /media/Creamy-Mushroom-Chicken-13.jpg
 ingredients:
@@ -124,7 +124,7 @@ tags:
 - comida
 - vegetariano
 title: Oyster mushroom en salsa
-updated: '2024-08-09T13:37:59.696730Z'
+updated: '2024-08-09T15:37:59.696730+02:00'
 ---
 Cortar los champiñones ostra en tiras de 1 cm. Derrita 2 cucharadas de margarina vegana en una cacerola poco profunda a fuego medio-alto, luego agregue los champiñones, agregue el pollo condimentado y fríalo durante 15-20 minutos, o hasta que los champiñones estén crujientes. Retirar del fuego, colocar los champiñones en un plato y reservar.
 

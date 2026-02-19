@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2023-09-10T14:54:35.751985Z'
+created: '2023-09-10T16:54:35.751985+02:00'
 id: 2
 image: /media/crema_limon.jpg
 ingredients:
@@ -52,7 +52,7 @@ status: Tried
 tags:
 - crema
 title: Crema de limón al microondas
-updated: '2024-08-09T12:13:48.933050Z'
+updated: '2024-08-09T14:13:48.933050+02:00'
 ---
 
 Nota: el zumo de limón debe estar colado, sin pulpa ni pepitas.

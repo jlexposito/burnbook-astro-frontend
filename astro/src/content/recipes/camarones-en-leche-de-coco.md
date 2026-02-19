@@ -1,6 +1,6 @@
 ---
 cooking_time: 20
-created: '2023-10-11T15:53:10.728168Z'
+created: '2023-10-11T17:53:10.728168+02:00'
 id: 45
 image: /media/camarones_en_salsa_de_coco.png
 ingredients:
@@ -85,7 +85,7 @@ tags:
 - comida
 - pasta
 title: Camarones en Leche de Coco
-updated: '2024-08-07T23:04:46.372427Z'
+updated: '2024-08-08T01:04:46.372427+02:00'
 ---
 
 1. Cortar en cubos pequeños un ajo, dos tomates y la cebolla mientras tenemos una olla con agua al fuego para que empiece a hervir.

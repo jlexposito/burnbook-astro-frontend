@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2023-09-10T14:54:35.786299Z'
+created: '2023-09-10T16:54:35.786299+02:00'
 id: 3
 image: /media/Lemon-Mint-Garbanzo-Bean-Salad.jpg
 ingredients:
@@ -83,7 +83,7 @@ status: Tried
 tags:
 - entrante
 title: Ensalada de garbanzos
-updated: '2024-08-09T13:53:16.208097Z'
+updated: '2024-08-09T15:53:16.208097+02:00'
 ---
 Corta la menta, los tomates cherry y añádelos en un bol grande. Añade en el bol también las judías y los garbanzos  y la media cebolla cortada en cuadrados pequeños.
 

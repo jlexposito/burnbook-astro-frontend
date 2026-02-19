@@ -1,6 +1,6 @@
 ---
 cooking_time: 75
-created: '2023-09-10T14:54:36.576749Z'
+created: '2023-09-10T16:54:36.576749+02:00'
 id: 26
 image: /media/NL-Chocolate-Guiness-Cake-superJumbo.jpeg
 ingredients:
@@ -116,7 +116,7 @@ tags:
 - dulce
 - postre
 title: Guiness Cake
-updated: '2024-02-19T19:47:40.809200Z'
+updated: '2024-02-19T20:47:40.809200+01:00'
 ---
 ### Paso 1
 Para el pastel: calentar el horno a 170C. Unte con mantequilla un molde desmontable de 9 pulgadas y cúbralo con papel pergamino. En una cacerola o sarten grande, combine la **Guinness** y los 142 gramos de **mantequilla**. Coloque a fuego medio-bajo hasta que la mantequilla se derrita, luego retire del fuego. Agregue el **cacao** y el **azúcar extrafina**, y bata para mezclar.

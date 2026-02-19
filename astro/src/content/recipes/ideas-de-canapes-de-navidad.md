@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-16T08:29:30.453731Z'
+created: '2025-12-16T09:29:30.453731+01:00'
 id: 86
 image: null
 ingredients: []
@@ -9,11 +9,10 @@ references:
 servings: 2
 status: Draft
 tags:
-- aperitivo
-- canapès
 - navidad
+- aperitivo
 title: Ideas de canapés de Navidad
-updated: '2025-12-16T08:29:30.453832Z'
+updated: '2025-12-16T09:29:30.453832+01:00'
 ---
 1. La descripción proporcionada en la publicación de Instagram no contiene instrucciones detalladas para la elaboración de canapés. Se menciona que la chef Ada Parellada comparte consejos y que los detalles completos se encuentran en #LaGourmeteria. Para conocer las recetas de los 5 canapés de Navidad, por favor, consulta la fuente original enlazada.
 

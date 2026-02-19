@@ -1,6 +1,6 @@
 ---
 cooking_time: 40
-created: '2025-12-16T10:10:02.938068Z'
+created: '2025-12-16T11:10:02.938068+01:00'
 id: 88
 image: null
 ingredients:
@@ -138,10 +138,8 @@ servings: 4
 status: Draft
 tags:
 - cocina catalana
-- mar y montaña
-- calamares rellenos
 title: Calamares rellenos
-updated: '2025-12-16T10:10:02.938162Z'
+updated: '2025-12-16T11:10:02.938162+01:00'
 ---
 1. Para el relleno, mezcla la botifarra con la miga de pan empapada en leche, el huevo, perejil picado, sal, pimienta y los recortes y patas de los calamares.
 2. Dale la vuelta a los calamares para que no se abran mientras se cuecen y rellénalos. Con el resto de la masa, haz albóndigas.

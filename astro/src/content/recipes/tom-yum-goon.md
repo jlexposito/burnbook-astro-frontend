@@ -1,6 +1,6 @@
 ---
 cooking_time: 45
-created: '2024-08-08T20:02:20.297241Z'
+created: '2024-08-08T22:02:20.297241+02:00'
 id: 58
 image: null
 ingredients:
@@ -20,10 +20,10 @@ status: Tried
 tags:
 - cena
 - comida
-- thai
 - picante
+- cocina thai
 title: Tom Yum Goon
-updated: '2024-08-08T20:21:30.524342Z'
+updated: '2024-08-08T22:21:30.524342+02:00'
 ---
 Enjuaga bien los camarones, luego pélalos y quítales las venas (¡mira el video para ver un truco genial para quitarles las venas!) y coloca todas las cabezas y las cáscaras en una olla grande. Pon la olla a fuego medio alto y saltea las cáscaras de los camarones hasta que todo lo que se pegue a la olla comience a dorarse levemente. ¡Debería oler como camarones a la parrilla!
 

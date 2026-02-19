@@ -1,6 +1,6 @@
 ---
 cooking_time: 25
-created: '2023-09-10T14:54:36.114506Z'
+created: '2023-09-10T16:54:36.114506+02:00'
 id: 12
 image: /media/spaghetti-stroganoff.jpg
 ingredients:
@@ -70,7 +70,7 @@ tags:
 - comida
 - pasta
 title: Stroganoff de champiñones
-updated: '2024-08-07T23:13:31.034970Z'
+updated: '2024-08-08T01:13:31.034970+02:00'
 ---
 
 1. Cortar champiñones en laminas y trocear cebolla y ajo en cuadraditos

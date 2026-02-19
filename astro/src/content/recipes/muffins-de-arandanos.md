@@ -1,6 +1,6 @@
 ---
 cooking_time: 18
-created: '2025-12-11T19:52:54.129193Z'
+created: '2025-12-11T20:52:54.129193+01:00'
 id: 69
 image: null
 ingredients:
@@ -43,6 +43,6 @@ status: Draft
 tags:
 - dulce
 title: Muffins de arándanos
-updated: '2025-12-11T23:09:03.929030Z'
+updated: '2025-12-12T00:09:03.929030+01:00'
 ---
 Mezclar todos los ingredientes y hornear a 180 grados durante 15-20 minutos.

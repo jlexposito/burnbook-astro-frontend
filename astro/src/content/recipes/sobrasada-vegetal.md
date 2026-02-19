@@ -1,6 +1,6 @@
 ---
 cooking_time: 70
-created: '2023-09-10T14:54:36.549779Z'
+created: '2023-09-10T16:54:36.549779+02:00'
 id: 25
 image: /media/sobrasada.jfif
 ingredients:
@@ -43,7 +43,7 @@ tags:
 - entrante
 - tentempie
 title: Sobrasada vegetal
-updated: '2024-02-19T19:48:56.610778Z'
+updated: '2024-02-19T20:48:56.610778+01:00'
 ---
 1. Remojar durante una hora tomates secos (unos 120g)
 2. Colar los tomates y añadirlos en un vaso de batidora con un chorrito de aceite de oliva, piñones o frutos secos (unos 60g), 1 diente de ajo y una cucharada de pimentón.

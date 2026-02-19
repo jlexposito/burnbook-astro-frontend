@@ -1,6 +1,6 @@
 ---
 cooking_time: 5
-created: '2025-12-11T23:26:10.917138Z'
+created: '2025-12-12T00:26:10.917138+01:00'
 id: 71
 image: null
 ingredients:
@@ -60,6 +60,6 @@ tags:
 - vegetariano
 - postre
 title: Pumpkin Golden Latte Express
-updated: '2025-12-11T23:26:10.917402Z'
+updated: '2025-12-12T00:26:10.917402+01:00'
 ---
 En un procesador de alimentos, pon la calabaza cocida, cúrcuma, pimienta, canela y aceite de coco. Tritura hasta obtener una pasta cremosa y uniforme. Guárdala en un tarro y consérvala en el frigorífico hasta una semana. Para disfrutarla, mezcla una cucharada de la pasta con tu bebida vegetal caliente y bate bien hasta espumar.

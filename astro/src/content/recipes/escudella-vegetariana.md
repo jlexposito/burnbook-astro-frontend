@@ -1,6 +1,6 @@
 ---
 cooking_time: 50
-created: '2023-09-10T14:54:36.515244Z'
+created: '2023-09-10T16:54:36.515244+02:00'
 id: 23
 image: /media/escudella.jpg
 ingredients:
@@ -20,6 +20,6 @@ tags:
 - cena
 - comida
 title: Escudella vegetariana
-updated: '2024-08-07T23:28:15.074899Z'
+updated: '2024-08-08T01:28:15.074899+02:00'
 ---
 https://molsa.bio/es/blog/escudella-vegetariana-sopa-de-galets-veggie/

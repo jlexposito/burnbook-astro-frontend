@@ -11,49 +11,118 @@ on:
   repository_dispatch:
     types: [update_content]
 
+# Prevent multiple runs from racing against each other on master
+concurrency:
+  group: update-content-master
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
       contents: write
 
     steps:
+      # 1️⃣ Checkout full history
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: setup python
+      # 2️⃣ Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.11 #install the python needed
-          cache: 'pip' # caching pip dependencies
+          python-version: 3.11
 
-      - name: Install dependencies
+      # 3️⃣ Cache pip dependencies
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scripts/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4️⃣ Install Python dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
-          if [ -f scripts/requirements.txt ]; then pip install -r scripts/requirements.txt; fi
-      - name: execute py script # run the run.py to get the latest data
+          pip install --upgrade-strategy only-if-needed flake8 pytest
+          if [ -f scripts/requirements.txt ]; then pip install --upgrade-strategy only-if-needed -r scripts/requirements.txt; fi
+
+      # 5️⃣ Sync with latest master
+      - name: Sync with latest master
+        run: |
+          git fetch origin master
+          git rebase origin/master
+
+      # 6️⃣ Generate content
+      - name: Execute Python script
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
 
-      - name: Pull Remote Changes
-        run: git pull
-
+      # 7️⃣ Commit updates if any
       - name: Commit updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          # Optional. Commit message for the created commit.
-          # Defaults to "Apply automatic changes"
           commit_message: Automated Change
 
-      - name: Wait 45s seconds for cloudflare to complete build
-        run: sleep 45s
-        shell: bash
+      # 8️⃣ Setup Node 22 for Astro
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
 
-      - name: Purge cache
-        uses: jakejarvis/cloudflare-purge-action@master
-        env:
-          # Zone is required by both authentication methods
-          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
-          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+      # 9️⃣ Install pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # 🔟 Cache pnpm store dynamically
+      - name: Get pnpm store path
+        id: pnpm-path
+        run: echo "store=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm store
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-path.outputs.store }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      # 1️⃣1️⃣ Install Node dependencies
+      - name: Install Node dependencies
+        run: pnpm install
+        working-directory: ./astro
+
+      # 1️⃣2️⃣ Build Astro site
+      - name: Build Astro site
+        run: pnpm run build
+        working-directory: ./astro
+
+      # Optional: check that dist exists
+      - name: Check build output
+        run: ls -la ./astro/dist
+
+      # 1️⃣3️⃣ Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: >
+            pages deploy ./astro/dist
+            --project-name=burnbook-astro-frontend
+
+      # 1️⃣4️⃣ Purge Cloudflare cache by prefix
+      - name: Purge Cloudflare cache by prefix
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{
+              "prefixes": [
+                "burnbook.zh0nb.com/recipes/",
+                "burnbook.zh0nb.com/"
+              ]
+            }'

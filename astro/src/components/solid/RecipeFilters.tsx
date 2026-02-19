@@ -8,7 +8,7 @@ interface RecipeFiltersProps {
   setSearch: (v: string) => void;
   tagSearch: string;
   setTagSearch: (v: string) => void;
-  activeTags: () => string[];        // <-- pass signal function, not value
+  activeTags: () => string[]; // signal function
   toggleTag: (tag: string) => void;
   maxTime: number | null;
   setMaxTime: (v: number | null) => void;
@@ -26,20 +26,20 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         }
         return a.name.localeCompare(b.name);
       })
-      .filter(tag =>
-        tag.name.toLowerCase().includes(query)
-      );
+      .filter(tag => tag.name.toLowerCase().includes(query));
   });
 
   const clearSearch = () => props.setSearch("");
   const clearTagSearch = () => props.setTagSearch("");
 
   return (
-    <div>
-      {/* Search + filter toggle */}
-      <div class="flex gap-2 my-4">
+    <div class="sticky top-0 z-10 flex flex-col">
+      {/* Sticky search + filter toggle */}
+      <div class="p-4 flex gap-2 items-center">
         <div class="relative flex-1">
-          <label for="searchRecipes" class="sr-only">Search recipes</label>
+          <label for="searchRecipes" class="sr-only">
+            Search recipes
+          </label>
           <input
             id="searchRecipes"
             name="searchRecipes"
@@ -47,7 +47,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             placeholder="Buscar recetas..."
             class="w-full bg-white border-1 bg-secondary px-3 py-2 border-sm rounded-sm"
             value={props.search}
-            onInput={(e) => props.setSearch(e.currentTarget.value)}
+            onInput={e => props.setSearch(e.currentTarget.value)}
           />
           <Show when={props.search}>
             <button
@@ -59,6 +59,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             </button>
           </Show>
         </div>
+
         <button
           class="btn-primary text-white rounded-md"
           onClick={() => props.setOpen(!props.open)}
@@ -88,7 +89,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
               placeholder="e.g., 30"
               class="w-full px-3 py-2 border rounded-sm"
               value={props.maxTime ?? ""}
-              onInput={(e) =>
+              onInput={e =>
                 props.setMaxTime(
                   e.currentTarget.value ? parseInt(e.currentTarget.value) : null
                 )
@@ -109,7 +110,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 placeholder="Search tags..."
                 class="w-full px-3 py-2 border rounded-sm mb-2"
                 value={props.tagSearch}
-                onInput={(e) => props.setTagSearch(e.currentTarget.value)}
+                onInput={e => props.setTagSearch(e.currentTarget.value)}
               />
               <Show when={props.tagSearch}>
                 <button
@@ -124,12 +125,12 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
 
             <div class="tags px-2 py-4 flex flex-wrap gap-2 max-h-40 overflow-y-auto">
               <For each={visibleTags()}>
-                {(tag) => (
+                {tag => (
                   <button
                     classList={{
                       "px-3 py-1 rounded-sm border-1 border-primary/20 hover:cursor-pointer": true,
                       "btn-accent hover:ring-secondary-dark-ring":
-                        props.activeTags().includes(tag.name), // <-- use signal function
+                        props.activeTags().includes(tag.name),
                       "bg-gray-200 text-black hover:bg-gray-300":
                         !props.activeTags().includes(tag.name),
                     }}

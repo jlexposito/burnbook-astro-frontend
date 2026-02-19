@@ -1,6 +1,6 @@
 ---
 cooking_time: 50
-created: '2023-09-10T15:53:52.020006Z'
+created: '2023-09-10T17:53:52.020006+02:00'
 id: 32
 image: /media/photo_2023-09-10_17-56-31.jpg
 ingredients:
@@ -164,7 +164,7 @@ tags:
 - entrante
 - tentempie
 title: Roasted Potato & Tzatziki Bowl
-updated: '2024-02-19T19:50:21.920545Z'
+updated: '2024-02-19T20:50:21.920545+01:00'
 ---
 Instrucciones:
 

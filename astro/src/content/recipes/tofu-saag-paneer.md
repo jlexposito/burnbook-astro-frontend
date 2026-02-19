@@ -1,6 +1,6 @@
 ---
 cooking_time: 35
-created: '2023-09-10T14:54:36.271231Z'
+created: '2023-09-10T16:54:36.271231+02:00'
 id: 17
 image: /media/saag-tofu-ready-800x1200.jpg
 ingredients:
@@ -83,7 +83,7 @@ status: Tried
 tags:
 - picante
 title: Tofu Saag Paneer
-updated: '2023-09-10T15:26:04.229050Z'
+updated: '2023-09-10T17:26:04.229050+02:00'
 ---
 1. Combine el jugo de 1/2 limón con los ingredientes de la marinada y una pizca de sal y pimienta. Mezcle el tofu
 

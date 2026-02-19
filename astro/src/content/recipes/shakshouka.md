@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2023-09-10T14:54:36.156161Z'
+created: '2023-09-10T16:54:36.156161+02:00'
 id: 13
 image: /media/20210112_2023411_compressed.jpg
 ingredients:
@@ -76,7 +76,7 @@ tags:
 - cena
 - comida
 title: Shakshouka
-updated: '2024-08-07T23:15:44.053473Z'
+updated: '2024-08-08T01:15:44.053473+02:00'
 ---
 
 1. Cortar la cebolla en tiras

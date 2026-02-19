@@ -1,6 +1,6 @@
 ---
 cooking_time: 5
-created: '2023-09-10T14:54:35.702178Z'
+created: '2023-09-10T16:54:35.702178+02:00'
 id: 1
 image: /media/mango-spicy-sauce.jpg
 ingredients:
@@ -52,6 +52,6 @@ tags:
 - salsa
 - picante
 title: Salsa mango picante
-updated: '2025-01-13T22:05:19.011753Z'
+updated: '2025-01-13T23:05:19.011753+01:00'
 ---
 Licuar todos los ingredientes.

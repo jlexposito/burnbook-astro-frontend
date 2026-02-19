@@ -1,6 +1,6 @@
 ---
 cooking_time: 5
-created: '2025-12-11T12:34:42.181179Z'
+created: '2025-12-11T13:34:42.181179+01:00'
 id: 66
 image: null
 ingredients:
@@ -35,9 +35,9 @@ status: Draft
 tags:
 - postre
 - saludable
-- snack
+- aperitivo
 title: Snack Saludable de Mango y Yogur
-updated: '2025-12-11T23:09:03.895024Z'
+updated: '2025-12-12T00:09:03.895024+01:00'
 ---
 En un bol, mezcla el yogur griego con la pulpa de mango. Disuelve la gelatina sin sabor siguiendo las instrucciones del paquete y añádela a la mezcla de yogur y mango. Vierte la preparación en un recipiente individual o molde y refrigera durante al menos 2-3 horas, o hasta que cuaje.
 

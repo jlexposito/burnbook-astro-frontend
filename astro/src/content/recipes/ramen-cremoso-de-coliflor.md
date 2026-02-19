@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T21:43:45.435527Z'
+created: '2025-12-15T22:43:45.435527+01:00'
 id: 75
 image: null
 ingredients:
@@ -117,11 +117,9 @@ tags:
 - comida
 - vegetariano
 - ramen
-- coliflor
-- cremoso
 - asiático
 title: Ramen Cremoso de Coliflor
-updated: '2025-12-15T21:43:45.436433Z'
+updated: '2025-12-15T22:43:45.436433+01:00'
 ---
 1. Precalienta el horno a 200°C con ventilador y forra una bandeja de horno grande. Corta la coliflor en floretes. Pica el ajo y el jengibre en dados.
 2. Extiende los floretes de coliflor en la bandeja. Rocía con aceite de oliva (en spray o un chorrito) y una pizca de sal. Asa durante 20 minutos hasta que estén dorados.

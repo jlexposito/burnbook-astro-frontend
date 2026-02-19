@@ -1,6 +1,6 @@
 ---
 cooking_time: 20
-created: '2023-09-10T14:54:36.058671Z'
+created: '2023-09-10T16:54:36.058671+02:00'
 id: 10
 image: /media/Hearty-Black-Bean-Quesadillas-stack.jpg
 ingredients:
@@ -51,7 +51,7 @@ status: Tried
 tags:
 - entrante
 title: Quesadilla vegetariana
-updated: '2023-09-10T14:54:36.059785Z'
+updated: '2023-09-10T16:54:36.059785+02:00'
 ---
 1. Caliente el aceite en una cacerola grande a fuego medio. Agregue la cebolla y cocine hasta que se ablanden, aproximadamente 2 minutos. Agregue los frijoles y el maíz, luego agregue azúcar, salsa y hojuelas de pimienta; mezclar bien. Cocine hasta que esté completamente caliente, aproximadamente 3 minutos.
 

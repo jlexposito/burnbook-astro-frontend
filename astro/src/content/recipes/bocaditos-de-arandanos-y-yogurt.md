@@ -1,6 +1,6 @@
 ---
 cooking_time: 20
-created: '2023-09-11T15:27:16.983111Z'
+created: '2023-09-11T17:27:16.983111+02:00'
 id: 44
 image: /media/bovaditos_de_arandanos.png
 ingredients:
@@ -35,7 +35,7 @@ status: Tried
 tags:
 - postre
 title: Bocaditos de Arándanos y Yogurt
-updated: '2023-09-11T20:08:55.373163Z'
+updated: '2023-09-11T22:08:55.373163+02:00'
 ---
 Preparación:
 

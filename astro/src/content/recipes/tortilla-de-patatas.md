@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2023-09-10T14:54:36.199787Z'
+created: '2023-09-10T16:54:36.199787+02:00'
 id: 14
 image: /media/tortilla-de-patatas.jpg
 ingredients:
@@ -36,7 +36,7 @@ tags:
 - cena
 - comida
 title: Tortilla de patatas
-updated: '2024-08-09T13:36:01.758323Z'
+updated: '2024-08-09T15:36:01.758323+02:00'
 ---
 1.  Pelamos las patatas, las lavamos para quitar restos de suciedad y muy importante, las secamos.
 2. Cortamos en láminas semifinas, a mí no me gusta que se deshagan sino que al freírlas se tuesten un poco. Las colocamos en un bol grande, donde luego vamos a mezclar con el huevo y añadimos sal al gusto. Removemos bien y reservamos.

@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2024-02-19T19:37:50.664445Z'
+created: '2024-02-19T20:37:50.664445+01:00'
 id: 57
 image: /media/gnocchi-ragu.jpg
 ingredients:
@@ -117,7 +117,7 @@ tags:
 - comida
 - pasta
 title: Gnnochi ragu
-updated: '2024-08-07T23:16:01.639176Z'
+updated: '2024-08-08T01:16:01.639176+02:00'
 ---
 
 1. Corta en cuadrados pequeños la cebolla, el apio y las zanahorias. Una vez cortadas, añádelas a una sartén con aceite y dos hojas de laurel y cocina a fuego medio.

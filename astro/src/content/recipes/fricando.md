@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-15T21:57:56.421081Z'
+created: '2025-12-15T22:57:56.421081+01:00'
 id: 76
 image: null
 ingredients:
@@ -139,16 +139,10 @@ status: Draft
 tags:
 - cena
 - comida
-- fricandó
 - cocina catalana
 - receta
-- setas
-- carne
-- estofado
-- plato principal
-- tradicional
 title: Fricandó
-updated: '2025-12-15T21:57:56.421162Z'
+updated: '2025-12-15T22:57:56.421162+01:00'
 ---
 1. Enfarina la carne, fríela y retírala.
 2. En la misma olla, añade las verduras y póchalas. Después, añade el tomate triturado, el vino y la hoja de laurel. Deja reducir hasta que se forme el sofrito.

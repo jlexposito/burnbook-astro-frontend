@@ -1,6 +1,6 @@
 ---
 cooking_time: 180
-created: '2023-09-10T14:54:36.747906Z'
+created: '2023-09-10T16:54:36.747906+02:00'
 id: 29
 image: /media/photo1678469213.jpeg
 ingredients:
@@ -143,7 +143,7 @@ tags:
 - cena
 - comida
 title: Sushi variado
-updated: '2025-10-12T20:13:05.537501Z'
+updated: '2025-10-12T22:13:05.537501+02:00'
 ---
 Instructions for 4 sushi rolls.
 

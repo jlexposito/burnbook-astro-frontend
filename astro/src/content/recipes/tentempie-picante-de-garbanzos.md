@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2024-02-05T08:52:46.639735Z'
+created: '2024-02-05T09:52:46.639735+01:00'
 id: 48
 image: null
 ingredients:
@@ -53,7 +53,7 @@ tags:
 - tentempie
 - picante
 title: Tentempié picante de garbanzos
-updated: '2024-02-19T18:43:55.100981Z'
+updated: '2024-02-19T19:43:55.100981+01:00'
 ---
 1. Limpiar los garbanzos
 2. Añadir el tahini, el pimentón, las semillas de sesamo y la sal en un bol. Remover. Añadir los garbanzos.

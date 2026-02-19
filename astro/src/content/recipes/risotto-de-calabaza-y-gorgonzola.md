@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-11T12:43:31.940132Z'
+created: '2025-12-11T13:43:31.940132+01:00'
 id: 67
 image: null
 ingredients:
@@ -65,8 +65,8 @@ references:
 servings: 1
 status: Draft
 tags:
-- italiano
+- cocina italiana
 title: Risotto de calabaza y gorgonzola
-updated: '2025-12-11T23:09:03.905736Z'
+updated: '2025-12-12T00:09:03.905736+01:00'
 ---
 Cocinar el arroz con la calabaza, el vino y el caldo, añadiendo el queso al final.

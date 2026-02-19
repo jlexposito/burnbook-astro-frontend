@@ -1,6 +1,6 @@
 ---
 cooking_time: 35
-created: '2023-11-03T08:48:47.740415Z'
+created: '2023-11-03T09:48:47.740415+01:00'
 id: 46
 image: /media/salmon-curry.jpg
 ingredients:
@@ -100,7 +100,7 @@ status: Tried
 tags:
 - pescado
 title: Salmon al curry
-updated: '2023-11-03T08:48:47.745767Z'
+updated: '2023-11-03T09:48:47.745767+01:00'
 ---
 1.Sazona los filetes de salmón con sal, pimienta y ajo en polvo.
 2. Calentar una sartén grande a fuego medio y añadir 1 cucharada de aceite de oliva.

@@ -1,6 +1,6 @@
 ---
 cooking_time: 30
-created: '2025-12-16T08:14:33.024770Z'
+created: '2025-12-16T09:14:33.024770+01:00'
 id: 84
 image: null
 ingredients:
@@ -79,13 +79,12 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DMLSQJhNYpH/
 servings: 2
-status: Draft
+status: Tried
 tags:
 - cena
 - vegetariano
-- recetasfaciles
 title: Puerros caramelizados con base de burrata
-updated: '2025-12-16T08:14:33.026138Z'
+updated: '2026-02-15T14:42:09.198891+01:00'
 ---
 1. Lava bien los puerros y retira la parte verde más dura y las capas externas. Córtalos en rodajas finas o a lo largo, según tu preferencia.
 2. En una sartén grande a fuego medio, derrite la mantequilla. Añade los puerros cortados.

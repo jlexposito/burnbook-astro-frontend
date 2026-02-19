@@ -1,6 +1,6 @@
 ---
 cooking_time: 10
-created: '2023-09-10T14:54:35.820261Z'
+created: '2023-09-10T16:54:35.820261+02:00'
 id: 4
 image: /media/salsa-ajo.jpg
 ingredients:
@@ -51,7 +51,7 @@ status: Tried
 tags:
 - salsa
 title: Salsa de ajo
-updated: '2023-09-10T15:17:18.033611Z'
+updated: '2023-09-10T17:17:18.033611+02:00'
 ---
 1. Pelar una cabeza de ajo (unos 6 ajos) y cortar la punta. Envolverlo en papel de plata y meter al horno a unos 200ºC y dejarlo unos 20 minutos. 
 2. Pelar los ajos y meterlos en el vaso de la batidora. Añadir un vaso de leche de soja/coco, una cucharada grande de mostaza dijon, una pizca de sal, pimienta, exprimir medio limón.
