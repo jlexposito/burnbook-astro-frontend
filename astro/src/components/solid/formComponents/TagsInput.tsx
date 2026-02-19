@@ -1,5 +1,5 @@
 import "@styles/TagsInput.css";
-import * as zagTagsInput from "@zag-js/tags-input";
+import * as tagsInput from "@zag-js/tags-input";
 
 import LabelComponent from "./LabelComponent";
 
@@ -18,56 +18,76 @@ export function TagsInput(props: {
     props
   );
 
-  function isNotEmptyString(element: string) {
-    return element.trim().length;
-  }
-  const disabled = false || props.disabled;
-  const nonEmptyIntialValue = merged.initialValue.some(isNotEmptyString);
-  const initialValue = nonEmptyIntialValue ? merged.initialValue : [];
+  const initialValue = merged.initialValue.filter((v) => v.trim().length > 0);
 
-  let config: zagTagsInput.Context = {
+  const service = useMachine(tagsInput.machine, {
     id: createUniqueId(),
+    name: merged.name,
     max: 10,
     blurBehavior: "add",
-    name: merged.name,
-    value: initialValue,
-    disabled: disabled,
-    validate(details) {
-      // no repeated
-      return !details?.value?.includes(details.inputValue);
-    },
-  };
+    disabled: merged.disabled,
+    defaultValue: initialValue,
 
-  const [state, send] = useMachine(zagTagsInput.machine(config));
+    validate({ value, inputValue }) {
+      return !value.includes(inputValue);
+    },
+  });
+
+  // connect() takes the service directly
   const api = createMemo(() =>
-    zagTagsInput.connect(state, send, normalizeProps)
+    tagsInput.connect(service, normalizeProps)
   );
 
   return (
     <div {...api().getRootProps()} class="tagsInput">
-      <LabelComponent id={api().getLabelProps().for} label={props.label} />
+      <LabelComponent
+        id={api().getLabelProps().for}
+        label={props.label}
+      />
+
       <div
-        classList={{ focused: state.hasTag("focused") }}
         class="input"
+        classList={{ focused: api().focused }}
         {...api().getControlProps()}
       >
         <For each={api().value}>
           {(value, index) => (
             <span {...api().getItemProps({ index: index(), value })}>
-              <div {...api().getItemPreviewProps({ index: index(), value })}>
+              <div
+                {...api().getItemPreviewProps({ index: index(), value })}
+              >
                 <span>{value}</span>
                 <button
-                  {...api().getItemDeleteTriggerProps({ index: index(), value })}
+                  type="button"
+                  {...api().getItemDeleteTriggerProps({
+                    index: index(),
+                    value,
+                  })}
                 >
                   &#x2715;
                 </button>
               </div>
-              <input {...api().getItemInputProps({ index: index(), value })} />
+
+              <input
+                {...api().getItemInputProps({
+                  index: index(),
+                  value,
+                })}
+              />
             </span>
           )}
         </For>
-        <input placeholder="Add tag..." {...api().getInputProps()} />
-        <input type="hidden" name={merged.name} value={api().value.join(",")} />
+
+        <input
+          placeholder={props.placeholder}
+          {...api().getInputProps()}
+        />
+
+        <input
+          type="hidden"
+          name={merged.name}
+          value={api().value.join(",")}
+        />
       </div>
     </div>
   );
