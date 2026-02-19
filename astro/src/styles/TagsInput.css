@@ -36,7 +36,7 @@
 
   [data-scope="tags-input"] {
     &[data-part="item"] {
-      @apply bg-secondary hover:bg-secondary-dark hover:border-secondary-contrast inline-block rounded-full border-2 px-3 py-1 hover:cursor-pointer;
+      @apply bg-secondary hover:bg-secondary-dark hover:border-secondary-contrast inline-block rounded-full border-2 px-3 mr-1 hover:cursor-pointer;
     }
     &[data-part="item-delete-trigger"] {
       @apply hover:text-red-700 hover:cursor-pointer hover:scale-175 hover:rounded-full border-none;
