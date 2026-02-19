@@ -1,6 +1,7 @@
 import { type Accessor, type Setter } from "solid-js";
 
 export interface RecipeInterface {
+  slug: string;
   status: string;
   id: number;
   title: string;
