@@ -238,7 +238,7 @@ export default function RecipeForm(props: {
             </For>
           </div>
         </Show>
-        <div class="p-3 py-5 sm:p-5 md:space-y-3">
+        <div class="p-3 py-5 sm:p-5 md:space-y-3 border-2 border-secondary-dark">
           <div class="flex flex-wrap gap-y-4 pb-4 md:gap-y-6 md:pb-6">
             <div class="w-full">
               <FormInput
