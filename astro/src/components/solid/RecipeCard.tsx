@@ -40,7 +40,7 @@ export default function RecipeCard(props: {
             <Show
               when={recipe.image}
               fallback={
-                <div class="flex h-full w-full items-center justify-center bg-slate-100">
+                <div class="flex h-full w-full items-center justify-center bg-rose-300/40">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
