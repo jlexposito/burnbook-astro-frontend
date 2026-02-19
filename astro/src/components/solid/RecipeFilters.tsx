@@ -35,7 +35,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
   return (
     <div class="sticky top-0 z-10 flex flex-col">
       {/* Sticky search + filter toggle */}
-      <div class="p-4 flex gap-2 items-center">
+      <div class="p-4 px-0 flex gap-2 items-center">
         <div class="relative flex-1">
           <label for="searchRecipes" class="sr-only">
             Search recipes
