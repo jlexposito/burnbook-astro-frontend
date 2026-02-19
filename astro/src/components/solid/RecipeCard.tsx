@@ -26,8 +26,8 @@ export default function RecipeCard(props: {
   });
 
   return (
-    <a href={`/recipes/${recipe.slug}`} class="block h-[240px] sm:h-[220px]">
-      <div class="relative grid h-full grid-cols-3 overflow-hidden rounded-xl bg-white shadow-md">
+    <a href={`/recipes/${recipe.slug}`} class="block h-[240px] sm:h-[220px] hover:border-1 hover:border-secondary-dark rounded-tl-xl hover:shadow-sm overflow-hidden">
+      <div class="relative grid h-full grid-cols-3 overflow-hidden bg-white shadow-md">
         {/* Image */}
         <div class="col-span-1 min-h-full">
           <Show when={recipe.status?.toLowerCase() === "draft"}>
