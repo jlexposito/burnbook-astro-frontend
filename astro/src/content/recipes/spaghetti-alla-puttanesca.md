@@ -2,9 +2,9 @@
 cooking_time: 15
 created: '2026-02-10T18:50:57.484284+01:00'
 id: 165
-image: null
+image: /media/Spaghetti-Puttanesca_64.jpg
 ingredients:
-- id: 2335
+- id: 2510
   ingredient:
     name: tonnarelli o espagueti
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 165
   unit: gr
-- id: 2336
+- id: 2511
   ingredient:
     name: anchoas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '5'
   recipe: 165
   unit: unit
-- id: 2337
+- id: 2512
   ingredient:
     name: diente de ajo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 165
   unit: unit
-- id: 2338
+- id: 2513
   ingredient:
     name: alcaparras
     prefix: saladas
@@ -36,7 +36,7 @@ ingredients:
   quantity: '4'
   recipe: 165
   unit: teaspoon
-- id: 2339
+- id: 2514
   ingredient:
     name: chile
     prefix: pequeño fresco rojo
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 165
   unit: unit
-- id: 2340
+- id: 2515
   ingredient:
     name: perejil
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '25'
   recipe: 165
   unit: gr
-- id: 2341
+- id: 2516
   ingredient:
     name: aceitunas
     prefix: de Gaeta
@@ -60,7 +60,7 @@ ingredients:
   quantity: '70'
   recipe: 165
   unit: gr
-- id: 2342
+- id: 2517
   ingredient:
     name: tomates cherry
     prefix: lata de
@@ -78,7 +78,7 @@ tags:
 - vegetariano
 - cocina italiana
 title: Spaghetti Alla Puttanesca
-updated: '2026-02-19T23:19:13.370583+01:00'
+updated: '2026-02-21T14:16:48.253810+01:00'
 ---
 1. Cocina la pasta (tonnarelli o espagueti) según las instrucciones del paquete hasta que esté al dente. Guarda un poco del agua de cocción.
 2. Mientras la pasta se cuece, prepara la salsa. Pela y pica finamente el diente de ajo y el chile rojo fresco. Desala las alcaparras si es necesario y pícalas ligeramente. Pica las anchoas (si las usas) y las aceitunas de Gaeta. Pica el perejil fresco.
