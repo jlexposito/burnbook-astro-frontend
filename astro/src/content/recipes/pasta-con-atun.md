@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-02-04T00:13:56.854530+01:00'
 id: 148
-image: null
+image: /media/macarrones-con-atun.jpg
 ingredients:
-- id: 1907
+- id: 2465
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '3'
   recipe: 148
   unit: tablespoon
-- id: 1908
+- id: 2466
   ingredient:
     name: cebolla roja
     prefix: media finamente picada
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 148
   unit: unit
-- id: 1909
+- id: 2467
   ingredient:
     name: ajo
     prefix: finamente picados
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 148
   unit: unit
-- id: 1910
+- id: 2468
   ingredient:
     name: anchoas
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 148
   unit: unit
-- id: 1911
+- id: 2469
   ingredient:
     name: alcaparras
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 148
   unit: tablespoon
-- id: 1912
+- id: 2470
   ingredient:
     name: aceitunas
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 148
   unit: tablespoon
-- id: 1913
+- id: 2471
   ingredient:
     name: guindilla
     prefix: una pizca de
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 148
   unit: unit
-- id: 1914
+- id: 2472
   ingredient:
     name: tomates
     prefix: una lata de
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 148
   unit: unit
-- id: 1915
+- id: 2473
   ingredient:
     name: sal
     prefix: una pizca de
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 148
   unit: unit
-- id: 1916
+- id: 2474
   ingredient:
     name: pasta
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: suficiente
   recipe: 148
   unit: unit
-- id: 1917
+- id: 2475
   ingredient:
     name: atún
     prefix: una lata de
@@ -92,15 +92,15 @@ ingredients:
   quantity: '1'
   recipe: 148
   unit: unit
-- id: 1918
+- id: 2476
   ingredient:
     name: colatura o salsa de pescado
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 148
   unit: tablespoon
-- id: 1919
+- id: 2477
   ingredient:
     name: perejil
     prefix: finamente picado
@@ -111,14 +111,14 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DT0tpRuDTA9/
 servings: 2
-status: Draft
+status: New
 tags:
 - salsa
 - pescado
 - cena
 - pasta
 title: Pasta con atún
-updated: '2026-02-04T00:13:56.854576+01:00'
+updated: '2026-02-21T13:40:29.613241+01:00'
 ---
 1. En 3 cucharadas de aceite de oliva, fríe media cebolla roja finamente picada a fuego lento hasta que esté blanda.
 2. Añade 2 dientes de ajo finamente picados, 3 anchoas, 1 cucharada de alcaparras, 2 cucharadas de aceitunas y una pizca de guindilla, y fríe durante otros 2 minutos.
