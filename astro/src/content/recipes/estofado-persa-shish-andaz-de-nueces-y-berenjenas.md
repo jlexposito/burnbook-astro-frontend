@@ -2,9 +2,9 @@
 cooking_time: 40
 created: '2026-02-21T14:23:48.544458+01:00'
 id: 194
-image: null
+image: /media/Shish-Andaz-22-scaled.jpg
 ingredients:
-- id: 2550
+- id: 2584
   ingredient:
     name: berenjenas
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: '3'
   recipe: 194
   unit: unit
-- id: 2551
+- id: 2585
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 194
   unit: tablespoon
-- id: 2552
+- id: 2586
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -28,15 +28,15 @@ ingredients:
   quantity: '4'
   recipe: 194
   unit: tablespoon
-- id: 2553
+- id: 2587
   ingredient:
-    name: cebolla
+    name: Cebolla
     prefix: grande
   optional: false
   quantity: '1'
   recipe: 194
   unit: unit
-- id: 2554
+- id: 2588
   ingredient:
     name: nueces
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '300'
   recipe: 194
   unit: gr
-- id: 2555
+- id: 2589
   ingredient:
     name: canela
     prefix: ''
@@ -52,15 +52,15 @@ ingredients:
   quantity: '1'
   recipe: 194
   unit: teaspoon
-- id: 2556
+- id: 2590
   ingredient:
-    name: pimienta negra
+    name: Pimienta negra
     prefix: recién molida
   optional: false
   quantity: '0.5'
   recipe: 194
   unit: teaspoon
-- id: 2557
+- id: 2591
   ingredient:
     name: cúrcuma
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '0.5'
   recipe: 194
   unit: teaspoon
-- id: 2558
+- id: 2592
   ingredient:
     name: pasta de tomate
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '2'
   recipe: 194
   unit: tablespoon
-- id: 2559
+- id: 2593
   ingredient:
     name: melaza de granada
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '4'
   recipe: 194
   unit: tablespoon
-- id: 2560
+- id: 2594
   ingredient:
     name: cubitos de hielo
     prefix: ''
@@ -92,15 +92,15 @@ ingredients:
   quantity: '200'
   recipe: 194
   unit: gr
-- id: 2561
+- id: 2595
   ingredient:
     name: arroz
     prefix: para acompañar
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 194
   unit: unit
-- id: 2562
+- id: 2596
   ingredient:
     name: agua
     prefix: fría
@@ -111,13 +111,13 @@ ingredients:
 references:
 - https://bakinghermann.com/persian-shish-andaz-rich-walnut-and-aubergine-stew/
 servings: 2
-status: Draft
+status: New
 tags:
 - cena
 - vegetariano
 - cocina persa
 title: Estofado persa Shish Andaz de nueces y berenjenas
-updated: '2026-02-21T14:23:48.546931+01:00'
+updated: '2026-02-21T14:28:17.006059+01:00'
 ---
 1. Pela las berenjenas en tiras alternas, luego córtalas en cubos de 2 cm y transfiérelas a un bol grande. Espolvorea con 1 cucharada (14g) de sal y mezcla bien con las manos para distribuir la sal de manera uniforme. Viértelas en un colador y colócalo sobre el bol utilizado para recoger los jugos. Reserva.
 2. Calienta 2 cucharadas de aceite de oliva en una cazuela grande a fuego medio-bajo. Pela y pica finamente la cebolla y sofríela en el aceite hasta que se vuelva translúcida (8-10 minutos).
