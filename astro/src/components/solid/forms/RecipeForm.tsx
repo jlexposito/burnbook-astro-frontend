@@ -274,7 +274,7 @@ export default function RecipeForm(props: {
               <div class="w-full md:w-1/3">
                 <SelectInput
                   label="Estado"
-                  name="state"
+                  name="status"
                   initialValue={selectedStatusValue()}
                   classes={"text-center justify-center"}
                   required={true}
