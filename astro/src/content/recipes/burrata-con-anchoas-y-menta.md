@@ -2,9 +2,9 @@
 cooking_time: 5
 created: '2026-02-13T21:26:34.435484+01:00'
 id: 177
-image: null
+image: /media/burrata_menta_anchoas.png
 ingredients:
-- id: 2250
+- id: 2634
   ingredient:
     name: queso burrata
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 177
   unit: unit
-- id: 2251
+- id: 2635
   ingredient:
     name: anchoas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 177
   unit: unit
-- id: 2252
+- id: 2636
   ingredient:
     name: menta
     prefix: fresca
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 177
   unit: unit
-- id: 2253
+- id: 2637
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -41,10 +41,10 @@ references:
 servings: 2
 status: New
 tags:
-- cena
 - mediterráneo
+- aperitivo
 title: Burrata con Anchoas y Menta
-updated: '2026-02-13T22:56:07.621080+01:00'
+updated: '2026-02-21T14:44:29.974854+01:00'
 ---
 1. Coloca el queso burrata en un plato.
 2. Cubre con las anchoas.
