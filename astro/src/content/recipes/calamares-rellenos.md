@@ -4,7 +4,7 @@ created: '2025-12-16T11:10:02.938068+01:00'
 id: 88
 image: /media/calamares-rellenos.jpeg
 ingredients:
-- id: 2518
+- id: 2534
   ingredient:
     name: calamares
     prefix: limpios
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 88
   unit: gr
-- id: 2519
+- id: 2535
   ingredient:
     name: Cebollas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 88
   unit: unit
-- id: 2520
+- id: 2536
   ingredient:
     name: tomates
     prefix: rallados
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 88
   unit: unit
-- id: 2521
+- id: 2537
   ingredient:
     name: hoja de laurel
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: unit
-- id: 2522
+- id: 2538
   ingredient:
     name: botifarra
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '300'
   recipe: 88
   unit: gr
-- id: 2523
+- id: 2539
   ingredient:
     name: huevo
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: unit
-- id: 2524
+- id: 2540
   ingredient:
     name: miga de pan
     prefix: empapada en leche
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: unit
-- id: 2525
+- id: 2541
   ingredient:
     name: ajo
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: unit
-- id: 2526
+- id: 2542
   ingredient:
     name: perejil
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: unit
-- id: 2527
+- id: 2543
   ingredient:
     name: fumet de pescado
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: l
-- id: 2528
+- id: 2544
   ingredient:
     name: harina
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '50'
   recipe: 88
   unit: gr
-- id: 2529
+- id: 2545
   ingredient:
     name: Sal
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: teaspoon
-- id: 2530
+- id: 2546
   ingredient:
     name: pimienta
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 88
   unit: teaspoon
-- id: 2531
+- id: 2547
   ingredient:
     name: frutos secos
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '50'
   recipe: 88
   unit: gr
-- id: 2532
+- id: 2548
   ingredient:
     name: chocolate
     prefix: una pizca de
@@ -124,7 +124,7 @@ ingredients:
   quantity: '10'
   recipe: 88
   unit: gr
-- id: 2533
+- id: 2549
   ingredient:
     name: vino blanco
     prefix: ''
@@ -137,9 +137,12 @@ references:
 servings: 4
 status: New
 tags:
+- pescado
+- cena
+- comida
 - cocina catalana
 title: Calamares rellenos
-updated: '2026-02-21T14:18:01.262472+01:00'
+updated: '2026-02-21T14:18:33.490437+01:00'
 ---
 1. Para el relleno, mezcla la botifarra con la miga de pan empapada en leche, el huevo, perejil picado, sal, pimienta y los recortes y patas de los calamares.
 2. Dale la vuelta a los calamares para que no se abran mientras se cuecen y rellénalos. Con el resto de la masa, haz albóndigas.
