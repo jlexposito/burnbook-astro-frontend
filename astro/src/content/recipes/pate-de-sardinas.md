@@ -2,9 +2,9 @@
 cooking_time: 5
 created: '2026-02-08T16:12:55.254839+01:00'
 id: 158
-image: null
+image: /media/pate_de_sardinas.jpg
 ingredients:
-- id: 2002
+- id: 2624
   ingredient:
     name: sardinas
     prefix: en aceite de oliva virgen extra
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 158
   unit: unit
-- id: 2003
+- id: 2625
   ingredient:
     name: huevos
     prefix: cocidos
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 158
   unit: unit
-- id: 2004
+- id: 2626
   ingredient:
     name: mantequilla
     prefix: a temperatura ambiente
@@ -28,7 +28,7 @@ ingredients:
   quantity: '3'
   recipe: 158
   unit: tablespoon
-- id: 2005
+- id: 2627
   ingredient:
     name: cebolla
     prefix: muy picada
@@ -36,7 +36,7 @@ ingredients:
   quantity: '0.25'
   recipe: 158
   unit: unit
-- id: 2006
+- id: 2628
   ingredient:
     name: perejil
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 158
   unit: teaspoon
-- id: 2007
+- id: 2629
   ingredient:
     name: sal
     prefix: pizca de
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 158
   unit: teaspoon
-- id: 2008
+- id: 2630
   ingredient:
     name: pimienta
     prefix: al gusto
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 158
   unit: teaspoon
-- id: 2009
+- id: 2631
   ingredient:
     name: limón
     prefix: ''
@@ -68,15 +68,15 @@ ingredients:
   quantity: '0.5'
   recipe: 158
   unit: unit
-- id: 2010
+- id: 2632
   ingredient:
-    name: mostaza
+    name: Mostaza
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 158
   unit: tablespoon
-- id: 2011
+- id: 2633
   ingredient:
     name: queso crema
     prefix: ''
@@ -87,13 +87,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DUTatUCDdCK/
 servings: 2
-status: Draft
+status: New
 tags:
 - fácil
 - rápido
 - aperitivo
 title: Paté de sardinas
-updated: '2026-02-08T16:12:55.255024+01:00'
+updated: '2026-02-21T14:39:12.202910+01:00'
 ---
 1. Escurre las sardinas y añádelas a un bol con la mantequilla. Machácalas con un tenedor hasta conseguir una crema.
 2. Añade el resto de ingredientes y mezcla bien hasta integrar.
