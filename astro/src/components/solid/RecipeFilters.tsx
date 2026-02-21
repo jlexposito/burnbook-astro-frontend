@@ -72,8 +72,8 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
       <div
         class={`overflow-hidden border rounded-sm bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
           props.open
-            ? "max-h-[500px] opacity-100 translate-y-1 pointer-events-auto"
-            : "max-h-0 opacity-0 translate-y-0 pointer-events-none"
+            ? "max-h-[500px] opacity-100 pointer-events-auto"
+            : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
         <div class="p-4 space-y-4 max-h-[500px] overflow-y-auto">
