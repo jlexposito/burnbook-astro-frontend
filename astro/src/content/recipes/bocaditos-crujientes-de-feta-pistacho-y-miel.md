@@ -2,9 +2,9 @@
 cooking_time: 6
 created: '2025-12-16T09:19:46.883503+01:00'
 id: 85
-image: null
+image: /media/bocados_de_queso_y_feta.jpeg
 ingredients:
-- id: 1067
+- id: 2457
   ingredient:
     name: obleas de arroz
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 85
   unit: unit
-- id: 1068
+- id: 2458
   ingredient:
     name: feta
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '120'
   recipe: 85
   unit: gr
-- id: 1069
+- id: 2459
   ingredient:
     name: pistachos
     prefix: picados
@@ -28,15 +28,15 @@ ingredients:
   quantity: '2'
   recipe: 85
   unit: tablespoon
-- id: 1070
+- id: 2460
   ingredient:
-    name: miel
+    name: Miel
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 85
   unit: teaspoon
-- id: 1071
+- id: 2461
   ingredient:
     name: limón
     prefix: ralladura de
@@ -44,7 +44,7 @@ ingredients:
   quantity: 1/4
   recipe: 85
   unit: unit
-- id: 1072
+- id: 2462
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 85
   unit: teaspoon
-- id: 1073
+- id: 2463
   ingredient:
     name: huevo
     prefix: ''
@@ -60,9 +60,9 @@ ingredients:
   quantity: '1'
   recipe: 85
   unit: unit
-- id: 1074
+- id: 2464
   ingredient:
-    name: AOVE
+    name: Aove
     prefix: ''
   optional: false
   quantity: '1'
@@ -71,13 +71,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DSH8PAfDCaZ/
 servings: 12
-status: Draft
+status: New
 tags:
 - vegetariano
 - fácil
 - aperitivo
 title: Bocaditos crujientes de feta, pistacho y miel
-updated: '2025-12-16T09:19:46.883672+01:00'
+updated: '2026-02-21T13:37:06.178994+01:00'
 ---
 1. **Para el relleno:** Mezcla el queso feta desmenuzado con los pistachos picados, la miel, la ralladura de limón y la pimienta negra. Asegúrate de obtener una textura firme con trocitos.
 2. **Para el barnizado de huevo:** Bate el huevo con 1 cucharadita de AOVE (Aceite de Oliva Virgen Extra). Esta mezcla servirá para hidratar, sellar y dorar los bocaditos.
