@@ -35,7 +35,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
   return (
     <div class="sticky top-0 z-10 flex flex-col">
       {/* Sticky search + filter toggle */}
-      <div class="p-4 px-0 flex gap-2 items-center">
+      <div class="p-4 pb-1 px-0 flex gap-2 items-center">
         <div class="relative flex-1">
           <label for="searchRecipes" class="sr-only">
             Search recipes
@@ -72,8 +72,8 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
       <div
         class={`overflow-hidden border rounded-sm bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
           props.open
-            ? "max-h-[500px] opacity-100 translate-y-0 pointer-events-auto"
-            : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
+            ? "max-h-[500px] opacity-100 translate-y-1 pointer-events-auto"
+            : "max-h-0 opacity-0 translate-y-0 pointer-events-none"
         }`}
       >
         <div class="p-4 space-y-4 max-h-[500px] overflow-y-auto">
