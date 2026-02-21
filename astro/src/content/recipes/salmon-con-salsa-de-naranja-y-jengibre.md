@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-02-12T20:46:50.386334+01:00'
 id: 172
-image: null
+image: /media/salmon_a_la_naranja.jpg
 ingredients:
-- id: 2161
+- id: 2438
   ingredient:
     name: salmón
     prefix: Lomos de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 172
   unit: unit
-- id: 2162
+- id: 2439
   ingredient:
     name: naranja
     prefix: Para zumo y ralladura
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 172
   unit: unit
-- id: 2163
+- id: 2440
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 172
   unit: tablespoon
-- id: 2164
+- id: 2441
   ingredient:
     name: almidón
     prefix: de maíz, yuca o patata
@@ -36,15 +36,15 @@ ingredients:
   quantity: '1'
   recipe: 172
   unit: teaspoon
-- id: 2165
+- id: 2442
   ingredient:
-    name: jengibre
+    name: Jengibre
     prefix: rallado
   optional: false
   quantity: '0.25'
   recipe: 172
   unit: teaspoon
-- id: 2166
+- id: 2443
   ingredient:
     name: cilantro o cebollino
     prefix: frescas, picadas
@@ -55,12 +55,12 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DUZKj_miBYR/
 servings: 2
-status: Draft
+status: New
 tags:
 - salsa
 - cena
 title: Salmón con salsa de naranja y jengibre
-updated: '2026-02-12T20:46:50.386406+01:00'
+updated: '2026-02-21T13:18:52.270317+01:00'
 ---
 1. Cocina los lomos de salmón hasta que estén en su punto. 
 2. Retira el salmón de la sartén y reserva la grasita. 
