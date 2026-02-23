@@ -1,10 +1,10 @@
 ---
-cooking_time: 20
+cooking_time: 45
 created: '2026-02-08T15:43:11.517552+01:00'
 id: 153
 image: /media/tofu-bbq-skewers.jpg
 ingredients:
-- id: 2683
+- id: 2762
   ingredient:
     name: tofu
     prefix: ahumado o firme, desmenuzado
@@ -12,7 +12,7 @@ ingredients:
   quantity: '360'
   recipe: 153
   unit: gr
-- id: 2684
+- id: 2763
   ingredient:
     name: pasta de tomate
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: tablespoon
-- id: 2685
+- id: 2764
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2686
+- id: 2765
   ingredient:
     name: sal
     prefix: al gusto para las koftas, tomates y salsa
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 153
   unit: teaspoon
-- id: 2687
+- id: 2766
   ingredient:
     name: pimentón
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: teaspoon
-- id: 2688
+- id: 2767
   ingredient:
     name: Comino
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: teaspoon
-- id: 2689
+- id: 2768
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '0.5'
   recipe: 153
   unit: teaspoon
-- id: 2690
+- id: 2769
   ingredient:
     name: cilantro
     prefix: molido
@@ -68,7 +68,7 @@ ingredients:
   quantity: '0.5'
   recipe: 153
   unit: teaspoon
-- id: 2691
+- id: 2770
   ingredient:
     name: harina
     prefix: de garbanzo
@@ -76,7 +76,7 @@ ingredients:
   quantity: '5'
   recipe: 153
   unit: tablespoon
-- id: 2692
+- id: 2771
   ingredient:
     name: cebolla
     prefix: en rodajas
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: unit
-- id: 2693
+- id: 2772
   ingredient:
     name: tomates cherry
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '200'
   recipe: 153
   unit: gr
-- id: 2694
+- id: 2773
   ingredient:
     name: aceite
     prefix: para rociar
@@ -100,7 +100,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: tablespoon
-- id: 2695
+- id: 2774
   ingredient:
     name: perejil
     prefix: fresco, picado
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2696
+- id: 2775
   ingredient:
     name: tahini
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '3'
   recipe: 153
   unit: tablespoon
-- id: 2697
+- id: 2776
   ingredient:
     name: pasta de harissa
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: teaspoon
-- id: 2698
+- id: 2777
   ingredient:
     name: zumo de limón
     prefix: ''
@@ -132,7 +132,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2699
+- id: 2778
   ingredient:
     name: sirope de arce
     prefix: ''
@@ -140,7 +140,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2700
+- id: 2779
   ingredient:
     name: agua
     prefix: para diluir la salsa
@@ -148,7 +148,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: tablespoon
-- id: 2701
+- id: 2780
   ingredient:
     name: pan plano
     prefix: ''
@@ -164,7 +164,7 @@ tags:
 - cena
 - vegetariano
 title: Kebab en Bandeja al Horno
-updated: '2026-02-23T19:28:36.131899+01:00'
+updated: '2026-02-23T22:59:04.759511+01:00'
 ---
 1. En un bol, desmenuza el tofu ahumado o firme. Añade la pasta de tomate, la salsa de soja, la sal (estimada en 3 cucharaditas para todo el plato), el pimentón, el comino, el ajo en polvo, el cilantro molido y la harina de garbanzo. Amasa bien la mezcla (puedes hacerlo en un bol o directamente en la bandeja de horno).
 2. Con la masa, forma un tronco y córtalo en 8 o 9 piezas para obtener las koftas.
