@@ -1,90 +1,91 @@
 ---
-cooking_time: 30
+cooking_time: 20
 created: '2025-12-16T09:14:33.024770+01:00'
 id: 84
-image: null
+image: /media/puerros-con-burrata.jpg
 ingredients:
-- id: 1058
+- id: 2710
   ingredient:
-    name: Puerros
+    name: puerros
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '2'
   recipe: 84
   unit: unit
-- id: 1059
+- id: 2711
   ingredient:
     name: Mantequilla
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 84
-  unit: unit
-- id: 1060
+  unit: tablespoon
+- id: 2712
   ingredient:
-    name: Pimienta negra
+    name: pimienta negra
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 84
   unit: unit
-- id: 1061
+- id: 2713
   ingredient:
-    name: Agua
+    name: agua
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 84
   unit: unit
-- id: 1062
+- id: 2714
   ingredient:
     name: Burrata
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 84
   unit: unit
-- id: 1063
+- id: 2715
   ingredient:
     name: Mayonesa
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '2'
   recipe: 84
-  unit: unit
-- id: 1064
+  unit: tablespoon
+- id: 2716
   ingredient:
     name: Mostaza
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 84
-  unit: unit
-- id: 1065
+  unit: tablespoon
+- id: 2717
   ingredient:
     name: Aove
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '2'
   recipe: 84
-  unit: unit
-- id: 1066
+  unit: tablespoon
+- id: 2718
   ingredient:
     name: Sal
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 84
-  unit: unit
+  unit: teaspoon
 references:
 - https://www.instagram.com/reel/DMLSQJhNYpH/
 servings: 2
-status: Tried
+status: New
 tags:
 - cena
 - vegetariano
+- primero
 title: Puerros caramelizados con base de burrata
-updated: '2026-02-15T14:42:09.198891+01:00'
+updated: '2026-02-23T19:38:45.048988+01:00'
 ---
 1. Lava bien los puerros y retira la parte verde más dura y las capas externas. Córtalos en rodajas finas o a lo largo, según tu preferencia.
 2. En una sartén grande a fuego medio, derrite la mantequilla. Añade los puerros cortados.
