@@ -2,16 +2,17 @@
 cooking_time: 30
 created: '2025-12-16T10:39:31.155877+01:00'
 id: 87
-image: null
+image: /media/escudella_YPfW4Iu.jpg
 ingredients: []
 references:
 - https://www.instagram.com/reel/DSUY5tWiAle/
 servings: 2
-status: Draft
+status: New
 tags:
 - cocina catalana
+- principal
 - navidad
 title: Receta Carn d'Olla y Escudella
-updated: '2025-12-16T10:39:31.155926+01:00'
+updated: '2026-02-23T19:34:25.911782+01:00'
 ---
 Las instrucciones completas para la elaboración de esta receta, incluyendo los ingredientes y las cantidades, se encuentran disponibles en el perfil del usuario.
