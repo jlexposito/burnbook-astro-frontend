@@ -2,9 +2,9 @@
 cooking_time: 20
 created: '2026-02-08T15:43:11.517552+01:00'
 id: 153
-image: null
+image: /media/tofu-bbq-skewers.jpg
 ingredients:
-- id: 2664
+- id: 2683
   ingredient:
     name: tofu
     prefix: ahumado o firme, desmenuzado
@@ -12,7 +12,7 @@ ingredients:
   quantity: '360'
   recipe: 153
   unit: gr
-- id: 2665
+- id: 2684
   ingredient:
     name: pasta de tomate
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: tablespoon
-- id: 2666
+- id: 2685
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2667
+- id: 2686
   ingredient:
     name: sal
     prefix: al gusto para las koftas, tomates y salsa
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 153
   unit: teaspoon
-- id: 2668
+- id: 2687
   ingredient:
     name: pimentón
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: teaspoon
-- id: 2669
+- id: 2688
   ingredient:
     name: Comino
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: teaspoon
-- id: 2670
+- id: 2689
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '0.5'
   recipe: 153
   unit: teaspoon
-- id: 2671
+- id: 2690
   ingredient:
     name: cilantro
     prefix: molido
@@ -68,7 +68,7 @@ ingredients:
   quantity: '0.5'
   recipe: 153
   unit: teaspoon
-- id: 2672
+- id: 2691
   ingredient:
     name: harina
     prefix: de garbanzo
@@ -76,7 +76,7 @@ ingredients:
   quantity: '5'
   recipe: 153
   unit: tablespoon
-- id: 2673
+- id: 2692
   ingredient:
     name: cebolla
     prefix: en rodajas
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: unit
-- id: 2674
+- id: 2693
   ingredient:
     name: tomates cherry
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '200'
   recipe: 153
   unit: gr
-- id: 2675
+- id: 2694
   ingredient:
     name: aceite
     prefix: para rociar
@@ -100,7 +100,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: tablespoon
-- id: 2676
+- id: 2695
   ingredient:
     name: perejil
     prefix: fresco, picado
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2677
+- id: 2696
   ingredient:
     name: tahini
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '3'
   recipe: 153
   unit: tablespoon
-- id: 2678
+- id: 2697
   ingredient:
     name: pasta de harissa
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: teaspoon
-- id: 2679
+- id: 2698
   ingredient:
     name: zumo de limón
     prefix: ''
@@ -132,7 +132,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2680
+- id: 2699
   ingredient:
     name: sirope de arce
     prefix: ''
@@ -140,7 +140,7 @@ ingredients:
   quantity: '1'
   recipe: 153
   unit: tablespoon
-- id: 2681
+- id: 2700
   ingredient:
     name: agua
     prefix: para diluir la salsa
@@ -148,7 +148,7 @@ ingredients:
   quantity: '2'
   recipe: 153
   unit: tablespoon
-- id: 2682
+- id: 2701
   ingredient:
     name: pan plano
     prefix: ''
@@ -164,13 +164,14 @@ tags:
 - cena
 - vegetariano
 title: Kebab en Bandeja al Horno
-updated: '2026-02-23T19:26:06.234502+01:00'
+updated: '2026-02-23T19:28:36.131899+01:00'
 ---
 1. En un bol, desmenuza el tofu ahumado o firme. Añade la pasta de tomate, la salsa de soja, la sal (estimada en 3 cucharaditas para todo el plato), el pimentón, el comino, el ajo en polvo, el cilantro molido y la harina de garbanzo. Amasa bien la mezcla (puedes hacerlo en un bol o directamente en la bandeja de horno).
-2. Con la masa de tofu del paso anterior, forma un tronco y córtalo en 8 o 9 piezas para obtener las koftas.
+2. Con la masa, forma un tronco y córtalo en 8 o 9 piezas para obtener las koftas.
 3. Corta la cebolla en rodajas. Colócala junto con los tomates cherry en la misma bandeja de horno donde están las koftas. Rocía todo generosamente con el aceite (estimado en 2 cucharadas).
 4. Hornea en el horno precalentado a 200°C durante 20 minutos.
 5. Mientras se hornea, prepara la salsa Harissa-Tahini: En un bol, mezcla el tahini, la pasta de harissa, el zumo de limón y el sirope de arce. Añade el agua (estimada en 2 cucharadas) para diluir hasta obtener la consistencia deseada. Ajusta la sal al gusto.
 6. Una vez horneado, retira la bandeja del horno. Mezcla los tomates cherry asados con el perejil fresco picado (estimado en 1 cucharada) y la sal que consideres necesaria.
 7. Para servir, coloca las koftas, los tomates asados y la salsa harissa-tahini sobre pan plano.
 
+_No se proporciona información nutricional en la fuente._
