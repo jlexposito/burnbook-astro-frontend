@@ -1,10 +1,10 @@
 ---
-cooking_time: 12
+cooking_time: 20
 created: '2026-02-04T00:49:28.681097+01:00'
 id: 149
 image: /media/rollitos-crujientes-de-manzana-y-queso-azul_version_1677124870.jpg
 ingredients:
-- id: 2618
+- id: 2838
   ingredient:
     name: papeles de arroz
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '8'
   recipe: 149
   unit: unit
-- id: 2619
+- id: 2839
   ingredient:
     name: manzanas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 149
   unit: unit
-- id: 2620
+- id: 2840
   ingredient:
     name: canela
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: al gusto
   recipe: 149
   unit: unit
-- id: 2621
+- id: 2841
   ingredient:
     name: huevo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 149
   unit: unit
-- id: 2622
+- id: 2842
   ingredient:
     name: leche
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '50'
   recipe: 149
   unit: ml
-- id: 2623
+- id: 2843
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -62,7 +62,7 @@ tags:
 - snack
 - freidora de aire
 title: Crujientes de manzana con papel de arroz
-updated: '2026-02-21T14:37:48.507444+01:00'
+updated: '2026-02-24T18:56:55.589571+01:00'
 ---
 1. Pela y corta las manzanas en cuadrados.
 2. Calienta una sartén y añade la mantequilla, las manzanas y la canela. Cocina a fuego medio durante 6-7 minutos o hasta que estén blanditas.
