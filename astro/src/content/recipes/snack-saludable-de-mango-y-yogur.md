@@ -2,9 +2,9 @@
 cooking_time: 5
 created: '2025-12-11T13:34:42.181179+01:00'
 id: 66
-image: null
+image: /media/mango-mousse.jpg
 ingredients:
-- id: 840
+- id: 2835
   ingredient:
     name: yogur griego
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 66
   unit: tablespoon
-- id: 841
+- id: 2836
   ingredient:
     name: Mango
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 66
   unit: unit
-- id: 842
+- id: 2837
   ingredient:
     name: gelatina
     prefix: sin sabor
@@ -37,7 +37,7 @@ tags:
 - saludable
 - aperitivo
 title: Snack Saludable de Mango y Yogur
-updated: '2025-12-12T00:09:03.895024+01:00'
+updated: '2026-02-24T18:52:04.482914+01:00'
 ---
 En un bol, mezcla el yogur griego con la pulpa de mango. Disuelve la gelatina sin sabor siguiendo las instrucciones del paquete y añádela a la mezcla de yogur y mango. Vierte la preparación en un recipiente individual o molde y refrigera durante al menos 2-3 horas, o hasta que cuaje.
 
@@ -45,4 +45,3 @@ En un bol, mezcla el yogur griego con la pulpa de mango. Disuelve la gelatina si
 ▶️ PROTEÍNA: 10
 ▶️ CARBS: 16
 ▶️ GRASAS: 2
-
