@@ -2,9 +2,9 @@
 cooking_time: 5
 created: '2026-02-10T18:50:36.649070+01:00'
 id: 164
-image: null
+image: /media/salsa-chipotle.jfif
 ingredients:
-- id: 2049
+- id: 2861
   ingredient:
     name: queso fresco batido 0%
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '120'
   recipe: 164
   unit: gr
-- id: 2050
+- id: 2862
   ingredient:
     name: mayonesa
     prefix: light
@@ -20,7 +20,7 @@ ingredients:
   quantity: '120'
   recipe: 164
   unit: gr
-- id: 2051
+- id: 2863
   ingredient:
     name: chiles chipotles
     prefix: de una lata con salsa de adobo
@@ -28,7 +28,7 @@ ingredients:
   quantity: '4'
   recipe: 164
   unit: unit
-- id: 2052
+- id: 2864
   ingredient:
     name: zumo de lima
     prefix: recién exprimido
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 164
   unit: unit
-- id: 2053
+- id: 2865
   ingredient:
     name: ajo
     prefix: diente de
@@ -44,43 +44,43 @@ ingredients:
   quantity: '1'
   recipe: 164
   unit: unit
-- id: 2054
+- id: 2866
   ingredient:
-    name: miel
+    name: Miel
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 164
   unit: tablespoon
-- id: 2055
+- id: 2867
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
-  optional: true
+  optional: false
   quantity: al gusto
   recipe: 164
   unit: unit
-- id: 2056
+- id: 2868
   ingredient:
     name: cilantro
     prefix: ''
-  optional: true
+  optional: false
   quantity: al gusto
   recipe: 164
   unit: unit
-- id: 2057
+- id: 2869
   ingredient:
     name: leche
     prefix: ''
-  optional: true
+  optional: false
   quantity: cantidad necesaria
   recipe: 164
   unit: ml
-- id: 2058
+- id: 2870
   ingredient:
     name: agua
     prefix: ''
-  optional: true
+  optional: false
   quantity: cantidad necesaria
   recipe: 164
   unit: ml
@@ -94,6 +94,6 @@ tags:
 - picante
 - alto en proteína
 title: Salsa chipotle proteica
-updated: '2026-02-10T18:50:36.649248+01:00'
+updated: '2026-02-24T19:06:43.539182+01:00'
 ---
 1. Licúa todos los ingredientes (excepto la leche o el agua) hasta obtener una salsa homogénea. Si deseas una consistencia más fina, añade leche o agua al gusto y vuelve a licuar.
