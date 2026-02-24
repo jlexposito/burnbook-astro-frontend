@@ -32,7 +32,7 @@ export default function RecipeCard(props: {
         <div class="col-span-1 min-h-full">
           <Show when={recipe.status?.toLowerCase() === "draft"}>
             <span class="absolute left-0 bk-accent px-3 py-1 text-xs shadow-md">
-              DRAFT
+              Borrador
             </span>
           </Show>
 
