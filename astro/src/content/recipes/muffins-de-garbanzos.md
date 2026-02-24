@@ -2,25 +2,25 @@
 cooking_time: 25
 created: '2025-12-15T23:38:34.409282+01:00'
 id: 82
-image: null
+image: /media/Fitness_And_Chicness-Receta_Muffins_Chocolate_Sin_Azucar-3.jpg
 ingredients:
-- id: 1023
+- id: 2851
   ingredient:
     name: garbanzos
-    prefix: enlatados, muy bien enjuagados y escurridos
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 82
   unit: unit
-- id: 1024
+- id: 2852
   ingredient:
-    name: mantequilla de cacahuete
-    prefix: natural cremosa
+    name: Mantequilla de cacahuete
+    prefix: ''
   optional: false
   quantity: ½
   recipe: 82
   unit: cup
-- id: 1025
+- id: 2853
   ingredient:
     name: huevos
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '3'
   recipe: 82
   unit: unit
-- id: 1026
+- id: 2854
   ingredient:
     name: sirope de arce
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: 1/3
   recipe: 82
   unit: cup
-- id: 1027
+- id: 2855
   ingredient:
     name: extracto de vainilla
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 82
   unit: teaspoon
-- id: 1028
+- id: 2856
   ingredient:
     name: levadura en polvo
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 82
   unit: teaspoon
-- id: 1029
+- id: 2857
   ingredient:
     name: Sal
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: ¼
   recipe: 82
   unit: teaspoon
-- id: 1030
+- id: 2858
   ingredient:
     name: canela
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: ½
   recipe: 82
   unit: teaspoon
-- id: 1031
+- id: 2859
   ingredient:
     name: pepitas de chocolate
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: al gusto
   recipe: 82
   unit: unit
-- id: 1032
+- id: 2860
   ingredient:
     name: Arándanos
     prefix: ''
@@ -87,13 +87,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/C_tB7ySs3QM/
 servings: 2
-status: New
+status: Draft
 tags:
 - desayuno
 - vegetariano
 - postre
 title: Muffins de Garbanzos
-updated: '2025-12-15T23:49:30.486501+01:00'
+updated: '2026-02-24T18:58:53.149595+01:00'
 ---
 1. Precalienta el horno a 180°C y utiliza moldes para magdalenas o engrásalos adecuadamente para que no se peguen.
 2. En un procesador de alimentos (o una batidora potente), añade todos los ingredientes excepto los complementos y mezcla bien. Si sabes que tu procesador no es muy potente, procesa los ingredientes gradualmente, añadiendo los garbanzos con un huevo y mezclando, seguido del otro huevo, mezcla, etc.
