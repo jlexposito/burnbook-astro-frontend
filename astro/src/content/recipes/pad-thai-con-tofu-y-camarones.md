@@ -4,7 +4,7 @@ created: '2026-02-26T22:33:25.522125+01:00'
 id: 204
 image: null
 ingredients:
-- id: 3184
+- id: 3225
   ingredient:
     name: tofu
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 204
   unit: gr
-- id: 3185
+- id: 3226
   ingredient:
     name: ajo
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 204
   unit: unit
-- id: 3186
+- id: 3227
   ingredient:
     name: chalotas
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 204
   unit: unit
-- id: 3187
+- id: 3228
   ingredient:
     name: Rábanos
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 204
   unit: unit
-- id: 3188
+- id: 3229
   ingredient:
     name: Escamas de chile
     prefix: ''
@@ -44,15 +44,15 @@ ingredients:
   quantity: '1'
   recipe: 204
   unit: teaspoon
-- id: 3189
+- id: 3230
   ingredient:
-    name: gambas
-    prefix: ''
+    name: Gambas
+    prefix: frescas
   optional: false
   quantity: '250'
   recipe: 204
   unit: gr
-- id: 3190
+- id: 3231
   ingredient:
     name: huevos
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '2'
   recipe: 204
   unit: unit
-- id: 3191
+- id: 3232
   ingredient:
     name: Fideos Pad Thai
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '200'
   recipe: 204
   unit: gr
-- id: 3192
+- id: 3233
   ingredient:
     name: Salsa Pad Thai
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '0.5'
   recipe: 204
   unit: cup
-- id: 3193
+- id: 3234
   ingredient:
     name: Tamarindo
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 204
   unit: tablespoon
-- id: 3194
+- id: 3235
   ingredient:
     name: Brotes de soja
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '100'
   recipe: 204
   unit: gr
-- id: 3195
+- id: 3236
   ingredient:
     name: Cacahuetes
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '50'
   recipe: 204
   unit: gr
-- id: 3196
+- id: 3237
   ingredient:
     name: Zumo de lima
     prefix: ''
@@ -113,12 +113,12 @@ references:
 servings: 2
 status: Draft
 tags:
+- cena
 - comida
 - picante
-- principal
 - cocina tailandesa
 title: Pad Thai con Tofu y Camarones
-updated: '2026-02-26T22:36:58.927382+01:00'
+updated: '2026-02-26T22:41:02.484304+01:00'
 ---
 1. Cocina el ajo, las chalotas y las escamas de chile con el tofu.
 2. Agrega las gambas frescas y los huevos a los fideos.
