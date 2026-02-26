@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2025-12-15T23:00:43.283275+01:00'
 id: 77
-image: null
+image: /media/receta_puerros_confitados_1fba3e2c-c8c0-4892-a311-37a96799ee5f.webp
 ingredients:
-- id: 962
+- id: 3098
   ingredient:
     name: puerros
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: '2'
   recipe: 77
   unit: unit
-- id: 963
+- id: 3099
   ingredient:
     name: vinagre
-    prefix: balsámico
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 77
   unit: tablespoon
-- id: 964
+- id: 3100
   ingredient:
     name: Muhammara
     prefix: ''
@@ -33,15 +33,12 @@ references:
 servings: 2
 status: Draft
 tags:
-- salsa
-- cena
-- comida
+- entrante
 - vegetariano
 - saludable
 - vegano
-- fácil
 title: Puerros Glaseados con Balsámico + Muhammara
-updated: '2025-12-15T23:00:43.283463+01:00'
+updated: '2026-02-26T22:25:18.772187+01:00'
 ---
 1. Dorar los puerros.
 2. Glasear los puerros con vinagre balsámico.
