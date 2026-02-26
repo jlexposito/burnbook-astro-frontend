@@ -4,7 +4,7 @@ created: '2026-02-26T22:33:44.845781+01:00'
 id: 205
 image: null
 ingredients:
-- id: 3149
+- id: 3197
   ingredient:
     name: setas Cardo
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: al gusto
   recipe: 205
   unit: unit
-- id: 3150
+- id: 3198
   ingredient:
     name: cebolla
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 205
   unit: unit
-- id: 3151
+- id: 3199
   ingredient:
     name: chipotles
     prefix: en adobo
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 205
   unit: unit
-- id: 3152
+- id: 3200
   ingredient:
     name: salsa de adobo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 205
   unit: tablespoon
-- id: 3153
+- id: 3201
   ingredient:
     name: orégano
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 205
   unit: teaspoon
-- id: 3154
+- id: 3202
   ingredient:
     name: comino
     prefix: molido
@@ -52,7 +52,7 @@ ingredients:
   quantity: '0.5'
   recipe: 205
   unit: teaspoon
-- id: 3155
+- id: 3203
   ingredient:
     name: chile en polvo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 205
   unit: teaspoon
-- id: 3156
+- id: 3204
   ingredient:
     name: tomate
     prefix: triturado
@@ -68,7 +68,7 @@ ingredients:
   quantity: '100'
   recipe: 205
   unit: gr
-- id: 3157
+- id: 3205
   ingredient:
     name: caldo
     prefix: ''
@@ -84,8 +84,9 @@ tags:
 - comida
 - vegetariano
 - cocina mexicana
-title: Setas Cardo Deshilachadas en Salsa de Chipotle
-updated: '2026-02-26T22:33:44.845826+01:00'
+- principal
+title: Pulled setas
+updated: '2026-02-26T22:37:46.266946+01:00'
 ---
 1. Deshilacha las setas Cardo: clava un tenedor por debajo del sombrero y rasca con otro tenedor por todos los lados para crear hilos.
 2. Pica finamente los sombreros y los recortes de setas, y mézclalos.
