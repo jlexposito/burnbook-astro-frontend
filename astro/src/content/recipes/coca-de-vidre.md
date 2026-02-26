@@ -4,7 +4,7 @@ created: '2026-02-25T18:35:37.218969+01:00'
 id: 196
 image: null
 ingredients:
-- id: 2877
+- id: 3025
   ingredient:
     name: Masa de coca o de pizza
     prefix: ''
@@ -12,23 +12,23 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 2878
+- id: 3026
   ingredient:
-    name: Aceite
+    name: aceite
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 2879
+- id: 3027
   ingredient:
-    name: Azúcar
+    name: azúcar
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 2880
+- id: 3028
   ingredient:
     name: Anís
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 2881
+- id: 3029
   ingredient:
     name: Almendras o piñones
     prefix: ''
@@ -52,8 +52,8 @@ tags:
 - vegetariano
 - postre
 - cocina española
-title: Coca de azúcar y anís
-updated: '2026-02-25T18:35:37.219036+01:00'
+title: Coca de vidre
+updated: '2026-02-26T22:10:59.673920+01:00'
 ---
 1. Pinta las masas con aceite.
 2. Esparce azúcar generosamente sobre las masas.
@@ -62,4 +62,3 @@ updated: '2026-02-25T18:35:37.219036+01:00'
 5. En caliente, rocía con anís.
 6. Vuelve a meter en el horno unos minutos para que se evapore el alcohol.
 
-**Información nutricional:** Los valores nutricionales pueden variar según los ingredientes específicos y las cantidades utilizadas.
