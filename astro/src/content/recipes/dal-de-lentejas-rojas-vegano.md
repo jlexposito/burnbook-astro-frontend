@@ -4,7 +4,7 @@ created: '2026-02-26T22:34:16.155103+01:00'
 id: 206
 image: null
 ingredients:
-- id: 3158
+- id: 3206
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -12,160 +12,162 @@ ingredients:
   quantity: '1'
   recipe: 206
   unit: tablespoon
-- id: 3159
+- id: 3207
   ingredient:
     name: cebolla amarilla
-    prefix: grande, troceada
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 206
   unit: unit
-- id: 3160
+- id: 3208
   ingredient:
     name: ajo
-    prefix: picados
+    prefix: ''
   optional: false
   quantity: 6-8
   recipe: 206
   unit: unit
-- id: 3161
+- id: 3209
   ingredient:
     name: jengibre
-    prefix: fresco, pelado y rallado
-  optional: false
-  quantity: '1'
-  recipe: 206
-  unit: tablespoon
-- id: 3162
-  ingredient:
-    name: garam masala
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 206
   unit: tablespoon
-- id: 3163
+- id: 3210
   ingredient:
-    name: cúrcuma
-    prefix: molida
+    name: Garam Masala
+    prefix: ''
+  optional: false
+  quantity: '1'
+  recipe: 206
+  unit: tablespoon
+- id: 3211
+  ingredient:
+    name: cúrcuma molida
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 206
   unit: teaspoon
-- id: 3164
+- id: 3212
   ingredient:
     name: cilantro
-    prefix: molido
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 206
   unit: teaspoon
-- id: 3165
+- id: 3213
   ingredient:
-    name: comino
-    prefix: molido
+    name: comino en polvo
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 206
   unit: teaspoon
-- id: 3166
+- id: 3214
   ingredient:
     name: pimentón
-    prefix: ahumado
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 206
   unit: teaspoon
-- id: 3167
+- id: 3215
   ingredient:
-    name: canela
-    prefix: molida
+    name: canela en polvo
+    prefix: ''
   optional: false
   quantity: ½
   recipe: 206
   unit: teaspoon
-- id: 3168
+- id: 3216
   ingredient:
     name: lentejas rojas
-    prefix: secas, enjuagadas y remojadas (se pueden sustituir por naranjas)
+    prefix: ''
   optional: false
   quantity: 1 ½
   recipe: 206
   unit: cup
-- id: 3169
+- id: 3217
   ingredient:
-    name: tomates
-    prefix: troceados enlatados
+    name: tomates troceados
+    prefix: ''
   optional: false
   quantity: '400'
   recipe: 206
   unit: gr
-- id: 3170
+- id: 3218
   ingredient:
     name: leche de coco
-    prefix: entera
+    prefix: ''
   optional: false
   quantity: '240'
   recipe: 206
   unit: ml
-- id: 3171
+- id: 3219
   ingredient:
-    name: caldo de verduras
+    name: Caldo de verduras
     prefix: ''
   optional: false
   quantity: '3'
   recipe: 206
   unit: cup
-- id: 3172
+- id: 3220
   ingredient:
-    name: sal
-    prefix: al gusto
+    name: Sal
+    prefix: ''
   optional: false
   quantity: ½
   recipe: 206
   unit: teaspoon
-- id: 3173
+- id: 3221
   ingredient:
     name: limón
-    prefix: exprimido
+    prefix: ''
   optional: false
   quantity: ½
   recipe: 206
   unit: unit
-- id: 3174
+- id: 3222
   ingredient:
     name: chile verde
-    prefix: finamente rebanado
-  optional: true
+    prefix: ''
+  optional: false
   quantity: '1'
   recipe: 206
   unit: unit
-- id: 3175
+- id: 3223
   ingredient:
     name: kasuri methi
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 206
   unit: tablespoon
-- id: 3176
+- id: 3224
   ingredient:
     name: naan
-    prefix: vegano casero, como acompañamiento
-  optional: true
-  quantity: ''
+    prefix: ''
+  optional: false
+  quantity: '2'
   recipe: 206
   unit: unit
 references:
 - https://youtu.be/X9XYJN17jZk?si=VnDGaQJe-WBIqxmU
-servings: 2
+servings: 4
 status: Draft
 tags:
 - cena
+- comida
 - vegetariano
 - cocina india
+- principal
 title: Dal de Lentejas Rojas Vegano
-updated: '2026-02-26T22:34:16.155146+01:00'
+updated: '2026-02-26T22:40:36.407092+01:00'
 ---
 1. En una olla grande de fondo grueso, añade el aceite a fuego medio. Una vez caliente, incorpora las cebollas y cocínalas durante 8-20 minutos. Añade el ajo y el jengibre y remueve. Cocina hasta que estén fragantes (otros 1-2 minutos).
 2. Añade todas las especias (desde garam masala hasta canela) y vuelve a remover. Deja cocinar durante 1 minuto, removiendo a menudo, con cuidado de no quemarlas.
