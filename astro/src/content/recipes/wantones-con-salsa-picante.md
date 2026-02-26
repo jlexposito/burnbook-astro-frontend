@@ -4,39 +4,39 @@ created: '2026-02-26T17:45:40.721100+01:00'
 id: 200
 image: null
 ingredients:
-- id: 2929
+- id: 2987
   ingredient:
     name: camarón
-    prefix: picado
+    prefix: ''
   optional: false
   quantity: '120'
   recipe: 200
   unit: gr
-- id: 2930
+- id: 2988
   ingredient:
     name: cerdo
-    prefix: carne picada de
+    prefix: ''
   optional: false
   quantity: '200'
   recipe: 200
   unit: gr
-- id: 2931
+- id: 2989
   ingredient:
     name: cebolletas
-    prefix: picadas
+    prefix: ''
   optional: false
   quantity: '3'
   recipe: 200
   unit: unit
-- id: 2932
+- id: 2990
   ingredient:
-    name: wantón
-    prefix: hojas de
+    name: pasta de wonton
+    prefix: ''
   optional: false
   quantity: '30'
   recipe: 200
   unit: unit
-- id: 2933
+- id: 2991
   ingredient:
     name: maicena
     prefix: ''
@@ -44,15 +44,15 @@ ingredients:
   quantity: '2'
   recipe: 200
   unit: tablespoon
-- id: 2934
+- id: 2992
   ingredient:
     name: agua
-    prefix: (o agua de cocción de los dumplings reservada)
+    prefix: ''
   optional: false
   quantity: '4'
   recipe: 200
   unit: tablespoon
-- id: 2935
+- id: 2993
   ingredient:
     name: salsa de ostras
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 200
   unit: tablespoon
-- id: 2936
+- id: 2994
   ingredient:
     name: salsa de soja ligera
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '3'
   recipe: 200
   unit: tablespoon
-- id: 2937
+- id: 2995
   ingredient:
     name: caldo de pollo en polvo
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 200
   unit: teaspoon
-- id: 2938
+- id: 2996
   ingredient:
     name: azúcar
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1.5'
   recipe: 200
   unit: teaspoon
-- id: 2939
+- id: 2997
   ingredient:
     name: aceite de sésamo
     prefix: ''
@@ -92,15 +92,15 @@ ingredients:
   quantity: '4'
   recipe: 200
   unit: teaspoon
-- id: 2940
+- id: 2998
   ingredient:
-    name: pimienta blanca en polvo
-    prefix: de
+    name: pimienta negra
+    prefix: ''
   optional: false
   quantity: una pizca
   recipe: 200
   unit: unit
-- id: 2941
+- id: 2999
   ingredient:
     name: aceite vegetal
     prefix: ''
@@ -108,31 +108,31 @@ ingredients:
   quantity: '3'
   recipe: 200
   unit: tablespoon
-- id: 2942
+- id: 3000
   ingredient:
     name: ajo
-    prefix: picado
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 200
   unit: teaspoon
-- id: 2943
+- id: 3001
   ingredient:
     name: chile ojo de pájaro
-    prefix: picado
-  optional: true
+    prefix: ''
+  optional: false
   quantity: '1'
   recipe: 200
   unit: unit
-- id: 2944
+- id: 3002
   ingredient:
-    name: aceite de chile
+    name: Aceite de chile
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 200
   unit: tablespoon
-- id: 2945
+- id: 3003
   ingredient:
     name: vinagre negro chino
     prefix: ''
@@ -140,25 +140,27 @@ ingredients:
   quantity: '1'
   recipe: 200
   unit: tablespoon
-- id: 2946
+- id: 3004
   ingredient:
     name: semillas de sésamo
-    prefix: tostadas
+    prefix: ''
   optional: false
   quantity: al gusto
   recipe: 200
   unit: unit
 references:
 - https://www.instagram.com/reel/DSXZ3K1iNDZ/?igsh=MWlzMzYxbzNudjB3
+- https://daigasikfaan.co/chilli-oil-wontons/
 servings: 2
 status: Draft
 tags:
-- salsa
 - cena
+- comida
 - picante
 - cocina china
+- acompañamiento
 title: Wantones con Salsa Picante
-updated: '2026-02-26T17:45:40.721151+01:00'
+updated: '2026-02-26T22:05:36.904590+01:00'
 ---
 1. En un cuenco grande, combina la carne de cerdo picada, los camarones picados y todos los ingredientes del marinado. Mezcla hasta que la mezcla se vuelva pegajosa; esto ayuda a unirlo todo. Deja marinar durante al menos 20 minutos.
 2. Para el método más fácil y rápido de envolver wantones: humedece los bordes de la oblea con agua. Haz una forma de “C” con tu mano izquierda y coloca la oblea encima. Agrega aproximadamente 1 cucharadita de relleno en el centro. Usa una cuchara pequeña para presionar suavemente el relleno hacia abajo en la curva de tu palma, luego pellizca y sella la oblea con tu dedo índice y pulgar. ¡Eso es todo! Repite con el resto.
