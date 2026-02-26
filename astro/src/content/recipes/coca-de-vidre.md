@@ -2,9 +2,9 @@
 cooking_time: 10
 created: '2026-02-25T18:35:37.218969+01:00'
 id: 196
-image: null
+image: /media/coca-de-vidre.avif
 ingredients:
-- id: 3025
+- id: 3030
   ingredient:
     name: Masa de coca o de pizza
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3026
+- id: 3031
   ingredient:
     name: aceite
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3027
+- id: 3032
   ingredient:
     name: azúcar
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3028
+- id: 3033
   ingredient:
     name: Anís
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3029
+- id: 3034
   ingredient:
     name: Almendras o piñones
     prefix: ''
@@ -53,7 +53,7 @@ tags:
 - postre
 - cocina española
 title: Coca de vidre
-updated: '2026-02-26T22:10:59.673920+01:00'
+updated: '2026-02-26T22:13:36.086603+01:00'
 ---
 1. Pinta las masas con aceite.
 2. Esparce azúcar generosamente sobre las masas.
@@ -61,4 +61,3 @@ updated: '2026-02-26T22:10:59.673920+01:00'
 4. Hornea durante 10 minutos o hasta que estén doradas.
 5. En caliente, rocía con anís.
 6. Vuelve a meter en el horno unos minutos para que se evapore el alcohol.
-
