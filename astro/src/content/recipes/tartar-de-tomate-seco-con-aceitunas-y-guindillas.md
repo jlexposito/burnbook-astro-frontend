@@ -4,15 +4,15 @@ created: '2026-02-20T19:26:01.350768+01:00'
 id: 193
 image: /media/tartar-tomate.jpg
 ingredients:
-- id: 2819
+- id: 3049
   ingredient:
     name: aceite de oliva
-    prefix: suave
+    prefix: ''
   optional: false
   quantity: '100'
   recipe: 193
   unit: ml
-- id: 2820
+- id: 3050
   ingredient:
     name: guindillas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: 8-10
   recipe: 193
   unit: unit
-- id: 2821
+- id: 3051
   ingredient:
     name: Tomate seco
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '260'
   recipe: 193
   unit: gr
-- id: 2822
+- id: 3052
   ingredient:
     name: chalota
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 193
   unit: unit
-- id: 2823
+- id: 3053
   ingredient:
     name: yema de huevo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 193
   unit: unit
-- id: 2824
+- id: 3054
   ingredient:
     name: lima
     prefix: ''
@@ -52,15 +52,15 @@ ingredients:
   quantity: '0.5'
   recipe: 193
   unit: unit
-- id: 2825
+- id: 3055
   ingredient:
     name: aceitunas
-    prefix: muertas de Aragón
+    prefix: ''
   optional: false
   quantity: 15-20
   recipe: 193
   unit: unit
-- id: 2826
+- id: 3056
   ingredient:
     name: rama de tomillo
     prefix: ''
@@ -68,55 +68,55 @@ ingredients:
   quantity: '0.5'
   recipe: 193
   unit: unit
-- id: 2827
+- id: 3057
   ingredient:
-    name: mostaza
-    prefix: Dijon
+    name: Mostaza Dijon
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 193
   unit: tablespoon
-- id: 2828
+- id: 3058
   ingredient:
-    name: mostaza
-    prefix: a la antigua
+    name: Mostaza
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 193
   unit: tablespoon
-- id: 2829
+- id: 3059
   ingredient:
-    name: sal
-    prefix: en escamas
+    name: sal en escamas
+    prefix: ''
   optional: false
   quantity: al gusto
   recipe: 193
   unit: unit
-- id: 2830
+- id: 3060
   ingredient:
-    name: pimienta
-    prefix: negra recién molida
+    name: pimienta negra
+    prefix: ''
   optional: false
   quantity: al gusto
   recipe: 193
   unit: unit
-- id: 2831
+- id: 3061
   ingredient:
-    name: pepinillo
-    prefix: encurtido
+    name: pepinillo encurtido
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 193
   unit: unit
-- id: 2832
+- id: 3062
   ingredient:
-    name: cebolletas
-    prefix: encurtidas
+    name: cebolla encurtida
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 193
   unit: unit
-- id: 2833
+- id: 3063
   ingredient:
     name: brotes
     prefix: ''
@@ -124,10 +124,10 @@ ingredients:
   quantity: al gusto
   recipe: 193
   unit: unit
-- id: 2834
+- id: 3064
   ingredient:
-    name: tostas
-    prefix: crujientes
+    name: tostadas
+    prefix: ''
   optional: false
   quantity: '8'
   recipe: 193
@@ -140,8 +140,9 @@ tags:
 - entrante
 - vegetariano
 - picante
+- aperitivo
 title: Tartar de Tomate Seco con Aceitunas y Guindillas
-updated: '2026-02-24T18:50:39.305595+01:00'
+updated: '2026-02-26T22:15:37.442275+01:00'
 ---
 1. Confita las guindillas en aceite de oliva a fuego medio durante 5 minutos.
 2. Deja enfriar y reserva el aceite picante.
