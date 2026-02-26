@@ -4,7 +4,7 @@ created: '2026-02-08T16:12:55.254839+01:00'
 id: 158
 image: /media/pate_de_sardinas.jpg
 ingredients:
-- id: 2624
+- id: 3039
   ingredient:
     name: sardinas
     prefix: en aceite de oliva virgen extra
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 158
   unit: unit
-- id: 2625
+- id: 3040
   ingredient:
     name: huevos
     prefix: cocidos
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 158
   unit: unit
-- id: 2626
+- id: 3041
   ingredient:
     name: mantequilla
     prefix: a temperatura ambiente
@@ -28,7 +28,7 @@ ingredients:
   quantity: '3'
   recipe: 158
   unit: tablespoon
-- id: 2627
+- id: 3042
   ingredient:
     name: cebolla
     prefix: muy picada
@@ -36,7 +36,7 @@ ingredients:
   quantity: '0.25'
   recipe: 158
   unit: unit
-- id: 2628
+- id: 3043
   ingredient:
     name: perejil
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 158
   unit: teaspoon
-- id: 2629
+- id: 3044
   ingredient:
     name: sal
     prefix: pizca de
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 158
   unit: teaspoon
-- id: 2630
+- id: 3045
   ingredient:
     name: pimienta
     prefix: al gusto
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 158
   unit: teaspoon
-- id: 2631
+- id: 3046
   ingredient:
     name: limón
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '0.5'
   recipe: 158
   unit: unit
-- id: 2632
+- id: 3047
   ingredient:
     name: Mostaza
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '2'
   recipe: 158
   unit: tablespoon
-- id: 2633
+- id: 3048
   ingredient:
     name: queso crema
     prefix: ''
@@ -91,9 +91,10 @@ status: New
 tags:
 - fácil
 - rápido
+- merienda
 - aperitivo
 title: Paté de sardinas
-updated: '2026-02-21T14:39:12.202910+01:00'
+updated: '2026-02-26T22:14:12.967220+01:00'
 ---
 1. Escurre las sardinas y añádelas a un bol con la mantequilla. Machácalas con un tenedor hasta conseguir una crema.
 2. Añade el resto de ingredientes y mezcla bien hasta integrar.
