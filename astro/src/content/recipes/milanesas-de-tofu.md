@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-02-26T17:51:29.106449+01:00'
 id: 201
-image: null
+image: /media/milanesitas_de_tofu_1.jpg
 ingredients:
-- id: 2955
+- id: 2979
   ingredient:
     name: tofu
     prefix: firme
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 201
   unit: gr
-- id: 2956
+- id: 2980
   ingredient:
     name: maicena
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '4'
   recipe: 201
   unit: tablespoon
-- id: 2957
+- id: 2981
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 201
   unit: teaspoon
-- id: 2958
+- id: 2982
   ingredient:
     name: Sal
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '0.5'
   recipe: 201
   unit: teaspoon
-- id: 2959
+- id: 2983
   ingredient:
     name: orégano
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 201
   unit: teaspoon
-- id: 2960
+- id: 2984
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 201
   unit: tablespoon
-- id: 2961
+- id: 2985
   ingredient:
     name: queso
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 201
   unit: unit
-- id: 2962
+- id: 2986
   ingredient:
     name: Pan rallado
     prefix: ''
@@ -78,7 +78,7 @@ tags:
 - vegetariano
 - principal
 title: Milanesas de tofu
-updated: '2026-02-26T21:55:53.963814+01:00'
+updated: '2026-02-26T22:00:35.657477+01:00'
 ---
 1. Tritura 200 gr de tofu firme con 4 cucharadas soperas de maicena, 1 cucharadita de ajo en polvo, ½ cucharadita de sal, 1 cucharadita de orégano y 2 cucharadas soperas colmadas de aceite de oliva, hasta conseguir una mezcla densa y granulada.
 2. Haz una bola con la masa y corta 4 porciones iguales.
