@@ -4,7 +4,7 @@ created: '2026-02-26T22:30:36.075457+01:00'
 id: 203
 image: null
 ingredients:
-- id: 3118
+- id: 3127
   ingredient:
     name: Nata para cocinar
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: '150'
   recipe: 203
   unit: ml
-- id: 3119
+- id: 3128
   ingredient:
-    name: Limón
-    prefix: Pequeño
+    name: limón
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 203
   unit: unit
-- id: 3120
+- id: 3129
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -28,15 +28,15 @@ ingredients:
   quantity: '4'
   recipe: 203
   unit: tablespoon
-- id: 3121
+- id: 3130
   ingredient:
-    name: Ajo
+    name: ajo
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 203
   unit: unit
-- id: 3122
+- id: 3131
   ingredient:
     name: Espagueti
     prefix: ''
@@ -44,31 +44,31 @@ ingredients:
   quantity: '200'
   recipe: 203
   unit: gr
-- id: 3123
+- id: 3132
   ingredient:
-    name: Aceite de oliva virgen extra
+    name: aceite de oliva virgen extra
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 203
   unit: tablespoon
-- id: 3124
+- id: 3133
   ingredient:
-    name: Sal en escamas
+    name: sal en escamas
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 203
   unit: unit
-- id: 3125
+- id: 3134
   ingredient:
-    name: Perejil
-    prefix: Fresco
-  optional: true
+    name: perejil
+    prefix: ''
+  optional: false
   quantity: '1'
   recipe: 203
   unit: unit
-- id: 3126
+- id: 3135
   ingredient:
     name: Agua de cocción de la pasta
     prefix: ''
@@ -82,10 +82,12 @@ servings: 2
 status: Draft
 tags:
 - cena
+- comida
 - vegetariano
 - cocina italiana
+- principal
 title: Pasta Cremosa al Limón
-updated: '2026-02-26T22:30:36.075503+01:00'
+updated: '2026-02-26T22:33:17.235615+01:00'
 ---
 1. Hierve una olla de agua con sal para la pasta.
 2. Pica un diente de ajo y sofríelo en una sartén con 2 cucharadas de aceite de oliva virgen extra.
