@@ -4,7 +4,7 @@ created: '2026-02-26T17:27:28.038353+01:00'
 id: 198
 image: null
 ingredients:
-- id: 2963
+- id: 2971
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '60'
   recipe: 198
   unit: ml
-- id: 2964
+- id: 2972
   ingredient:
     name: ajo
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '0.5'
   recipe: 198
   unit: unit
-- id: 2965
+- id: 2973
   ingredient:
     name: agua
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '60'
   recipe: 198
   unit: ml
-- id: 2966
+- id: 2974
   ingredient:
     name: harina de trigo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '270'
   recipe: 198
   unit: gr
-- id: 2967
+- id: 2975
   ingredient:
     name: Levadura química
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '7'
   recipe: 198
   unit: gr
-- id: 2968
+- id: 2976
   ingredient:
     name: Perejil
     prefix: fresco
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 198
   unit: unit
-- id: 2969
+- id: 2977
   ingredient:
     name: Sal
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '5.5'
   recipe: 198
   unit: gr
-- id: 2970
+- id: 2978
   ingredient:
     name: tofu
     prefix: ''
@@ -73,12 +73,11 @@ references:
 servings: 4
 status: Draft
 tags:
-- comida
 - vegetariano
 - cocina india
 - acompañamiento
 title: Naan Casero de Tofu Proteíco
-updated: '2026-02-26T21:57:28.693856+01:00'
+updated: '2026-02-26T21:59:13.583345+01:00'
 ---
 1. Tritura el tofu sedoso con 30 ml de aceite de oliva hasta que quede totalmente liso.
 2. En un bol, mezcla la harina de trigo, la levadura química y 5 gramos de sal.
