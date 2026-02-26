@@ -4,7 +4,7 @@ created: '2026-02-26T17:18:39.412723+01:00'
 id: 197
 image: null
 ingredients:
-- id: 2882
+- id: 3005
   ingredient:
     name: aceite vegetal o ghee
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: 4-5
   recipe: 197
   unit: tablespoon
-- id: 2883
+- id: 3006
   ingredient:
     name: hojas de laurel
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 197
   unit: unit
-- id: 2884
+- id: 3007
   ingredient:
     name: vainas de cardamomo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '3'
   recipe: 197
   unit: unit
-- id: 2885
+- id: 3008
   ingredient:
     name: clavos de olor enteros
     prefix: ''
@@ -36,23 +36,23 @@ ingredients:
   quantity: '3'
   recipe: 197
   unit: unit
-- id: 2886
+- id: 3009
   ingredient:
     name: rama de canela
-    prefix: de 3 pulgadas
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 197
   unit: unit
-- id: 2887
+- id: 3010
   ingredient:
     name: cebollas blancas
-    prefix: medianas, en rodajas finas
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 197
   unit: unit
-- id: 2888
+- id: 3011
   ingredient:
     name: pasta de ajo y jengibre
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '3'
   recipe: 197
   unit: unit
-- id: 2889
+- id: 3012
   ingredient:
     name: cúrcuma
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1.25'
   recipe: 197
   unit: teaspoon
-- id: 2890
+- id: 3013
   ingredient:
     name: comino en polvo
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1.5'
   recipe: 197
   unit: teaspoon
-- id: 2891
+- id: 3014
   ingredient:
     name: cilantro en polvo
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '2'
   recipe: 197
   unit: teaspoon
-- id: 2892
+- id: 3015
   ingredient:
     name: guindilla en polvo
     prefix: ''
@@ -92,23 +92,23 @@ ingredients:
   quantity: '1'
   recipe: 197
   unit: teaspoon
-- id: 2893
+- id: 3016
   ingredient:
-    name: pollo
-    prefix: muslos o contramuslos sin piel
+    name: Contramuslos de pollo
+    prefix: ''
   optional: false
   quantity: '800'
   recipe: 197
   unit: gr
-- id: 2894
+- id: 3017
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: '1.25'
   recipe: 197
   unit: teaspoon
-- id: 2895
+- id: 3018
   ingredient:
     name: chiles verdes tailandeses
     prefix: ''
@@ -116,31 +116,31 @@ ingredients:
   quantity: '4'
   recipe: 197
   unit: unit
-- id: 2896
+- id: 3019
   ingredient:
     name: cilantro fresco
-    prefix: un manojo
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 197
   unit: unit
-- id: 2897
+- id: 3020
   ingredient:
     name: menta fresca
-    prefix: un manojo pequeño
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 197
   unit: unit
-- id: 2898
+- id: 3021
   ingredient:
-    name: anacardos
+    name: Anacardos
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 197
   unit: unit
-- id: 2899
+- id: 3022
   ingredient:
     name: yogur
     prefix: ''
@@ -148,19 +148,19 @@ ingredients:
   quantity: 2-3
   recipe: 197
   unit: tablespoon
-- id: 2900
+- id: 3023
   ingredient:
-    name: garam masala
+    name: Garam Masala
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 197
   unit: teaspoon
-- id: 2901
+- id: 3024
   ingredient:
     name: cebollas fritas crujientes
-    prefix: para decorar
-  optional: true
+    prefix: ''
+  optional: false
   quantity: '1'
   recipe: 197
   unit: unit
@@ -172,8 +172,9 @@ tags:
 - cena
 - picante
 - cocina india
-title: Curry de Pollo
-updated: '2026-02-26T17:18:39.412780+01:00'
+- principal
+title: Pollo al curry de cilantro
+updated: '2026-02-26T22:10:00.518961+01:00'
 ---
 1. Calienta el aceite vegetal o ghee en una sartén grande. Añade las hojas de laurel, las vainas de cardamomo, los clavos enteros y la rama de canela. Fríe durante 30 segundos hasta que estén fragantes.
 2. Añade las cebollas con una pizca de sal y cocina hasta que estén suaves y doradas.
