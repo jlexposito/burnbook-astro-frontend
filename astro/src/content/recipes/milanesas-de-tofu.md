@@ -4,7 +4,7 @@ created: '2026-02-26T17:51:29.106449+01:00'
 id: 201
 image: null
 ingredients:
-- id: 2947
+- id: 2955
   ingredient:
     name: tofu
     prefix: firme
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 201
   unit: gr
-- id: 2948
+- id: 2956
   ingredient:
     name: maicena
     prefix: ''
@@ -20,23 +20,23 @@ ingredients:
   quantity: '4'
   recipe: 201
   unit: tablespoon
-- id: 2949
+- id: 2957
   ingredient:
-    name: ajo
-    prefix: en polvo
+    name: ajo en polvo
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 201
   unit: teaspoon
-- id: 2950
+- id: 2958
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 201
   unit: teaspoon
-- id: 2951
+- id: 2959
   ingredient:
     name: orégano
     prefix: ''
@@ -44,26 +44,26 @@ ingredients:
   quantity: '1'
   recipe: 201
   unit: teaspoon
-- id: 2952
+- id: 2960
   ingredient:
     name: aceite de oliva
-    prefix: colmadas
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 201
   unit: tablespoon
-- id: 2953
+- id: 2961
   ingredient:
     name: queso
-    prefix: vegano
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 201
   unit: unit
-- id: 2954
+- id: 2962
   ingredient:
-    name: pan
-    prefix: rallado
+    name: Pan rallado
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 201
@@ -76,8 +76,9 @@ tags:
 - cena
 - comida
 - vegetariano
-title: Nuggets de Tofu y Queso Vegano
-updated: '2026-02-26T17:51:29.106498+01:00'
+- principal
+title: Milanesas de tofu
+updated: '2026-02-26T21:55:53.963814+01:00'
 ---
 1. Tritura 200 gr de tofu firme con 4 cucharadas soperas de maicena, 1 cucharadita de ajo en polvo, ½ cucharadita de sal, 1 cucharadita de orégano y 2 cucharadas soperas colmadas de aceite de oliva, hasta conseguir una mezcla densa y granulada.
 2. Haz una bola con la masa y corta 4 porciones iguales.
