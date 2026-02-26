@@ -2,41 +2,41 @@
 cooking_time: 40
 created: '2026-02-06T20:38:37.097031+01:00'
 id: 152
-image: null
+image: /media/Tom-Kha-Gai-tall2-9-1025x1536.webp
 ingredients:
-- id: 1933
+- id: 3077
   ingredient:
-    name: AOVE
+    name: aceite de oliva virgen extra
     prefix: ''
   optional: false
   quantity: '15'
   recipe: 152
   unit: ml
-- id: 1934
+- id: 3078
   ingredient:
     name: cebolla
-    prefix: dulce
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 152
   unit: unit
-- id: 1935
+- id: 3079
   ingredient:
-    name: ajo
-    prefix: dientes de
+    name: dientes de ajo
+    prefix: ''
   optional: false
   quantity: '4'
   recipe: 152
   unit: unit
-- id: 1936
+- id: 3080
   ingredient:
     name: jengibre
-    prefix: trozo del tamaño de un pulgar de
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 152
   unit: unit
-- id: 1937
+- id: 3081
   ingredient:
     name: guindilla roja
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '0.5'
   recipe: 152
   unit: unit
-- id: 1938
+- id: 3082
   ingredient:
     name: ralladura de lima
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 152
   unit: unit
-- id: 1939
+- id: 3083
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '30'
   recipe: 152
   unit: ml
-- id: 1940
+- id: 3084
   ingredient:
     name: vinagre de arroz
     prefix: ''
@@ -68,15 +68,15 @@ ingredients:
   quantity: '15'
   recipe: 152
   unit: ml
-- id: 1941
+- id: 3085
   ingredient:
     name: pasta de curry rojo tailandés
     prefix: ''
-  optional: true
+  optional: false
   quantity: '15'
   recipe: 152
   unit: gr
-- id: 1942
+- id: 3086
   ingredient:
     name: caldo vegetal
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 152
   unit: l
-- id: 1943
+- id: 3087
   ingredient:
     name: leche de coco
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '400'
   recipe: 152
   unit: ml
-- id: 1944
+- id: 3088
   ingredient:
     name: sirope de agave
     prefix: ''
@@ -100,15 +100,15 @@ ingredients:
   quantity: al gusto
   recipe: 152
   unit: unit
-- id: 1945
+- id: 3089
   ingredient:
-    name: zumo de lima
+    name: Zumo de lima
     prefix: ''
   optional: false
   quantity: '30'
   recipe: 152
   unit: ml
-- id: 1946
+- id: 3090
   ingredient:
     name: setas shiitake
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '200'
   recipe: 152
   unit: gr
-- id: 1947
+- id: 3091
   ingredient:
     name: tofu
     prefix: ''
@@ -124,15 +124,15 @@ ingredients:
   quantity: '150'
   recipe: 152
   unit: gr
-- id: 1948
+- id: 3092
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: al gusto
   recipe: 152
   unit: unit
-- id: 1949
+- id: 3093
   ingredient:
     name: pimienta
     prefix: ''
@@ -140,15 +140,15 @@ ingredients:
   quantity: al gusto
   recipe: 152
   unit: unit
-- id: 1950
+- id: 3094
   ingredient:
     name: cebolleta
-    prefix: tallos verdes picados de
+    prefix: ''
   optional: false
   quantity: al gusto
   recipe: 152
   unit: unit
-- id: 1951
+- id: 3095
   ingredient:
     name: cilantro fresco
     prefix: ''
@@ -156,7 +156,7 @@ ingredients:
   quantity: al gusto
   recipe: 152
   unit: unit
-- id: 1952
+- id: 3096
   ingredient:
     name: aceite de chili tailandés
     prefix: ''
@@ -164,7 +164,7 @@ ingredients:
   quantity: al gusto
   recipe: 152
   unit: unit
-- id: 1953
+- id: 3097
   ingredient:
     name: gajos de lima
     prefix: ''
@@ -181,8 +181,9 @@ tags:
 - vegano
 - cocina thai
 - sopa
+- principal
 title: Tom Kha
-updated: '2026-02-06T20:38:37.097154+01:00'
+updated: '2026-02-26T22:22:05.159257+01:00'
 ---
 1. Pica la cebolla, el ajo, el jengibre y la guindilla.
 2. En una olla, calienta el AOVE a fuego medio y añade la cebolla, el ajo, el jengibre, la guindilla y la ralladura de lima. Sofríe durante 3-5 minutos hasta que los sabores se integren bien.
