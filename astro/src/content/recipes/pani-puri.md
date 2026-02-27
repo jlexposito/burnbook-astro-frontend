@@ -9,8 +9,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- vegano
 - cocina india
+- vegano
 - aperitivo
 title: Pani Puri
 updated: '2025-12-12T00:09:03.883833+01:00'
