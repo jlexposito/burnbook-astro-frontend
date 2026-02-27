@@ -84,7 +84,6 @@ tags:
 - cena
 - comida
 - vegetariano
-- primero
 title: Puerros caramelizados con base de burrata
 updated: '2026-02-27T09:24:07.792163+01:00'
 ---
