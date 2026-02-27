@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-02-10T22:39:03.354025+01:00'
 id: 166
-image: null
+image: /media/butter-chicken-323.jpg
 ingredients:
-- id: 3495
+- id: 3514
   ingredient:
     name: Pechuga de pollo
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 166
   unit: gr
-- id: 3496
+- id: 3515
   ingredient:
     name: yogur griego
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '7.33'
   recipe: 166
   unit: tablespoon
-- id: 3497
+- id: 3516
   ingredient:
     name: ajo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 3498
+- id: 3517
   ingredient:
     name: jengibre
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 3499
+- id: 3518
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 3500
+- id: 3519
   ingredient:
     name: Garam Masala
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: tablespoon
-- id: 3501
+- id: 3520
   ingredient:
     name: cúrcuma
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 3502
+- id: 3521
   ingredient:
     name: pimentón
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 3503
+- id: 3522
   ingredient:
     name: chile en polvo
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 3504
+- id: 3523
   ingredient:
     name: Sal
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 3505
+- id: 3524
   ingredient:
     name: pimienta
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 3506
+- id: 3525
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 3507
+- id: 3526
   ingredient:
     name: cebolla
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: unit
-- id: 3508
+- id: 3527
   ingredient:
     name: pasta de tomate
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: tablespoon
-- id: 3509
+- id: 3528
   ingredient:
     name: tomates troceados
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '1.5'
   recipe: 166
   unit: cup
-- id: 3510
+- id: 3529
   ingredient:
     name: Miel
     prefix: ''
@@ -132,7 +132,7 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 3511
+- id: 3530
   ingredient:
     name: leche
     prefix: ''
@@ -140,15 +140,15 @@ ingredients:
   quantity: '0.5'
   recipe: 166
   unit: cup
-- id: 3512
+- id: 3531
   ingredient:
-    name: Cilantro
-    prefix: fresco
+    name: cilantro fresco
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 166
   unit: unit
-- id: 3513
+- id: 3532
   ingredient:
     name: leche de coco
     prefix: ''
@@ -166,7 +166,7 @@ tags:
 - cocina india
 - principal
 title: Butter chicken casero
-updated: '2026-02-27T09:44:36.500772+01:00'
+updated: '2026-02-27T09:49:37.425516+01:00'
 ---
 1.  **Marinar el Pollo:** Corta la pechuga de pollo en cubos. En un bol grande, mezcla el pollo con el yogur griego sin grasa (para el marinado), el ajo picado (de la sección de pollo), el jengibre picado (de la sección de pollo), el aceite de oliva, el garam masala (de la sección de pollo), la cúrcuma (de la sección de pollo), el pimentón (de la sección de pollo), el chile en polvo (de la sección de pollo), la sal (de la sección de pollo) y la pimienta (de la sección de pollo). Deja marinar mientras preparas la salsa.
 2.  **Preparar la Salsa de Pollo a la Mantequilla:** En una olla grande o sartén profunda, derrite la mantequilla a fuego medio. Añade la cebolla picada y cocina hasta que esté tierna y translúcida, unos 5-7 minutos.
