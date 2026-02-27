@@ -58,7 +58,6 @@ servings: 2
 status: Draft
 tags:
 - entrante
-- plato frío
 title: Gambones con melocotón y lima
 updated: '2026-02-20T19:14:02.849708+01:00'
 ---
