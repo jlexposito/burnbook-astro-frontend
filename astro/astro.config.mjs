@@ -1,7 +1,8 @@
 import Compress from 'astro-compress'
-import { defineConfig } from 'astro/config'import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
+import icon from 'astro-icon'
 import tailwindcss from '@tailwindcss/vite'
-import path from 'path';
+import path from 'path'
 import sitemap from '@astrojs/sitemap'
 import solidJs from '@astrojs/solid-js'
 
@@ -10,12 +11,12 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  
+
   integrations: [
     icon(),
     solidJs(),
     Compress(),
-    sitemap()
+    sitemap(),
   ],
 
   vite: {
@@ -26,7 +27,7 @@ export default defineConfig({
     ],
     resolve: {
       alias: {
-        '@styles': path.resolve('./src/styles'), // adjust path to your styles folder
+        '@styles': path.resolve('./src/styles'),
       },
     },
   },
