@@ -17,7 +17,19 @@ export default defineConfig({
     solidJs(),
     Compress(),
     sitemap({
-      filter: (page) => !page.startsWith('/recipes/') || !page.includes('/edit'),
+      filter: (page) => {
+        // Normalize the page URL to a pathname
+        const pathname = new URL(page, 'https://burnbook.zh0nb.com').pathname
+
+        // Exclude login page(s)
+        if (pathname === '/login' || pathname === '/login/') return false
+
+        // Exclude all /recipes/*/edit pages
+        if (pathname.startsWith('/recipes/') && pathname.includes('/edit')) return false
+
+        // Include everything else
+        return true
+      },
     }),
   ],
 
@@ -29,7 +41,7 @@ export default defineConfig({
     ],
     resolve: {
       alias: {
-        '@styles': path.resolve('./src/styles'),
+        '@styles': path.resolve('./src/styles'), // adjust path to your styles folder
       },
     },
   },
