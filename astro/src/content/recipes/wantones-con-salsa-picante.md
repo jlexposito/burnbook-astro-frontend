@@ -158,7 +158,6 @@ tags:
 - comida
 - picante
 - cocina china
-- acompañamiento
 title: Wantones con Salsa Picante
 updated: '2026-02-26T22:05:36.904590+01:00'
 ---

@@ -75,7 +75,7 @@ status: Draft
 tags:
 - vegetariano
 - cocina india
-- acompañamiento
+- guarnición
 title: Naan Casero de Tofu Proteíco
 updated: '2026-02-26T21:59:13.583345+01:00'
 ---
