@@ -16,7 +16,9 @@ export default defineConfig({
     icon(),
     solidJs(),
     Compress(),
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.startsWith('/recipes/') || !page.includes('/edit'),
+    }),
   ],
 
   vite: {
