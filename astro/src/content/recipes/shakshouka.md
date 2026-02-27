@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.156161+02:00'
 id: 13
 image: /media/20210112_2023411_compressed.jpg
 ingredients:
-- id: 579
+- id: 3622
   ingredient:
     name: cebolla
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 13
   unit: unit
-- id: 580
+- id: 3623
   ingredient:
     name: pan
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 13
   unit: unit
-- id: 581
+- id: 3624
   ingredient:
     name: huevos
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 13
   unit: unit
-- id: 582
+- id: 3625
   ingredient:
     name: shoarma
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 13
   unit: unit
-- id: 583
+- id: 3626
   ingredient:
     name: ajo
     prefix: cabeza de
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 13
   unit: unit
-- id: 584
+- id: 3627
   ingredient:
     name: romero
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 13
   unit: tablespoon
-- id: 585
+- id: 3628
   ingredient:
     name: pimientos
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '2'
   recipe: 13
   unit: unit
-- id: 586
+- id: 3629
   ingredient:
     name: tomates
     prefix: ''
@@ -75,10 +75,10 @@ tags:
 - salado
 - cena
 - comida
+- principal
 title: Shakshouka
-updated: '2024-08-08T01:15:44.053473+02:00'
+updated: '2026-02-27T10:18:48.940532+01:00'
 ---
-
 1. Cortar la cebolla en tiras
 2. Freír la cebolla en una cazuela a fuego lento
 3. Cortar el ajo fino y añadirlo a la cazuela
@@ -89,4 +89,3 @@ updated: '2024-08-08T01:15:44.053473+02:00'
 **Opcional**: 
 
 *  En otra sartén preparar la shoarma. Añadir con el sofrito al final, antes de añadir el huevo.
-
