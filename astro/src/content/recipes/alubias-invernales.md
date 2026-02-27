@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-02-08T16:27:46.288211+01:00'
 id: 161
-image: null
+image: /media/alubias-con-huevo.png
 ingredients:
-- id: 3473
+- id: 3484
   ingredient:
     name: Alubias
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3474
+- id: 3485
   ingredient:
     name: cebolleta
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3475
+- id: 3486
   ingredient:
     name: jengibre
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3476
+- id: 3487
   ingredient:
     name: Sal
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: tablespoon
-- id: 3477
+- id: 3488
   ingredient:
     name: puré de tomate
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: tablespoon
-- id: 3478
+- id: 3489
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '100'
   recipe: 161
   unit: gr
-- id: 3479
+- id: 3490
   ingredient:
     name: huevo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3480
+- id: 3491
   ingredient:
     name: cilantro fresco
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3481
+- id: 3492
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '2'
   recipe: 161
   unit: tablespoon
-- id: 3482
+- id: 3493
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: teaspoon
-- id: 3483
+- id: 3494
   ingredient:
     name: comino molido
     prefix: ''
@@ -95,14 +95,14 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DR1wbhrjKEm/
 servings: 2
-status: Draft
+status: New
 tags:
 - comida
 - invierno
 - fácil
 - principal
 title: Alubias Invernales
-updated: '2026-02-27T09:41:24.308481+01:00'
+updated: '2026-02-27T09:43:33.410984+01:00'
 ---
 1. Corta una cebolleta fina, separa la parte blanca por un lado y la verde por otro.
 2. Corta un poco de jengibre bien fino.
@@ -114,4 +114,3 @@ updated: '2026-02-27T09:41:24.308481+01:00'
 Para la salsa:
 1. Ralla la piel de un limón y añádele unas hojas de cilantro cortadas finas y un chorro de aceite virgen extra y el verde de la cebolleta de antes.
 2. Remueve y añádeselo a las alubias.
-
