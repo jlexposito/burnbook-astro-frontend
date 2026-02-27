@@ -4,7 +4,7 @@ created: '2026-01-14T19:22:42.513567+01:00'
 id: 139
 image: /media/fideos-udon-picantes-chili-oil.jpg
 ingredients:
-- id: 2496
+- id: 3255
   ingredient:
     name: udon
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '400'
   recipe: 139
   unit: gr
-- id: 2497
+- id: 3256
   ingredient:
     name: brócoli
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '100'
   recipe: 139
   unit: gr
-- id: 2498
+- id: 3257
   ingredient:
     name: tempeh
     prefix: frito
@@ -28,7 +28,7 @@ ingredients:
   quantity: '200'
   recipe: 139
   unit: gr
-- id: 2499
+- id: 3258
   ingredient:
     name: verduras
     prefix: para wok
@@ -36,7 +36,7 @@ ingredients:
   quantity: '150'
   recipe: 139
   unit: gr
-- id: 2500
+- id: 3259
   ingredient:
     name: pollo vegano
     prefix: frito
@@ -44,7 +44,7 @@ ingredients:
   quantity: '160'
   recipe: 139
   unit: gr
-- id: 2501
+- id: 3260
   ingredient:
     name: espinacas
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '30'
   recipe: 139
   unit: gr
-- id: 2502
+- id: 3261
   ingredient:
     name: mantequilla de cacahuete
     prefix: en polvo
@@ -60,7 +60,7 @@ ingredients:
   quantity: '60'
   recipe: 139
   unit: gr
-- id: 2503
+- id: 3262
   ingredient:
     name: agua
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '275'
   recipe: 139
   unit: ml
-- id: 2504
+- id: 3263
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '4'
   recipe: 139
   unit: tablespoon
-- id: 2505
+- id: 3264
   ingredient:
     name: sirope de arce
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '2'
   recipe: 139
   unit: tablespoon
-- id: 2506
+- id: 3265
   ingredient:
     name: aceite de chili
     prefix: crujiente
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 139
   unit: tablespoon
-- id: 2507
+- id: 3266
   ingredient:
     name: lima
     prefix: zumo de
@@ -100,7 +100,7 @@ ingredients:
   quantity: '0.5'
   recipe: 139
   unit: unit
-- id: 2508
+- id: 3267
   ingredient:
     name: leche de coco
     prefix: ligera
@@ -108,7 +108,7 @@ ingredients:
   quantity: '250'
   recipe: 139
   unit: ml
-- id: 2509
+- id: 3268
   ingredient:
     name: pasta de curry
     prefix: ''
@@ -122,11 +122,13 @@ servings: 2
 status: New
 tags:
 - cena
+- comida
 - vegano
 - alto en proteína
 - rápido
+- principal
 title: Udon Cremoso con Cacahuete y Chili Crujiente
-updated: '2026-02-21T14:15:52.500056+01:00'
+updated: '2026-02-27T09:19:37.183287+01:00'
 ---
 1.  Mezcla todos los ingredientes para la salsa de cacahuete y reserva.
 2.  Ahora, añade el resto de ingredientes poco a poco a una sartén y cocina a fuego lento con tapa durante unos 5-7 minutos, hasta que el brócoli esté tierno (remueve varias veces entretanto).

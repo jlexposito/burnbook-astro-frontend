@@ -4,15 +4,15 @@ created: '2025-12-18T15:13:01.140633+01:00'
 id: 92
 image: null
 ingredients:
-- id: 1121
+- id: 3244
   ingredient:
     name: carne de olla
-    prefix: Restos de
+    prefix: ''
   optional: false
   quantity: '400'
   recipe: 92
   unit: gr
-- id: 1122
+- id: 3245
   ingredient:
     name: cebolla
     prefix: ''
@@ -20,39 +20,39 @@ ingredients:
   quantity: '1'
   recipe: 92
   unit: unit
-- id: 1123
+- id: 3246
   ingredient:
     name: Placas de canelones
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 92
   unit: unit
-- id: 1124
+- id: 3247
   ingredient:
     name: queso para gratinar
     prefix: ''
-  optional: true
-  quantity: ''
+  optional: false
+  quantity: '300'
   recipe: 92
-  unit: unit
-- id: 1125
+  unit: gr
+- id: 3248
   ingredient:
-    name: mantequilla
+    name: Mantequilla
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 92
-  unit: unit
-- id: 1126
+  unit: tablespoon
+- id: 3249
   ingredient:
-    name: mantequilla
+    name: Mantequilla
     prefix: ''
   optional: false
   quantity: '60'
   recipe: 92
   unit: gr
-- id: 1127
+- id: 3250
   ingredient:
     name: harina
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '60'
   recipe: 92
   unit: gr
-- id: 1128
+- id: 3251
   ingredient:
     name: leche
     prefix: ''
@@ -68,38 +68,40 @@ ingredients:
   quantity: '1.5'
   recipe: 92
   unit: l
-- id: 1129
+- id: 3252
   ingredient:
     name: Nuez moscada
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 92
-  unit: unit
-- id: 1130
+  unit: teaspoon
+- id: 3253
   ingredient:
     name: Sal
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 92
-  unit: unit
-- id: 1131
+  unit: teaspoon
+- id: 3254
   ingredient:
-    name: Pimienta
+    name: pimienta
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 92
-  unit: unit
+  unit: teaspoon
 references:
 - https://www.instagram.com/reel/DSYAZJjCKf5/
 servings: 23
 status: Draft
 tags:
+- comida
 - cocina catalana
+- principal
 title: Canelones de San Esteban
-updated: '2025-12-18T15:13:01.144333+01:00'
+updated: '2026-02-27T09:19:20.090892+01:00'
 ---
 1. Hierve las placas de canelones en agua con sal siguiendo las indicaciones del paquete. Importante: hazlo una a una para que no se peguen. Una vez cocidas, resérvalas en agua fría.
 2. Corta la cebolla y cocínala lentamente hasta que quede bien caramelizada.
