@@ -32,7 +32,7 @@ export default defineConfig({
       },
       lastmod: new Date(),
       i18n: {
-        defaultLocale: 'es', // All urls that don't contain `es` or `fr` after `https://example.com/` will be treated as default locale, i.e. `en`
+        defaultLocale: 'es', // All urls that don't contain `en` after `https://domain/` will be treated as default locale, i.e. `es`
         locales: {
           es: 'es-ES', // The `defaultLocale` value must present in `locales` keys
         },
