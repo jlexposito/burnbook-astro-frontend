@@ -2,7 +2,7 @@ import Compress from 'astro-compress'
 import { defineConfig } from 'astro/config'import icon from 'astro-icon'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path';
-import sitemap from '@astrojs/sitemap';
+import sitemap from '@astrojs/sitemap'
 import solidJs from '@astrojs/solid-js'
 
 export default defineConfig({
