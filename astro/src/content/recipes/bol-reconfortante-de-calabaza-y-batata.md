@@ -4,7 +4,7 @@ created: '2026-01-07T14:07:49.031942+01:00'
 id: 95
 image: null
 ingredients:
-- id: 1165
+- id: 3413
   ingredient:
     name: Calabaza Hokkaido
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 95
   unit: kg
-- id: 1166
+- id: 3414
   ingredient:
     name: Batata
     prefix: ''
@@ -20,23 +20,23 @@ ingredients:
   quantity: '400'
   recipe: 95
   unit: gr
-- id: 1167
+- id: 3415
   ingredient:
-    name: Ajo
+    name: ajo
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 95
   unit: unit
-- id: 1168
+- id: 3416
   ingredient:
-    name: Aceite
+    name: aceite
     prefix: ''
   optional: false
   quantity: cantidad suficiente
   recipe: 95
   unit: unit
-- id: 1169
+- id: 3417
   ingredient:
     name: Tofu sedoso
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '400'
   recipe: 95
   unit: gr
-- id: 1170
+- id: 3418
   ingredient:
     name: Leche de coco
     prefix: light
@@ -52,7 +52,7 @@ ingredients:
   quantity: '250'
   recipe: 95
   unit: ml
-- id: 1171
+- id: 3419
   ingredient:
     name: Copos de levadura nutricional
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '75'
   recipe: 95
   unit: gr
-- id: 1172
+- id: 3420
   ingredient:
     name: Shot de jengibre
     prefix: ''
@@ -68,15 +68,15 @@ ingredients:
   quantity: '50'
   recipe: 95
   unit: ml
-- id: 1173
+- id: 3421
   ingredient:
-    name: Cúrcuma
+    name: cúrcuma
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 95
   unit: teaspoon
-- id: 1174
+- id: 3422
   ingredient:
     name: Comino
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 95
   unit: teaspoon
-- id: 1175
+- id: 3423
   ingredient:
     name: Garam Masala
     prefix: ''
@@ -92,23 +92,23 @@ ingredients:
   quantity: '1'
   recipe: 95
   unit: teaspoon
-- id: 1176
+- id: 3424
   ingredient:
-    name: Vinagre de manzana
+    name: vinagre de manzana
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 95
   unit: tablespoon
-- id: 1177
+- id: 3425
   ingredient:
-    name: Salsa de soja
+    name: salsa de soja
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 95
   unit: tablespoon
-- id: 1178
+- id: 3426
   ingredient:
     name: Landjäger vegano
     prefix: frito
@@ -123,8 +123,9 @@ status: Draft
 tags:
 - cena
 - vegetariano
-title: Bol reconfortante dorado de calabaza y batata
-updated: '2026-01-07T14:07:49.039223+01:00'
+- principal
+title: Bol reconfortante de calabaza y batata
+updated: '2026-02-27T09:26:21.537193+01:00'
 ---
 1. Corta la calabaza y la batata en dados, colócalos en una fuente para horno y pon el ajo en el centro.
 2. Vierte una cantidad suficiente de aceite sobre el ajo, sazona con sal y hornea durante unos 25-30 minutos a 180 grados con calor arriba y abajo.
