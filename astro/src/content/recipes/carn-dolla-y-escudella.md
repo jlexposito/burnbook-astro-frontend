@@ -10,6 +10,7 @@ servings: 2
 status: New
 tags:
 - cocina española
+- sopa
 - cocina catalana
 - principal
 title: Carn d'Olla y Escudella

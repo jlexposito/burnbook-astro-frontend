@@ -164,6 +164,7 @@ tags:
 - cena
 - comida
 - vegetariano
+- sopa
 - cocina india
 - principal
 title: Dal de Lentejas Rojas Vegano

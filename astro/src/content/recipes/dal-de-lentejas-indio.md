@@ -147,6 +147,7 @@ status: Draft
 tags:
 - cena
 - vegetariano
+- sopa
 - cocina india
 - principal
 title: Dal de Lentejas Indio
