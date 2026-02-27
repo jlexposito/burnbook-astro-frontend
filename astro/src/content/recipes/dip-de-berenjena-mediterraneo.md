@@ -98,8 +98,8 @@ servings: 2
 status: Draft
 tags:
 - salsa
+- cocina mediterránea
 - vegetariano
-- mediterráneo
 title: Dip de Berenjena Mediterráneo
 updated: '2026-02-18T14:10:44.829408+01:00'
 ---

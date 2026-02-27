@@ -41,8 +41,8 @@ references:
 servings: 2
 status: New
 tags:
+- cocina mediterránea
 - cena
-- mediterráneo
 - aperitivo
 title: Burrata con Anchoas y Menta
 updated: '2026-02-26T22:13:59.778503+01:00'
