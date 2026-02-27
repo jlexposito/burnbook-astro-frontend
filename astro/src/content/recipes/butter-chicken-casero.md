@@ -4,39 +4,39 @@ created: '2026-02-10T22:39:03.354025+01:00'
 id: 166
 image: null
 ingredients:
-- id: 2086
+- id: 3495
   ingredient:
-    name: pechuga de pollo
-    prefix: cortada en cubos
+    name: Pechuga de pollo
+    prefix: ''
   optional: false
   quantity: '300'
   recipe: 166
   unit: gr
-- id: 2087
+- id: 3496
   ingredient:
-    name: yogur
-    prefix: griego, sin grasa
+    name: yogur griego
+    prefix: ''
   optional: false
   quantity: '7.33'
   recipe: 166
   unit: tablespoon
-- id: 2088
+- id: 3497
   ingredient:
     name: ajo
-    prefix: picado
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 2089
+- id: 3498
   ingredient:
     name: jengibre
-    prefix: picado
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 2090
+- id: 3499
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 2091
+- id: 3500
   ingredient:
     name: Garam Masala
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: tablespoon
-- id: 2092
+- id: 3501
   ingredient:
     name: cúrcuma
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 2093
+- id: 3502
   ingredient:
     name: pimentón
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 2094
+- id: 3503
   ingredient:
     name: chile en polvo
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 2095
+- id: 3504
   ingredient:
     name: Sal
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 2096
+- id: 3505
   ingredient:
     name: pimienta
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: teaspoon
-- id: 2097
+- id: 3506
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -100,15 +100,15 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 2098
+- id: 3507
   ingredient:
     name: cebolla
-    prefix: mediana, picada
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 166
   unit: unit
-- id: 2099
+- id: 3508
   ingredient:
     name: pasta de tomate
     prefix: ''
@@ -116,15 +116,15 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: tablespoon
-- id: 2100
+- id: 3509
   ingredient:
-    name: tomates
-    prefix: triturados (de lata)
+    name: tomates troceados
+    prefix: ''
   optional: false
   quantity: '1.5'
   recipe: 166
   unit: cup
-- id: 2101
+- id: 3510
   ingredient:
     name: Miel
     prefix: ''
@@ -132,15 +132,15 @@ ingredients:
   quantity: '2'
   recipe: 166
   unit: teaspoon
-- id: 2102
+- id: 3511
   ingredient:
     name: leche
-    prefix: o agua (para aligerar la salsa)
+    prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 166
   unit: cup
-- id: 2103
+- id: 3512
   ingredient:
     name: Cilantro
     prefix: fresco
@@ -148,10 +148,10 @@ ingredients:
   quantity: '1'
   recipe: 166
   unit: unit
-- id: 2104
+- id: 3513
   ingredient:
-    name: yogur
-    prefix: o leche de coco (para decorar)
+    name: leche de coco
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 166
@@ -164,8 +164,9 @@ tags:
 - cena
 - comida
 - cocina india
+- principal
 title: Butter chicken casero
-updated: '2026-02-10T22:41:26.925329+01:00'
+updated: '2026-02-27T09:44:36.500772+01:00'
 ---
 1.  **Marinar el Pollo:** Corta la pechuga de pollo en cubos. En un bol grande, mezcla el pollo con el yogur griego sin grasa (para el marinado), el ajo picado (de la sección de pollo), el jengibre picado (de la sección de pollo), el aceite de oliva, el garam masala (de la sección de pollo), la cúrcuma (de la sección de pollo), el pimentón (de la sección de pollo), el chile en polvo (de la sección de pollo), la sal (de la sección de pollo) y la pimienta (de la sección de pollo). Deja marinar mientras preparas la salsa.
 2.  **Preparar la Salsa de Pollo a la Mantequilla:** En una olla grande o sartén profunda, derrite la mantequilla a fuego medio. Añade la cebolla picada y cocina hasta que esté tierna y translúcida, unos 5-7 minutos.
