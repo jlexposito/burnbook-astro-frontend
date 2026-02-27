@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.549779+02:00'
 id: 25
 image: /media/sobrasada.jfif
 ingredients:
-- id: 117
+- id: 3600
   ingredient:
     name: ajo
     prefix: diente de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 25
   unit: unit
-- id: 118
+- id: 3601
   ingredient:
     name: tomates deshidratados
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '160'
   recipe: 25
   unit: gr
-- id: 119
+- id: 3602
   ingredient:
     name: pimenton
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 25
   unit: tablespoon
-- id: 120
+- id: 3603
   ingredient:
     name: frutos secos
     prefix: ''
@@ -42,8 +42,10 @@ status: Tried
 tags:
 - entrante
 - tentempie
+- vegetariano
+- merienda
 title: Sobrasada vegetal
-updated: '2024-02-19T20:48:56.610778+01:00'
+updated: '2026-02-27T09:57:54.065764+01:00'
 ---
 1. Remojar durante una hora tomates secos (unos 120g)
 2. Colar los tomates y añadirlos en un vaso de batidora con un chorrito de aceite de oliva, piñones o frutos secos (unos 60g), 1 diente de ajo y una cucharada de pimentón.

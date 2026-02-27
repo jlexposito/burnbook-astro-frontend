@@ -4,7 +4,7 @@ created: '2023-11-30T11:03:34.254418+01:00'
 id: 47
 image: /media/tarta-zanahoria.png
 ingredients:
-- id: 240
+- id: 3595
   ingredient:
     name: harina
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 47
   unit: gr
-- id: 241
+- id: 3596
   ingredient:
     name: azúcar
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '250'
   recipe: 47
   unit: gr
-- id: 242
+- id: 3597
   ingredient:
     name: aceite de girasol
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '230'
   recipe: 47
   unit: ml
-- id: 243
+- id: 3598
   ingredient:
     name: huevos
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '4'
   recipe: 47
   unit: unit
-- id: 244
+- id: 3599
   ingredient:
     name: bicarbonato sódico
     prefix: ''
@@ -50,9 +50,10 @@ references:
 servings: 8
 status: Tried
 tags:
+- dulce
 - postre
 title: Tarta de zanahoria (carrot cake)
-updated: '2023-11-30T11:03:34.264731+01:00'
+updated: '2026-02-27T09:57:29.793943+01:00'
 ---
 Esta tarta se hace por pisos, de modo que tenéis dos posibilidades: o hacéis un bizcocho entero y lo cortáis o lo hacéis por parte. Yo en este caso he optado por la segunda.
 
@@ -63,4 +64,4 @@ Esta tarta se hace por pisos, de modo que tenéis dos posibilidades: o hacéis u
 5. Una vez tengamos los dos bizcochos, podemos optar por hacer la tarta de 2 piso gordos o 4 finos. Todo depende de la cantidad de frosting que os guste. Os recomiendo que para comenzar lo hagáis de 2 y luego experimentéis la próxima vez.
 6. Para hacer el frosting de queso batimos durante unos minutos **la mantequilla** y añadir **el queso y el extracto de vainilla** hasta que mezcle bien. Entonces vamos añadiendo **el azúcar glass** hasta que esté bien homogéneo. Yo lo he introducido en una manga pastelera y lo he reservado en la nevera un rato.
 7. Ya solo se trata de construir la tarta. Colocamos sobre el plato la primera capa de bizcocho y la cubrimos con el frosting. Seguimos con otra capa y más frosting, hasta que colocamos la última que yo he decorado con unos puntitos de cobertura y unas zanahorias de azúcar que compré en una tienda especializada.
-8. Esta tarta hay que conservarla en la nevera y esta muchísimo más buena de un día para otro. 
+8. Esta tarta hay que conservarla en la nevera y esta muchísimo más buena de un día para otro.
