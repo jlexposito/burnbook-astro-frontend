@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.025925+02:00'
 id: 9
 image: /media/carbonara__compressed.jpg
 ingredients:
-- id: 637
+- id: 3335
   ingredient:
     name: Sal
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 9
   unit: unit
-- id: 638
+- id: 3336
   ingredient:
     name: huevos
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 9
   unit: unit
-- id: 639
+- id: 3337
   ingredient:
     name: perejil
     prefix: hojas de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 9
   unit: unit
-- id: 640
+- id: 3338
   ingredient:
     name: Espaguetis
     prefix: ''
@@ -45,8 +45,9 @@ tags:
 - cena
 - comida
 - pasta
+- principal
 title: Espaguetis carbonara
-updated: '2024-08-09T15:35:44.575528+02:00'
+updated: '2026-02-27T09:22:32.166546+01:00'
 ---
 1. Hervir agua en una olla mientras cortamos una cebolla.
 2. En un bol romper tres huevos y añadir queso parmesano y sal. Batir hasta que todo este combinado y dejarlo reposando en un lado.
@@ -56,4 +57,3 @@ updated: '2024-08-09T15:35:44.575528+02:00'
 6. Servir en un plato añadiendo un poco de perejil cortado.
 
 **Nota**: si la mezcla es muy espesa podemos añadir un poco del agua donde hemos cocido los espaguetis.
-

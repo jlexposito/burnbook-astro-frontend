@@ -4,7 +4,7 @@ created: '2025-12-12T00:37:55.621505+01:00'
 id: 72
 image: /media/calabaza-y-brie.jpg
 ingredients:
-- id: 2844
+- id: 3339
   ingredient:
     name: Calabaza
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 72
   unit: unit
-- id: 2845
+- id: 3340
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 72
   unit: tablespoon
-- id: 2846
+- id: 3341
   ingredient:
     name: Sal
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 72
   unit: unit
-- id: 2847
+- id: 3342
   ingredient:
     name: pimienta
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 72
   unit: teaspoon
-- id: 2848
+- id: 3343
   ingredient:
     name: queso brie
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 72
   unit: unit
-- id: 2849
+- id: 3344
   ingredient:
     name: nueces
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '3'
   recipe: 72
   unit: unit
-- id: 2850
+- id: 3345
   ingredient:
     name: tomillo
     prefix: ''
@@ -65,13 +65,14 @@ references:
 servings: 2
 status: New
 tags:
+- tentempie
 - cena
 - vegetariano
 - otoño
 - saludable
 - fácil
 title: Calabaza con brie y nueces sin harinas
-updated: '2026-02-24T18:57:45.649094+01:00'
+updated: '2026-02-27T09:22:50.150842+01:00'
 ---
 1. Coloca las rodajas de calabaza en una bandeja de horno y añade aceite, sal y pimienta.
 2. Hornea a 180 °C durante 15 minutos.

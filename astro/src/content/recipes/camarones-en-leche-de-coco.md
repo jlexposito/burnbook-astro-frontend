@@ -4,7 +4,7 @@ created: '2023-10-11T17:53:10.728168+02:00'
 id: 45
 image: /media/camarones_en_salsa_de_coco.png
 ingredients:
-- id: 563
+- id: 3346
   ingredient:
     name: gambas
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '250'
   recipe: 45
   unit: gr
-- id: 564
+- id: 3347
   ingredient:
     name: leche de coco
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '200'
   recipe: 45
   unit: ml
-- id: 565
+- id: 3348
   ingredient:
     name: tomate
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 45
   unit: unit
-- id: 566
+- id: 3349
   ingredient:
     name: concentrado de tomate
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 45
   unit: tablespoon
-- id: 567
+- id: 3350
   ingredient:
     name: ajo
     prefix: dientes de
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 45
   unit: unit
-- id: 568
+- id: 3351
   ingredient:
     name: paprika
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 45
   unit: tablespoon
-- id: 569
+- id: 3352
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 45
   unit: tablespoon
-- id: 570
+- id: 3353
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 45
   unit: tablespoon
-- id: 571
+- id: 3354
   ingredient:
     name: cilantro
     prefix: ''
@@ -84,13 +84,12 @@ tags:
 - cena
 - comida
 - pasta
+- principal
 title: Camarones en Leche de Coco
-updated: '2024-08-08T01:04:46.372427+02:00'
+updated: '2026-02-27T09:23:02.641746+01:00'
 ---
-
 1. Cortar en cubos pequeños un ajo, dos tomates y la cebolla mientras tenemos una olla con agua al fuego para que empiece a hervir.
 2. Añadir la pasta en la olla cuando empieza a hervir y freír vuelta y vuelta durante unos cuatro minutos los camarones en una sartén con ajo en polvo, paprika, y sal y pimienta al gusto. **Nota**: cocer la pasta uno o dos minutos menos de lo recomendado por el fabricante.
 3. Sacar los camarones y en la misma sartén añadir mantequilla, la cebolla, el concentrado de tomate y los cubos de tomate con sal al gusto. Pasados unos 5 minutos añadir en la misma sartén la leche de coco y las gambas cocinándolo a fuego medio para mientras removemos poco a poco.
 4. Añadir la pasta y mezclar lentamente durante unos minutos.
 5. Servir con unas hojas de cilantro cortadas finitas.
-

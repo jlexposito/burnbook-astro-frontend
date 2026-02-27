@@ -4,7 +4,7 @@ created: '2026-02-26T17:27:56.517075+01:00'
 id: 199
 image: null
 ingredients:
-- id: 2910
+- id: 3385
   ingredient:
     name: pasta de curry rojo tailandés
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 199
   unit: tablespoon
-- id: 2911
+- id: 3386
   ingredient:
     name: leche de coco
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '200'
   recipe: 199
   unit: ml
-- id: 2912
+- id: 3387
   ingredient:
     name: pimentón
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 199
   unit: teaspoon
-- id: 2913
+- id: 3388
   ingredient:
     name: puré de tomate
     prefix: ''
@@ -36,15 +36,15 @@ ingredients:
   quantity: '2'
   recipe: 199
   unit: teaspoon
-- id: 2914
+- id: 3389
   ingredient:
-    name: mantequilla
+    name: Mantequilla
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 199
   unit: tablespoon
-- id: 2915
+- id: 3390
   ingredient:
     name: linguine
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '200'
   recipe: 199
   unit: gr
-- id: 2916
+- id: 3391
   ingredient:
     name: semillas de cilantro
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '2'
   recipe: 199
   unit: teaspoon
-- id: 2917
+- id: 3392
   ingredient:
     name: semillas de comino
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '2'
   recipe: 199
   unit: teaspoon
-- id: 2918
+- id: 3393
   ingredient:
     name: pimienta blanca
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 199
   unit: teaspoon
-- id: 2919
+- id: 3394
   ingredient:
     name: chiles rojos
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '3'
   recipe: 199
   unit: unit
-- id: 2920
+- id: 3395
   ingredient:
     name: chalotas
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '2'
   recipe: 199
   unit: unit
-- id: 2921
+- id: 3396
   ingredient:
     name: dientes de ajo
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '5'
   recipe: 199
   unit: unit
-- id: 2922
+- id: 3397
   ingredient:
     name: tallo de citronela
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 199
   unit: unit
-- id: 2923
+- id: 3398
   ingredient:
     name: pasta de galangal
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '1'
   recipe: 199
   unit: teaspoon
-- id: 2924
+- id: 3399
   ingredient:
     name: tallos de cilantro
     prefix: ''
@@ -124,15 +124,15 @@ ingredients:
   quantity: '5'
   recipe: 199
   unit: unit
-- id: 2925
+- id: 3400
   ingredient:
-    name: sal
-    prefix: pizca de
+    name: Sal
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 199
   unit: unit
-- id: 2926
+- id: 3401
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -140,18 +140,18 @@ ingredients:
   quantity: '1'
   recipe: 199
   unit: unit
-- id: 2927
+- id: 3402
   ingredient:
     name: albahaca tailandesa
-    prefix: para guarnición
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 199
   unit: unit
-- id: 2928
+- id: 3403
   ingredient:
     name: copos de chile
-    prefix: para guarnición
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 199
@@ -162,10 +162,12 @@ servings: 2
 status: Draft
 tags:
 - cena
+- comida
 - picante
+- principal
 - cocina tailandesa
 title: Linguine con Curry Rojo Tailandés
-updated: '2026-02-26T17:27:56.517121+01:00'
+updated: '2026-02-27T09:23:57.891905+01:00'
 ---
 1. Hierve el linguine (200g) en agua con sal siguiendo las instrucciones del paquete y luego escúrrelo.
 2. Tuesta las semillas de comino (2 cucharaditas) y las semillas de cilantro (2 cucharaditas) en una sartén seca durante 2 minutos, luego transfiérelas a un procesador de alimentos.

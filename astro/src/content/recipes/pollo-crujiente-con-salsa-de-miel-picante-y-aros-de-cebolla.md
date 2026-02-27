@@ -4,39 +4,39 @@ created: '2025-12-16T11:10:29.047831+01:00'
 id: 89
 image: null
 ingredients:
-- id: 1091
+- id: 3322
   ingredient:
     name: Sal
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 89
-  unit: ''
-- id: 1092
+  unit: teaspoon
+- id: 3323
   ingredient:
-    name: Pimienta
+    name: pimienta
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 89
-  unit: ''
-- id: 1093
+  unit: teaspoon
+- id: 3324
   ingredient:
-    name: Ajo en polvo
+    name: ajo en polvo
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 89
-  unit: ''
-- id: 1094
+  unit: teaspoon
+- id: 3325
   ingredient:
-    name: Pimentón
+    name: pimentón
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 89
-  unit: ''
-- id: 1095
+  unit: teaspoon
+- id: 3326
   ingredient:
     name: Contramuslos de pollo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '4'
   recipe: 89
   unit: unit
-- id: 1096
+- id: 3327
   ingredient:
     name: Suero de leche
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1.5'
   recipe: 89
   unit: cup
-- id: 1097
+- id: 3328
   ingredient:
     name: Salsa picante
     prefix: ''
@@ -60,23 +60,23 @@ ingredients:
   quantity: '4'
   recipe: 89
   unit: tablespoon
-- id: 1098
+- id: 3329
   ingredient:
-    name: Harina
+    name: harina
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 89
   unit: cup
-- id: 1099
+- id: 3330
   ingredient:
-    name: Maicena
+    name: maicena
     prefix: ''
   optional: false
   quantity: 1/3
   recipe: 89
   unit: cup
-- id: 1100
+- id: 3331
   ingredient:
     name: Levadura química
     prefix: ''
@@ -84,15 +84,15 @@ ingredients:
   quantity: '1'
   recipe: 89
   unit: tablespoon
-- id: 1101
+- id: 3332
   ingredient:
-    name: Cebolla
-    prefix: grande
+    name: cebolla
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 89
   unit: unit
-- id: 1102
+- id: 3333
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '4'
   recipe: 89
   unit: tablespoon
-- id: 1103
+- id: 3334
   ingredient:
     name: Miel
     prefix: ''
@@ -116,8 +116,9 @@ tags:
 - salsa
 - cena
 - picante
+- principal
 title: Pollo Crujiente con Salsa de Miel Picante y Aros de Cebolla
-updated: '2025-12-16T11:10:29.047875+01:00'
+updated: '2026-02-27T09:22:19.914732+01:00'
 ---
 1.  **Prepara la mezcla de especias:** En un recipiente, mezcla sal, pimienta, ajo en polvo y pimentón.
 2.  **Marinar el pollo:** Cubre 4 contramuslos de pollo con 1 taza de suero de leche, 2 cucharadas de salsa picante y una parte de la mezcla de especias. Deja marinar durante 1 hora.

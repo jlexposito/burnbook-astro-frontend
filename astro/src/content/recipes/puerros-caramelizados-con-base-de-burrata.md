@@ -4,7 +4,7 @@ created: '2025-12-16T09:14:33.024770+01:00'
 id: 84
 image: /media/puerros-con-burrata.jpg
 ingredients:
-- id: 2710
+- id: 3404
   ingredient:
     name: puerros
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 84
   unit: unit
-- id: 2711
+- id: 3405
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 84
   unit: tablespoon
-- id: 2712
+- id: 3406
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 84
   unit: unit
-- id: 2713
+- id: 3407
   ingredient:
     name: agua
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 84
   unit: unit
-- id: 2714
+- id: 3408
   ingredient:
     name: Burrata
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 84
   unit: unit
-- id: 2715
+- id: 3409
   ingredient:
     name: Mayonesa
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 84
   unit: tablespoon
-- id: 2716
+- id: 3410
   ingredient:
     name: Mostaza
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 84
   unit: tablespoon
-- id: 2717
+- id: 3411
   ingredient:
     name: Aove
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '2'
   recipe: 84
   unit: tablespoon
-- id: 2718
+- id: 3412
   ingredient:
     name: Sal
     prefix: ''
@@ -82,10 +82,11 @@ servings: 2
 status: New
 tags:
 - cena
+- comida
 - vegetariano
 - primero
 title: Puerros caramelizados con base de burrata
-updated: '2026-02-23T19:38:45.048988+01:00'
+updated: '2026-02-27T09:24:07.792163+01:00'
 ---
 1. Lava bien los puerros y retira la parte verde más dura y las capas externas. Córtalos en rodajas finas o a lo largo, según tu preferencia.
 2. En una sartén grande a fuego medio, derrite la mantequilla. Añade los puerros cortados.
