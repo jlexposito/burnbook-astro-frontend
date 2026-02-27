@@ -245,7 +245,6 @@ tags:
 - comida
 - vegetariano
 - cocina india
-- curry
 title: Curry Cremoso de Paneer
 updated: '2026-02-13T21:25:41.633894+01:00'
 ---

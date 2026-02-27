@@ -173,7 +173,6 @@ tags:
 - vegetariano
 - picante
 - cocina asiática
-- curry
 title: Curry Rojo Tailandés con Tofu y Setas
 updated: '2026-02-12T21:12:34.384832+01:00'
 ---

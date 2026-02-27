@@ -143,7 +143,7 @@ tags:
 - picante
 - cocina asiática
 title: Curry de Bacalao con Leche de Coco
-updated: '2026-02-27T09:28:10.905924+01:00'
+updated: '2026-02-27T11:38:09.000812+01:00'
 ---
 1. Prepara la pasta licuando primero los dientes de ajo (picados gruesos), el jengibre, los chiles ojo de pájaro, la hierba limón y el cilantro en un procesador de alimentos.
 2. En una olla grande o sartén profunda a fuego medio/alto, añade la pasta y remueve, friendo hasta que esté fragante, unos 2-3 minutos, con cuidado de no quemar.
