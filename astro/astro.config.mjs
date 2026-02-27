@@ -30,6 +30,7 @@ export default defineConfig({
         // Include everything else
         return true
       },
+      lastmod: new Date(),
     }),
   ],
 
