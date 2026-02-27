@@ -4,7 +4,7 @@ created: '2026-02-20T15:25:57.180573+01:00'
 id: 187
 image: null
 ingredients:
-- id: 2358
+- id: 3441
   ingredient:
     name: dientes de ajo
     prefix: picados gruesos
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 187
   unit: unit
-- id: 2359
+- id: 3442
   ingredient:
     name: jengibre
     prefix: un trozo de 1 pulgada, picado grueso
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 187
   unit: unit
-- id: 2360
+- id: 3443
   ingredient:
     name: chiles ojo de pájaro
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 187
   unit: unit
-- id: 2361
+- id: 3444
   ingredient:
     name: tallos de hierba limón
     prefix: finamente picados (solo el tercio inferior)
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 187
   unit: unit
-- id: 2362
+- id: 3445
   ingredient:
     name: cilantro
     prefix: con tallo
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 187
   unit: unit
-- id: 2363
+- id: 3446
   ingredient:
     name: aceite de colza
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '4'
   recipe: 187
   unit: tablespoon
-- id: 2364
+- id: 3447
   ingredient:
     name: lomos de bacalao
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '4'
   recipe: 187
   unit: unit
-- id: 2365
+- id: 3448
   ingredient:
     name: tomates cherry
     prefix: en rama
@@ -68,7 +68,7 @@ ingredients:
   quantity: '350'
   recipe: 187
   unit: gr
-- id: 2366
+- id: 3449
   ingredient:
     name: tomates troceados
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '0.5'
   recipe: 187
   unit: unit
-- id: 2367
+- id: 3450
   ingredient:
     name: leche de coco
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 187
   unit: unit
-- id: 2368
+- id: 3451
   ingredient:
     name: albahaca
     prefix: hojas sueltas
@@ -92,7 +92,7 @@ ingredients:
   quantity: '30'
   recipe: 187
   unit: gr
-- id: 2369
+- id: 3452
   ingredient:
     name: pak choi
     prefix: sin tallo central
@@ -100,15 +100,15 @@ ingredients:
   quantity: '2'
   recipe: 187
   unit: unit
-- id: 2370
+- id: 3453
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 187
   unit: unit
-- id: 2371
+- id: 3454
   ingredient:
     name: lima
     prefix: media, su jugo
@@ -116,7 +116,7 @@ ingredients:
   quantity: '0.5'
   recipe: 187
   unit: unit
-- id: 2372
+- id: 3455
   ingredient:
     name: yogur
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '0.5'
   recipe: 187
   unit: cup
-- id: 2373
+- id: 3456
   ingredient:
     name: diente de ajo
     prefix: medio, picado muy fino
@@ -141,8 +141,9 @@ tags:
 - comida
 - picante
 - cocina asiática
+- principal
 title: Curry de Bacalao con Leche de Coco
-updated: '2026-02-20T15:25:57.180615+01:00'
+updated: '2026-02-27T09:27:43.065762+01:00'
 ---
 1. Prepara la pasta licuando primero los dientes de ajo (picados gruesos), el jengibre, los chiles ojo de pájaro, la hierba limón y el cilantro en un procesador de alimentos.
 2. En una olla grande o sartén profunda a fuego medio/alto, añade la pasta y remueve, friendo hasta que esté fragante, unos 2-3 minutos, con cuidado de no quemar.
