@@ -90,6 +90,7 @@ servings: 2
 status: Draft
 tags:
 - cena
+- cocina asiática
 - preparación de comidas
 - alto en proteína
 - bajo en calorías

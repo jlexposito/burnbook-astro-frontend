@@ -59,6 +59,7 @@ status: Draft
 tags:
 - dulce
 - vegetariano
+- cocina india
 title: Masala Chai
 updated: '2026-02-12T00:15:28.007107+01:00'
 ---

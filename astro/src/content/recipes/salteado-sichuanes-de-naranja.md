@@ -124,6 +124,7 @@ tags:
 - cena
 - vegetariano
 - picante
+- cocina asiática
 title: Salteado Sichuanés de Naranja
 updated: '2026-01-14T19:23:08.447379+01:00'
 ---

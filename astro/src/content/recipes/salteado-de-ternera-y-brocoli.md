@@ -122,6 +122,7 @@ servings: 2
 status: Draft
 tags:
 - cena
+- cocina asiática
 title: Salteado de Ternera y Brócoli
 updated: '2026-02-12T20:45:30.387420+01:00'
 ---
