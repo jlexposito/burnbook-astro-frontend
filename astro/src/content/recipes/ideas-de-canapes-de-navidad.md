@@ -9,6 +9,7 @@ references:
 servings: 2
 status: Draft
 tags:
+- cocina española
 - aperitivo
 title: Ideas de canapés de Navidad
 updated: '2025-12-16T09:29:30.453832+01:00'

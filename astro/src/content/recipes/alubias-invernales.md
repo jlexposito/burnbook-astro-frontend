@@ -98,6 +98,7 @@ servings: 2
 status: New
 tags:
 - comida
+- cocina española
 - fácil
 - principal
 title: Alubias Invernales

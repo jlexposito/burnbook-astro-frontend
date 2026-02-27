@@ -9,6 +9,7 @@ references:
 servings: 2
 status: New
 tags:
+- cocina española
 - cocina catalana
 - principal
 title: Carn d'Olla y Escudella

@@ -19,6 +19,7 @@ status: New
 tags:
 - cena
 - comida
+- cocina española
 title: Escudella vegetariana
 updated: '2024-08-08T01:28:15.074899+02:00'
 ---

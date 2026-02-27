@@ -140,6 +140,7 @@ tags:
 - pescado
 - cena
 - comida
+- cocina española
 - cocina catalana
 title: Calamares rellenos
 updated: '2026-02-21T14:18:33.490437+01:00'
