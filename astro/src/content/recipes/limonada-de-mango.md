@@ -4,7 +4,7 @@ created: '2026-02-18T17:13:58.295866+01:00'
 id: 184
 image: null
 ingredients:
-- id: 2326
+- id: 3617
   ingredient:
     name: limones
     prefix: pelados y sin la parte blanca
@@ -12,7 +12,7 @@ ingredients:
   quantity: '4'
   recipe: 184
   unit: unit
-- id: 2327
+- id: 3618
   ingredient:
     name: agua
     prefix: fría
@@ -20,7 +20,7 @@ ingredients:
   quantity: '400'
   recipe: 184
   unit: ml
-- id: 2328
+- id: 3619
   ingredient:
     name: hielo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 184
   unit: unit
-- id: 2329
+- id: 3620
   ingredient:
     name: mangos
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 184
   unit: unit
-- id: 2330
+- id: 3621
   ingredient:
     name: leche condensada
     prefix: ''
@@ -51,8 +51,9 @@ status: Draft
 tags:
 - vegetariano
 - postre
+- bebida
 title: Limonada de Mango
-updated: '2026-02-18T17:13:58.295960+01:00'
+updated: '2026-02-27T10:18:08.197519+01:00'
 ---
 1. Pela los limones, retirando la piel blanca.
 2. Prepara el agua fría.
