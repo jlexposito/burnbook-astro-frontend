@@ -41,9 +41,9 @@ servings: 2
 status: Tried
 tags:
 - entrante
-- tentempie
 - vegetariano
 - merienda
+- tentempie
 title: Sobrasada vegetal
 updated: '2026-02-27T09:57:54.065764+01:00'
 ---

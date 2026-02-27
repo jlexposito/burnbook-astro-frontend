@@ -65,12 +65,12 @@ references:
 servings: 2
 status: New
 tags:
-- tentempie
 - cena
 - vegetariano
 - otoño
 - saludable
 - fácil
+- tentempie
 title: Calabaza con brie y nueces sin harinas
 updated: '2026-02-27T09:22:50.150842+01:00'
 ---
