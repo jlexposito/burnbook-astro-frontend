@@ -67,9 +67,9 @@ status: New
 tags:
 - cena
 - vegetariano
+- entrante
 - saludable
 - fácil
-- tentempie
 title: Calabaza con brie y nueces sin harinas
 updated: '2026-02-27T09:22:50.150842+01:00'
 ---

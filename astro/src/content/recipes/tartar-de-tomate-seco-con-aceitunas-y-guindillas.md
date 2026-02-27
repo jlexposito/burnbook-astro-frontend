@@ -137,9 +137,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- entrante
 - vegetariano
 - picante
+- entrante
 - aperitivo
 title: Tartar de Tomate Seco con Aceitunas y Guindillas
 updated: '2026-02-26T22:15:37.442275+01:00'

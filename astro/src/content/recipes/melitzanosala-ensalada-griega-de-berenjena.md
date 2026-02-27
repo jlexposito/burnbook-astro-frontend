@@ -51,7 +51,6 @@ servings: 2
 status: Tried
 tags:
 - entrante
-- tentempie
 title: Melitzanosala. Ensalada griega de berenjena
 updated: '2024-02-19T20:50:54.482468+01:00'
 ---

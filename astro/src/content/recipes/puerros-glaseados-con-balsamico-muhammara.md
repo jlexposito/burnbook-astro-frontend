@@ -33,8 +33,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- entrante
 - vegetariano
+- entrante
 - saludable
 - vegano
 title: Puerros Glaseados con Balsámico + Muhammara
