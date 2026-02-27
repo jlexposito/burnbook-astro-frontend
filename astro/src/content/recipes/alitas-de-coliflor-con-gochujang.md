@@ -4,7 +4,7 @@ created: '2026-02-08T15:45:46.343067+01:00'
 id: 154
 image: null
 ingredients:
-- id: 1973
+- id: 3427
   ingredient:
     name: coliflor
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 154
   unit: unit
-- id: 1974
+- id: 3428
   ingredient:
     name: gochujang
     prefix: ''
@@ -20,15 +20,15 @@ ingredients:
   quantity: '2'
   recipe: 154
   unit: tablespoon
-- id: 1975
+- id: 3429
   ingredient:
-    name: mayonesa
+    name: Mayonesa
     prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 154
   unit: cup
-- id: 1976
+- id: 3430
   ingredient:
     name: cebolleta
     prefix: picada
@@ -41,11 +41,13 @@ references:
 servings: 4
 status: Draft
 tags:
+- cena
+- comida
 - vegetariano
 - picante
 - snack
 title: Alitas de Coliflor con Gochujang
-updated: '2026-02-08T15:45:46.343214+01:00'
+updated: '2026-02-27T09:26:56.114269+01:00'
 ---
 1. Corta la coliflor en floretes de tamaño de bocado.
 2. Mezcla el gochujang con un poco de agua o aceite para crear una salsa.

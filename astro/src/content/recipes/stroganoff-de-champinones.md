@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.114506+02:00'
 id: 12
 image: /media/spaghetti-stroganoff.jpg
 ingredients:
-- id: 572
+- id: 3431
   ingredient:
     name: paprika
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 12
   unit: tablespoon
-- id: 573
+- id: 3432
   ingredient:
     name: limon
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 12
   unit: unit
-- id: 574
+- id: 3433
   ingredient:
     name: Mostaza Dijon
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 12
   unit: tablespoon
-- id: 575
+- id: 3434
   ingredient:
     name: ajo
     prefix: diente de
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 12
   unit: unit
-- id: 576
+- id: 3435
   ingredient:
     name: leche de coco
     prefix: lata de
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 12
   unit: unit
-- id: 577
+- id: 3436
   ingredient:
     name: pasta
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 12
   unit: unit
-- id: 578
+- id: 3437
   ingredient:
     name: perejil
     prefix: hojas de
@@ -69,12 +69,11 @@ tags:
 - cena
 - comida
 - pasta
+- principal
 title: Stroganoff de champiñones
-updated: '2024-08-08T01:13:31.034970+02:00'
+updated: '2026-02-27T09:27:11.348566+01:00'
 ---
-
 1. Cortar champiñones en laminas y trocear cebolla y ajo en cuadraditos
 2. Freír los champiñones, la cebolla y el ajo en una olla con aceite hasta que queden blandos.
 3. Añadir paprika, mostaza Dijon, jugo de limon, sal y leche de coco
 4. Sal pimentar y añadir unas hojas de perejil para emplatar.
-
