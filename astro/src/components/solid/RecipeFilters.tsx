@@ -1,5 +1,5 @@
 import type { Tag } from "@utils/interfaces";
-import { createMemo, For, Show } from "solid-js";
+import { createMemo, For, Show, createEffect } from "solid-js";
 
 interface RecipeFiltersProps {
   open: boolean;
@@ -15,18 +15,35 @@ interface RecipeFiltersProps {
   tags: Tag[];
 }
 
-export default function RecipeFilters(props: RecipeFiltersProps) {
-  const visibleTags = createMemo(() => {
-    const query = props.tagSearch.toLowerCase().trim();
+// Normaliza un string: minúsculas + sin acentos
+function normalizeString(str: string) {
+  return str
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase();
+}
 
-    return [...props.tags]
+export default function RecipeFilters(props: RecipeFiltersProps) {
+  // Normalizamos los tags solo una vez
+  const normalizedTags = createMemo(() =>
+    props.tags.map(tag => ({
+      original: tag,
+      normalizedName: normalizeString(tag.name),
+    }))
+  );
+
+  const visibleTags = createMemo(() => {
+    const query = normalizeString(props.tagSearch.trim());
+
+    return normalizedTags()
       .sort((a, b) => {
-        if (a.highligthed !== b.highligthed) {
-          return a.highligthed ? -1 : 1;
+        if (a.original.highligthed !== b.original.highligthed) {
+          return a.original.highligthed ? -1 : 1;
         }
-        return a.name.localeCompare(b.name);
+        return a.original.name.localeCompare(b.original.name);
       })
-      .filter(tag => tag.name.toLowerCase().includes(query));
+      .filter(tag => tag.normalizedName.includes(query))
+      .map(tag => tag.original); // devolvemos el tag original
   });
 
   const clearSearch = () => props.setSearch("");
