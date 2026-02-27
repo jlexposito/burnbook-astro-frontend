@@ -4,7 +4,7 @@ created: '2025-12-17T11:41:11.691207+01:00'
 id: 91
 image: null
 ingredients:
-- id: 1114
+- id: 3307
   ingredient:
     name: tortilla integral
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 91
   unit: unit
-- id: 1115
+- id: 3308
   ingredient:
     name: huevo
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '4'
   recipe: 91
   unit: unit
-- id: 1116
+- id: 3309
   ingredient:
     name: tomate cherry
     prefix: partidos por la mitad
@@ -28,7 +28,7 @@ ingredients:
   quantity: un puñado
   recipe: 91
   unit: unit
-- id: 1117
+- id: 3310
   ingredient:
     name: tomate seco
     prefix: picado
@@ -36,7 +36,7 @@ ingredients:
   quantity: '3'
   recipe: 91
   unit: unit
-- id: 1118
+- id: 3311
   ingredient:
     name: cebolleta
     prefix: troceada
@@ -44,7 +44,7 @@ ingredients:
   quantity: '3'
   recipe: 91
   unit: unit
-- id: 1119
+- id: 3312
   ingredient:
     name: espinaca
     prefix: picada
@@ -52,7 +52,7 @@ ingredients:
   quantity: un puñado
   recipe: 91
   unit: unit
-- id: 1120
+- id: 3313
   ingredient:
     name: queso feta
     prefix: ''
@@ -68,8 +68,9 @@ tags:
 - cena
 - comida
 - rápido
+- principal
 title: Quiche Saludable Rápida
-updated: '2025-12-17T11:41:11.699571+01:00'
+updated: '2026-02-27T09:21:39.576405+01:00'
 ---
 1. Precalienta el horno a 180°C.
 2. Forra un molde pequeño apto para horno con la tortilla integral para crear la base.
