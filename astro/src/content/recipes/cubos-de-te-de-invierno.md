@@ -65,7 +65,6 @@ references:
 servings: 20
 status: New
 tags:
-- invierno
 - saludable
 - bebida
 title: Cubos de té de invierno

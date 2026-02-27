@@ -67,7 +67,6 @@ status: New
 tags:
 - cena
 - vegetariano
-- otoño
 - saludable
 - fácil
 - tentempie

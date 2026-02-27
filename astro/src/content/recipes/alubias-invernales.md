@@ -98,7 +98,6 @@ servings: 2
 status: New
 tags:
 - comida
-- invierno
 - fácil
 - principal
 title: Alubias Invernales
