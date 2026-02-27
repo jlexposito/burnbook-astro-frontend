@@ -1,5 +1,5 @@
 import type { Tag } from "@utils/interfaces";
-import { createMemo, For, Show, createEffect } from "solid-js";
+import { createMemo, For, Show } from "solid-js";
 
 interface RecipeFiltersProps {
   open: boolean;
@@ -8,7 +8,7 @@ interface RecipeFiltersProps {
   setSearch: (v: string) => void;
   tagSearch: string;
   setTagSearch: (v: string) => void;
-  activeTags: () => string[]; // signal function
+  activeTags: () => string[];
   toggleTag: (tag: string) => void;
   maxTime: number | null;
   setMaxTime: (v: number | null) => void;
@@ -34,16 +34,20 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
 
   const visibleTags = createMemo(() => {
     const query = normalizeString(props.tagSearch.trim());
+    const active = props.activeTags();
 
     return normalizedTags()
-      .sort((a, b) => {
-        if (a.original.highligthed !== b.original.highligthed) {
-          return a.original.highligthed ? -1 : 1;
-        }
-        return a.original.name.localeCompare(b.original.name);
-      })
       .filter(tag => tag.normalizedName.includes(query))
-      .map(tag => tag.original); // devolvemos el tag original
+      .sort((a, b) => {
+        const aActive = active.includes(a.original.name);
+        const bActive = active.includes(b.original.name);
+
+        if (aActive !== bActive) return aActive ? -1 : 1; // los activos primero
+        if (a.original.highligthed !== b.original.highligthed)
+          return a.original.highligthed ? -1 : 1; // luego los destacados
+        return a.original.name.localeCompare(b.original.name); // alfabéticamente
+      })
+      .map(tag => tag.original);
   });
 
   const clearSearch = () => props.setSearch("");
