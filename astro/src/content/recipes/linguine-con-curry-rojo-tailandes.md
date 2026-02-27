@@ -164,6 +164,7 @@ tags:
 - cena
 - comida
 - picante
+- cocina asiática
 - cocina tailandesa
 - principal
 title: Linguine con Curry Rojo Tailandés

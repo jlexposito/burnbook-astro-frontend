@@ -140,8 +140,8 @@ tags:
 - cena
 - comida
 - picante
-- principal
 - cocina asiática
+- principal
 title: Curry de Bacalao con Leche de Coco
 updated: '2026-02-27T09:28:10.905924+01:00'
 ---
