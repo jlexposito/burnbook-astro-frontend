@@ -4,7 +4,7 @@ created: '2024-02-19T20:06:13.359925+01:00'
 id: 55
 image: /media/pancakes.png
 ingredients:
-- id: 354
+- id: 3238
   ingredient:
     name: tofu
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 55
   unit: gr
-- id: 355
+- id: 3239
   ingredient:
     name: levadura
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '130'
   recipe: 55
   unit: gr
-- id: 356
+- id: 3240
   ingredient:
     name: leche de soja
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '130'
   recipe: 55
   unit: ml
-- id: 357
+- id: 3241
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 55
   unit: tablespoon
-- id: 358
+- id: 3242
   ingredient:
     name: Sal
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 55
   unit: unit
-- id: 359
+- id: 3243
   ingredient:
     name: limon
     prefix: ''
@@ -58,8 +58,9 @@ servings: 2
 status: Tried
 tags:
 - dulce
+- desayuno
 title: Pancakes ricos en proteína
-updated: '2024-02-19T20:21:44.382092+01:00'
+updated: '2026-02-27T09:18:11.701369+01:00'
 ---
 1. En una licuadora, combina todos los ingredientes (usa un colador para la harina). Licúa los ingredientes hasta lograr una consistencia suave. La consistencia es sedosa y burbujeante, similar a la de una masa para panqueques normal.
 2. Transfiere la masa a un bol y déjela reposar durante 10 minutos. Este paso realza la textura y el sabor de los pancakes. Mientras tanto, precalienta una sartén antiadherente a fuego medio-bajo. Asegúrese de que la sartén esté lo suficientemente caliente pero no demasiado para evitar que los panqueques se quemen.
