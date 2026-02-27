@@ -4,23 +4,23 @@ created: '2026-02-27T12:10:15.496689+01:00'
 id: 207
 image: null
 ingredients:
-- id: 3646
+- id: 3667
   ingredient:
     name: cabeza de lomo
-    prefix: picado
+    prefix: ''
   optional: false
   quantity: '500'
   recipe: 207
   unit: gr
-- id: 3647
+- id: 3668
   ingredient:
     name: panceta fresca
-    prefix: picada
+    prefix: ''
   optional: false
   quantity: '100'
   recipe: 207
   unit: gr
-- id: 3648
+- id: 3669
   ingredient:
     name: cebolleta
     prefix: ''
@@ -28,31 +28,31 @@ ingredients:
   quantity: '1'
   recipe: 207
   unit: unit
-- id: 3649
+- id: 3670
   ingredient:
     name: col rizada
-    prefix: cortada finita
+    prefix: ''
   optional: false
   quantity: '0.25'
   recipe: 207
   unit: unit
-- id: 3650
+- id: 3671
   ingredient:
     name: col lombarda
-    prefix: cortada finita
+    prefix: ''
   optional: false
   quantity: '0.25'
   recipe: 207
   unit: unit
-- id: 3651
+- id: 3672
   ingredient:
-    name: zanahorias
-    prefix: pequeñas
+    name: Zanahorias
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 207
   unit: unit
-- id: 3652
+- id: 3673
   ingredient:
     name: setas shiitake
     prefix: ''
@@ -60,39 +60,39 @@ ingredients:
   quantity: '10'
   recipe: 207
   unit: unit
-- id: 3653
+- id: 3674
   ingredient:
     name: seta de oreja
-    prefix: en seco
+    prefix: ''
   optional: false
   quantity: '50'
   recipe: 207
   unit: gr
-- id: 3654
+- id: 3675
   ingredient:
     name: jengibre
-    prefix: picado
+    prefix: ''
   optional: false
   quantity: '10'
   recipe: 207
   unit: gr
-- id: 3655
+- id: 3676
   ingredient:
     name: fideos vermicelli
-    prefix: hidratados
-  optional: false
-  quantity: '2'
-  recipe: 207
-  unit: unit
-- id: 3656
-  ingredient:
-    name: brotes de soja
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 207
   unit: unit
-- id: 3657
+- id: 3677
+  ingredient:
+    name: Brotes de soja
+    prefix: ''
+  optional: false
+  quantity: '2'
+  recipe: 207
+  unit: unit
+- id: 3678
   ingredient:
     name: masa de rollito primavera
     prefix: ''
@@ -100,23 +100,23 @@ ingredients:
   quantity: '1'
   recipe: 207
   unit: unit
-- id: 3658
+- id: 3679
   ingredient:
     name: agua
-    prefix: para sellar
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 207
   unit: unit
-- id: 3659
+- id: 3680
   ingredient:
     name: fécula
-    prefix: para sellar
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 207
   unit: unit
-- id: 3660
+- id: 3681
   ingredient:
     name: vino chino
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '5'
   recipe: 207
   unit: tablespoon
-- id: 3661
+- id: 3682
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -132,7 +132,7 @@ ingredients:
   quantity: '3'
   recipe: 207
   unit: tablespoon
-- id: 3662
+- id: 3683
   ingredient:
     name: salsa de ostras
     prefix: ''
@@ -140,7 +140,7 @@ ingredients:
   quantity: '2'
   recipe: 207
   unit: tablespoon
-- id: 3663
+- id: 3684
   ingredient:
     name: aceite de sésamo
     prefix: ''
@@ -148,7 +148,7 @@ ingredients:
   quantity: '1'
   recipe: 207
   unit: tablespoon
-- id: 3664
+- id: 3685
   ingredient:
     name: sal china
     prefix: ''
@@ -156,7 +156,7 @@ ingredients:
   quantity: '1'
   recipe: 207
   unit: teaspoon
-- id: 3665
+- id: 3686
   ingredient:
     name: azúcar
     prefix: ''
@@ -164,7 +164,7 @@ ingredients:
   quantity: '1'
   recipe: 207
   unit: teaspoon
-- id: 3666
+- id: 3687
   ingredient:
     name: pimienta blanca
     prefix: ''
@@ -175,13 +175,14 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DT0n83UCLva/?igsh=MW50b2Qxa2tkY3Rxag==
 servings: 2
-status: Draft
+status: New
 tags:
 - cena
+- cocina asiática
 - cocina china
 - aperitivo
 title: Rollitos Primavera
-updated: '2026-02-27T12:10:15.496741+01:00'
+updated: '2026-02-27T12:13:07.812760+01:00'
 ---
 1. Pica la cabeza de lomo y la panceta fresca.
 2. Corta finamente la cebolleta, la col rizada y la col lombarda, y pásalas por sal para quitarles el agua.
