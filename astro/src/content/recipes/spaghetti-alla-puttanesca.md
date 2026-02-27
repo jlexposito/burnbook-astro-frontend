@@ -4,7 +4,7 @@ created: '2026-02-10T18:50:57.484284+01:00'
 id: 165
 image: /media/Spaghetti-Puttanesca_64.jpg
 ingredients:
-- id: 3314
+- id: 3538
   ingredient:
     name: tonnarelli o espagueti
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '200'
   recipe: 165
   unit: gr
-- id: 3315
+- id: 3539
   ingredient:
     name: anchoas
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '5'
   recipe: 165
   unit: unit
-- id: 3316
+- id: 3540
   ingredient:
     name: diente de ajo
     prefix: ''
@@ -28,23 +28,23 @@ ingredients:
   quantity: '1'
   recipe: 165
   unit: unit
-- id: 3317
+- id: 3541
   ingredient:
     name: alcaparras
-    prefix: saladas
+    prefix: ''
   optional: false
   quantity: '4'
   recipe: 165
   unit: teaspoon
-- id: 3318
+- id: 3542
   ingredient:
     name: chile
-    prefix: pequeño fresco rojo
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 165
   unit: unit
-- id: 3319
+- id: 3543
   ingredient:
     name: perejil
     prefix: ''
@@ -52,18 +52,18 @@ ingredients:
   quantity: '25'
   recipe: 165
   unit: gr
-- id: 3320
+- id: 3544
   ingredient:
     name: aceitunas
-    prefix: de Gaeta
+    prefix: ''
   optional: false
   quantity: '70'
   recipe: 165
   unit: gr
-- id: 3321
+- id: 3545
   ingredient:
     name: tomates cherry
-    prefix: lata de
+    prefix: ''
   optional: false
   quantity: '400'
   recipe: 165
@@ -71,7 +71,7 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DUlS2hRjfRA/
 servings: 2
-status: New
+status: Draft
 tags:
 - cena
 - pasta
@@ -79,7 +79,7 @@ tags:
 - cocina italiana
 - principal
 title: Spaghetti Alla Puttanesca
-updated: '2026-02-27T09:21:51.168015+01:00'
+updated: '2026-02-27T09:51:06.380056+01:00'
 ---
 1. Cocina la pasta (tonnarelli o espagueti) según las instrucciones del paquete hasta que esté al dente. Guarda un poco del agua de cocción.
 2. Mientras la pasta se cuece, prepara la salsa. Pela y pica finamente el diente de ajo y el chile rojo fresco. Desala las alcaparras si es necesario y pícalas ligeramente. Pica las anchoas (si las usas) y las aceitunas de Gaeta. Pica el perejil fresco.
