@@ -4,15 +4,15 @@ created: '2025-12-11T20:52:54.129193+01:00'
 id: 69
 image: null
 ingredients:
-- id: 858
+- id: 3293
   ingredient:
-    name: Huevos
+    name: huevos
     prefix: ''
   optional: false
   quantity: '2'
   recipe: 69
   unit: unit
-- id: 859
+- id: 3294
   ingredient:
     name: Plátanos
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 69
   unit: unit
-- id: 860
+- id: 3295
   ingredient:
     name: Mantequilla de cacahuete
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '250'
   recipe: 69
   unit: gr
-- id: 861
+- id: 3296
   ingredient:
     name: Arándanos
     prefix: ''
@@ -42,7 +42,9 @@ servings: 11
 status: Draft
 tags:
 - dulce
+- desayuno
+- merienda
 title: Muffins de arándanos
-updated: '2025-12-12T00:09:03.929030+01:00'
+updated: '2026-02-27T09:20:48.101503+01:00'
 ---
 Mezclar todos los ingredientes y hornear a 180 grados durante 15-20 minutos.

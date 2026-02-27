@@ -4,7 +4,7 @@ created: '2026-02-18T16:46:54.828802+01:00'
 id: 183
 image: null
 ingredients:
-- id: 2314
+- id: 3281
   ingredient:
     name: gambas
     prefix: crudas, peladas y desvenadas
@@ -12,7 +12,7 @@ ingredients:
   quantity: '10'
   recipe: 183
   unit: unit
-- id: 2315
+- id: 3282
   ingredient:
     name: aceite de chili con ajo
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 183
   unit: tablespoon
-- id: 2316
+- id: 3283
   ingredient:
     name: huevo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 183
   unit: unit
-- id: 2317
+- id: 3284
   ingredient:
     name: sriracha
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 183
   unit: tablespoon
-- id: 2318
+- id: 3285
   ingredient:
     name: mayonesa
     prefix: Kewpie
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 183
   unit: tablespoon
-- id: 2319
+- id: 3286
   ingredient:
     name: salsa de ostras
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 183
   unit: tablespoon
-- id: 2320
+- id: 3287
   ingredient:
     name: cebolletas
     prefix: picadas
@@ -60,7 +60,7 @@ ingredients:
   quantity: '3'
   recipe: 183
   unit: unit
-- id: 2321
+- id: 3288
   ingredient:
     name: setas shiitake
     prefix: en láminas
@@ -68,7 +68,7 @@ ingredients:
   quantity: '50'
   recipe: 183
   unit: gr
-- id: 2322
+- id: 3289
   ingredient:
     name: bok choy
     prefix: baby, cortado por la mitad o picado
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 183
   unit: unit
-- id: 2323
+- id: 3290
   ingredient:
     name: fideos ramen
     prefix: secos
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 183
   unit: unit
-- id: 2324
+- id: 3291
   ingredient:
     name: caldo
     prefix: de tu elección (pollo, ternera o verduras)
@@ -92,11 +92,11 @@ ingredients:
   quantity: '4'
   recipe: 183
   unit: cup
-- id: 2325
+- id: 3292
   ingredient:
     name: salsa de soja
     prefix: o sal
-  optional: true
+  optional: false
   quantity: al gusto
   recipe: 183
   unit: unit
@@ -106,10 +106,12 @@ servings: 2
 status: Draft
 tags:
 - cena
+- comida
 - picante
 - cocina japonesa
+- principal
 title: Ramen picante con gambas
-updated: '2026-02-18T16:46:54.828905+01:00'
+updated: '2026-02-27T09:20:32.160213+01:00'
 ---
 1. **Coloca** un donabe o una olla de barro a fuego medio. Si no tienes uno, una olla de metal normal funcionará perfectamente.
 2. **Añade** el aceite de ajo y chile y, una vez caliente, **casca** el huevo directamente en el aceite y **deja** que se cuaje suavemente durante unos 30 segundos.
