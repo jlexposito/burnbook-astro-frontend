@@ -10,8 +10,9 @@ servings: 2
 status: New
 tags:
 - cocina catalana
+- principal
 - navidad
-title: Receta Carn d'Olla y Escudella
-updated: '2026-02-23T19:36:37.921486+01:00'
+title: Carn d'Olla y Escudella
+updated: '2026-02-27T09:50:08.833886+01:00'
 ---
 Las instrucciones completas para la elaboración de esta receta, incluyendo los ingredientes y las cantidades, se encuentran disponibles en el perfil del usuario.

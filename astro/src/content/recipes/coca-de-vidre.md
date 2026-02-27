@@ -4,7 +4,7 @@ created: '2026-02-25T18:35:37.218969+01:00'
 id: 196
 image: /media/coca-de-vidre.avif
 ingredients:
-- id: 3030
+- id: 3533
   ingredient:
     name: Masa de coca o de pizza
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3031
+- id: 3534
   ingredient:
     name: aceite
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3032
+- id: 3535
   ingredient:
     name: azúcar
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3033
+- id: 3536
   ingredient:
     name: Anís
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 196
   unit: unit
-- id: 3034
+- id: 3537
   ingredient:
     name: Almendras o piñones
     prefix: ''
@@ -47,13 +47,13 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DVJfzhADVnN/?igsh=MXVtejg1b2w5cnZ6cQ==
 servings: 2
-status: Draft
+status: New
 tags:
 - vegetariano
 - postre
 - cocina española
 title: Coca de vidre
-updated: '2026-02-26T22:13:36.086603+01:00'
+updated: '2026-02-27T09:50:26.891212+01:00'
 ---
 1. Pinta las masas con aceite.
 2. Esparce azúcar generosamente sobre las masas.
