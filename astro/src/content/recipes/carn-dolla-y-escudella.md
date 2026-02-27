@@ -10,8 +10,8 @@ servings: 2
 status: New
 tags:
 - cocina catalana
-- principal
 - navidad
+- principal
 title: Carn d'Olla y Escudella
 updated: '2026-02-27T09:50:08.833886+01:00'
 ---

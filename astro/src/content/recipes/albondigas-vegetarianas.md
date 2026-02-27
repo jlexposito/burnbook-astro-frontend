@@ -36,6 +36,7 @@ tags:
 - cena
 - comida
 - vegetariano
+- principal
 title: Albóndigas vegetarianas
 updated: '2024-08-09T15:36:39.224974+02:00'
 ---

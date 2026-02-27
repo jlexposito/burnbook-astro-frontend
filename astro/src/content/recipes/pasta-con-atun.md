@@ -117,6 +117,7 @@ tags:
 - pescado
 - cena
 - pasta
+- principal
 title: Pasta con atún
 updated: '2026-02-21T13:40:29.613241+01:00'
 ---

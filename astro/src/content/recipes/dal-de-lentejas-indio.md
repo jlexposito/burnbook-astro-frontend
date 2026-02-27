@@ -148,6 +148,7 @@ tags:
 - cena
 - vegetariano
 - cocina india
+- principal
 title: Dal de Lentejas Indio
 updated: '2026-02-26T22:27:57.330770+01:00'
 ---

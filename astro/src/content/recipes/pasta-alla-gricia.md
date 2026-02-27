@@ -45,6 +45,7 @@ tags:
 - comida
 - pasta
 - cocina italiana
+- principal
 title: Pasta Alla Gricia
 updated: '2026-02-08T16:33:54.773226+01:00'
 ---

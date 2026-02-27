@@ -99,6 +99,7 @@ servings: 2
 status: Tried
 tags:
 - pescado
+- principal
 title: Salmon al curry
 updated: '2023-11-03T09:48:47.745767+01:00'
 ---
