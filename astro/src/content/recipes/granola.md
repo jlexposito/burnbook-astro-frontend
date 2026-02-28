@@ -62,8 +62,11 @@ tags:
 - freidora de aire
 - comida
 title: Granola
-updated: '2026-02-28T12:54:26.404901+01:00'
+updated: '2026-02-28T12:58:12.980740+01:00'
 ---
-1. Haz la granola en tu freidora de aire.
+1. Pon todo en la freidora de aire a 160 °C durante 5 minutos.
+2. Remueve bien.
+3. Freír al aire durante 10 minutos más.
+4. Enfriar. Deja que se enfríe por completo.
 
-Información nutricional: [Añadir información nutricional aquí si disponible]
+Disfruta.
