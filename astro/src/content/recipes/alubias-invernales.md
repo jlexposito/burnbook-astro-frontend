@@ -100,7 +100,6 @@ status: New
 tags:
 - comida
 - cocina española
-- fácil
 - principal
 title: Alubias Invernales
 updated: '2026-02-28T10:06:12.926430+01:00'

@@ -11,8 +11,8 @@ status: New
 tags:
 - cocina española
 - sopa
-- cocina catalana
 - principal
+- cocina catalana
 title: Carn d'Olla y Escudella
 updated: '2026-02-27T09:50:08.833886+01:00'
 ---

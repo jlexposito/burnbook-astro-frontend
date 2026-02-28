@@ -27,7 +27,6 @@ status: New
 tags:
 - desayuno
 - vegetariano
-- rápido
 title: Base de Tortita de Avena Rápida
 updated: '2026-02-21T14:34:45.455845+01:00'
 ---

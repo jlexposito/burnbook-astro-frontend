@@ -75,7 +75,6 @@ status: New
 tags:
 - vegetariano
 - entrante
-- fácil
 - aperitivo
 title: Bocaditos crujientes de feta, pistacho y miel
 updated: '2026-02-21T13:37:06.178994+01:00'

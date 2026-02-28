@@ -123,10 +123,9 @@ status: New
 tags:
 - cena
 - comida
+- principal
 - vegano
 - alto en proteína
-- rápido
-- principal
 title: Udon Cremoso con Cacahuete y Chili Crujiente
 updated: '2026-02-27T09:19:37.183287+01:00'
 ---

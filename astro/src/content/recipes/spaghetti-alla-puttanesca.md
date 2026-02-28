@@ -76,8 +76,8 @@ tags:
 - cena
 - pasta
 - vegetariano
-- cocina italiana
 - principal
+- cocina italiana
 title: Spaghetti Alla Puttanesca
 updated: '2026-02-27T09:51:06.380056+01:00'
 ---

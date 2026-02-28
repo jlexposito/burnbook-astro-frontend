@@ -99,8 +99,8 @@ status: Draft
 tags:
 - comida
 - cocina española
-- cocina catalana
 - principal
+- cocina catalana
 title: Canelones de San Esteban
 updated: '2026-02-27T09:19:20.090892+01:00'
 ---

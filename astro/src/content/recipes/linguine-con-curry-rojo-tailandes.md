@@ -165,8 +165,8 @@ tags:
 - comida
 - picante
 - cocina asiática
-- cocina tailandesa
 - principal
+- cocina tailandesa
 title: Linguine con Curry Rojo Tailandés
 updated: '2026-02-27T09:23:57.891905+01:00'
 ---

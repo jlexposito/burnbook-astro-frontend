@@ -34,8 +34,6 @@ servings: 2
 status: New
 tags:
 - postre
-- fácil
-- rápido
 title: Pastelitos de hojaldre de manzana
 updated: '2025-12-15T23:30:22.834245+01:00'
 ---

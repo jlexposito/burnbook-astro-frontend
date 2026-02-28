@@ -107,8 +107,8 @@ status: New
 tags:
 - cena
 - vegetariano
-- cocina mexicana
 - principal
+- cocina mexicana
 title: Carne de Tofu para Tacos
 updated: '2026-02-26T22:18:43.594263+01:00'
 ---

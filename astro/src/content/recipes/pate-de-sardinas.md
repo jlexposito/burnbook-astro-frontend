@@ -89,8 +89,6 @@ references:
 servings: 2
 status: New
 tags:
-- fácil
-- rápido
 - merienda
 - aperitivo
 title: Paté de sardinas

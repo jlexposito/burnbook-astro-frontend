@@ -10,7 +10,6 @@ servings: 2
 status: New
 tags:
 - cena
-- rápido
 title: Fideos de Arroz en una Olla
 updated: '2026-01-14T00:54:29.062124+01:00'
 ---
