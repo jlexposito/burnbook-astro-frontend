@@ -138,9 +138,9 @@ servings: 5
 status: Draft
 tags:
 - cena
-- comida
 - picante
 - ensalada
+- comida
 title: Ensalada de Pollo Buffalo Alta en Proteínas para Preparación de Comidas
 updated: '2026-01-13T22:47:21.105425+01:00'
 ---

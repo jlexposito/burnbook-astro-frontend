@@ -58,8 +58,8 @@ servings: 2
 status: Tried
 tags:
 - cena
-- comida
 - vegetariano
+- comida
 title: Arroz frito de coliflor
 updated: '2024-08-09T15:37:06.263115+02:00'
 ---

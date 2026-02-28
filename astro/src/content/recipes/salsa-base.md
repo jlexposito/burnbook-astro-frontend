@@ -138,8 +138,8 @@ servings: 2
 status: Draft
 tags:
 - salsa
-- comida
 - vegetariano
+- comida
 title: Salsa base
 updated: '2026-02-20T15:37:55.496066+01:00'
 ---

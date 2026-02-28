@@ -129,8 +129,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- comida
 - vegetariano
+- comida
 title: Hamburguesas veganas de legumbres
 updated: '2026-02-20T15:23:04.734748+01:00'
 ---

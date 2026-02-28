@@ -162,11 +162,11 @@ servings: 4
 status: Draft
 tags:
 - cena
-- comida
 - vegetariano
 - sopa
 - cocina india
 - principal
+- comida
 title: Dal de Lentejas Rojas Vegano
 updated: '2026-02-26T22:40:36.407092+01:00'
 ---

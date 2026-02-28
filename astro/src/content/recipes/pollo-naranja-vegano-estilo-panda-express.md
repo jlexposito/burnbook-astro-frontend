@@ -202,8 +202,8 @@ servings: 2
 status: New
 tags:
 - cena
-- comida
 - vegetariano
+- comida
 - vegano
 title: Pollo Naranja Vegano Estilo Panda Express
 updated: '2026-01-16T12:50:59.337377+01:00'

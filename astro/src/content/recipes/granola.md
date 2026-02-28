@@ -9,9 +9,9 @@ references:
 servings: 2
 status: New
 tags:
-- comida
 - desayuno
 - vegetariano
+- comida
 title: Granola
 updated: '2026-02-23T19:50:50.081370+01:00'
 ---

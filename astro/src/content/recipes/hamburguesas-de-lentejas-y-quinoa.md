@@ -25,8 +25,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- comida
 - vegetariano
+- comida
 title: Hamburguesas de Lentejas y Quinoa
 updated: '2026-02-20T15:40:38.177075+01:00'
 ---

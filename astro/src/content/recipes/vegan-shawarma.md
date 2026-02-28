@@ -114,8 +114,8 @@ servings: 2
 status: Draft
 tags:
 - cena
-- comida
 - principal
+- comida
 title: Vegan shawarma
 updated: '2026-02-27T10:10:06.589601+01:00'
 ---

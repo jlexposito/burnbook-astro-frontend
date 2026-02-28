@@ -42,9 +42,9 @@ servings: 2
 status: Tried
 tags:
 - cena
-- comida
 - pasta
 - principal
+- comida
 title: Risotto
 updated: '2024-08-09T15:39:07.300017+02:00'
 ---

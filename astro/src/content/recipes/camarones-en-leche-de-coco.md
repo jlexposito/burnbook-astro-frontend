@@ -82,9 +82,9 @@ servings: 2
 status: Tried
 tags:
 - cena
-- comida
 - pasta
 - principal
+- comida
 title: Camarones en Leche de Coco
 updated: '2026-02-27T09:23:02.641746+01:00'
 ---

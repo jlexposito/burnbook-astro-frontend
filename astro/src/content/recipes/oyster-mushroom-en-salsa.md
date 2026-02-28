@@ -121,8 +121,8 @@ servings: 4
 status: Tried
 tags:
 - cena
-- comida
 - vegetariano
+- comida
 title: Oyster mushroom en salsa
 updated: '2024-08-09T15:37:59.696730+02:00'
 ---

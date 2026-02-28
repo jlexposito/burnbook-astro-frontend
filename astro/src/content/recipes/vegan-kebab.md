@@ -34,8 +34,8 @@ servings: 2
 status: New
 tags:
 - cena
-- comida
 - principal
+- comida
 title: Vegan kebab
 updated: '2024-08-09T15:36:17.148963+02:00'
 ---

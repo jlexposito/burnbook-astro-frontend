@@ -162,9 +162,9 @@ servings: 2
 status: New
 tags:
 - cena
-- comida
 - cocina india
 - principal
+- comida
 title: Butter chicken casero
 updated: '2026-02-27T09:49:37.425516+01:00'
 ---

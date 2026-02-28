@@ -141,9 +141,9 @@ status: Tried
 tags:
 - pescado
 - cena
-- comida
 - cocina japonesa
 - principal
+- comida
 title: Sushi variado
 updated: '2026-02-27T09:54:53.683552+01:00'
 ---

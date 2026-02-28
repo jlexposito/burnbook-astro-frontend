@@ -33,9 +33,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- comida
 - vegetariano
 - cocina española
+- comida
 title: Relleno de empanadas de espinaca, ricota y provolone
 updated: '2026-02-27T17:00:57.026503+01:00'
 ---

@@ -98,8 +98,8 @@ servings: 2
 status: Draft
 tags:
 - cena
-- comida
 - principal
+- comida
 title: Fajitas de calabacín
 updated: '2026-02-27T09:23:19.954247+01:00'
 ---

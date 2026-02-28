@@ -242,9 +242,9 @@ servings: 2
 status: Draft
 tags:
 - cena
-- comida
 - vegetariano
 - cocina india
+- comida
 title: Curry Cremoso de Paneer
 updated: '2026-02-13T21:25:41.633894+01:00'
 ---

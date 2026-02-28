@@ -82,9 +82,9 @@ servings: 2
 status: Draft
 tags:
 - cena
-- comida
 - vegetariano
 - principal
+- comida
 - cocina italiana
 title: Pasta Cremosa al Limón
 updated: '2026-02-26T22:33:17.235615+01:00'

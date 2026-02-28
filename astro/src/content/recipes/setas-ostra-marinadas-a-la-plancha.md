@@ -89,8 +89,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- comida
 - vegetariano
+- comida
 title: Setas ostra marinadas a la plancha
 updated: '2026-02-27T17:22:04.750775+01:00'
 ---

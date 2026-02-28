@@ -155,8 +155,8 @@ servings: 2
 status: Draft
 tags:
 - cena
-- comida
 - picante
+- comida
 - cocina china
 title: Wantones con Salsa Picante
 updated: '2026-02-26T22:05:36.904590+01:00'

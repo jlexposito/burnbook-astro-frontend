@@ -74,9 +74,9 @@ servings: 4
 status: Draft
 tags:
 - cena
-- comida
 - vegetariano
 - principal
+- comida
 title: Milanesas de tofu
 updated: '2026-02-26T22:00:35.657477+01:00'
 ---

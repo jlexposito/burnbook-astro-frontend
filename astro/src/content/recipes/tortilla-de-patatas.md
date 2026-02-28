@@ -34,9 +34,9 @@ servings: 2
 status: Tried
 tags:
 - cena
-- comida
 - principal
 - cocina española
+- comida
 title: Tortilla de patatas
 updated: '2024-08-09T15:36:01.758323+02:00'
 ---

@@ -42,9 +42,9 @@ servings: 1
 status: Draft
 tags:
 - cena
-- comida
 - pasta
 - principal
+- comida
 - cocina italiana
 title: Pasta Alla Gricia
 updated: '2026-02-08T16:33:54.773226+01:00'

@@ -154,9 +154,9 @@ servings: 8
 status: Draft
 tags:
 - cena
-- comida
 - vegetariano
 - principal
+- comida
 title: Alubias Caldosas al Limón
 updated: '2026-02-27T09:55:56.411206+01:00'
 ---

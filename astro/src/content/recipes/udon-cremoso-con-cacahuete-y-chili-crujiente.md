@@ -122,8 +122,8 @@ servings: 2
 status: New
 tags:
 - cena
-- comida
 - principal
+- comida
 - vegano
 - alto en proteína
 title: Udon Cremoso con Cacahuete y Chili Crujiente

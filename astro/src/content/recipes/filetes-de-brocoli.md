@@ -58,8 +58,8 @@ servings: 2
 status: Draft
 tags:
 - cena
-- comida
 - vegetariano
+- comida
 title: Filetes de Brócoli
 updated: '2026-02-13T21:25:58.031243+01:00'
 ---

@@ -91,8 +91,8 @@ status: Tried
 tags:
 - one pot
 - cena
-- comida
 - principal
+- comida
 title: Peanut butter curry
 updated: '2026-02-27T09:21:29.021532+01:00'
 ---
