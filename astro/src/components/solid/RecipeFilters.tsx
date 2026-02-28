@@ -1,170 +1,100 @@
-import type { Tag } from "@utils/interfaces";
-import { createMemo, For, Show } from "solid-js";
+import { createMemo, createSignal, For, Show } from "solid-js";
 
-interface RecipeFiltersProps {
-  open: boolean;
-  setOpen: (v: boolean) => void;
-  search: string;
-  setSearch: (v: string) => void;
-  tagSearch: string;
-  setTagSearch: (v: string) => void;
-  activeTags: () => string[];
-  toggleTag: (tag: string) => void;
-  maxTime: number | null;
-  setMaxTime: (v: number | null) => void;
-  tags: Tag[];
-}
+type Props = {
+  tags: string[];
+  selected: string[];
+  onToggle: (tag: string) => void;
+};
 
-// Normaliza un string: minúsculas + sin acentos
-function normalizeString(str: string) {
-  return str
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase();
-}
+export function TagSelector(props: Props) {
+  const [query, setQuery] = createSignal("");
 
-export default function RecipeFilters(props: RecipeFiltersProps) {
-  // Normalizamos los tags solo una vez
-  const normalizedTags = createMemo(() =>
-    props.tags.map(tag => ({
-      original: tag,
-      normalizedName: normalizeString(tag.name),
-    }))
+  const normalizedQuery = createMemo(() =>
+    query().toLowerCase().trim()
   );
 
-  const visibleTags = createMemo(() => {
-    const query = normalizeString(props.tagSearch.trim());
-    const active = props.activeTags();
+  const selectedTags = createMemo(() =>
+    props.selected.filter(tag =>
+      tag.toLowerCase().includes(normalizedQuery())
+    )
+  );
 
-    return normalizedTags()
-      .filter(tag => tag.normalizedName.includes(query))
-      .sort((a, b) => {
-        const aActive = active.includes(a.original.name);
-        const bActive = active.includes(b.original.name);
+  const availableTags = createMemo(() =>
+    props.tags
+      .filter(tag => !props.selected.includes(tag))
+      .filter(tag =>
+        tag.toLowerCase().includes(normalizedQuery())
+      )
+  );
 
-        if (aActive !== bActive) return aActive ? -1 : 1; // los activos primero
-        if (a.original.highligthed !== b.original.highligthed)
-          return a.original.highligthed ? -1 : 1; // luego los destacados
-        return a.original.name.localeCompare(b.original.name); // alfabéticamente
-      })
-      .map(tag => tag.original);
-  });
-
-  const clearSearch = () => props.setSearch("");
-  const clearTagSearch = () => props.setTagSearch("");
+  const onKeyToggle = (e: KeyboardEvent, tag: string) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      props.onToggle(tag);
+    }
+  };
 
   return (
-    <div class="sticky top-0 z-10 flex flex-col">
-      {/* Sticky search + filter toggle */}
-      <div class="p-4 pb-1 px-0 flex gap-2 items-center">
-        <div class="relative flex-1">
-          <label for="searchRecipes" class="sr-only">
-            Search recipes
-          </label>
-          <input
-            id="searchRecipes"
-            name="searchRecipes"
-            type="text"
-            placeholder="Buscar recetas..."
-            class="w-full bg-white border-1 bg-secondary px-3 py-2 border-sm rounded-sm"
-            value={props.search}
-            onInput={e => props.setSearch(e.currentTarget.value)}
-          />
-          <Show when={props.search}>
-            <button
-              type="button"
-              class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-gray-600 rounded-full w-6 h-6 flex items-center justify-center text-lg transition-transform duration-150"
-              onClick={clearSearch}
-            >
-              &times;
-            </button>
-          </Show>
-        </div>
+    <div class="tag-selector">
+      {/* Search */}
+      <input
+        type="text"
+        placeholder="Search tags…"
+        value={query()}
+        onInput={e => setQuery(e.currentTarget.value)}
+        aria-label="Search tags"
+      />
 
-        <button
-          class="btn-primary text-white rounded-md"
-          onClick={() => props.setOpen(!props.open)}
-        >
-          Filtros
-        </button>
-      </div>
+      {/* Selected */}
+      <Show when={selectedTags().length > 0}>
+        <div class="tag-section">
+          <h4>
+            Selected
+            <span class="badge">{selectedTags().length}</span>
+          </h4>
 
-      {/* Animated filter panel */}
-      <div
-        class={`overflow-hidden border rounded-sm bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
-          props.open
-            ? "max-h-[500px] opacity-100 pointer-events-auto"
-            : "max-h-0 opacity-0 pointer-events-none"
-        }`}
-      >
-        <div class="p-4 space-y-4 max-h-[500px] overflow-y-auto">
-          {/* Max cooking time */}
-          <div>
-            <label for="timeFilter" class="block mb-1 font-semibold">
-              Tiempo de preparación (minutos)
-            </label>
-            <input
-              id="timeFilter"
-              name="timeFilter"
-              type="number"
-              placeholder="e.g., 30"
-              class="w-full px-3 py-2 border rounded-sm"
-              value={props.maxTime ?? ""}
-              onInput={e =>
-                props.setMaxTime(
-                  e.currentTarget.value ? parseInt(e.currentTarget.value) : null
-                )
-              }
-            />
-          </div>
-
-          {/* Tag search */}
-          <div>
-            <label for="tagSearch" class="block mb-1 font-semibold">
-              Búsqueda por etiquetas
-            </label>
-            <div class="relative">
-              <input
-                id="tagSearch"
-                name="tagSearch"
-                type="text"
-                placeholder="Search tags..."
-                class="w-full px-3 py-2 border rounded-sm mb-2"
-                value={props.tagSearch}
-                onInput={e => props.setTagSearch(e.currentTarget.value)}
-              />
-              <Show when={props.tagSearch}>
+          <div class="tags" role="list">
+            <For each={selectedTags()}>
+              {tag => (
                 <button
-                  type="button"
-                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-gray-600 rounded-full w-6 h-6 flex items-center justify-center text-lg transition-transform duration-150"
-                  onClick={clearTagSearch}
+                  class="tag selected"
+                  role="listitem"
+                  tabindex="0"
+                  aria-pressed="true"
+                  onClick={() => props.onToggle(tag)}
+                  onKeyDown={e => onKeyToggle(e, tag)}
                 >
-                  &times;
+                  {tag}
                 </button>
-              </Show>
-            </div>
-
-            <div class="tags px-2 py-4 flex flex-wrap gap-2 max-h-40 overflow-y-auto">
-              <For each={visibleTags()}>
-                {tag => (
-                  <button
-                    classList={{
-                      "px-3 py-1 rounded-sm border-1 border-primary/20 hover:cursor-pointer": true,
-                      "btn-accent hover:ring-secondary-dark-ring":
-                        props.activeTags().includes(tag.name),
-                      "bg-gray-200 text-black hover:bg-gray-300":
-                        !props.activeTags().includes(tag.name),
-                    }}
-                    onClick={() => props.toggleTag(tag.name)}
-                  >
-                    {tag.name}
-                  </button>
-                )}
-              </For>
-            </div>
+              )}
+            </For>
           </div>
         </div>
-      </div>
+      </Show>
+
+      {/* Available */}
+      <Show when={availableTags().length > 0}>
+        <div class="tag-section">
+          <h4>Available</h4>
+
+          <div class="tags" role="list">
+            <For each={availableTags()}>
+              {tag => (
+                <button
+                  class="tag"
+                  role="listitem"
+                  tabindex="0"
+                  aria-pressed="false"
+                  onClick={() => props.onToggle(tag)}
+                  onKeyDown={e => onKeyToggle(e, tag)}
+                >
+                  {tag}
+                </button>
+              )}
+            </For>
+          </div>
+        </div>
+      </Show>
     </div>
   );
 }
