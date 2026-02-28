@@ -52,6 +52,7 @@ tags:
 - vegetariano
 - postre
 - cocina española
+- merienda
 title: Coca de vidre
 updated: '2026-02-27T09:50:26.891212+01:00'
 ---

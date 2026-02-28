@@ -34,6 +34,7 @@ servings: 2
 status: Tried
 tags:
 - postre
+- merienda
 title: Bocaditos de Arándanos y Yogurt
 updated: '2023-09-11T22:08:55.373163+02:00'
 ---

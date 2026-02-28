@@ -4,7 +4,7 @@ created: '2026-02-20T15:52:47.539322+01:00'
 id: 191
 image: null
 ingredients:
-- id: 2410
+- id: 3759
   ingredient:
     name: crostini
     prefix: pan
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 191
   unit: unit
-- id: 2411
+- id: 3760
   ingredient:
     name: parmesano
     prefix: queso
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 191
   unit: unit
-- id: 2412
+- id: 3761
   ingredient:
     name: ricotta
     prefix: fresca
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 191
   unit: unit
-- id: 2413
+- id: 3762
   ingredient:
     name: tomates
     prefix: confitados lentamente
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 191
   unit: unit
-- id: 2414
+- id: 3763
   ingredient:
     name: anchoa
     prefix: filete de
@@ -44,9 +44,9 @@ ingredients:
   quantity: '1'
   recipe: 191
   unit: unit
-- id: 2415
+- id: 3764
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: '1'
@@ -58,9 +58,11 @@ servings: 2
 status: Draft
 tags:
 - cena
+- entrante
+- merienda
 - cocina italiana
 title: Crostini con Ricotta, Tomates Confitados y Anchoas
-updated: '2026-02-20T15:52:47.539364+01:00'
+updated: '2026-02-28T11:42:03.932249+01:00'
 ---
 1. Prepara el pan crostini con una costra de parmesano hasta que esté dorado y salado.
 2. Unta la ricotta fresca sobre el crostini con costra de parmesano.

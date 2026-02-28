@@ -59,6 +59,7 @@ status: Tried
 tags:
 - dulce
 - desayuno
+- merienda
 title: Pancakes ricos en proteína
 updated: '2026-02-27T09:20:10.688426+01:00'
 ---

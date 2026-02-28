@@ -42,6 +42,7 @@ servings: 3
 status: Tried
 tags:
 - postre
+- merienda
 title: Helada de mandarina
 updated: '2024-02-19T20:14:32.713936+01:00'
 ---
