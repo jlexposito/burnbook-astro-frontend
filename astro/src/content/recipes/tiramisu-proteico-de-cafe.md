@@ -4,7 +4,7 @@ created: '2026-02-08T15:57:45.595377+01:00'
 id: 157
 image: /media/Tiramisu-proteico-golosissimo-720x1080.jpg
 ingredients:
-- id: 2612
+- id: 3753
   ingredient:
     name: Yogur
     prefix: proteico o griego
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 157
   unit: unit
-- id: 2613
+- id: 3754
   ingredient:
     name: Café
     prefix: frío
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 157
   unit: unit
-- id: 2614
+- id: 3755
   ingredient:
     name: Chía
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 157
   unit: unit
-- id: 2615
+- id: 3756
   ingredient:
     name: Miel
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 157
   unit: unit
-- id: 2616
+- id: 3757
   ingredient:
     name: Cacao en polvo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 157
   unit: unit
-- id: 2617
+- id: 3758
   ingredient:
     name: Chocolate negro
     prefix: ''
@@ -57,9 +57,11 @@ references:
 servings: 2
 status: New
 tags:
+- dulce
 - postre
+- merienda
 title: Tiramisú proteico de café
-updated: '2026-02-21T14:35:36.345432+01:00'
+updated: '2026-02-28T11:38:35.142407+01:00'
 ---
 1. En un recipiente, mezcla bien el yogur proteico o griego, el café frío, las semillas de chía y la miel hasta obtener una crema homogénea.
 2. Sirve la mezcla en copas individuales o un recipiente grande para montarlo.

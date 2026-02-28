@@ -59,7 +59,6 @@ status: New
 tags:
 - vegetariano
 - postre
-- snack
 - freidora de aire
 - merienda
 title: Crujientes de manzana con papel de arroz
