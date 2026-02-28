@@ -82,7 +82,7 @@ const RecipeIngredientForm: Component<{
               name="ingredient_quantity[]"
               label="Cantidad"
               type="text"
-              required={true}
+              required={false}
               classes={"text-center"}
               value={quantity}
             />
