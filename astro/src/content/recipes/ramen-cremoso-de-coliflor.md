@@ -118,7 +118,6 @@ tags:
 - vegetariano
 - cocina asiática
 - principal
-- ramen
 title: Ramen Cremoso de Coliflor
 updated: '2025-12-15T22:43:45.436433+01:00'
 ---
