@@ -50,7 +50,6 @@ servings: 2
 status: Draft
 tags:
 - comida
-- cocina latinoamericana
 title: Arepas de Arroz Sobrado
 updated: '2026-02-27T18:40:06.467150+01:00'
 ---
