@@ -35,8 +35,8 @@ status: Tried
 tags:
 - cena
 - comida
-- cocina española
 - principal
+- cocina española
 title: Tortilla de patatas
 updated: '2024-08-09T15:36:01.758323+02:00'
 ---

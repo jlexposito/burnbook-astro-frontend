@@ -98,9 +98,8 @@ servings: 23
 status: Draft
 tags:
 - comida
-- cocina española
 - principal
-- cocina catalana
+- cocina española
 title: Canelones de San Esteban
 updated: '2026-02-27T09:19:20.090892+01:00'
 ---

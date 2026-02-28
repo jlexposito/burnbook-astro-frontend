@@ -140,7 +140,7 @@ tags:
 - cena
 - comida
 - principal
-- cocina catalana
+- cocina española
 title: Fricandó
 updated: '2025-12-15T22:57:56.421162+01:00'
 ---
