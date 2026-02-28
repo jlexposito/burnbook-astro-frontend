@@ -11,7 +11,10 @@ function getUnitTranslated(unit) {
   let translateUnit = "";
   switch (unit) {
     case "tablespoon":
-      translateUnit = "tbsp";
+      translateUnit = "cucharada";
+      break;
+    case "teaspoon":
+     translateUnit = "cucharilla";
       break;
     case "unit":
       translateUnit = "";
@@ -23,31 +26,41 @@ function getUnitTranslated(unit) {
   return translateUnit;
 }
 function prefix(recipeIngredient: RecipeIngredient) {
-  let recipePrefix = recipeIngredient.ingredient.prefix;
+  let recipePrefix = recipeIngredient?.ingredient?.prefix || "";
+  recipePrefix = recipePrefix.toLowerCase()
   if (recipePrefix.endsWith(" "))
     return recipePrefix
   return `${recipePrefix} `;
 }
 function name(recipeIngredient: RecipeIngredient) {
-  return recipeIngredient.ingredient.name;
+  let recipeName = recipeIngredient?.ingredient?.name || "";
+  return recipeName.toLowerCase()
+}
+
+function getIngredientText(recipeIngredient: RecipeIngredient) {
+  let quantity : number = recipeIngredient?.quantity || 1;
+  let ingredient_fullname : string = prefix(recipeIngredient) + name(recipeIngredient);
+  let unit = recipeIngredient?.unit || "al_gusto";
+  if (unit === "al_gusto") return `${ingredient_fullname} al gusto`;
+  console.log(recipeIngredient)
+  let translatedUnit = getUnitTranslated(unit);
+  return `${quantity} ${translatedUnit} ${ingredient_fullname}`
 }
 ---
 
 <div class="ingredient text-lg">
   {
-    RecipeIngredients.map((RecipeIngredient, index) => (
+    RecipeIngredients.map((recipeIngredient, index) => (
       <div class="mb-4">
         <input
           type="checkbox"
           id={`ingredient-${index}`}
-          name={RecipeIngredient.ingredient.name}
+          name={recipeIngredient.ingredient.name}
           value={index}
         />
         <label class="ml-1 hover:cursor-pointer" for={`ingredient-${index}`}>
           <span>
-            {RecipeIngredient.quantity}{" "}
-            {getUnitTranslated(RecipeIngredient.unit)}{" "}
-            {prefix(RecipeIngredient)} {name(RecipeIngredient)}
+            { getIngredientText(recipeIngredient) }
           </span>
         </label>
       </div>
