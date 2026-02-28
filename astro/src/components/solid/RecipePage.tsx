@@ -14,6 +14,7 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   const [tagSearch, setTagSearch] = createSignal("");
   const [activeTags, setActiveTags] = createSignal<string[]>([]);
   const [maxTime, setMaxTime] = createSignal<number | null>(null);
+  const [minTime, setMinTime] = createSignal<number | null>(null);
 
   // ---- Layout constants ----
   const ROWS_PER_LOAD = 4;
@@ -113,12 +114,13 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
 
   // ---- Filtered recipes ----
   const filteredRecipes = createMemo(() =>
-    props.recipes.filter((r) => {
+    props.recipes.filter(r => {
       const nameOk = r.title.toLowerCase().includes(search().toLowerCase());
       const tagsOk =
-        activeTags().length === 0 ||
-        activeTags().some((t) => r.tags.includes(t));
-      const timeOk = !maxTime() || r.cooking_time <= maxTime();
+        activeTags().length === 0 || activeTags().some(t => r.tags.includes(t));
+      const timeOk =
+        (!minTime() || r.cooking_time >= minTime()) &&
+        (!maxTime() || r.cooking_time <= maxTime());
       return nameOk && tagsOk && timeOk;
     })
   );
@@ -132,7 +134,8 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   const toggleTag = (tag: string) =>
     setActiveTags((prev) =>
       prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-    );
+  );
+    
 
   // ---- Optional: scroll-to-top on filter (comment/uncomment as desired) ----
   // createEffect(() => {
@@ -150,7 +153,10 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
           tagSearch={tagSearch()}
           setTagSearch={setTagSearch}
           activeTags={activeTags}
+          setActiveTags={setActiveTags}
           toggleTag={toggleTag}
+          minTime={minTime()}
+          setMinTime={setMinTime}
           maxTime={maxTime()}
           setMaxTime={setMaxTime}
           tags={tags()}

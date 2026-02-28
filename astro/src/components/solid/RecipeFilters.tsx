@@ -9,13 +9,16 @@ interface RecipeFiltersProps {
   tagSearch: string;
   setTagSearch: (v: string) => void;
   activeTags: () => string[];
+  setActiveTags: (tags: string[]) => void;
   toggleTag: (tag: string) => void;
+  minTime: number | null;
+  setMinTime: (v: number | null) => void;
   maxTime: number | null;
   setMaxTime: (v: number | null) => void;
   tags: Tag[];
 }
 
-// Normaliza un string: minúsculas + sin acentos
+// Normalize strings: lowercase + remove diacritics
 function normalizeString(str: string) {
   return str
     .normalize("NFD")
@@ -24,7 +27,6 @@ function normalizeString(str: string) {
 }
 
 export default function RecipeFilters(props: RecipeFiltersProps) {
-  // Normalizamos los tags solo una vez
   const normalizedTags = createMemo(() =>
     props.tags.map(tag => ({
       original: tag,
@@ -32,7 +34,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
     }))
   );
 
-  // Filtrado por búsqueda
   const filteredTags = createMemo(() => {
     const query = normalizeString(props.tagSearch.trim());
     return normalizedTags()
@@ -40,7 +41,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
       .map(tag => tag.original);
   });
 
-  // Separar tags en seleccionados y no seleccionados
   const selectedTags = createMemo(() =>
     filteredTags().filter(tag => props.activeTags().includes(tag.name))
   );
@@ -51,6 +51,21 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
 
   const clearSearch = () => props.setSearch("");
   const clearTagSearch = () => props.setTagSearch("");
+
+  const anyFilterActive = () =>
+    props.search ||
+    props.tagSearch ||
+    props.activeTags().length > 0 ||
+    props.minTime != null ||
+    props.maxTime != null;
+
+  const clearAllFilters = () => {
+    props.setSearch("");
+    props.setTagSearch("");
+    props.setActiveTags([]);
+    props.setMinTime(null);
+    props.setMaxTime(null);
+  };
 
   return (
     <div class="sticky top-0 z-10 flex flex-col">
@@ -97,24 +112,44 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         }`}
       >
         <div class="p-4 space-y-4 max-h-[500px] overflow-y-auto">
-          {/* Max cooking time */}
-          <div>
-            <label for="timeFilter" class="block mb-1 font-semibold">
-              Tiempo de preparación (minutos)
-            </label>
-            <input
-              id="timeFilter"
-              name="timeFilter"
-              type="number"
-              placeholder="e.g., 30"
-              class="w-full px-3 py-2 border rounded-sm"
-              value={props.maxTime ?? ""}
-              onInput={e =>
-                props.setMaxTime(
-                  e.currentTarget.value ? parseInt(e.currentTarget.value) : null
-                )
-              }
-            />
+          {/* Cooking time filters */}
+          <div class="flex gap-2">
+            <div class="flex-1">
+              <label for="minTimeFilter" class="block mb-1 font-semibold">
+                Tiempo mínimo (min)
+              </label>
+              <input
+                id="minTimeFilter"
+                name="minTimeFilter"
+                type="number"
+                placeholder="e.g., 10"
+                class="w-full px-3 py-2 border rounded-sm"
+                value={props.minTime ?? ""}
+                onInput={e =>
+                  props.setMinTime(
+                    e.currentTarget.value ? parseInt(e.currentTarget.value) : null
+                  )
+                }
+              />
+            </div>
+            <div class="flex-1">
+              <label for="maxTimeFilter" class="block mb-1 font-semibold">
+                Tiempo máximo (min)
+              </label>
+              <input
+                id="maxTimeFilter"
+                name="maxTimeFilter"
+                type="number"
+                placeholder="e.g., 30"
+                class="w-full px-3 py-2 border rounded-sm"
+                value={props.maxTime ?? ""}
+                onInput={e =>
+                  props.setMaxTime(
+                    e.currentTarget.value ? parseInt(e.currentTarget.value) : null
+                  )
+                }
+              />
+            </div>
           </div>
 
           {/* Tag search */}
@@ -178,6 +213,18 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                     )}
                   </For>
                 </div>
+              </div>
+            </Show>
+
+            {/* Clear all filters button at the end */}
+            <Show when={anyFilterActive()}>
+              <div class="mt-4 flex justify-end">
+                <button
+                  class="btn-primary text-white rounded-md"
+                  onClick={clearAllFilters}
+                >
+                  Limpiar filtros
+                </button>
               </div>
             </Show>
           </div>
