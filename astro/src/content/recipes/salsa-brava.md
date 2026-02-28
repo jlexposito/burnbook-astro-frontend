@@ -4,47 +4,39 @@ created: '2026-02-28T14:49:58.791452+01:00'
 id: 215
 image: null
 ingredients:
-- id: 3818
+- id: 3826
   ingredient:
     name: aceite de oliva
-    prefix: virgen extra
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 215
   unit: tablespoon
-- id: 3819
+- id: 3827
   ingredient:
     name: cebolla
-    prefix: pequeña bien picada
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 215
   unit: unit
-- id: 3820
+- id: 3828
   ingredient:
     name: ajo
-    prefix: diente de
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 215
   unit: unit
-- id: 3821
+- id: 3829
   ingredient:
     name: pimentón
-    prefix: dulce
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 215
   unit: tablespoon
-- id: 3822
-  ingredient:
-    name: pimentón
-    prefix: picante
-  optional: false
-  quantity: '1'
-  recipe: 215
-  unit: tablespoon
-- id: 3823
+- id: 3830
   ingredient:
     name: harina
     prefix: ''
@@ -52,15 +44,15 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: tablespoon
-- id: 3824
+- id: 3831
   ingredient:
     name: caldo
-    prefix: de verduras o pollo
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 215
   unit: cup
-- id: 3825
+- id: 3832
   ingredient:
     name: Sal
     prefix: ''
@@ -68,8 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: teaspoon
-references:
-- https://www.instagram.com/reel/DVDs8RjAo6h/?igsh=NnBwOTRrbGViMHp4
+references: []
 servings: 2
 status: Draft
 tags:
@@ -77,7 +68,7 @@ tags:
 - picante
 - cocina española
 title: Salsa brava
-updated: '2026-02-28T14:53:03.389906+01:00'
+updated: '2026-02-28T14:53:54.451133+01:00'
 ---
 1. Calienta el aceite y sofríe la cebolla a fuego medio hasta que esté transparente y suave.
 2. Añade el pimentón dulce y el picante.
