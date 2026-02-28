@@ -4,7 +4,7 @@ created: '2026-02-27T17:00:57.026452+01:00'
 id: 209
 image: null
 ingredients:
-- id: 3706
+- id: 3765
   ingredient:
     name: espinaca
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 209
   unit: unit
-- id: 3707
+- id: 3766
   ingredient:
     name: ricota
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 209
   unit: unit
-- id: 3708
+- id: 3767
   ingredient:
     name: provolone
     prefix: queso
@@ -33,15 +33,15 @@ references:
 servings: 2
 status: Draft
 tags:
+- cena
 - vegetariano
 - cocina española
 - comida
 title: Relleno de empanadas de espinaca, ricota y provolone
-updated: '2026-02-27T17:00:57.026503+01:00'
+updated: '2026-02-28T11:44:39.363016+01:00'
 ---
 1. Mezcla la ricota con la espinaca fresca.
 2. Agrega el queso provolone para intensificar el sabor.
 3. Rellena las empanadas con la mezcla.
 4. Cocina según tu técnica preferida.
 
-Información nutricional: No disponible.

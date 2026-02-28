@@ -52,6 +52,7 @@ status: Tried
 tags:
 - dulce
 - postre
+- merienda
 title: Tarta de zanahoria (carrot cake)
 updated: '2026-02-27T09:57:29.793943+01:00'
 ---

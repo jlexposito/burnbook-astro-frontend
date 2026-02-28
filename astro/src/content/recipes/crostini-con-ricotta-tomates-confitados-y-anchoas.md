@@ -59,8 +59,8 @@ status: Draft
 tags:
 - cena
 - entrante
-- merienda
 - comida
+- merienda
 - cocina italiana
 title: Crostini con Ricotta, Tomates Confitados y Anchoas
 updated: '2026-02-28T11:42:03.932249+01:00'

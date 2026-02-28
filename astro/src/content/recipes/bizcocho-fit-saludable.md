@@ -114,6 +114,7 @@ servings: 2
 status: Draft
 tags:
 - postre
+- merienda
 title: Bizcocho Fit Saludable
 updated: '2025-12-23T14:49:51.706604+01:00'
 ---
