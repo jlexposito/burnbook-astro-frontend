@@ -34,6 +34,7 @@ const IngredientSelect: Component<{
       }
       let value = opt?.name;
       let label = value;
+      if (value === "al_gusto") label = "al gusto"
       if ("prefix" in opt && opt.prefix.length) {
         label = `${opt.prefix} ${value}`;
       }
