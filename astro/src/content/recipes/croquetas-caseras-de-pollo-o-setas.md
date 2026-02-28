@@ -136,7 +136,6 @@ references: []
 servings: 16
 status: Tried
 tags:
-- salado
 - cena
 - comida
 title: Croquetas caseras de pollo o setas

@@ -50,7 +50,6 @@ servings: 2
 status: Draft
 tags:
 - postre
-- saludable
 - alto en proteína
 - bajo en calorías
 title: Tarta de Queso Fitness

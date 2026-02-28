@@ -115,7 +115,6 @@ status: Draft
 tags:
 - crema
 - vegetariano
-- saludable
 title: Crema de coliflor y manzana asada
 updated: '2025-12-12T00:09:03.858438+01:00'
 ---

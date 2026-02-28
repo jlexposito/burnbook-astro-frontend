@@ -40,7 +40,6 @@ references: []
 servings: 2
 status: Tried
 tags:
-- salado
 - cena
 - comida
 title: Bagels con champiñones

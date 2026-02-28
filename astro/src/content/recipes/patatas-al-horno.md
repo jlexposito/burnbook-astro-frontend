@@ -65,7 +65,6 @@ references:
 servings: 2
 status: Tried
 tags:
-- salado
 - guarnición
 title: Patatas al horno
 updated: '2024-08-09T15:38:33.626571+02:00'

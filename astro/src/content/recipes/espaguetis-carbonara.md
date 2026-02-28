@@ -41,7 +41,6 @@ references:
 servings: 2
 status: Tried
 tags:
-- salado
 - cena
 - comida
 - pasta
