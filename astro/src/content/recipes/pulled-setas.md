@@ -83,8 +83,8 @@ status: Draft
 tags:
 - comida
 - vegetariano
-- cocina mexicana
 - principal
+- cocina mexicana
 title: Pulled setas
 updated: '2026-02-26T22:37:46.266946+01:00'
 ---

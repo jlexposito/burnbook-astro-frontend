@@ -4,7 +4,7 @@ created: '2026-02-28T11:16:40.692196+01:00'
 id: 213
 image: null
 ingredients:
-- id: 3743
+- id: 3748
   ingredient:
     name: piña
     prefix: madura y cortada en trozos
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1465'
   recipe: 213
   unit: gr
-- id: 3744
+- id: 3749
   ingredient:
     name: agua
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2500'
   recipe: 213
   unit: gr
-- id: 3745
+- id: 3750
   ingredient:
     name: sirope simple
     prefix: ''
@@ -28,15 +28,15 @@ ingredients:
   quantity: '820'
   recipe: 213
   unit: gr
-- id: 3746
+- id: 3751
   ingredient:
-    name: zumo de lima
+    name: Zumo de lima
     prefix: ''
   optional: false
   quantity: '105'
   recipe: 213
   unit: gr
-- id: 3747
+- id: 3752
   ingredient:
     name: sal kosher
     prefix: Diamond Crystal (al gusto)
@@ -50,10 +50,10 @@ servings: 2
 status: Draft
 tags:
 - vegetariano
-- refrescante
+- cocina mexicana
 - bebida
 title: Agua Fresca de Piña
-updated: '2026-02-28T11:16:40.692245+01:00'
+updated: '2026-02-28T11:31:50.641788+01:00'
 ---
 1. Trabaja en tandas, licúa la piña y el agua hasta obtener una mezcla suave.
 2. Pasa la mezcla licuada por un colador de malla fina y reserva la pulpa.

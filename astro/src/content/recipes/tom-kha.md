@@ -179,9 +179,9 @@ status: Draft
 tags:
 - cena
 - sopa
+- principal
 - vegano
 - cocina thai
-- principal
 title: Tom Kha
 updated: '2026-02-26T22:22:05.159257+01:00'
 ---
