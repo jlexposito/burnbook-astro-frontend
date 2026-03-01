@@ -4,7 +4,7 @@ created: '2025-12-13T01:05:24.230412+01:00'
 id: 73
 image: null
 ingredients:
-- id: 3934
+- id: 3945
   ingredient:
     name: fideos gruesos
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '250'
   recipe: 73
   unit: gr
-- id: 3935
+- id: 3946
   ingredient:
     name: Mantequilla de cacahuete
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1.5'
   recipe: 73
   unit: tablespoon
-- id: 3936
+- id: 3947
   ingredient:
     name: copos de chile
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 73
   unit: teaspoon
-- id: 3937
+- id: 3948
   ingredient:
     name: cebolleta
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: 1/3
   recipe: 73
   unit: cup
-- id: 3938
+- id: 3949
   ingredient:
     name: semillas de sésamo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 73
   unit: teaspoon
-- id: 3939
+- id: 3950
   ingredient:
     name: dientes de ajo
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '5'
   recipe: 73
   unit: unit
-- id: 3940
+- id: 3951
   ingredient:
     name: azúcar
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 73
   unit: tablespoon
-- id: 3941
+- id: 3952
   ingredient:
     name: chili crisp
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 73
   unit: tablespoon
-- id: 3942
+- id: 3953
   ingredient:
     name: vinagre de arroz
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 73
   unit: tablespoon
-- id: 3943
+- id: 3954
   ingredient:
     name: salsa de soja oscura
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '2'
   recipe: 73
   unit: tablespoon
-- id: 3944
+- id: 3955
   ingredient:
     name: aceite neutro
     prefix: ''
@@ -102,8 +102,8 @@ tags:
 - picante
 - principal
 - comida
-title: Fideos de Cacahuete y Chile en 5 Minutos
-updated: '2026-03-01T13:53:09.996721+01:00'
+title: Fideos de Cacahuete y Chile
+updated: '2026-03-01T13:56:48.182516+01:00'
 ---
 1. Pon una olla de agua con sal a hervir y cocina los fideos según las instrucciones del paquete. Cocínalos unos 30 segundos menos porque terminarán de cocinarse en la salsa. Guarda un poco del agua de la pasta (¡!), luego escurre y enjuaga los fideos con agua fría para que no se peguen.
 2. En una sartén fría (aún sin calor), añade: la mantequilla de cacahuete, los copos de chile (si los usas), la cebolleta, las semillas de sésamo, los dientes de ajo picados, el azúcar (si lo usas), 1 cucharada de chili crisp, el vinagre de arroz y la salsa de soja oscura.
