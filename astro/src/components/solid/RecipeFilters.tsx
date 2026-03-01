@@ -84,7 +84,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           <Show when={props.search}>
             <button
               type="button"
-              class="absolute top-1/2 right-2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-gray-200 text-lg text-gray-600 transition-transform duration-150 bk-accent-hover"
+              class="bk-accent-hover absolute top-1/2 right-2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-gray-200 text-lg text-gray-600 transition-transform duration-150"
               onClick={clearSearch}
             >
               &times;
@@ -93,10 +93,18 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         </div>
 
         <button
-          class="btn-primary rounded-md text-white"
+          class="btn-primary flex items-center gap-2 rounded-md text-white"
           onClick={() => props.setOpen(!props.open)}
         >
           Filtros
+          <span
+            class="inline-block transition-transform duration-200"
+            style={{
+              transform: props.open ? "rotate(180deg)" : "rotate(0deg)",
+            }}
+          >
+            ▼
+          </span>
         </button>
       </div>
 
