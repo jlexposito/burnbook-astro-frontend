@@ -40,15 +40,23 @@ const isMobile = isMobileDevice();
 function showError(error: unknown): void {
   alert("Something went wrong");
 
-  if (isMobile) {
-    const errorString =
-      typeof error === "object" && error !== null
-        ? JSON.stringify(error)
-        : String(error);
+  let errorString: string;
 
+  if (error === undefined) {
+    errorString = "Error is undefined";
+  } else if (error === null) {
+    errorString = "Error is null";
+  } else if (typeof error === "object" && "message" in error) {
+    // common for Error objects
+    errorString = (error as { message?: string }).message || JSON.stringify(error);
+  } else {
+    errorString = String(error);
+  }
+
+  if (isMobile) {
     alert(errorString);
   } else {
-    console.error(error);
+    console.error(errorString);
   }
 }
 
