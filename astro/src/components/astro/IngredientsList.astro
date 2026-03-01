@@ -50,19 +50,15 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
 <div class="ingredient text-lg">
   {
     RecipeIngredients.map((recipeIngredient, index) => (
-      <div class="mb-4">
+      <label class="mb-4 flex items-center gap-2 cursor-pointer">
         <input
           type="checkbox"
           id={`ingredient-${index}`}
           name={recipeIngredient.ingredient.name}
           value={index}
         />
-        <label class="ml-1 hover:cursor-pointer" for={`ingredient-${index}`}>
-          <span>
-            { getIngredientText(recipeIngredient) }
-          </span>
-        </label>
-      </div>
+        <span>{ getIngredientText(recipeIngredient) }</span>
+      </label>
     ))
   }
 </div>
@@ -70,6 +66,6 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
 <style>
   @reference "../../styles/global.css";
   .ingredient input[type="checkbox"] {
-    @apply w-4 h-4 rounded-sm text-primary hover:cursor-pointer shadow-xs active:ring-2 focus:ring-secondary-dark-ring focus:ring-2 focus-visible:outline-2;
+    @apply w-4 h-4 shrink-0 rounded-sm text-primary cursor-pointer shadow-xs active:ring-2 focus:ring-secondary-dark-ring focus:ring-2 focus-visible:outline-2;
   }
 </style>
