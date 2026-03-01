@@ -50,22 +50,69 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
 <div class="ingredient text-lg">
   {
     RecipeIngredients.map((recipeIngredient, index) => (
-      <label class="mb-4 flex items-center gap-2 cursor-pointer">
+      <label
+        class="mb-4 flex items-center gap-3 cursor-pointer select-none"
+      >
         <input
           type="checkbox"
           id={`ingredient-${index}`}
           name={recipeIngredient.ingredient.name}
           value={index}
+          class="ingredient-checkbox"
         />
-        <span>{ getIngredientText(recipeIngredient) }</span>
+        <span class="ingredient-text">
+          { getIngredientText(recipeIngredient) }
+        </span>
       </label>
     ))
   }
 </div>
-
 <style>
   @reference "../../styles/global.css";
-  .ingredient input[type="checkbox"] {
-    @apply w-4 h-4 shrink-0 rounded-sm text-primary cursor-pointer shadow-xs active:ring-2 focus:ring-secondary-dark-ring focus:ring-2 focus-visible:outline-2;
+
+  .ingredient-checkbox {
+    @apply relative w-5 h-5 shrink-0 cursor-pointer
+           rounded-sm border border-gray-400
+           bg-white
+           transition-all duration-150 ease-out
+           focus-visible:outline-none
+           focus-visible:ring-2
+           focus-visible:ring-secondary-dark-ring;
+    
+    appearance: none;
+  }
+  
+  /* Checked state */
+  .ingredient-checkbox:checked {
+    @apply bg-primary border-primary;
+  }
+  
+  /* Checkmark */
+  .ingredient-checkbox::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 0.35rem;
+    height: 0.6rem;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg) scale(0);
+    transition: transform 150ms ease-out;
+  }
+  
+  /* Animate checkmark in */
+  .ingredient-checkbox:checked::after {
+    transform: rotate(45deg) scale(1);
+  }
+  
+  /* Hover (mouse users only) */
+  .ingredient-checkbox:hover {
+    @apply border-primary;
+  }
+  
+  /* Text spacing & click affordance */
+  .ingredient-text {
+    @apply leading-snug;
   }
 </style>
