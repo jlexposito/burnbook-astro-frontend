@@ -42,7 +42,7 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
   let ingredient_fullname : string = prefix(recipeIngredient) + name(recipeIngredient);
   let unit = recipeIngredient?.unit || "al_gusto";
   if (unit === "al_gusto") return `${ingredient_fullname} al gusto`;
-  if (unit === "unit" && quantity === 1) return `${ingredient_fullname}`;
+  if (unit === "unit" && parseInt(quantity) === 1) return `${ingredient_fullname}`;
   let translatedUnit = getUnitTranslated(unit);
   return `${quantity} ${translatedUnit} ${ingredient_fullname}`
 }
