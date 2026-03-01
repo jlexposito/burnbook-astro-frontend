@@ -85,7 +85,8 @@
     hover:bg-secondary-dark
     hover:text-primary
     hover:ring-secondary-contrast
-    hover:ring-2;
+    hover:ring-2
+    hover:cursor-pointer;
 }
   
 @utility btn {
