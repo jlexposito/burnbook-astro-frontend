@@ -71,7 +71,8 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
   @reference "../../styles/global.css";
   
   /* ROW HIGHLIGHT (keyboard-first) */
-  .ingredient-row:focus-within {
+  .ingredient-row:focus-within,
+  .ingredient-row:hover {
     @apply bg-secondary-dark-ring/20;
   }
   
