@@ -4,7 +4,7 @@ created: '2026-03-01T11:41:28.960073+01:00'
 id: 217
 image: null
 ingredients:
-- id: 3870
+- id: 3912
   ingredient:
     name: setas shiitake
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 217
   unit: gr
-- id: 3871
+- id: 3913
   ingredient:
     name: cebolla morada
     prefix: ''
@@ -20,15 +20,15 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3872
+- id: 3914
   ingredient:
     name: jengibre
-    prefix: un trocito de
+    prefix: trocito de
   optional: false
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3873
+- id: 3915
   ingredient:
     name: tomillo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3874
+- id: 3916
   ingredient:
     name: orégano
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3875
+- id: 3917
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3876
+- id: 3918
   ingredient:
     name: anacardos
     prefix: hidratados
@@ -60,15 +60,15 @@ ingredients:
   quantity: '80'
   recipe: 217
   unit: gr
-- id: 3877
+- id: 3919
   ingredient:
     name: salsa de soja
-    prefix: un chorrito de
+    prefix: chorrito de
   optional: false
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3878
+- id: 3920
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3879
+- id: 3921
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -84,10 +84,10 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3880
+- id: 3922
   ingredient:
     name: cúrcuma
-    prefix: una pizca de
+    prefix: pizca de
   optional: false
   quantity: '1'
   recipe: 217
@@ -102,7 +102,7 @@ tags:
 - vegetariano
 - merienda
 title: Foie vegetal
-updated: '2026-03-01T11:45:13.709276+01:00'
+updated: '2026-03-01T12:35:05.596585+01:00'
 ---
 1. Lamina las setas shiitake y la cebolla morada.
 2. Saltéalas a fuego medio-alto con aceite de oliva virgen extra y jengibre hasta que caramelicen bien.
