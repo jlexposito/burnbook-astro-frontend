@@ -128,4 +128,8 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
   .ingredient-row:hover .ingredient-checkbox {
     @apply border-primary;
   }
+
+  .ingredient-checkbox:checked + .ingredient-text {
+    color: #555; /* fade text */
+  }
 </style>
