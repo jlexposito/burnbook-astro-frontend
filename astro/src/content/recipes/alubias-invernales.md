@@ -1,10 +1,10 @@
 ---
-cooking_time: 30
+cooking_time: 25
 created: '2026-02-08T16:27:46.288211+01:00'
 id: 161
 image: /media/alubias-con-huevo.png
 ingredients:
-- id: 3732
+- id: 3901
   ingredient:
     name: Alubias
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3733
+- id: 3902
   ingredient:
     name: cebolleta
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3734
+- id: 3903
   ingredient:
     name: jengibre
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3735
+- id: 3904
   ingredient:
     name: Sal
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: tablespoon
-- id: 3736
+- id: 3905
   ingredient:
     name: puré de tomate
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: tablespoon
-- id: 3737
+- id: 3906
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '100'
   recipe: 161
   unit: gr
-- id: 3738
+- id: 3907
   ingredient:
     name: huevo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3739
+- id: 3908
   ingredient:
     name: cilantro fresco
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: unit
-- id: 3740
+- id: 3909
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '2'
   recipe: 161
   unit: tablespoon
-- id: 3741
+- id: 3910
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 161
   unit: teaspoon
-- id: 3742
+- id: 3911
   ingredient:
     name: comino molido
     prefix: ''
@@ -96,13 +96,14 @@ references:
 - https://www.instagram.com/reel/DR1wbhrjKEm/
 - https://gipsychef.es/receta/alubias-con-huevo/
 servings: 2
-status: New
+status: Tried
 tags:
+- cena
 - principal
 - cocina española
 - comida
 title: Alubias Invernales
-updated: '2026-02-28T10:06:12.926430+01:00'
+updated: '2026-03-01T12:18:00.321883+01:00'
 ---
 1. Corta una cebolleta fina, separa la parte blanca por un lado y la verde por otro.
 2. Corta un poco de jengibre bien fino.
