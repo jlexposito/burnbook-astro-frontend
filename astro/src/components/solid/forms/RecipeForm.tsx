@@ -37,8 +37,6 @@ import OptimizedImage from "@solidcomponents/OptimizedImage";
 
 const isMobile = isMobileDevice();
 
-const isMobile = isMobileDevice();
-
 function showError(error: unknown): void {
   alert("Something went wrong");
 
