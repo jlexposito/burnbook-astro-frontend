@@ -21,6 +21,7 @@ import {
   removeElement,
   createOptionsArray
 } from "@solidcomponents/formComponents/utils";
+import { isMobileDevice } from "@utils/mobileHelper";
 
 // Components
 import CollapseComponent from "@solidcomponents/CollapseComponent";
@@ -33,6 +34,25 @@ import { SelectInput } from "@solidcomponents/formComponents/SelectInput";
 import { $tokens } from "@stores/apiStore";
 import IngredientsForm from "@solidcomponents/forms/IngredientsForm";
 import OptimizedImage from "@solidcomponents/OptimizedImage";
+
+const isMobile = isMobileDevice();
+
+const isMobile = isMobileDevice();
+
+function showError(error: unknown): void {
+  alert("Something went wrong");
+
+  if (isMobile) {
+    const errorString =
+      typeof error === "object" && error !== null
+        ? JSON.stringify(error)
+        : String(error);
+
+    alert(errorString);
+  } else {
+    console.error(error);
+  }
+}
 
 const imgSizes : ImgSizes = {
   sizes: [
@@ -170,7 +190,6 @@ export default function RecipeForm(props: {
 
       // All 2xx are okay
       if (Math.floor(responseStatus / 100) != 2) {
-        console.log("Something went wrong");
         let errors;
         try {
           errors = JSON.parse(response).errors;
@@ -179,7 +198,7 @@ export default function RecipeForm(props: {
             text: response,
           };
         }
-        console.log(errors);
+        showError(errors);
         setFormErrors(errors);
       } else {
         alert("Created successfully !");
@@ -195,8 +214,12 @@ export default function RecipeForm(props: {
     });
 
     // Define what happens in case of error
-    XHR.addEventListener("error", (event) => {
-      alert("Something went wrong, please try again.");
+   XHR.addEventListener("error", () => {
+      showError({
+        status: XHR.status,
+        statusText: XHR.statusText,
+        response: XHR.responseText,
+      });
     });
 
     // Set up our request
