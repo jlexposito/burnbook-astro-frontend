@@ -232,7 +232,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
       </div>
       {/* Selected tags */}
       <Show when={anyFilterActive() && !props.open}>
-        <div class="mb-2 flex flex-wrap items-center gap-1">
+        <div class="mb-2 flex flex-wrap items-center gap-1 bg-white border shadow rounded-sm px-3 py-2 border-gray-500">
           <span class="w-full uppercase underline underline-offset-2">
             Filtros activos
           </span>
