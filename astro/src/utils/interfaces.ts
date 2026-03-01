@@ -37,13 +37,13 @@ export type Recipe = {
 export interface TagInterface {
   id: number;
   name: string;
-  highligthed: boolean;
+  highligted: boolean;
 }
 
 export type Tag = {
   id: number;
   name: string;
-  highligthed: boolean;
+  highligted: boolean;
 };
 
 export type ImageSources = {

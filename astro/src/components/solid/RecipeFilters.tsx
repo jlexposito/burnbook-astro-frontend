@@ -30,7 +30,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
   /* ------------------------------------------------------------------ */
   /* Normalized tags                                                     */
   /* ------------------------------------------------------------------ */
-
   const normalizedTags = createMemo(() =>
     props.tags.map(tag => ({
       tag,
@@ -39,48 +38,34 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
   );
 
   /* ------------------------------------------------------------------ */
-  /* Filter + sort using Set                                             */
+  /* Filter + sort: highlighted first, then alphabetical               */
   /* ------------------------------------------------------------------ */
-
   const sortedFilteredTags = createMemo(() => {
     const query = normalizeString(props.tagSearch.trim());
-    const activeSet = new Set(props.activeTags());
 
     return normalizedTags()
       .filter(t => t.normalizedName.includes(query))
       .sort((a, b) => {
-        const aActive = activeSet.has(a.tag.name);
-        const bActive = activeSet.has(b.tag.name);
-
-        // Active (highlighted) tags first
-        if (aActive !== bActive) {
-          return aActive ? -1 : 1;
-        }
-
-        // Alphabetical order (accent-insensitive)
+        if (a.tag.highlighted !== b.tag.highlighted) return a.tag.highlighted ? -1 : 1;
         return a.normalizedName.localeCompare(b.normalizedName);
       })
       .map(t => t.tag);
   });
 
-  const selectedTags = createMemo(() => {
-    const activeSet = new Set(props.activeTags());
-    return sortedFilteredTags().filter(tag =>
-      activeSet.has(tag.name)
-    );
-  });
+  /* ------------------------------------------------------------------ */
+  /* Selected / unselected tags                                           */
+  /* ------------------------------------------------------------------ */
+  const selectedTags = createMemo(() =>
+    sortedFilteredTags().filter(tag => props.activeTags().includes(tag.name))
+  );
 
-  const unselectedTags = createMemo(() => {
-    const activeSet = new Set(props.activeTags());
-    return sortedFilteredTags().filter(tag =>
-      !activeSet.has(tag.name)
-    );
-  });
+  const unselectedTags = createMemo(() =>
+    sortedFilteredTags().filter(tag => !props.activeTags().includes(tag.name))
+  );
 
   /* ------------------------------------------------------------------ */
   /* Helpers                                                             */
   /* ------------------------------------------------------------------ */
-
   const clearSearch = () => props.setSearch("");
   const clearTagSearch = () => props.setTagSearch("");
 
@@ -102,7 +87,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
   /* ------------------------------------------------------------------ */
   /* UI                                                                  */
   /* ------------------------------------------------------------------ */
-
   return (
     <div class="sticky top-0 z-10 flex flex-col">
       {/* Search + toggle */}
