@@ -113,10 +113,10 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - picante
 - cocina asiática
 - cocina tailandesa
+- cena
 - comida
 title: Pad Thai con Tofu y Camarones
 updated: '2026-02-26T22:41:02.484304+01:00'

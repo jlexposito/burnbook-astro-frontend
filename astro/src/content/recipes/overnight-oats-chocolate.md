@@ -74,9 +74,9 @@ servings: 1
 status: Tried
 tags:
 - dulce
-- cena
 - desayuno
 - merienda
+- cena
 title: Overnight Oats - Chocolate
 updated: '2024-08-13T13:48:12.800108+02:00'
 ---

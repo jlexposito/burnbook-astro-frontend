@@ -98,9 +98,9 @@ references:
 servings: 2
 status: Tried
 tags:
-- cena
 - principal
 - cocina española
+- cena
 - comida
 title: Alubias Invernales
 updated: '2026-03-01T12:18:00.321883+01:00'

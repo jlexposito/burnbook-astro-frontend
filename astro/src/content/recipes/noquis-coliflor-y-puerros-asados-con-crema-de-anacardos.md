@@ -130,8 +130,8 @@ servings: 2
 status: Draft
 tags:
 - salsa
-- cena
 - vegetariano
+- cena
 title: Ñoquis, Coliflor y Puerros Asados con Crema de Anacardos
 updated: '2026-02-28T14:22:56.973013+01:00'
 ---

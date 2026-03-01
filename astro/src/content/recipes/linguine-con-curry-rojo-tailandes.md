@@ -161,11 +161,11 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - picante
 - cocina asiática
 - principal
 - cocina tailandesa
+- cena
 - comida
 title: Linguine con Curry Rojo Tailandés
 updated: '2026-02-27T09:23:57.891905+01:00'

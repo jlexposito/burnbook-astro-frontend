@@ -145,11 +145,11 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - sopa
 - cocina india
 - principal
+- cena
 title: Dal de Lentejas Indio
 updated: '2026-02-26T22:27:57.330770+01:00'
 ---

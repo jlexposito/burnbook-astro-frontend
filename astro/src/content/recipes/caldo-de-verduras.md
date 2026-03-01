@@ -48,8 +48,8 @@ references: []
 servings: 4
 status: New
 tags:
-- cena
 - sopa
+- cena
 - comida
 title: Caldo de Verduras
 updated: '2024-08-08T01:16:22.058883+02:00'

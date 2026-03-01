@@ -89,8 +89,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - principal
+- cena
 title: Ramen cremoso de pollo en 30 minutos
 updated: '2026-01-13T22:50:10.652039+01:00'
 ---

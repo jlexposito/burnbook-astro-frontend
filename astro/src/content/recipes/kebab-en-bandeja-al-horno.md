@@ -161,8 +161,8 @@ references:
 servings: 4
 status: New
 tags:
-- cena
 - vegetariano
+- cena
 title: Kebab en Bandeja al Horno
 updated: '2026-02-23T22:59:23.795873+01:00'
 ---

@@ -169,8 +169,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - sopa
+- cena
 title: Sopa Crema de Calabaza y Camarones
 updated: '2025-12-30T13:31:32.006088+01:00'
 ---

@@ -41,9 +41,9 @@ references:
 servings: 4
 status: Draft
 tags:
-- cena
 - vegetariano
 - picante
+- cena
 - comida
 title: Alitas de Coliflor con Gochujang
 updated: '2026-02-27T09:26:56.114269+01:00'

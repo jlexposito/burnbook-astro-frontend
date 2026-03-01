@@ -153,8 +153,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - cocina asiática
+- cena
 title: Rollos de Col Napa Rellenos de Pollo
 updated: '2026-02-27T12:13:15.056434+01:00'
 ---

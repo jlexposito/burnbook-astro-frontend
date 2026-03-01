@@ -41,8 +41,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - picante
+- cena
 title: Gambas con Miel Picante
 updated: '2026-02-18T17:25:45.278234+01:00'
 ---

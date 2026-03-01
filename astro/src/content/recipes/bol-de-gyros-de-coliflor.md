@@ -10,8 +10,8 @@ servings: 2
 status: Draft
 tags:
 - cocina mediterránea
-- cena
 - vegetariano
+- cena
 title: Bol de Gyros de Coliflor
 updated: '2026-02-04T00:10:39.280992+01:00'
 ---

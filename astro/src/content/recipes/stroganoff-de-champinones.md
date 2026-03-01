@@ -65,9 +65,9 @@ references:
 servings: 2
 status: Tried
 tags:
-- cena
 - pasta
 - principal
+- cena
 - comida
 title: Stroganoff de champiñones
 updated: '2026-02-27T09:27:11.348566+01:00'

@@ -113,8 +113,8 @@ references:
 servings: 2
 status: Tried
 tags:
-- cena
 - pasta
+- cena
 - comida
 title: Gnnochi ragu
 updated: '2024-08-08T01:16:01.639176+02:00'

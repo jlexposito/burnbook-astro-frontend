@@ -177,11 +177,11 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - sopa
 - principal
 - cocina tailandesa
 - vegano
+- cena
 title: Tom Kha
 updated: '2026-02-26T22:22:05.159257+01:00'
 ---

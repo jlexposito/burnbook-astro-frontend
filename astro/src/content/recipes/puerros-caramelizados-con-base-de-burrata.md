@@ -81,8 +81,8 @@ references:
 servings: 2
 status: New
 tags:
-- cena
 - vegetariano
+- cena
 - comida
 title: Puerros caramelizados con base de burrata
 updated: '2026-02-27T09:24:07.792163+01:00'

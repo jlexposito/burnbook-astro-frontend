@@ -162,8 +162,8 @@ servings: 2
 status: Draft
 tags:
 - salsa
-- cena
 - vegetariano
+- cena
 title: Entrecot de Berenjena Marinado
 updated: '2026-02-12T20:46:27.789536+01:00'
 ---

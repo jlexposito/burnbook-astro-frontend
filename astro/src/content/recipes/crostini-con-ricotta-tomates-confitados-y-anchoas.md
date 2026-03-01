@@ -57,11 +57,11 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - entrante
-- comida
 - merienda
 - cocina italiana
+- cena
+- comida
 title: Crostini con Ricotta, Tomates Confitados y Anchoas
 updated: '2026-02-28T11:42:03.932249+01:00'
 ---

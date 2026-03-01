@@ -97,10 +97,10 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - picante
 - principal
+- cena
 - comida
 title: Fideos de Cacahuete y Chile
 updated: '2026-03-01T13:56:48.182516+01:00'

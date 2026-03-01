@@ -97,9 +97,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - entrante
+- cena
 title: Tatín de puerros
 updated: '2026-02-08T15:46:07.444714+01:00'
 ---

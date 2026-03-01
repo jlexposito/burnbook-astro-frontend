@@ -33,9 +33,9 @@ references:
 servings: 2
 status: Tried
 tags:
-- cena
 - vegetariano
 - principal
+- cena
 - comida
 title: Albóndigas vegetarianas
 updated: '2024-08-09T15:36:39.224974+02:00'

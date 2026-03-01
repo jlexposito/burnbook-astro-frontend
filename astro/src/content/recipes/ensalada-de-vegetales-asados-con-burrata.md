@@ -105,9 +105,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - ensalada
+- cena
 - comida
 title: Ensalada de vegetales asados con burrata
 updated: '2026-02-13T21:26:19.178310+01:00'

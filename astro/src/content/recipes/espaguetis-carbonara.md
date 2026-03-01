@@ -41,9 +41,9 @@ references:
 servings: 2
 status: Tried
 tags:
-- cena
 - pasta
 - principal
+- cena
 - comida
 title: Espaguetis carbonara
 updated: '2026-02-27T09:22:32.166546+01:00'

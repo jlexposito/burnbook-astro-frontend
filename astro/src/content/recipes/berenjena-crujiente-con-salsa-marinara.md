@@ -106,8 +106,8 @@ references:
 servings: 2
 status: Tried
 tags:
-- cena
 - vegetariano
+- cena
 - comida
 title: Berenjena Crujiente Con Salsa Marinara
 updated: '2024-08-09T15:39:46.770702+02:00'

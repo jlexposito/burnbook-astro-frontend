@@ -73,10 +73,10 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - crema
 - vegetariano
 - sopa
+- cena
 title: Crema de champiñones
 updated: '2026-03-01T18:08:44.851538+01:00'
 ---

@@ -98,9 +98,9 @@ servings: 2
 status: Draft
 tags:
 - salsa
-- cena
 - vegetariano
 - merienda
+- cena
 title: Foie vegetal
 updated: '2026-03-01T13:00:32.348387+01:00'
 ---

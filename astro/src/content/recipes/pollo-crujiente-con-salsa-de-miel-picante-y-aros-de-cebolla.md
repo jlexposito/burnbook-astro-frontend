@@ -114,9 +114,9 @@ servings: 4
 status: Draft
 tags:
 - salsa
-- cena
 - picante
 - principal
+- cena
 title: Pollo Crujiente con Salsa de Miel Picante y Aros de Cebolla
 updated: '2026-02-27T09:22:19.914732+01:00'
 ---

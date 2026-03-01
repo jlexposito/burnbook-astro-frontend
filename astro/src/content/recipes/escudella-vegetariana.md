@@ -17,9 +17,9 @@ references:
 servings: 2
 status: New
 tags:
-- cena
 - sopa
 - cocina española
+- cena
 - comida
 title: Escudella vegetariana
 updated: '2024-08-08T01:28:15.074899+02:00'

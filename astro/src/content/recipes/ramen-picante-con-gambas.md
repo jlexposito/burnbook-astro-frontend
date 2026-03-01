@@ -105,11 +105,11 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - picante
 - cocina japonesa
 - cocina asiática
 - principal
+- cena
 - comida
 title: Ramen picante con gambas
 updated: '2026-02-27T09:20:32.160213+01:00'

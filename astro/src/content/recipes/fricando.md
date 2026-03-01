@@ -137,9 +137,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - principal
 - cocina española
+- cena
 - comida
 title: Fricandó
 updated: '2025-12-15T22:57:56.421162+01:00'

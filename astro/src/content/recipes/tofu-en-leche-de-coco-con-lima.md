@@ -41,8 +41,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
+- cena
 title: Tofu en Leche de Coco con Lima
 updated: '2026-02-18T14:19:40.528389+01:00'
 ---

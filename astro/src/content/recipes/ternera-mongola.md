@@ -178,8 +178,8 @@ servings: 2
 status: Draft
 tags:
 - salsa
-- cena
 - cocina asiática
+- cena
 title: Ternera mongola
 updated: '2026-02-21T14:27:02.872550+01:00'
 ---

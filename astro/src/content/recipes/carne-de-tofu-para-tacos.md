@@ -105,10 +105,10 @@ references:
 servings: 2
 status: New
 tags:
-- cena
 - vegetariano
 - principal
 - cocina mexicana
+- cena
 title: Carne de Tofu para Tacos
 updated: '2026-02-26T22:18:43.594263+01:00'
 ---

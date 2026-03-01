@@ -130,9 +130,9 @@ servings: 2
 status: Draft
 tags:
 - salsa
-- cena
 - vegetariano
 - picante
+- cena
 title: Repollo Puntiagudo Estofado con Salsa de Cilantro y Chile
 updated: '2026-02-28T21:02:09.935117+01:00'
 ---

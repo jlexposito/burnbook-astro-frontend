@@ -113,8 +113,8 @@ references:
 servings: 4
 status: Draft
 tags:
-- cena
 - vegetariano
+- cena
 - comida
 title: Tortitas Crujientes de Champiñones Estilo Pato
 updated: '2025-12-15T23:14:19.207065+01:00'

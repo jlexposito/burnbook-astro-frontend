@@ -121,9 +121,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - principal
+- cena
 title: Bol reconfortante de calabaza y batata
 updated: '2026-02-27T09:26:21.537193+01:00'
 ---

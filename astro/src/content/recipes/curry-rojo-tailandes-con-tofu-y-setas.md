@@ -169,10 +169,10 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - picante
 - cocina asiática
+- cena
 title: Curry Rojo Tailandés con Tofu y Setas
 updated: '2026-02-12T21:12:34.384832+01:00'
 ---

@@ -129,8 +129,8 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - cocina japonesa
+- cena
 title: Sándwich de Chuleta Tonkatsu (Katsu Sando)
 updated: '2026-02-12T20:45:55.286025+01:00'
 ---

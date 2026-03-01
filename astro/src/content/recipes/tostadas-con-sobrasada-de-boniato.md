@@ -107,8 +107,8 @@ status: New
 tags:
 - salsa
 - vegetariano
-- comida
 - merienda
+- comida
 title: Tostadas con Sobrasada de Boniato
 updated: '2025-12-15T23:48:42.491187+01:00'
 ---

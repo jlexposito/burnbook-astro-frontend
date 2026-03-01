@@ -114,9 +114,9 @@ references:
 servings: 2
 status: New
 tags:
-- cena
 - vegetariano
 - cocina persa
+- cena
 title: Estofado persa Shish Andaz de nueces y berenjenas
 updated: '2026-02-21T14:51:14.895794+01:00'
 ---

@@ -153,9 +153,9 @@ references:
 servings: 2
 status: Draft
 tags:
-- cena
 - vegetariano
 - ensalada
+- cena
 title: Ensalada de Batata y Berenjena con Tahini
 updated: '2026-02-20T15:46:56.541481+01:00'
 ---

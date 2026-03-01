@@ -138,9 +138,9 @@ servings: 2
 status: Draft
 tags:
 - pescado
-- cena
 - picante
 - cocina asiática
+- cena
 - comida
 title: Curry de Bacalao con Leche de Coco
 updated: '2026-02-27T11:38:09.000812+01:00'

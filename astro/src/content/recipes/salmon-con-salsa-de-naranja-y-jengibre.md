@@ -58,8 +58,8 @@ servings: 2
 status: New
 tags:
 - salsa
-- cena
 - principal
+- cena
 title: Salmón con salsa de naranja y jengibre
 updated: '2026-02-21T13:29:37.678584+01:00'
 ---

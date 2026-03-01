@@ -169,10 +169,10 @@ references:
 servings: 4
 status: Draft
 tags:
-- cena
 - picante
 - cocina india
 - principal
+- cena
 title: Pollo al curry de cilantro
 updated: '2026-02-26T22:10:00.518961+01:00'
 ---
