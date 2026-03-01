@@ -27,27 +27,59 @@ function normalizeString(str: string) {
 }
 
 export default function RecipeFilters(props: RecipeFiltersProps) {
+  /* ------------------------------------------------------------------ */
+  /* Normalized tags                                                     */
+  /* ------------------------------------------------------------------ */
+
   const normalizedTags = createMemo(() =>
     props.tags.map(tag => ({
-      original: tag,
+      tag,
       normalizedName: normalizeString(tag.name),
     }))
   );
 
-  const filteredTags = createMemo(() => {
+  /* ------------------------------------------------------------------ */
+  /* Filter + sort using Set                                             */
+  /* ------------------------------------------------------------------ */
+
+  const sortedFilteredTags = createMemo(() => {
     const query = normalizeString(props.tagSearch.trim());
+    const activeSet = new Set(props.activeTags());
+
     return normalizedTags()
-      .filter(tag => tag.normalizedName.includes(query))
-      .map(tag => tag.original);
+      .filter(t => t.normalizedName.includes(query))
+      .sort((a, b) => {
+        const aActive = activeSet.has(a.tag.name);
+        const bActive = activeSet.has(b.tag.name);
+
+        // Active (highlighted) tags first
+        if (aActive !== bActive) {
+          return aActive ? -1 : 1;
+        }
+
+        // Alphabetical order (accent-insensitive)
+        return a.normalizedName.localeCompare(b.normalizedName);
+      })
+      .map(t => t.tag);
   });
 
-  const selectedTags = createMemo(() =>
-    filteredTags().filter(tag => props.activeTags().includes(tag.name))
-  );
+  const selectedTags = createMemo(() => {
+    const activeSet = new Set(props.activeTags());
+    return sortedFilteredTags().filter(tag =>
+      activeSet.has(tag.name)
+    );
+  });
 
-  const unselectedTags = createMemo(() =>
-    filteredTags().filter(tag => !props.activeTags().includes(tag.name))
-  );
+  const unselectedTags = createMemo(() => {
+    const activeSet = new Set(props.activeTags());
+    return sortedFilteredTags().filter(tag =>
+      !activeSet.has(tag.name)
+    );
+  });
+
+  /* ------------------------------------------------------------------ */
+  /* Helpers                                                             */
+  /* ------------------------------------------------------------------ */
 
   const clearSearch = () => props.setSearch("");
   const clearTagSearch = () => props.setTagSearch("");
@@ -67,17 +99,16 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
     props.setMaxTime(null);
   };
 
+  /* ------------------------------------------------------------------ */
+  /* UI                                                                  */
+  /* ------------------------------------------------------------------ */
+
   return (
     <div class="sticky top-0 z-10 flex flex-col">
-      {/* Sticky search + filter toggle */}
+      {/* Search + toggle */}
       <div class="p-4 pb-1 px-0 flex gap-2 items-center">
         <div class="relative flex-1">
-          <label for="searchRecipes" class="sr-only">
-            Search recipes
-          </label>
           <input
-            id="searchRecipes"
-            name="searchRecipes"
             type="text"
             placeholder="Buscar recetas..."
             class="w-full bg-white border-1 bg-secondary px-3 py-2 border-sm rounded-sm"
@@ -87,7 +118,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           <Show when={props.search}>
             <button
               type="button"
-              class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-gray-600 rounded-full w-6 h-6 flex items-center justify-center text-lg transition-transform duration-150"
+              class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 rounded-full w-6 h-6"
               onClick={clearSearch}
             >
               &times;
@@ -103,90 +134,42 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         </button>
       </div>
 
-      {/* Animated filter panel */}
+      {/* Filters panel */}
       <div
-        class={`overflow-hidden border rounded-sm bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
+        class={`overflow-hidden border rounded-sm bg-white shadow transition-all duration-300 ${
           props.open
-            ? "max-h-[500px] opacity-100 pointer-events-auto"
+            ? "max-h-[500px] opacity-100"
             : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
         <div class="p-4 space-y-4 max-h-[500px] overflow-y-auto">
-          {/* Cooking time filters */}
-          <div class="flex gap-2">
-            <div class="flex-1">
-              <label for="minTimeFilter" class="block mb-1 font-semibold">
-                Tiempo mínimo (min)
-              </label>
-              <input
-                id="minTimeFilter"
-                name="minTimeFilter"
-                type="number"
-                placeholder="e.g., 10"
-                class="w-full px-3 py-2 border rounded-sm"
-                value={props.minTime ?? ""}
-                onInput={e =>
-                  props.setMinTime(
-                    e.currentTarget.value ? parseInt(e.currentTarget.value) : null
-                  )
-                }
-              />
-            </div>
-            <div class="flex-1">
-              <label for="maxTimeFilter" class="block mb-1 font-semibold">
-                Tiempo máximo (min)
-              </label>
-              <input
-                id="maxTimeFilter"
-                name="maxTimeFilter"
-                type="number"
-                placeholder="e.g., 30"
-                class="w-full px-3 py-2 border rounded-sm"
-                value={props.maxTime ?? ""}
-                onInput={e =>
-                  props.setMaxTime(
-                    e.currentTarget.value ? parseInt(e.currentTarget.value) : null
-                  )
-                }
-              />
-            </div>
-          </div>
-
           {/* Tag search */}
           <div>
-            <label for="tagSearch" class="block mb-1 font-semibold">
-              Búsqueda por etiquetas
-            </label>
-            <div class="relative">
-              <input
-                id="tagSearch"
-                name="tagSearch"
-                type="text"
-                placeholder="Search tags..."
-                class="w-full px-3 py-2 border rounded-sm mb-2"
-                value={props.tagSearch}
-                onInput={e => props.setTagSearch(e.currentTarget.value)}
-              />
-              <Show when={props.tagSearch}>
-                <button
-                  type="button"
-                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 active:bg-gray-400 text-gray-600 rounded-full w-6 h-6 flex items-center justify-center text-lg transition-transform duration-150"
-                  onClick={clearTagSearch}
-                >
-                  &times;
-                </button>
-              </Show>
-            </div>
+            <input
+              type="text"
+              placeholder="Search tags..."
+              class="w-full px-3 py-2 border rounded-sm mb-2"
+              value={props.tagSearch}
+              onInput={e => props.setTagSearch(e.currentTarget.value)}
+            />
+            <Show when={props.tagSearch}>
+              <button
+                class="absolute right-6 top-[122px] bg-gray-200 rounded-full w-6 h-6"
+                onClick={clearTagSearch}
+              >
+                &times;
+              </button>
+            </Show>
 
-            {/* Selected tags */}
+            {/* Selected */}
             <Show when={selectedTags().length > 0}>
               <div class="mb-2">
                 <h5 class="font-semibold mb-1">Seleccionadas</h5>
-                <div class="tags flex flex-wrap gap-2">
+                <div class="flex flex-wrap gap-2">
                   <For each={selectedTags()}>
                     {tag => (
                       <button
-                        class="px-3 py-1 rounded-sm border-1 border-primary/20 btn-accent hover:ring-secondary-dark-ring"
+                        class="px-3 py-1 rounded-sm border btn-accent"
                         onClick={() => props.toggleTag(tag.name)}
                       >
                         {tag.name}
@@ -197,15 +180,15 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
               </div>
             </Show>
 
-            {/* Unselected tags */}
+            {/* Unselected */}
             <Show when={unselectedTags().length > 0}>
               <div>
                 <h5 class="font-semibold mb-1">Disponibles</h5>
-                <div class="tags flex flex-wrap gap-2">
+                <div class="flex flex-wrap gap-2">
                   <For each={unselectedTags()}>
                     {tag => (
                       <button
-                        class="px-3 py-1 rounded-sm border-1 border-primary/20 bg-gray-200 text-black hover:bg-gray-300"
+                        class="px-3 py-1 rounded-sm border bg-gray-200"
                         onClick={() => props.toggleTag(tag.name)}
                       >
                         {tag.name}
@@ -216,7 +199,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
               </div>
             </Show>
 
-            {/* Clear all filters button at the end */}
+            {/* Clear */}
             <Show when={anyFilterActive()}>
               <div class="mt-4 flex justify-end">
                 <button
