@@ -4,7 +4,7 @@ created: '2026-03-01T11:41:28.960073+01:00'
 id: 217
 image: null
 ingredients:
-- id: 3848
+- id: 3870
   ingredient:
     name: setas shiitake
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 217
   unit: gr
-- id: 3849
+- id: 3871
   ingredient:
     name: cebolla morada
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3850
+- id: 3872
   ingredient:
     name: jengibre
     prefix: un trocito de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3851
+- id: 3873
   ingredient:
     name: tomillo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3852
+- id: 3874
   ingredient:
     name: orégano
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3853
+- id: 3875
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3854
+- id: 3876
   ingredient:
     name: anacardos
     prefix: hidratados
@@ -60,7 +60,7 @@ ingredients:
   quantity: '80'
   recipe: 217
   unit: gr
-- id: 3855
+- id: 3877
   ingredient:
     name: salsa de soja
     prefix: un chorrito de
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3856
+- id: 3878
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -76,15 +76,15 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3857
+- id: 3879
   ingredient:
-    name: mantequilla
+    name: Mantequilla
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3858
+- id: 3880
   ingredient:
     name: cúrcuma
     prefix: una pizca de
@@ -100,8 +100,9 @@ tags:
 - salsa
 - cena
 - vegetariano
-title: Paté de Setas Shiitake
-updated: '2026-03-01T11:41:28.960123+01:00'
+- merienda
+title: Foie vegetal
+updated: '2026-03-01T11:45:13.709276+01:00'
 ---
 1. Lamina las setas shiitake y la cebolla morada.
 2. Saltéalas a fuego medio-alto con aceite de oliva virgen extra y jengibre hasta que caramelicen bien.
