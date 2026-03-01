@@ -84,7 +84,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           <Show when={props.search}>
             <button
               type="button"
-              class="absolute top-1/2 right-2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-gray-200 text-lg text-gray-600 transition-transform duration-150 hover:bg-gray-300 active:bg-gray-400"
+              class="absolute top-1/2 right-2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-gray-200 text-lg text-gray-600 transition-transform duration-150 bk-accent-hover"
               onClick={clearSearch}
             >
               &times;
@@ -259,7 +259,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                             props.toggleTag(tag.name);
                           }
                         }}
-                        class="flex h-4 w-4 cursor-pointer items-center justify-center rounded-full text-gray-600 hover:bg-gray-300 hover:text-gray-900 focus:ring-2 focus:ring-gray-400 focus:outline-none"
+                        class="flex h-4 w-4 cursor-pointer items-center justify-center rounded-full text-gray-600 hover:bg-red-400 hover:text-white focus:ring-2 focus:ring-gray-400 focus:outline-none"
                       >
                         ×
                       </span>
