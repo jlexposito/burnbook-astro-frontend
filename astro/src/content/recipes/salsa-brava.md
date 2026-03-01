@@ -2,9 +2,9 @@
 cooking_time: 10
 created: '2026-02-28T14:49:58.791452+01:00'
 id: 215
-image: null
+image: /media/bravas-sauce-recipe-2.jpg
 ingredients:
-- id: 3826
+- id: 3956
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 215
   unit: tablespoon
-- id: 3827
+- id: 3957
   ingredient:
     name: cebolla
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: unit
-- id: 3828
+- id: 3958
   ingredient:
     name: ajo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: unit
-- id: 3829
+- id: 3959
   ingredient:
     name: pimentón
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: tablespoon
-- id: 3830
+- id: 3960
   ingredient:
     name: harina
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: tablespoon
-- id: 3831
+- id: 3961
   ingredient:
     name: caldo
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: cup
-- id: 3832
+- id: 3962
   ingredient:
     name: Sal
     prefix: ''
@@ -60,15 +60,16 @@ ingredients:
   quantity: '1'
   recipe: 215
   unit: teaspoon
-references: []
+references:
+- https://www.instagram.com/reel/DVDs8RjAo6h/
 servings: 2
-status: Draft
+status: New
 tags:
 - salsa
 - picante
 - cocina española
 title: Salsa brava
-updated: '2026-02-28T14:53:54.451133+01:00'
+updated: '2026-03-01T13:58:01.454738+01:00'
 ---
 1. Calienta el aceite y sofríe la cebolla a fuego medio hasta que esté transparente y suave.
 2. Añade el pimentón dulce y el picante.
