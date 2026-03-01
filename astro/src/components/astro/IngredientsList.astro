@@ -51,7 +51,7 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
   {
     RecipeIngredients.map((recipeIngredient, index) => (
       <label
-        class="mb-4 flex items-center gap-3 cursor-pointer select-none"
+        class="ingredient-row mb-4 flex items-center gap-3 cursor-pointer select-none rounded-md px-2 py-1"
       >
         <input
           type="checkbox"
@@ -69,50 +69,62 @@ function getIngredientText(recipeIngredient: RecipeIngredient) {
 </div>
 <style>
   @reference "../../styles/global.css";
-
-  .ingredient-checkbox {
-    @apply relative w-5 h-5 shrink-0 cursor-pointer
-           rounded-sm border border-gray-400
-           bg-white
-           transition-all duration-150 ease-out
-           focus-visible:outline-none
-           focus-visible:ring-2
-           focus-visible:ring-secondary-dark-ring;
-    
-    appearance: none;
+  
+  /* ROW HIGHLIGHT (keyboard-first) */
+  .ingredient-row:focus-within {
+    @apply bg-secondary-dark-ring/20;
   }
   
-  /* Checked state */
+  /* CHECKBOX BASE */
+  .ingredient-checkbox {
+    appearance: none;
+    box-sizing: border-box;
+  
+    @apply relative shrink-0
+           w-5 h-5
+           rounded-sm
+           border-2 border-gray-400
+           bg-white
+           cursor-pointer
+           transition-colors duration-150
+           focus-visible:outline-none;
+  }
+  
+  /* Focus ring (keyboard only) */
+  .ingredient-checkbox:focus-visible {
+    @apply ring-2 ring-secondary-dark-ring ring-offset-2;
+  }
+  
+  /* Checked box */
   .ingredient-checkbox:checked {
     @apply bg-primary border-primary;
   }
   
-  /* Checkmark */
+  /* CHECKMARK — perfectly centered */
   .ingredient-checkbox::after {
     content: "";
     position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 0.35rem;
-    height: 0.6rem;
+  
+    width: 0.4rem;
+    height: 0.7rem;
+  
     border-right: 2px solid white;
     border-bottom: 2px solid white;
-    transform: rotate(45deg) scale(0);
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%) rotate(45deg) scale(0);
+  
     transition: transform 150ms ease-out;
   }
   
   /* Animate checkmark in */
   .ingredient-checkbox:checked::after {
-    transform: rotate(45deg) scale(1);
+    transform: translate(-50%, -55%) rotate(45deg) scale(1);
   }
   
-  /* Hover (mouse users only) */
-  .ingredient-checkbox:hover {
+  /* Optional: subtle hover (pointer only) */
+  .ingredient-row:hover .ingredient-checkbox {
     @apply border-primary;
-  }
-  
-  /* Text spacing & click affordance */
-  .ingredient-text {
-    @apply leading-snug;
   }
 </style>
