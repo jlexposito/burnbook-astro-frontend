@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.337889+02:00'
 id: 18
 image: /media/Cauliflower-Fried-Rice-Recipe.jpg
 ingredients:
-- id: 650
+- id: 4141
   ingredient:
     name: coliflor
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 18
   unit: gr
-- id: 651
+- id: 4142
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 18
   unit: tablespoon
-- id: 652
+- id: 4143
   ingredient:
     name: huevos
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 18
   unit: unit
-- id: 653
+- id: 4144
   ingredient:
     name: cebolla
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 18
   unit: unit
-- id: 654
+- id: 4145
   ingredient:
     name: pimientos
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 18
   unit: unit
-- id: 655
+- id: 4146
   ingredient:
     name: limon
     prefix: zumo de
@@ -58,12 +58,12 @@ servings: 2
 status: Tried
 tags:
 - vegetariano
+- principal
 - cena
 - comida
 title: Arroz frito de coliflor
-updated: '2024-08-09T15:37:06.263115+02:00'
+updated: '2026-03-02T18:11:20.827388+01:00'
 ---
-
 Instrucciones
 1. Añade el aceite a un wok grande. Añade la cebolla y cocina, revolviendo regularmente a fuego medio durante 5 minutos hasta que la cebolla comience a ablandarse y volverse translúcida.
 2. Añade el pimiento rojo picado, el ajo y los guisantes. Cocina durante 2 minutos más, revolviendo regularmente.
@@ -75,5 +75,3 @@ Instrucciones
 8. Vierte la salsa de soja restante y espolvorea la sal. Mezcla todo.
 9. Agrega el jugo de limón, revuelve y prueba. Agrega un poco más de jugo de limón si es necesario.
 10. Divide en 2 tazones. Cubre con cebolletas.
-
-

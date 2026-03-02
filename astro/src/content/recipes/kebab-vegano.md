@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.221221+02:00'
 id: 15
 image: /media/vegan_kebab_compressed.jpg
 ingredients:
-- id: 644
+- id: 4138
   ingredient:
     name: jackfruit
     prefix: lata de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 15
   unit: unit
-- id: 645
+- id: 4139
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 15
   unit: tablespoon
-- id: 646
+- id: 4140
   ingredient:
     name: tortillas
     prefix: ''
@@ -36,8 +36,8 @@ tags:
 - principal
 - cena
 - comida
-title: Vegan kebab
-updated: '2024-08-09T15:36:17.148963+02:00'
+title: Kebab vegano
+updated: '2026-03-02T18:11:03.051513+01:00'
 ---
 # Pasos 
 
@@ -61,4 +61,3 @@ updated: '2024-08-09T15:36:17.148963+02:00'
 2. Añadir la cebolla cortada en un vaso de batidora, un par de chiles (dependiendo de lo picante que queramos), tres cuchadas de vinagre de manzana, una lata de tomates triturados/trozeados, un par de cucharadas de sirope y un vaso de zumo de manzana.
 3. Añadir un poco de sal y pimienta, *opcionalmente* un poco de chile en polvo y batir
 4. Añadirlo en una olla y reducirlo durante 10 minutos para que espese y se evapore el agua que pueda tener.
-

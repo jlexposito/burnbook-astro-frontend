@@ -4,7 +4,7 @@ created: '2024-08-13T13:02:19.363558+02:00'
 id: 61
 image: /media/creamy-cajun-chicken-1.jpg
 ingredients:
-- id: 763
+- id: 4147
   ingredient:
     name: chalotas
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: unit
-- id: 764
+- id: 4148
   ingredient:
     name: ajo
     prefix: diente de
@@ -20,7 +20,7 @@ ingredients:
   quantity: '3'
   recipe: 61
   unit: unit
-- id: 765
+- id: 4149
   ingredient:
     name: pimenton
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: teaspoon
-- id: 766
+- id: 4150
   ingredient:
     name: nata líquida
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '150'
   recipe: 61
   unit: ml
-- id: 767
+- id: 4151
   ingredient:
     name: lima
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: unit
-- id: 768
+- id: 4152
   ingredient:
     name: tomates cherry
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '100'
   recipe: 61
   unit: gr
-- id: 769
+- id: 4153
   ingredient:
     name: Caldo de pollo
     prefix: pastilla de
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: unit
-- id: 770
+- id: 4154
   ingredient:
     name: Pechuga de pollo
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '600'
   recipe: 61
   unit: gr
-- id: 771
+- id: 4155
   ingredient:
     name: arroz arborio
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '200'
   recipe: 61
   unit: gr
-- id: 772
+- id: 4156
   ingredient:
     name: cajun
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: teaspoon
-- id: 773
+- id: 4157
   ingredient:
     name: oregano
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: teaspoon
-- id: 774
+- id: 4158
   ingredient:
     name: pimientos rojos
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '1'
   recipe: 61
   unit: unit
-- id: 775
+- id: 4159
   ingredient:
     name: cebollla molida
     prefix: ''
@@ -113,10 +113,11 @@ references:
 servings: 2
 status: Tried
 tags:
+- principal
 - cena
 - comida
 title: Pollo en salsa cajún
-updated: '2024-08-13T13:09:02.680214+02:00'
+updated: '2026-03-02T18:11:43.351405+01:00'
 ---
 Marina los muslos de pollo con aceite de oliva, una cucharada pequeña de cajún, pimentón rojo, cebolla y ajo molido y llévalos a la sarten a fuego medio para dorarlos por ambos lados. Aparta los muslos de pollo y en la misma sarten añade el pimiento cortado en cubos pequeños, una cucharada pequeña de cajún, pimentón, caldo de pollo, los tomates cherry, 200ml de nata liquida y un par de rodajas de lima. Cubre la sarten y dejalo freir durante unos 20 minutos.
 
