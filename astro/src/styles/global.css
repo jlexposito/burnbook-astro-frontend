@@ -3,20 +3,18 @@
 @tailwind utilities; */
 @import "tailwindcss";
 
-
 @reference tailwindcss;
 
 @theme {
   --color-primary: #541802;
   --color-primary-accent: #722103;
-  --color-secondary: #DFB09F;
-  --color-secondary-dark: #E0A189;
+  --color-secondary: #dfb09f;
+  --color-secondary-dark: #e0a189;
   --color-secondary-dark-ring: #541802;
   --color-secondary-contrast: #541802;
   --color-bk-accent: #ff6b00;
   --color-bk-accent-hover: #ff8500;
 }
-
 
 /* --------------------
    Base layer
@@ -27,6 +25,11 @@
     background-color: #faf0dc;
     @apply pb-20 md:pb-10;
   }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   /* *,
   ::after,
   ::before,
@@ -34,7 +37,7 @@
   ::file-selector-button {
     border-color: var(#6b7280, currentColor);
   } */
-/* 
+  /* 
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -66,103 +69,63 @@
    Utilities layer
 -------------------- */
 @utility bk-accent {
-  @apply
-    bg-secondary
-    text-primary
-    active:bg-primary-accent
-    active:text-secondary
-    active:ring-secondary
-    focus-visible:ring-secondary-dark-ring
-    focus-visible:outline-1
-    focus-visible:ring-2
-    active:ring-2
-    disabled:cursor-not-allowed
-    disabled:opacity-50;
+  @apply bg-secondary text-primary active:bg-primary-accent active:text-secondary active:ring-secondary focus-visible:ring-secondary-dark-ring focus-visible:ring-2 focus-visible:outline-1 active:ring-2 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 @utility bk-accent-hover {
-  @apply
-    hover:bg-secondary-dark
-    hover:text-primary
-    hover:ring-secondary-contrast
-    hover:ring-2
-    hover:cursor-pointer;
-}
-  
-@utility btn {
-  @apply
-    my-3
-    rounded-lg
-    px-5
-    py-2.5
-    text-center
-    text-sm
-    font-medium
-    focus:outline-none
-    focus:ring-2
-    focus:ring-primary-accent
-    focus:ring-offset-2;
+  @apply hover:bg-secondary-dark hover:text-primary hover:outline-secondary-contrast hover:cursor-pointer hover:outline hover:outline-2;
 }
 
- @utility btn-accent {
+@utility btn {
+  @apply focus:ring-primary-accent my-3 rounded-lg px-5 py-2.5 text-center text-sm font-normal focus:ring-2 focus:ring-offset-2 focus:outline-none;
+}
+
+@utility btn-accent {
   @apply bk-accent bk-accent-hover;
 }
 
 @utility btn-primary {
-  @apply
-    bg-primary
-    hover:bg-primary-accent
-    hover:cursor-pointer
-    rounded-lg
-    border
-    px-5
-    py-2.5
-    text-center
-    text-sm
-    font-medium
-    text-white
-    focus:outline-none
-    focus:ring-0
-    focus:ring-offset-2;
+  @apply bg-primary hover:bg-primary-accent rounded-lg border px-5 py-2.5 text-center text-sm font-normal text-white hover:cursor-pointer focus:ring-0 focus:ring-offset-2 focus:outline-none;
+}
+
+/* ========= Tag system ========= */
+
+@utility tag-base {
+  @apply hover:bg-secondary-dark focus-within:outline-secondary-contrast inline-flex items-center gap-2 border border-gray-400 bg-gray-200 px-3 py-1 text-sm text-gray-800 transition-colors focus-within:outline focus-within:outline-2 hover:border-gray-500 hover:text-gray-900;
+}
+
+@utility tag-rounded {
+  @apply tag-base rounded-full;
+}
+
+@utility tag-square {
+  @apply tag-base rounded-none;
+}
+
+@utility tag-remove {
+  @apply flex h-4 w-4 cursor-pointer items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-red-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-gray-400;
 }
 
 input:focus,
 .input.focused {
-  @apply
-    border-secondary!
-    ring-secondary-dark-ring!
-    outline-0!
-    ring-1!;
+  @apply border-secondary! ring-secondary-dark-ring! ring-1! outline-0!;
 }
 
 .input {
-  @apply
-    border
-    rounded-sm
-    px-3
-    py-2;
+  @apply rounded-sm border px-3 py-2;
 }
 
 .errors {
-  @apply
-    relative
-    rounded-sm
-    border
-    border-red-400
-    bg-red-100
-    px-4
-    py-3
-    text-red-700;
+  @apply relative rounded-sm border border-red-400 bg-red-100 px-4 py-3 text-red-700;
 }
 
 a.filled {
-  @apply inline-block rounded-sm px-3 py-2 mx-1 my-1 sm:my-2;
+  @apply mx-1 my-1 inline-block rounded-sm px-3 py-2 sm:my-2;
 }
 
 input,
 textarea,
 select,
 button {
-  @apply border border-gray-500 px-3 py-2
-         focus:outline-none focus:ring-2 focus:ring-secondary-dark-ring focus:border-secondary;
+  @apply focus:ring-secondary-dark-ring focus:border-secondary border border-gray-500 px-3 py-2 focus:ring-2 focus:outline-none;
 }

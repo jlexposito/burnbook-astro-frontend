@@ -121,7 +121,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           <div class="flex gap-2">
             <div class="flex-1">
               <label for="minTimeFilter" class="mb-1 block font-semibold">
-                Tiempo mínimo (min)
+                Tiempo mínimo
               </label>
               <input
                 id="minTimeFilter"
@@ -141,7 +141,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             </div>
             <div class="flex-1">
               <label for="maxTimeFilter" class="mb-1 block font-semibold">
-                Tiempo máximo (min)
+                Tiempo máximo
               </label>
               <input
                 id="maxTimeFilter"
@@ -200,7 +200,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                       return (
                         <button
                           onClick={() => props.toggleTag(tag.name)}
-                          class="rounded-sm border px-3 py-1 transition hover:cursor-pointer"
+                          class="tag-square hover:cursor-pointer"
                           classList={{
                             "bk-accent": isActive(),
                             "bg-gray-200 text-black border-primary/20 hover:bg-gray-300":
@@ -209,7 +209,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                         >
                           {tag.name}
                         </button>
-                      );
+                      )
                     }}
                   </For>
                 </div>
@@ -232,7 +232,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
       </div>
       {/* Selected tags */}
       <Show when={anyFilterActive() && !props.open}>
-        <div class="mb-2 flex flex-wrap items-center gap-1 bg-white border shadow rounded-sm px-3 py-2 border-gray-500">
+        <div class="mb-2 flex flex-wrap items-center gap-1 rounded-sm border border-gray-500 bg-white px-3 py-2 shadow">
           <span class="w-full uppercase underline underline-offset-2">
             Filtros activos
           </span>
@@ -242,37 +242,36 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           </Show>
           <Show when={props.minTime != null}>
             <span class="font-semibold">Tiempo mínimo:</span>
-            <span> {props.minTime} minutes</span>
+            <span> {props.minTime} minutos</span>
           </Show>
           <Show when={props.maxTime != null}>
             <span class="font-semibold">Tiempo máximo:</span>
-            <span> {props.maxTime} minutes</span>
+            <span> {props.maxTime} minutos</span>
           </Show>
           <Show when={selectedTags().length > 0}>
             <span class="font-semibold">Etiquetas seleccionadas:</span>
-            <div class="tags flex flex-wrap gap-2 py-2 max-h-[15lvh] md:max-h-[15lvh] overflow-y-auto">
+            <div class="tags flex max-h-[15lvh] flex-wrap gap-2 overflow-y-auto py-2 md:max-h-[15lvh]">
               <For each={selectedTags()}>
                 {(tag) => (
-                  <>
-                    <span class="bk-accent-hover inline-flex items-center gap-2 rounded-full border-1 bg-gray-200 px-3 py-1 text-sm text-gray-800 hover:border-0">
-                      {tag.name}
+                  <span class="tag-rounded">
+                    {tag.name}
 
-                      <span
-                        role="button"
-                        tabIndex={0}
-                        aria-label={`Remove ${tag.name}`}
-                        onClick={() => props.toggleTag(tag.name)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter" || e.key === " ") {
-                            props.toggleTag(tag.name);
-                          }
-                        }}
-                        class="flex h-4 w-4 cursor-pointer items-center justify-center rounded-full text-gray-600 hover:bg-red-400 hover:text-white focus:ring-2 focus:ring-gray-400 focus:outline-none"
-                      >
-                        ×
-                      </span>
+                    <span
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`Remove ${tag.name}`}
+                      onClick={() => props.toggleTag(tag.name)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          props.toggleTag(tag.name);
+                        }
+                      }}
+                      class="tag-remove"
+                    >
+                      ×
                     </span>
-                  </>
+                  </span>
                 )}
               </For>
             </div>
