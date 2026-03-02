@@ -4,7 +4,7 @@ created: '2026-02-04T00:13:29.504179+01:00'
 id: 147
 image: null
 ingredients:
-- id: 1897
+- id: 4216
   ingredient:
     name: calabacín
     prefix: entero
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 147
   unit: unit
-- id: 1898
+- id: 4217
   ingredient:
     name: cebolla amarilla
     prefix: mediana
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 147
   unit: unit
-- id: 1899
+- id: 4218
   ingredient:
     name: tofu
     prefix: semifirme
@@ -28,7 +28,7 @@ ingredients:
   quantity: '0.5'
   recipe: 147
   unit: unit
-- id: 1900
+- id: 4219
   ingredient:
     name: filete de aguja
     prefix: finamente rebanado
@@ -36,7 +36,7 @@ ingredients:
   quantity: '113.4'
   recipe: 147
   unit: gr
-- id: 1901
+- id: 4220
   ingredient:
     name: caldo de huesos de pollo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '3'
   recipe: 147
   unit: cup
-- id: 1902
+- id: 4221
   ingredient:
     name: gochujang (pasta de chili rojo coreana)
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 147
   unit: tablespoon
-- id: 1903
+- id: 4222
   ingredient:
     name: gochugaru (escamas de chili picante coreano)
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '0.5'
   recipe: 147
   unit: tablespoon
-- id: 1904
+- id: 4223
   ingredient:
     name: doenjang (pasta de soja fermentada)
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 147
   unit: tablespoon
-- id: 1905
+- id: 4224
   ingredient:
     name: ajo
     prefix: picado
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 147
   unit: tablespoon
-- id: 1906
+- id: 4225
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -94,8 +94,8 @@ tags:
 - alto en proteína
 - bajo en calorías
 - cena
-title: Gochujang Jjigae (Estofado de Pasta de Chili) Congelado
-updated: '2026-02-04T00:13:29.504245+01:00'
+title: Estofado de Pasta de Chili
+updated: '2026-03-02T20:13:04.262363+01:00'
 ---
 1. Pica el calabacín, la cebolla y el tofu en cubos pequeños.
 2. En un tazón pequeño, mezcla el gochujang, el gochugaru, el doenjang, el ajo picado y la salsa de soja para hacer la salsa del caldo.
