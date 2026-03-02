@@ -1,10 +1,10 @@
 ---
-cooking_time: 46
+cooking_time: 45
 created: '2026-02-26T22:33:44.845781+01:00'
 id: 205
-image: null
+image: /media/pulled_setas.jpg
 ingredients:
-- id: 3197
+- id: 4245
   ingredient:
     name: setas Cardo
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: al gusto
   recipe: 205
   unit: unit
-- id: 3198
+- id: 4246
   ingredient:
     name: cebolla
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 205
   unit: unit
-- id: 3199
+- id: 4247
   ingredient:
     name: chipotles
     prefix: en adobo
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 205
   unit: unit
-- id: 3200
+- id: 4248
   ingredient:
     name: salsa de adobo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 205
   unit: tablespoon
-- id: 3201
+- id: 4249
   ingredient:
     name: orégano
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 205
   unit: teaspoon
-- id: 3202
+- id: 4250
   ingredient:
     name: comino
     prefix: molido
@@ -52,7 +52,7 @@ ingredients:
   quantity: '0.5'
   recipe: 205
   unit: teaspoon
-- id: 3203
+- id: 4251
   ingredient:
     name: chile en polvo
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 205
   unit: teaspoon
-- id: 3204
+- id: 4252
   ingredient:
     name: tomate
     prefix: triturado
@@ -68,7 +68,7 @@ ingredients:
   quantity: '100'
   recipe: 205
   unit: gr
-- id: 3205
+- id: 4253
   ingredient:
     name: caldo
     prefix: ''
@@ -79,14 +79,14 @@ ingredients:
 references:
 - https://youtube.com/shorts/GiyBUjGz6do?si=gIuAt7jed2pWtibQ
 servings: 2
-status: Draft
+status: Tried
 tags:
 - vegetariano
 - principal
 - cocina mexicana
 - comida
 title: Pulled setas
-updated: '2026-02-26T22:37:46.266946+01:00'
+updated: '2026-03-02T20:32:08.498987+01:00'
 ---
 1. Deshilacha las setas Cardo: clava un tenedor por debajo del sombrero y rasca con otro tenedor por todos los lados para crear hilos.
 2. Pica finamente los sombreros y los recortes de setas, y mézclalos.
@@ -98,4 +98,3 @@ updated: '2026-02-26T22:37:46.266946+01:00'
 8. Devuelve la mezcla a la sartén junto con las setas deshilachadas.
 9. Reduce a fuego medio-alto durante 30 minutos hasta que las setas estén tiernas y la salsa espese.
 
-Información nutricional no disponible.
