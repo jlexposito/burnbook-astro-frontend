@@ -4,7 +4,7 @@ created: '2026-02-27T17:22:04.750704+01:00'
 id: 210
 image: null
 ingredients:
-- id: 3709
+- id: 4008
   ingredient:
     name: setas ostra
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '500'
   recipe: 210
   unit: gr
-- id: 3710
+- id: 4009
   ingredient:
     name: ajo
     prefix: dientes de
@@ -20,7 +20,7 @@ ingredients:
   quantity: '4'
   recipe: 210
   unit: unit
-- id: 3711
+- id: 4010
   ingredient:
     name: pera
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 210
   unit: unit
-- id: 3712
+- id: 4011
   ingredient:
     name: zanahorias
     prefix: medianas
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 210
   unit: unit
-- id: 3713
+- id: 4012
   ingredient:
     name: cebolla
     prefix: mediana
@@ -44,7 +44,7 @@ ingredients:
   quantity: '0.5'
   recipe: 210
   unit: unit
-- id: 3714
+- id: 4013
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '4'
   recipe: 210
   unit: tablespoon
-- id: 3715
+- id: 4014
   ingredient:
     name: azúcar
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 210
   unit: tablespoon
-- id: 3716
+- id: 4015
   ingredient:
     name: cebolleta
     prefix: tallo de
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 210
   unit: unit
-- id: 3717
+- id: 4016
   ingredient:
     name: aceite de sésamo
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '2'
   recipe: 210
   unit: tablespoon
-- id: 3718
+- id: 4017
   ingredient:
     name: aceite
     prefix: ''
@@ -90,9 +90,12 @@ servings: 2
 status: Draft
 tags:
 - vegetariano
+- principal
+- vegano
 - comida
-title: Setas ostra marinadas a la plancha
-updated: '2026-02-27T17:22:04.750775+01:00'
+- cocina koreana
+title: Bulgogi de setas a la plancha
+updated: '2026-03-02T18:04:28.814757+01:00'
 ---
 1. Pica finamente el ajo y la pera. Corta las zanahorias y la cebolla en tiras finas. Corta la cebolleta en trozos pequeños. Desmenuza a mano las setas ostra en tiras.
 2. En un bol grande, añade las setas, zanahorias, cebolla, pera, ajo, salsa de soja, azúcar y aceite de sésamo. Mezcla bien y deja marinar durante 1 hora.
