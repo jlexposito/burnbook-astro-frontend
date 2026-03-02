@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-03-01T11:41:28.960073+01:00'
 id: 217
-image: null
+image: /media/Foie-Gras-Vegano-8-750x500.jpg
 ingredients:
-- id: 3923
+- id: 4234
   ingredient:
     name: setas shiitake
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '300'
   recipe: 217
   unit: gr
-- id: 3924
+- id: 4235
   ingredient:
     name: cebolla morada
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3925
+- id: 4236
   ingredient:
     name: jengibre
     prefix: un trocito de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3926
+- id: 4237
   ingredient:
     name: tomillo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3927
+- id: 4238
   ingredient:
     name: orégano
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3928
+- id: 4239
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3929
+- id: 4240
   ingredient:
     name: anacardos
     prefix: hidratados
@@ -60,7 +60,7 @@ ingredients:
   quantity: '80'
   recipe: 217
   unit: gr
-- id: 3930
+- id: 4241
   ingredient:
     name: salsa de soja
     prefix: un chorrito de
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3931
+- id: 4242
   ingredient:
     name: aceite de oliva virgen extra
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3932
+- id: 4243
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 217
   unit: unit
-- id: 3933
+- id: 4244
   ingredient:
     name: cúrcuma
     prefix: una pizca de
@@ -103,7 +103,7 @@ tags:
 - cena
 - por probar
 title: Foie vegetal
-updated: '2026-03-01T13:00:32.348387+01:00'
+updated: '2026-03-02T20:29:34.830248+01:00'
 ---
 1. Lamina las setas shiitake y la cebolla morada.
 2. Saltéalas a fuego medio-alto con aceite de oliva virgen extra y jengibre hasta que caramelicen bien.
