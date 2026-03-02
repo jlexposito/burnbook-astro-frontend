@@ -2,9 +2,9 @@
 cooking_time: 20
 created: '2025-12-11T21:01:54.471128+01:00'
 id: 70
-image: null
+image: /media/wrap_calabacin.jpg
 ingredients:
-- id: 3983
+- id: 3990
   ingredient:
     name: Calabacín
     prefix: ''
@@ -12,7 +12,39 @@ ingredients:
   quantity: '2'
   recipe: 70
   unit: unit
-- id: 3984
+- id: 3991
+  ingredient:
+    name: Pechuga de pollo
+    prefix: ''
+  optional: false
+  quantity: '200'
+  recipe: 70
+  unit: gr
+- id: 3992
+  ingredient:
+    name: cebolla
+    prefix: ''
+  optional: false
+  quantity: '0.5'
+  recipe: 70
+  unit: unit
+- id: 3993
+  ingredient:
+    name: Pimiento rojo
+    prefix: ''
+  optional: false
+  quantity: '0.5'
+  recipe: 70
+  unit: unit
+- id: 3994
+  ingredient:
+    name: Pimiento verde
+    prefix: ''
+  optional: false
+  quantity: '0.5'
+  recipe: 70
+  unit: unit
+- id: 3995
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -20,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 70
   unit: tablespoon
-- id: 3985
+- id: 3996
   ingredient:
     name: Especias para fajitas
     prefix: ''
@@ -28,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 70
   unit: tablespoon
-- id: 3986
+- id: 3997
   ingredient:
     name: Aguacate
     prefix: ''
@@ -36,7 +68,15 @@ ingredients:
   quantity: '1'
   recipe: 70
   unit: unit
-- id: 3987
+- id: 3998
+  ingredient:
+    name: lima
+    prefix: ''
+  optional: false
+  quantity: '1'
+  recipe: 70
+  unit: unit
+- id: 3999
   ingredient:
     name: cilantro
     prefix: ''
@@ -44,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 70
   unit: tablespoon
-- id: 3988
+- id: 4000
   ingredient:
     name: Hojas de lechuga
     prefix: ''
@@ -52,29 +92,15 @@ ingredients:
   quantity: '4'
   recipe: 70
   unit: unit
-- id: 3989
-  ingredient:
-    name: queso para gratinar
-    prefix: ''
-  optional: false
-  quantity: '300'
-  recipe: 70
-  unit: gr
 references:
 - https://www.instagram.com/reel/DNqwrTQs2F1/?igsh=dHg5MGFvaXEyeHhq
 servings: 2
-status: Draft
+status: Tried
 tags:
 - principal
 - cena
 - comida
 title: Fajitas de calabacín
-updated: '2026-03-02T15:35:14.871184+01:00'
+updated: '2026-03-02T15:36:58.982418+01:00'
 ---
-1. Precalienta el horno a 180º C y mientras corta el calabacín en láminas finas, colócalas en la bandeja del horno solapándose entre sí. Añade queso para gratinar encima.
-2. Cocina en el horno a 180 grados por arriba y por abajo durante 10 minutos. Los últimos dos minutos puedes subir la temperatura del horno y ponerlo en modo gratinar.
-3. Corta un par de hojas de lechuga y sírvelas encima del calabacín junto con queso crema y salmón o con queso parmesano y shoarma.
-
-Opciones para rellenar las fajitas:
-1. Sirvelas con salmón y queso crema.
-2. Sírvelas con Shoarma  hecha en la sartén con un poco de picante.
+Corta el calabacín, los pimientos y la cebolla en tiras. Corta la pechuga de pollo en tiras. Calienta el aceite de oliva en una sartén grande a fuego medio-alto. Añade la cebolla y los pimientos y saltea durante 3-5 minutos hasta que estén tiernos. Añade el pollo y cocina hasta que esté dorado y cocido por completo. Incorpora el calabacín y las especias para fajitas, y cocina 5-7 minutos más, hasta que el calabacín esté tierno. Sirve las fajitas en hojas de lechuga con aguacate laminado, rodajas de lima y cilantro fresco picado.
