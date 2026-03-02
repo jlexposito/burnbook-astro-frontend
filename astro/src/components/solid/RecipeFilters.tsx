@@ -171,9 +171,10 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 id="tagSearch"
                 name="tagSearch"
                 type="text"
-                placeholder="Search tags..."
+                placeholder="Buscar etiquetas..."
                 class="mb-2 w-full rounded-sm border px-3 py-2"
                 value={props.tagSearch}
+                autocomplete="off"
                 onInput={(e) => props.setTagSearch(e.currentTarget.value)}
               />
               <Show when={props.tagSearch}>
