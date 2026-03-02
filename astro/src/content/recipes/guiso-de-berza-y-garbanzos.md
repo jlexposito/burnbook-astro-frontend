@@ -4,7 +4,7 @@ created: '2026-02-14T18:54:29.107386+01:00'
 id: 178
 image: null
 ingredients:
-- id: 2254
+- id: 4093
   ingredient:
     name: Berza
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '400'
   recipe: 178
   unit: gr
-- id: 2255
+- id: 4094
   ingredient:
     name: Patatas
     prefix: cachadas
@@ -20,15 +20,15 @@ ingredients:
   quantity: '2'
   recipe: 178
   unit: unit
-- id: 2256
+- id: 4095
   ingredient:
-    name: Agua
+    name: agua
     prefix: ''
   optional: false
   quantity: '400'
   recipe: 178
   unit: ml
-- id: 2257
+- id: 4096
   ingredient:
     name: Garbanzos
     prefix: cocidos
@@ -36,31 +36,31 @@ ingredients:
   quantity: '400'
   recipe: 178
   unit: gr
-- id: 2258
+- id: 4097
   ingredient:
-    name: Sal
+    name: sal
     prefix: al gusto
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 178
   unit: unit
-- id: 2259
+- id: 4098
   ingredient:
-    name: Aceite de oliva virgen extra
+    name: aceite de oliva virgen extra
     prefix: ''
   optional: false
   quantity: '4'
   recipe: 178
   unit: tablespoon
-- id: 2260
+- id: 4099
   ingredient:
-    name: Ajo
+    name: ajo
     prefix: dientes de
   optional: false
   quantity: '3'
   recipe: 178
   unit: unit
-- id: 2261
+- id: 4100
   ingredient:
     name: Pimentón
     prefix: generosa
@@ -74,9 +74,10 @@ servings: 2
 status: Draft
 tags:
 - vegetariano
+- principal
 - comida
 title: Guiso de Berza y Garbanzos
-updated: '2026-02-14T18:54:29.107490+01:00'
+updated: '2026-03-02T18:09:20.140520+01:00'
 ---
 1. Calienta el aceite de oliva virgen extra en una olla para preparar el sofrito.
 2. Añade los 3 dientes de ajo picados al aceite caliente.
