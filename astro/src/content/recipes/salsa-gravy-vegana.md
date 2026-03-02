@@ -4,7 +4,7 @@ created: '2026-02-20T15:37:55.496019+01:00'
 id: 188
 image: null
 ingredients:
-- id: 4034
+- id: 4172
   ingredient:
     name: cebolla
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: unit
-- id: 4035
+- id: 4173
   ingredient:
     name: dientes de ajo
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 188
   unit: unit
-- id: 4036
+- id: 4174
   ingredient:
     name: zanahoria
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: unit
-- id: 4037
+- id: 4175
   ingredient:
     name: champiñones
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '150'
   recipe: 188
   unit: gr
-- id: 4038
+- id: 4176
   ingredient:
     name: aceite
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 188
   unit: tablespoon
-- id: 4039
+- id: 4177
   ingredient:
     name: pasta de tomate
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 188
   unit: tablespoon
-- id: 4040
+- id: 4178
   ingredient:
     name: harina
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '2'
   recipe: 188
   unit: tablespoon
-- id: 4041
+- id: 4179
   ingredient:
     name: vino tinto o zumo de uva
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '60'
   recipe: 188
   unit: ml
-- id: 4042
+- id: 4180
   ingredient:
     name: agua
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '500'
   recipe: 188
   unit: ml
-- id: 4043
+- id: 4181
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: tablespoon
-- id: 4044
+- id: 4182
   ingredient:
     name: Mostaza
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: tablespoon
-- id: 4045
+- id: 4183
   ingredient:
     name: hojas de laurel
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '2'
   recipe: 188
   unit: unit
-- id: 4046
+- id: 4184
   ingredient:
     name: tomillo
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: teaspoon
-- id: 4047
+- id: 4185
   ingredient:
     name: sal
     prefix: al gusto
@@ -116,7 +116,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: unit
-- id: 4048
+- id: 4186
   ingredient:
     name: pimienta
     prefix: al gusto
@@ -124,7 +124,7 @@ ingredients:
   quantity: '1'
   recipe: 188
   unit: unit
-- id: 4049
+- id: 4187
   ingredient:
     name: azúcar
     prefix: ''
@@ -133,7 +133,7 @@ ingredients:
   recipe: 188
   unit: teaspoon
 references:
-- https://www.instagram.com/reel/DSDWJTGDbYX/?igsh=MXcydGw0eTl3enFkbA==
+- https://www.instagram.com/reel/DSDWJTGDbYX/
 servings: 2
 status: Draft
 tags:
@@ -141,7 +141,7 @@ tags:
 - vegetariano
 - comida
 title: Salsa gravy vegana
-updated: '2026-03-02T18:06:04.700481+01:00'
+updated: '2026-03-02T20:05:49.656330+01:00'
 ---
 1. Pica gruesamente la cebolla, el ajo, la zanahoria y los champiñones.
 2. Fríe las verduras picadas en un poco de aceite durante 5-8 minutos.
