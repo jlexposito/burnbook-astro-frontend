@@ -94,6 +94,7 @@ tags:
 - alto en proteína
 - bajo en calorías
 - cena
+- por probar
 title: Estofado de Pasta de Chili
 updated: '2026-03-02T20:13:04.262363+01:00'
 ---

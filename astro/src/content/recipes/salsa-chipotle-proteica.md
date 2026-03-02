@@ -93,6 +93,7 @@ tags:
 - vegetariano
 - picante
 - alto en proteína
+- por probar
 title: Salsa chipotle proteica
 updated: '2026-02-24T19:06:43.539182+01:00'
 ---

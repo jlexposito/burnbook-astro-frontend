@@ -143,6 +143,7 @@ tags:
 - principal
 - cena
 - comida
+- por probar
 title: Curry de Bacalao con Leche de Coco
 updated: '2026-03-02T18:05:15.036418+01:00'
 ---
