@@ -4,7 +4,7 @@ created: '2026-01-13T22:39:11.206872+01:00'
 id: 133
 image: null
 ingredients:
-- id: 1715
+- id: 4079
   ingredient:
     name: garbanzos
     prefix: escurridos y enjuagados
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1716
+- id: 4080
   ingredient:
     name: alubias blancas
     prefix: escurridas y enjuagadas
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1717
+- id: 4081
   ingredient:
     name: pepinos
     prefix: pequeños, picados
@@ -28,7 +28,7 @@ ingredients:
   quantity: '5'
   recipe: 133
   unit: unit
-- id: 1718
+- id: 4082
   ingredient:
     name: pimientos rojos
     prefix: grandes, picados
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 133
   unit: unit
-- id: 1719
+- id: 4083
   ingredient:
     name: repollo verde
     prefix: cortado en juliana fina y luego picado
@@ -44,7 +44,7 @@ ingredients:
   quantity: '0.5'
   recipe: 133
   unit: unit
-- id: 1720
+- id: 4084
   ingredient:
     name: cebolla roja
     prefix: picada
@@ -52,7 +52,7 @@ ingredients:
   quantity: '0.25'
   recipe: 133
   unit: unit
-- id: 1721
+- id: 4085
   ingredient:
     name: leche de coco
     prefix: entera
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1722
+- id: 4086
   ingredient:
     name: cilantro
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1723
+- id: 4087
   ingredient:
     name: albahaca
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1724
+- id: 4088
   ingredient:
     name: chile serrano
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1725
+- id: 4089
   ingredient:
     name: salsa de pescado
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '3'
   recipe: 133
   unit: tablespoon
-- id: 1726
+- id: 4090
   ingredient:
     name: azúcar moreno
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '2'
   recipe: 133
   unit: tablespoon
-- id: 1727
+- id: 4091
   ingredient:
     name: lima
     prefix: ralladura y zumo de
@@ -108,9 +108,9 @@ ingredients:
   quantity: '1'
   recipe: 133
   unit: unit
-- id: 1728
+- id: 4092
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: '1'
@@ -124,6 +124,7 @@ tags:
 - vegetariano
 - cocina asiática
 - ensalada
+- principal
 - cena
 - comida
 title: Ensalada de Legumbres Tailandesa con Hierbas para 'Meal Prep'

@@ -4,15 +4,15 @@ created: '2026-02-13T21:25:41.633744+01:00'
 id: 174
 image: null
 ingredients:
-- id: 2187
+- id: 4050
   ingredient:
-    name: Aceite
+    name: aceite
     prefix: ''
   optional: false
   quantity: 1/2
   recipe: 174
   unit: cup
-- id: 2188
+- id: 4051
   ingredient:
     name: Paneer
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '250'
   recipe: 174
   unit: gr
-- id: 2189
+- id: 4052
   ingredient:
     name: Cebollas
     prefix: medianas
@@ -28,15 +28,15 @@ ingredients:
   quantity: '4'
   recipe: 174
   unit: unit
-- id: 2190
+- id: 4053
   ingredient:
-    name: Ajo
+    name: ajo
     prefix: ''
   optional: false
   quantity: 1/4
   recipe: 174
   unit: cup
-- id: 2191
+- id: 4054
   ingredient:
     name: Chiles verdes
     prefix: partidos
@@ -44,15 +44,15 @@ ingredients:
   quantity: '2'
   recipe: 174
   unit: unit
-- id: 2192
+- id: 4055
   ingredient:
-    name: Jengibre
+    name: jengibre
     prefix: ''
   optional: false
   quantity: 1/4
   recipe: 174
   unit: cup
-- id: 2193
+- id: 4056
   ingredient:
     name: Cilantro
     prefix: fresco
@@ -60,23 +60,23 @@ ingredients:
   quantity: 1/2
   recipe: 174
   unit: cup
-- id: 2194
+- id: 4057
   ingredient:
-    name: Menta
+    name: menta
     prefix: hojas de
   optional: false
   quantity: 1/2
   recipe: 174
   unit: cup
-- id: 2195
+- id: 4058
   ingredient:
-    name: Agua
+    name: agua
     prefix: ''
   optional: false
   quantity: 1/2
   recipe: 174
   unit: cup
-- id: 2196
+- id: 4059
   ingredient:
     name: Dahi
     prefix: batido
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: cup
-- id: 2197
+- id: 4060
   ingredient:
     name: Sal
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: al gusto
   recipe: 174
   unit: unit
-- id: 2198
+- id: 4061
   ingredient:
     name: Comino
     prefix: en grano
@@ -100,7 +100,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: teaspoon
-- id: 2199
+- id: 4062
   ingredient:
     name: Clavos de olor
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: 2-3
   recipe: 174
   unit: unit
-- id: 2200
+- id: 4063
   ingredient:
     name: Cardamomo negro
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: unit
-- id: 2201
+- id: 4064
   ingredient:
     name: Canela
     prefix: pequeña
@@ -124,7 +124,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: unit
-- id: 2202
+- id: 4065
   ingredient:
     name: Chiles rojos
     prefix: secos
@@ -132,7 +132,7 @@ ingredients:
   quantity: '2'
   recipe: 174
   unit: unit
-- id: 2203
+- id: 4066
   ingredient:
     name: Cardamomo verde
     prefix: ''
@@ -140,7 +140,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: unit
-- id: 2204
+- id: 4067
   ingredient:
     name: Laurel
     prefix: hoja de
@@ -148,7 +148,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: unit
-- id: 2205
+- id: 4068
   ingredient:
     name: Cilantro
     prefix: en polvo
@@ -156,15 +156,15 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: teaspoon
-- id: 2206
+- id: 4069
   ingredient:
-    name: Garam masala
+    name: Garam Masala
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 174
   unit: teaspoon
-- id: 2207
+- id: 4070
   ingredient:
     name: Comino
     prefix: en polvo
@@ -172,7 +172,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: teaspoon
-- id: 2208
+- id: 4071
   ingredient:
     name: Cúrcuma
     prefix: en polvo
@@ -180,7 +180,7 @@ ingredients:
   quantity: 1/2
   recipe: 174
   unit: teaspoon
-- id: 2209
+- id: 4072
   ingredient:
     name: Pimienta negra
     prefix: en polvo
@@ -188,7 +188,7 @@ ingredients:
   quantity: '1'
   recipe: 174
   unit: teaspoon
-- id: 2210
+- id: 4073
   ingredient:
     name: Agua
     prefix: caliente
@@ -196,7 +196,7 @@ ingredients:
   quantity: 1 1/2
   recipe: 174
   unit: cup
-- id: 2211
+- id: 4074
   ingredient:
     name: Nata fresca
     prefix: ''
@@ -204,7 +204,7 @@ ingredients:
   quantity: '3'
   recipe: 174
   unit: tablespoon
-- id: 2212
+- id: 4075
   ingredient:
     name: Cilantro
     prefix: picado
@@ -212,7 +212,7 @@ ingredients:
   quantity: al gusto
   recipe: 174
   unit: unit
-- id: 2213
+- id: 4076
   ingredient:
     name: Kasturi Methi
     prefix: ''
@@ -220,7 +220,7 @@ ingredients:
   quantity: '2'
   recipe: 174
   unit: teaspoon
-- id: 2214
+- id: 4077
   ingredient:
     name: Nata fresca
     prefix: para decorar
@@ -228,7 +228,7 @@ ingredients:
   quantity: al gusto
   recipe: 174
   unit: unit
-- id: 2215
+- id: 4078
   ingredient:
     name: Aceite de chile
     prefix: para decorar
@@ -243,10 +243,11 @@ status: Draft
 tags:
 - vegetariano
 - cocina india
+- principal
 - cena
 - comida
 title: Curry Cremoso de Paneer
-updated: '2026-02-13T21:25:41.633894+01:00'
+updated: '2026-03-02T18:08:01.357179+01:00'
 ---
 1. Calienta el aceite en un kadai y fríe el paneer hasta que esté dorado por todos lados, luego escúrrelo y reserva.
 2. En el mismo kadai, fríe las cebollas, el jengibre, el ajo y los chiles verdes a fuego medio durante 3-4 minutos hasta que las cebollas estén blandas y translúcidas, luego retira y deja enfriar.
