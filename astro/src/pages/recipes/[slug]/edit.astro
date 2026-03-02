@@ -47,6 +47,15 @@ if (!recipe) {
           </div>
         </div>
       </section>
+      <script>
+        (function () {
+          const url = new URL(window.location.href);
+          if (url.searchParams.has("_cb")) return;
+
+          url.searchParams.set("_cb", Date.now().toString());
+          window.location.replace(url.toString());
+        })();
+      </script>
     </BaseLayout>
   )
 }
