@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-03-01T18:08:44.851493+01:00'
 id: 220
-image: null
+image: /media/crema_champinones.jpg
 ingredients:
-- id: 3975
+- id: 4188
   ingredient:
     name: champiñones
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: '250'
   recipe: 220
   unit: gr
-- id: 3976
+- id: 4189
   ingredient:
-    name: cebollas
+    name: Cebollas
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 220
   unit: unit
-- id: 3977
+- id: 4190
   ingredient:
     name: ajo
     prefix: ''
@@ -28,15 +28,15 @@ ingredients:
   quantity: '2'
   recipe: 220
   unit: unit
-- id: 3978
+- id: 4191
   ingredient:
-    name: caldo de verduras
+    name: Caldo de verduras
     prefix: ''
   optional: false
   quantity: '500'
   recipe: 220
   unit: ml
-- id: 3979
+- id: 4192
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -44,15 +44,15 @@ ingredients:
   quantity: '2'
   recipe: 220
   unit: tablespoon
-- id: 3980
+- id: 4193
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 220
   unit: teaspoon
-- id: 3981
+- id: 4194
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -60,11 +60,11 @@ ingredients:
   quantity: '0.5'
   recipe: 220
   unit: teaspoon
-- id: 3982
+- id: 4195
   ingredient:
     name: hierbas
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 220
   unit: teaspoon
@@ -78,7 +78,7 @@ tags:
 - sopa
 - cena
 title: Crema de champiñones
-updated: '2026-03-01T18:08:44.851538+01:00'
+updated: '2026-03-02T20:07:59.252123+01:00'
 ---
 1. Sofríe las cebollas y el ajo en aceite de oliva hasta que estén fragantes.
 2. Añade los champiñones picados y cocina hasta que se ablanden.
