@@ -250,7 +250,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           </Show>
           <Show when={selectedTags().length > 0}>
             <span class="font-semibold">Etiquetas seleccionadas:</span>
-            <div class="tags flex flex-wrap gap-2">
+            <div class="tags flex flex-wrap gap-2 py-2 max-h-[15lvh] md:max-h-[15lvh] overflow-y-auto">
               <For each={selectedTags()}>
                 {(tag) => (
                   <>
