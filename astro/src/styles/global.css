@@ -73,7 +73,7 @@
 }
 
 @utility bk-accent-hover {
-  @apply hover:bg-secondary-dark hover:text-primary hover:outline-secondary-contrast hover:cursor-pointer hover:outline hover:outline-2;
+  @apply hover:bg-secondary-dark hover:text-primary hover:outline-secondary-contrast hover:cursor-pointer hover:outline-2;
 }
 
 @utility btn {
@@ -91,7 +91,7 @@
 /* ========= Tag system ========= */
 
 @utility tag-base {
-  @apply hover:bg-secondary-dark focus-within:outline-secondary-contrast inline-flex items-center gap-2 border border-gray-400 bg-gray-200 px-3 py-1 text-sm text-gray-800 transition-colors focus-within:outline focus-within:outline-2 hover:border-gray-500 hover:text-gray-900;
+  @apply hover:bg-secondary-dark focus-within:outline-secondary-contrast inline-flex items-center gap-2 border border-gray-400 bg-gray-200 px-3 py-1 text-sm text-gray-800 transition-colors focus-within:outline-2 hover:border-gray-500 hover:text-gray-900;
 }
 
 @utility tag-rounded {
@@ -103,7 +103,7 @@
 }
 
 @utility tag-remove {
-  @apply flex h-4 w-4 cursor-pointer items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-red-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-gray-400;
+  @apply flex h-4 w-4 cursor-pointer items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-red-400 hover:text-white focus-visible:outline-2 focus-visible:outline-gray-400;
 }
 
 input:focus,

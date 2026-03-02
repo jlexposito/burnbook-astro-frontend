@@ -26,12 +26,15 @@ export default function RecipeCard(props: {
   });
 
   return (
-    <a href={`/recipes/${recipe.slug}`} class="block h-[240px] sm:h-[220px] hover:border-1 hover:border-secondary-dark rounded-tl-xl hover:shadow-sm overflow-hidden">
+    <a
+      href={`/recipes/${recipe.slug}`}
+      class="block h-[240px] overflow-hidden rounded-tl-xl hover:shadow-sm sm:h-[220px] hover:outline-2 hover:outline-bk-accent"
+    >
       <div class="relative grid h-full grid-cols-3 overflow-hidden bg-white shadow-md">
         {/* Image */}
         <div class="col-span-1 min-h-full">
           <Show when={recipe.status?.toLowerCase() === "draft"}>
-            <span class="absolute left-0 bk-accent px-3 py-1 text-xs shadow-md">
+            <span class="bk-accent absolute left-0 px-3 py-1 text-xs shadow-md">
               Borrador
             </span>
           </Show>
@@ -77,7 +80,7 @@ export default function RecipeCard(props: {
               {recipe.title}
             </h2>
 
-            <div class="text-primary mb-3 mt-4 font-semibold">
+            <div class="text-primary mt-4 mb-3 font-semibold">
               <svg
                 class="inline-block w-6 align-text-bottom"
                 fill="none"

@@ -210,7 +210,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                         >
                           {tag.name}
                         </button>
-                      )
+                      );
                     }}
                   </For>
                 </div>
