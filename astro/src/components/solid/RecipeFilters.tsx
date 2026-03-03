@@ -110,6 +110,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
 
       {/* Animated filter panel */}
       <div
+        inert={!props.open}
         class={`overflow-hidden rounded-sm border bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
           props.open
             ? "pointer-events-auto max-h-[500px] opacity-100"
