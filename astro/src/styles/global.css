@@ -76,6 +76,10 @@
   @apply hover:bg-secondary-dark hover:text-primary hover:outline-secondary-contrast hover:cursor-pointer hover:outline-2;
 }
 
+@utility primary-hover-active-focus {
+  @apply hover:bg-primary-accent hover:cursor-pointer focus:ring-0 focus:ring-offset-2 focus:outline-none;
+}
+
 @utility btn {
   @apply focus:ring-primary-accent my-3 rounded-lg px-5 py-2.5 text-center text-sm font-normal focus:ring-2 focus:ring-offset-2 focus:outline-none;
 }
@@ -85,7 +89,7 @@
 }
 
 @utility btn-primary {
-  @apply bg-primary hover:bg-primary-accent rounded-lg border px-5 py-2.5 text-center text-sm font-normal text-white hover:cursor-pointer focus:ring-0 focus:ring-offset-2 focus:outline-none;
+  @apply bg-primary primary-hover-active-focus rounded-lg border px-5 py-2.5 text-center text-sm font-normal text-white;
 }
 
 /* ========= Tag system ========= */
