@@ -28,7 +28,7 @@ export default function RecipeCard(props: {
   return (
     <a
       href={`/recipes/${recipe.slug}`}
-      class="block h-[240px] overflow-hidden rounded-tl-xl hover:shadow-sm sm:h-[220px] hover:outline-2 hover:outline-bk-primary-accent"
+      class="block h-[240px] overflow-hidden rounded-tl-xl hover:shadow-sm sm:h-[220px] hover:outline-2 hover:outline-primary-accent"
     >
       <div class="relative grid h-full grid-cols-3 overflow-hidden bg-white shadow-md">
         {/* Image */}
