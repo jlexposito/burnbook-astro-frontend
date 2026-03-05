@@ -1,5 +1,5 @@
 import type { Tag } from "@utils/interfaces";
-import { createMemo, For, Show } from "solid-js";
+import { createMemo, createEffect, For, Show, onCleanup } from "solid-js";
 
 interface RecipeFiltersProps {
   open: boolean;
@@ -18,7 +18,6 @@ interface RecipeFiltersProps {
   tags: Tag[];
 }
 
-// Normalize strings: lowercase + remove diacritics
 function normalizeString(str: string) {
   return str
     .normalize("NFD")
@@ -27,19 +26,15 @@ function normalizeString(str: string) {
 }
 
 export default function RecipeFilters(props: RecipeFiltersProps) {
-  const normalizedTags = createMemo(() =>
-    props.tags.map((tag) => ({
-      original: tag,
-      normalizedName: normalizeString(tag.name),
-    })),
+  const sortedTags = createMemo(() =>
+    [...props.tags].sort((a, b) => a.name.localeCompare(b.name)),
   );
 
   const filteredTags = createMemo(() => {
     const query = normalizeString(props.tagSearch.trim());
-    return normalizedTags()
-      .filter((tag) => tag.normalizedName.includes(query))
-      .map((tag) => tag.original)
-      .sort((a, b) => a.name.localeCompare(b.name));
+    return sortedTags().filter((tag) =>
+      normalizeString(tag.name).includes(query),
+    );
   });
 
   const selectedTags = createMemo(() =>
@@ -64,9 +59,27 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
     props.setMaxTime(null);
   };
 
+  // --- Click outside logic ---
+  createEffect(() => {
+    if (!props.open) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      // Close only if click is outside the sticky container
+      if (!target.closest(".sticky")) {
+        props.setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    onCleanup(() =>
+      document.removeEventListener("mousedown", handleClickOutside),
+    );
+  });
+
   return (
-    <div class="sticky top-0 z-10 flex flex-col">
-      {/* Sticky search + filter toggle */}
+    <div class="sticky top-0 z-40 flex flex-col">
+      {/* Search + Filtros button */}
       <div class="flex items-center gap-2 p-4 px-0 pb-1">
         <div class="relative flex-1">
           <label for="searchRecipes" class="sr-only">
@@ -108,18 +121,18 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         </button>
       </div>
 
-      {/* Animated filter panel */}
+      {/* --- Filter panel with overlay shadow and z-index --- */}
       <div
         inert={!props.open}
         tabindex={props.open ? undefined : -1}
-        class={`overflow-hidden rounded-sm border bg-white shadow transition-[max-height,opacity,transform] duration-300 ease-out ${
+        class={`absolute top-full right-0 left-0 z-50 overflow-hidden rounded-sm border bg-white shadow-lg transition-[max-height,opacity,transform] duration-300 ease-out ${
           props.open
             ? "pointer-events-auto max-h-[500px] opacity-100"
             : "pointer-events-none max-h-0 opacity-0"
         }`}
       >
         <div class="max-h-[500px] space-y-4 overflow-y-auto p-4">
-          {/* Cooking time filters */}
+          {/* Time filters */}
           <div class="flex gap-2">
             <div class="flex-1">
               <label for="minTimeFilter" class="mb-1 block font-semibold">
@@ -193,13 +206,11 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             <Show when={filteredTags().length > 0}>
               <div>
                 <h5 class="mb-1 font-semibold">Etiquetas disponibles</h5>
-
                 <div class="tags flex flex-wrap gap-2">
                   <For each={filteredTags()}>
                     {(tag) => {
                       const isActive = () =>
                         props.activeTags().includes(tag.name);
-
                       return (
                         <button
                           onClick={() => props.toggleTag(tag.name)}
@@ -219,7 +230,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
               </div>
             </Show>
 
-            {/* Clear all filters button at the end */}
             <Show when={anyFilterActive()}>
               <div class="mt-4 flex justify-start">
                 <button
@@ -233,7 +243,8 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           </div>
         </div>
       </div>
-      {/* Selected tags */}
+
+      {/* Selected filters summary */}
       <Show when={anyFilterActive() && !props.open}>
         <div class="mb-2 flex flex-wrap items-center gap-1 rounded-sm border border-gray-500 bg-white px-3 py-2 shadow">
           <span class="w-full uppercase underline underline-offset-2">
@@ -258,7 +269,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 {(tag) => (
                   <span class="tag-rounded">
                     {tag.name}
-
                     <span
                       role="button"
                       tabIndex={0}
@@ -279,7 +289,6 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
               </For>
             </div>
           </Show>
-          {/* Clear all filters button at the end */}
           <div class="mb-1 ml-auto flex justify-end">
             <button class="btn-accent rounded-md" onClick={clearAllFilters}>
               Limpiar filtros
