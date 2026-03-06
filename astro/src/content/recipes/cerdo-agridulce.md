@@ -4,7 +4,7 @@ created: '2026-03-06T16:27:24.174432+01:00'
 id: 238
 image: null
 ingredients:
-- id: 4370
+- id: 4389
   ingredient:
     name: carne de cerdo
     prefix: picada
@@ -12,7 +12,7 @@ ingredients:
   quantity: '350'
   recipe: 238
   unit: gr
-- id: 4371
+- id: 4390
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -20,15 +20,15 @@ ingredients:
   quantity: '2'
   recipe: 238
   unit: tablespoon
-- id: 4372
+- id: 4391
   ingredient:
-    name: sal
+    name: Sal
     prefix: ''
   optional: false
   quantity: pizca
   recipe: 238
   unit: unit
-- id: 4373
+- id: 4392
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: pizca
   recipe: 238
   unit: unit
-- id: 4374
+- id: 4393
   ingredient:
     name: cinco especias
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 238
   unit: teaspoon
-- id: 4375
+- id: 4394
   ingredient:
     name: maicena
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '75'
   recipe: 238
   unit: gr
-- id: 4376
+- id: 4395
   ingredient:
     name: fécula de patata
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '25'
   recipe: 238
   unit: gr
-- id: 4377
+- id: 4396
   ingredient:
     name: huevo
     prefix: clara de
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 238
   unit: unit
-- id: 4378
+- id: 4397
   ingredient:
     name: polvo de hornear
     prefix: ''
@@ -76,15 +76,15 @@ ingredients:
   quantity: '1'
   recipe: 238
   unit: teaspoon
-- id: 4379
+- id: 4398
   ingredient:
     name: agua
-    prefix: muy fría con hielo
+    prefix: ''
   optional: false
   quantity: al gusto
   recipe: 238
   unit: unit
-- id: 4380
+- id: 4399
   ingredient:
     name: agua
     prefix: ''
@@ -92,15 +92,15 @@ ingredients:
   quantity: '60'
   recipe: 238
   unit: gr
-- id: 4381
+- id: 4400
   ingredient:
     name: jengibre
-    prefix: rodaja de
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 238
   unit: unit
-- id: 4382
+- id: 4401
   ingredient:
     name: anís estrellado
     prefix: ''
@@ -108,23 +108,23 @@ ingredients:
   quantity: '0.5'
   recipe: 238
   unit: unit
-- id: 4383
+- id: 4402
   ingredient:
     name: limón
-    prefix: peladura y zumo de
+    prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 238
   unit: unit
-- id: 4384
+- id: 4403
   ingredient:
     name: naranja
-    prefix: peladura y zumo de
+    prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 238
   unit: unit
-- id: 4385
+- id: 4404
   ingredient:
     name: vinagre de arroz
     prefix: ''
@@ -132,7 +132,7 @@ ingredients:
   quantity: '45'
   recipe: 238
   unit: gr
-- id: 4386
+- id: 4405
   ingredient:
     name: azúcar
     prefix: ''
@@ -140,7 +140,7 @@ ingredients:
   quantity: '45'
   recipe: 238
   unit: gr
-- id: 4387
+- id: 4406
   ingredient:
     name: tomate concentrado
     prefix: ''
@@ -148,10 +148,10 @@ ingredients:
   quantity: '30'
   recipe: 238
   unit: gr
-- id: 4388
+- id: 4407
   ingredient:
     name: maicena
-    prefix: disuelta en agua
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 238
@@ -163,9 +163,11 @@ status: Draft
 tags:
 - salsa
 - cocina asiática
+- principal
+- cena
 - comida
-title: Albóndigas de cerdo agridulces
-updated: '2026-03-06T16:27:24.175330+01:00'
+title: Cerdo agridulce
+updated: '2026-03-06T18:31:39.876481+01:00'
 ---
 1. Mezcla la carne picada de cerdo con la salsa de soja, la sal, la pimienta negra y las cinco especias.
 2. Forma albóndigas con la carne marinada.
