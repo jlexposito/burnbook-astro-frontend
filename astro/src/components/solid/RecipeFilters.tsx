@@ -263,7 +263,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
             <span> {props.maxTime} minutos</span>
           </Show>
           <Show when={selectedTags().length > 0}>
-            <span class="font-semibold">Etiquetas seleccionadas:</span>
+            <span class="font-semibold">Etiquetas:</span>
             <div class="tags flex max-h-[15lvh] flex-wrap gap-2 overflow-y-auto py-2 md:max-h-[15lvh]">
               <For each={selectedTags()}>
                 {(tag) => (
