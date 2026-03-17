@@ -4,7 +4,7 @@ created: '2026-02-04T00:09:21.347575+01:00'
 id: 142
 image: /media/cubos_de_te.png
 ingredients:
-- id: 3177
+- id: 4578
   ingredient:
     name: naranja
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 142
   unit: unit
-- id: 3178
+- id: 4579
   ingredient:
     name: limón
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '2'
   recipe: 142
   unit: unit
-- id: 3179
+- id: 4580
   ingredient:
     name: jengibre
     prefix: un trozo grande de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '90'
   recipe: 142
   unit: gr
-- id: 3180
+- id: 4581
   ingredient:
     name: cúrcuma
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 142
   unit: teaspoon
-- id: 3181
+- id: 4582
   ingredient:
     name: canela
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 142
   unit: teaspoon
-- id: 3182
+- id: 4583
   ingredient:
     name: pimienta negra
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '0.5'
   recipe: 142
   unit: teaspoon
-- id: 3183
+- id: 4584
   ingredient:
     name: Miel
     prefix: ''
@@ -66,8 +66,8 @@ servings: 20
 status: New
 tags:
 - bebida
-title: Cubos de té de invierno
-updated: '2026-02-26T22:36:01.429421+01:00'
+title: Cubos de té (recomendado para el invierno)
+updated: '2026-03-17T19:11:11.416407+01:00'
 ---
 1. Pela las naranjas y los limones, y retira las partes blancas para evitar que amarguen.
 2. Pela el jengibre.
@@ -77,4 +77,3 @@ updated: '2026-02-26T22:36:01.429421+01:00'
 6. Para consumir, añade un cubito a una taza y vierte agua caliente. Disfruta.
 7. **Nota:** Puedes añadir la miel directamente a tu té caliente en lugar de mezclarla con los demás ingredientes, según tu preferencia.
 
-**Información Nutricional:** No se especifica en la fuente.
