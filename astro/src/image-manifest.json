@@ -1,0 +1,16 @@
+{
+  "bagel_burger.jpg": {
+    "hash": "2cac3c9cae",
+    "sizes": [
+      480,
+      768,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp"
+    ],
+    "aspectRatio": 1,
+    "lcp": false
+  }
+}

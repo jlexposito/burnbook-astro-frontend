@@ -12,14 +12,10 @@ import {
 import { isServer } from "solid-js/web";
 
 // Utils
-import {
-  ImgSizeTypes,
-  type ImgSizes,
-  type referenceFormValue,
-} from "@utils/interfaces";
+import { type referenceFormValue } from "@utils/interfaces";
 import {
   removeElement,
-  createOptionsArray
+  createOptionsArray,
 } from "@solidcomponents/formComponents/utils";
 import { isMobileDevice } from "@utils/mobileHelper";
 
@@ -48,7 +44,8 @@ function showError(error: unknown): void {
     errorString = "Error is null";
   } else if (typeof error === "object" && "message" in error) {
     // common for Error objects
-    errorString = (error as { message?: string }).message || JSON.stringify(error);
+    errorString =
+      (error as { message?: string }).message || JSON.stringify(error);
   } else {
     errorString = String(error);
   }
@@ -60,30 +57,21 @@ function showError(error: unknown): void {
   }
 }
 
-const imgSizes : ImgSizes = {
-  sizes: [
-    {
-    size: 220,
-    media: "220px"
-    }
-  ]
-}
-
 const statusOptions = [
   {
-    "name": "Tried"
+    name: "Tried",
   },
   {
-    "name": "Draft"
+    name: "Draft",
   },
   {
-    "name": "New"
+    name: "New",
   },
-]
+];
 
 export default function RecipeForm(props: {
   action: string;
-  recipe?: CollectionEntry<'recipes'>;
+  recipe?: CollectionEntry<"recipes">;
 }) {
   const recipe = props.recipe;
 
@@ -99,9 +87,8 @@ export default function RecipeForm(props: {
   });
 
   const selectedStatusValue = createMemo(() => {
-    return statusOptionsArray().find((option: item) => option?.value === status);
+    return statusOptionsArray().find((option: any) => option?.value === status);
   });
-
 
   const StatusesConfig = createMemo(() => {
     let optionsConfig = createOptions(statusOptionsArray(), {
@@ -149,7 +136,7 @@ export default function RecipeForm(props: {
     // Catchall to avoid collapsing when pressing the "backspace"
     let input = document.getElementById("new-recipe");
 
-    if(input) {
+    if (input) {
       // Execute a function when the user presses a key on the keyboard
       input.addEventListener("keypress", function (event) {
         if ("type" in event.target) {
@@ -158,7 +145,7 @@ export default function RecipeForm(props: {
             return true;
           }
         }
-  
+
         if (event.key === "Enter") {
           event.preventDefault();
         }
@@ -210,17 +197,17 @@ export default function RecipeForm(props: {
         alert("Created successfully !");
         if (recipe?.data?.id) {
           // Removes /edit/
-          let url = window.location.href
-          url = url.split('/').slice(0, -2).join('/');
+          let url = window.location.href;
+          url = url.split("/").slice(0, -2).join("/");
           window.location.replace(url);
         }
         // Redirect to base url if its a new recipe
-        window.location.replace('/');
+        window.location.replace("/");
       }
     });
 
     // Define what happens in case of error
-   XHR.addEventListener("error", () => {
+    XHR.addEventListener("error", () => {
       showError({
         status: XHR.status,
         statusText: XHR.statusText,
@@ -267,7 +254,7 @@ export default function RecipeForm(props: {
             </For>
           </div>
         </Show>
-        <div class="p-3 py-5 sm:p-5 md:space-y-3 border-2 border-secondary-dark">
+        <div class="border-secondary-dark border-2 p-3 py-5 sm:p-5 md:space-y-3">
           <div class="flex flex-wrap gap-y-4 pb-4 md:gap-y-6 md:pb-6">
             <div class="w-full">
               <FormInput
@@ -322,24 +309,23 @@ export default function RecipeForm(props: {
               </div>
               <Show when={recipe}>
                 <div class="min-w-[160px]">
-                  <p class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 hover:cursor-pointer">Imagen actual</p>
+                  <p class="mb-2 block text-xs font-bold tracking-wide text-gray-700 uppercase hover:cursor-pointer">
+                    Imagen actual
+                  </p>
                   <a href={image()} target="_blank">
-                  { !image() ? (
-                    <div>
-                      <span>(Sin imagen)</span>
-                    </div>
-                  ) : (
-                    <OptimizedImage
-                      lazyLoad={false}
-                      width={160}
-                      height={90}
-                      classes="w-full h-[128px] md:h-[256px] object-cover"
-                      altTitle={recipe.data?.title}
-                      filename={image()}
-                      sizes={imgSizes}
-                      sizeType={ImgSizeTypes.width}
-                    />
-                  )}
+                    {!image() ? (
+                      <div>
+                        <span>(Sin imagen)</span>
+                      </div>
+                    ) : (
+                      <OptimizedImage
+                        lazyLoad={false}
+                        class="h-[128px] w-full object-cover md:h-[256px]"
+                        altTitle={recipe.data?.title}
+                        filename={image()}
+                        highFetchPriority={false}
+                      />
+                    )}
                   </a>
                 </div>
               </Show>
