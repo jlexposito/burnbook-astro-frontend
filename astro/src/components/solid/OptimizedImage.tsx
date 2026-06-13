@@ -1,57 +1,41 @@
-import { type Component, mergeProps } from "solid-js";
-import { getOptimizedImage } from "@utils/optimizeImage";
+import { getOptimizedImage } from "@utils/images/getOptimizedImage";
+import type { ImageSlot } from "@utils/images/imageSlots";
 
-const OptimizedImage: Component<{
+type Props = {
   filename: string;
-  altTitle: string;
-
+  slot?: ImageSlot;
+  altTitle?: string;
   class?: string;
-  lazyLoad?: boolean;
-  highFetchPriority?: boolean;
-}> = (props) => {
-  /* Fixture while we keep /media/filename.extension in recipes */
-  const getFilename = (path: string): string => {
-    return path.split("/").pop() ?? "";
-  };
-  const merged = mergeProps(
-    {
-      class: "",
-      lazyLoad: true,
-      highFetchPriority: false,
-    },
-    props,
-  );
-  const filename = getFilename(props.filename);
-  const image = getOptimizedImage(filename);
-
-  if (!image) {
-    return <img src={filename} alt={props.altTitle} class={merged.class} />;
-  }
-
-  return (
-    <picture class={merged.class}>
-      {image.sources.map((source, i) =>
-        i < image.sources.length - 1 ? (
-          <source
-            type={`image/${source.type}`}
-            srcset={source.srcSet}
-            sizes="100vw"
-          />
-        ) : (
-          <img
-            src={source.src}
-            srcset={source.srcSet}
-            sizes="100vw"
-            alt={props.altTitle}
-            class={merged.class}
-            loading={merged.lazyLoad ? "lazy" : "eager"}
-            decoding="async"
-            {...(merged.highFetchPriority ? { fetchpriority: "high" } : {})}
-          />
-        ),
-      )}
-    </picture>
-  );
+  loading?: "lazy" | "eager";
+  highPriority?: boolean;
 };
 
-export default OptimizedImage;
+export default function OptimizedImage(props: Props) {
+  const image = getOptimizedImage(props.filename, props.slot ?? "card");
+
+  if (!image) return null;
+
+  const fallback = image.fallback;
+
+  return (
+    <picture class={props.class}>
+      {image.sources.map((source) => (
+        <source
+          srcset={source.srcSet}
+          sizes={source.sizes}
+          type={`image/${source.type}`}
+        />
+      ))}
+
+      <img
+        // src={fallback.src}
+        srcset={fallback.srcSet}
+        sizes={fallback.sizes}
+        alt={props.altTitle ?? ""}
+        class={props.class}
+        loading={props.loading ?? "lazy"}
+        fetchpriority={props.highPriority ? "high" : undefined}
+      />
+    </picture>
+  );
+}

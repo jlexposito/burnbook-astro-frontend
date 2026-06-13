@@ -45,11 +45,12 @@ const imageSizes = (): ImgSizes  => {
 
 <div class="relative">
   <OptimizedImage
-      lazyLoad={false}
-      class={"w-full h-[128px] md:h-[256px] object-cover"}
-      altTitle={recipe.title}
-      filename={image()}
-  />
+  slot="hero"
+  loading="eager"
+  class="w-full h-[128px] md:h-[256px] object-cover"
+  altTitle={recipe.title}
+  filename={image()}
+/>
   <div class="flex w-full h-full text-center text-white font-bold">
     <h1
       class="z-10 px-7 text-4xl sm:text-5xl md:text-7xl absolute left-0 right-0 top-1/2 -translate-y-1/2"
