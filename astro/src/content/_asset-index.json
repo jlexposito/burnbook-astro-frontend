@@ -1,0 +1,1495 @@
+{
+  "recipes": [
+    {
+      "slug": "base-de-tortita-de-avena-rapida",
+      "title": "Base de Tortita de Avena R\u00e1pida",
+      "images": [
+        {
+          "id": "Tortitas-de-avena.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Tortitas-de-avena.jpg",
+          "filename": "Tortitas-de-avena.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "burrata-con-anchoas-y-menta",
+      "title": "Burrata con Anchoas y Menta",
+      "images": [
+        {
+          "id": "burrata_menta_anchoas.png",
+          "source": "https://burnbookapi.fauno.nl/media/burrata_menta_anchoas.png",
+          "filename": "burrata_menta_anchoas.png"
+        }
+      ]
+    },
+    {
+      "slug": "encurtido-de-col-lombarda-y-habanero",
+      "title": "Encurtido de Col Lombarda y Habanero",
+      "images": []
+    },
+    {
+      "slug": "fideos-de-cacahuete-y-chile",
+      "title": "Fideos de Cacahuete y Chile",
+      "images": []
+    },
+    {
+      "slug": "pate-de-sardinas",
+      "title": "Pat\u00e9 de sardinas",
+      "images": [
+        {
+          "id": "pate_de_sardinas.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/pate_de_sardinas.jpg",
+          "filename": "pate_de_sardinas.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "pumpkin-golden-latte-express",
+      "title": "Pumpkin Golden Latte Express",
+      "images": [
+        {
+          "id": "Pumpkin-Spice-Latte.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Pumpkin-Spice-Latte.jpg",
+          "filename": "Pumpkin-Spice-Latte.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-chipotle-proteica",
+      "title": "Salsa chipotle proteica",
+      "images": [
+        {
+          "id": "salsa-chipotle.jfif",
+          "source": "https://burnbookapi.fauno.nl/media/salsa-chipotle.jfif",
+          "filename": "salsa-chipotle.jfif"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": []
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": []
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": [
+        {
+          "id": "mango-spicy-sauce.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/mango-spicy-sauce.jpg",
+          "filename": "mango-spicy-sauce.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "snack-saludable-de-mango-y-yogur",
+      "title": "Snack Saludable de Mango y Yogur",
+      "images": [
+        {
+          "id": "mango-mousse.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/mango-mousse.jpg",
+          "filename": "mango-mousse.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tartar-de-tomate-seco-con-aceitunas-y-guindillas",
+      "title": "Tartar de Tomate Seco con Aceitunas y Guindillas",
+      "images": [
+        {
+          "id": "tartar-tomate.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/tartar-tomate.jpg",
+          "filename": "tartar-tomate.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tiramisu-proteico-de-cafe",
+      "title": "Tiramis\u00fa proteico de caf\u00e9",
+      "images": [
+        {
+          "id": "Tiramisu-proteico-golosissimo-720x1080.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Tiramisu-proteico-golosissimo-720x1080.jpg",
+          "filename": "Tiramisu-proteico-golosissimo-720x1080.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "wantones-con-salsa-picante",
+      "title": "Wantones con Salsa Picante",
+      "images": []
+    },
+    {
+      "slug": "bocaditos-crujientes-de-feta-pistacho-y-miel",
+      "title": "Bocaditos crujientes de feta, pistacho y miel",
+      "images": [
+        {
+          "id": "bocados_de_queso_y_feta.jpeg",
+          "source": "https://burnbookapi.fauno.nl/media/bocados_de_queso_y_feta.jpeg",
+          "filename": "bocados_de_queso_y_feta.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "carne-de-tofu-para-tacos",
+      "title": "Carne de Tofu para Tacos",
+      "images": [
+        {
+          "id": "Tofu-Taco-Meat-06-768x1365.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Tofu-Taco-Meat-06-768x1365.jpg",
+          "filename": "Tofu-Taco-Meat-06-768x1365.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "huevos-marinados-estilo-coreano",
+      "title": "Huevos Marinados Estilo Coreano",
+      "images": []
+    },
+    {
+      "slug": "cebollas-encurtidas-rapidas",
+      "title": "Cebollas Encurtidas R\u00e1pidas",
+      "images": []
+    },
+    {
+      "slug": "coca-de-vidre",
+      "title": "Coca de vidre",
+      "images": [
+        {
+          "id": "coca-de-vidre.avif",
+          "source": "https://burnbookapi.fauno.nl/media/coca-de-vidre.avif",
+          "filename": "coca-de-vidre.avif"
+        }
+      ]
+    },
+    {
+      "slug": "crema-de-limon-al-microondas",
+      "title": "Crema de lim\u00f3n al microondas",
+      "images": [
+        {
+          "id": "crema_limon.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/crema_limon.jpg",
+          "filename": "crema_limon.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "cubos-de-te-recomendado-para-el-invierno",
+      "title": "Cubos de t\u00e9 (recomendado para el invierno)",
+      "images": [
+        {
+          "id": "cubos_de_te.png",
+          "source": "https://burnbookapi.fauno.nl/media/cubos_de_te.png",
+          "filename": "cubos_de_te.png"
+        }
+      ]
+    },
+    {
+      "slug": "ensalada-de-garbanzos",
+      "title": "Ensalada de garbanzos",
+      "images": [
+        {
+          "id": "Lemon-Mint-Garbanzo-Bean-Salad.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Lemon-Mint-Garbanzo-Bean-Salad.jpg",
+          "filename": "Lemon-Mint-Garbanzo-Bean-Salad.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "helada-de-mandarina",
+      "title": "Helada de mandarina",
+      "images": [
+        {
+          "id": "helada-mandarina.png",
+          "source": "https://burnbookapi.fauno.nl/media/helada-mandarina.png",
+          "filename": "helada-mandarina.png"
+        }
+      ]
+    },
+    {
+      "slug": "ramen-picante-con-gambas",
+      "title": "Ramen picante con gambas",
+      "images": []
+    },
+    {
+      "slug": "refresco-casero-de-lima-y-limon",
+      "title": "Refresco Casero de Lima y Lim\u00f3n",
+      "images": []
+    },
+    {
+      "slug": "salsa-brava",
+      "title": "Salsa brava",
+      "images": [
+        {
+          "id": "bravas-sauce-recipe-2.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/bravas-sauce-recipe-2.jpg",
+          "filename": "bravas-sauce-recipe-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-de-ajo",
+      "title": "Salsa de ajo",
+      "images": [
+        {
+          "id": "salsa-ajo.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/salsa-ajo.jpg",
+          "filename": "salsa-ajo.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-de-chile",
+      "title": "Salsa de chile",
+      "images": [
+        {
+          "id": "sweet-thai-chili-sauce1-1024x819.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/sweet-thai-chili-sauce1-1024x819.jpg",
+          "filename": "sweet-thai-chili-sauce1-1024x819.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tostadas-de-nectarina-con-burrata-y-salmon",
+      "title": "Tostadas de nectarina con burrata y salm\u00f3n",
+      "images": [
+        {
+          "id": "TOSTAS-NECTARINAS_2.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/TOSTAS-NECTARINAS_2.jpg",
+          "filename": "TOSTAS-NECTARINAS_2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "udon-cremoso-con-cacahuete-y-chili-crujiente",
+      "title": "Udon Cremoso con Cacahuete y Chili Crujiente",
+      "images": [
+        {
+          "id": "fideos-udon-picantes-chili-oil.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/fideos-udon-picantes-chili-oil.jpg",
+          "filename": "fideos-udon-picantes-chili-oil.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "queso-cottage-con-alino-de-verduras",
+      "title": "Queso cottage con ali\u00f1o de verduras",
+      "images": [
+        {
+          "id": "queso-cottage-verduras.png",
+          "source": "https://burnbookapi.fauno.nl/media/queso-cottage-verduras.png",
+          "filename": "queso-cottage-verduras.png"
+        }
+      ]
+    },
+    {
+      "slug": "bagels-con-champinones",
+      "title": "Bagels con champi\u00f1ones",
+      "images": [
+        {
+          "id": "bagel_burger.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/bagel_burger.jpg",
+          "filename": "bagel_burger.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "bulgogi-de-setas-a-la-plancha",
+      "title": "Bulgogi de setas a la plancha",
+      "images": []
+    },
+    {
+      "slug": "canelones-de-san-esteban",
+      "title": "Canelones de San Esteban",
+      "images": []
+    },
+    {
+      "slug": "cebolla-encurtida",
+      "title": "Cebolla encurtida",
+      "images": [
+        {
+          "id": "Pickled-Red-Onions-1200-3094.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Pickled-Red-Onions-1200-3094.jpg",
+          "filename": "Pickled-Red-Onions-1200-3094.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "crema-de-coliflor-dubarry",
+      "title": "Crema de coliflor Dubarry",
+      "images": []
+    },
+    {
+      "slug": "curry-de-garbanzos-chhole",
+      "title": "Curry de Garbanzos (Chhole)",
+      "images": []
+    },
+    {
+      "slug": "lechuga-con-salsa-de-ostras",
+      "title": "Lechuga con salsa de ostras",
+      "images": []
+    },
+    {
+      "slug": "mermelada-agrdiulce",
+      "title": "Mermelada agrdiulce",
+      "images": [
+        {
+          "id": "mermleada-agridulce.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/mermleada-agridulce.jpg",
+          "filename": "mermleada-agridulce.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "overnight-oats-chocolate",
+      "title": "Overnight Oats - Chocolate",
+      "images": [
+        {
+          "id": "overnight-oats.webp",
+          "source": "https://burnbookapi.fauno.nl/media/overnight-oats.webp",
+          "filename": "overnight-oats.webp"
+        }
+      ]
+    },
+    {
+      "slug": "pancakes-ricos-en-proteina",
+      "title": "Pancakes ricos en prote\u00edna",
+      "images": [
+        {
+          "id": "pancakes.png",
+          "source": "https://burnbookapi.fauno.nl/media/pancakes.png",
+          "filename": "pancakes.png"
+        }
+      ]
+    },
+    {
+      "slug": "pasta-cremosa-al-limon",
+      "title": "Pasta Cremosa al Lim\u00f3n",
+      "images": []
+    },
+    {
+      "slug": "peanut-butter-curry",
+      "title": "Peanut butter curry",
+      "images": [
+        {
+          "id": "peanut_butter_curry.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/peanut_butter_curry.jpg",
+          "filename": "peanut_butter_curry.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "pico-de-gallo",
+      "title": "Pico de gallo",
+      "images": [
+        {
+          "id": "Pico-de-Gallo-Recipe.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Pico-de-Gallo-Recipe.jpg",
+          "filename": "Pico-de-Gallo-Recipe.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "quiche-saludable-rapida",
+      "title": "Quiche Saludable R\u00e1pida",
+      "images": []
+    },
+    {
+      "slug": "spaghetti-alla-puttanesca",
+      "title": "Spaghetti Alla Puttanesca",
+      "images": [
+        {
+          "id": "Spaghetti-Puttanesca_64.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Spaghetti-Puttanesca_64.jpg",
+          "filename": "Spaghetti-Puttanesca_64.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tostada-de-platano-mantequilla-de-cacahuete-caramelo-y-yogur",
+      "title": "Tostada de Pl\u00e1tano, Mantequilla de Cacahuete, Caramelo y Yogur",
+      "images": []
+    },
+    {
+      "slug": "espiral-de-pollo-y-espinacas-en-papel-de-arroz",
+      "title": "Espiral de Pollo y Espinacas en Papel de Arroz",
+      "images": []
+    },
+    {
+      "slug": "pollo-crujiente-con-salsa-de-miel-picante-y-aros-de-cebolla",
+      "title": "Pollo Crujiente con Salsa de Miel Picante y Aros de Cebolla",
+      "images": []
+    },
+    {
+      "slug": "muffins-de-arandanos",
+      "title": "Muffins de ar\u00e1ndanos",
+      "images": []
+    },
+    {
+      "slug": "paella-de-marisco",
+      "title": "Paella de Marisco",
+      "images": []
+    },
+    {
+      "slug": "espaguetis-carbonara",
+      "title": "Espaguetis carbonara",
+      "images": [
+        {
+          "id": "carbonara__compressed.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/carbonara__compressed.jpg",
+          "filename": "carbonara__compressed.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arroz-crujiente-de-atun-picante",
+      "title": "Arroz Crujiente de At\u00fan Picante",
+      "images": []
+    },
+    {
+      "slug": "bocaditos-de-arandanos-y-yogurt",
+      "title": "Bocaditos de Ar\u00e1ndanos y Yogurt",
+      "images": [
+        {
+          "id": "bovaditos_de_arandanos.png",
+          "source": "https://burnbookapi.fauno.nl/media/bovaditos_de_arandanos.png",
+          "filename": "bovaditos_de_arandanos.png"
+        }
+      ]
+    },
+    {
+      "slug": "brochetas-de-setas-ostra-con-salsa-picante",
+      "title": "Brochetas de Setas Ostra con Salsa Picante",
+      "images": []
+    },
+    {
+      "slug": "calabaza-con-brie-y-nueces-sin-harinas",
+      "title": "Calabaza con brie y nueces sin harinas",
+      "images": [
+        {
+          "id": "calabaza-y-brie.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/calabaza-y-brie.jpg",
+          "filename": "calabaza-y-brie.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "camarones-en-leche-de-coco",
+      "title": "Camarones en Leche de Coco",
+      "images": [
+        {
+          "id": "camarones_en_salsa_de_coco.png",
+          "source": "https://burnbookapi.fauno.nl/media/camarones_en_salsa_de_coco.png",
+          "filename": "camarones_en_salsa_de_coco.png"
+        }
+      ]
+    },
+    {
+      "slug": "crujientes-de-manzana-con-papel-de-arroz",
+      "title": "Crujientes de manzana con papel de arroz",
+      "images": [
+        {
+          "id": "rollitos-crujientes-de-manzana-y-queso-azul_version_1677124870.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/rollitos-crujientes-de-manzana-y-queso-azul_version_1677124870.jpg",
+          "filename": "rollitos-crujientes-de-manzana-y-queso-azul_version_1677124870.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "ensalada-de-brocoli-patatas-asadas-y-garbanzos",
+      "title": "Ensalada de br\u00f3coli, patatas asadas y garbanzos",
+      "images": []
+    },
+    {
+      "slug": "ensalada-de-vegetales-asados-con-burrata",
+      "title": "Ensalada de vegetales asados con burrata",
+      "images": []
+    },
+    {
+      "slug": "fajitas-de-calabacin",
+      "title": "Fajitas de calabac\u00edn",
+      "images": [
+        {
+          "id": "wrap_calabacin.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/wrap_calabacin.jpg",
+          "filename": "wrap_calabacin.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "linguine-con-curry-rojo-tailandes",
+      "title": "Linguine con Curry Rojo Tailand\u00e9s",
+      "images": []
+    },
+    {
+      "slug": "pastelitos-de-hojaldre-de-manzana",
+      "title": "Pastelitos de hojaldre de manzana",
+      "images": []
+    },
+    {
+      "slug": "puerros-caramelizados-con-base-de-burrata",
+      "title": "Puerros caramelizados con base de burrata",
+      "images": [
+        {
+          "id": "puerros-con-burrata.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/puerros-con-burrata.jpg",
+          "filename": "puerros-con-burrata.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "quesadilla-vegetariana",
+      "title": "Quesadilla vegetariana",
+      "images": [
+        {
+          "id": "Hearty-Black-Bean-Quesadillas-stack.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Hearty-Black-Bean-Quesadillas-stack.jpg",
+          "filename": "Hearty-Black-Bean-Quesadillas-stack.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "repollo-puntiagudo-estofado-con-salsa-de-cilantro-y-chile",
+      "title": "Repollo Puntiagudo Estofado con Salsa de Cilantro y Chile",
+      "images": []
+    },
+    {
+      "slug": "curry-de-bacalao-con-leche-de-coco",
+      "title": "Curry de Bacalao con Leche de Coco",
+      "images": []
+    },
+    {
+      "slug": "pizza-shoarma",
+      "title": "Pizza shoarma",
+      "images": [
+        {
+          "id": "Pizza-shoarma-met-knoflooksaus.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Pizza-shoarma-met-knoflooksaus.jpg",
+          "filename": "Pizza-shoarma-met-knoflooksaus.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "alubias-invernales",
+      "title": "Alubias Invernales",
+      "images": [
+        {
+          "id": "alubias-con-huevo.png",
+          "source": "https://burnbookapi.fauno.nl/media/alubias-con-huevo.png",
+          "filename": "alubias-con-huevo.png"
+        }
+      ]
+    },
+    {
+      "slug": "curry-verde-de-coco",
+      "title": "Curry Verde de Coco",
+      "images": []
+    },
+    {
+      "slug": "galletas-de-garbanzos-y-platano",
+      "title": "Galletas de Garbanzos y Pl\u00e1tano",
+      "images": []
+    },
+    {
+      "slug": "muffins-de-garbanzos",
+      "title": "Muffins de Garbanzos",
+      "images": [
+        {
+          "id": "Fitness_And_Chicness-Receta_Muffins_Chocolate_Sin_Azucar-3.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Fitness_And_Chicness-Receta_Muffins_Chocolate_Sin_Azucar-3.jpg",
+          "filename": "Fitness_And_Chicness-Receta_Muffins_Chocolate_Sin_Azucar-3.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-gravy-vegana",
+      "title": "Salsa gravy vegana",
+      "images": []
+    },
+    {
+      "slug": "stroganoff-de-champinones",
+      "title": "Stroganoff de champi\u00f1ones",
+      "images": [
+        {
+          "id": "spaghetti-stroganoff.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/spaghetti-stroganoff.jpg",
+          "filename": "spaghetti-stroganoff.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "bol-reconfortante-de-calabaza-y-batata",
+      "title": "Bol reconfortante de calabaza y batata",
+      "images": []
+    },
+    {
+      "slug": "agua-fresca-de-pina",
+      "title": "Agua Fresca de Pi\u00f1a",
+      "images": []
+    },
+    {
+      "slug": "alitas-de-coliflor-con-gochujang",
+      "title": "Alitas de Coliflor con Gochujang",
+      "images": []
+    },
+    {
+      "slug": "arepas-de-arroz-sobrado",
+      "title": "Arepas de Arroz Sobrado",
+      "images": []
+    },
+    {
+      "slug": "avena-con-frutos-rojos",
+      "title": "Avena con Frutos Rojos",
+      "images": []
+    },
+    {
+      "slug": "avena-fria-de-cafe-y-chocolate",
+      "title": "Avena Fr\u00eda de Caf\u00e9 y Chocolate",
+      "images": []
+    },
+    {
+      "slug": "bol-de-gyros-de-coliflor",
+      "title": "Bol de Gyros de Coliflor",
+      "images": []
+    },
+    {
+      "slug": "butter-chicken-casero",
+      "title": "Butter chicken casero",
+      "images": [
+        {
+          "id": "butter-chicken-323.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/butter-chicken-323.jpg",
+          "filename": "butter-chicken-323.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "carn-dolla-y-escudella",
+      "title": "Carn d'Olla y Escudella",
+      "images": [
+        {
+          "id": "escudella_YPfW4Iu.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/escudella_YPfW4Iu.jpg",
+          "filename": "escudella_YPfW4Iu.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "cerdo-agridulce",
+      "title": "Cerdo agridulce",
+      "images": []
+    },
+    {
+      "slug": "chimichurri-uruguayo",
+      "title": "Chimichurri Uruguayo",
+      "images": []
+    },
+    {
+      "slug": "conos-de-pasta-filo-con-crema-pastelera",
+      "title": "Conos de pasta filo con crema pastelera",
+      "images": []
+    },
+    {
+      "slug": "crema-de-champinones",
+      "title": "Crema de champi\u00f1ones",
+      "images": [
+        {
+          "id": "crema_champinones.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/crema_champinones.jpg",
+          "filename": "crema_champinones.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "crema-de-coliflor-y-manzana-asada",
+      "title": "Crema de coliflor y manzana asada",
+      "images": []
+    },
+    {
+      "slug": "crostini-con-ricotta-tomates-confitados-y-anchoas",
+      "title": "Crostini con Ricotta, Tomates Confitados y Anchoas",
+      "images": []
+    },
+    {
+      "slug": "curry-cremoso-de-paneer",
+      "title": "Curry Cremoso de Paneer",
+      "images": []
+    },
+    {
+      "slug": "curry-de-garbanzos-y-verduras-con-yogur",
+      "title": "Curry de garbanzos y verduras con yogur",
+      "images": [
+        {
+          "id": "curry-yogur.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/curry-yogur.jpg",
+          "filename": "curry-yogur.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dip-de-berenjena-mediterraneo",
+      "title": "Dip de Berenjena Mediterr\u00e1neo",
+      "images": []
+    },
+    {
+      "slug": "dumplings-al-horno-con-salsa-de-coco-y-curry",
+      "title": "Dumplings al Horno con Salsa de Coco y Curry",
+      "images": []
+    },
+    {
+      "slug": "ensalada-de-batata-y-berenjena-con-tahini",
+      "title": "Ensalada de Batata y Berenjena con Tahini",
+      "images": []
+    },
+    {
+      "slug": "ensalada-de-legumbres-tailandesa-con-hierbas-para-meal-prep",
+      "title": "Ensalada de Legumbres Tailandesa con Hierbas para 'Meal Prep'",
+      "images": []
+    },
+    {
+      "slug": "ensalada-de-pollo-buffalo-alta-en-proteinas-para-preparacion-de-comidas",
+      "title": "Ensalada de Pollo Buffalo Alta en Prote\u00ednas para Preparaci\u00f3n de Comidas",
+      "images": [
+        {
+          "id": "recipe-pulled-buffalo-chicken.webp",
+          "source": "https://burnbookapi.fauno.nl/media/recipe-pulled-buffalo-chicken.webp",
+          "filename": "recipe-pulled-buffalo-chicken.webp"
+        }
+      ]
+    },
+    {
+      "slug": "estofado-de-pasta-de-chili",
+      "title": "Estofado de Pasta de Chili",
+      "images": []
+    },
+    {
+      "slug": "fideos-de-arroz-en-una-olla",
+      "title": "Fideos de Arroz en una Olla",
+      "images": []
+    },
+    {
+      "slug": "filetes-de-brocoli",
+      "title": "Filetes de Br\u00f3coli",
+      "images": []
+    },
+    {
+      "slug": "foie-vegetal",
+      "title": "Foie vegetal",
+      "images": [
+        {
+          "id": "Foie-Gras-Vegano-8-750x500.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Foie-Gras-Vegano-8-750x500.jpg",
+          "filename": "Foie-Gras-Vegano-8-750x500.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "fricando",
+      "title": "Fricand\u00f3",
+      "images": []
+    },
+    {
+      "slug": "gambas-rebozadas-con-miel-picante",
+      "title": "Gambas rebozadas con Miel Picante",
+      "images": [
+        {
+          "id": "gambas-con-tempura.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/gambas-con-tempura.jpg",
+          "filename": "gambas-con-tempura.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "gambones-con-melocoton-y-lima",
+      "title": "Gambones con melocot\u00f3n y lima",
+      "images": []
+    },
+    {
+      "slug": "gnnochi-ragu",
+      "title": "Gnnochi ragu",
+      "images": [
+        {
+          "id": "gnocchi-ragu.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/gnocchi-ragu.jpg",
+          "filename": "gnocchi-ragu.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "granola",
+      "title": "Granola",
+      "images": [
+        {
+          "id": "Homemade-Chunky-Granola-2-594x594.webp",
+          "source": "https://burnbookapi.fauno.nl/media/Homemade-Chunky-Granola-2-594x594.webp",
+          "filename": "Homemade-Chunky-Granola-2-594x594.webp"
+        }
+      ]
+    },
+    {
+      "slug": "guiso-de-berza-y-garbanzos",
+      "title": "Guiso de Berza y Garbanzos",
+      "images": []
+    },
+    {
+      "slug": "hamburguesas-de-lentejas-y-quinoa",
+      "title": "Hamburguesas de Lentejas y Quinoa",
+      "images": []
+    },
+    {
+      "slug": "hamburguesas-veganas-de-legumbres",
+      "title": "Hamburguesas veganas de legumbres",
+      "images": []
+    },
+    {
+      "slug": "ideas-de-canapes-de-navidad",
+      "title": "Ideas de canap\u00e9s de Navidad",
+      "images": []
+    },
+    {
+      "slug": "karahi-de-verduras",
+      "title": "Karahi de Verduras",
+      "images": []
+    },
+    {
+      "slug": "kebab-vegano",
+      "title": "Kebab vegano",
+      "images": [
+        {
+          "id": "vegan_kebab_compressed.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/vegan_kebab_compressed.jpg",
+          "filename": "vegan_kebab_compressed.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "korma-de-judias-mantequilla-con-salsa-cremosa-de-coco",
+      "title": "Korma de Jud\u00edas Mantequilla con Salsa Cremosa de Coco",
+      "images": []
+    },
+    {
+      "slug": "leche-frita",
+      "title": "Leche frita",
+      "images": []
+    },
+    {
+      "slug": "limonada-de-mango",
+      "title": "Limonada de Mango",
+      "images": []
+    },
+    {
+      "slug": "linguine-a-la-amatriciana",
+      "title": "Linguine a la Amatriciana",
+      "images": []
+    },
+    {
+      "slug": "masala-chai",
+      "title": "Masala Chai",
+      "images": []
+    },
+    {
+      "slug": "milanesas-de-tofu",
+      "title": "Milanesas de tofu",
+      "images": [
+        {
+          "id": "milanesitas_de_tofu_1.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/milanesitas_de_tofu_1.jpg",
+          "filename": "milanesitas_de_tofu_1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "naan-casero-de-tofu-proteico",
+      "title": "Naan Casero de Tofu Prote\u00edco",
+      "images": []
+    },
+    {
+      "slug": "pad-thai-con-tofu-y-camarones",
+      "title": "Pad Thai con Tofu y Camarones",
+      "images": []
+    },
+    {
+      "slug": "palmeritas-caseras",
+      "title": "Palmeritas Caseras",
+      "images": []
+    },
+    {
+      "slug": "pan-esponjoso-de-clara-de-huevo",
+      "title": "Pan esponjoso de clara de huevo",
+      "images": []
+    },
+    {
+      "slug": "pan-esponjoso-de-claras-y-chocolate",
+      "title": "Pan Esponjoso de Claras y Chocolate",
+      "images": []
+    },
+    {
+      "slug": "pani-puri",
+      "title": "Pani Puri",
+      "images": []
+    },
+    {
+      "slug": "pasta-alla-gricia",
+      "title": "Pasta Alla Gricia",
+      "images": []
+    },
+    {
+      "slug": "pasta-con-atun",
+      "title": "Pasta con at\u00fan",
+      "images": [
+        {
+          "id": "macarrones-con-atun.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/macarrones-con-atun.jpg",
+          "filename": "macarrones-con-atun.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "pollo-naranja-vegano-estilo-panda-express",
+      "title": "Pollo Naranja Vegano Estilo Panda Express",
+      "images": [
+        {
+          "id": "VegNews.VeganOrangeChicken.PandaExpress.avif",
+          "source": "https://burnbookapi.fauno.nl/media/VegNews.VeganOrangeChicken.PandaExpress.avif",
+          "filename": "VegNews.VeganOrangeChicken.PandaExpress.avif"
+        }
+      ]
+    },
+    {
+      "slug": "puerros-glaseados-con-balsamico-muhammara",
+      "title": "Puerros Glaseados con Bals\u00e1mico + Muhammara",
+      "images": [
+        {
+          "id": "receta_puerros_confitados_1fba3e2c-c8c0-4892-a311-37a96799ee5f.webp",
+          "source": "https://burnbookapi.fauno.nl/media/receta_puerros_confitados_1fba3e2c-c8c0-4892-a311-37a96799ee5f.webp",
+          "filename": "receta_puerros_confitados_1fba3e2c-c8c0-4892-a311-37a96799ee5f.webp"
+        }
+      ]
+    },
+    {
+      "slug": "ramen-cremoso-de-coliflor",
+      "title": "Ramen Cremoso de Coliflor",
+      "images": []
+    },
+    {
+      "slug": "ramen-cremoso-de-pollo-en-30-minutos",
+      "title": "Ramen cremoso de pollo en 30 minutos",
+      "images": []
+    },
+    {
+      "slug": "relleno-de-empanadas-de-espinaca-ricota-y-provolone",
+      "title": "Relleno de empanadas de espinaca, ricota y provolone",
+      "images": []
+    },
+    {
+      "slug": "risotto-de-calabaza-y-gorgonzola",
+      "title": "Risotto de calabaza y gorgonzola",
+      "images": []
+    },
+    {
+      "slug": "rollitos-de-papel-de-arroz",
+      "title": "Rollitos de Papel de Arroz",
+      "images": []
+    },
+    {
+      "slug": "rollitos-primavera",
+      "title": "Rollitos Primavera",
+      "images": []
+    },
+    {
+      "slug": "rollos-de-col-napa-rellenos-de-pollo",
+      "title": "Rollos de Col Napa Rellenos de Pollo",
+      "images": []
+    },
+    {
+      "slug": "salmon-con-salsa-de-naranja-y-jengibre",
+      "title": "Salm\u00f3n con salsa de naranja y jengibre",
+      "images": [
+        {
+          "id": "salmon_a_la_naranja.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/salmon_a_la_naranja.jpg",
+          "filename": "salmon_a_la_naranja.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-cremosa-de-habanero",
+      "title": "Salsa Cremosa de Habanero",
+      "images": [
+        {
+          "id": "Salsa_de_Chile_Habanero_Cremosa.jfif",
+          "source": "https://burnbookapi.fauno.nl/media/Salsa_de_Chile_Habanero_Cremosa.jfif",
+          "filename": "Salsa_de_Chile_Habanero_Cremosa.jfif"
+        }
+      ]
+    },
+    {
+      "slug": "salsa-picante-de-melocoton-fermentado",
+      "title": "Salsa picante de melocot\u00f3n fermentado",
+      "images": []
+    },
+    {
+      "slug": "salsa-picante-tailandesa",
+      "title": "Salsa picante tailandesa",
+      "images": []
+    },
+    {
+      "slug": "salteado-de-fideos-tailandes-con-pollo",
+      "title": "Salteado de Fideos Tailand\u00e9s con Pollo",
+      "images": []
+    },
+    {
+      "slug": "salteado-de-ternera-y-brocoli",
+      "title": "Salteado de Ternera y Br\u00f3coli",
+      "images": []
+    },
+    {
+      "slug": "salteado-sichuanes-de-naranja",
+      "title": "Salteado Sichuan\u00e9s de Naranja",
+      "images": []
+    },
+    {
+      "slug": "sandwich-de-chuleta-tonkatsu-katsu-sando",
+      "title": "S\u00e1ndwich de Chuleta Tonkatsu (Katsu Sando)",
+      "images": []
+    },
+    {
+      "slug": "sandwich-de-setas-ostra-caramelizadas-y-mayonesa-de-cacahuete-y-naranja-con-miso",
+      "title": "S\u00e1ndwich de Setas Ostra Caramelizadas y Mayonesa de Cacahuete y Naranja con Miso",
+      "images": []
+    },
+    {
+      "slug": "shakshuka-con-salsa-de-tomate-picante",
+      "title": "Shakshuka con salsa de tomate picante",
+      "images": []
+    },
+    {
+      "slug": "tacos-de-vegetales-asados",
+      "title": "Tacos de vegetales asados ",
+      "images": []
+    },
+    {
+      "slug": "tarta-de-queso-fitness",
+      "title": "Tarta de Queso Fitness",
+      "images": []
+    },
+    {
+      "slug": "tatin-de-puerros",
+      "title": "Tat\u00edn de puerros",
+      "images": []
+    },
+    {
+      "slug": "tentempie-picante-de-garbanzos",
+      "title": "Tentempi\u00e9 picante de garbanzos",
+      "images": []
+    },
+    {
+      "slug": "ternera-mongola",
+      "title": "Ternera mongola",
+      "images": []
+    },
+    {
+      "slug": "tofu-en-leche-de-coco-con-lima",
+      "title": "Tofu en Leche de Coco con Lima",
+      "images": []
+    },
+    {
+      "slug": "tortilla-de-patatas",
+      "title": "Tortilla de patatas",
+      "images": [
+        {
+          "id": "tortilla-de-patatas.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/tortilla-de-patatas.jpg",
+          "filename": "tortilla-de-patatas.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tortitas-crujientes-de-champinones-estilo-pato",
+      "title": "Tortitas Crujientes de Champi\u00f1ones Estilo Pato",
+      "images": []
+    },
+    {
+      "slug": "tostada-de-huevos-escalfados-con-cavolo-nero-y-crujiente-de-chile",
+      "title": "Tostada de Huevos Escalfados con Cavolo Nero y Crujiente de Chile",
+      "images": []
+    },
+    {
+      "slug": "tostadas-con-sobrasada-de-boniato",
+      "title": "Tostadas con Sobrasada de Boniato",
+      "images": []
+    },
+    {
+      "slug": "vieiras-falsas-de-enoki",
+      "title": "Vieiras Falsas de Enoki",
+      "images": []
+    },
+    {
+      "slug": "zanahorias-glaseadas-con-pesto-de-hojas-de-zanahoria",
+      "title": "Zanahorias Glaseadas con Pesto de Hojas de Zanahoria",
+      "images": []
+    },
+    {
+      "slug": "albondigas-vegetarianas",
+      "title": "Alb\u00f3ndigas vegetarianas",
+      "images": [
+        {
+          "id": "albondigas_vegetarianas_compressed.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/albondigas_vegetarianas_compressed.jpg",
+          "filename": "albondigas_vegetarianas_compressed.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "curry-rojo-tailandes-con-tofu-y-setas",
+      "title": "Curry Rojo Tailand\u00e9s con Tofu y Setas",
+      "images": []
+    },
+    {
+      "slug": "dal-de-lentejas-rojas-vegano",
+      "title": "Dal de Lentejas Rojas Vegano",
+      "images": []
+    },
+    {
+      "slug": "salmon-al-curry",
+      "title": "Salmon al curry",
+      "images": [
+        {
+          "id": "salmon-curry.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/salmon-curry.jpg",
+          "filename": "salmon-curry.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tofu-saag-paneer",
+      "title": "Tofu Saag Paneer",
+      "images": [
+        {
+          "id": "saag-tofu-ready-800x1200.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/saag-tofu-ready-800x1200.jpg",
+          "filename": "saag-tofu-ready-800x1200.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arroz-frito-de-coliflor",
+      "title": "Arroz frito de coliflor",
+      "images": [
+        {
+          "id": "Cauliflower-Fried-Rice-Recipe.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Cauliflower-Fried-Rice-Recipe.jpg",
+          "filename": "Cauliflower-Fried-Rice-Recipe.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "bizcocho-fit-saludable",
+      "title": "Bizcocho Fit Saludable",
+      "images": []
+    },
+    {
+      "slug": "calamares-rellenos",
+      "title": "Calamares rellenos",
+      "images": [
+        {
+          "id": "calamares-rellenos.jpeg",
+          "source": "https://burnbookapi.fauno.nl/media/calamares-rellenos.jpeg",
+          "filename": "calamares-rellenos.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "entrecot-de-berenjena-marinado",
+      "title": "Entrecot de Berenjena Marinado",
+      "images": []
+    },
+    {
+      "slug": "estofado-persa-shish-andaz-de-nueces-y-berenjenas",
+      "title": "Estofado persa Shish Andaz de nueces y berenjenas",
+      "images": [
+        {
+          "id": "Shish-Andaz-22-scaled.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Shish-Andaz-22-scaled.jpg",
+          "filename": "Shish-Andaz-22-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "oyster-mushroom-en-salsa",
+      "title": "Oyster mushroom en salsa",
+      "images": [
+        {
+          "id": "Creamy-Mushroom-Chicken-13.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/Creamy-Mushroom-Chicken-13.jpg",
+          "filename": "Creamy-Mushroom-Chicken-13.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "patatas-al-horno",
+      "title": "Patatas al horno",
+      "images": [
+        {
+          "id": "patatas-al-horno.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/patatas-al-horno.jpg",
+          "filename": "patatas-al-horno.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "pollo-en-salsa-cajun",
+      "title": "Pollo en salsa caj\u00fan",
+      "images": [
+        {
+          "id": "creamy-cajun-chicken-1.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/creamy-cajun-chicken-1.jpg",
+          "filename": "creamy-cajun-chicken-1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "risotto",
+      "title": "Risotto",
+      "images": [
+        {
+          "id": "risotto.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/risotto.jpg",
+          "filename": "risotto.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tom-kha",
+      "title": "Tom Kha",
+      "images": [
+        {
+          "id": "Tom-Kha-Gai-tall2-9-1025x1536.webp",
+          "source": "https://burnbookapi.fauno.nl/media/Tom-Kha-Gai-tall2-9-1025x1536.webp",
+          "filename": "Tom-Kha-Gai-tall2-9-1025x1536.webp"
+        }
+      ]
+    },
+    {
+      "slug": "berenjena-crujiente-con-salsa-marinara",
+      "title": "Berenjena Crujiente Con Salsa Marinara",
+      "images": [
+        {
+          "id": "berenjenas-marinara.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/berenjenas-marinara.jpg",
+          "filename": "berenjenas-marinara.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "bizcocho-de-limon",
+      "title": "Bizcocho de Lim\u00f3n",
+      "images": []
+    },
+    {
+      "slug": "kebab-en-bandeja-al-horno",
+      "title": "Kebab en Bandeja al Horno",
+      "images": [
+        {
+          "id": "tofu-bbq-skewers.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/tofu-bbq-skewers.jpg",
+          "filename": "tofu-bbq-skewers.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "melitzanosala-ensalada-griega-de-berenjena",
+      "title": "Melitzanosala. Ensalada griega de berenjena",
+      "images": [
+        {
+          "id": "melitzanosala.png",
+          "source": "https://burnbookapi.fauno.nl/media/melitzanosala.png",
+          "filename": "melitzanosala.png"
+        }
+      ]
+    },
+    {
+      "slug": "noquis-coliflor-y-puerros-asados-con-crema-de-anacardos",
+      "title": "\u00d1oquis, Coliflor y Puerros Asados con Crema de Anacardos",
+      "images": []
+    },
+    {
+      "slug": "pollo-al-curry-de-cilantro",
+      "title": "Pollo al curry de cilantro",
+      "images": []
+    },
+    {
+      "slug": "pulled-setas",
+      "title": "Pulled setas",
+      "images": [
+        {
+          "id": "pulled_setas.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/pulled_setas.jpg",
+          "filename": "pulled_setas.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "sopa-de-cebolla-francesa",
+      "title": "Sopa de Cebolla Francesa",
+      "images": [
+        {
+          "id": "sopa-de-cebolla.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/sopa-de-cebolla.jpg",
+          "filename": "sopa-de-cebolla.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tom-yum-goon",
+      "title": "Tom Yum Goon",
+      "images": []
+    },
+    {
+      "slug": "escudella-vegetariana",
+      "title": "Escudella vegetariana",
+      "images": [
+        {
+          "id": "escudella.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/escudella.jpg",
+          "filename": "escudella.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "roasted-potato-tzatziki-bowl",
+      "title": "Roasted Potato & Tzatziki Bowl",
+      "images": [
+        {
+          "id": "photo_2023-09-10_17-56-31.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/photo_2023-09-10_17-56-31.jpg",
+          "filename": "photo_2023-09-10_17-56-31.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "sopa-crema-de-calabaza-y-camarones",
+      "title": "Sopa Crema de Calabaza y Camarones",
+      "images": []
+    },
+    {
+      "slug": "dal-de-lentejas-indio",
+      "title": "Dal de Lentejas Indio",
+      "images": []
+    },
+    {
+      "slug": "misal-pav",
+      "title": "Misal Pav",
+      "images": []
+    },
+    {
+      "slug": "misal-pav-curry-picante-de-judias-polilla-germinadas",
+      "title": "Misal Pav: Curry Picante de Jud\u00edas Polilla Germinadas",
+      "images": []
+    },
+    {
+      "slug": "tarta-de-zanahoria-carrot-cake",
+      "title": "Tarta de zanahoria (carrot cake)",
+      "images": [
+        {
+          "id": "tarta-zanahoria.png",
+          "source": "https://burnbookapi.fauno.nl/media/tarta-zanahoria.png",
+          "filename": "tarta-zanahoria.png"
+        }
+      ]
+    },
+    {
+      "slug": "vegan-shawarma",
+      "title": "Vegan shawarma",
+      "images": [
+        {
+          "id": "shawarma.png",
+          "source": "https://burnbookapi.fauno.nl/media/shawarma.png",
+          "filename": "shawarma.png"
+        }
+      ]
+    },
+    {
+      "slug": "sobrasada-vegetal",
+      "title": "Sobrasada vegetal",
+      "images": [
+        {
+          "id": "sobrasada.jfif",
+          "source": "https://burnbookapi.fauno.nl/media/sobrasada.jfif",
+          "filename": "sobrasada.jfif"
+        }
+      ]
+    },
+    {
+      "slug": "guiness-cake",
+      "title": "Guiness Cake",
+      "images": [
+        {
+          "id": "NL-Chocolate-Guiness-Cake-superJumbo.jpeg",
+          "source": "https://burnbookapi.fauno.nl/media/NL-Chocolate-Guiness-Cake-superJumbo.jpeg",
+          "filename": "NL-Chocolate-Guiness-Cake-superJumbo.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "alubias-caldosas-al-limon",
+      "title": "Alubias Caldosas al Lim\u00f3n",
+      "images": [
+        {
+          "id": "vegan-brothy-beans-recipe-01-740x925.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/vegan-brothy-beans-recipe-01-740x925.jpg",
+          "filename": "vegan-brothy-beans-recipe-01-740x925.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "caldo-de-verduras",
+      "title": "Caldo de Verduras",
+      "images": [
+        {
+          "id": "caldo-de-verduras.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/caldo-de-verduras.jpg",
+          "filename": "caldo-de-verduras.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tarta-helada-de-limon",
+      "title": "Tarta helada de lim\u00f3n",
+      "images": [
+        {
+          "id": "tarta_de_limon.png",
+          "source": "https://burnbookapi.fauno.nl/media/tarta_de_limon.png",
+          "filename": "tarta_de_limon.png"
+        }
+      ]
+    },
+    {
+      "slug": "sushi-variado",
+      "title": "Sushi variado",
+      "images": [
+        {
+          "id": "photo1678469213.jpeg",
+          "source": "https://burnbookapi.fauno.nl/media/photo1678469213.jpeg",
+          "filename": "photo1678469213.jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "croquetas-caseras-de-pollo-o-setas",
+      "title": "Croquetas caseras de pollo o setas",
+      "images": [
+        {
+          "id": "croquetas.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/croquetas.jpg",
+          "filename": "croquetas.jpg"
+        }
+      ]
+    }
+  ]
+}
