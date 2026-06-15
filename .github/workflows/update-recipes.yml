@@ -51,7 +51,7 @@ jobs:
       # 5️⃣ Generate content
       - name: Execute Python script
         run: |
-          python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/
+          python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/ --image-dir ./astro/public/originals/
 
       # 6️⃣ Commit updates if any (Identity config added directly here!)
       - name: Commit updates

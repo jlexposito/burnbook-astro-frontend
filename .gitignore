@@ -127,3 +127,7 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 scripts/venv
+
+# Don't track public/originals and public/generated
+public/originals
+public/generated
