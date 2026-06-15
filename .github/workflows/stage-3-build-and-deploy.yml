@@ -22,17 +22,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
 
       - name: Enable corepack (pnpm)
         run: corepack enable
 
-      # -----------------------------
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: pnpm-store-${{ hashFiles('astro/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-store-
+
       # Restore pnpm cache
       # -----------------------------
       - name: Install dependencies
         working-directory: ./astro
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       # -----------------------------
       # Restore image cache (CRITICAL)
