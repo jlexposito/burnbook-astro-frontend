@@ -1,0 +1,69 @@
+name: Stage 2 - Asset download
+
+on:
+  push:
+    paths:
+      - astro/src/content/_asset-index.json
+
+jobs:
+  stage2:
+    runs-on: ubuntu-latest
+
+    steps:
+           # 1️⃣ Checkout full history
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2️⃣ Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      # 3️⃣ Cache pip dependencies
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scripts/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4️⃣ Install Python dependencies
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade-strategy only-if-needed flake8 pytest
+          if [ -f scripts/requirements.txt ]; then pip install --upgrade-strategy only-if-needed -r scripts/requirements.txt; fi
+      
+      # 5️⃣ Restore image cache
+      - name: Restore image cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/originals
+          key: images-${{ hashFiles('astro/src/content/_asset-index.json') }}
+          restore-keys: |
+            images-
+
+      # 6️⃣ Generate content
+      - name: Run asset sync
+        run: python scripts/sync_assets.py
+        env:
+          ASSET_CACHE_DIR: .cache/originals
+
+      # 7️⃣ Save image cache
+      - name: Save image cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/originals
+          key: images-${{ hashFiles('astro/src/content/_asset-index.json') }}
+
+      # 7 Commit updates if any
+      - name: Commit updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: astro/src/assets/asset-map.json
+          commit_message: "Stage 2 Update Asset Map"
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com

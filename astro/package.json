@@ -1,11 +1,11 @@
 {
   "name": "burnbook-frontend",
   "type": "module",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run images && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "images": "node scripts/generate-images.mjs",

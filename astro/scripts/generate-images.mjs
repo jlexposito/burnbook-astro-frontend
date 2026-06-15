@@ -3,6 +3,8 @@ import path from "path";
 import crypto from "crypto";
 import sharp from "sharp";
 import pLimit from "p-limit";
+import os from "os";
+
 
 import { IMAGE_CONFIG } from "../src/utils/images/imageConfig.ts";
 
@@ -10,7 +12,17 @@ const INPUT_DIR = "./public/originals";
 const OUTPUT_DIR = "./public/generated";
 const MANIFEST_PATH = "./src/image-manifest.json";
 
-const CONCURRENCY = 10;
+function getConcurrency() {
+  const cores = os.cpus()?.length || 4;
+
+  if (process.env.CI) {
+    return Math.max(2, Math.floor(cores / 2));
+  }
+
+  return Math.max(4, cores - 1);
+}
+
+const CONCURRENCY = getConcurrency();
 
 const FORMATS = IMAGE_CONFIG.formats;
 
