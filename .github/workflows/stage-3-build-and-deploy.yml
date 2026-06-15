@@ -24,8 +24,8 @@ jobs:
           node-version: 22
           cache: pnpm
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Enable corepack (pnpm)
+        run: corepack enable
 
       # -----------------------------
       # Restore pnpm cache
