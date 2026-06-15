@@ -8,7 +8,7 @@ import os from "os";
 
 import { IMAGE_CONFIG } from "../src/utils/images/imageConfig.ts";
 
-const INPUT_DIR = process.env.ASSET_CACHE_DIR || "./.cache/originals";
+const INPUT_DIR = process.env.ASSET_CACHE_DIR || "../.cache/originals";
 const OUTPUT_DIR = "./public/generated";
 const MANIFEST_PATH = "./src/image-manifest.json";
 
