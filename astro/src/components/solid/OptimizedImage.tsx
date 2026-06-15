@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default function OptimizedImage(props: Props) {
-  const image = getOptimizedImage(props.filename, props.slot ?? "card");
+  const image = getOptimizedImage(props.filename, props.slot ?? "full");
 
   if (!image) return null;
 

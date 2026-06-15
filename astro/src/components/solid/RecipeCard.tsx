@@ -52,12 +52,12 @@ export default function RecipeCard(props: {
             >
               
               <OptimizedImage
-                // loading={props.lazyLoad ?? "lazy"}
+                loading={props.lazyLoad ? "lazy" : "eager"}
                 slot="card"
                 class="h-full min-w-full object-cover"
                 altTitle={recipe.title}
                 filename={(recipe.image ?? "")}
-                // highFetchPriority={props.highFetchPriority}
+                highPriority={props.highFetchPriority}
               />
             </Show>
           </figure>

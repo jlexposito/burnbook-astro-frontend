@@ -13,7 +13,10 @@ const MANIFEST_PATH = "./src/image-manifest.json";
 const CONCURRENCY = 10;
 
 const FORMATS = IMAGE_CONFIG.formats;
-const SIZES = IMAGE_CONFIG.sizes;
+
+// Expecting IMAGE_CONFIG.sizes to look like: { height: [180, 220], width: [320, 640] }
+const HEIGHT_SIZES = IMAGE_CONFIG.sizes.height || IMAGE_CONFIG.sizes || [];
+const WIDTH_SIZES = IMAGE_CONFIG.sizes.width || [];
 
 /**
  * =========================================================
@@ -48,12 +51,15 @@ function shouldBuild(inputPath, outputPath) {
   return inputTime > outputTime;
 }
 
-function outputPath(file, hash, size, format) {
+// Map the short key ('h'/'w') to the exact folder names you want ('height'/'width')
+function outputPath(file, hash, size, format, dimension) {
   const base = file.replace(/\.[^/.]+$/, "");
+  const dimensionFolder = dimension === "h" ? "height" : "width";
 
   return path.join(
     OUTPUT_DIR,
     format,
+    dimensionFolder, // Becomes "height" or "width" literal folder
     String(size),
     `${base}.${hash}.${size}.${format}`
   );
@@ -65,13 +71,20 @@ function outputPath(file, hash, size, format) {
  * =========================================================
  */
 
-async function generateVariant(image, output, size, format) {
+async function generateVariant(image, output, size, format, dimension) {
   ensureDir(path.dirname(output));
 
-  let pipeline = image.clone().resize({
-    height: size,
+  const resizeOptions = {
     withoutEnlargement: true,
-  });
+  };
+
+  if (dimension === "h") {
+    resizeOptions.height = size;
+  } else {
+    resizeOptions.width = size;
+  }
+
+  let pipeline = image.clone().resize(resizeOptions);
 
   switch (format) {
     case "avif":
@@ -110,22 +123,39 @@ async function processImage(file) {
   const metadata = await image.metadata();
 
   const tasks = [];
-  const generatedSizes = [];
 
-  for (const size of SIZES) {
+  // 1. Process Height-constrained Targets ('h' -> goes to "height" folder)
+  for (const size of HEIGHT_SIZES) {
     if (metadata.height && size > metadata.height) continue;
 
-    generatedSizes.push(size);
+    for (const format of FORMATS) {
+      const heightOutput = outputPath(file, hash, size, format, "h");
+
+      if (!shouldBuild(inputPath, heightOutput)) {
+        console.log(`↷ Skip ${path.basename(output)}`);
+        continue;
+      }
+
+      tasks.push(generateVariant(image, heightOutput, size, format, "h"));
+
+      const widthOutput = outputPath(file, hash, size, format, "w");
+      tasks.push(generateVariant(image, widthOutput, size, format, "w"));
+    }
+  }
+
+  // 2. Process Width-constrained Targets ('w' -> goes to "width" folder)
+  for (const size of WIDTH_SIZES) {
+    if (metadata.width && size > metadata.width) continue;
 
     for (const format of FORMATS) {
-      const output = outputPath(file, hash, size, format);
+      const output = outputPath(file, hash, size, format, "w");
 
       if (!shouldBuild(inputPath, output)) {
         console.log(`↷ Skip ${path.basename(output)}`);
         continue;
       }
 
-      tasks.push(generateVariant(image, output, size, format));
+      tasks.push(generateVariant(image, output, size, format, "w"));
     }
   }
 
