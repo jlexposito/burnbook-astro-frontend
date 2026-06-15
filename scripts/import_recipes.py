@@ -1,6 +1,7 @@
-from string import Template
-from pathlib import Path
 from argparse import ArgumentParser
+from pathlib import Path
+from string import Template
+from urllib.parse import urljoin
 
 import re
 import requests
@@ -58,6 +59,7 @@ ${content}
 """
 
 API = 'https://burnbookapi.fauno.nl/'
+IMAGE_OUTPUT_DIR = Path(__file__).absolute().parent / "output" / "images"
 
 def get_recipes():
 	url = f'{API}/recipes/'
@@ -68,6 +70,23 @@ def get_recipes():
 		print('Request failed with status code', response.status_code)
 		exit(2)
 
+def download_image(image_url, output_folder, logger):
+	response = requests.get(image_url, stream=True)
+	if response.status_code == 200:
+		image_path = output_folder.joinpath(image_url.split('/')[-1])
+		with open(image_path, 'wb') as f:
+			shutil.copyfileobj(response.raw, f)
+		logger.success(f'Successfully downloaded image: {image_path}')
+	else:
+		logger.error(f'Failed to download image: {image_url} (status code: {response.status_code})')
+
+def cleanup_output_folder(output_folder, logger):
+	if output_folder.exists():
+		shutil.rmtree(output_folder)
+		logger.success(f'Successfully removed all files in {output_folder}')
+	else:
+		logger.info(f'Output folder {output_folder} does not exist, skipping cleanup')
+
 def run():
 	parser = ArgumentParser(
 		prog='JSON2Md',
@@ -77,6 +96,12 @@ def run():
 		"--output-dir",
 		type=lambda p: Path(p).absolute(),
 		default=Path(__file__).absolute().parent / "output",
+		help="Path to the output directory",
+	)
+	parser.add_argument(
+		"--image-dir",
+		type=lambda p: Path(p).absolute(),
+		default=Path(__file__).absolute().parent / "images",
 		help="Path to the output directory",
 	)
 	parser.add_argument(
@@ -93,14 +118,17 @@ def run():
 	logger = Logger(args.verbose)
 
 	output_folder = args.output_dir
+	image_folder = args.image_dir
 	logger.info(f'Output folder: {output_folder}')
+	logger.info(f'Image folder: {image_folder}')
 
-	if not args.dirty and output_folder.exists():
-		shutil.rmtree(output_folder)
-		logger.success(f'Successfully removed all files in {output_folder}')
+	if not args.dirty:
+		cleanup_output_folder(output_folder, logger)
+		cleanup_output_folder(image_folder, logger)
 
 	output_folder.mkdir(exist_ok=True)
-	logger.success('Successfully created output directory')
+	image_folder.mkdir(exist_ok=True)
+	logger.success('Successfully created output directories')
 
 	recipes = get_recipes()
 	template = Template(tpl)
@@ -116,7 +144,10 @@ def run():
 			frontmatter=frontmatter,
 			content=content,
 		)
-
+		image = recipe.get('image')
+		if image:
+			image_url = urljoin(API, image)
+			download_image(image_url, image_folder, logger)
 		slug = slugify(recipe.get('title'))
 		filename = f'{slug}.md'
 		file_path = output_folder.joinpath(filename)

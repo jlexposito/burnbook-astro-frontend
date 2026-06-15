@@ -99,18 +99,4 @@ export type Tokens = {
   access: string;
 };
 
-export enum ImgSizeTypes {
-  height = "height",
-  width = "width"
-}
-
-export type ImgSource = {
-  size: number;
-  media: string;
-}
-
-export type ImgSizes = {
-  sizes: Array<ImgSource>;
-}
-
 export type ImageFileFormat = "avif" | "webp" | "jpeg";

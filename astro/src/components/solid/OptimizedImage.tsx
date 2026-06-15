@@ -1,84 +1,41 @@
-import { type Component, mergeProps } from "solid-js";
+import { getOptimizedImage } from "@utils/images/getOptimizedImage";
+import type { ImageSlot } from "@utils/images/imageSlots";
 
-import { srcSet } from "@utils/optimizeImage";
-import type { ImageFileFormat, ImageSources, ImgSizeTypes, ImgSizes } from "@utils/interfaces";
-
-const OptimizedImage: Component<{
-  sizes: ImgSizes;
-  sizeType: ImgSizeTypes; 
+type Props = {
   filename: string;
-  altTitle: string;
-  width: number;
-  height: number;
-  classes: string;
-  lazyLoad: boolean;
-  quality?: number;
+  slot?: ImageSlot;
+  altTitle?: string;
+  class?: string;
+  loading?: "lazy" | "eager";
   highPriority?: boolean;
-}> = (props) => {
-  const quality = 100
-  const FILETYPES = ['avif', 'webp', 'jpeg']
-  const imageSources = (): ImageSources[] => {
-    let sources: ImageSources[] = []
-    FILETYPES.forEach((filetype : ImageFileFormat) => sources.push(
-      srcSet(props.sizes, props.filename, filetype, props.sizeType)
-    ));
-    return sources
-  };
-
-  props = mergeProps(
-    {
-      classes: "",
-      lazyLoad: false,
-      sizes: imageSources().slice().shift()
-    },
-    props,
-  );
-
-  const sources = imageSources()
-
-  const generatePictureSource = (source: ImageSources) => { 
-    return (
-      <source
-        srcset={source.srcSet}
-        sizes={source.sizes}
-        type={`image/${source.type}`}
-        />
-    )
-  }
-
-  const generateImageSource = (source: ImageSources) => { 
-    return (
-      <img
-        srcset={source.srcSet}
-        sizes={source.sizes}
-        src={source.src}
-        width={props.width}
-        height={props.height}
-        alt={props.altTitle}
-        class={props.classes}
-        loading={props.lazyLoad ? "lazy" : "eager"}
-        type={`image/${source.type}`}
-        {...(props.highPriority ? { fetchPriority: "high" } : {})}
-      />
-    )
-  }
-
-
-  return (
-    <picture class={props.classes}>
-        {
-          sources.map((source, index) => (
-            (index === sources.length - 1) ?
-            ( 
-              generateImageSource(source)
-            ): (
-              generatePictureSource(source)
-            )
-          ))
-        }
-      </picture> 
-    
-  );
 };
 
-export default OptimizedImage;
+export default function OptimizedImage(props: Props) {
+  const image = getOptimizedImage(props.filename, props.slot ?? "full");
+
+  if (!image) return null;
+
+  const fallback = image.fallback;
+
+  return (
+    <picture class={props.class}>
+      {image.sources.map((source) => (
+        <source
+          srcset={source.srcSet}
+          sizes={source.sizes}
+          type={`image/${source.type}`}
+        />
+      ))}
+
+      <img
+        // src={fallback.src}
+        srcset={fallback.srcSet}
+        sizes={fallback.sizes}
+        alt={props.altTitle ?? ""}
+        class={props.class}
+        loading={props.loading ?? "lazy"}
+        fetchpriority={props.highPriority ? "high" : undefined}
+      />
+    </picture>
+  );
+}

@@ -2,7 +2,6 @@ import { Show, createMemo } from "solid-js";
 import type { RecipeInterface } from "@utils/interfaces";
 
 import OptimizedImage from "@solidcomponents/OptimizedImage";
-import { ImgSizeTypes, type ImgSizes } from "@utils/interfaces";
 
 export default function RecipeCard(props: {
   recipe: RecipeInterface;
@@ -16,13 +15,6 @@ export default function RecipeCard(props: {
     return recipe.ingredients
       .map((i) => i.ingredient.name.toLowerCase())
       .join(", ");
-  });
-
-  const imageSizes = (): ImgSizes => ({
-    sizes: [
-      { size: 180, media: "(max-width: 550px) 180px" },
-      { size: 220, media: ", 220px" },
-    ],
   });
 
   return (
@@ -58,15 +50,13 @@ export default function RecipeCard(props: {
                 </div>
               }
             >
+              
               <OptimizedImage
-                lazyLoad={props.lazyLoad ?? true}
-                width={200}
-                height={220}
-                classes="h-full min-w-full object-cover"
+                loading={props.lazyLoad ? "lazy" : "eager"}
+                slot="card"
+                class="h-full min-w-full object-cover"
                 altTitle={recipe.title}
-                filename={recipe.image}
-                sizes={imageSizes()}
-                sizeType={ImgSizeTypes.height}
+                filename={(recipe.image ?? "")}
                 highPriority={props.highFetchPriority}
               />
             </Show>
