@@ -1,4 +1,4 @@
-name: Stage 2 - Asset download
+name: Asset download
 
 on:
   repository_dispatch:
@@ -13,6 +13,8 @@ on:
 jobs:
   stage2:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
            # 1️⃣ Checkout full history
