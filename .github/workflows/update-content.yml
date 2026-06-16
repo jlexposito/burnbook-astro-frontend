@@ -97,3 +97,16 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: pages deploy ./astro/dist --project-name=burnbook-astro-frontend
+      
+      # 1️⃣3️⃣ Purge Cloudflare cache by prefix
+      - name: Purge Cloudflare cache by prefix
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{
+              "prefixes": [
+                "burnbook.zh0nb.com/recipes/",
+                "burnbook.zh0nb.com/"
+              ]
+            }'
