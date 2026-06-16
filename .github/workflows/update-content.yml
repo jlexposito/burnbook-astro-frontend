@@ -61,11 +61,39 @@ jobs:
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      # 7️⃣ Trigger Stage 2 (asset sync)
-      - name: Trigger Stage 2 (asset sync)
-        run: |
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/dispatches \
-            -d '{"event_type":"stage2_assets"}'
+      # 7️⃣ Setup Node
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 8️⃣ Enable corepack (pnpm)
+      - name: Enable corepack (pnpm)
+        run: corepack enable
+
+      # 9️⃣ Cache pnpm store
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: pnpm-store-${{ hashFiles('astro/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-store-
+
+      # 1️⃣0️⃣ Install dependencies
+      - name: Install dependencies
+        working-directory: ./astro
+        run: pnpm install --frozen-lockfile
+
+      # 1️⃣1️⃣ Build Astro
+      - name: Build Astro
+        working-directory: ./astro
+        run: pnpm run build
+
+      # 1️⃣2️⃣ Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy ./astro/dist --project-name=burnbook-astro-frontend
