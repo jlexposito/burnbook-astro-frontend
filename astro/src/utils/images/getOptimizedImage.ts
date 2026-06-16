@@ -1,4 +1,3 @@
-import manifest from "@src/image-manifest.json";
 import { IMAGE_CONFIG } from "./imageConfig";
 import { IMAGE_SLOTS, type ImageSlot } from "./imageSlots";
 
@@ -13,13 +12,11 @@ const normalizeFilename = (input: string): string => {
     .pop()!;                 // keep only filename
 }
 
+const CDN_DOMAIN = "burnbookcdn.fauno.nl";
+
 export function getOptimizedImage(filename: string, slot: ImageSlot = "card", dim?: "width"|"height") {
   const key = normalizeFilename(filename);
-  const entry = manifest[key];
   const dimension = dim ?? "width";
-
-  if (!entry) return null;
-
   const formats = IMAGE_CONFIG.formats;
   const sizes = IMAGE_CONFIG.sizes[dimension];
 
@@ -28,14 +25,14 @@ export function getOptimizedImage(filename: string, slot: ImageSlot = "card", di
   const sources = formats.map((format) => {
     const srcSet = sizes
       .map((size) => {
-        const url = `/generated/${format}/${dimension}/${size}/${basename}.${entry.hash}.${size}.${format}`;
+        const url = `https://${CDN_DOMAIN}/${format}/${dimension}/${size}/${basename}.${size}.${format}`;
         return `${url} ${size}w`;
       })
       .join(", ");
 
     const largest = sizes[sizes.length - 1];
 
-    const src = `/generated/${format}/${dimension}/${largest}/${basename}.${entry.hash}.${largest}.${format}`;
+    const src = `https://${CDN_DOMAIN}/${format}/${dimension}/${largest}/${basename}.${largest}.${format}`;
 
     return {
       type: format,
