@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 
 //Stores
-import { $tokens, updateTokens } from "@stores/apiStore";
+import { updateTokens } from "@stores/apiStore";
 import { type LoginResult } from "@utils/interfaces";
 
 import { doLogin } from "@utils/api";

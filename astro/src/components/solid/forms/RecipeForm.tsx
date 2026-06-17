@@ -319,11 +319,10 @@ export default function RecipeForm(props: {
                       </div>
                     ) : (
                       <OptimizedImage
-                        lazyLoad={false}
                         class="h-[128px] w-full object-cover md:h-[256px]"
                         altTitle={recipe.data?.title}
                         filename={image()}
-                        highFetchPriority={false}
+                        highPriority={false}
                       />
                     )}
                   </a>

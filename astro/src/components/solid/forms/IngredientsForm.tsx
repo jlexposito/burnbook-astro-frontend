@@ -79,7 +79,7 @@ export default function IngredientsForm(props: { recipe?: CollectionEntry<'recip
   const newRecipeForm = (ingredient?: Ingredient): void => {
     let newIngredient: recipeIngredientFormValue = ingredientFormElement();
     if (typeof ingredient !== "undefined") {
-      // hack, we dont specify quantitiy to avoid showing
+      // hack, we dont specify quantity to avoid showing
       let ingredientData = {
         unit: "",
         ingredient: {

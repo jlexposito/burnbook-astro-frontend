@@ -37,13 +37,13 @@ export type Recipe = {
 export interface TagInterface {
   id: number;
   name: string;
-  highligted: boolean;
+  highlighted: boolean;
 }
 
 export type Tag = {
   id: number;
   name: string;
-  highligted: boolean;
+  highlighted: boolean;
 };
 
 export type ImageSources = {
@@ -99,4 +99,3 @@ export type Tokens = {
   access: string;
 };
 
-export type ImageFileFormat = "avif" | "webp" | "jpeg";
