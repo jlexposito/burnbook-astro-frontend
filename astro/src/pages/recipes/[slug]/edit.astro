@@ -11,9 +11,7 @@ import { baseURL } from "@utils/apiClient";
 export async function getStaticPaths() {
   const recipeEntries = await getCollection('recipes');
   return recipeEntries.map(recipe => ({
-    // 2. Change 'recipe.slug' to 'recipe.id'
-    params: { slug: recipe.id }, 
-    props: { recipe },
+    params: { slug: recipe.slug }, props: { recipe },
   }));
 }
 
