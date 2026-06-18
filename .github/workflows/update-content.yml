@@ -52,7 +52,10 @@ jobs:
       # 5️⃣ Generate content
       - name: Execute Python script
         run: |
-          python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/ --image-dir ./astro/public/originals/
+          python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/ 
+      
+      - name: List Recipes Content Folder
+        run: ls -l ./astro/src/content/recipes/
 
       # 6️⃣ Commit updates if any
       - name: Commit updates
