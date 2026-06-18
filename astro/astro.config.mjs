@@ -47,6 +47,7 @@ export default defineConfig({
     build: {
       // ⚡ Force disable sourcemaps to save RAM and speed up GitHub Actions
       sourcemap: false,
+      assetsInlineLimit: 10240,
     },
     plugins: [
       tailwindcss({
