@@ -22,20 +22,20 @@ jobs:
       contents: write
 
     steps:
-      # 1️⃣ Checkout full history
-      - uses: actions/checkout@v4
+      # 1️⃣ Checkout full history (Upgraded to v6 for Node 24)
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      # 2️⃣ Setup Python
+      # 2️⃣ Setup Python (Upgraded to v5 which supports modern runtimes)
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
 
-      # 3️⃣ Cache pip dependencies
+      # 3️⃣ Cache pip dependencies (Upgraded to v5 for Node 24)
       - name: Cache pip
-        uses: actions/cache@v3
+        uses: actions/cache@v5
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('scripts/requirements.txt') }}
@@ -56,7 +56,7 @@ jobs:
 
       # 6️⃣ Commit updates if any
       - name: Commit updates
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Automated Change: Update Recipes"
           commit_user_name: github-actions[bot]
@@ -64,7 +64,7 @@ jobs:
 
       # 7️⃣ Setup Node
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
 
@@ -74,7 +74,7 @@ jobs:
 
       # 9️⃣ Cache pnpm store
       - name: Cache pnpm store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.local/share/pnpm/store
           key: pnpm-store-${{ hashFiles('astro/pnpm-lock.yaml') }}
