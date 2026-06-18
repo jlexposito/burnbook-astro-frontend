@@ -5,7 +5,9 @@ import RecipePage from "@solidcomponents/RecipePage";
 import { getTags } from "@utils/api";
 import { adaptRecipes } from "@utils/recipesAdapter";
 
-let recipes = await getCollection('recipes');
+let [recipes] = await await Promise.all([
+  getCollection('recipes')
+]);
 recipes.sort((a, b) => a.data.cooking_time - b.data.cooking_time);
 const recipesTyped = adaptRecipes(recipes);
 
