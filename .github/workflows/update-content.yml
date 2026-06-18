@@ -7,12 +7,11 @@ on:
       - master
   repository_dispatch:
     types: [update_content]
-  # 💡 Allows you to run this workflow manually from the Actions tab on any branch
-  workflow_dispatch:
+  # 💡 Removed pull_request to prevent auto-commits from breaking unmerged PR pipelines
 
-# Prevent multiple runs from racing against each other on the same branch
+# Prevent multiple runs from racing against each other on master
 concurrency:
-  group: update-content-${{ github.ref_name }}
+  group: update-content-master
   cancel-in-progress: true
 
 jobs:
@@ -98,7 +97,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           command: pages deploy ./astro/dist --project-name=burnbook-astro-frontend
-        
+      
       # 1️⃣3️⃣ Purge Cloudflare cache by prefix
       - name: Purge Cloudflare cache by prefix
         run: |
