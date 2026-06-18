@@ -15,5 +15,5 @@ const tags = await getTags();
 ---
 
 <Layout pagename="home" title="Burnbook">
-  <RecipePage recipes={recipesTyped} client:only="solid-js" />
+  <RecipePage recipes={recipesTyped} client:load />
 </Layout>
