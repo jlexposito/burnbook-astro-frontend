@@ -27,11 +27,10 @@ const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		{ optimizeImages == 1 && 
-			<link rel="preconnect" href={import.meta.env.PUBLIC_IMAGE_BASE} crossorigin>
-			<link rel="dns-prefetch" href={import.meta.env.PUBLIC_IMAGE_BASE}>
+		{ optimizeImages && 
+			<link rel="preconnect" href={process.env.PUBLIC_IMAGE_BASE}>
+			<link rel="dns-prefetch" href={process.env.PUBLIC_IMAGE_BASE}>
 		}
-		<link rel="dns-prefetch" href={import.meta.env.PUBLIC_API} />
 		<title>{title}</title>
 	</head>
 	<body class="">
