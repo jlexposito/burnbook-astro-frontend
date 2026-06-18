@@ -9,6 +9,7 @@ export default function RecipeCard(props: {
   highFetchPriority?: boolean;
 }) {
   const recipe = props.recipe;
+  console.log(recipe);
 
   const ingredientsString = createMemo(() => {
     if (!recipe || !recipe.ingredients) return "";
@@ -19,7 +20,7 @@ export default function RecipeCard(props: {
 
   return (
     <a
-      href={`/recipes/${recipe.slug}`}
+      href={`/recipes/${recipe.id}`}
       class="block h-[200px] min-[440px]:h-[240px] overflow-hidden rounded-tl-xl hover:shadow-sm sm:h-[220px] hover:outline-2 hover:outline-primary-accent focus:outline-primary-accent focus:ring-0 focus:ring-offset-2"
     >
       <div class="relative grid h-full grid-cols-3 overflow-hidden bg-white shadow-md">

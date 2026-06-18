@@ -15,7 +15,10 @@ export default defineConfig({
   integrations: [
     icon(),
     solidJs(),
-    Compress(),
+    Compress({
+      Image: false,  // 👈 Tell it to stop processing raster images
+      SVG: false     // 👈 Tell it to stop processing vector SVGs
+    }),
     sitemap({
       filter: (page) => {
         // Normalize the page URL to a pathname
@@ -41,6 +44,10 @@ export default defineConfig({
   ],
 
   vite: {
+    build: {
+      // ⚡ Force disable sourcemaps to save RAM and speed up GitHub Actions
+      sourcemap: false,
+    },
     plugins: [
       tailwindcss({
         config: './tailwind.config.cjs',
