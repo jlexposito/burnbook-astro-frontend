@@ -8,6 +8,7 @@ import RecipeCard from "@solidcomponents/RecipeCard";
 import RecipeFilters from "@solidcomponents/RecipeFilters";
 
 export default function RecipePage(props: { recipes: RecipeInterface[] }) {
+  console.log(props.recipes);
   // ---- Filters state ----
   const [open, setOpen] = createSignal(false);
   const [search, setSearch] = createSignal("");

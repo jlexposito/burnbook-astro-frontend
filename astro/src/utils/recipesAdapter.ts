@@ -5,8 +5,8 @@ export function adaptRecipes(
   recipes: CollectionEntry<'recipes'>[]
 ): RecipeInterface[] {
   return recipes.map(r => ({
-    id: r.id,
-    slug: r.slug,
+    id: r.data.id,
+    slug: r.id,
     title: r.data.title,
     status: r.data.status,
     image: r.data.image ?? "",
