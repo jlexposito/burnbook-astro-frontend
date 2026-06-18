@@ -19,7 +19,7 @@ const crossOriginAttribute = isDev ? null : "anonymous";
 const optimizeImages = import.meta.env.PUBLIC_OPTIMIZE_IMAGES || 0;
 // ⚡ Resolve the optimized asset data during build time
 const lcpImageData = lcpImage ? getOptimizedImage(lcpImage, "full") : null;
-const lcpFallbackSrc = lcpImageData?.fallback?.srcSet;
+const lcpFallbackSrc = lcpImageData?.fallback?.src;
 ---
 
 <!DOCTYPE html>
