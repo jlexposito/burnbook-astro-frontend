@@ -31,12 +31,15 @@ export function getOptimizedImage(filename: string, slot: ImageSlot = "card", di
       .join(", ");
 
     const largest = sizes[sizes.length - 1];
+    const smallest = sizes[0];
 
     const src = `https://${CDN_DOMAIN}/${format}/${dimension}/${largest}/${basename}.${largest}.${format}`;
+    const srcSmall = `https://${CDN_DOMAIN}/${format}/${dimension}/${smallest}/${basename}.${smallest}.${format}`;
 
     return {
       type: format,
       src,
+      srcSmall,
       srcSet,
       sizes: IMAGE_SLOTS[slot],
     };

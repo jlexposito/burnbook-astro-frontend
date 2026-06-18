@@ -4,6 +4,7 @@ import Layout from "@layouts/BaseLayout.astro";
 import RecipePage from "@solidcomponents/RecipePage";
 import { adaptRecipes } from "@utils/recipesAdapter";
 import { getTags } from "@utils/api";
+import { getOptimizedImage } from "@utils/images/getOptimizedImage";
 
 let [recipes, tags] = await await Promise.all([
   getCollection('recipes'),
@@ -12,8 +13,27 @@ let [recipes, tags] = await await Promise.all([
 recipes.sort((a, b) => a.data.cooking_time - b.data.cooking_time);
 const recipesTyped = adaptRecipes(recipes);
 const lcpImageFilename = recipesTyped[0]?.image || '';
+// ⚡ Resolve the optimized asset data during build time (we use the smallest for card)
+const lcpImageData = lcpImageFilename ? getOptimizedImage(lcpImageFilename, "card") : null;
+const PREFERED_LCP_IMAGE_FORMAT = "avif";
 ---
 
-<Layout pagename="home" title="Burnbook" lcpImage={lcpImageFilename}>
+<Layout pagename="home" title="Burnbook">
   <RecipePage recipes={recipesTyped} tags={tags} client:only="solid-js" />
+  {lcpImageData && (
+    <Fragment slot="preload">
+      {lcpImageData.sources.map((source) => (
+        source.type == PREFERED_LCP_IMAGE_FORMAT &&
+        ( <link
+          rel="preload"
+          as="image"
+          type={`image/${source.type}`}
+          imagesrcset={source.srcSet}
+          imagesizes={source.sizes}
+          fetchpriority="high"
+        />
+        )
+      ))}
+    </Fragment>
+  )}
 </Layout>
