@@ -1,21 +1,16 @@
 ---
-// 1. Import the new 'render' function alongside getCollection
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import MarkdownRecipeLayout from "@layouts/MarkdownRecipeLayout.astro";
 
 export async function getStaticPaths() {
   const recipeEntries = await getCollection('recipes');
   return recipeEntries.map(recipe => ({
-    // 2. Change 'recipe.slug' to 'recipe.id'
-    params: { slug: recipe.id }, 
-    props: { recipe },
+    params: { slug: recipe.slug }, props: { recipe },
   }));
 }
 
 const { recipe } = Astro.props;
-
-// 3. Use the new 'render(recipe)' function instead of 'recipe.render()'
-const { Content } = await render(recipe);
+const { Content } = await recipe.render();
 ---
 
 <MarkdownRecipeLayout frontmatter={recipe.data}>
