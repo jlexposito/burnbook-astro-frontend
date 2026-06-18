@@ -16,7 +16,7 @@ export default function OptimizedImage(props: Props) {
   if (!image) return null;
 
   const fallback = image.fallback;
-
+  const isProd = import.meta.env.PROD;
   return (
     <picture class={props.class}>
       {image.sources.map((source) => (
@@ -35,6 +35,7 @@ export default function OptimizedImage(props: Props) {
         class={props.class}
         loading={props.loading ?? "lazy"}
         fetchpriority={props.highPriority ? "high" : undefined}
+        crossorigin={isProd ? "anonymous" : undefined}
       />
     </picture>
   );

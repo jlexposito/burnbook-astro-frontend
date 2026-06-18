@@ -11,9 +11,9 @@ let [recipes, tags] = await await Promise.all([
 ]);
 recipes.sort((a, b) => a.data.cooking_time - b.data.cooking_time);
 const recipesTyped = adaptRecipes(recipes);
-
+const lcpImageFilename = recipesTyped[0]?.image || '';
 ---
 
-<Layout pagename="home" title="Burnbook">
+<Layout pagename="home" title="Burnbook" lcpImage={lcpImageFilename}>
   <RecipePage recipes={recipesTyped} tags={tags} client:only="solid-js" />
 </Layout>
