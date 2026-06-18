@@ -15,7 +15,10 @@ export default defineConfig({
   integrations: [
     icon(),
     solidJs(),
-    Compress(),
+    Compress({
+      Image: false,  // 👈 Tell it to stop processing raster images
+      SVG: false     // 👈 Tell it to stop processing vector SVGs
+    }),
     sitemap({
       filter: (page) => {
         // Normalize the page URL to a pathname
