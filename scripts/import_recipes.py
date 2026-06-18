@@ -210,7 +210,7 @@ def run():
 			image_urls
 		)
 	write_asset_index(asset_index)
-	logger.success('Recipes successfully imported')
+	logger.success(f'✓ {len(recipes)} successfully imported')
 
 
 if __name__ == '__main__':
