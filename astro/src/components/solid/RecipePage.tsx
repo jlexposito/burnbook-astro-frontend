@@ -1,14 +1,12 @@
 import { createSignal, createMemo, createEffect, For, onMount } from "solid-js";
 
-import { getTags } from "@utils/api";
 import type { RecipeInterface, Tag } from "@utils/interfaces";
 import { isMobileDevice } from "@utils/mobileHelper";
 
 import RecipeCard from "@solidcomponents/RecipeCard";
 import RecipeFilters from "@solidcomponents/RecipeFilters";
 
-export default function RecipePage(props: { recipes: RecipeInterface[] }) {
-  console.log(props.recipes);
+export default function RecipePage(props: { recipes: RecipeInterface[], tags: Tag[] }) {
   // ---- Filters state ----
   const [open, setOpen] = createSignal(false);
   const [search, setSearch] = createSignal("");
@@ -41,8 +39,7 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   const [tags, setTags] = createSignal<Tag[]>([]);
 
   onMount(async () => {
-    const apiTags = await getTags();
-    setTags(apiTags);
+    setTags(props.tags);
   });
 
   // ---- Helpers ----
@@ -135,8 +132,8 @@ export default function RecipePage(props: { recipes: RecipeInterface[] }) {
   const toggleTag = (tag: string) =>
     setActiveTags((prev) =>
       prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-  );
-    
+    );
+
 
   // ---- Optional: scroll-to-top on filter (comment/uncomment as desired) ----
   // createEffect(() => {

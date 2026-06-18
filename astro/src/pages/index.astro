@@ -2,18 +2,18 @@
 import { getCollection } from 'astro:content';
 import Layout from "@layouts/BaseLayout.astro";
 import RecipePage from "@solidcomponents/RecipePage";
-import { getTags } from "@utils/api";
 import { adaptRecipes } from "@utils/recipesAdapter";
+import { getTags } from "@utils/api";
 
-let [recipes] = await await Promise.all([
-  getCollection('recipes')
+let [recipes, tags] = await await Promise.all([
+  getCollection('recipes'),
+  getTags()
 ]);
 recipes.sort((a, b) => a.data.cooking_time - b.data.cooking_time);
 const recipesTyped = adaptRecipes(recipes);
 
-const tags = await getTags();
 ---
 
 <Layout pagename="home" title="Burnbook">
-  <RecipePage recipes={recipesTyped} client:only="solid-js" />
+  <RecipePage recipes={recipesTyped} tags={tags} client:only="solid-js" />
 </Layout>
