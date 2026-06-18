@@ -35,7 +35,6 @@ export default function OptimizedImage(props: Props) {
         class={props.class}
         loading={props.loading ?? "lazy"}
         fetchpriority={props.highPriority ? "high" : undefined}
-        crossorigin={isProd ? "anonymous" : undefined}
       />
     </picture>
   );
