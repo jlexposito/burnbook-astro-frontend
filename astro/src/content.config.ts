@@ -1,5 +1,7 @@
 // Import utilities from `astro:content`
-import { z, defineCollection } from "astro:content";
+import { defineCollection } from "astro:content";
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const Ingredient = z.object({
   name: z.string(),
@@ -17,7 +19,11 @@ const IngredientRecipe = z.object({
 
 // Define a `type` and `schema` for each collection
 const recipeCollection = defineCollection({
-    type: 'content',
+    // ⚡ REQUIRED IN ASTRO 6: Tell it exactly where to find the files
+    loader: glob({ 
+      pattern: '**/[^_]*.md', // matches all non-private markdown files
+      base: './src/content/recipes' 
+    }),
     schema: z.object({
       cooking_time: z.number(),
       created: z.string(),
