@@ -44,6 +44,10 @@ export default defineConfig({
   ],
 
   vite: {
+    build: {
+      // ⚡ Force disable sourcemaps to save RAM and speed up GitHub Actions
+      sourcemap: false,
+    },
     plugins: [
       tailwindcss({
         config: './tailwind.config.cjs',
