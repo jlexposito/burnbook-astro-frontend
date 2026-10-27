@@ -45,6 +45,7 @@ tags:
 - principal
 - cena
 - comida
+- probado
 title: Espaguetis carbonara
 updated: '2026-02-27T09:22:32.166546+01:00'
 ---

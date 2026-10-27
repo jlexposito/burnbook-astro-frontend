@@ -69,6 +69,7 @@ tags:
 - principal
 - cena
 - comida
+- probado
 title: Stroganoff de champiñones
 updated: '2026-02-27T09:27:11.348566+01:00'
 ---

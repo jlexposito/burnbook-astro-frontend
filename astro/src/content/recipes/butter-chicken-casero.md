@@ -165,6 +165,7 @@ tags:
 - principal
 - cena
 - comida
+- probado
 title: Butter chicken casero
 updated: '2026-02-27T09:49:37.425516+01:00'
 ---

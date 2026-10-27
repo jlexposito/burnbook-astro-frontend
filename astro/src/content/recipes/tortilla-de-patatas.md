@@ -37,6 +37,7 @@ tags:
 - cocina española
 - cena
 - comida
+- probado
 title: Tortilla de patatas
 updated: '2024-08-09T15:36:01.758323+02:00'
 ---
