@@ -73,6 +73,11 @@
     {
       "slug": "salsa-mango-picante",
       "title": "Salsa mango picante",
+      "images": []
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
       "images": [
         {
           "id": "mango-spicy-sauce.jpg",
@@ -80,11 +85,6 @@
           "filename": "mango-spicy-sauce.jpg"
         }
       ]
-    },
-    {
-      "slug": "salsa-mango-picante",
-      "title": "Salsa mango picante",
-      "images": []
     },
     {
       "slug": "snack-saludable-de-mango-y-yogur",
