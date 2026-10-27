@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-10-27T23:46:45.972487+01:00'
 id: 262
-image: null
+image: /media/chickpea_daal.png
 ingredients:
-- id: 4729
+- id: 4841
   ingredient:
     name: aceite de coco
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: 1-2
   recipe: 262
   unit: tablespoon
-- id: 4730
+- id: 4842
   ingredient:
-    name: Jengibre
-    prefix: rallado
+    name: jengibre
+    prefix: ''
   optional: false
   quantity: '20'
   recipe: 262
   unit: gr
-- id: 4731
+- id: 4843
   ingredient:
     name: curry en polvo
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '3'
   recipe: 262
   unit: teaspoon
-- id: 4732
+- id: 4844
   ingredient:
     name: cúrcuma en polvo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 262
   unit: teaspoon
-- id: 4733
+- id: 4845
   ingredient:
     name: comino
     prefix: en semillas o molido
@@ -44,55 +44,55 @@ ingredients:
   quantity: '2'
   recipe: 262
   unit: teaspoon
-- id: 4734
+- id: 4846
   ingredient:
-    name: tomates
-    prefix: cherry, partidos por la mitad
+    name: tomates cherry
+    prefix: ''
   optional: false
   quantity: '200'
   recipe: 262
   unit: gr
-- id: 4735
+- id: 4847
   ingredient:
     name: cebolleta
-    prefix: picada
+    prefix: ''
   optional: false
   quantity: '100'
   recipe: 262
   unit: gr
-- id: 4736
+- id: 4848
   ingredient:
     name: lentejas
-    prefix: verdes (cocidas)
+    prefix: ''
   optional: false
   quantity: '200'
   recipe: 262
   unit: gr
-- id: 4737
+- id: 4849
   ingredient:
     name: espinacas
-    prefix: picadas gruesas
+    prefix: ''
   optional: false
   quantity: '200'
   recipe: 262
   unit: gr
-- id: 4738
+- id: 4850
   ingredient:
     name: cilantro
-    prefix: fresco, picado
+    prefix: ''
   optional: false
   quantity: '10'
   recipe: 262
   unit: gr
-- id: 4739
+- id: 4851
   ingredient:
     name: ajo
-    prefix: dientes, rallados
+    prefix: ''
   optional: false
   quantity: '4'
   recipe: 262
   unit: unit
-- id: 4740
+- id: 4852
   ingredient:
     name: leche de coco
     prefix: lata de
@@ -100,18 +100,18 @@ ingredients:
   quantity: '1'
   recipe: 262
   unit: unit
-- id: 4741
+- id: 4853
   ingredient:
     name: garbanzos
-    prefix: lata de, escurridos y enjuagados
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 262
   unit: unit
-- id: 4742
+- id: 4854
   ingredient:
     name: lima
-    prefix: exprimida
+    prefix: ''
   optional: false
   quantity: 1-2
   recipe: 262
@@ -127,7 +127,7 @@ tags:
 - cena
 - batch cooking
 title: Daal de Garbanzos y Coco
-updated: '2026-10-27T23:51:24.202928+01:00'
+updated: '2026-10-28T00:21:24.833039+01:00'
 ---
 1. Reúne todos tus ingredientes.
 2. Calienta el aceite de coco en una olla grande a fuego medio. Añade el ajo rallado, el jengibre rallado y las cebolletas picadas con sal y pimienta al gusto, y cocina durante 2 minutos hasta que empiecen a tomar color.
