@@ -68,6 +68,11 @@
     {
       "slug": "salsa-mango-picante",
       "title": "Salsa mango picante",
+      "images": []
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
       "images": [
         {
           "id": "mango-spicy-sauce.jpg",
@@ -75,11 +80,6 @@
           "filename": "mango-spicy-sauce.jpg"
         }
       ]
-    },
-    {
-      "slug": "salsa-mango-picante",
-      "title": "Salsa mango picante",
-      "images": []
     },
     {
       "slug": "salsa-mango-picante",
@@ -368,17 +368,6 @@
       ]
     },
     {
-      "slug": "pasta-cremosa-al-limon",
-      "title": "Pasta Cremosa al Lim\u00f3n",
-      "images": [
-        {
-          "id": "pasta_limon.png",
-          "source": "https://burnbookapi.fauno.nl/media/pasta_limon.png",
-          "filename": "pasta_limon.png"
-        }
-      ]
-    },
-    {
       "slug": "peanut-butter-curry",
       "title": "Peanut butter curry",
       "images": [
@@ -413,6 +402,17 @@
           "id": "Spaghetti-Puttanesca_64.jpg",
           "source": "https://burnbookapi.fauno.nl/media/Spaghetti-Puttanesca_64.jpg",
           "filename": "Spaghetti-Puttanesca_64.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "spaghetti-al-limon",
+      "title": "Spaghetti al Lim\u00f3n",
+      "images": [
+        {
+          "id": "pasta_limon.png",
+          "source": "https://burnbookapi.fauno.nl/media/pasta_limon.png",
+          "filename": "pasta_limon.png"
         }
       ]
     },

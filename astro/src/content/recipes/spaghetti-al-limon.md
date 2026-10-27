@@ -87,10 +87,10 @@ tags:
 - cena
 - comida
 - probado
-title: Pasta Cremosa al Limón
-updated: '2026-10-28T00:26:48.898496+01:00'
+title: Spaghetti al Limón
+updated: '2026-10-28T00:28:12.431380+01:00'
 ---
-1. Hierve una olla de agua con sal para la pasta.
+1. Hierve agua una olla de agua con sal para la pasta.
 2. Pica un diente de ajo y sofríelo en una sartén con 2 cucharadas de aceite de oliva virgen extra.
 3. Añade 4 cucharadas de mantequilla a la sartén.
 4. Incorpora la ralladura de un limón pequeño y mezcla bien.
