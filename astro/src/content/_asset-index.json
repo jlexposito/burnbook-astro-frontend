@@ -68,16 +68,6 @@
     {
       "slug": "salsa-mango-picante",
       "title": "Salsa mango picante",
-      "images": []
-    },
-    {
-      "slug": "salsa-mango-picante",
-      "title": "Salsa mango picante",
-      "images": []
-    },
-    {
-      "slug": "salsa-mango-picante",
-      "title": "Salsa mango picante",
       "images": [
         {
           "id": "mango-spicy-sauce.jpg",
@@ -85,6 +75,16 @@
           "filename": "mango-spicy-sauce.jpg"
         }
       ]
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": []
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": []
     },
     {
       "slug": "snack-saludable-de-mango-y-yogur",
@@ -370,7 +370,13 @@
     {
       "slug": "pasta-cremosa-al-limon",
       "title": "Pasta Cremosa al Lim\u00f3n",
-      "images": []
+      "images": [
+        {
+          "id": "pasta_limon.png",
+          "source": "https://burnbookapi.fauno.nl/media/pasta_limon.png",
+          "filename": "pasta_limon.png"
+        }
+      ]
     },
     {
       "slug": "peanut-butter-curry",

@@ -2,7 +2,7 @@
 cooking_time: 15
 created: '2026-02-26T22:30:36.075457+01:00'
 id: 203
-image: null
+image: /media/pasta_limon.png
 ingredients:
 - id: 3127
   ingredient:
@@ -88,7 +88,7 @@ tags:
 - comida
 - probado
 title: Pasta Cremosa al Limón
-updated: '2026-10-28T00:25:20.588480+01:00'
+updated: '2026-10-28T00:26:48.898496+01:00'
 ---
 1. Hierve una olla de agua con sal para la pasta.
 2. Pica un diente de ajo y sofríelo en una sartén con 2 cucharadas de aceite de oliva virgen extra.
