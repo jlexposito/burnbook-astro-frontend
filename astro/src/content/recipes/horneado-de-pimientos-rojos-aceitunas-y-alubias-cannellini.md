@@ -86,6 +86,7 @@ tags:
 - cena
 - comida
 - batch cooking
+- por probar
 title: Horneado de Pimientos Rojos, Aceitunas y Alubias Cannellini
 updated: '2026-10-28T00:22:40.670663+01:00'
 ---
