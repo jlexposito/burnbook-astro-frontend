@@ -120,14 +120,14 @@ references:
 - https://www.thedoctorskitchen.com/recipes/one-pan-green-fish-and-chickpeas
 - https://youtu.be/Llp8pCmH4a0?t=31
 servings: 2
-status: Draft
+status: Tried
 tags:
 - cena
 - comida
 - batch cooking
 - probado
 title: Pescado en salsa verde con garbanzos
-updated: '2026-10-28T00:18:00.697487+01:00'
+updated: '2026-10-28T00:19:02.282753+01:00'
 ---
 1. Reúne y prepara tus ingredientes.
 2. Calienta el aceite de oliva en una sartén a fuego medio-alto. Añade las especias (semillas de comino, semillas de mostaza, semillas de hinojo y copos de chile rojo si se usa) y el jengibre. Cocina durante 3-4 minutos hasta que el jengibre esté dorado y las especias comiencen a saltar.
