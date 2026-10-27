@@ -150,6 +150,7 @@ tags:
 - cocina india
 - principal
 - cena
+- probado
 title: Dal de Lentejas Indio
 updated: '2026-02-26T22:27:57.330770+01:00'
 ---

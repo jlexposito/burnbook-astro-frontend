@@ -116,6 +116,7 @@ tags:
 - vegetariano
 - cocina india
 - comida
+- probado
 title: Curry de Garbanzos (Chhole)
 updated: '2026-03-04T22:20:05.583958+01:00'
 ---

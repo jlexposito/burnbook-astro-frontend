@@ -102,6 +102,7 @@ tags:
 - cocina española
 - cena
 - comida
+- probado
 title: Alubias Invernales
 updated: '2026-03-01T12:18:00.321883+01:00'
 ---

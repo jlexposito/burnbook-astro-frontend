@@ -75,6 +75,7 @@ status: New
 tags:
 - sopa
 - principal
+- probado
 title: Sopa de Cebolla Francesa
 updated: '2026-02-23T19:29:58.088585+01:00'
 ---

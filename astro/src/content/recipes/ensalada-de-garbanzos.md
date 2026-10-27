@@ -83,6 +83,7 @@ status: Tried
 tags:
 - entrante
 - ensalada
+- probado
 title: Ensalada de garbanzos
 updated: '2024-08-09T15:53:16.208097+02:00'
 ---
