@@ -742,6 +742,11 @@
       "images": []
     },
     {
+      "slug": "desayuno-alto-en-proteina",
+      "title": "Desayuno alto en prote\u00edna",
+      "images": []
+    },
+    {
       "slug": "dip-de-berenjena-mediterraneo",
       "title": "Dip de Berenjena Mediterr\u00e1neo",
       "images": []
@@ -946,11 +951,6 @@
     {
       "slug": "pani-puri",
       "title": "Pani Puri",
-      "images": []
-    },
-    {
-      "slug": "parfait-de-chia-y-frutas-con-miso",
-      "title": "Parfait de Ch\u00eda y Frutas con Miso",
       "images": []
     },
     {

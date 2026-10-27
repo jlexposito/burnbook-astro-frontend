@@ -4,7 +4,7 @@ created: '2026-10-27T23:56:12.733918+01:00'
 id: 264
 image: null
 ingredients:
-- id: 4757
+- id: 4785
   ingredient:
     name: semillas de chía
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: '1'
   recipe: 264
   unit: cup
-- id: 4758
+- id: 4786
   ingredient:
     name: leche
-    prefix: entera (o bebida vegetal)
+    prefix: ''
   optional: false
   quantity: 4-5
   recipe: 264
   unit: cup
-- id: 4759
+- id: 4787
   ingredient:
     name: sirope de arce
     prefix: ''
@@ -28,15 +28,15 @@ ingredients:
   quantity: '1'
   recipe: 264
   unit: tablespoon
-- id: 4760
+- id: 4788
   ingredient:
     name: plátano
-    prefix: machacado
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 264
   unit: unit
-- id: 4761
+- id: 4789
   ingredient:
     name: miso blanco
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 264
   unit: tablespoon
-- id: 4762
+- id: 4790
   ingredient:
     name: yogur griego
     prefix: ''
@@ -52,23 +52,23 @@ ingredients:
   quantity: '1'
   recipe: 264
   unit: cup
-- id: 4763
+- id: 4791
   ingredient:
-    name: cacao
-    prefix: en granos (nibs) o en polvo
+    name: Cacao en polvo
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 264
   unit: tablespoon
-- id: 4764
+- id: 4792
   ingredient:
     name: almendras
-    prefix: laminadas
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 264
   unit: tablespoon
-- id: 4765
+- id: 4793
   ingredient:
     name: semillas de cáñamo
     prefix: ''
@@ -76,39 +76,39 @@ ingredients:
   quantity: '1'
   recipe: 264
   unit: tablespoon
-- id: 4766
+- id: 4794
   ingredient:
     name: fresas
-    prefix: en rodajas
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 264
   unit: cup
-- id: 4767
+- id: 4795
   ingredient:
     name: higos
-    prefix: picados
+    prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 264
   unit: cup
-- id: 4768
+- id: 4796
   ingredient:
     name: avellanas
-    prefix: picadas
+    prefix: ''
   optional: false
   quantity: '0.25'
   recipe: 264
   unit: cup
-- id: 4769
+- id: 4797
   ingredient:
-    name: canela
-    prefix: molida
+    name: canela en polvo
+    prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 264
   unit: teaspoon
-- id: 4770
+- id: 4798
   ingredient:
     name: agua
     prefix: ''
@@ -124,8 +124,8 @@ tags:
 - desayuno
 - vegetariano
 - postre
-title: Parfait de Chía y Frutas con Miso
-updated: '2026-10-27T23:56:12.733931+01:00'
+title: Desayuno alto en proteína
+updated: '2026-10-28T00:00:02.017834+01:00'
 ---
 1. En un cuenco grande, combina las semillas de chía con la leche entera (o tu bebida vegetal preferida) en una proporción de 4:1 a 5:1, removiendo bien para mezclar.
 2. Añade el sirope de arce, el plátano machacado y el miso blanco a la mezcla de chía, removiendo hasta que todo esté bien incorporado.
