@@ -1,57 +1,35 @@
 ---
 cooking_time: 5
-created: '2023-09-10T16:54:35.702178+02:00'
-id: 1
-image: /media/mango-spicy-sauce.jpg
+created: '2026-02-04T00:10:28.461816+01:00'
+id: 144
+image: null
 ingredients:
-- id: 1
+- id: 1888
   ingredient:
     name: Mango
     prefix: ''
   optional: false
   quantity: '1'
-  recipe: 1
+  recipe: 144
   unit: unit
-- id: 2
+- id: 1889
   ingredient:
     name: chiles
     prefix: ''
   optional: false
   quantity: '2'
-  recipe: 1
-  unit: unit
-- id: 3
-  ingredient:
-    name: agua
-    prefix: (1/4 taza)
-  optional: false
-  quantity: '75'
-  recipe: 1
-  unit: ml
-- id: 4
-  ingredient:
-    name: Mayonesa
-    prefix: (1/4 taza)
-  optional: false
-  quantity: '75'
-  recipe: 1
-  unit: gr
-- id: 5
-  ingredient:
-    name: Sal
-    prefix: ''
-  optional: false
-  quantity: '1'
-  recipe: 1
+  recipe: 144
   unit: unit
 references:
-- https://www.cocinavital.mx/recetas/pescados-y-mariscos/sushi-empanizado-de-camaron/2019/03/
+- https://www.instagram.com/reel/DUIjtcnjhZ6/
 servings: 6
-status: Tried
+status: Draft
 tags:
 - salsa
 - picante
 title: Salsa mango picante
-updated: '2025-01-13T23:05:19.011753+01:00'
+updated: '2026-02-04T00:10:28.461977+01:00'
 ---
-Licuar todos los ingredientes.
+1. Licúa todos los ingredientes.
+
+*Información nutricional: Los valores pueden variar según los ingredientes específicos.*
