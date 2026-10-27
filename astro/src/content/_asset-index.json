@@ -428,7 +428,13 @@
     {
       "slug": "pescado-verde-con-garbanzos-en-una-sola-sarten",
       "title": "Pescado Verde con Garbanzos en una Sola Sart\u00e9n",
-      "images": []
+      "images": [
+        {
+          "id": "pescado_salsa_verde.png",
+          "source": "https://burnbookapi.fauno.nl/media/pescado_salsa_verde.png",
+          "filename": "pescado_salsa_verde.png"
+        }
+      ]
     },
     {
       "slug": "muffins-de-arandanos",
