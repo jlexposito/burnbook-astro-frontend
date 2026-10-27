@@ -4,7 +4,7 @@ created: '2026-10-27T23:55:51.584000+01:00'
 id: 263
 image: /media/pescado_salsa_verde.png
 ingredients:
-- id: 4813
+- id: 4827
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '2'
   recipe: 263
   unit: tablespoon
-- id: 4814
+- id: 4828
   ingredient:
     name: jengibre
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: unit
-- id: 4815
+- id: 4829
   ingredient:
     name: semillas de comino
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: teaspoon
-- id: 4816
+- id: 4830
   ingredient:
     name: semillas de mostaza
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: teaspoon
-- id: 4817
+- id: 4831
   ingredient:
     name: semillas de hinojo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: teaspoon
-- id: 4818
+- id: 4832
   ingredient:
     name: copos de chile rojo
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '0.5'
   recipe: 263
   unit: teaspoon
-- id: 4819
+- id: 4833
   ingredient:
     name: guisantes congelados
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: cup
-- id: 4820
+- id: 4834
   ingredient:
     name: espinacas congeladas
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: cup
-- id: 4821
+- id: 4835
   ingredient:
     name: cilantro
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '0.5'
   recipe: 263
   unit: cup
-- id: 4822
+- id: 4836
   ingredient:
     name: chile verde
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: unit
-- id: 4823
+- id: 4837
   ingredient:
     name: caldo de pescado
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: cup
-- id: 4824
+- id: 4838
   ingredient:
     name: salsa de pescado
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: tablespoon
-- id: 4825
+- id: 4839
   ingredient:
     name: garbanzos
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: '1'
   recipe: 263
   unit: unit
-- id: 4826
+- id: 4840
   ingredient:
     name: filete de bacalao
     prefix: ''
@@ -125,8 +125,9 @@ tags:
 - cena
 - comida
 - batch cooking
-title: Pescado Verde con Garbanzos en una Sola Sartén
-updated: '2026-10-28T00:16:15.971012+01:00'
+- probado
+title: Pescado en salsa verde con garbanzos
+updated: '2026-10-28T00:18:00.697487+01:00'
 ---
 1. Reúne y prepara tus ingredientes.
 2. Calienta el aceite de oliva en una sartén a fuego medio-alto. Añade las especias (semillas de comino, semillas de mostaza, semillas de hinojo y copos de chile rojo si se usa) y el jengibre. Cocina durante 3-4 minutos hasta que el jengibre esté dorado y las especias comiencen a saltar.
