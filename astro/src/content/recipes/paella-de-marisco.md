@@ -103,13 +103,13 @@ ingredients:
 references:
 - https://www.directoalpaladar.com/recetas-de-arroces/paella-marisco-receta-karlos-arguinano-al-estilo-albufera
 servings: 2
-status: Draft
+status: Tried
 tags:
 - cocina española
 - comida
 - probado
 title: Paella de Marisco
-updated: '2026-05-19T20:58:00.779438+02:00'
+updated: '2026-10-28T00:29:02.688790+01:00'
 ---
 1. Coloca una sartén al fuego, vierte el vino blanco y añade los mejillones, dejando que se abran con la sartén tapada.
 2. A continuación, retira una de las cáscaras y resérvalos.
