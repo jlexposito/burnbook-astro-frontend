@@ -2,7 +2,7 @@
 cooking_time: 35
 created: '2026-02-26T22:34:16.155103+01:00'
 id: 206
-image: null
+image: /media/redlentil_daal.png
 ingredients:
 - id: 3206
   ingredient:
@@ -159,7 +159,7 @@ ingredients:
 references:
 - https://youtu.be/X9XYJN17jZk?si=VnDGaQJe-WBIqxmU
 servings: 4
-status: Draft
+status: Tried
 tags:
 - vegetariano
 - sopa
@@ -169,7 +169,7 @@ tags:
 - comida
 - probado
 title: Dal de Lentejas Rojas Vegano
-updated: '2026-02-26T22:40:36.407092+01:00'
+updated: '2026-10-28T00:30:45.746032+01:00'
 ---
 1. En una olla grande de fondo grueso, añade el aceite a fuego medio. Una vez caliente, incorpora las cebollas y cocínalas durante 8-20 minutos. Añade el ajo y el jengibre y remueve. Cocina hasta que estén fragantes (otros 1-2 minutos).
 2. Añade todas las especias (desde garam masala hasta canela) y vuelve a remover. Deja cocinar durante 1 minuto, removiendo a menudo, con cuidado de no quemarlas.

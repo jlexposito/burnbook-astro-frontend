@@ -1197,7 +1197,13 @@
     {
       "slug": "dal-de-lentejas-rojas-vegano",
       "title": "Dal de Lentejas Rojas Vegano",
-      "images": []
+      "images": [
+        {
+          "id": "redlentil_daal.png",
+          "source": "https://burnbookapi.fauno.nl/media/redlentil_daal.png",
+          "filename": "redlentil_daal.png"
+        }
+      ]
     },
     {
       "slug": "salmon-al-curry",
