@@ -876,7 +876,13 @@
     {
       "slug": "horneado-de-pimientos-rojos-aceitunas-y-alubias-cannellini",
       "title": "Horneado de Pimientos Rojos, Aceitunas y Alubias Cannellini",
-      "images": []
+      "images": [
+        {
+          "id": "redpepper_cannellini.png",
+          "source": "https://burnbookapi.fauno.nl/media/redpepper_cannellini.png",
+          "filename": "redpepper_cannellini.png"
+        }
+      ]
     },
     {
       "slug": "ideas-de-canapes-de-navidad",

@@ -2,33 +2,33 @@
 cooking_time: 30
 created: '2026-10-27T23:46:19.876457+01:00'
 id: 261
-image: null
+image: /media/redpepper_cannellini.png
 ingredients:
-- id: 4720
+- id: 4855
   ingredient:
-    name: pimiento rojo
-    prefix: rebanado
+    name: Pimiento rojo
+    prefix: ''
   optional: false
   quantity: '160'
   recipe: 261
   unit: gr
-- id: 4721
+- id: 4856
   ingredient:
-    name: aceite de oliva
-    prefix: virgen extra
+    name: aceite de oliva virgen extra
+    prefix: ''
   optional: false
   quantity: '2'
   recipe: 261
   unit: tablespoon
-- id: 4722
+- id: 4857
   ingredient:
     name: cebolla roja
-    prefix: rebanada
+    prefix: ''
   optional: false
   quantity: '100'
   recipe: 261
   unit: gr
-- id: 4723
+- id: 4858
   ingredient:
     name: passata
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '500'
   recipe: 261
   unit: ml
-- id: 4724
+- id: 4859
   ingredient:
     name: Vinagre balsámico
     prefix: ''
@@ -44,34 +44,34 @@ ingredients:
   quantity: 1-2
   recipe: 261
   unit: tablespoon
-- id: 4725
+- id: 4860
   ingredient:
     name: aceitunas negras
-    prefix: troceadas groseramente
+    prefix: ''
   optional: false
   quantity: '50'
   recipe: 261
   unit: gr
-- id: 4726
+- id: 4861
   ingredient:
     name: albahaca
-    prefix: rasgado
+    prefix: ''
   optional: false
   quantity: 10-20
   recipe: 261
   unit: gr
-- id: 4727
+- id: 4862
   ingredient:
     name: chile en polvo
-    prefix: rojo
+    prefix: ''
   optional: false
   quantity: 0.5-2
   recipe: 261
   unit: teaspoon
-- id: 4728
+- id: 4863
   ingredient:
     name: alubias cannellini
-    prefix: escurridas y enjuagadas
+    prefix: ''
   optional: false
   quantity: '1'
   recipe: 261
@@ -87,7 +87,7 @@ tags:
 - comida
 - batch cooking
 title: Horneado de Pimientos Rojos, Aceitunas y Alubias Cannellini
-updated: '2026-10-27T23:49:53.436870+01:00'
+updated: '2026-10-28T00:22:40.670663+01:00'
 ---
 1. Precalienta el horno a 200°C (180°C con ventilador). Reúne y prepara tus ingredientes.
 2. Coloca el pimiento rojo y la cebolla roja en una bandeja apta para horno con el aceite de oliva y una pizca grande de sal. Mezcla para combinar, luego hornea durante 15 minutos hasta que se ablanden.
