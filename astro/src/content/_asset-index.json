@@ -46,7 +46,13 @@
     {
       "slug": "pudin-de-chocolate-vegano",
       "title": "Pud\u00edn de chocolate vegano",
-      "images": []
+      "images": [
+        {
+          "id": "pudin_chocolate.png",
+          "source": "https://burnbookapi.fauno.nl/media/pudin_chocolate.png",
+          "filename": "pudin_chocolate.png"
+        }
+      ]
     },
     {
       "slug": "pumpkin-golden-latte-express",
