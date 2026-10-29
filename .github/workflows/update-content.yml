@@ -22,18 +22,18 @@ jobs:
       contents: write
 
     steps:
-      # 1️⃣ Checkout full history (Upgraded to v6 for Node 24)
-      - uses: actions/checkout@v6
+      # 1️⃣ Checkout full history (Upgraded to v7 for Node compatibility)
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      # 2️⃣ Setup Python (Upgraded to v5 which supports modern runtimes)
+      # 2️⃣ Setup Python (Upgraded to v7 to resolve Node 20 deprecation)
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: 3.11
 
-      # 3️⃣ Cache pip dependencies (Upgraded to v5 for Node 24)
+      # 3️⃣ Cache pip dependencies
       - name: Cache pip
         uses: actions/cache@v5
         with:
@@ -53,7 +53,7 @@ jobs:
       - name: Execute Python script
         run: |
           python scripts/import_recipes.py --output-dir ./astro/src/content/recipes/ 
-      
+     
       # 6️⃣ Commit updates if any
       - name: Commit updates
         uses: stefanzweifel/git-auto-commit-action@v7
@@ -81,7 +81,7 @@ jobs:
           restore-keys: |
             pnpm-store-
 
-      # 1️⃣0️⃣ Install dependencies
+      # 🔟 Install dependencies
       - name: Install dependencies
         working-directory: ./astro
         run: pnpm install --frozen-lockfile
@@ -91,9 +91,9 @@ jobs:
         working-directory: ./astro
         run: pnpm run build
 
-      # 1️⃣2️⃣ Deploy to Cloudflare Pages
+      # 1️⃣2️⃣ Deploy to Cloudflare Pages (Upgraded to v4 to resolve Node 20 deprecation)
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
