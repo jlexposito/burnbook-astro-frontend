@@ -10,6 +10,9 @@ const { RecipeIngredients = [] } = Astro.props;
 function getUnitTranslated(unit) {
   let translateUnit = "";
   switch (unit) {
+    case "cup":
+      translateUnit = "taza";
+      break;
     case "tablespoon":
       translateUnit = "cucharada";
       break;
