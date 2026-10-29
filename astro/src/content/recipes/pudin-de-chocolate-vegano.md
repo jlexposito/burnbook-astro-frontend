@@ -1,0 +1,92 @@
+---
+cooking_time: 5
+created: '2026-10-29T13:07:59.042708+01:00'
+id: 265
+image: null
+ingredients:
+- id: 4906
+  ingredient:
+    name: garbanzos
+    prefix: escurridos y enjuagados
+  optional: false
+  quantity: '1.5'
+  recipe: 265
+  unit: cup
+- id: 4907
+  ingredient:
+    name: dátiles Medjool
+    prefix: tiernos, deshuesados
+  optional: false
+  quantity: '140'
+  recipe: 265
+  unit: gr
+- id: 4908
+  ingredient:
+    name: leche
+    prefix: vegetal
+  optional: false
+  quantity: '2.25'
+  recipe: 265
+  unit: cup
+- id: 4909
+  ingredient:
+    name: cacao en polvo
+    prefix: ''
+  optional: false
+  quantity: '6'
+  recipe: 265
+  unit: tablespoon
+- id: 4910
+  ingredient:
+    name: maicena
+    prefix: ''
+  optional: false
+  quantity: '4'
+  recipe: 265
+  unit: tablespoon
+- id: 4911
+  ingredient:
+    name: extracto de vainilla
+    prefix: ''
+  optional: false
+  quantity: '1.5'
+  recipe: 265
+  unit: teaspoon
+- id: 4912
+  ingredient:
+    name: sal
+    prefix: ''
+  optional: false
+  quantity: '0.25'
+  recipe: 265
+  unit: teaspoon
+- id: 4913
+  ingredient:
+    name: chocolate
+    prefix: troceado o en pepitas
+  optional: true
+  quantity: '0.25'
+  recipe: 265
+  unit: cup
+references:
+- https://youtu.be/wg808UsbcAo
+servings: 2
+status: Draft
+tags:
+- vegetariano
+- postre
+title: Pudín de chocolate vegano
+updated: '2026-10-29T13:07:59.043525+01:00'
+---
+1. Añade los garbanzos, los dátiles, el cacao en polvo, la maicena, el extracto de vainilla y la sal a una batidora.
+2. Añade la leche vegetal a la batidora.
+3. Bate hasta obtener una mezcla muy suave y homogénea.
+4. Vierte la mezcla en un cazo.
+5. Cocina a fuego medio, removiendo constantemente, durante unos 5 minutos, o hasta que empiece a burbujear y hervir.
+6. Continúa removiendo y cocinando durante un minuto más después de que empiece a hervir.
+7. Si lo utilizas, incorpora el chocolate troceado o las pepitas de chocolate y remueve hasta que se derrita.
+8. Vierte el pudín caliente en un recipiente resistente al calor.
+9. Alisa la superficie y, opcionalmente, coloca papel de horno sobre ella para evitar que se forme una capa.
+10. Deja enfriar ligeramente y luego refrigera durante unas horas hasta que esté firme.
+
+Información nutricional no disponible.
