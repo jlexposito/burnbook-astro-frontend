@@ -1,10 +1,10 @@
 ---
-cooking_time: 5
+cooking_time: 15
 created: '2026-10-29T13:07:59.042708+01:00'
 id: 265
 image: /media/pudin_chocolate.png
 ingredients:
-- id: 4938
+- id: 4946
   ingredient:
     name: garbanzos
     prefix: lata de
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 265
   unit: unit
-- id: 4939
+- id: 4947
   ingredient:
     name: dátiles Medjool
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '140'
   recipe: 265
   unit: gr
-- id: 4940
+- id: 4948
   ingredient:
     name: leche vegetal
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '540'
   recipe: 265
   unit: gr
-- id: 4941
+- id: 4949
   ingredient:
     name: Cacao en polvo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '45'
   recipe: 265
   unit: gr
-- id: 4942
+- id: 4950
   ingredient:
     name: maicena
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '32'
   recipe: 265
   unit: gr
-- id: 4943
+- id: 4951
   ingredient:
     name: extracto de vainilla
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '6'
   recipe: 265
   unit: ml
-- id: 4944
+- id: 4952
   ingredient:
     name: Sal
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '0.25'
   recipe: 265
   unit: teaspoon
-- id: 4945
+- id: 4953
   ingredient:
     name: Chocolate negro
     prefix: ''
@@ -77,7 +77,7 @@ tags:
 - postre
 - vegano
 title: Pudín de chocolate vegano
-updated: '2026-10-30T10:09:24.481036+01:00'
+updated: '2026-10-30T10:14:32.982899+01:00'
 ---
 1. Añade los garbanzos, los dátiles, el cacao en polvo, la maicena, el extracto de vainilla y la sal a una batidora.
 2. Añade la leche vegetal a la batidora.
