@@ -68,11 +68,6 @@
     {
       "slug": "salsa-mango-picante",
       "title": "Salsa mango picante",
-      "images": []
-    },
-    {
-      "slug": "salsa-mango-picante",
-      "title": "Salsa mango picante",
       "images": [
         {
           "id": "mango-spicy-sauce.jpg",
@@ -80,6 +75,11 @@
           "filename": "mango-spicy-sauce.jpg"
         }
       ]
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": []
     },
     {
       "slug": "salsa-mango-picante",
@@ -881,8 +881,8 @@
       "images": []
     },
     {
-      "slug": "hamburguesas-de-lentejas-y-quinoa",
-      "title": "Hamburguesas de lentejas y quinoa",
+      "slug": "hamburguesas-proteicas-de-lentejas-y-quinoa",
+      "title": "Hamburguesas prote\u00edcas de lentejas y quinoa",
       "images": []
     },
     {
