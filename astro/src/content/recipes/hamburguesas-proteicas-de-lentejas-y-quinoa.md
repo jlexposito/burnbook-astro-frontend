@@ -4,7 +4,7 @@ created: '2026-10-30T10:28:40.807409+01:00'
 id: 267
 image: null
 ingredients:
-- id: 4958
+- id: 4967
   ingredient:
     name: lentejas
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '120'
   recipe: 267
   unit: gr
-- id: 4959
+- id: 4968
   ingredient:
     name: quinoa
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '120'
   recipe: 267
   unit: gr
-- id: 4960
+- id: 4969
   ingredient:
     name: Zanahorias
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: unit
-- id: 4961
+- id: 4970
   ingredient:
     name: Sal
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: ''
   recipe: 267
   unit: al_gusto
-- id: 4962
+- id: 4971
   ingredient:
     name: harina de garbanzo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 267
   unit: tablespoon
-- id: 4963
+- id: 4972
   ingredient:
     name: perejil
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: teaspoon
-- id: 4964
+- id: 4973
   ingredient:
     name: comino molido
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: teaspoon
-- id: 4965
+- id: 4974
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: teaspoon
-- id: 4966
+- id: 4975
   ingredient:
     name: cebolla en polvo
     prefix: ''
@@ -82,9 +82,10 @@ servings: 2
 status: New
 tags:
 - vegetariano
+- alto en proteína
 - comida
 title: Hamburguesas proteícas de lentejas y quinoa
-updated: '2026-10-30T10:40:28.203105+01:00'
+updated: '2026-10-30T10:47:06.657777+01:00'
 ---
 ## 👩‍🍳 Instrucciones de Preparación
 
@@ -94,7 +95,6 @@ updated: '2026-10-30T10:40:28.203105+01:00'
 4. **Formar las hamburguesas:** Divide la masa en 3 porciones iguales. Con las manos ligeramente húmedas o con la ayuda de una cuchara, compacta y dale forma redondeada a cada porción.
 5. **Cocinar:** Calienta una sartén antiadherente a fuego medio con una gota de aceite. Cocina las hamburguesas durante unos **3 a 4 minutos por lado**, o hasta que se doren y adquieran firmeza.
 
----
 
 ## 📊 Valor Nutricional Estimado
 
