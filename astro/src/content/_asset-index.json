@@ -73,11 +73,6 @@
     {
       "slug": "salsa-mango-picante",
       "title": "Salsa mango picante",
-      "images": []
-    },
-    {
-      "slug": "salsa-mango-picante",
-      "title": "Salsa mango picante",
       "images": [
         {
           "id": "mango-spicy-sauce.jpg",
@@ -85,6 +80,11 @@
           "filename": "mango-spicy-sauce.jpg"
         }
       ]
+    },
+    {
+      "slug": "salsa-mango-picante",
+      "title": "Salsa mango picante",
+      "images": []
     },
     {
       "slug": "snack-saludable-de-mango-y-yogur",
@@ -878,16 +878,6 @@
     {
       "slug": "guiso-de-berza-y-garbanzos",
       "title": "Guiso de Berza y Garbanzos",
-      "images": []
-    },
-    {
-      "slug": "hamburguesas-de-lentejas-y-quinoa",
-      "title": "Hamburguesas de Lentejas y Quinoa",
-      "images": []
-    },
-    {
-      "slug": "hamburguesas-de-lentejas-y-quinoa",
-      "title": "Hamburguesas de Lentejas y Quinoa",
       "images": []
     },
     {
