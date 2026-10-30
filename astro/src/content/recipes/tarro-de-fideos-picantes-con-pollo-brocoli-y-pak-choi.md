@@ -4,7 +4,7 @@ created: '2026-10-30T12:25:10.587019+01:00'
 id: 268
 image: null
 ingredients:
-- id: 4976
+- id: 4989
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 268
   unit: tablespoon
-- id: 4977
+- id: 4990
   ingredient:
     name: vinagre de arroz
     prefix: ''
@@ -20,15 +20,15 @@ ingredients:
   quantity: '0.5'
   recipe: 268
   unit: tablespoon
-- id: 4978
+- id: 4991
   ingredient:
-    name: aceite de chile
+    name: Aceite de chile
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 268
   unit: teaspoon
-- id: 4979
+- id: 4992
   ingredient:
     name: ajo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 268
   unit: unit
-- id: 4980
+- id: 4993
   ingredient:
     name: cubo de caldo de verduras
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 268
   unit: unit
-- id: 4981
+- id: 4994
   ingredient:
     name: pechuga de pollo cocida y desmenuzada
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '100'
   recipe: 268
   unit: gr
-- id: 4982
+- id: 4995
   ingredient:
     name: brócoli
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '80'
   recipe: 268
   unit: gr
-- id: 4983
+- id: 4996
   ingredient:
     name: cebolleta
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '80'
   recipe: 268
   unit: gr
-- id: 4984
+- id: 4997
   ingredient:
     name: pak choi
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '80'
   recipe: 268
   unit: gr
-- id: 4985
+- id: 4998
   ingredient:
     name: edamame fresco
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '60'
   recipe: 268
   unit: gr
-- id: 4986
+- id: 4999
   ingredient:
     name: fideos vermicelli
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '45'
   recipe: 268
   unit: gr
-- id: 4987
+- id: 5000
   ingredient:
     name: agua hirviendo
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '500'
   recipe: 268
   unit: ml
-- id: 4988
+- id: 5001
   ingredient:
     name: lima
     prefix: ''
@@ -117,17 +117,14 @@ tags:
 - cocina asiática
 - comida
 title: Tarro de Fideos Picantes con Pollo, Brócoli y Pak Choi
-updated: '2026-10-30T12:25:10.587034+01:00'
+updated: '2026-10-30T12:30:49.340009+01:00'
 ---
-1. **Prepara los ingredientes:** Reúne todos los ingredientes necesarios.
+1. En un tarro de cristal de 1 litro, mezcla la salsa de soja, el vinagre de arroz, el aceite de chile, el ajo rallado finamente y el cubo de caldo de verduras desmenuzado.
 
-2. **Prepara la base:** En un tarro de cristal de 1 litro, mezcla la salsa de soja, el vinagre de arroz, el aceite de chile, el ajo rallado finamente y el cubo de caldo de verduras desmenuzado.
-
-3. **Añade los sólidos:** Incorpora la pechuga de pollo desmenuzada, el brócoli, la cebolleta, el pak choi, el edamame fresco y los fideos vermicelli al tarro.
+3. Incorpora la pechuga de pollo desmenuzada, el brócoli, la cebolleta, el pak choi, el edamame fresco y los fideos vermicelli al tarro.
 
 4. **Finaliza y sirve:** Cuando estés listo para comer, añade el agua hirviendo al tarro y mezcla bien. Cubre el tarro y deja reposar durante 5 minutos antes de añadir el zumo de lima y consumir inmediatamente.
 
----
 
 ### Información Nutricional (Estimada)
 
