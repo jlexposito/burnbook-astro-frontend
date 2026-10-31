@@ -4,7 +4,7 @@ created: '2026-10-31T12:58:53.372301+01:00'
 id: 272
 image: null
 ingredients:
-- id: 5108
+- id: 5120
   ingredient:
     name: tomates heirloom
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1.725'
   recipe: 272
   unit: kg
-- id: 5109
+- id: 5121
   ingredient:
     name: pimientos banana
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '105'
   recipe: 272
   unit: gr
-- id: 5110
+- id: 5122
   ingredient:
     name: chiles chiltepín frescos
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '35'
   recipe: 272
   unit: gr
-- id: 5111
+- id: 5123
   ingredient:
     name: ajo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '75'
   recipe: 272
   unit: gr
-- id: 5112
+- id: 5124
   ingredient:
     name: cebolla blanca
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '75'
   recipe: 272
   unit: gr
-- id: 5113
+- id: 5125
   ingredient:
     name: chiles jalapeños
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '15'
   recipe: 272
   unit: gr
-- id: 5114
+- id: 5126
   ingredient:
     name: sal kosher Diamond Crystal
     prefix: ''
@@ -60,16 +60,17 @@ ingredients:
   quantity: '8'
   recipe: 272
   unit: gr
-- id: 5115
+- id: 5127
   ingredient:
-    name: caldo de pollo
+    name: Caldo de pollo
     prefix: ''
-  optional: true
+  optional: false
   quantity: '5'
   recipe: 272
   unit: gr
 references:
 - https://cooked.wiki/new/recent/a0906c50-8949-4e5a-a791-963ff26b2c0b
+- https://www.instagram.com/reels/DUIjtcnjhZ6/
 servings: 8
 status: Draft
 tags:
@@ -78,7 +79,7 @@ tags:
 - cocina mexicana
 - aperitivo
 title: Salsa de Tomate y Chiles Asados
-updated: '2026-10-31T12:58:53.372317+01:00'
+updated: '2026-10-31T13:02:46.840587+01:00'
 ---
 1. Precalienta el asador a temperatura alta. Coloca los tomates en una bandeja para hornear y ásalos durante unos 15 minutos, dándoles la vuelta a mitad de cocción, hasta que estén ennegrecidos y tiernos. Una vez listos, déjalos enfriar y luego pélalos.
 
