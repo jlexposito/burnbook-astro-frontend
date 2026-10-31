@@ -81,7 +81,7 @@ references:
 servings: 4
 status: Tried
 tags: []
-title: 'Tacos de vegetales asados '
+title: Tacos de vegetales asados
 updated: '2025-01-13T12:18:14.133934+01:00'
 ---
 1 small head cauliflower, cut into florets⁠
