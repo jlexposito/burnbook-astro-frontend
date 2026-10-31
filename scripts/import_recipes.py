@@ -189,14 +189,24 @@ def run():
 			image_urls.append(image_url)
 		del recipe['instructions']
 
-		# Recursively clean out any non-breaking spaces (\xa0) or rogue characters
+		# Recursively clean data and normalize ingredient quantities
 		def clean_data(obj):
-			if isinstance(obj, str):
-				return obj.replace("\xa0", " ").strip()
-			elif isinstance(obj, dict):
-				return {k: clean_data(v) for k, v in obj.items()}
+			if isinstance(obj, dict):
+				cleaned_dict = {}
+				for k, v in obj.items():
+					# If we are looking at an ingredient item, ensure quantity is a string and defaults to '1' if null/empty
+					if k == "quantity":
+						if v is None or str(v).strip() == "":
+							cleaned_dict[k] = '1'
+						else:
+							cleaned_dict[k] = str(v).strip()
+					else:
+						cleaned_dict[k] = clean_data(v)
+				return cleaned_dict
 			elif isinstance(obj, list):
 				return [clean_data(item) for item in obj]
+			elif isinstance(obj, str):
+				return obj.replace("\xa0", " ").strip()
 			return obj
 
 		cleaned_recipe = clean_data(recipe)
@@ -212,7 +222,6 @@ def run():
 		file_path = output_folder.joinpath(filename)
 		logger.info(f'Output path: {file_path}')
 
-		# Explicitly specify encoding='utf-8' to prevent container/OS encoding issues
 		with open(file_path, 'w', encoding='utf-8') as f:
 			f.write(markdown)
 		
