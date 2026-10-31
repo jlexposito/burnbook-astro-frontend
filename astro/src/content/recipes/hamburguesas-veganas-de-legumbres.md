@@ -89,7 +89,7 @@ ingredients:
     name: sal
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 186
   unit: unit
 - id: 2354
@@ -113,7 +113,7 @@ ingredients:
     name: panes de hamburguesa
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 186
   unit: unit
 - id: 2357
@@ -121,7 +121,7 @@ ingredients:
     name: lonchas de queso vegano
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 186
   unit: unit
 references:

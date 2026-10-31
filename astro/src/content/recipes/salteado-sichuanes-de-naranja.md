@@ -105,7 +105,7 @@ ingredients:
     name: arroz
     prefix: cocido al vapor, para servir
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 140
   unit: unit
 - id: 1827

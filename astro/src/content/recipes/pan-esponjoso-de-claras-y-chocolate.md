@@ -25,7 +25,7 @@ ingredients:
     name: endulzante
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 251
   unit: ''
 - id: 4606
@@ -33,7 +33,7 @@ ingredients:
     name: chips de chocolate
     prefix: sin azúcar
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 251
   unit: unit
 references:

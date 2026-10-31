@@ -129,7 +129,7 @@ ingredients:
     name: guindilla roja
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 173
   unit: unit
 - id: 2183
@@ -137,7 +137,7 @@ ingredients:
     name: cebolleta
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 173
   unit: unit
 - id: 2184
@@ -145,7 +145,7 @@ ingredients:
     name: sal
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 173
   unit: unit
 - id: 2185
@@ -153,7 +153,7 @@ ingredients:
     name: pimienta
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 173
   unit: unit
 - id: 2186
@@ -161,7 +161,7 @@ ingredients:
     name: aceite neutro
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 173
   unit: unit
 references:

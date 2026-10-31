@@ -89,7 +89,7 @@ ingredients:
     name: sal
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 176
   unit: unit
 - id: 2233
@@ -97,7 +97,7 @@ ingredients:
     name: pimienta
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 176
   unit: unit
 references:

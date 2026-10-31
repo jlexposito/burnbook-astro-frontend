@@ -25,7 +25,7 @@ ingredients:
     name: canela en polvo
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 180
   unit: al_gusto
 - id: 3776
@@ -33,7 +33,7 @@ ingredients:
     name: Sal
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 180
   unit: al_gusto
 - id: 3777

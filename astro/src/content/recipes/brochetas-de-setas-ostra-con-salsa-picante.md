@@ -41,7 +41,7 @@ ingredients:
     name: semillas de sésamo
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 247
   unit: unit
 references:

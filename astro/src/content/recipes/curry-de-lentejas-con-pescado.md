@@ -57,7 +57,7 @@ ingredients:
     name: sal
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 271
   unit: unit
 - id: 5035
@@ -65,7 +65,7 @@ ingredients:
     name: pimienta negra
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 271
   unit: unit
 - id: 5036
@@ -137,7 +137,7 @@ ingredients:
     name: caldo de verduras
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 271
   unit: unit
 - id: 5045
@@ -153,7 +153,7 @@ ingredients:
     name: judías verdes
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 271
   unit: unit
 - id: 5047
@@ -161,7 +161,7 @@ ingredients:
     name: espinacas
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 271
   unit: unit
 - id: 5048
@@ -169,7 +169,7 @@ ingredients:
     name: lima
     prefix: ''
   optional: true
-  quantity: null
+  quantity: '1'
   recipe: 271
   unit: unit
 references:

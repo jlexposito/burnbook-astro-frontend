@@ -49,7 +49,7 @@ ingredients:
     name: agua con gas
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 235
   unit: unit
 references:

@@ -113,7 +113,7 @@ ingredients:
     name: aceite
     prefix: para freír
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 240
   unit: ''
 references:

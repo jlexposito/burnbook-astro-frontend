@@ -9,7 +9,7 @@ ingredients:
     name: crema de coco
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5003
@@ -17,7 +17,7 @@ ingredients:
     name: pasta de curry rojo
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5004
@@ -25,7 +25,7 @@ ingredients:
     name: lima
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5005
@@ -33,7 +33,7 @@ ingredients:
     name: tamari
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5006
@@ -41,7 +41,7 @@ ingredients:
     name: fideos de arroz
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5007
@@ -49,7 +49,7 @@ ingredients:
     name: col blanca
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5008
@@ -57,7 +57,7 @@ ingredients:
     name: zanahoria
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5009
@@ -65,7 +65,7 @@ ingredients:
     name: edamame fresco
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5010
@@ -73,7 +73,7 @@ ingredients:
     name: pimiento rojo
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5011
@@ -81,7 +81,7 @@ ingredients:
     name: tofu ahumado
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5012
@@ -89,7 +89,7 @@ ingredients:
     name: cilantro
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5013
@@ -97,7 +97,7 @@ ingredients:
     name: cebolleta
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5014
@@ -105,7 +105,7 @@ ingredients:
     name: chile rojo
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 - id: 5015
@@ -113,7 +113,7 @@ ingredients:
     name: agua
     prefix: ''
   optional: false
-  quantity: null
+  quantity: '1'
   recipe: 269
   unit: unit
 references:

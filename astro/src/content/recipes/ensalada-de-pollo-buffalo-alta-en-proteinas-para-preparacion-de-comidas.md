@@ -73,7 +73,7 @@ ingredients:
     name: sal
     prefix: al gusto
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 134
   unit: unit
 - id: 4205
@@ -129,7 +129,7 @@ ingredients:
     name: agua
     prefix: según sea necesario para diluir
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 134
   unit: ml
 references:

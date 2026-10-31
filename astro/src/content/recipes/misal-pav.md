@@ -225,7 +225,7 @@ ingredients:
     name: Misal Masala
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 246
   unit: unit
 - id: 4559
@@ -265,7 +265,7 @@ ingredients:
     name: Batata Bhaji (o patatas cocidas)
     prefix: ''
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 246
   unit: unit
 - id: 4564
@@ -273,7 +273,7 @@ ingredients:
     name: Farsan (o Bombay mix)
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 246
   unit: gr
 - id: 4565

@@ -57,7 +57,7 @@ ingredients:
     name: Nueces
     prefix: Picadas
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 67
   unit: unit
 references:

@@ -17,7 +17,7 @@ ingredients:
     name: Sal
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2144
@@ -25,7 +25,7 @@ ingredients:
     name: Pimienta
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2145
@@ -33,7 +33,7 @@ ingredients:
     name: Harina
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2146
@@ -49,7 +49,7 @@ ingredients:
     name: Panko
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2148
@@ -57,7 +57,7 @@ ingredients:
     name: Aceite de oliva
     prefix: suave para freír
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2149
@@ -65,7 +65,7 @@ ingredients:
     name: Mezclum
     prefix: para acompañar
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2150
@@ -129,7 +129,7 @@ ingredients:
     name: Zumo de limón
     prefix: al gusto
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 171
   unit: unit
 - id: 2158

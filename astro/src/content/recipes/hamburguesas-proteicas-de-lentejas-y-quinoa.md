@@ -33,7 +33,7 @@ ingredients:
     name: Sal
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 267
   unit: al_gusto
 - id: 4971

@@ -57,7 +57,7 @@ ingredients:
     name: tomate
     prefix: rallado al gusto
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 - id: 953
@@ -73,7 +73,7 @@ ingredients:
     name: harina
     prefix: para rebozar la carne
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 - id: 955
@@ -81,7 +81,7 @@ ingredients:
     name: setas senderuela o de cardo
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 - id: 956
@@ -105,7 +105,7 @@ ingredients:
     name: almendras
     prefix: para la picada
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 - id: 959
@@ -113,7 +113,7 @@ ingredients:
     name: avellanas
     prefix: para la picada
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 - id: 960
@@ -121,7 +121,7 @@ ingredients:
     name: pan tostado
     prefix: para la picada
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 - id: 961
@@ -129,7 +129,7 @@ ingredients:
     name: chocolate negro
     prefix: un poco de, para la picada
   optional: true
-  quantity: ''
+  quantity: '1'
   recipe: 76
   unit: unit
 references:

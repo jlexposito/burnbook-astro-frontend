@@ -121,7 +121,7 @@ ingredients:
     name: aceite de chile Chiu Chow
     prefix: ''
   optional: false
-  quantity: ''
+  quantity: '1'
   recipe: 214
   unit: unit
 references:
