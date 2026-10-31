@@ -2,9 +2,9 @@
 cooking_time: 30
 created: '2026-10-30T12:35:18.159665+01:00'
 id: 270
-image: null
+image: /media/zingy-edamame-pepper-and-carrot-noodle-jar_tbqxDXmrB.webp
 ingredients:
-- id: 5049
+- id: 5079
   ingredient:
     name: tamari
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: tablespoon
-- id: 5050
+- id: 5080
   ingredient:
     name: salsa Sriracha
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: teaspoon
-- id: 5051
+- id: 5081
   ingredient:
     name: lima
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: unit
-- id: 5052
+- id: 5082
   ingredient:
     name: chile rojo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: unit
-- id: 5053
+- id: 5083
   ingredient:
     name: fideos de arroz
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '100'
   recipe: 270
   unit: gr
-- id: 5054
+- id: 5084
   ingredient:
     name: zanahoria
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: unit
-- id: 5055
+- id: 5085
   ingredient:
     name: edamame fresco
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '100'
   recipe: 270
   unit: gr
-- id: 5056
+- id: 5086
   ingredient:
     name: col lombarda
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '50'
   recipe: 270
   unit: gr
-- id: 5057
+- id: 5087
   ingredient:
     name: Pimiento rojo
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '0.5'
   recipe: 270
   unit: unit
-- id: 5058
+- id: 5088
   ingredient:
     name: cilantro
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '2'
   recipe: 270
   unit: tablespoon
-- id: 5059
+- id: 5089
   ingredient:
     name: tofu ahumado
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '150'
   recipe: 270
   unit: gr
-- id: 5060
+- id: 5090
   ingredient:
     name: semillas de sésamo blanco tostadas
     prefix: ''
@@ -110,7 +110,7 @@ tags:
 - comida
 - saludable
 title: Tarro de Fideos con Edamame y Verduras Picantes
-updated: '2026-10-31T10:32:42.493263+01:00'
+updated: '2026-10-31T11:11:47.667853+01:00'
 ---
 1. Bate los ingredientes del aderezo y ajusta la sazón con sal y pimienta.
 2. Cocina los fideos en agua hirviendo durante 3 minutos, escúrrelos y déjalos enfriar.

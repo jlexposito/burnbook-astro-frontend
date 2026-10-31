@@ -1141,7 +1141,13 @@
     {
       "slug": "tarro-de-fideos-con-edamame-y-verduras-picantes",
       "title": "Tarro de Fideos con Edamame y Verduras Picantes",
-      "images": []
+      "images": [
+        {
+          "id": "zingy-edamame-pepper-and-carrot-noodle-jar_tbqxDXmrB.webp",
+          "source": "https://burnbookapi.fauno.nl/media/zingy-edamame-pepper-and-carrot-noodle-jar_tbqxDXmrB.webp",
+          "filename": "zingy-edamame-pepper-and-carrot-noodle-jar_tbqxDXmrB.webp"
+        }
+      ]
     },
     {
       "slug": "tarro-de-fideos-picantes-con-pollo-brocoli-y-pak-choi",
