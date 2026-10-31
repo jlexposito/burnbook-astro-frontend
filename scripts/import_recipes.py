@@ -189,7 +189,19 @@ def run():
 			image_urls.append(image_url)
 		del recipe['instructions']
 
-		frontmatter = (yaml.dump(recipe, default_flow_style=False, allow_unicode=True))
+		# Recursively clean out any non-breaking spaces (\xa0) or rogue characters
+		def clean_data(obj):
+			if isinstance(obj, str):
+				return obj.replace("\xa0", " ").strip()
+			elif isinstance(obj, dict):
+				return {k: clean_data(v) for k, v in obj.items()}
+			elif isinstance(obj, list):
+				return [clean_data(item) for item in obj]
+			return obj
+
+		cleaned_recipe = clean_data(recipe)
+
+		frontmatter = yaml.dump(cleaned_recipe, default_flow_style=False, allow_unicode=True)
 
 		markdown = template.substitute(
 			frontmatter=frontmatter,
@@ -200,7 +212,8 @@ def run():
 		file_path = output_folder.joinpath(filename)
 		logger.info(f'Output path: {file_path}')
 
-		with open(file_path, 'w') as f:
+		# Explicitly specify encoding='utf-8' to prevent container/OS encoding issues
+		with open(file_path, 'w', encoding='utf-8') as f:
 			f.write(markdown)
 		
 		add_asset(
