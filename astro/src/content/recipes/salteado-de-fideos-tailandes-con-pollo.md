@@ -132,7 +132,6 @@ tags:
 - picante
 - cocina tailandesa
 - cena
-- fideos
 title: Salteado de Fideos Tailandés con Pollo
 updated: '2026-03-13T16:11:14.320624+01:00'
 ---
