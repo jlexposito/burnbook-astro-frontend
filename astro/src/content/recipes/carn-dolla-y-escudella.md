@@ -12,7 +12,9 @@ tags:
 - sopa
 - principal
 - cocina española
+- cena
+- comida
 title: Carn d'Olla y Escudella
-updated: '2026-02-27T09:50:08.833886+01:00'
+updated: '2026-10-31T12:47:28.156322+01:00'
 ---
 Las instrucciones completas para la elaboración de esta receta, incluyendo los ingredientes y las cantidades, se encuentran disponibles en el perfil del usuario.
