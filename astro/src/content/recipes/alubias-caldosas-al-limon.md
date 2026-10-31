@@ -4,7 +4,7 @@ created: '2026-02-08T16:15:56.254524+01:00'
 id: 159
 image: /media/vegan-brothy-beans-recipe-01-740x925.jpg
 ingredients:
-- id: 3577
+- id: 5061
   ingredient:
     name: Alubias
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '500'
   recipe: 159
   unit: gr
-- id: 3578
+- id: 5062
   ingredient:
     name: agua
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: Suficiente
   recipe: 159
   unit: unit
-- id: 3579
+- id: 5063
   ingredient:
     name: bicarbonato de sodio
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '0.25'
   recipe: 159
   unit: teaspoon
-- id: 3580
+- id: 5064
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '0.25'
   recipe: 159
   unit: cup
-- id: 3581
+- id: 5065
   ingredient:
     name: cebolla
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 159
   unit: unit
-- id: 3582
+- id: 5066
   ingredient:
     name: dientes de ajo
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: 6-8
   recipe: 159
   unit: unit
-- id: 3583
+- id: 5067
   ingredient:
     name: jalapeño
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 159
   unit: unit
-- id: 3584
+- id: 5068
   ingredient:
     name: salvia
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 159
   unit: tablespoon
-- id: 3585
+- id: 5069
   ingredient:
     name: tomillo fresco
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 159
   unit: tablespoon
-- id: 3586
+- id: 5070
   ingredient:
     name: tomates deshidratados
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '0.5'
   recipe: 159
   unit: cup
-- id: 3587
+- id: 5071
   ingredient:
     name: caldo
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: 5-6
   recipe: 159
   unit: cup
-- id: 3588
+- id: 5072
   ingredient:
     name: Sal
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: al gusto
   recipe: 159
   unit: unit
-- id: 3589
+- id: 5073
   ingredient:
     name: pimienta
     prefix: ''
@@ -108,7 +108,7 @@ ingredients:
   quantity: al gusto
   recipe: 159
   unit: unit
-- id: 3590
+- id: 5074
   ingredient:
     name: ralladura de limón
     prefix: ''
@@ -116,7 +116,7 @@ ingredients:
   quantity: '1'
   recipe: 159
   unit: tablespoon
-- id: 3591
+- id: 5075
   ingredient:
     name: zumo de limón
     prefix: ''
@@ -124,7 +124,7 @@ ingredients:
   quantity: '0.25'
   recipe: 159
   unit: cup
-- id: 3592
+- id: 5076
   ingredient:
     name: parmesano
     prefix: ''
@@ -132,7 +132,7 @@ ingredients:
   quantity: al gusto
   recipe: 159
   unit: unit
-- id: 3593
+- id: 5077
   ingredient:
     name: aceite de oliva
     prefix: ''
@@ -140,7 +140,7 @@ ingredients:
   quantity: un chorrito
   recipe: 159
   unit: unit
-- id: 3594
+- id: 5078
   ingredient:
     name: perejil
     prefix: ''
@@ -157,8 +157,10 @@ tags:
 - principal
 - cena
 - comida
+- por probar
+- estofado
 title: Alubias Caldosas al Limón
-updated: '2026-02-27T09:55:56.411206+01:00'
+updated: '2026-10-31T11:09:33.175054+01:00'
 ---
 1. Remoja las alubias secas durante la noche en agua filtrada con un toque de bicarbonato de sodio. Enjuágalas bien al día siguiente.
 2. En una olla de hierro fundido (Dutch oven), sofríe la cebolla, el ajo, la salvia y el tomillo frescos, y los tomates secos en aceite de oliva durante unos minutos hasta que estén fragantes.
