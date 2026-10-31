@@ -68,7 +68,13 @@
     {
       "slug": "salsa-mango-picante",
       "title": "Salsa mango picante",
-      "images": []
+      "images": [
+        {
+          "id": "salsa_mango.jpg",
+          "source": "https://burnbookapi.fauno.nl/media/salsa_mango.jpg",
+          "filename": "salsa_mango.jpg"
+        }
+      ]
     },
     {
       "slug": "snack-saludable-de-mango-y-yogur",
