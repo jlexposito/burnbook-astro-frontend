@@ -4,15 +4,15 @@ created: '2026-10-30T12:35:18.159665+01:00'
 id: 270
 image: null
 ingredients:
-- id: 5016
+- id: 5049
   ingredient:
-    name: Tamari
+    name: tamari
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 270
   unit: tablespoon
-- id: 5017
+- id: 5050
   ingredient:
     name: salsa Sriracha
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: teaspoon
-- id: 5018
+- id: 5051
   ingredient:
     name: lima
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: unit
-- id: 5019
+- id: 5052
   ingredient:
     name: chile rojo
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: unit
-- id: 5020
+- id: 5053
   ingredient:
     name: fideos de arroz
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '100'
   recipe: 270
   unit: gr
-- id: 5021
+- id: 5054
   ingredient:
     name: zanahoria
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 270
   unit: unit
-- id: 5022
+- id: 5055
   ingredient:
     name: edamame fresco
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '100'
   recipe: 270
   unit: gr
-- id: 5023
+- id: 5056
   ingredient:
     name: col lombarda
     prefix: ''
@@ -68,15 +68,15 @@ ingredients:
   quantity: '50'
   recipe: 270
   unit: gr
-- id: 5024
+- id: 5057
   ingredient:
-    name: pimiento rojo
+    name: Pimiento rojo
     prefix: ''
   optional: false
   quantity: '0.5'
   recipe: 270
   unit: unit
-- id: 5025
+- id: 5058
   ingredient:
     name: cilantro
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '2'
   recipe: 270
   unit: tablespoon
-- id: 5026
+- id: 5059
   ingredient:
     name: tofu ahumado
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '150'
   recipe: 270
   unit: gr
-- id: 5027
+- id: 5060
   ingredient:
     name: semillas de sésamo blanco tostadas
     prefix: ''
@@ -110,15 +110,16 @@ tags:
 - comida
 - saludable
 title: Tarro de Fideos con Edamame y Verduras Picantes
-updated: '2026-10-30T12:35:18.159679+01:00'
+updated: '2026-10-31T10:32:42.493263+01:00'
 ---
-1. Reúne los ingredientes.
-2. Bate los ingredientes del aderezo. Prueba y ajusta la sazón con sal y pimienta si es necesario.
-3. Remoja los fideos en agua hirviendo durante 3 minutos, o según las instrucciones del paquete. Luego, escúrrelos y enfríalos antes de añadirlos al tarro.
-4. Coge tu tarro y añade los fideos, la zanahoria, el edamame, la col lombarda, el pimiento rojo, el cilantro, el tofu y el sésamo. Vierte el aderezo por encima.
-5. Cuando estés listo para comer, simplemente mezcla para combinar o transfiere a un bol.
+1. Bate los ingredientes del aderezo y ajusta la sazón con sal y pimienta.
+2. Cocina los fideos en agua hirviendo durante 3 minutos, escúrrelos y déjalos enfriar.
+3. Coloca en el tarro los fideos, la zanahoria, el edamame, la col lombarda, el pimiento rojo, el cilantro, el tofu y el sésamo, y vierte el aderezo por encima.
+4. Mezcla todo bien antes de consumir.
+
 
 ### Información Nutricional (Estimada)
+
 
 **Por ración (1 de 2):**
 *   **Calorías:** 350-450 kcal
