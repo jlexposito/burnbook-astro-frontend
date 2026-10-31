@@ -4,7 +4,7 @@ created: '2026-02-27T18:40:06.467104+01:00'
 id: 211
 image: null
 ingredients:
-- id: 3719
+- id: 5103
   ingredient:
     name: arroz
     prefix: sobrado o recalentado
@@ -12,7 +12,7 @@ ingredients:
   quantity: '1'
   recipe: 211
   unit: unit
-- id: 3720
+- id: 5104
   ingredient:
     name: jamón
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '1'
   recipe: 211
   unit: unit
-- id: 3721
+- id: 5105
   ingredient:
     name: queso
     prefix: ''
@@ -28,19 +28,19 @@ ingredients:
   quantity: '1'
   recipe: 211
   unit: unit
-- id: 3722
+- id: 5106
   ingredient:
-    name: aguacate
+    name: Aguacate
     prefix: ''
   optional: false
   quantity: '1'
   recipe: 211
   unit: unit
-- id: 3723
+- id: 5107
   ingredient:
     name: ingredientes adicionales para rellenar
     prefix: ''
-  optional: true
+  optional: false
   quantity: '1'
   recipe: 211
   unit: unit
@@ -49,9 +49,11 @@ references:
 servings: 2
 status: Draft
 tags:
+- guarnición
+- cena
 - comida
-title: Arepas de Arroz Sobrado
-updated: '2026-02-27T18:40:06.467150+01:00'
+title: Arepas de Arroz
+updated: '2026-10-31T12:49:39.574516+01:00'
 ---
 1. Tomad el arroz sobrado o recalentado.
 2. Transformadlo en masa para arepas.
