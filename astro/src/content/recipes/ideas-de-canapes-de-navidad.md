@@ -9,10 +9,12 @@ references:
 servings: 2
 status: Draft
 tags:
+- entrante
 - cocina española
 - aperitivo
+- navidad
 title: Ideas de canapés de Navidad
-updated: '2025-12-16T09:29:30.453832+01:00'
+updated: '2026-10-31T12:53:00.562375+01:00'
 ---
 1. La descripción proporcionada en la publicación de Instagram no contiene instrucciones detalladas para la elaboración de canapés. Se menciona que la chef Ada Parellada comparte consejos y que los detalles completos se encuentran en #LaGourmeteria. Para conocer las recetas de los 5 canapés de Navidad, por favor, consulta la fuente original enlazada.
 
