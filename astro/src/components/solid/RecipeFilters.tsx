@@ -15,6 +15,8 @@ interface RecipeFiltersProps {
   setMinTime: (v: number | null) => void;
   maxTime: number | null;
   setMaxTime: (v: number | null) => void;
+  triedOnly: boolean;
+  setTriedOnly: (v: boolean) => void;
   tags: Tag[];
 }
 
@@ -49,7 +51,8 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
     props.tagSearch ||
     props.activeTags().length > 0 ||
     props.minTime != null ||
-    props.maxTime != null;
+    props.maxTime != null ||
+    props.triedOnly;
 
   const clearAllFilters = () => {
     props.setSearch("");
@@ -57,6 +60,7 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
     props.setActiveTags([]);
     props.setMinTime(null);
     props.setMaxTime(null);
+    props.setTriedOnly(false);
   };
 
   // --- Click outside logic ---
@@ -132,10 +136,10 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
         }`}
       >
         <div class="max-h-[500px] space-y-4 overflow-y-auto p-4">
-          {/* Time filters */}
-          <div class="flex gap-2">
-            <div class="flex-1">
-              <label for="minTimeFilter" class="mb-1 block font-semibold">
+          {/* Time filters & Tried status in the same row */}
+          <div class="flex flex-wrap items-end gap-2">
+            <div class="flex-1 min-w-[110px]">
+              <label for="minTimeFilter" class="mb-1 block font-semibold text-sm">
                 Tiempo mínimo
               </label>
               <input
@@ -154,8 +158,8 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                 }
               />
             </div>
-            <div class="flex-1">
-              <label for="maxTimeFilter" class="mb-1 block font-semibold">
+            <div class="flex-1 min-w-[110px]">
+              <label for="maxTimeFilter" class="mb-1 block font-semibold text-sm">
                 Tiempo máximo
               </label>
               <input
@@ -173,6 +177,19 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
                   )
                 }
               />
+            </div>
+            <div class="flex items-center gap-2 pb-2.5">
+              <input
+                id="triedFilter"
+                name="triedFilter"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary cursor-pointer"
+                checked={props.triedOnly}
+                onChange={(e) => props.setTriedOnly(e.currentTarget.checked)}
+              />
+              <label for="triedFilter" class="font-semibold select-none cursor-pointer text-sm">
+                Cocinadas
+              </label>
             </div>
           </div>
 
@@ -261,6 +278,10 @@ export default function RecipeFilters(props: RecipeFiltersProps) {
           <Show when={props.maxTime != null}>
             <span class="font-semibold">Tiempo máximo:</span>
             <span> {props.maxTime} minutos</span>
+          </Show>
+          <Show when={props.triedOnly}>
+            <span class="font-semibold">Estado:</span>
+            <span>Cocinadas</span>
           </Show>
           <Show when={selectedTags().length > 0}>
             <span class="font-semibold">Etiquetas:</span>

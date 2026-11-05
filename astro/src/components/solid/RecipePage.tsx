@@ -12,8 +12,9 @@ export default function RecipePage(props: { recipes: RecipeInterface[], tags: Ta
   const [search, setSearch] = createSignal("");
   const [tagSearch, setTagSearch] = createSignal("");
   const [activeTags, setActiveTags] = createSignal<string[]>([]);
-  const [maxTime, setMaxTime] = createSignal<number | null>(null);
   const [minTime, setMinTime] = createSignal<number | null>(null);
+  const [maxTime, setMaxTime] = createSignal<number | null>(null);
+  const [triedOnly, setTriedOnly] = createSignal(true);
 
   // ---- Layout constants ----
   const ROWS_PER_LOAD = 4;
@@ -119,7 +120,14 @@ export default function RecipePage(props: { recipes: RecipeInterface[], tags: Ta
       const timeOk =
         (!minTime() || r.cooking_time >= minTime()) &&
         (!maxTime() || r.cooking_time <= maxTime());
-      return nameOk && tagsOk && timeOk;
+      
+      // Status check supporting string or object representation
+      const statusOk =
+        !triedOnly() ||
+        r.status.toLowerCase() === "tried" ||
+        (typeof r.status === "object" && r.status !== null && (r.status as any).state === "tried");
+
+      return nameOk && tagsOk && timeOk && statusOk;
     })
   );
 
@@ -133,12 +141,6 @@ export default function RecipePage(props: { recipes: RecipeInterface[], tags: Ta
     setActiveTags((prev) =>
       prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
     );
-
-
-  // ---- Optional: scroll-to-top on filter (comment/uncomment as desired) ----
-  // createEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // });
 
   return (
     <>
@@ -157,6 +159,8 @@ export default function RecipePage(props: { recipes: RecipeInterface[], tags: Ta
           setMinTime={setMinTime}
           maxTime={maxTime()}
           setMaxTime={setMaxTime}
+          triedOnly={triedOnly()}
+          setTriedOnly={setTriedOnly}
           tags={tags()}
         />
 
