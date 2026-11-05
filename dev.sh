@@ -13,7 +13,6 @@ fi
 # Run the Docker container
 docker run -v `pwd`/astro:/code -e HOST=$HOST_IP -w /code --network=host -it --rm node:$VERSION /bin/sh -c "npm install npm@latest -g; npm i -g pnpm; pnpm install; pnpm run dev --host $HOST_IP"
 
-
-docker run -v `pwd`/astro:/code -e HOST=0.0.0.0 -w /code --network=host -it --rm node:$VERSION /bin/sh -c "npm install npm@latest -g; npm i -g pnpm; pnpm install; pnpm run dev --host 0.0.0.0"
+echo -e "\n[*] Starting node container (without astro dev)"
 docker run -v `pwd`/astro:/code -e HOST=0.0.0.0 -w /code --network=host -it --rm node:$VERSION /bin/sh
 
