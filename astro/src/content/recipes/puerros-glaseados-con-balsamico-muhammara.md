@@ -36,7 +36,6 @@ tags:
 - vegetariano
 - entrante
 - vegano
-- probado
 title: Puerros Glaseados con Balsámico + Muhammara
 updated: '2026-11-05T23:19:24.991924+01:00'
 ---

@@ -86,7 +86,6 @@ tags:
 - cocina italiana
 - cena
 - comida
-- probado
 title: Spaghetti al Limón
 updated: '2026-10-28T00:28:12.431380+01:00'
 ---

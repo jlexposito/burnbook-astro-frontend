@@ -107,7 +107,6 @@ status: Tried
 tags:
 - cocina española
 - comida
-- probado
 title: Paella de Marisco
 updated: '2026-10-28T00:29:02.688790+01:00'
 ---

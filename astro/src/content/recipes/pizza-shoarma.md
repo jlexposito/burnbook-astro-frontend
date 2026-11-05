@@ -37,7 +37,6 @@ tags:
 - principal
 - cena
 - comida
-- probado
 title: Pizza shoarma
 updated: '2026-02-27T09:27:33.125519+01:00'
 ---

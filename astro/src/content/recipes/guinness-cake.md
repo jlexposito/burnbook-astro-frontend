@@ -115,7 +115,6 @@ status: Tried
 tags:
 - dulce
 - postre
-- probado
 title: Guinness Cake
 updated: '2026-11-05T23:27:19.205285+01:00'
 ---

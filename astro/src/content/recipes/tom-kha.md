@@ -182,7 +182,6 @@ tags:
 - cocina tailandesa
 - vegano
 - cena
-- probado
 - por probar
 title: Tom Kha
 updated: '2026-11-05T23:19:24.994198+01:00'

@@ -167,7 +167,6 @@ tags:
 - principal
 - cena
 - comida
-- probado
 title: Dal de Lentejas Rojas Vegano
 updated: '2026-10-28T00:30:45.746032+01:00'
 ---

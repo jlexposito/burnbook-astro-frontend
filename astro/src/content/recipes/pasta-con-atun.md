@@ -118,7 +118,6 @@ tags:
 - pasta
 - principal
 - cena
-- probado
 title: Pasta con atún
 updated: '2026-11-05T23:19:24.989373+01:00'
 ---

@@ -84,7 +84,6 @@ status: Tried
 tags:
 - one pot
 - cena
-- probado
 title: Curry de garbanzos y verduras con yogur
 updated: '2024-08-09T15:42:30.178196+02:00'
 ---

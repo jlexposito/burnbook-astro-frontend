@@ -100,7 +100,6 @@ status: Tried
 tags:
 - pescado
 - principal
-- probado
 title: Salmón al curry
 updated: '2026-11-05T23:26:14.657296+01:00'
 ---

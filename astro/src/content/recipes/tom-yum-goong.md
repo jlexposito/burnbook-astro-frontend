@@ -23,7 +23,6 @@ tags:
 - cocina tailandesa
 - cena
 - comida
-- probado
 - por probar
 title: Tom Yum Goong
 updated: '2026-11-05T23:27:40.588607+01:00'

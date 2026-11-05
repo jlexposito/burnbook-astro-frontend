@@ -127,7 +127,6 @@ tags:
 - cena
 - comida
 - batch cooking
-- probado
 title: Pescado en salsa verde con garbanzos
 updated: '2026-10-31T13:39:20.339148+01:00'
 ---
