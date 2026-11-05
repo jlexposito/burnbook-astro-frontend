@@ -4,7 +4,7 @@ created: '2026-10-30T10:28:40.807409+01:00'
 id: 267
 image: null
 ingredients:
-- id: 4967
+- id: 5164
   ingredient:
     name: lentejas
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '120'
   recipe: 267
   unit: gr
-- id: 4968
+- id: 5165
   ingredient:
     name: quinoa
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '120'
   recipe: 267
   unit: gr
-- id: 4969
+- id: 5166
   ingredient:
     name: Zanahorias
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: unit
-- id: 4970
+- id: 5167
   ingredient:
     name: Sal
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: al_gusto
-- id: 4971
+- id: 5168
   ingredient:
     name: harina de garbanzo
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '2'
   recipe: 267
   unit: tablespoon
-- id: 4972
+- id: 5169
   ingredient:
     name: perejil
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: teaspoon
-- id: 4973
+- id: 5170
   ingredient:
     name: comino molido
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: teaspoon
-- id: 4974
+- id: 5171
   ingredient:
     name: ajo en polvo
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 267
   unit: teaspoon
-- id: 4975
+- id: 5172
   ingredient:
     name: cebolla en polvo
     prefix: ''
@@ -84,8 +84,8 @@ tags:
 - vegetariano
 - alto en proteína
 - comida
-title: Hamburguesas proteícas de lentejas y quinoa
-updated: '2026-10-30T10:47:06.657777+01:00'
+title: Hamburguesas proteicas de lentejas y quinoa
+updated: '2026-11-05T23:25:20.269237+01:00'
 ---
 ## 👩‍🍳 Instrucciones de Preparación
 
