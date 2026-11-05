@@ -111,15 +111,23 @@ export default function RecipePage(props: { recipes: RecipeInterface[], tags: Ta
     };
   });
 
+  // Helper function to remove accents/diacritics
+  const normalizeString = (str: string) =>
+    str
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .toLowerCase();
+
   // ---- Filtered recipes ----
   const filteredRecipes = createMemo(() =>
     props.recipes.filter(r => {
-      const nameOk = r.title.toLowerCase().includes(search().toLowerCase());
+      // Normalize both the recipe title and the search input
+      const nameOk = normalizeString(r.title).includes(normalizeString(search()));
       const tagsOk =
         activeTags().length === 0 || activeTags().some(t => r.tags.includes(t));
       const timeOk =
-        (!minTime() || r.cooking_time >= minTime()) &&
-        (!maxTime() || r.cooking_time <= maxTime());
+  (!minTime() || (r.cooking_time ?? 0) >= minTime()) &&
+  (!maxTime() || (r.cooking_time ?? Infinity) <= maxTime());
       
       // Status check supporting string or object representation
       const statusOk =
