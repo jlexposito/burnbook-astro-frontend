@@ -4,7 +4,7 @@ created: '2023-11-03T09:48:47.740415+01:00'
 id: 46
 image: /media/salmon-curry.jpg
 ingredients:
-- id: 229
+- id: 5181
   ingredient:
     name: leche de coco
     prefix: ''
@@ -12,7 +12,7 @@ ingredients:
   quantity: '450'
   recipe: 46
   unit: ml
-- id: 230
+- id: 5182
   ingredient:
     name: garbanzos
     prefix: ''
@@ -20,7 +20,7 @@ ingredients:
   quantity: '450'
   recipe: 46
   unit: gr
-- id: 231
+- id: 5183
   ingredient:
     name: ajo
     prefix: diente de
@@ -28,7 +28,7 @@ ingredients:
   quantity: '2'
   recipe: 46
   unit: unit
-- id: 232
+- id: 5184
   ingredient:
     name: jengibre
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '2'
   recipe: 46
   unit: tablespoon
-- id: 233
+- id: 5185
   ingredient:
     name: salsa de soja
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '1'
   recipe: 46
   unit: tablespoon
-- id: 234
+- id: 5186
   ingredient:
     name: zumo de limón
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '2'
   recipe: 46
   unit: tablespoon
-- id: 235
+- id: 5187
   ingredient:
     name: cilantro
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '1'
   recipe: 46
   unit: unit
-- id: 236
+- id: 5188
   ingredient:
     name: cebolla
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 46
   unit: unit
-- id: 237
+- id: 5189
   ingredient:
     name: pimientos
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '1'
   recipe: 46
   unit: unit
-- id: 238
+- id: 5190
   ingredient:
     name: salmon
     prefix: filetes de
@@ -84,7 +84,7 @@ ingredients:
   quantity: '2'
   recipe: 46
   unit: unit
-- id: 239
+- id: 5191
   ingredient:
     name: curry
     prefix: pasta de
@@ -101,8 +101,8 @@ tags:
 - pescado
 - principal
 - probado
-title: Salmon al curry
-updated: '2023-11-03T09:48:47.745767+01:00'
+title: Salmón al curry
+updated: '2026-11-05T23:26:14.657296+01:00'
 ---
 1.Sazona los filetes de salmón con sal, pimienta y ajo en polvo.
 2. Calentar una sartén grande a fuego medio y añadir 1 cucharada de aceite de oliva.
@@ -112,4 +112,3 @@ updated: '2023-11-03T09:48:47.745767+01:00'
 6. Sazonar con una pizca de sal y añadir la pasta de curry y la leche de coco. Mezcla para deshacer la pasta de curry y deja que la salsa se cocine a fuego medio/bajo durante unos 5 minutos.
 7. Vuelva a poner los filetes de salmón en la salsa y añada un chorrito de zumo de media lima. Tapa la sartén y deja que el salmón termine de cocinarse durante unos 5-7 minutos.
 8. Decóralo con rodajas de lima fresca y cilantro picado y sírvelo sobre arroz.
-
