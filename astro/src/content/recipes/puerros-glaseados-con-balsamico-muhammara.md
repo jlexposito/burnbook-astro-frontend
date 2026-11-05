@@ -31,14 +31,14 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DRm57FdDcLW/
 servings: 2
-status: Draft
+status: Tried
 tags:
 - vegetariano
 - entrante
 - vegano
 - probado
 title: Puerros Glaseados con Balsámico + Muhammara
-updated: '2026-02-26T22:25:18.772187+01:00'
+updated: '2026-11-05T23:19:24.991924+01:00'
 ---
 1. Dorar los puerros.
 2. Glasear los puerros con vinagre balsámico.

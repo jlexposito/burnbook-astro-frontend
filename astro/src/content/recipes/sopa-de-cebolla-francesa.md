@@ -71,12 +71,12 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DQ9y8h2CPv3/?igsh=ODJ4NGxicjk4N3o4
 servings: 4
-status: New
+status: Tried
 tags:
 - sopa
 - principal
 - probado
 title: Sopa de Cebolla Francesa
-updated: '2026-02-23T19:29:58.088585+01:00'
+updated: '2026-11-05T23:19:24.996370+01:00'
 ---
 Pelar y cortar las cebollas en juliana muy fina. Derretir la mantequilla en una cacerola y añadir las cebollas. Cocinar a fuego suave hasta que estén bien caramelizadas. Incorporar la harina y remover un par de minutos, hasta que esté cocida. Añadir el vino blanco y dejar evaporar el alcohol. Verter los dos caldos y dejar cocer unos 45 minutos a fuego lento. Servir en cuencos aptos para horno, poner el pan torrado encima y cubrir con queso Comté rallado. Gratinar hasta que el queso se derrita.

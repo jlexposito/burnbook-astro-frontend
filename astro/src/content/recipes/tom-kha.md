@@ -175,7 +175,7 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DUTxLBliPqr/
 servings: 2
-status: Draft
+status: Tried
 tags:
 - sopa
 - principal
@@ -185,7 +185,7 @@ tags:
 - probado
 - por probar
 title: Tom Kha
-updated: '2026-02-26T22:22:05.159257+01:00'
+updated: '2026-11-05T23:19:24.994198+01:00'
 ---
 1. Pica la cebolla, el ajo, el jengibre y la guindilla.
 2. En una olla, calienta el AOVE a fuego medio y añade la cebolla, el ajo, el jengibre, la guindilla y la ralladura de lima. Sofríe durante 3-5 minutos hasta que los sabores se integren bien.

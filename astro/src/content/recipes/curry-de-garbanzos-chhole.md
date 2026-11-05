@@ -111,14 +111,14 @@ ingredients:
 references:
 - https://www.eatingwell.com/recipe/255186/chickpea-curry-chhole/
 servings: 2
-status: Draft
+status: Tried
 tags:
 - vegetariano
 - cocina india
 - comida
 - probado
 title: Curry de Garbanzos (Chhole)
-updated: '2026-03-04T22:20:05.583958+01:00'
+updated: '2026-11-05T23:19:24.976240+01:00'
 ---
 1. Tritura el pimiento serrano mediano, los 4 dientes de ajo grandes y el jengibre fresco en un procesador de alimentos hasta que estén picados. Raspa los lados y vuelve a triturar. Añade la cebolla; tritura hasta que esté finamente picada, pero no acuosa.
 2. Calienta 6 cucharadas de aceite de canola o de semilla de uva en una cacerola grande a fuego medio-alto. Añade la mezcla de cebolla y cocina, removiendo ocasionalmente, hasta que esté blanda, de 3 a 5 minutos. Añade 2 cucharaditas de cilantro molido, 2 cucharaditas de comino molido y 0.5 cucharadita de cúrcuma molida y cocina, removiendo, durante 2 minutos.

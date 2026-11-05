@@ -111,7 +111,7 @@ ingredients:
 references:
 - https://www.instagram.com/reel/DT0tpRuDTA9/
 servings: 2
-status: New
+status: Tried
 tags:
 - salsa
 - pescado
@@ -120,7 +120,7 @@ tags:
 - cena
 - probado
 title: Pasta con atún
-updated: '2026-02-21T13:40:29.613241+01:00'
+updated: '2026-11-05T23:19:24.989373+01:00'
 ---
 1. En 3 cucharadas de aceite de oliva, fríe media cebolla roja finamente picada a fuego lento hasta que esté blanda.
 2. Añade 2 dientes de ajo finamente picados, 3 anchoas, 1 cucharada de alcaparras, 2 cucharadas de aceitunas y una pizca de guindilla, y fríe durante otros 2 minutos.
