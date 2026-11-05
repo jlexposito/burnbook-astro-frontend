@@ -4,7 +4,7 @@ created: '2023-09-10T16:54:36.576749+02:00'
 id: 26
 image: /media/NL-Chocolate-Guiness-Cake-superJumbo.jpeg
 ingredients:
-- id: 121
+- id: 5192
   ingredient:
     name: huevos
     prefix: ''
@@ -12,15 +12,15 @@ ingredients:
   quantity: '2'
   recipe: 26
   unit: unit
-- id: 122
+- id: 5193
   ingredient:
-    name: Guiness stout
+    name: Guinnes stout
     prefix: ''
   optional: false
   quantity: '250'
   recipe: 26
   unit: ml
-- id: 123
+- id: 5194
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -28,7 +28,7 @@ ingredients:
   quantity: '1'
   recipe: 26
   unit: tablespoon
-- id: 124
+- id: 5195
   ingredient:
     name: Mantequilla
     prefix: ''
@@ -36,7 +36,7 @@ ingredients:
   quantity: '142'
   recipe: 26
   unit: gr
-- id: 125
+- id: 5196
   ingredient:
     name: polvo de cacao sin azucarar
     prefix: ''
@@ -44,7 +44,7 @@ ingredients:
   quantity: '90'
   recipe: 26
   unit: gr
-- id: 126
+- id: 5197
   ingredient:
     name: azúcar extra fino
     prefix: ''
@@ -52,7 +52,7 @@ ingredients:
   quantity: '450'
   recipe: 26
   unit: gr
-- id: 127
+- id: 5198
   ingredient:
     name: sour cream
     prefix: ''
@@ -60,7 +60,7 @@ ingredients:
   quantity: '188'
   recipe: 26
   unit: gr
-- id: 128
+- id: 5199
   ingredient:
     name: extracto de vainilla
     prefix: ''
@@ -68,7 +68,7 @@ ingredients:
   quantity: '1'
   recipe: 26
   unit: tablespoon
-- id: 129
+- id: 5200
   ingredient:
     name: harina multiuso
     prefix: ''
@@ -76,7 +76,7 @@ ingredients:
   quantity: '300'
   recipe: 26
   unit: gr
-- id: 130
+- id: 5201
   ingredient:
     name: baking soda
     prefix: ''
@@ -84,7 +84,7 @@ ingredients:
   quantity: '13'
   recipe: 26
   unit: gr
-- id: 131
+- id: 5202
   ingredient:
     name: azúcar glas
     prefix: ''
@@ -92,7 +92,7 @@ ingredients:
   quantity: '162'
   recipe: 26
   unit: gr
-- id: 132
+- id: 5203
   ingredient:
     name: queso en crema (Philadelphia)
     prefix: ''
@@ -100,7 +100,7 @@ ingredients:
   quantity: '127'
   recipe: 26
   unit: gr
-- id: 133
+- id: 5204
   ingredient:
     name: nata
     prefix: ''
@@ -116,8 +116,8 @@ tags:
 - dulce
 - postre
 - probado
-title: Guiness Cake
-updated: '2024-02-19T20:47:40.809200+01:00'
+title: Guinness Cake
+updated: '2026-11-05T23:27:19.205285+01:00'
 ---
 ### Paso 1
 Para el pastel: calentar el horno a 170C. Unte con mantequilla un molde desmontable de 9 pulgadas y cúbralo con papel pergamino. En una cacerola o sarten grande, combine la **Guinness** y los 142 gramos de **mantequilla**. Coloque a fuego medio-bajo hasta que la mantequilla se derrita, luego retire del fuego. Agregue el **cacao** y el **azúcar extrafina**, y bata para mezclar.
